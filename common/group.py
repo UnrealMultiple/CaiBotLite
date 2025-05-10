@@ -5,7 +5,7 @@ from common.sql import Sql
 
 
 class Group:
-    def __init__(self, open_id: str, parent: str, admins: [str], black_list: [str], servers: List[Server],
+    def __init__(self, open_id: str, parent: str, admins: List[str], black_list: List[str], servers: List[Server],
                  config: dict) -> None:
         self.open_id = open_id
         self.parent = parent

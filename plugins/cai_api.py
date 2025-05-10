@@ -89,8 +89,8 @@ app: FastAPI
 server_connection_manager = ServerConnectionManager()
 tokens = {}
 
-online_request = {str: object}
-cmd_request = {str: object}
+online_request = {}
+cmd_request = {}
 last_connection_time = {}
 MAX_FILE_SIZE = 30 * 1024 * 1024  # 30MB
 files_db = {}
@@ -209,11 +209,11 @@ def is_valid_guid(guid):
         return False
 
 
-async def wait_for_online(group_id: str, servers: list[Server]) -> [str]:
+async def wait_for_online(group_id: str, servers: list[Server]):
     cmd = {
         "type": "online",
     }
-    result: [str] = []
+    result  = []
     tasks = []
     for index, server in enumerate(servers):
         if server_connection_manager.server_available(server.token):
@@ -241,8 +241,8 @@ async def wait_for_online(group_id: str, servers: list[Server]) -> [str]:
     return result
 
 
-async def wait_for_cmd(group_id: str, cmd, servers: list[Server]) -> [str]:
-    result: [str] = []
+async def wait_for_cmd(group_id: str, cmd, servers: list[Server]):
+    result = []
     tasks = []
     for index, server in enumerate(servers):
         if server_connection_manager.server_available(server.token):
@@ -411,10 +411,13 @@ async def handle_message(data: str, group: Group, token: str, server: Server, we
             await bot.send_to_group(group_id, MessageSegment.text(f"\n『远程指令』\n"
                                                                   f"服务器[{index}]返回了个寂寞"), msg_id=msg_id)
     elif data['type'] == "online":
-        if websocket.tshock_version != "None" and not compare_versions(websocket.tshock_version,"5.2.2.0"):
-            data['result'] = data['result']+ "\n⚠️不支持此TShock版本,请升级到TShock v5.2.2+"
-        if websocket.tshock_version != "None" and compare_versions(websocket.tshock_version, "5.2.3.0") and not compare_versions(websocket.plugin_version,"2025.03.10.1"):
-            data['result'] = data['result']+ "\n⚠️不支持此适配插件版本,请升级到CaiBotLite v2025.03.10+"
+        if websocket.tshock_version != "None":
+            if not compare_versions(websocket.tshock_version,"5.2.3.0"):
+                data['result'] = data['result']+ "\n⚠️不支持此TShock版本,请升级到TShock v5.2.3+"
+            if compare_versions(websocket.tshock_version, "5.2.3.0") and not compare_versions(websocket.plugin_version,"2025.3.10.1"):
+                data['result'] = data['result']+ "\n⚠️不支持此适配插件版本,请升级到CaiBotLite v2025.04.26+"
+            if websocket.plugin_version == "2025.4.12.1":
+                data['result'] = data['result']+ "\n⚠️此适配插件版本有严重安全漏洞,请升级到CaiBotLite v2025.04.26+"
         result = SensitiveWordsFilter.replace(f"๑{index}๑⚡{data['worldname']} 「{data['process']}」\n" + data['result'])
         online_request[token] = result
         websocket.world = SensitiveWordsFilter.replace(data['worldname'])

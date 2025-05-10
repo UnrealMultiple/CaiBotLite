@@ -61,7 +61,7 @@ class UrlHandler:
         escaped_tlds = [re.escape(tld) for tld in self.tlds]
         tld_pattern = '|'.join(escaped_tlds)
         # 匹配完整 URL 的正则表达式
-        url_pattern = rf'(https?://(?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?:/[^\s]*)?)|((?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern}))(?=[\s,.\n]|$)'
+        url_pattern = rf'(https?://(?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?(?:/[^\s]*)?)|((?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?)(?=[\s,.\n]|$)'
         return re.compile(url_pattern, re.IGNORECASE)
 
     @classmethod
@@ -78,10 +78,7 @@ class UrlHandler:
 
 UrlHandler()
 
-# 使用示例
 if __name__ == "__main__":
-    # 创建单例实例
-    # 示例文本
     text = '''
     Visit our website at https://www.example.com or http://sub.example.org/path.
     Invalid URLs like https://example.invalid or http://test.local should not be replaced.
@@ -89,11 +86,8 @@ if __name__ == "__main__":
     terraria.ink,terraria.innknsndsk
     terraria.ink
     terraria.ink.
-    terraria.ink 
+    terraria.ink:7777
     '''
 
-    # 替换完整 URL
     result = UrlHandler.replace_urls(text)
-
-    # 输出结果
     print(result)

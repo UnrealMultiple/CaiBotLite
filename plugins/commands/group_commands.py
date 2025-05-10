@@ -297,7 +297,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                                    "只允许BOT管理员使用")
 
 
-del_blacklist = on_command("删除黑名单", force_whitespace=True)
+del_blacklist = on_command("删除黑名单",aliases={"解封"}, force_whitespace=True)
 
 
 @del_blacklist.handle()
@@ -318,7 +318,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                 await del_blacklist.finish(f'\n『Ban』\n' +
                                            f"没有找到名为[{(msg[1])}]的玩家!")
 
-            if user.open_id in group.admins:
+            if user.open_id in group.black_list:
                 group.black_list.remove(user.open_id)
                 group.update()
                 await del_blacklist.finish(f'\n『Ban』\n' +

@@ -1,4 +1,5 @@
 import socket
+import traceback
 
 from nonebot import on_command
 from nonebot.adapters.qq import GroupAtMessageCreateEvent
@@ -360,34 +361,26 @@ async def server_info_handle(event: GroupAtMessageCreateEvent):
                                  f"查询失败！\n"
                                  f"❌服务器[{int(msg[1])}]处于离线状态")
     i = group.servers[int(msg[1]) - 1]
+    server = server_connection_manager.get_server_connection(i.token)
+    server_version = server.terraria_version
+    world = server.world
+    tshock_version = server.tshock_version
+    whitelist = server.whitelist
+    plugin_version = server.plugin_version
+    os = server.os
     # noinspection PyBroadException
     try:
-        server = server_connection_manager.get_server_connection(i.token)
-        server_version = server.terraria_version
-        world = server.world
-        tshock_version = server.tshock_version
-        whitelist = server.whitelist
-        plugin_version = server.plugin_version
-        os = server.os
-        # noinspection PyBroadException
-        try:
-            ip = socket.gethostbyname(i.ip)
-        except:
-            ip = i.ip
-        await server_info.send(f'\n『服务器信息』\n' +
-                               f"服务器[{int(msg[1])}]的详细信息: \n"
-                               f"地址: {ip}:{i.port}\n"
-                               f"世界名: {world}\n"
-                               f"Terraria版本: {server_version}\n"
-                               f"TShock版本: {tshock_version}\n"
-                               f"CaiBot扩展版本: {plugin_version}\n"
-                               f"Cai白名单: {whitelist}\n"
-                               f"服务器系统: {os}\n"
-                               f"所属群: {i.owner}\n"
-                               f"共享群: {'无' if not i.shared else ','.join(map(str, i.shared))}")
-        return
-    except:
-        await server_info.finish(f'\n『服务器信息』\n' +
-                                 f"服务器[{int(msg[1])}]的详细信息: \n"
-                                 f"地址: {i.ip}:{i.port}\n"
-                                 f"🌐详细信息获取失败,请更新CaiBOT插件哦~")
+        ip = socket.gethostbyname(i.ip)
+    except Exception:
+        ip = i.ip
+    await server_info.finish(f'\n『服务器信息』\n' +
+                           f"服务器[{int(msg[1])}]的详细信息: \n"
+                           f"地址: {SensitiveWordsFilter.replace(ip)}:{i.port}\n"
+                           f"世界名: {world}\n"
+                           f"Terraria版本: {server_version}\n"
+                           f"TShock版本: {tshock_version}\n"
+                           f"CaiBot扩展版本: {plugin_version}\n"
+                           f"Cai白名单: {whitelist}\n"
+                           f"服务器系统: {os}\n"
+                           f"所属群: {i.owner}\n"
+                           f"共享群: {'无' if not i.shared else ','.join(map(str, i.shared))}")

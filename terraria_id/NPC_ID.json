@@ -1,864 +1,6 @@
 [
   {
     "Damage": 0,
-    "Description": "桑百颗够吗\uD83E\uDD14\n哎，应该够吧\uD83E\uDDD0\n来吧，试一下米妮\uD83E\uDD13\n这个波斯对我来说可是超难的\uD83D\uDE27\n这个boss，用这把枪打，从来没有试过哦\uD83D\uDE00\n蚩尤说\uD83D\uDE33\n又是这个难得过分的boss\uD83D\uDE2B\n手没了，手没了就好一点了\uD83E\uDD7A\n可以庄心的躲这个骷髅头\uD83E\uDD2B\n可能我每次打这个boss死了就是因为那个手☹\uFE0F\n亡了亡了\uD83D\uDE2D\n唉呀我没有史莱姆ang呀\uD83E\uDD17",
-    "NpcId": -114514,
-    "LifeMax": 0,
-    "MonetaryValue": {
-      "Copper": 3,
-      "Gold": 60,
-      "Platinum": 591,
-      "Silver": 15
-    },
-    "Name": "ezfic"
-  },
-  {
-    "Damage": 123,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 137,
-    "MonetaryValue": {
-      "Copper": 5,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 6
-    },
-    "Name": "黄蜂",
-    "NpcId": -65
-  },
-  {
-    "Damage": 88,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 99,
-    "MonetaryValue": {
-      "Copper": 35,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 4
-    },
-    "Name": "黄蜂",
-    "NpcId": -64
-  },
-  {
-    "Damage": 111,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 146,
-    "MonetaryValue": {
-      "Copper": 80,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 5
-    },
-    "Name": "黄蜂",
-    "NpcId": -63
-  },
-  {
-    "Damage": 74,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 98,
-    "MonetaryValue": {
-      "Copper": 90,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "黄蜂",
-    "NpcId": -62
-  },
-  {
-    "Damage": 99,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 125,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 5
-    },
-    "Name": "黄蜂",
-    "NpcId": -61
-  },
-  {
-    "Damage": 82,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 104,
-    "MonetaryValue": {
-      "Copper": 60,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 4
-    },
-    "Name": "黄蜂",
-    "NpcId": -60
-  },
-  {
-    "Damage": 96,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 144,
-    "MonetaryValue": {
-      "Copper": 75,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 5
-    },
-    "Name": "黄蜂",
-    "NpcId": -59
-  },
-  {
-    "Damage": 67,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 100,
-    "MonetaryValue": {
-      "Copper": 0,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 4
-    },
-    "Name": "黄蜂",
-    "NpcId": -58
-  },
-  {
-    "Damage": 82,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 187,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 6
-    },
-    "Name": "黄蜂",
-    "NpcId": -57
-  },
-  {
-    "Damage": 56,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 127,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 4
-    },
-    "Name": "黄蜂",
-    "NpcId": -56
-  },
-  {
-    "Damage": 52,
-    "Description": "",
-    "LifeMax": 165,
-    "MonetaryValue": {
-      "Copper": 92,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -55
-  },
-  {
-    "Damage": 43,
-    "Description": "",
-    "LifeMax": 135,
-    "MonetaryValue": {
-      "Copper": 57,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -54
-  },
-  {
-    "Damage": 75,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 207,
-    "MonetaryValue": {
-      "Copper": 16,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "骷髅",
-    "NpcId": -53
-  },
-  {
-    "Damage": 56,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 153,
-    "MonetaryValue": {
-      "Copper": 33,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "骷髅",
-    "NpcId": -52
-  },
-  {
-    "Damage": 61,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 220,
-    "MonetaryValue": {
-      "Copper": 39,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "骷髅",
-    "NpcId": -51
-  },
-  {
-    "Damage": 46,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 169,
-    "MonetaryValue": {
-      "Copper": 61,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "骷髅",
-    "NpcId": -50
-  },
-  {
-    "Damage": 64,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 176,
-    "MonetaryValue": {
-      "Copper": 47,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "骷髅",
-    "NpcId": -49
-  },
-  {
-    "Damage": 55,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 153,
-    "MonetaryValue": {
-      "Copper": 2,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "骷髅",
-    "NpcId": -48
-  },
-  {
-    "Damage": 66,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 198,
-    "MonetaryValue": {
-      "Copper": 75,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "骷髅",
-    "NpcId": -47
-  },
-  {
-    "Damage": 54,
-    "Description": "谁说一定要有肌肉、皮肤甚至是眼球？骷髅就只靠背上的骨头就能挣扎下去，而且跟有肉体的敌人一样致命。",
-    "LifeMax": 162,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "骷髅",
-    "NpcId": -46
-  },
-  {
-    "Damage": 37,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 119,
-    "MonetaryValue": {
-      "Copper": 70,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -45
-  },
-  {
-    "Damage": 31,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 99,
-    "MonetaryValue": {
-      "Copper": 40,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -44
-  },
-  {
-    "Damage": 62,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 207,
-    "MonetaryValue": {
-      "Copper": 15,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "恶魔眼",
-    "NpcId": -43
-  },
-  {
-    "Damage": 46,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 198,
-    "MonetaryValue": {
-      "Copper": 5,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "恶魔眼",
-    "NpcId": -42
-  },
-  {
-    "Damage": 51,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 153,
-    "MonetaryValue": {
-      "Copper": 58,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "恶魔眼",
-    "NpcId": -41
-  },
-  {
-    "Damage": 48,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 135,
-    "MonetaryValue": {
-      "Copper": 68,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "恶魔眼",
-    "NpcId": -40
-  },
-  {
-    "Damage": 52,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 198,
-    "MonetaryValue": {
-      "Copper": 5,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "恶魔眼",
-    "NpcId": -39
-  },
-  {
-    "Damage": 62,
-    "Description": "当克苏鲁的仆从在漆黑的夜里游荡在空中时，被监视的可疑感觉很可能会成真。",
-    "LifeMax": 224,
-    "MonetaryValue": {
-      "Copper": 15,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "恶魔眼",
-    "NpcId": -38
-  },
-  {
-    "Damage": 51,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 145,
-    "MonetaryValue": {
-      "Copper": 89,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -37
-  },
-  {
-    "Damage": 44,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 124,
-    "MonetaryValue": {
-      "Copper": 61,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -36
-  },
-  {
-    "Damage": 44,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 152,
-    "MonetaryValue": {
-      "Copper": 26,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "僵尸",
-    "NpcId": -35
-  },
-  {
-    "Damage": 33,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 117,
-    "MonetaryValue": {
-      "Copper": 74,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -34
-  },
-  {
-    "Damage": 43,
-    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。这样走动让双方都感觉不舒服。",
-    "LifeMax": 133,
-    "MonetaryValue": {
-      "Copper": 52,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -33
-  },
-  {
-    "Damage": 34,
-    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。这样走动让双方都感觉不舒服。",
-    "LifeMax": 106,
-    "MonetaryValue": {
-      "Copper": 21,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -32
-  },
-  {
-    "Damage": 54,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 169,
-    "MonetaryValue": {
-      "Copper": 83,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -31
-  },
-  {
-    "Damage": 44,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 139,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -30
-  },
-  {
-    "Damage": 51,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 138,
-    "MonetaryValue": {
-      "Copper": 86,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -29
-  },
-  {
-    "Damage": 38,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 102,
-    "MonetaryValue": {
-      "Copper": 37,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -28
-  },
-  {
-    "Damage": 46,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 148,
-    "MonetaryValue": {
-      "Copper": 65,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -27
-  },
-  {
-    "Damage": 37,
-    "Description": "开着门可能会让笨手笨脚的食脑怪趁虚而入，没有人喜欢这样。",
-    "LifeMax": 121,
-    "MonetaryValue": {
-      "Copper": 35,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "僵尸",
-    "NpcId": -26
-  },
-  {
-    "Damage": 207,
-    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找并消化更多原材料。",
-    "LifeMax": 690,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 11
-    },
-    "Name": "猩红史莱姆",
-    "NpcId": -25
-  },
-  {
-    "Damage": 153,
-    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找并消化更多原材料。",
-    "LifeMax": 510,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 8
-    },
-    "Name": "猩红史莱姆",
-    "NpcId": -24
-  },
-  {
-    "Damage": 75,
-    "Description": "猩红之地最常见的恐怖力量，它带着无尽的饥饿来吞噬纯净之物。",
-    "LifeMax": 138,
-    "MonetaryValue": {
-      "Copper": 58,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "猩红喀迈拉",
-    "NpcId": -23
-  },
-  {
-    "Damage": 56,
-    "Description": "猩红之地最常见的恐怖力量，它带着无尽的饥饿来吞噬纯净之物。",
-    "LifeMax": 102,
-    "MonetaryValue": {
-      "Copper": 91,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "猩红喀迈拉",
-    "NpcId": -22
-  },
-  {
-    "Damage": 252,
-    "Description": "强大的丛林植物群已经和这类大黄蜂融合在一起，强化了它们的外骨骼和毒刺。",
-    "LifeMax": 792,
-    "MonetaryValue": {
-      "Copper": 0,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 18
-    },
-    "Name": "苔藓黄蜂",
-    "NpcId": -21
-  },
-  {
-    "Damage": 231,
-    "Description": "强大的丛林植物群已经和这类大黄蜂融合在一起，强化了它们的外骨骼和毒刺。",
-    "LifeMax": 726,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 16
-    },
-    "Name": "苔藓黄蜂",
-    "NpcId": -20
-  },
-  {
-    "Damage": 189,
-    "Description": "强大的丛林植物群已经和这类大黄蜂融合在一起，强化了它们的外骨骼和毒刺。",
-    "LifeMax": 594,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 13
-    },
-    "Name": "苔藓黄蜂",
-    "NpcId": -19
-  },
-  {
-    "Damage": 168,
-    "Description": "强大的丛林植物群已经和这类大黄蜂融合在一起，强化了它们的外骨骼和毒刺。",
-    "LifeMax": 528,
-    "MonetaryValue": {
-      "Copper": 0,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 12
-    },
-    "Name": "苔藓黄蜂",
-    "NpcId": -18
-  },
-  {
-    "Damage": 93,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 172,
-    "MonetaryValue": {
-      "Copper": 0,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 6
-    },
-    "Name": "黄蜂",
-    "NpcId": -17
-  },
-  {
-    "Damage": 66,
-    "Description": "遍布丛林深处的攻击性飞行昆虫。它们会在很远处就以极高的速度射出有毒的倒刺。",
-    "LifeMax": 122,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 4
-    },
-    "Name": "黄蜂",
-    "NpcId": -16
-  },
-  {
-    "Damage": 151,
-    "Description": "这些顽强的战士是战死已久的远征军的遗骸，它们在自己战死的洞穴中漫无目的地巡逻。",
-    "LifeMax": 400,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 11
-    },
-    "Name": "装甲骷髅",
-    "NpcId": -15
-  },
-  {
-    "Damage": 98,
-    "Description": "受到不死诅咒的原地牢居民在大厅中不停游荡，想找一个宣泄无尽愤怒的对象。",
-    "LifeMax": 303,
-    "MonetaryValue": {
-      "Copper": 73,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 3
-    },
-    "Name": "愤怒骷髅怪",
-    "NpcId": -14
-  },
-  {
-    "Damage": 70,
-    "Description": "受到不死诅咒的原地牢居民在大厅中不停游荡，想找一个宣泄无尽愤怒的对象。",
-    "LifeMax": 216,
-    "MonetaryValue": {
-      "Copper": 92,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "愤怒骷髅怪",
-    "NpcId": -13
-  },
-  {
-    "Damage": 75,
-    "Description": "它作为纯粹的恶意生物从腐化之地中诞生，唯一的本能就是追逐、惩罚和杀戮。",
-    "LifeMax": 138,
-    "MonetaryValue": {
-      "Copper": 58,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "噬魂怪",
-    "NpcId": -12
-  },
-  {
-    "Damage": 56,
-    "Description": "它作为纯粹的恶意生物从腐化之地中诞生，唯一的本能就是追逐、惩罚和杀戮。",
-    "LifeMax": 102,
-    "MonetaryValue": {
-      "Copper": 91,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 1
-    },
-    "Name": "噬魂怪",
-    "NpcId": -11
-  },
-  {
-    "Damage": 54,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 180,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 12
-    },
-    "Name": "丛林史莱姆",
-    "NpcId": -10
-  },
-  {
-    "Damage": 45,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 135,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "黄史莱姆",
-    "NpcId": -9
-  },
-  {
-    "Damage": 36,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 105,
-    "MonetaryValue": {
-      "Copper": 20,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "红史莱姆",
-    "NpcId": -8
-  },
-  {
-    "Damage": 36,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 120,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "紫史莱姆",
-    "NpcId": -7
-  },
-  {
-    "Damage": 45,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 135,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "黑史莱姆",
-    "NpcId": -6
-  },
-  {
-    "Damage": 39,
-    "Description": "这些小史莱姆会紧紧黏住母体，很少看到它们单独行动，若母亲受到伤害，它们便一拥而上围攻对方。",
-    "LifeMax": 90,
-    "MonetaryValue": {
-      "Copper": 25,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "史莱姆宝宝",
-    "NpcId": -5
-  },
-  {
-    "Damage": 15,
-    "Description": "有史以来最小的史莱姆，它们极端的细胞密度使它们小小的体型中拥有难以置信的耐力。它们喜欢吃钱。",
-    "LifeMax": 450,
-    "MonetaryValue": {
-      "Copper": 0,
-      "Gold": 2,
-      "Platinum": 0,
-      "Silver": 50
-    },
-    "Name": "粉史莱姆",
-    "NpcId": -4
-  },
-  {
-    "Damage": 18,
-    "Description": "简单的明胶状生物，见到什么东西都能一口吞下！但消化需要很长时间。",
-    "LifeMax": 42,
-    "MonetaryValue": {
-      "Copper": 7,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 0
-    },
-    "Name": "绿史莱姆",
-    "NpcId": -3
-  },
-  {
-    "Damage": 135,
-    "Description": "",
-    "LifeMax": 270,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "恶翅史莱姆",
-    "NpcId": -2
-  },
-  {
-    "Damage": 135,
-    "Description": "受伤的腐化史莱姆残块仍然有活力，这些小史莱姆仍然能奋起抗争，且力量不小。",
-    "LifeMax": 270,
-    "MonetaryValue": {
-      "Copper": 50,
-      "Gold": 0,
-      "Platinum": 0,
-      "Silver": 2
-    },
-    "Name": "小史莱姆",
-    "NpcId": -1
-  },
-  {
-    "Damage": 0,
     "Description": "",
     "LifeMax": 0,
     "MonetaryValue": {
@@ -868,7 +10,8 @@
       "Silver": 0
     },
     "Name": "",
-    "NpcId": 0
+    "NpcId": 0,
+    "Alias": []
   },
   {
     "Damage": 21,
@@ -881,7 +24,8 @@
       "Silver": 0
     },
     "Name": "蓝史莱姆",
-    "NpcId": 1
+    "NpcId": 1,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -894,7 +38,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 2
+    "NpcId": 2,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -907,7 +52,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 3
+    "NpcId": 3,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -920,7 +66,8 @@
       "Silver": 50
     },
     "Name": "克苏鲁之眼",
-    "NpcId": 4
+    "NpcId": 4,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -933,7 +80,8 @@
       "Silver": 0
     },
     "Name": "克苏鲁之仆",
-    "NpcId": 5
+    "NpcId": 5,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -946,7 +94,8 @@
       "Silver": 2
     },
     "Name": "噬魂怪",
-    "NpcId": 6
+    "NpcId": 6,
+    "Alias": []
   },
   {
     "Damage": 93,
@@ -959,7 +108,8 @@
       "Silver": 3
     },
     "Name": "吞噬怪",
-    "NpcId": 7
+    "NpcId": 7,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -972,7 +122,8 @@
       "Silver": 3
     },
     "Name": "吞噬怪",
-    "NpcId": 8
+    "NpcId": 8,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -985,7 +136,8 @@
       "Silver": 3
     },
     "Name": "吞噬怪",
-    "NpcId": 9
+    "NpcId": 9,
+    "Alias": []
   },
   {
     "Damage": 24,
@@ -998,7 +150,8 @@
       "Silver": 1
     },
     "Name": "巨型蠕虫",
-    "NpcId": 10
+    "NpcId": 10,
+    "Alias": []
   },
   {
     "Damage": 12,
@@ -1011,7 +164,8 @@
       "Silver": 1
     },
     "Name": "巨型蠕虫",
-    "NpcId": 11
+    "NpcId": 11,
+    "Alias": []
   },
   {
     "Damage": 12,
@@ -1024,7 +178,8 @@
       "Silver": 1
     },
     "Name": "巨型蠕虫",
-    "NpcId": 12
+    "NpcId": 12,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -1037,7 +192,8 @@
       "Silver": 20
     },
     "Name": "世界吞噬怪",
-    "NpcId": 13
+    "NpcId": 13,
+    "Alias": []
   },
   {
     "Damage": 31,
@@ -1050,7 +206,8 @@
       "Silver": 20
     },
     "Name": "世界吞噬怪",
-    "NpcId": 14
+    "NpcId": 14,
+    "Alias": []
   },
   {
     "Damage": 26,
@@ -1063,7 +220,8 @@
       "Silver": 20
     },
     "Name": "世界吞噬怪",
-    "NpcId": 15
+    "NpcId": 15,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1076,11 +234,12 @@
       "Silver": 1
     },
     "Name": "史莱姆之母",
-    "NpcId": 16
+    "NpcId": 16,
+    "Alias": []
   },
   {
     "Damage": 10,
-    "Description": "商人就像一个简单的杂货店，提供有用的新手工具和探索所需的物资。",
+    "Description": "商人就像一个简单的杂货店，提供有用的新手工具和探索所需的物资。\r\n条件性售卖：\r\n  位于丛林：\r\n  熔炉\r\n  位于雪原：\r\n  棉花糖\r\n  白天且大风天期间：\r\n  风车\r\n  夜晚期间：\r\n  荧光棒\r\n  血月期间：\r\n  投刀\r\n  已击败骷髅王：\r\n  保险箱\r\n  已击败世界吞噬怪|克苏鲁之脑|骷髅王或处于困难模式：\r\n  鼓组\r\n  鼓槌\r\n  处于困难模式：\r\n  治疗药水\r\n  魔力药水\r\n  迪斯科球\r\n  金尘\r\n  利器站\r\n  持有信号枪：\r\n  照明弹\r\n  蓝照明弹\r\n  持有钉枪：\r\n  钉子",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1089,7 +248,8 @@
       "Silver": 0
     },
     "Name": "商人",
-    "NpcId": 17
+    "NpcId": 17,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1102,11 +262,12 @@
       "Silver": 0
     },
     "Name": "护士",
-    "NpcId": 18
+    "NpcId": 18,
+    "Alias": []
   },
   {
     "Damage": 10,
-    "Description": "军火商拥有所有致命武器，小到一枚子弹，大到用鲨鱼制成的枪炮。",
+    "Description": "军火商拥有所有致命武器，小到一枚子弹，大到用鲨鱼制成的枪炮。\r\n条件性售卖：\r\n  夜晚期间：\r\n  非法枪械部件\r\n  血月期间或处于困难模式：\r\n  银子弹（银世界）\r\n  钨子弹（钨世界）\r\n  在Drunk world或Get fixed boi世界中，世界矿物类型依照每次加载世界时矿物物块占比决定（等额为钨世界）\r\n  位于墓地且已击败骷髅王：\r\n  四管霰弹枪\r\n  夜晚期间且已击败世界吞噬怪|克苏鲁之脑：\r\n  邪箭\r\n  处于困难模式：\r\n  邪箭\r\n  霰弹枪\r\n  空心子弹\r\n  弹药箱\r\n  持有毒刺发射器：\r\n  毒刺矢\r\n  持有玉米糖步枪：\r\n  玉米糖\r\n  持有杰克南瓜灯发射器：\r\n  爆炸杰克南瓜灯\r\n  持有尖桩发射器：\r\n  尖桩\r\n  持有钉枪：\r\n  钉子\r\n  万圣节期间：\r\n  护士帽\r\n  护士衣\r\n  护士裤",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1115,7 +276,8 @@
       "Silver": 0
     },
     "Name": "军火商",
-    "NpcId": 19
+    "NpcId": 19,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1128,7 +290,8 @@
       "Silver": 0
     },
     "Name": "树妖",
-    "NpcId": 20
+    "NpcId": 20,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1141,7 +304,8 @@
       "Silver": 2
     },
     "Name": "骷髅",
-    "NpcId": 21
+    "NpcId": 21,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1154,7 +318,8 @@
       "Silver": 0
     },
     "Name": "向导",
-    "NpcId": 22
+    "NpcId": 22,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -1167,7 +332,8 @@
       "Silver": 2
     },
     "Name": "流星头",
-    "NpcId": 23
+    "NpcId": 23,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -1180,7 +346,8 @@
       "Silver": 8
     },
     "Name": "火焰小鬼",
-    "NpcId": 24
+    "NpcId": 24,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -1193,7 +360,8 @@
       "Silver": 0
     },
     "Name": "烈焰球",
-    "NpcId": 25
+    "NpcId": 25,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -1206,7 +374,8 @@
       "Silver": 2
     },
     "Name": "哥布林苦力",
-    "NpcId": 26
+    "NpcId": 26,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1219,7 +388,8 @@
       "Silver": 5
     },
     "Name": "哥布林盗贼",
-    "NpcId": 27
+    "NpcId": 27,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -1232,7 +402,8 @@
       "Silver": 3
     },
     "Name": "哥布林战士",
-    "NpcId": 28
+    "NpcId": 28,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1245,7 +416,8 @@
       "Silver": 5
     },
     "Name": "哥布林巫士",
-    "NpcId": 29
+    "NpcId": 29,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1258,7 +430,8 @@
       "Silver": 0
     },
     "Name": "混沌球",
-    "NpcId": 30
+    "NpcId": 30,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -1271,7 +444,8 @@
       "Silver": 3
     },
     "Name": "愤怒骷髅怪",
-    "NpcId": 31
+    "NpcId": 31,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1284,7 +458,8 @@
       "Silver": 3
     },
     "Name": "暗黑法师",
-    "NpcId": 32
+    "NpcId": 32,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1297,7 +472,8 @@
       "Silver": 0
     },
     "Name": "水球",
-    "NpcId": 33
+    "NpcId": 33,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -1310,7 +486,8 @@
       "Silver": 3
     },
     "Name": "诅咒骷髅头",
-    "NpcId": 34
+    "NpcId": 34,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -1323,7 +500,8 @@
       "Silver": 50
     },
     "Name": "骷髅王",
-    "NpcId": 35
+    "NpcId": 35,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -1336,7 +514,8 @@
       "Silver": 0
     },
     "Name": "骷髅王",
-    "NpcId": 36
+    "NpcId": 36,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1349,7 +528,8 @@
       "Silver": 0
     },
     "Name": "老人",
-    "NpcId": 37
+    "NpcId": 37,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1362,7 +542,8 @@
       "Silver": 0
     },
     "Name": "爆破专家",
-    "NpcId": 38
+    "NpcId": 38,
+    "Alias": []
   },
   {
     "Damage": 108,
@@ -1375,7 +556,8 @@
       "Silver": 30
     },
     "Name": "骨蛇",
-    "NpcId": 39
+    "NpcId": 39,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1388,7 +570,8 @@
       "Silver": 30
     },
     "Name": "骨蛇",
-    "NpcId": 40
+    "NpcId": 40,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -1401,7 +584,8 @@
       "Silver": 30
     },
     "Name": "骨蛇",
-    "NpcId": 41
+    "NpcId": 41,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -1414,11 +598,12 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 42
+    "NpcId": 42,
+    "Alias": []
   },
   {
     "Damage": 102,
-    "Description": "长有锋利牙齿的植物，喜欢吃人肉。能隐藏在泥里，并能够得着很远的地方。",
+    "Description": "一种长有锋利牙齿的植物，喜欢吃人肉。能隐藏在泥里，并能到达很远的地方。",
     "LifeMax": 330,
     "MonetaryValue": {
       "Copper": 75,
@@ -1427,7 +612,8 @@
       "Silver": 8
     },
     "Name": "食人怪",
-    "NpcId": 43
+    "NpcId": 43,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -1440,7 +626,8 @@
       "Silver": 6
     },
     "Name": "不死矿工",
-    "NpcId": 44
+    "NpcId": 44,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1453,7 +640,8 @@
       "Silver": 25
     },
     "Name": "蒂姆",
-    "NpcId": 45
+    "NpcId": 45,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -1466,7 +654,8 @@
       "Silver": 0
     },
     "Name": "兔兔",
-    "NpcId": 46
+    "NpcId": 46,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1479,7 +668,8 @@
       "Silver": 12
     },
     "Name": "腐化兔兔",
-    "NpcId": 47
+    "NpcId": 47,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -1492,7 +682,8 @@
       "Silver": 7
     },
     "Name": "鸟妖",
-    "NpcId": 48
+    "NpcId": 48,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -1505,7 +696,8 @@
       "Silver": 2
     },
     "Name": "洞穴蝙蝠",
-    "NpcId": 49
+    "NpcId": 49,
+    "Alias": []
   },
   {
     "Damage": 96,
@@ -1518,7 +710,8 @@
       "Silver": 50
     },
     "Name": "史莱姆王",
-    "NpcId": 50
+    "NpcId": 50,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1531,7 +724,8 @@
       "Silver": 2
     },
     "Name": "丛林蝙蝠",
-    "NpcId": 51
+    "NpcId": 51,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1544,7 +738,8 @@
       "Silver": 25
     },
     "Name": "骷髅博士",
-    "NpcId": 52
+    "NpcId": 52,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -1557,7 +752,8 @@
       "Silver": 25
     },
     "Name": "僵尸新郎",
-    "NpcId": 53
+    "NpcId": 53,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -1570,7 +766,8 @@
       "Silver": 0
     },
     "Name": "服装商",
-    "NpcId": 54
+    "NpcId": 54,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -1583,7 +780,8 @@
       "Silver": 0
     },
     "Name": "金鱼",
-    "NpcId": 55
+    "NpcId": 55,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -1596,7 +794,8 @@
       "Silver": 2
     },
     "Name": "抓人草",
-    "NpcId": 56
+    "NpcId": 56,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -1609,7 +808,8 @@
       "Silver": 12
     },
     "Name": "腐化金鱼",
-    "NpcId": 57
+    "NpcId": 57,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -1622,7 +822,8 @@
       "Silver": 1
     },
     "Name": "食人鱼",
-    "NpcId": 58
+    "NpcId": 58,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -1635,7 +836,8 @@
       "Silver": 3
     },
     "Name": "熔岩史莱姆",
-    "NpcId": 59
+    "NpcId": 59,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -1648,7 +850,8 @@
       "Silver": 3
     },
     "Name": "地狱蝙蝠",
-    "NpcId": 60
+    "NpcId": 60,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -1661,7 +864,8 @@
       "Silver": 1
     },
     "Name": "秃鹰",
-    "NpcId": 61
+    "NpcId": 61,
+    "Alias": []
   },
   {
     "Damage": 96,
@@ -1674,7 +878,8 @@
       "Silver": 7
     },
     "Name": "恶魔",
-    "NpcId": 62
+    "NpcId": 62,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -1687,7 +892,8 @@
       "Silver": 2
     },
     "Name": "蓝水母",
-    "NpcId": 63
+    "NpcId": 63,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -1700,7 +906,8 @@
       "Silver": 2
     },
     "Name": "粉水母",
-    "NpcId": 64
+    "NpcId": 64,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -1713,7 +920,8 @@
       "Silver": 10
     },
     "Name": "鲨鱼",
-    "NpcId": 65
+    "NpcId": 65,
+    "Alias": []
   },
   {
     "Damage": 96,
@@ -1726,7 +934,8 @@
       "Silver": 25
     },
     "Name": "巫毒恶魔",
-    "NpcId": 66
+    "NpcId": 66,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1739,7 +948,8 @@
       "Silver": 1
     },
     "Name": "螃蟹",
-    "NpcId": 67
+    "NpcId": 67,
+    "Alias": []
   },
   {
     "Damage": 3000,
@@ -1752,7 +962,8 @@
       "Silver": 0
     },
     "Name": "地牢守卫",
-    "NpcId": 68
+    "NpcId": 68,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -1765,7 +976,8 @@
       "Silver": 1
     },
     "Name": "蚁狮",
-    "NpcId": 69
+    "NpcId": 69,
+    "Alias": []
   },
   {
     "Damage": 96,
@@ -1778,7 +990,8 @@
       "Silver": 0
     },
     "Name": "尖刺球",
-    "NpcId": 70
+    "NpcId": 70,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -1791,7 +1004,8 @@
       "Silver": 3
     },
     "Name": "地牢史莱姆",
-    "NpcId": 71
+    "NpcId": 71,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -1804,7 +1018,8 @@
       "Silver": 0
     },
     "Name": "烈焰火轮",
-    "NpcId": 72
+    "NpcId": 72,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -1817,7 +1032,8 @@
       "Silver": 5
     },
     "Name": "哥布林侦察兵",
-    "NpcId": 73
+    "NpcId": 73,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -1830,7 +1046,8 @@
       "Silver": 0
     },
     "Name": "鸟",
-    "NpcId": 74
+    "NpcId": 74,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -1843,7 +1060,8 @@
       "Silver": 8
     },
     "Name": "妖精",
-    "NpcId": 75
+    "NpcId": 75,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -1856,7 +1074,8 @@
       "Silver": 0
     },
     "Name": "NPCName.None2",
-    "NpcId": 76
+    "NpcId": 76,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -1869,7 +1088,8 @@
       "Silver": 10
     },
     "Name": "装甲骷髅",
-    "NpcId": 77
+    "NpcId": 77,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -1882,7 +1102,8 @@
       "Silver": 15
     },
     "Name": "木乃伊",
-    "NpcId": 78
+    "NpcId": 78,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -1895,7 +1116,8 @@
       "Silver": 17
     },
     "Name": "暗黑木乃伊",
-    "NpcId": 79
+    "NpcId": 79,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -1908,7 +1130,8 @@
       "Silver": 17
     },
     "Name": "光明木乃伊",
-    "NpcId": 80
+    "NpcId": 80,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -1921,7 +1144,8 @@
       "Silver": 10
     },
     "Name": "腐化史莱姆",
-    "NpcId": 81
+    "NpcId": 81,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -1934,7 +1158,8 @@
       "Silver": 12
     },
     "Name": "幻灵",
-    "NpcId": 82
+    "NpcId": 82,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -1947,7 +1172,8 @@
       "Silver": 25
     },
     "Name": "诅咒锤",
-    "NpcId": 83
+    "NpcId": 83,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -1960,7 +1186,8 @@
       "Silver": 25
     },
     "Name": "附魔剑",
-    "NpcId": 84
+    "NpcId": 84,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -1973,7 +1200,8 @@
       "Silver": 0
     },
     "Name": "宝箱怪",
-    "NpcId": 85
+    "NpcId": 85,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -1986,7 +1214,8 @@
       "Silver": 25
     },
     "Name": "独角兽",
-    "NpcId": 86
+    "NpcId": 86,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -1999,7 +1228,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 87
+    "NpcId": 87,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2012,7 +1242,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 88
+    "NpcId": 88,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2025,7 +1256,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 89
+    "NpcId": 89,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2038,7 +1270,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 90
+    "NpcId": 90,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2051,7 +1284,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 91
+    "NpcId": 91,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2064,7 +1298,8 @@
       "Silver": 50
     },
     "Name": "飞龙",
-    "NpcId": 92
+    "NpcId": 92,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -2077,7 +1312,8 @@
       "Silver": 10
     },
     "Name": "巨型蝙蝠",
-    "NpcId": 93
+    "NpcId": 93,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -2090,7 +1326,8 @@
       "Silver": 12
     },
     "Name": "腐化者",
-    "NpcId": 94
+    "NpcId": 94,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -2103,7 +1340,8 @@
       "Silver": 7
     },
     "Name": "挖掘怪",
-    "NpcId": 95
+    "NpcId": 95,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -2116,7 +1354,8 @@
       "Silver": 7
     },
     "Name": "挖掘怪",
-    "NpcId": 96
+    "NpcId": 96,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -2129,7 +1368,8 @@
       "Silver": 7
     },
     "Name": "挖掘怪",
-    "NpcId": 97
+    "NpcId": 97,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -2142,7 +1382,8 @@
       "Silver": 17
     },
     "Name": "吞世怪",
-    "NpcId": 98
+    "NpcId": 98,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -2155,7 +1396,8 @@
       "Silver": 17
     },
     "Name": "吞世怪",
-    "NpcId": 99
+    "NpcId": 99,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2168,7 +1410,8 @@
       "Silver": 17
     },
     "Name": "吞世怪",
-    "NpcId": 100
+    "NpcId": 100,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -2181,7 +1424,8 @@
       "Silver": 15
     },
     "Name": "爬藤怪",
-    "NpcId": 101
+    "NpcId": 101,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -2194,7 +1438,8 @@
       "Silver": 12
     },
     "Name": "琵琶鱼",
-    "NpcId": 102
+    "NpcId": 102,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -2207,7 +1452,8 @@
       "Silver": 20
     },
     "Name": "绿水母",
-    "NpcId": 103
+    "NpcId": 103,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -2220,7 +1466,8 @@
       "Silver": 25
     },
     "Name": "狼人",
-    "NpcId": 104
+    "NpcId": 104,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2233,7 +1480,8 @@
       "Silver": 0
     },
     "Name": "受缚哥布林",
-    "NpcId": 105
+    "NpcId": 105,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2246,7 +1494,8 @@
       "Silver": 0
     },
     "Name": "受缚巫师",
-    "NpcId": 106
+    "NpcId": 106,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2259,7 +1508,8 @@
       "Silver": 0
     },
     "Name": "哥布林工匠",
-    "NpcId": 107
+    "NpcId": 107,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2272,7 +1522,8 @@
       "Silver": 0
     },
     "Name": "巫师",
-    "NpcId": 108
+    "NpcId": 108,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -2285,7 +1536,8 @@
       "Silver": 50
     },
     "Name": "小丑",
-    "NpcId": 109
+    "NpcId": 109,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -2298,7 +1550,8 @@
       "Silver": 10
     },
     "Name": "骷髅弓箭手",
-    "NpcId": 110
+    "NpcId": 110,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -2311,7 +1564,8 @@
       "Silver": 5
     },
     "Name": "哥布林弓箭手",
-    "NpcId": 111
+    "NpcId": 111,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -2324,7 +1578,8 @@
       "Silver": 0
     },
     "Name": "魔唾液",
-    "NpcId": 112
+    "NpcId": 112,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -2337,7 +1592,8 @@
       "Silver": 0
     },
     "Name": "血肉墙",
-    "NpcId": 113
+    "NpcId": 113,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -2350,7 +1606,8 @@
       "Silver": 0
     },
     "Name": "血肉墙",
-    "NpcId": 114
+    "NpcId": 114,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -2363,7 +1620,8 @@
       "Silver": 0
     },
     "Name": "饿鬼",
-    "NpcId": 115
+    "NpcId": 115,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -2376,7 +1634,8 @@
       "Silver": 0
     },
     "Name": "饿鬼",
-    "NpcId": 116
+    "NpcId": 116,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -2389,7 +1648,8 @@
       "Silver": 0
     },
     "Name": "血蛭",
-    "NpcId": 117
+    "NpcId": 117,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -2402,7 +1662,8 @@
       "Silver": 0
     },
     "Name": "血蛭",
-    "NpcId": 118
+    "NpcId": 118,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -2415,7 +1676,8 @@
       "Silver": 0
     },
     "Name": "血蛭",
-    "NpcId": 119
+    "NpcId": 119,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2428,7 +1690,8 @@
       "Silver": 15
     },
     "Name": "混沌精",
-    "NpcId": 120
+    "NpcId": 120,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -2441,7 +1704,8 @@
       "Silver": 0
     },
     "Name": "恶翅史莱姆",
-    "NpcId": 121
+    "NpcId": 121,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -2454,7 +1718,8 @@
       "Silver": 15
     },
     "Name": "腹足怪",
-    "NpcId": 122
+    "NpcId": 122,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2467,7 +1732,8 @@
       "Silver": 0
     },
     "Name": "受缚机械师",
-    "NpcId": 123
+    "NpcId": 123,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2480,7 +1746,8 @@
       "Silver": 0
     },
     "Name": "机械师",
-    "NpcId": 124
+    "NpcId": 124,
+    "Alias": []
   },
   {
     "Damage": 114,
@@ -2493,7 +1760,8 @@
       "Silver": 0
     },
     "Name": "激光眼",
-    "NpcId": 125
+    "NpcId": 125,
+    "Alias": []
   },
   {
     "Damage": 127,
@@ -2506,7 +1774,8 @@
       "Silver": 0
     },
     "Name": "魔焰眼",
-    "NpcId": 126
+    "NpcId": 126,
+    "Alias": []
   },
   {
     "Damage": 119,
@@ -2519,7 +1788,8 @@
       "Silver": 0
     },
     "Name": "机械骷髅王",
-    "NpcId": 127
+    "NpcId": 127,
+    "Alias": []
   },
   {
     "Damage": 76,
@@ -2532,7 +1802,8 @@
       "Silver": 0
     },
     "Name": "机械炮",
-    "NpcId": 128
+    "NpcId": 128,
+    "Alias": []
   },
   {
     "Damage": 142,
@@ -2545,7 +1816,8 @@
       "Silver": 0
     },
     "Name": "机械锯",
-    "NpcId": 129
+    "NpcId": 129,
+    "Alias": []
   },
   {
     "Damage": 132,
@@ -2558,7 +1830,8 @@
       "Silver": 0
     },
     "Name": "机械钳",
-    "NpcId": 130
+    "NpcId": 130,
+    "Alias": []
   },
   {
     "Damage": 73,
@@ -2571,7 +1844,8 @@
       "Silver": 0
     },
     "Name": "机械激光",
-    "NpcId": 131
+    "NpcId": 131,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -2584,7 +1858,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 132
+    "NpcId": 132,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2597,7 +1872,8 @@
       "Silver": 12
     },
     "Name": "游荡眼球怪",
-    "NpcId": 133
+    "NpcId": 133,
+    "Alias": []
   },
   {
     "Damage": 420,
@@ -2610,7 +1886,8 @@
       "Silver": 0
     },
     "Name": "毁灭者",
-    "NpcId": 134
+    "NpcId": 134,
+    "Alias": []
   },
   {
     "Damage": 140,
@@ -2623,7 +1900,8 @@
       "Silver": 0
     },
     "Name": "毁灭者",
-    "NpcId": 135
+    "NpcId": 135,
+    "Alias": []
   },
   {
     "Damage": 102,
@@ -2636,7 +1914,8 @@
       "Silver": 0
     },
     "Name": "毁灭者",
-    "NpcId": 136
+    "NpcId": 136,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -2649,7 +1928,8 @@
       "Silver": 12
     },
     "Name": "夜明蝙蝠",
-    "NpcId": 137
+    "NpcId": 137,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -2662,7 +1942,8 @@
       "Silver": 10
     },
     "Name": "夜明史莱姆",
-    "NpcId": 138
+    "NpcId": 138,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -2675,7 +1956,8 @@
       "Silver": 0
     },
     "Name": "探测怪",
-    "NpcId": 139
+    "NpcId": 139,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -2688,7 +1970,8 @@
       "Silver": 10
     },
     "Name": "装甲幻影魔",
-    "NpcId": 140
+    "NpcId": 140,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -2701,7 +1984,8 @@
       "Silver": 10
     },
     "Name": "毒泥",
-    "NpcId": 141
+    "NpcId": 141,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2714,7 +1998,8 @@
       "Silver": 0
     },
     "Name": "圣诞老人",
-    "NpcId": 142
+    "NpcId": 142,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -2727,7 +2012,8 @@
       "Silver": 10
     },
     "Name": "雪人暴徒",
-    "NpcId": 143
+    "NpcId": 143,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -2740,7 +2026,8 @@
       "Silver": 10
     },
     "Name": "戳刺先生",
-    "NpcId": 144
+    "NpcId": 144,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -2753,7 +2040,8 @@
       "Silver": 10
     },
     "Name": "巴拉雪人",
-    "NpcId": 145
+    "NpcId": 145,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -2766,7 +2054,8 @@
       "Silver": 0
     },
     "Name": "NPCName.None3",
-    "NpcId": 146
+    "NpcId": 146,
+    "Alias": []
   },
   {
     "Damage": 24,
@@ -2779,7 +2068,8 @@
       "Silver": 1
     },
     "Name": "冰雪史莱姆",
-    "NpcId": 147
+    "NpcId": 147,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -2792,7 +2082,8 @@
       "Silver": 0
     },
     "Name": "企鹅",
-    "NpcId": 148
+    "NpcId": 148,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -2805,7 +2096,8 @@
       "Silver": 0
     },
     "Name": "企鹅",
-    "NpcId": 149
+    "NpcId": 149,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -2818,7 +2110,8 @@
       "Silver": 6
     },
     "Name": "冰雪蝙蝠",
-    "NpcId": 150
+    "NpcId": 150,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -2831,7 +2124,8 @@
       "Silver": 10
     },
     "Name": "熔岩蝙蝠",
-    "NpcId": 151
+    "NpcId": 151,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -2844,7 +2138,8 @@
       "Silver": 10
     },
     "Name": "巨型飞狐",
-    "NpcId": 152
+    "NpcId": 152,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -2857,7 +2152,8 @@
       "Silver": 12
     },
     "Name": "巨型陆龟",
-    "NpcId": 153
+    "NpcId": 153,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -2870,7 +2166,8 @@
       "Silver": 11
     },
     "Name": "冰雪陆龟",
-    "NpcId": 154
+    "NpcId": 154,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -2883,7 +2180,8 @@
       "Silver": 25
     },
     "Name": "狼",
-    "NpcId": 155
+    "NpcId": 155,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -2896,7 +2194,8 @@
       "Silver": 30
     },
     "Name": "红魔鬼",
-    "NpcId": 156
+    "NpcId": 156,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -2909,7 +2208,8 @@
       "Silver": 12
     },
     "Name": "巨骨舌鱼",
-    "NpcId": 157
+    "NpcId": 157,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -2922,7 +2222,8 @@
       "Silver": 25
     },
     "Name": "吸血鬼",
-    "NpcId": 158
+    "NpcId": 158,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -2935,7 +2236,8 @@
       "Silver": 25
     },
     "Name": "吸血鬼",
-    "NpcId": 159
+    "NpcId": 159,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -2948,7 +2250,8 @@
       "Silver": 0
     },
     "Name": "松露人",
-    "NpcId": 160
+    "NpcId": 160,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -2961,7 +2264,8 @@
       "Silver": 2
     },
     "Name": "冰冻僵尸",
-    "NpcId": 161
+    "NpcId": 161,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -2974,7 +2278,8 @@
       "Silver": 15
     },
     "Name": "科学怪人",
-    "NpcId": 162
+    "NpcId": 162,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -2987,7 +2292,8 @@
       "Silver": 12
     },
     "Name": "黑隐士",
-    "NpcId": 163
+    "NpcId": 163,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3000,7 +2306,8 @@
       "Silver": 2
     },
     "Name": "爬墙蜘蛛",
-    "NpcId": 164
+    "NpcId": 164,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3013,7 +2320,8 @@
       "Silver": 2
     },
     "Name": "爬墙蜘蛛",
-    "NpcId": 165
+    "NpcId": 165,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3026,7 +2334,8 @@
       "Silver": 25
     },
     "Name": "沼泽怪",
-    "NpcId": 166
+    "NpcId": 166,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -3039,7 +2348,8 @@
       "Silver": 5
     },
     "Name": "亡灵维京海盗",
-    "NpcId": 167
+    "NpcId": 167,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3052,7 +2362,8 @@
       "Silver": 12
     },
     "Name": "腐化企鹅",
-    "NpcId": 168
+    "NpcId": 168,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -3065,7 +2376,8 @@
       "Silver": 37
     },
     "Name": "冰雪精",
-    "NpcId": 169
+    "NpcId": 169,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3078,7 +2390,8 @@
       "Silver": 50
     },
     "Name": "猪龙",
-    "NpcId": 170
+    "NpcId": 170,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3091,7 +2404,8 @@
       "Silver": 50
     },
     "Name": "猪龙",
-    "NpcId": 171
+    "NpcId": 171,
+    "Alias": []
   },
   {
     "Damage": 600,
@@ -3104,7 +2418,8 @@
       "Silver": 25
     },
     "Name": "符文巫师",
-    "NpcId": 172
+    "NpcId": 172,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -3117,7 +2432,8 @@
       "Silver": 2
     },
     "Name": "猩红喀迈拉",
-    "NpcId": 173
+    "NpcId": 173,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -3130,7 +2446,8 @@
       "Silver": 11
     },
     "Name": "蹦蹦兽",
-    "NpcId": 174
+    "NpcId": 174,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -3143,7 +2460,8 @@
       "Silver": 16
     },
     "Name": "愤怒捕手",
-    "NpcId": 175
+    "NpcId": 175,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3156,7 +2474,8 @@
       "Silver": 15
     },
     "Name": "苔藓黄蜂",
-    "NpcId": 176
+    "NpcId": 176,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -3169,7 +2488,8 @@
       "Silver": 12
     },
     "Name": "跳跳兽",
-    "NpcId": 177
+    "NpcId": 177,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3182,7 +2502,8 @@
       "Silver": 0
     },
     "Name": "蒸汽朋克人",
-    "NpcId": 178
+    "NpcId": 178,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -3195,7 +2516,8 @@
       "Silver": 25
     },
     "Name": "猩红斧",
-    "NpcId": 179
+    "NpcId": 179,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3208,7 +2530,8 @@
       "Silver": 50
     },
     "Name": "猪龙",
-    "NpcId": 180
+    "NpcId": 180,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -3221,7 +2544,8 @@
       "Silver": 5
     },
     "Name": "脸怪",
-    "NpcId": 181
+    "NpcId": 181,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -3234,7 +2558,8 @@
       "Silver": 12
     },
     "Name": "恶心浮游怪",
-    "NpcId": 182
+    "NpcId": 182,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -3247,7 +2572,8 @@
       "Silver": 10
     },
     "Name": "猩红史莱姆",
-    "NpcId": 183
+    "NpcId": 183,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -3260,7 +2586,8 @@
       "Silver": 5
     },
     "Name": "尖刺冰雪史莱姆",
-    "NpcId": 184
+    "NpcId": 184,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -3273,7 +2600,8 @@
       "Silver": 5
     },
     "Name": "小雪怪",
-    "NpcId": 185
+    "NpcId": 185,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -3286,7 +2614,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 186
+    "NpcId": 186,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -3299,7 +2628,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 187
+    "NpcId": 187,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -3312,7 +2642,8 @@
       "Silver": 2
     },
     "Name": "僵尸",
-    "NpcId": 188
+    "NpcId": 188,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -3325,7 +2656,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 189
+    "NpcId": 189,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -3338,7 +2670,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 190
+    "NpcId": 190,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -3351,7 +2684,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 191
+    "NpcId": 191,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -3364,7 +2698,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 192
+    "NpcId": 192,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3377,7 +2712,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 193
+    "NpcId": 193,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -3390,7 +2726,8 @@
       "Silver": 1
     },
     "Name": "恶魔眼",
-    "NpcId": 194
+    "NpcId": 194,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -3403,7 +2740,8 @@
       "Silver": 0
     },
     "Name": "迷失女孩",
-    "NpcId": 195
+    "NpcId": 195,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -3416,7 +2754,8 @@
       "Silver": 0
     },
     "Name": "宁芙",
-    "NpcId": 196
+    "NpcId": 196,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -3429,7 +2768,8 @@
       "Silver": 12
     },
     "Name": "装甲维京海盗",
-    "NpcId": 197
+    "NpcId": 197,
+    "Alias": []
   },
   {
     "Damage": 114,
@@ -3442,7 +2782,8 @@
       "Silver": 16
     },
     "Name": "丛林蜥蜴",
-    "NpcId": 198
+    "NpcId": 198,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -3455,7 +2796,8 @@
       "Silver": 16
     },
     "Name": "丛林蜥蜴",
-    "NpcId": 199
+    "NpcId": 199,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -3468,7 +2810,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 200
+    "NpcId": 200,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3481,7 +2824,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 201
+    "NpcId": 201,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -3494,7 +2838,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 202
+    "NpcId": 202,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -3507,7 +2852,8 @@
       "Silver": 2
     },
     "Name": "骷髅",
-    "NpcId": 203
+    "NpcId": 203,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -3520,7 +2866,8 @@
       "Silver": 7
     },
     "Name": "尖刺丛林史莱姆",
-    "NpcId": 204
+    "NpcId": 204,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3533,7 +2880,8 @@
       "Silver": 15
     },
     "Name": "蛾",
-    "NpcId": 205
+    "NpcId": 205,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -3546,7 +2894,8 @@
       "Silver": 12
     },
     "Name": "冰雪人鱼",
-    "NpcId": 206
+    "NpcId": 206,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3559,7 +2908,8 @@
       "Silver": 0
     },
     "Name": "染料商",
-    "NpcId": 207
+    "NpcId": 207,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3572,7 +2922,8 @@
       "Silver": 0
     },
     "Name": "派对女孩",
-    "NpcId": 208
+    "NpcId": 208,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3585,7 +2936,8 @@
       "Silver": 0
     },
     "Name": "机器侠",
-    "NpcId": 209
+    "NpcId": 209,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -3598,7 +2950,8 @@
       "Silver": 0
     },
     "Name": "蜜蜂",
-    "NpcId": 210
+    "NpcId": 210,
+    "Alias": []
   },
   {
     "Damage": 27,
@@ -3611,7 +2964,8 @@
       "Silver": 0
     },
     "Name": "蜜蜂",
-    "NpcId": 211
+    "NpcId": 211,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -3624,7 +2978,8 @@
       "Silver": 17
     },
     "Name": "海盗水手",
-    "NpcId": 212
+    "NpcId": 212,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -3637,7 +2992,8 @@
       "Silver": 25
     },
     "Name": "私船海盗",
-    "NpcId": 213
+    "NpcId": 213,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3650,7 +3006,8 @@
       "Silver": 25
     },
     "Name": "海盗神射手",
-    "NpcId": 214
+    "NpcId": 214,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -3663,7 +3020,8 @@
       "Silver": 37
     },
     "Name": "海盗弩手",
-    "NpcId": 215
+    "NpcId": 215,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -3676,7 +3034,8 @@
       "Silver": 50
     },
     "Name": "海盗船长",
-    "NpcId": 216
+    "NpcId": 216,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3689,7 +3048,8 @@
       "Silver": 1
     },
     "Name": "胭脂虫",
-    "NpcId": 217
+    "NpcId": 217,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3702,7 +3062,8 @@
       "Silver": 1
     },
     "Name": "青壳虫",
-    "NpcId": 218
+    "NpcId": 218,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3715,7 +3076,8 @@
       "Silver": 1
     },
     "Name": "紫胶虫",
-    "NpcId": 219
+    "NpcId": 219,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -3728,11 +3090,12 @@
       "Silver": 1
     },
     "Name": "海蜗牛",
-    "NpcId": 220
+    "NpcId": 220,
+    "Alias": []
   },
   {
     "Damage": 60,
-    "Description": "长有触角的海洋生物，在遇到威胁时会喷出浓稠的黑墨水。人们会因为美学目的而收集这种墨水。",
+    "Description": "长有触手的海洋生物，在遇到威胁时会喷出浓稠的黑墨水。人们会因为美学目的而收集这种墨水。",
     "LifeMax": 90,
     "MonetaryValue": {
       "Copper": 50,
@@ -3741,7 +3104,8 @@
       "Silver": 2
     },
     "Name": "乌贼",
-    "NpcId": 221
+    "NpcId": 221,
+    "Alias": []
   },
   {
     "Damage": 81,
@@ -3754,7 +3118,8 @@
       "Silver": 50
     },
     "Name": "蜂王",
-    "NpcId": 222
+    "NpcId": 222,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -3767,7 +3132,8 @@
       "Silver": 1
     },
     "Name": "雨衣僵尸",
-    "NpcId": 223
+    "NpcId": 223,
+    "Alias": []
   },
   {
     "Damage": 27,
@@ -3780,7 +3146,8 @@
       "Silver": 7
     },
     "Name": "飞鱼",
-    "NpcId": 224
+    "NpcId": 224,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -3793,7 +3160,8 @@
       "Silver": 5
     },
     "Name": "雨伞史莱姆",
-    "NpcId": 225
+    "NpcId": 225,
+    "Alias": []
   },
   {
     "Damage": 255,
@@ -3806,7 +3174,8 @@
       "Silver": 10
     },
     "Name": "飞蛇",
-    "NpcId": 226
+    "NpcId": 226,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3819,7 +3188,8 @@
       "Silver": 0
     },
     "Name": "油漆工",
-    "NpcId": 227
+    "NpcId": 227,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3832,7 +3202,8 @@
       "Silver": 0
     },
     "Name": "巫医",
-    "NpcId": 228
+    "NpcId": 228,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -3845,7 +3216,8 @@
       "Silver": 0
     },
     "Name": "海盗",
-    "NpcId": 229
+    "NpcId": 229,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -3858,7 +3230,8 @@
       "Silver": 0
     },
     "Name": "金鱼",
-    "NpcId": 230
+    "NpcId": 230,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -3871,7 +3244,8 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 231
+    "NpcId": 231,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -3884,7 +3258,8 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 232
+    "NpcId": 232,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3897,7 +3272,8 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 233
+    "NpcId": 233,
+    "Alias": []
   },
   {
     "Damage": 96,
@@ -3910,7 +3286,8 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 234
+    "NpcId": 234,
+    "Alias": []
   },
   {
     "Damage": 102,
@@ -3923,7 +3300,8 @@
       "Silver": 5
     },
     "Name": "黄蜂",
-    "NpcId": 235
+    "NpcId": 235,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -3936,7 +3314,8 @@
       "Silver": 25
     },
     "Name": "丛林蜘蛛",
-    "NpcId": 236
+    "NpcId": 236,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -3949,7 +3328,8 @@
       "Silver": 25
     },
     "Name": "丛林蜘蛛",
-    "NpcId": 237
+    "NpcId": 237,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -3962,7 +3342,8 @@
       "Silver": 12
     },
     "Name": "黑隐士",
-    "NpcId": 238
+    "NpcId": 238,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3975,7 +3356,8 @@
       "Silver": 3
     },
     "Name": "血爬虫",
-    "NpcId": 239
+    "NpcId": 239,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -3988,7 +3370,8 @@
       "Silver": 3
     },
     "Name": "血爬虫",
-    "NpcId": 240
+    "NpcId": 240,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -4001,7 +3384,8 @@
       "Silver": 12
     },
     "Name": "嗜血怪",
-    "NpcId": 241
+    "NpcId": 241,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -4014,7 +3398,8 @@
       "Silver": 20
     },
     "Name": "血水母",
-    "NpcId": 242
+    "NpcId": 242,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4027,7 +3412,8 @@
       "Silver": 75
     },
     "Name": "冰雪巨人",
-    "NpcId": 243
+    "NpcId": 243,
+    "Alias": []
   },
   {
     "Damage": 255,
@@ -4040,7 +3426,8 @@
       "Silver": 50
     },
     "Name": "彩虹史莱姆",
-    "NpcId": 244
+    "NpcId": 244,
+    "Alias": []
   },
   {
     "Damage": 172,
@@ -4053,7 +3440,8 @@
       "Silver": 50
     },
     "Name": "石巨人",
-    "NpcId": 245
+    "NpcId": 245,
+    "Alias": []
   },
   {
     "Damage": 153,
@@ -4066,7 +3454,8 @@
       "Silver": 0
     },
     "Name": "石巨人头",
-    "NpcId": 246
+    "NpcId": 246,
+    "Alias": []
   },
   {
     "Damage": 141,
@@ -4079,7 +3468,8 @@
       "Silver": 0
     },
     "Name": "石巨人之拳",
-    "NpcId": 247
+    "NpcId": 247,
+    "Alias": []
   },
   {
     "Damage": 141,
@@ -4092,7 +3482,8 @@
       "Silver": 0
     },
     "Name": "石巨人之拳",
-    "NpcId": 248
+    "NpcId": 248,
+    "Alias": []
   },
   {
     "Damage": 192,
@@ -4105,7 +3496,8 @@
       "Silver": 0
     },
     "Name": "石巨人头",
-    "NpcId": 249
+    "NpcId": 249,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -4118,7 +3510,8 @@
       "Silver": 7
     },
     "Name": "愤怒雨云怪",
-    "NpcId": 250
+    "NpcId": 250,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -4131,7 +3524,8 @@
       "Silver": 25
     },
     "Name": "眼怪",
-    "NpcId": 251
+    "NpcId": 251,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -4144,7 +3538,8 @@
       "Silver": 12
     },
     "Name": "鹦鹉",
-    "NpcId": 252
+    "NpcId": 252,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -4157,7 +3552,8 @@
       "Silver": 37
     },
     "Name": "死神",
-    "NpcId": 253
+    "NpcId": 253,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -4170,7 +3566,8 @@
       "Silver": 25
     },
     "Name": "孢子僵尸",
-    "NpcId": 254
+    "NpcId": 254,
+    "Alias": []
   },
   {
     "Damage": 114,
@@ -4183,7 +3580,8 @@
       "Silver": 30
     },
     "Name": "孢子僵尸",
-    "NpcId": 255
+    "NpcId": 255,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -4196,7 +3594,8 @@
       "Silver": 30
     },
     "Name": "蘑菇鱼",
-    "NpcId": 256
+    "NpcId": 256,
+    "Alias": []
   },
   {
     "Damage": 114,
@@ -4209,7 +3608,8 @@
       "Silver": 32
     },
     "Name": "歪尾真菌",
-    "NpcId": 257
+    "NpcId": 257,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4222,7 +3622,8 @@
       "Silver": 37
     },
     "Name": "蘑菇瓢虫",
-    "NpcId": 258
+    "NpcId": 258,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -4235,7 +3636,8 @@
       "Silver": 8
     },
     "Name": "真菌球怪",
-    "NpcId": 259
+    "NpcId": 259,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4248,7 +3650,8 @@
       "Silver": 31
     },
     "Name": "巨型真菌球怪",
-    "NpcId": 260
+    "NpcId": 260,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -4261,7 +3664,8 @@
       "Silver": 0
     },
     "Name": "真菌孢子",
-    "NpcId": 261
+    "NpcId": 261,
+    "Alias": []
   },
   {
     "Damage": 172,
@@ -4274,7 +3678,8 @@
       "Silver": 50
     },
     "Name": "世纪之花",
-    "NpcId": 262
+    "NpcId": 262,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4287,7 +3692,8 @@
       "Silver": 0
     },
     "Name": "世纪之花钩",
-    "NpcId": 263
+    "NpcId": 263,
+    "Alias": []
   },
   {
     "Damage": 206,
@@ -4300,7 +3706,8 @@
       "Silver": 0
     },
     "Name": "世纪之花触手",
-    "NpcId": 264
+    "NpcId": 264,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4313,7 +3720,8 @@
       "Silver": 0
     },
     "Name": "孢子",
-    "NpcId": 265
+    "NpcId": 265,
+    "Alias": []
   },
   {
     "Damage": 81,
@@ -4326,7 +3734,8 @@
       "Silver": 50
     },
     "Name": "克苏鲁之脑",
-    "NpcId": 266
+    "NpcId": 266,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -4339,7 +3748,8 @@
       "Silver": 0
     },
     "Name": "飞眼怪",
-    "NpcId": 267
+    "NpcId": 267,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -4352,7 +3762,8 @@
       "Silver": 11
     },
     "Name": "灵液黏黏怪",
-    "NpcId": 268
+    "NpcId": 268,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4365,7 +3776,8 @@
       "Silver": 25
     },
     "Name": "生锈装甲骷髅",
-    "NpcId": 269
+    "NpcId": 269,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -4378,7 +3790,8 @@
       "Silver": 25
     },
     "Name": "生锈装甲骷髅",
-    "NpcId": 270
+    "NpcId": 270,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4391,7 +3804,8 @@
       "Silver": 25
     },
     "Name": "生锈装甲骷髅",
-    "NpcId": 271
+    "NpcId": 271,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -4404,7 +3818,8 @@
       "Silver": 25
     },
     "Name": "生锈装甲骷髅",
-    "NpcId": 272
+    "NpcId": 272,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -4417,7 +3832,8 @@
       "Silver": 25
     },
     "Name": "蓝装甲骷髅",
-    "NpcId": 273
+    "NpcId": 273,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -4430,7 +3846,8 @@
       "Silver": 25
     },
     "Name": "蓝装甲骷髅",
-    "NpcId": 274
+    "NpcId": 274,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -4443,7 +3860,8 @@
       "Silver": 25
     },
     "Name": "蓝装甲骷髅",
-    "NpcId": 275
+    "NpcId": 275,
+    "Alias": []
   },
   {
     "Damage": 255,
@@ -4456,7 +3874,8 @@
       "Silver": 25
     },
     "Name": "蓝装甲骷髅",
-    "NpcId": 276
+    "NpcId": 276,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4469,7 +3888,8 @@
       "Silver": 25
     },
     "Name": "地狱装甲骷髅",
-    "NpcId": 277
+    "NpcId": 277,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -4482,7 +3902,8 @@
       "Silver": 25
     },
     "Name": "地狱装甲骷髅",
-    "NpcId": 278
+    "NpcId": 278,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -4495,7 +3916,8 @@
       "Silver": 25
     },
     "Name": "地狱装甲骷髅",
-    "NpcId": 279
+    "NpcId": 279,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -4508,7 +3930,8 @@
       "Silver": 25
     },
     "Name": "地狱装甲骷髅",
-    "NpcId": 280
+    "NpcId": 280,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -4521,7 +3944,8 @@
       "Silver": 37
     },
     "Name": "褴褛邪教徒法师",
-    "NpcId": 281
+    "NpcId": 281,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -4534,7 +3958,8 @@
       "Silver": 37
     },
     "Name": "褴褛邪教徒法师",
-    "NpcId": 282
+    "NpcId": 282,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -4547,7 +3972,8 @@
       "Silver": 37
     },
     "Name": "死灵法师",
-    "NpcId": 283
+    "NpcId": 283,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -4560,7 +3986,8 @@
       "Silver": 37
     },
     "Name": "死灵法师",
-    "NpcId": 284
+    "NpcId": 284,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -4573,7 +4000,8 @@
       "Silver": 37
     },
     "Name": "魔教徒",
-    "NpcId": 285
+    "NpcId": 285,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4586,7 +4014,8 @@
       "Silver": 37
     },
     "Name": "魔教徒",
-    "NpcId": 286
+    "NpcId": 286,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -4599,7 +4028,8 @@
       "Silver": 50
     },
     "Name": "骷髅李",
-    "NpcId": 287
+    "NpcId": 287,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -4612,7 +4042,8 @@
       "Silver": 12
     },
     "Name": "地牢幽魂",
-    "NpcId": 288
+    "NpcId": 288,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4625,7 +4056,8 @@
       "Silver": 3
     },
     "Name": "巨型诅咒骷髅头",
-    "NpcId": 289
+    "NpcId": 289,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -4638,7 +4070,8 @@
       "Silver": 50
     },
     "Name": "圣骑士",
-    "NpcId": 290
+    "NpcId": 290,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4651,7 +4084,8 @@
       "Silver": 25
     },
     "Name": "骷髅狙击手",
-    "NpcId": 291
+    "NpcId": 291,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4664,7 +4098,8 @@
       "Silver": 25
     },
     "Name": "骷髅特警",
-    "NpcId": 292
+    "NpcId": 292,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -4677,7 +4112,8 @@
       "Silver": 25
     },
     "Name": "骷髅突击手",
-    "NpcId": 293
+    "NpcId": 293,
+    "Alias": []
   },
   {
     "Damage": 102,
@@ -4690,7 +4126,8 @@
       "Silver": 3
     },
     "Name": "愤怒骷髅怪",
-    "NpcId": 294
+    "NpcId": 294,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -4703,7 +4140,8 @@
       "Silver": 3
     },
     "Name": "愤怒骷髅怪",
-    "NpcId": 295
+    "NpcId": 295,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -4716,7 +4154,8 @@
       "Silver": 3
     },
     "Name": "愤怒骷髅怪",
-    "NpcId": 296
+    "NpcId": 296,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -4729,7 +4168,8 @@
       "Silver": 0
     },
     "Name": "冠蓝鸦",
-    "NpcId": 297
+    "NpcId": 297,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -4742,7 +4182,8 @@
       "Silver": 0
     },
     "Name": "红雀",
-    "NpcId": 298
+    "NpcId": 298,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -4755,7 +4196,8 @@
       "Silver": 0
     },
     "Name": "松鼠",
-    "NpcId": 299
+    "NpcId": 299,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -4768,7 +4210,8 @@
       "Silver": 0
     },
     "Name": "老鼠",
-    "NpcId": 300
+    "NpcId": 300,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -4781,7 +4224,8 @@
       "Silver": 1
     },
     "Name": "乌鸦",
-    "NpcId": 301
+    "NpcId": 301,
+    "Alias": []
   },
   {
     "Damage": 21,
@@ -4794,7 +4238,8 @@
       "Silver": 0
     },
     "Name": "史莱姆",
-    "NpcId": 302
+    "NpcId": 302,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -4807,7 +4252,8 @@
       "Silver": 0
     },
     "Name": "兔兔",
-    "NpcId": 303
+    "NpcId": 303,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -4820,7 +4266,8 @@
       "Silver": 12
     },
     "Name": "弹跳杰克南瓜灯",
-    "NpcId": 304
+    "NpcId": 304,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -4833,7 +4280,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 305
+    "NpcId": 305,
+    "Alias": []
   },
   {
     "Damage": 117,
@@ -4846,7 +4294,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 306
+    "NpcId": 306,
+    "Alias": []
   },
   {
     "Damage": 175,
@@ -4859,7 +4308,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 307
+    "NpcId": 307,
+    "Alias": []
   },
   {
     "Damage": 148,
@@ -4872,7 +4322,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 308
+    "NpcId": 308,
+    "Alias": []
   },
   {
     "Damage": 117,
@@ -4885,7 +4336,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 309
+    "NpcId": 309,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -4898,7 +4350,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 310
+    "NpcId": 310,
+    "Alias": []
   },
   {
     "Damage": 117,
@@ -4911,7 +4364,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 311
+    "NpcId": 311,
+    "Alias": []
   },
   {
     "Damage": 175,
@@ -4924,7 +4378,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 312
+    "NpcId": 312,
+    "Alias": []
   },
   {
     "Damage": 148,
@@ -4937,7 +4392,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 313
+    "NpcId": 313,
+    "Alias": []
   },
   {
     "Damage": 117,
@@ -4950,7 +4406,8 @@
       "Silver": 30
     },
     "Name": "稻草人",
-    "NpcId": 314
+    "NpcId": 314,
+    "Alias": []
   },
   {
     "Damage": 292,
@@ -4963,7 +4420,8 @@
       "Silver": 50
     },
     "Name": "无头骑士",
-    "NpcId": 315
+    "NpcId": 315,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -4976,7 +4434,8 @@
       "Silver": 2
     },
     "Name": "鬼魂",
-    "NpcId": 316
+    "NpcId": 316,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -4989,7 +4448,8 @@
       "Silver": 2
     },
     "Name": "恶魔眼",
-    "NpcId": 317
+    "NpcId": 317,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -5002,7 +4462,8 @@
       "Silver": 2
     },
     "Name": "恶魔眼",
-    "NpcId": 318
+    "NpcId": 318,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -5015,7 +4476,8 @@
       "Silver": 2
     },
     "Name": "僵尸",
-    "NpcId": 319
+    "NpcId": 319,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -5028,7 +4490,8 @@
       "Silver": 2
     },
     "Name": "僵尸",
-    "NpcId": 320
+    "NpcId": 320,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -5041,7 +4504,8 @@
       "Silver": 3
     },
     "Name": "僵尸",
-    "NpcId": 321
+    "NpcId": 321,
+    "Alias": []
   },
   {
     "Damage": 69,
@@ -5054,7 +4518,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 322
+    "NpcId": 322,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -5067,7 +4532,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 323
+    "NpcId": 323,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -5080,7 +4546,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 324
+    "NpcId": 324,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -5093,7 +4560,8 @@
       "Silver": 50
     },
     "Name": "哀木",
-    "NpcId": 325
+    "NpcId": 325,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5106,7 +4574,8 @@
       "Silver": 50
     },
     "Name": "树精",
-    "NpcId": 326
+    "NpcId": 326,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -5119,7 +4588,8 @@
       "Silver": 50
     },
     "Name": "南瓜王",
-    "NpcId": 327
+    "NpcId": 327,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -5132,7 +4602,8 @@
       "Silver": 0
     },
     "Name": "南瓜王",
-    "NpcId": 328
+    "NpcId": 328,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -5145,7 +4616,8 @@
       "Silver": 75
     },
     "Name": "地狱犬",
-    "NpcId": 329
+    "NpcId": 329,
+    "Alias": []
   },
   {
     "Damage": 202,
@@ -5158,7 +4630,8 @@
       "Silver": 12
     },
     "Name": "胡闹鬼",
-    "NpcId": 330
+    "NpcId": 330,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -5171,7 +4644,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 331
+    "NpcId": 331,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -5184,7 +4658,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 332
+    "NpcId": 332,
+    "Alias": []
   },
   {
     "Damage": 21,
@@ -5197,7 +4672,8 @@
       "Silver": 0
     },
     "Name": "史莱姆",
-    "NpcId": 333
+    "NpcId": 333,
+    "Alias": []
   },
   {
     "Damage": 18,
@@ -5210,7 +4686,8 @@
       "Silver": 0
     },
     "Name": "史莱姆",
-    "NpcId": 334
+    "NpcId": 334,
+    "Alias": []
   },
   {
     "Damage": 24,
@@ -5223,7 +4700,8 @@
       "Silver": 0
     },
     "Name": "史莱姆",
-    "NpcId": 335
+    "NpcId": 335,
+    "Alias": []
   },
   {
     "Damage": 15,
@@ -5236,7 +4714,8 @@
       "Silver": 0
     },
     "Name": "史莱姆",
-    "NpcId": 336
+    "NpcId": 336,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5249,7 +4728,8 @@
       "Silver": 0
     },
     "Name": "兔兔",
-    "NpcId": 337
+    "NpcId": 337,
+    "Alias": []
   },
   {
     "Damage": 146,
@@ -5262,7 +4742,8 @@
       "Silver": 30
     },
     "Name": "僵尸精灵",
-    "NpcId": 338
+    "NpcId": 338,
+    "Alias": []
   },
   {
     "Damage": 117,
@@ -5275,7 +4756,8 @@
       "Silver": 30
     },
     "Name": "僵尸精灵",
-    "NpcId": 339
+    "NpcId": 339,
+    "Alias": []
   },
   {
     "Damage": 175,
@@ -5288,7 +4770,8 @@
       "Silver": 30
     },
     "Name": "僵尸精灵",
-    "NpcId": 340
+    "NpcId": 340,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5301,7 +4784,8 @@
       "Silver": 50
     },
     "Name": "礼物宝箱怪",
-    "NpcId": 341
+    "NpcId": 341,
+    "Alias": []
   },
   {
     "Damage": 202,
@@ -5314,7 +4798,8 @@
       "Silver": 45
     },
     "Name": "姜饼人",
-    "NpcId": 342
+    "NpcId": 342,
+    "Alias": []
   },
   {
     "Damage": 315,
@@ -5327,7 +4812,8 @@
       "Silver": 75
     },
     "Name": "雪兽",
-    "NpcId": 343
+    "NpcId": 343,
+    "Alias": []
   },
   {
     "Damage": 247,
@@ -5340,7 +4826,8 @@
       "Silver": 50
     },
     "Name": "常绿尖叫怪",
-    "NpcId": 344
+    "NpcId": 344,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -5353,7 +4840,8 @@
       "Silver": 50
     },
     "Name": "冰雪女王",
-    "NpcId": 345
+    "NpcId": 345,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -5366,7 +4854,8 @@
       "Silver": 50
     },
     "Name": "圣诞坦克",
-    "NpcId": 346
+    "NpcId": 346,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -5379,7 +4868,8 @@
       "Silver": 25
     },
     "Name": "精灵直升机",
-    "NpcId": 347
+    "NpcId": 347,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -5392,7 +4882,8 @@
       "Silver": 37
     },
     "Name": "胡桃夹士",
-    "NpcId": 348
+    "NpcId": 348,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5405,7 +4896,8 @@
       "Silver": 37
     },
     "Name": "胡桃夹士",
-    "NpcId": 349
+    "NpcId": 349,
+    "Alias": []
   },
   {
     "Damage": 157,
@@ -5418,7 +4910,8 @@
       "Silver": 22
     },
     "Name": "精灵弓箭手",
-    "NpcId": 350
+    "NpcId": 350,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5431,7 +4924,8 @@
       "Silver": 75
     },
     "Name": "坎卜斯",
-    "NpcId": 351
+    "NpcId": 351,
+    "Alias": []
   },
   {
     "Damage": 168,
@@ -5444,7 +4938,8 @@
       "Silver": 12
     },
     "Name": "雪花怪",
-    "NpcId": 352
+    "NpcId": 352,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -5457,7 +4952,8 @@
       "Silver": 0
     },
     "Name": "发型师",
-    "NpcId": 353
+    "NpcId": 353,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -5470,7 +4966,8 @@
       "Silver": 0
     },
     "Name": "被网住的发型师",
-    "NpcId": 354
+    "NpcId": 354,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5483,7 +4980,8 @@
       "Silver": 0
     },
     "Name": "萤火虫",
-    "NpcId": 355
+    "NpcId": 355,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5496,7 +4994,8 @@
       "Silver": 0
     },
     "Name": "蝴蝶",
-    "NpcId": 356
+    "NpcId": 356,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5509,11 +5008,12 @@
       "Silver": 0
     },
     "Name": "蠕虫",
-    "NpcId": 357
+    "NpcId": 357,
+    "Alias": []
   },
   {
     "Damage": 0,
-    "Description": "夜晚出现在受祝福之处，闪烁的蓝绿光照亮天空。鱼特别容易被它们所吸引。",
+    "Description": "夜晚出现在福佑之地，闪烁的蓝绿光照亮天空。鱼特别容易被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -5522,7 +5022,8 @@
       "Silver": 0
     },
     "Name": "荧光虫",
-    "NpcId": 358
+    "NpcId": 358,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5535,7 +5036,8 @@
       "Silver": 0
     },
     "Name": "蜗牛",
-    "NpcId": 359
+    "NpcId": 359,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5548,7 +5050,8 @@
       "Silver": 0
     },
     "Name": "发光蜗牛",
-    "NpcId": 360
+    "NpcId": 360,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5561,7 +5064,8 @@
       "Silver": 0
     },
     "Name": "青蛙",
-    "NpcId": 361
+    "NpcId": 361,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5574,7 +5078,8 @@
       "Silver": 0
     },
     "Name": "鸭",
-    "NpcId": 362
+    "NpcId": 362,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5587,7 +5092,8 @@
       "Silver": 0
     },
     "Name": "鸭",
-    "NpcId": 363
+    "NpcId": 363,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5600,7 +5106,8 @@
       "Silver": 0
     },
     "Name": "鸭",
-    "NpcId": 364
+    "NpcId": 364,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5613,7 +5120,8 @@
       "Silver": 0
     },
     "Name": "鸭",
-    "NpcId": 365
+    "NpcId": 365,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5626,7 +5134,8 @@
       "Silver": 0
     },
     "Name": "蝎子",
-    "NpcId": 366
+    "NpcId": 366,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5639,7 +5148,8 @@
       "Silver": 0
     },
     "Name": "蝎子",
-    "NpcId": 367
+    "NpcId": 367,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -5652,7 +5162,8 @@
       "Silver": 0
     },
     "Name": "旅商",
-    "NpcId": 368
+    "NpcId": 368,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -5665,7 +5176,8 @@
       "Silver": 0
     },
     "Name": "渔夫",
-    "NpcId": 369
+    "NpcId": 369,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -5678,7 +5190,8 @@
       "Silver": 50
     },
     "Name": "猪龙鱼公爵",
-    "NpcId": 370
+    "NpcId": 370,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5691,7 +5204,8 @@
       "Silver": 0
     },
     "Name": "爆炸泡泡",
-    "NpcId": 371
+    "NpcId": 371,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5704,7 +5218,8 @@
       "Silver": 0
     },
     "Name": "鲨鱼龙",
-    "NpcId": 372
+    "NpcId": 372,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -5717,7 +5232,8 @@
       "Silver": 0
     },
     "Name": "鲨鱼龙",
-    "NpcId": 373
+    "NpcId": 373,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5730,7 +5246,8 @@
       "Silver": 0
     },
     "Name": "松露虫",
-    "NpcId": 374
+    "NpcId": 374,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5743,7 +5260,8 @@
       "Silver": 0
     },
     "Name": "松露虫",
-    "NpcId": 375
+    "NpcId": 375,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -5756,7 +5274,8 @@
       "Silver": 0
     },
     "Name": "沉睡渔夫",
-    "NpcId": 376
+    "NpcId": 376,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5769,7 +5288,8 @@
       "Silver": 0
     },
     "Name": "蚱蜢",
-    "NpcId": 377
+    "NpcId": 377,
+    "Alias": []
   },
   {
     "Damage": 360,
@@ -5782,7 +5302,8 @@
       "Silver": 11
     },
     "Name": "嗒嗒牙齿炸弹",
-    "NpcId": 378
+    "NpcId": 378,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -5795,7 +5316,8 @@
       "Silver": 25
     },
     "Name": "邪教徒弓箭手",
-    "NpcId": 379
+    "NpcId": 379,
+    "Alias": []
   },
   {
     "Damage": 135,
@@ -5808,7 +5330,8 @@
       "Silver": 25
     },
     "Name": "邪教徒弓箭手",
-    "NpcId": 380
+    "NpcId": 380,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -5821,7 +5344,8 @@
       "Silver": 25
     },
     "Name": "扰脑怪",
-    "NpcId": 381
+    "NpcId": 381,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -5834,7 +5358,8 @@
       "Silver": 25
     },
     "Name": "激光枪手",
-    "NpcId": 382
+    "NpcId": 382,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5847,7 +5372,8 @@
       "Silver": 30
     },
     "Name": "火星军官",
-    "NpcId": 383
+    "NpcId": 383,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -5860,7 +5386,8 @@
       "Silver": 0
     },
     "Name": "泡泡护盾",
-    "NpcId": 384
+    "NpcId": 384,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -5873,7 +5400,8 @@
       "Silver": 15
     },
     "Name": "灰咕噜",
-    "NpcId": 385
+    "NpcId": 385,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -5886,7 +5414,8 @@
       "Silver": 30
     },
     "Name": "火星工程师",
-    "NpcId": 386
+    "NpcId": 386,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -5899,7 +5428,8 @@
       "Silver": 0
     },
     "Name": "特斯拉炮塔",
-    "NpcId": 387
+    "NpcId": 387,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -5912,7 +5442,8 @@
       "Silver": 25
     },
     "Name": "火星飞船",
-    "NpcId": 388
+    "NpcId": 388,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -5925,7 +5456,8 @@
       "Silver": 30
     },
     "Name": "电击怪",
-    "NpcId": 389
+    "NpcId": 389,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -5938,7 +5470,8 @@
       "Silver": 30
     },
     "Name": "鳞甲怪枪手",
-    "NpcId": 390
+    "NpcId": 390,
+    "Alias": []
   },
   {
     "Damage": 255,
@@ -5951,7 +5484,8 @@
       "Silver": 30
     },
     "Name": "鳞甲怪",
-    "NpcId": 391
+    "NpcId": 391,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -5964,7 +5498,8 @@
       "Silver": 0
     },
     "Name": "火星飞碟",
-    "NpcId": 392
+    "NpcId": 392,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -5977,7 +5512,8 @@
       "Silver": 0
     },
     "Name": "火星飞碟炮塔",
-    "NpcId": 393
+    "NpcId": 393,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -5990,7 +5526,8 @@
       "Silver": 0
     },
     "Name": "火星飞碟炮",
-    "NpcId": 394
+    "NpcId": 394,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6003,7 +5540,8 @@
       "Silver": 0
     },
     "Name": "火星飞碟",
-    "NpcId": 395
+    "NpcId": 395,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6016,7 +5554,8 @@
       "Silver": 0
     },
     "Name": "月亮领主",
-    "NpcId": 396
+    "NpcId": 396,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6029,7 +5568,8 @@
       "Silver": 0
     },
     "Name": "月亮领主手",
-    "NpcId": 397
+    "NpcId": 397,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6042,7 +5582,8 @@
       "Silver": 0
     },
     "Name": "月亮领主心脏",
-    "NpcId": 398
+    "NpcId": 398,
+    "Alias": []
   },
   {
     "Damage": 15,
@@ -6055,7 +5596,8 @@
       "Silver": 0
     },
     "Name": "火星探测器",
-    "NpcId": 399
+    "NpcId": 399,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -6068,7 +5610,8 @@
       "Silver": 0
     },
     "Name": "克苏鲁真眼",
-    "NpcId": 400
+    "NpcId": 400,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6081,7 +5624,8 @@
       "Silver": 0
     },
     "Name": "月蛭凝块",
-    "NpcId": 401
+    "NpcId": 401,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6094,7 +5638,8 @@
       "Silver": 0
     },
     "Name": "银河织妖",
-    "NpcId": 402
+    "NpcId": 402,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6107,7 +5652,8 @@
       "Silver": 0
     },
     "Name": "NPCName.StardustWormBody",
-    "NpcId": 403
+    "NpcId": 403,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6120,7 +5666,8 @@
       "Silver": 0
     },
     "Name": "NPCName.StardustWormTail",
-    "NpcId": 404
+    "NpcId": 404,
+    "Alias": []
   },
   {
     "Damage": 360,
@@ -6133,7 +5680,8 @@
       "Silver": 0
     },
     "Name": "星细胞",
-    "NpcId": 405
+    "NpcId": 405,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6146,7 +5694,8 @@
       "Silver": 0
     },
     "Name": "迷你星细胞",
-    "NpcId": 406
+    "NpcId": 406,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6159,7 +5708,8 @@
       "Silver": 0
     },
     "Name": "流体入侵怪",
-    "NpcId": 407
+    "NpcId": 407,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6172,7 +5722,8 @@
       "Silver": 0
     },
     "Name": "NPCName.StardustJellyfishSmall",
-    "NpcId": 408
+    "NpcId": 408,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6185,7 +5736,8 @@
       "Silver": 0
     },
     "Name": "闪耀炮手",
-    "NpcId": 409
+    "NpcId": 409,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6198,7 +5750,8 @@
       "Silver": 0
     },
     "Name": "闪耀怪",
-    "NpcId": 410
+    "NpcId": 410,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6211,7 +5764,8 @@
       "Silver": 0
     },
     "Name": "观星怪",
-    "NpcId": 411
+    "NpcId": 411,
+    "Alias": []
   },
   {
     "Damage": 360,
@@ -6224,7 +5778,8 @@
       "Silver": 0
     },
     "Name": "千足蜈蚣",
-    "NpcId": 412
+    "NpcId": 412,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6237,7 +5792,8 @@
       "Silver": 0
     },
     "Name": "千足蜈蚣",
-    "NpcId": 413
+    "NpcId": 413,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -6250,7 +5806,8 @@
       "Silver": 0
     },
     "Name": "千足蜈蚣",
-    "NpcId": 414
+    "NpcId": 414,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -6263,7 +5820,8 @@
       "Silver": 0
     },
     "Name": "火龙怪",
-    "NpcId": 415
+    "NpcId": 415,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6276,7 +5834,8 @@
       "Silver": 0
     },
     "Name": "火龙怪骑士",
-    "NpcId": 416
+    "NpcId": 416,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6289,7 +5848,8 @@
       "Silver": 0
     },
     "Name": "火滚怪",
-    "NpcId": 417
+    "NpcId": 417,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6302,7 +5862,8 @@
       "Silver": 0
     },
     "Name": "流星火怪",
-    "NpcId": 418
+    "NpcId": 418,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -6315,7 +5876,8 @@
       "Silver": 0
     },
     "Name": "火月怪",
-    "NpcId": 419
+    "NpcId": 419,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -6328,7 +5890,8 @@
       "Silver": 0
     },
     "Name": "星云浮怪",
-    "NpcId": 420
+    "NpcId": 420,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6341,7 +5904,8 @@
       "Silver": 0
     },
     "Name": "吮脑怪",
-    "NpcId": 421
+    "NpcId": 421,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -6354,7 +5918,8 @@
       "Silver": 0
     },
     "Name": "进化兽",
-    "NpcId": 423
+    "NpcId": 423,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6367,7 +5932,8 @@
       "Silver": 0
     },
     "Name": "预言怪",
-    "NpcId": 424
+    "NpcId": 424,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -6380,7 +5946,8 @@
       "Silver": 0
     },
     "Name": "漩泥怪",
-    "NpcId": 425
+    "NpcId": 425,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -6393,7 +5960,8 @@
       "Silver": 0
     },
     "Name": "异星蜂王",
-    "NpcId": 426
+    "NpcId": 426,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -6406,7 +5974,8 @@
       "Silver": 0
     },
     "Name": "异星黄蜂",
-    "NpcId": 427
+    "NpcId": 427,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -6419,7 +5988,8 @@
       "Silver": 0
     },
     "Name": "异星幼虫",
-    "NpcId": 428
+    "NpcId": 428,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -6432,7 +6002,8 @@
       "Silver": 0
     },
     "Name": "星旋怪",
-    "NpcId": 429
+    "NpcId": 429,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -6445,7 +6016,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 430
+    "NpcId": 430,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -6458,7 +6030,8 @@
       "Silver": 2
     },
     "Name": "冰冻僵尸",
-    "NpcId": 431
+    "NpcId": 431,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -6471,7 +6044,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 432
+    "NpcId": 432,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -6484,7 +6058,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 433
+    "NpcId": 433,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -6497,7 +6072,8 @@
       "Silver": 2
     },
     "Name": "僵尸",
-    "NpcId": 434
+    "NpcId": 434,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -6510,7 +6086,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 435
+    "NpcId": 435,
+    "Alias": []
   },
   {
     "Damage": 36,
@@ -6523,7 +6100,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 436
+    "NpcId": 436,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6536,7 +6114,8 @@
       "Silver": 0
     },
     "Name": "神秘碑牌",
-    "NpcId": 437
+    "NpcId": 437,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6549,7 +6128,8 @@
       "Silver": 0
     },
     "Name": "拜月教忠教徒",
-    "NpcId": 438
+    "NpcId": 438,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6562,7 +6142,8 @@
       "Silver": 0
     },
     "Name": "拜月教邪教徒",
-    "NpcId": 439
+    "NpcId": 439,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6575,7 +6156,8 @@
       "Silver": 0
     },
     "Name": "拜月教邪教徒",
-    "NpcId": 440
+    "NpcId": 440,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6588,7 +6170,8 @@
       "Silver": 0
     },
     "Name": "金鸟",
-    "NpcId": 442
+    "NpcId": 442,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6601,7 +6184,8 @@
       "Silver": 0
     },
     "Name": "金兔",
-    "NpcId": 443
+    "NpcId": 443,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6614,7 +6198,8 @@
       "Silver": 0
     },
     "Name": "金蝴蝶",
-    "NpcId": 444
+    "NpcId": 444,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6627,7 +6212,8 @@
       "Silver": 0
     },
     "Name": "金蛙",
-    "NpcId": 445
+    "NpcId": 445,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6640,7 +6226,8 @@
       "Silver": 0
     },
     "Name": "金蚱蜢",
-    "NpcId": 446
+    "NpcId": 446,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6653,7 +6240,8 @@
       "Silver": 0
     },
     "Name": "金老鼠",
-    "NpcId": 447
+    "NpcId": 447,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -6666,7 +6254,8 @@
       "Silver": 0
     },
     "Name": "金蠕虫",
-    "NpcId": 448
+    "NpcId": 448,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -6679,7 +6268,8 @@
       "Silver": 2
     },
     "Name": "骷髅",
-    "NpcId": 449
+    "NpcId": 449,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -6692,7 +6282,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 450
+    "NpcId": 450,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -6705,7 +6296,8 @@
       "Silver": 3
     },
     "Name": "骷髅",
-    "NpcId": 451
+    "NpcId": 451,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -6718,7 +6310,8 @@
       "Silver": 2
     },
     "Name": "骷髅",
-    "NpcId": 452
+    "NpcId": 452,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -6731,7 +6324,8 @@
       "Silver": 0
     },
     "Name": "骷髅商人",
-    "NpcId": 453
+    "NpcId": 453,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -6744,7 +6338,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 454
+    "NpcId": 454,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6757,7 +6352,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 455
+    "NpcId": 455,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6770,7 +6366,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 456
+    "NpcId": 456,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6783,7 +6380,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 457
+    "NpcId": 457,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6796,7 +6394,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 458
+    "NpcId": 458,
+    "Alias": []
   },
   {
     "Damage": 112,
@@ -6809,7 +6408,8 @@
       "Silver": 0
     },
     "Name": "幻影龙",
-    "NpcId": 459
+    "NpcId": 459,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6822,7 +6422,8 @@
       "Silver": 25
     },
     "Name": "屠夫",
-    "NpcId": 460
+    "NpcId": 460,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -6835,7 +6436,8 @@
       "Silver": 25
     },
     "Name": "水月怪",
-    "NpcId": 461
+    "NpcId": 461,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6848,7 +6450,8 @@
       "Silver": 15
     },
     "Name": "弗里茨",
-    "NpcId": 462
+    "NpcId": 462,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -6861,7 +6464,8 @@
       "Silver": 75
     },
     "Name": "钉头",
-    "NpcId": 463
+    "NpcId": 463,
+    "Alias": []
   },
   {
     "Damage": 63,
@@ -6874,7 +6478,8 @@
       "Silver": 12
     },
     "Name": "毒兔兔",
-    "NpcId": 464
+    "NpcId": 464,
+    "Alias": []
   },
   {
     "Damage": 93,
@@ -6887,7 +6492,8 @@
       "Silver": 12
     },
     "Name": "毒金鱼",
-    "NpcId": 465
+    "NpcId": 465,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -6900,7 +6506,8 @@
       "Silver": 37
     },
     "Name": "变态人",
-    "NpcId": 466
+    "NpcId": 466,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -6913,7 +6520,8 @@
       "Silver": 22
     },
     "Name": "致命球",
-    "NpcId": 467
+    "NpcId": 467,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -6926,7 +6534,8 @@
       "Silver": 32
     },
     "Name": "苍蝇人博士",
-    "NpcId": 468
+    "NpcId": 468,
+    "Alias": []
   },
   {
     "Damage": 204,
@@ -6939,7 +6548,8 @@
       "Silver": 32
     },
     "Name": "攀爬魔",
-    "NpcId": 469
+    "NpcId": 469,
+    "Alias": []
   },
   {
     "Damage": 63,
@@ -6952,7 +6562,8 @@
       "Silver": 12
     },
     "Name": "毒企鹅",
-    "NpcId": 470
+    "NpcId": 470,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -6965,7 +6576,8 @@
       "Silver": 25
     },
     "Name": "哥布林术士",
-    "NpcId": 471
+    "NpcId": 471,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -6978,7 +6590,8 @@
       "Silver": 0
     },
     "Name": "暗影焰幻鬼",
-    "NpcId": 472
+    "NpcId": 472,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -6991,7 +6604,8 @@
       "Silver": 50
     },
     "Name": "腐化宝箱怪",
-    "NpcId": 473
+    "NpcId": 473,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -7004,7 +6618,8 @@
       "Silver": 50
     },
     "Name": "猩红宝箱怪",
-    "NpcId": 474
+    "NpcId": 474,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -7017,7 +6632,8 @@
       "Silver": 50
     },
     "Name": "神圣宝箱怪",
-    "NpcId": 475
+    "NpcId": 475,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -7030,7 +6646,8 @@
       "Silver": 50
     },
     "Name": "丛林宝箱怪",
-    "NpcId": 476
+    "NpcId": 476,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -7043,7 +6660,8 @@
       "Silver": 50
     },
     "Name": "蛾怪",
-    "NpcId": 477
+    "NpcId": 477,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7056,7 +6674,8 @@
       "Silver": 0
     },
     "Name": "蛾怪蛋",
-    "NpcId": 478
+    "NpcId": 478,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -7069,7 +6688,8 @@
       "Silver": 0
     },
     "Name": "蛾怪宝宝",
-    "NpcId": 479
+    "NpcId": 479,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -7082,7 +6702,8 @@
       "Silver": 25
     },
     "Name": "蛇发女妖",
-    "NpcId": 480
+    "NpcId": 480,
+    "Alias": []
   },
   {
     "Damage": 66,
@@ -7095,7 +6716,8 @@
       "Silver": 7
     },
     "Name": "装甲步兵",
-    "NpcId": 481
+    "NpcId": 481,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -7108,7 +6730,8 @@
       "Silver": 12
     },
     "Name": "花岗岩巨人",
-    "NpcId": 482
+    "NpcId": 482,
+    "Alias": []
   },
   {
     "Damage": 72,
@@ -7121,7 +6744,8 @@
       "Silver": 25
     },
     "Name": "花岗精",
-    "NpcId": 483
+    "NpcId": 483,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7134,7 +6758,8 @@
       "Silver": 0
     },
     "Name": "附魔夜行者",
-    "NpcId": 484
+    "NpcId": 484,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7147,7 +6772,8 @@
       "Silver": 0
     },
     "Name": "蛆虫",
-    "NpcId": 485
+    "NpcId": 485,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7160,7 +6786,8 @@
       "Silver": 0
     },
     "Name": "鼻涕虫",
-    "NpcId": 486
+    "NpcId": 486,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7173,7 +6800,8 @@
       "Silver": 0
     },
     "Name": "蚜虫",
-    "NpcId": 487
+    "NpcId": 487,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7186,7 +6814,8 @@
       "Silver": 0
     },
     "Name": "训练假人",
-    "NpcId": 488
+    "NpcId": 488,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -7199,7 +6828,8 @@
       "Silver": 3
     },
     "Name": "血腥僵尸",
-    "NpcId": 489
+    "NpcId": 489,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -7212,7 +6842,8 @@
       "Silver": 3
     },
     "Name": "滴滴怪",
-    "NpcId": 490
+    "NpcId": 490,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7225,7 +6856,8 @@
       "Silver": 0
     },
     "Name": "荷兰飞盗船",
-    "NpcId": 491
+    "NpcId": 491,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -7238,7 +6870,8 @@
       "Silver": 0
     },
     "Name": "荷兰大炮",
-    "NpcId": 492
+    "NpcId": 492,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7251,7 +6884,8 @@
       "Silver": 0
     },
     "Name": "星尘柱",
-    "NpcId": 493
+    "NpcId": 493,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -7264,7 +6898,8 @@
       "Silver": 3
     },
     "Name": "龙虾",
-    "NpcId": 494
+    "NpcId": 494,
+    "Alias": []
   },
   {
     "Damage": 84,
@@ -7277,7 +6912,8 @@
       "Silver": 3
     },
     "Name": "龙虾",
-    "NpcId": 495
+    "NpcId": 495,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -7290,7 +6926,8 @@
       "Silver": 3
     },
     "Name": "巨型卷壳怪",
-    "NpcId": 496
+    "NpcId": 496,
+    "Alias": []
   },
   {
     "Damage": 48,
@@ -7303,7 +6940,8 @@
       "Silver": 3
     },
     "Name": "巨型卷壳怪",
-    "NpcId": 497
+    "NpcId": 497,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7316,7 +6954,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 498
+    "NpcId": 498,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7329,7 +6968,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 499
+    "NpcId": 499,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7342,7 +6982,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 500
+    "NpcId": 500,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7355,7 +6996,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 501
+    "NpcId": 501,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7368,7 +7010,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 502
+    "NpcId": 502,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7381,7 +7024,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 503
+    "NpcId": 503,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7394,7 +7038,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 504
+    "NpcId": 504,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7407,7 +7052,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 505
+    "NpcId": 505,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7420,7 +7066,8 @@
       "Silver": 3
     },
     "Name": "蝾螈",
-    "NpcId": 506
+    "NpcId": 506,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7433,7 +7080,8 @@
       "Silver": 0
     },
     "Name": "星云柱",
-    "NpcId": 507
+    "NpcId": 507,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7446,7 +7094,8 @@
       "Silver": 0
     },
     "Name": "星旋柱",
-    "NpcId": 422
+    "NpcId": 422,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -7459,7 +7108,8 @@
       "Silver": 0
     },
     "Name": "税收官",
-    "NpcId": 441
+    "NpcId": 441,
+    "Alias": []
   },
   {
     "Damage": 114,
@@ -7472,7 +7122,8 @@
       "Silver": 4
     },
     "Name": "巨型蚁狮马",
-    "NpcId": 508
+    "NpcId": 508,
+    "Alias": []
   },
   {
     "Damage": 102,
@@ -7485,7 +7136,8 @@
       "Silver": 4
     },
     "Name": "巨型蚁狮蜂",
-    "NpcId": 509
+    "NpcId": 509,
+    "Alias": []
   },
   {
     "Damage": 174,
@@ -7498,7 +7150,8 @@
       "Silver": 17
     },
     "Name": "沙虫",
-    "NpcId": 510
+    "NpcId": 510,
+    "Alias": []
   },
   {
     "Damage": 162,
@@ -7511,7 +7164,8 @@
       "Silver": 17
     },
     "Name": "沙虫",
-    "NpcId": 511
+    "NpcId": 511,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -7524,7 +7178,8 @@
       "Silver": 17
     },
     "Name": "沙虫",
-    "NpcId": 512
+    "NpcId": 512,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -7537,7 +7192,8 @@
       "Silver": 3
     },
     "Name": "墓穴爬虫",
-    "NpcId": 513
+    "NpcId": 513,
+    "Alias": []
   },
   {
     "Damage": 21,
@@ -7550,7 +7206,8 @@
       "Silver": 3
     },
     "Name": "墓穴爬虫",
-    "NpcId": 514
+    "NpcId": 514,
+    "Alias": []
   },
   {
     "Damage": 21,
@@ -7563,7 +7220,8 @@
       "Silver": 3
     },
     "Name": "墓穴爬虫",
-    "NpcId": 515
+    "NpcId": 515,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -7576,7 +7234,8 @@
       "Silver": 0
     },
     "Name": "耀斑",
-    "NpcId": 516
+    "NpcId": 516,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7589,7 +7248,8 @@
       "Silver": 0
     },
     "Name": "日耀柱",
-    "NpcId": 517
+    "NpcId": 517,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -7602,7 +7262,8 @@
       "Silver": 0
     },
     "Name": "火龙战士",
-    "NpcId": 518
+    "NpcId": 518,
+    "Alias": []
   },
   {
     "Damage": 360,
@@ -7615,7 +7276,8 @@
       "Silver": 0
     },
     "Name": "日耀碎片",
-    "NpcId": 519
+    "NpcId": 519,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -7628,7 +7290,8 @@
       "Silver": 0
     },
     "Name": "火星走妖",
-    "NpcId": 520
+    "NpcId": 520,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -7641,7 +7304,8 @@
       "Silver": 0
     },
     "Name": "远古幻影妖",
-    "NpcId": 521
+    "NpcId": 521,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -7654,7 +7318,8 @@
       "Silver": 0
     },
     "Name": "远古光明妖",
-    "NpcId": 522
+    "NpcId": 522,
+    "Alias": []
   },
   {
     "Damage": 67,
@@ -7667,7 +7332,8 @@
       "Silver": 0
     },
     "Name": "远古噩运妖",
-    "NpcId": 523
+    "NpcId": 523,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -7680,7 +7346,8 @@
       "Silver": 12
     },
     "Name": "食尸鬼",
-    "NpcId": 524
+    "NpcId": 524,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -7693,11 +7360,12 @@
       "Silver": 16
     },
     "Name": "腐恶食尸鬼",
-    "NpcId": 525
+    "NpcId": 525,
+    "Alias": []
   },
   {
     "Damage": 192,
-    "Description": "被猩红所感染的食尸鬼嘴里会流出邪恶的灵液，每次啃咬都能削弱敌人的防御力。",
+    "Description": "被猩红所感染的食尸鬼嘴里会流出邪恶的灵液，每次啃咬都能削弱敌人的防御。",
     "LifeMax": 660,
     "MonetaryValue": {
       "Copper": 25,
@@ -7706,7 +7374,8 @@
       "Silver": 16
     },
     "Name": "红染食尸鬼",
-    "NpcId": 526
+    "NpcId": 526,
+    "Alias": []
   },
   {
     "Damage": 162,
@@ -7719,7 +7388,8 @@
       "Silver": 18
     },
     "Name": "神梦食尸鬼",
-    "NpcId": 527
+    "NpcId": 527,
+    "Alias": []
   },
   {
     "Damage": 156,
@@ -7732,7 +7402,8 @@
       "Silver": 15
     },
     "Name": "拉弥亚",
-    "NpcId": 528
+    "NpcId": 528,
+    "Alias": []
   },
   {
     "Damage": 156,
@@ -7745,7 +7416,8 @@
       "Silver": 15
     },
     "Name": "拉弥亚",
-    "NpcId": 529
+    "NpcId": 529,
+    "Alias": []
   },
   {
     "Damage": 198,
@@ -7758,7 +7430,8 @@
       "Silver": 15
     },
     "Name": "沙贼",
-    "NpcId": 530
+    "NpcId": 530,
+    "Alias": []
   },
   {
     "Damage": 198,
@@ -7771,7 +7444,8 @@
       "Silver": 15
     },
     "Name": "沙贼",
-    "NpcId": 531
+    "NpcId": 531,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -7784,7 +7458,8 @@
       "Silver": 20
     },
     "Name": "蛇蜥怪",
-    "NpcId": 532
+    "NpcId": 532,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -7797,7 +7472,8 @@
       "Silver": 30
     },
     "Name": "沙漠幽魂",
-    "NpcId": 533
+    "NpcId": 533,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -7810,7 +7486,8 @@
       "Silver": 0
     },
     "Name": "痛苦亡魂",
-    "NpcId": 534
+    "NpcId": 534,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -7823,7 +7500,8 @@
       "Silver": 1
     },
     "Name": "尖刺史莱姆",
-    "NpcId": 535
+    "NpcId": 535,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -7836,7 +7514,8 @@
       "Silver": 25
     },
     "Name": "僵尸新娘",
-    "NpcId": 536
+    "NpcId": 536,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -7849,7 +7528,8 @@
       "Silver": 1
     },
     "Name": "沙史莱姆",
-    "NpcId": 537
+    "NpcId": 537,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7862,7 +7542,8 @@
       "Silver": 0
     },
     "Name": "红松鼠",
-    "NpcId": 538
+    "NpcId": 538,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7875,7 +7556,8 @@
       "Silver": 0
     },
     "Name": "金松鼠",
-    "NpcId": 539
+    "NpcId": 539,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7888,7 +7570,8 @@
       "Silver": 0
     },
     "Name": "兔兔",
-    "NpcId": 540
+    "NpcId": 540,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -7901,7 +7584,8 @@
       "Silver": 75
     },
     "Name": "沙尘精",
-    "NpcId": 541
+    "NpcId": 541,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -7914,7 +7598,8 @@
       "Silver": 10
     },
     "Name": "沙鲨",
-    "NpcId": 542
+    "NpcId": 542,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -7927,7 +7612,8 @@
       "Silver": 10
     },
     "Name": "噬骨沙鲨",
-    "NpcId": 543
+    "NpcId": 543,
+    "Alias": []
   },
   {
     "Damage": 192,
@@ -7940,7 +7626,8 @@
       "Silver": 10
     },
     "Name": "戮血沙鲨",
-    "NpcId": 544
+    "NpcId": 544,
+    "Alias": []
   },
   {
     "Damage": 162,
@@ -7953,7 +7640,8 @@
       "Silver": 10
     },
     "Name": "水晶沙鲨",
-    "NpcId": 545
+    "NpcId": 545,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -7966,7 +7654,8 @@
       "Silver": 2
     },
     "Name": "愤怒翻滚怪",
-    "NpcId": 546
+    "NpcId": 546,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7979,7 +7668,8 @@
       "Silver": 0
     },
     "Name": "???",
-    "NpcId": 547
+    "NpcId": 547,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -7992,7 +7682,8 @@
       "Silver": 0
     },
     "Name": "永恒水晶",
-    "NpcId": 548
+    "NpcId": 548,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8005,7 +7696,8 @@
       "Silver": 0
     },
     "Name": "神秘传送门",
-    "NpcId": 549
+    "NpcId": 549,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -8018,7 +7710,8 @@
       "Silver": 0
     },
     "Name": "酒馆老板",
-    "NpcId": 550
+    "NpcId": 550,
+    "Alias": []
   },
   {
     "Damage": 156,
@@ -8031,7 +7724,8 @@
       "Silver": 0
     },
     "Name": "双足翼龙",
-    "NpcId": 551
+    "NpcId": 551,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -8044,7 +7738,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林",
-    "NpcId": 552
+    "NpcId": 552,
+    "Alias": []
   },
   {
     "Damage": 138,
@@ -8057,7 +7752,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林",
-    "NpcId": 553
+    "NpcId": 553,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -8070,7 +7766,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林",
-    "NpcId": 554
+    "NpcId": 554,
+    "Alias": []
   },
   {
     "Damage": 78,
@@ -8083,7 +7780,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林投弹手",
-    "NpcId": 555
+    "NpcId": 555,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -8096,7 +7794,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林投弹手",
-    "NpcId": 556
+    "NpcId": 556,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -8109,7 +7808,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚哥布林投弹手",
-    "NpcId": 557
+    "NpcId": 557,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -8122,7 +7822,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚飞龙",
-    "NpcId": 558
+    "NpcId": 558,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -8135,7 +7836,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚飞龙",
-    "NpcId": 559
+    "NpcId": 559,
+    "Alias": []
   },
   {
     "Damage": 300,
@@ -8148,7 +7850,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚飞龙",
-    "NpcId": 560
+    "NpcId": 560,
+    "Alias": []
   },
   {
     "Damage": 90,
@@ -8161,7 +7864,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚标枪投掷怪",
-    "NpcId": 561
+    "NpcId": 561,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -8174,7 +7878,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚标枪投掷怪",
-    "NpcId": 562
+    "NpcId": 562,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -8187,7 +7892,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚标枪投掷怪",
-    "NpcId": 563
+    "NpcId": 563,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -8200,7 +7906,8 @@
       "Silver": 0
     },
     "Name": "黑暗魔法师",
-    "NpcId": 564
+    "NpcId": 564,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -8213,7 +7920,8 @@
       "Silver": 0
     },
     "Name": "黑暗魔法师",
-    "NpcId": 565
+    "NpcId": 565,
+    "Alias": []
   },
   {
     "Damage": 54,
@@ -8226,7 +7934,8 @@
       "Silver": 0
     },
     "Name": "撒旦骷髅",
-    "NpcId": 566
+    "NpcId": 566,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -8239,7 +7948,8 @@
       "Silver": 0
     },
     "Name": "撒旦骷髅",
-    "NpcId": 567
+    "NpcId": 567,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -8252,11 +7962,12 @@
       "Silver": 0
     },
     "Name": "枯萎兽",
-    "NpcId": 568
+    "NpcId": 568,
+    "Alias": []
   },
   {
     "Damage": 240,
-    "Description": "枯萎兽通过它们背上的水晶散发出一种削弱防御力的光环。扎根后，它们会迅速治疗。",
+    "Description": "枯萎兽通过它们背上的水晶散发出一种削弱防御的光环。扎根后，它们会迅速治疗。",
     "LifeMax": 3570,
     "MonetaryValue": {
       "Copper": 0,
@@ -8265,7 +7976,8 @@
       "Silver": 0
     },
     "Name": "枯萎兽",
-    "NpcId": 569
+    "NpcId": 569,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -8278,7 +7990,8 @@
       "Silver": 0
     },
     "Name": "德拉克龙",
-    "NpcId": 570
+    "NpcId": 570,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -8291,7 +8004,8 @@
       "Silver": 0
     },
     "Name": "德拉克龙",
-    "NpcId": 571
+    "NpcId": 571,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -8304,7 +8018,8 @@
       "Silver": 0
     },
     "Name": "小妖魔",
-    "NpcId": 572
+    "NpcId": 572,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -8317,7 +8032,8 @@
       "Silver": 0
     },
     "Name": "小妖魔",
-    "NpcId": 573
+    "NpcId": 573,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -8330,7 +8046,8 @@
       "Silver": 0
     },
     "Name": "小妖魔滑翔怪",
-    "NpcId": 574
+    "NpcId": 574,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -8343,11 +8060,12 @@
       "Silver": 0
     },
     "Name": "小妖魔滑翔怪",
-    "NpcId": 575
+    "NpcId": 575,
+    "Alias": []
   },
   {
     "Damage": 210,
-    "Description": "来自撒旦军队中的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
+    "Description": "来自撒旦军队的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
     "LifeMax": 12750,
     "MonetaryValue": {
       "Copper": 0,
@@ -8356,11 +8074,12 @@
       "Silver": 0
     },
     "Name": "食人魔",
-    "NpcId": 576
+    "NpcId": 576,
+    "Alias": []
   },
   {
     "Damage": 270,
-    "Description": "来自撒旦军队中的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
+    "Description": "来自撒旦军队的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
     "LifeMax": 33150,
     "MonetaryValue": {
       "Copper": 0,
@@ -8369,7 +8088,8 @@
       "Silver": 0
     },
     "Name": "食人魔",
-    "NpcId": 577
+    "NpcId": 577,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -8382,7 +8102,8 @@
       "Silver": 0
     },
     "Name": "埃特尼亚荧光虫",
-    "NpcId": 578
+    "NpcId": 578,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -8395,7 +8116,8 @@
       "Silver": 0
     },
     "Name": "昏迷男子",
-    "NpcId": 579
+    "NpcId": 579,
+    "Alias": []
   },
   {
     "Damage": 75,
@@ -8408,7 +8130,8 @@
       "Silver": 2
     },
     "Name": "蚁狮马",
-    "NpcId": 580
+    "NpcId": 580,
+    "Alias": []
   },
   {
     "Damage": 87,
@@ -8421,7 +8144,8 @@
       "Silver": 2
     },
     "Name": "蚁狮蜂",
-    "NpcId": 581
+    "NpcId": 581,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -8434,7 +8158,8 @@
       "Silver": 1
     },
     "Name": "蚁狮幼虫",
-    "NpcId": 582
+    "NpcId": 582,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8447,7 +8172,8 @@
       "Silver": 0
     },
     "Name": "粉仙灵",
-    "NpcId": 583
+    "NpcId": 583,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8460,7 +8186,8 @@
       "Silver": 0
     },
     "Name": "绿仙灵",
-    "NpcId": 584
+    "NpcId": 584,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8473,7 +8200,8 @@
       "Silver": 0
     },
     "Name": "蓝仙灵",
-    "NpcId": 585
+    "NpcId": 585,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -8486,7 +8214,8 @@
       "Silver": 25
     },
     "Name": "僵尸人鱼",
-    "NpcId": 586
+    "NpcId": 586,
+    "Alias": []
   },
   {
     "Damage": 105,
@@ -8499,7 +8228,8 @@
       "Silver": 25
     },
     "Name": "游荡眼球怪鱼",
-    "NpcId": 587
+    "NpcId": 587,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -8512,7 +8242,8 @@
       "Silver": 0
     },
     "Name": "高尔夫球手",
-    "NpcId": 588
+    "NpcId": 588,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -8525,7 +8256,8 @@
       "Silver": 0
     },
     "Name": "高尔夫球手",
-    "NpcId": 589
+    "NpcId": 589,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -8538,7 +8270,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 590
+    "NpcId": 590,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -8551,7 +8284,8 @@
       "Silver": 1
     },
     "Name": "僵尸",
-    "NpcId": 591
+    "NpcId": 591,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8564,7 +8298,8 @@
       "Silver": 0
     },
     "Name": "金金鱼",
-    "NpcId": 592
+    "NpcId": 592,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8577,7 +8312,8 @@
       "Silver": 0
     },
     "Name": "金金鱼",
-    "NpcId": 593
+    "NpcId": 593,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8590,7 +8326,8 @@
       "Silver": 0
     },
     "Name": "大风气球怪",
-    "NpcId": 594
+    "NpcId": 594,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8603,7 +8340,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 595
+    "NpcId": 595,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8616,7 +8354,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 596
+    "NpcId": 596,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8629,7 +8368,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 597
+    "NpcId": 597,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8642,7 +8382,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 598
+    "NpcId": 598,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8655,7 +8396,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 599
+    "NpcId": 599,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8668,7 +8410,8 @@
       "Silver": 0
     },
     "Name": "蜻蜓",
-    "NpcId": 600
+    "NpcId": 600,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8681,7 +8424,8 @@
       "Silver": 0
     },
     "Name": "金蜻蜓",
-    "NpcId": 601
+    "NpcId": 601,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8694,7 +8438,8 @@
       "Silver": 0
     },
     "Name": "海鸥",
-    "NpcId": 602
+    "NpcId": 602,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8707,7 +8452,8 @@
       "Silver": 0
     },
     "Name": "海鸥",
-    "NpcId": 603
+    "NpcId": 603,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8720,7 +8466,8 @@
       "Silver": 0
     },
     "Name": "瓢虫",
-    "NpcId": 604
+    "NpcId": 604,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8733,7 +8480,8 @@
       "Silver": 0
     },
     "Name": "金瓢虫",
-    "NpcId": 605
+    "NpcId": 605,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8746,7 +8494,8 @@
       "Silver": 0
     },
     "Name": "蝇蛆",
-    "NpcId": 606
+    "NpcId": 606,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8759,7 +8508,8 @@
       "Silver": 0
     },
     "Name": "鳉鱼",
-    "NpcId": 607
+    "NpcId": 607,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8772,7 +8522,8 @@
       "Silver": 0
     },
     "Name": "䴙䴘",
-    "NpcId": 608
+    "NpcId": 608,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8785,7 +8536,8 @@
       "Silver": 0
     },
     "Name": "䴙䴘",
-    "NpcId": 609
+    "NpcId": 609,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8798,7 +8550,8 @@
       "Silver": 0
     },
     "Name": "大鼠",
-    "NpcId": 610
+    "NpcId": 610,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8811,7 +8564,8 @@
       "Silver": 0
     },
     "Name": "猫头鹰",
-    "NpcId": 611
+    "NpcId": 611,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8824,7 +8578,8 @@
       "Silver": 0
     },
     "Name": "水黾",
-    "NpcId": 612
+    "NpcId": 612,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8837,7 +8592,8 @@
       "Silver": 0
     },
     "Name": "金水黾",
-    "NpcId": 613
+    "NpcId": 613,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8850,7 +8606,8 @@
       "Silver": 0
     },
     "Name": "爆炸兔",
-    "NpcId": 614
+    "NpcId": 614,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8863,7 +8620,8 @@
       "Silver": 0
     },
     "Name": "海豚",
-    "NpcId": 615
+    "NpcId": 615,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8876,7 +8634,8 @@
       "Silver": 0
     },
     "Name": "龟",
-    "NpcId": 616
+    "NpcId": 616,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8889,7 +8648,8 @@
       "Silver": 0
     },
     "Name": "丛林龟",
-    "NpcId": 617
+    "NpcId": 617,
+    "Alias": []
   },
   {
     "Damage": 165,
@@ -8902,7 +8662,8 @@
       "Silver": 0
     },
     "Name": "恐惧鹦鹉螺",
-    "NpcId": 618
+    "NpcId": 618,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -8915,7 +8676,8 @@
       "Silver": 12
     },
     "Name": "血乌贼",
-    "NpcId": 619
+    "NpcId": 619,
+    "Alias": []
   },
   {
     "Damage": 210,
@@ -8928,7 +8690,8 @@
       "Silver": 87
     },
     "Name": "血浆哥布林鲨鱼",
-    "NpcId": 620
+    "NpcId": 620,
+    "Alias": []
   },
   {
     "Damage": 270,
@@ -8941,7 +8704,8 @@
       "Silver": 87
     },
     "Name": "血鳗鱼",
-    "NpcId": 621
+    "NpcId": 621,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -8954,7 +8718,8 @@
       "Silver": 0
     },
     "Name": "血鳗鱼",
-    "NpcId": 622
+    "NpcId": 622,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -8967,7 +8732,8 @@
       "Silver": 0
     },
     "Name": "血鳗鱼",
-    "NpcId": 623
+    "NpcId": 623,
+    "Alias": []
   },
   {
     "Damage": 30,
@@ -8980,7 +8746,8 @@
       "Silver": 0
     },
     "Name": "侏儒",
-    "NpcId": 624
+    "NpcId": 624,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -8993,7 +8760,8 @@
       "Silver": 0
     },
     "Name": "海龟",
-    "NpcId": 625
+    "NpcId": 625,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9006,7 +8774,8 @@
       "Silver": 0
     },
     "Name": "海马",
-    "NpcId": 626
+    "NpcId": 626,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9019,7 +8788,8 @@
       "Silver": 0
     },
     "Name": "金海马",
-    "NpcId": 627
+    "NpcId": 627,
+    "Alias": []
   },
   {
     "Damage": 45,
@@ -9032,7 +8802,8 @@
       "Silver": 1
     },
     "Name": "愤怒蒲公英",
-    "NpcId": 628
+    "NpcId": 628,
+    "Alias": []
   },
   {
     "Damage": 240,
@@ -9045,7 +8816,8 @@
       "Silver": 0
     },
     "Name": "冰雪宝箱怪",
-    "NpcId": 629
+    "NpcId": 629,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -9058,7 +8830,8 @@
       "Silver": 17
     },
     "Name": "血木乃伊",
-    "NpcId": 630
+    "NpcId": 630,
+    "Alias": []
   },
   {
     "Damage": 255,
@@ -9071,7 +8844,8 @@
       "Silver": 25
     },
     "Name": "岩石巨人",
-    "NpcId": 631
+    "NpcId": 631,
+    "Alias": []
   },
   {
     "Damage": 42,
@@ -9084,7 +8858,8 @@
       "Silver": 1
     },
     "Name": "蝇蛆僵尸",
-    "NpcId": 632
+    "NpcId": 632,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9097,7 +8872,8 @@
       "Silver": 0
     },
     "Name": "动物学家",
-    "NpcId": 633
+    "NpcId": 633,
+    "Alias": []
   },
   {
     "Damage": 39,
@@ -9110,7 +8886,8 @@
       "Silver": 2
     },
     "Name": "孢子蝙蝠",
-    "NpcId": 634
+    "NpcId": 634,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -9123,7 +8900,8 @@
       "Silver": 2
     },
     "Name": "孢子骷髅",
-    "NpcId": 635
+    "NpcId": 635,
+    "Alias": []
   },
   {
     "Damage": 276,
@@ -9136,7 +8914,8 @@
       "Silver": 50
     },
     "Name": "光之女皇",
-    "NpcId": 636
+    "NpcId": 636,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9149,7 +8928,8 @@
       "Silver": 0
     },
     "Name": "猫咪",
-    "NpcId": 637
+    "NpcId": 637,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9162,7 +8942,8 @@
       "Silver": 0
     },
     "Name": "狗狗",
-    "NpcId": 638
+    "NpcId": 638,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9175,7 +8956,8 @@
       "Silver": 0
     },
     "Name": "紫晶松鼠",
-    "NpcId": 639
+    "NpcId": 639,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9188,7 +8970,8 @@
       "Silver": 0
     },
     "Name": "黄玉松鼠",
-    "NpcId": 640
+    "NpcId": 640,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9201,7 +8984,8 @@
       "Silver": 0
     },
     "Name": "蓝玉松鼠",
-    "NpcId": 641
+    "NpcId": 641,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9214,7 +8998,8 @@
       "Silver": 0
     },
     "Name": "翡翠松鼠",
-    "NpcId": 642
+    "NpcId": 642,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9227,7 +9012,8 @@
       "Silver": 0
     },
     "Name": "红玉松鼠",
-    "NpcId": 643
+    "NpcId": 643,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9240,7 +9026,8 @@
       "Silver": 0
     },
     "Name": "钻石松鼠",
-    "NpcId": 644
+    "NpcId": 644,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9253,7 +9040,8 @@
       "Silver": 0
     },
     "Name": "琥珀松鼠",
-    "NpcId": 645
+    "NpcId": 645,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9266,7 +9054,8 @@
       "Silver": 0
     },
     "Name": "紫晶兔兔",
-    "NpcId": 646
+    "NpcId": 646,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9279,7 +9068,8 @@
       "Silver": 0
     },
     "Name": "黄玉兔兔",
-    "NpcId": 647
+    "NpcId": 647,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9292,7 +9082,8 @@
       "Silver": 0
     },
     "Name": "蓝玉兔兔",
-    "NpcId": 648
+    "NpcId": 648,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9305,7 +9096,8 @@
       "Silver": 0
     },
     "Name": "翡翠兔兔",
-    "NpcId": 649
+    "NpcId": 649,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9318,7 +9110,8 @@
       "Silver": 0
     },
     "Name": "红玉兔兔",
-    "NpcId": 650
+    "NpcId": 650,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9331,7 +9124,8 @@
       "Silver": 0
     },
     "Name": "钻石兔兔",
-    "NpcId": 651
+    "NpcId": 651,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9344,7 +9138,8 @@
       "Silver": 0
     },
     "Name": "琥珀兔兔",
-    "NpcId": 652
+    "NpcId": 652,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9357,7 +9152,8 @@
       "Silver": 0
     },
     "Name": "地狱蝴蝶",
-    "NpcId": 653
+    "NpcId": 653,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9370,7 +9166,8 @@
       "Silver": 0
     },
     "Name": "熔岩萤火虫",
-    "NpcId": 654
+    "NpcId": 654,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9383,7 +9180,8 @@
       "Silver": 0
     },
     "Name": "岩浆蜗牛",
-    "NpcId": 655
+    "NpcId": 655,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9396,7 +9194,8 @@
       "Silver": 0
     },
     "Name": "兔兔",
-    "NpcId": 656
+    "NpcId": 656,
+    "Alias": []
   },
   {
     "Damage": 180,
@@ -9409,7 +9208,8 @@
       "Silver": 0
     },
     "Name": "史莱姆皇后",
-    "NpcId": 657
+    "NpcId": 657,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -9422,7 +9222,8 @@
       "Silver": 0
     },
     "Name": "水晶史莱姆",
-    "NpcId": 658
+    "NpcId": 658,
+    "Alias": []
   },
   {
     "Damage": 120,
@@ -9435,7 +9236,8 @@
       "Silver": 0
     },
     "Name": "弹力史莱姆",
-    "NpcId": 659
+    "NpcId": 659,
+    "Alias": []
   },
   {
     "Damage": 150,
@@ -9448,7 +9250,8 @@
       "Silver": 0
     },
     "Name": "飞翔史莱姆",
-    "NpcId": 660
+    "NpcId": 660,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9461,7 +9264,8 @@
       "Silver": 0
     },
     "Name": "七彩草蛉",
-    "NpcId": 661
+    "NpcId": 661,
+    "Alias": []
   },
   {
     "Damage": 225,
@@ -9474,7 +9278,8 @@
       "Silver": 0
     },
     "Name": "海盗诅咒",
-    "NpcId": 662
+    "NpcId": 662,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9487,7 +9292,8 @@
       "Silver": 0
     },
     "Name": "公主",
-    "NpcId": 663
+    "NpcId": 663,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9500,7 +9306,8 @@
       "Silver": 0
     },
     "Name": "火把神",
-    "NpcId": 664
+    "NpcId": 664,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -9513,7 +9320,8 @@
       "Silver": 0
     },
     "Name": "混沌球",
-    "NpcId": 665
+    "NpcId": 665,
+    "Alias": []
   },
   {
     "Damage": 195,
@@ -9526,7 +9334,8 @@
       "Silver": 0
     },
     "Name": "魔唾液",
-    "NpcId": 666
+    "NpcId": 666,
+    "Alias": []
   },
   {
     "Damage": 15,
@@ -9539,7 +9348,8 @@
       "Silver": 50
     },
     "Name": "金史莱姆",
-    "NpcId": 667
+    "NpcId": 667,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -9552,7 +9362,8 @@
       "Silver": 50
     },
     "Name": "独眼巨鹿",
-    "NpcId": 668
+    "NpcId": 668,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9565,7 +9376,8 @@
       "Silver": 0
     },
     "Name": "臭虫",
-    "NpcId": 669
+    "NpcId": 669,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9578,7 +9390,8 @@
       "Silver": 0
     },
     "Name": "书呆子史莱姆",
-    "NpcId": 670
+    "NpcId": 670,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9591,7 +9404,8 @@
       "Silver": 0
     },
     "Name": "绯红金刚鹦鹉",
-    "NpcId": 671
+    "NpcId": 671,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9604,7 +9418,8 @@
       "Silver": 0
     },
     "Name": "蓝金刚鹦鹉",
-    "NpcId": 672
+    "NpcId": 672,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9617,7 +9432,8 @@
       "Silver": 0
     },
     "Name": "巨嘴鸟",
-    "NpcId": 673
+    "NpcId": 673,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9630,7 +9446,8 @@
       "Silver": 0
     },
     "Name": "黄玄凤鹦鹉",
-    "NpcId": 674
+    "NpcId": 674,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9643,7 +9460,8 @@
       "Silver": 0
     },
     "Name": "灰玄凤鹦鹉",
-    "NpcId": 675
+    "NpcId": 675,
+    "Alias": []
   },
   {
     "Damage": 60,
@@ -9656,7 +9474,8 @@
       "Silver": 3
     },
     "Name": "微光史莱姆",
-    "NpcId": 676
+    "NpcId": 676,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9669,7 +9488,8 @@
       "Silver": 0
     },
     "Name": "飞灵",
-    "NpcId": 677
+    "NpcId": 677,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9682,7 +9502,8 @@
       "Silver": 0
     },
     "Name": "酷酷史莱姆",
-    "NpcId": 678
+    "NpcId": 678,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9695,7 +9516,8 @@
       "Silver": 0
     },
     "Name": "长者史莱姆",
-    "NpcId": 679
+    "NpcId": 679,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9708,7 +9530,8 @@
       "Silver": 0
     },
     "Name": "笨拙史莱姆",
-    "NpcId": 680
+    "NpcId": 680,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9721,7 +9544,8 @@
       "Silver": 0
     },
     "Name": "天后史莱姆",
-    "NpcId": 681
+    "NpcId": 681,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9734,7 +9558,8 @@
       "Silver": 0
     },
     "Name": "暴躁史莱姆",
-    "NpcId": 682
+    "NpcId": 682,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9747,7 +9572,8 @@
       "Silver": 0
     },
     "Name": "神秘史莱姆",
-    "NpcId": 683
+    "NpcId": 683,
+    "Alias": []
   },
   {
     "Damage": 10,
@@ -9760,7 +9586,8 @@
       "Silver": 0
     },
     "Name": "侍卫史莱姆",
-    "NpcId": 684
+    "NpcId": 684,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9773,7 +9600,8 @@
       "Silver": 0
     },
     "Name": "老旧摇摇箱",
-    "NpcId": 685
+    "NpcId": 685,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9786,7 +9614,8 @@
       "Silver": 0
     },
     "Name": "笨拙气球史莱姆",
-    "NpcId": 686
+    "NpcId": 686,
+    "Alias": []
   },
   {
     "Damage": 0,
@@ -9799,6 +9628,7 @@
       "Silver": 0
     },
     "Name": "神秘青蛙",
-    "NpcId": 687
+    "NpcId": 687,
+    "Alias": []
   }
 ]

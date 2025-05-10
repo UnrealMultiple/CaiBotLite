@@ -22,7 +22,6 @@ def load_all_images():
             buff_id = filename.split("_")[1].split(".")[0]
             image_cache[f"buff_{buff_id}"] = Image.open(os.path.join(buff_dir, filename)).convert("RGBA")
 
-
 # 图片缓存字典
 image_cache = {}
 

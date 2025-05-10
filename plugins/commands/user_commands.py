@@ -103,7 +103,7 @@ async def bind_handle(event: GroupAtMessageCreateEvent):
         user.name = msg[1]
         user.update()
     else:
-        User.add_user(event.group_openid, event.author.union_openid, msg[1])
+        User.add_user(group.open_id, event.author.union_openid, msg[1])
 
     await bind.finish(f'\n『白名单』\n' +
                       f"绑定成功~\n"

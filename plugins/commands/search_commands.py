@@ -1,5 +1,5 @@
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent
+from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
 
 from common.terraria_id_helper import get_item_by_name_or_id, get_npc_by_name_or_id, get_project_by_name_or_id, get_buff_by_name_or_id, \
     get_prefix_by_name_or_id
@@ -54,9 +54,14 @@ async def search_item_handle(event: GroupAtMessageCreateEvent):
     if len(msg) != 2:
         await search_item.finish(f'\n『搜物品』\n'
                                  + "格式错误!正确格式: 搜物品 <物品名字|ID>")
+    content, img = get_item_by_name_or_id(msg[1])
+    if img is None:
+        await search_item.finish(f'\n『搜物品』\n' +
+                                 content)
+    else:
+        await search_item.finish(MessageSegment.text(f'\n『搜物品』\n' +
+                                 content)+ img)
 
-    await search_item.finish(f'\n『搜物品』\n' +
-                             get_item_by_name_or_id(msg[1]))
 
 
 search_npc = on_command("sn", aliases={"搜生物"}, force_whitespace=True)
@@ -97,8 +102,13 @@ async def search_buff_handle(event: GroupAtMessageCreateEvent):
         await search_buff.finish(f'\n『搜增益』\n'
                                  + "格式错误!正确格式: 搜增益 <增益名字|ID>")
 
-    await search_buff.finish(f'\n『搜增益』\n' +
-                             get_buff_by_name_or_id(msg[1]))
+    content, img = get_buff_by_name_or_id(msg[1])
+    if img is None:
+        await search_buff.finish(f'\n『搜增益』\n' +
+                                 content)
+    else:
+        await search_buff.finish(MessageSegment.text(f'\n『搜增益』\n' +
+                                                     content) + img)
 
 
 search_prefix = on_command("sx", aliases={"搜修饰"}, force_whitespace=True)
