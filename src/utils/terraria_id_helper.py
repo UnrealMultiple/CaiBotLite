@@ -7,19 +7,19 @@ from nonebot.adapters.qq import MessageSegment
 from src.utils.bag_png_helper import image_cache
 
 
-with open("terraria_data/item_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/item_id.json", encoding='utf-8', errors='ignore') as fp:
     items = json.loads(fp.read())
 
-with open("terraria_data/prefix_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/prefix_id.json", encoding='utf-8', errors='ignore') as fp:
     prefixes = json.loads(fp.read())
 
-with open("terraria_data/project_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/project_id.json", encoding='utf-8', errors='ignore') as fp:
     projects = json.loads(fp.read())
 
-with open("terraria_data/npc_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/npc_id.json", encoding='utf-8', errors='ignore') as fp:
     NPCs = json.loads(fp.read())
 
-with open("terraria_data/buff_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/buff_id.json", encoding='utf-8', errors='ignore') as fp:
     buffs = json.loads(fp.read())
 
 logger.success("[terraria_data]物品、前缀、生物、buffs、弹幕已缓存!")

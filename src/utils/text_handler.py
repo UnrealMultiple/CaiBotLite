@@ -4,10 +4,10 @@ import re
 
 from nonebot import logger
 
-with open("terraria_data/item_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/item_id.json", encoding='utf-8', errors='ignore') as fp:
     item_json = json.loads(fp.read())
 
-with open("terraria_data/prefix_id.json", encoding='utf-8', errors='ignore') as fp:
+with open("assets/terraria_data/prefix_id.json", encoding='utf-8', errors='ignore') as fp:
     prefix_json = json.loads(fp.read())
 
 item_info = {item['ItemId']: item for item in item_json}

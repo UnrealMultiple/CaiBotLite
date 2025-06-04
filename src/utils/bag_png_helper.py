@@ -1,5 +1,6 @@
 import os
 import time
+from typing import Tuple
 
 from PIL import Image, ImageDraw, ImageFont
 from PIL.Image import Resampling
@@ -7,121 +8,121 @@ from nonebot.log import logger
 
 
 def load_all_images():
-    item_dir = "assets/images/Items/"
+    item_dir = "assets/images/items/"
     buff_dir = "assets/images/buffs/"
 
     # 加载物品图片
     for filename in os.listdir(item_dir):
-        if filename.endswith(".png") and filename.startswith("items"):
+        if filename.endswith(".png") and filename.startswith("Item"):
             item_id = filename.split("_")[1].split(".")[0]
             image_cache[f"item_{item_id}"] = Image.open(os.path.join(item_dir, filename)).convert("RGBA")
 
     # 加载buff图片
     for filename in os.listdir(buff_dir):
-        if filename.endswith(".png") and filename.startswith("buffs"):
+        if filename.endswith(".png") and filename.startswith("Buff"):
             buff_id = filename.split("_")[1].split(".")[0]
             image_cache[f"buff_{buff_id}"] = Image.open(os.path.join(buff_dir, filename)).convert("RGBA")
 
 # 图片缓存字典
 image_cache = {}
 
-Vault = Image.open("assets/images/Items/item_4076.png").convert('RGBA')
+Vault = Image.open("assets/images/items/Item_4076.png").convert('RGBA')
 Vault = Vault.resize((70,70), Resampling.LANCZOS)
 _, _, _, aVault = Vault.split()
 
-minecart = Image.open("assets/images/Items/item_2343.png").convert('RGBA')
+minecart = Image.open("assets/images/items/Item_2343.png").convert('RGBA')
 minecart = minecart.resize((65, 65), Resampling.LANCZOS)
 _, _, _, a_minecart = minecart.split()
 
-safe = Image.open("assets/images/Items/item_346.png").convert('RGBA')
+safe = Image.open("assets/images/items/Item_346.png").convert('RGBA')
 safe = safe.resize((70,70), Resampling.LANCZOS)
 _, _, _, a_safe = safe.split()
 
-Satchel = Image.open("assets/images/Items/item_5343.png").convert('RGBA')
+Satchel = Image.open("assets/images/items/Item_5343.png").convert('RGBA')
 Satchel = Satchel.resize((70,70), Resampling.LANCZOS)
 _, _, _, aSatchel = Satchel.split()
 
-Forge = Image.open("assets/images/Items/item_3813.png").convert('RGBA')
+Forge = Image.open("assets/images/items/Item_3813.png").convert('RGBA')
 Forge = Forge.resize((70,70), Resampling.LANCZOS)
 _, _, _, aForge = Forge.split()
 
-WoodenArrow = Image.open("assets/images/Items/item_40.png").convert('RGBA')
+WoodenArrow = Image.open("assets/images/items/Item_40.png").convert('RGBA')
 WoodenArrow = WoodenArrow.resize((70,70), Resampling.LANCZOS)
 _, _, _, aWoodenArrow = WoodenArrow.split()
 
-pig = Image.open("assets/images/Items/item_87.png").convert('RGBA')
+pig = Image.open("assets/images/items/Item_87.png").convert('RGBA')
 pig = pig.resize((80,80), Resampling.LANCZOS)
 _, _, _, apig = pig.split()
 
-Red_Drug = Image.open("assets/images/Items/item_678.png").convert('RGBA')
+Red_Drug = Image.open("assets/images/items/Item_678.png").convert('RGBA')
 Red_Drug = Red_Drug.resize((70,70), Resampling.LANCZOS)
 _, _, _, aRed_Drug = Red_Drug.split()
 
-Arkhalis = Image.open("assets/images/Items/item_3368.png").convert('RGBA')
+Arkhalis = Image.open("assets/images/items/Item_3368.png").convert('RGBA')
 Arkhalis = Arkhalis.resize((70,70), Resampling.LANCZOS)
 _, _, _, aArkhalis = Arkhalis.split()
 
-book = Image.open("assets/images/Items/item_149.png").convert('RGBA')
+book = Image.open("assets/images/items/Item_149.png").convert('RGBA')
 book = book.resize((70,70), Resampling.LANCZOS)
 _, _, _, abook = book.split()
 
-advanced_combat_techniques_two = Image.open("assets/images/Items/item_5336.png").convert('RGBA')
+advanced_combat_techniques_two = Image.open("assets/images/items/Item_5336.png").convert('RGBA')
 advanced_combat_techniques_two = advanced_combat_techniques_two.resize((70,70), Resampling.LANCZOS)
 _, _, _, aadvanced_combat_techniques_two = advanced_combat_techniques_two.split()
 
-defender_medal = Image.open("assets/images/Items/item_3817.png").convert('RGBA')
+defender_medal = Image.open("assets/images/items/Item_3817.png").convert('RGBA')
 defender_medal = defender_medal.resize((50, 50), Resampling.LANCZOS)
 _, _, _, adefender_medal = defender_medal.split()
 
-warrior_emblem = Image.open("assets/images/Items/item_490.png").convert('RGBA')
+warrior_emblem = Image.open("assets/images/items/Item_490.png").convert('RGBA')
 warrior_emblem = warrior_emblem.resize((50, 50), Resampling.LANCZOS)
 _, _, _, awarrior_emblem = warrior_emblem.split()
 
-the_plan = Image.open("assets/images/Items/item_903.png").convert('RGBA')
+the_plan = Image.open("assets/images/items/Item_903.png").convert('RGBA')
 the_plan = the_plan.resize((50, 50), Resampling.LANCZOS)
 _, _, _, athe_plan = the_plan.split()
 
-life_item = Image.open("assets/images/Items/item_58.png").convert('RGBA')
+life_item = Image.open("assets/images/items/Item_58.png").convert('RGBA')
 life_item = life_item.resize((70, 70), Resampling.LANCZOS)
 _, _, _, alife_item = life_item.split()
 
-mana_item = Image.open("assets/images/Items/item_184.png").convert('RGBA')
+mana_item = Image.open("assets/images/items/Item_184.png").convert('RGBA')
 mana_item = mana_item.resize((70, 70), Resampling.LANCZOS)
 _, _, _, amana_item = mana_item.split()
 
-sitting_duck_fishing_pole = Image.open("assets/images/Items/item_2296.png").convert('RGBA')
+sitting_duck_fishing_pole = Image.open("assets/images/items/Item_2296.png").convert('RGBA')
 sitting_duck_fishing_pole = sitting_duck_fishing_pole.resize((50, 50), Resampling.LANCZOS)
 _, _, _, asitting_duck_fishing_pole = sitting_duck_fishing_pole.split()
 
-golden_fishing_rod = Image.open("assets/images/Items/item_2294.png").convert('RGBA')
+golden_fishing_rod = Image.open("assets/images/items/Item_2294.png").convert('RGBA')
 golden_fishing_rod = golden_fishing_rod.resize((50, 50), Resampling.LANCZOS)
 _, _, _, agolden_fishing_rod = golden_fishing_rod.split()
 
-advanced_combat_techniques = Image.open("assets/images/Items/item_4382.png").convert('RGBA')
+advanced_combat_techniques = Image.open("assets/images/items/Item_4382.png").convert('RGBA')
 advanced_combat_techniques = advanced_combat_techniques.resize((50, 50), Resampling.LANCZOS)
 _, _, _, aadvanced_combat_techniques = advanced_combat_techniques.split()
 
-Trash = Image.open("assets/images/Items/Trash.png").convert('RGBA')
+Trash = Image.open("assets/images/items/Trash.png").convert('RGBA')
 _, _, _, aTrash = Trash.split()
 
-One = Image.open("assets/images/Items/item_2703.png").convert('RGBA')
+One = Image.open("assets/images/items/Item_2703.png").convert('RGBA')
 One = One.resize((70, 70), Resampling.LANCZOS)
 _, _, _, aOne = One.split()
 
-Two = Image.open("assets/images/Items/item_2704.png").convert('RGBA')
+Two = Image.open("assets/images/items/Item_2704.png").convert('RGBA')
 Two = Two.resize((70, 70), Resampling.LANCZOS)
 _, _, _, aTwo = Two.split()
 
-Three = Image.open("assets/images/Items/item_2705.png").convert('RGBA')
+Three = Image.open("assets/images/items/Item_2705.png").convert('RGBA')
 Three = Three.resize((70, 70), Resampling.LANCZOS)
 _, _, _, aThree = Three.split()
 
-back3 = Image.open("assets/images/Items/Inventory_Back7.png").convert('RGBA')
-back4 = Image.open("assets/images/Items/Inventory_Back8.png").convert('RGBA')
-back5 = Image.open("assets/images/Items/Inventory_Back3.png").convert('RGBA')
-back1 = Image.open("assets/images/Items/Inventory_Back.png").convert('RGBA')
-back6 = Image.open("assets/images/Items/Inventory_Back12.png").convert('RGBA')
-back2 = Image.open("assets/images/Items/Inventory_Back11.png").convert('RGBA')
+back3 = Image.open("assets/images/items/Inventory_Back7.png").convert('RGBA')
+back4 = Image.open("assets/images/items/Inventory_Back8.png").convert('RGBA')
+back5 = Image.open("assets/images/items/Inventory_Back3.png").convert('RGBA')
+back1 = Image.open("assets/images/items/Inventory_Back.png").convert('RGBA')
+back6 = Image.open("assets/images/items/Inventory_Back12.png").convert('RGBA')
+back2 = Image.open("assets/images/items/Inventory_Back11.png").convert('RGBA')
 _, _, _, a = back1.split()
 _, _, _, a2 = back2.split()
 font = "assets/fonts/LXGWWenKaiMono-Medium.ttf"
@@ -130,7 +131,7 @@ load_all_images()
 logger.success("[查背包]图片缓存完毕...")
 
 
-def get_bag_png(name: str, inv: list['()'], buffs: list, enhances: list, life: str, mana: str,
+def get_bag_png(name: str, inv: list, buffs: list, enhances: list, life: str, mana: str,
                 quests_completed: int, economic: dict) -> Image:
     bg_img = Image.open("assets/images/backgrounds/Background_4.png").convert('RGBA')
     ft = ImageFont.truetype(font=font, size=100)

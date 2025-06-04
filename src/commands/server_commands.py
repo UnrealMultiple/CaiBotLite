@@ -104,7 +104,7 @@ async def world_progress_handle(event: GroupAtMessageCreateEvent):
                                         f"执行失败！\n"
                                         f"❌服务器[{int(msg[1])}]处于离线状态")
         cmd = {
-            "type": "bosses",
+            "type": "process",
             "group": event.group_openid,
             "msg_id": event.id
         }

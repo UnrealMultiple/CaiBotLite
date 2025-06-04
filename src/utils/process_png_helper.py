@@ -25,7 +25,7 @@ def transparent_back(img):
 
 
 def get_process_png(process_data) -> Image:
-    process = process_data["bosses"]
+    process = process_data["process"]
     kill_counts = process_data["kill_counts"]
     if process_data["zenith_world"]:
         img = Image.open("assets/images/backgrounds/Background_2.png")

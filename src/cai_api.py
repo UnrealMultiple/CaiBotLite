@@ -288,6 +288,9 @@ async def download_file(file_id: str):
         filename=file_info["filename"]
     )
 
+@app.get("/ping")
+async def ping():
+    return JSONResponse({"result": "pong"})
 
 @app.get("/102256264.json")
 async def qq_url_check():
@@ -418,20 +421,24 @@ async def handle_message(data: str, group: Group, token: str, server: Server, we
                 data['result'] = data['result']+ "\n⚠️不支持此适配插件版本,请升级到CaiBotLite v2025.04.26+"
             if websocket.plugin_version == "2025.4.12.1":
                 data['result'] = data['result']+ "\n⚠️此适配插件版本有严重安全漏洞,请升级到CaiBotLite v2025.04.26+"
-        result = SensitiveWordsFilter.replace(f"๑{index}๑⚡{data['worldname']} 「{data['bosses']}」\n" + data['result'])
+
+        result = SensitiveWordsFilter.replace(f"๑{index}๑⚡{data['worldname']} 「{data['process']}」\n" + data['result'])
         online_request[token] = result
         websocket.world = SensitiveWordsFilter.replace(data['worldname'])
         server_connection_manager.connections[token] = websocket
-    elif data['type'] == "bosses":
+
+    elif data['type'] == "process":
         progress_img = get_process_png(data)
         byte_arr = io.BytesIO()
         progress_img.save(byte_arr, format='PNG')
         byte_value = byte_arr.getvalue()
         await bot.send_to_group(group_id, MessageSegment.file_image(byte_value), msg_id=msg_id)
+
     elif data['type'] == "process_text":
         await bot.send_to_group(group_id,
-                                MessageSegment.text(f"\n『进度查询』\n" + SensitiveWordsFilter.replace(data['bosses'])),
+                                MessageSegment.text(f"\n『进度查询』\n" + SensitiveWordsFilter.replace(data['process'])),
                                 msg_id=msg_id)
+
     elif data['type'] == "whitelistV2":
         name = data['name']
         plr_uuid = data['uuid']
@@ -482,6 +489,8 @@ async def handle_message(data: str, group: Group, token: str, server: Server, we
         base64_string = data['result']
         decoded_bytes = base64.b64decode(decompress_base64_gzip(base64_string))
         await bot.send_to_group(group_id, MessageSegment.file_image(decoded_bytes), msg_id=msg_id)
+
+
     elif data['type'] == "lookbag":
         if data['exist'] == 0:
             await bot.send_to_group(group_id, MessageSegment.text(f"\n『查背包』\n" +
