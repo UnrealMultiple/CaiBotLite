@@ -335,7 +335,17 @@ async def websocket_endpoint(websocket: WebSocket, token: str):
             }
             await websocket.send_json(disconnect_info)
             raise WebSocketException(CaiWebSocketStatus.NO_BIND_TOKEN, "不属于任何群的服务器")
+
         group = Group.get_group_through_server(server)
+        if group.open_id != server.owner:
+            logger.warning(f"服务器断开连接: {token},原因：服务器拥有群已成为子群，自动解绑")
+            disconnect_info = {
+                "type": "delserver"
+            }
+            await websocket.send_json(disconnect_info)
+            raise WebSocketException(CaiWebSocketStatus.NO_BIND_TOKEN, "服务器拥有群已成为子群，自动解绑")
+
+
         await websocket.send_text(json.dumps({"type": "hello", "group": group.open_id}))
         logger.success(f"群服务器已连接:{group.open_id}({token})")
         while True:
