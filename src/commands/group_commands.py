@@ -180,7 +180,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                                        f"格式错误!正确格式: 添加管理 <玩家名> [只在本群有效]\n"
                                        f"TIPS: BOT添加者为默认管理员")
 
-            user = User.get_user_by_name(event.group_openid, msg[1])
+            user = User.get_user_by_name(group.open_id, msg[1])
             if user is None:
                 await add_admin.finish(f'\n『BOT管理』\n' +
                                        f"没有找到名为[{(msg[1])}]的用户!")
@@ -217,7 +217,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                 await del_admin.finish(f'\n『BOT管理』\n' +
                                        f"格式错误!正确格式: 删除管理 <玩家名> [只在本群有效]")
 
-            user = User.get_user_by_name(event.group_openid, msg[1])
+            user = User.get_user_by_name(group.open_id, msg[1])
             if user is None:
                 await del_admin.finish(f'\n『BOT管理』\n' +
                                        f"没有找到名为[{(msg[1])}]的用户!")
@@ -278,7 +278,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                 await add_blacklist.finish(f'\n『Ban』\n' +
                                            f"格式错误!正确格式: 添加黑名单 <玩家名> [只在本群有效]")
 
-            user = User.get_user_by_name(event.group_openid, msg[1])
+            user = User.get_user_by_name(group.open_id, msg[1])
             if user is None:
                 await add_blacklist.finish(f'\n『Ban』\n' +
                                            f"没有找到名为[{(msg[1])}]的玩家!")
@@ -313,7 +313,7 @@ async def add_admin_handle(event: GroupAtMessageCreateEvent):
                 await del_blacklist.finish(f'\n『Ban』\n' +
                                            f"格式错误!正确格式: 解封 <玩家名> [只在本群有效]")
 
-            user = User.get_user_by_name(event.group_openid, msg[1])
+            user = User.get_user_by_name(group.open_id, msg[1])
             if user is None:
                 await del_blacklist.finish(f'\n『Ban』\n' +
                                            f"没有找到名为[{(msg[1])}]的玩家!")
