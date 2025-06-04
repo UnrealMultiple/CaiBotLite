@@ -75,7 +75,7 @@ async def bind_handle(event: GroupAtMessageCreateEvent):
         await bind.finish(f'\n『白名单』\n' +
                           f"格式错误！\n"
                           f"正确格式: 添加白名单 <名字>")
-    user2 = User.get_user_by_name(event.group_openid, msg[1])
+    user2 = User.get_user_by_name(group.open_id, msg[1])
     if user2 is not None:
         await bind.finish(f'\n『白名单』\n' +
                           f"绑定失败!\n"
@@ -138,7 +138,7 @@ async def rebind_handle(event: GroupAtMessageCreateEvent):
         await rebind.finish(f'\n『白名单』\n' +
                             f"格式错误！\n"
                             f"正确格式: 修改白名单 <名字>")
-    user2 = User.get_user_by_name(event.group_openid, msg[1])
+    user2 = User.get_user_by_name(group.open_id, msg[1])
     if user2 is not None:
         await rebind.finish(f'\n『白名单』\n' +
                             f"绑定失败!\n"
