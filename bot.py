@@ -15,7 +15,9 @@ driver.register_adapter(Adapter)
 nonebot.load_from_toml("pyproject.toml")
 
 nonebot.load_plugins("src/")
+nonebot.load_plugins("src/api")
 nonebot.load_plugins("src/commands")
+
 
 
 if __name__ == "__main__":

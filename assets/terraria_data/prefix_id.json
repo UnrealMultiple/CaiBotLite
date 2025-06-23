@@ -77,7 +77,9 @@
   {
     "Name": "轻",
     "PrefixId": 15,
-    "Alias": []
+    "Alias": [
+      "莱特"
+    ]
   },
   {
     "Name": "精准",
@@ -112,7 +114,9 @@
   {
     "Name": "讨厌",
     "PrefixId": 22,
-    "Alias": []
+    "Alias": [
+      "可畏"
+    ]
   },
   {
     "Name": "无力",
@@ -282,7 +286,9 @@
   {
     "Name": "虚弱",
     "PrefixId": 56,
-    "Alias": []
+    "Alias": [
+      "软弱"
+    ]
   },
   {
     "Name": "无情",

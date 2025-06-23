@@ -2,8 +2,8 @@ class ServerSettings:
     def __init__(self,token) -> None:
         # noinspection PyBroadException
         try:
-            import src.cai_api
-            server = src.cai_api.server_connection_manager.get_server_connection(token)
+            import src.api.server
+            server = src.api.server.server_connection_manager.get_server_connection(token)
             self.server_version = server.terraria_version
             self.world = server.world
             self.tshock_version = server.tshock_version

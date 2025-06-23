@@ -1,23 +1,26 @@
 import json
-from typing import List, Optional
+from dataclasses import dataclass, field
+from typing import List, Optional, Dict
 from src.models.server import Server
 from src.database import Database
 
 
+@dataclass
 class Group:
-    def __init__(self, open_id: str, parent: str, admins: List[str], black_list: List[str], servers: List[Server],
-                 config: dict) -> None:
-        self.open_id = open_id
-        self.parent = parent
-        self.admins = admins
-        self.black_list = black_list
-        self.config = config
-        self.servers = servers
+    open_id: str
+    parent: str
+    admins: List[str]
+    black_list: List[str]
+    servers: List['Server']
+    config: Dict
+    connected_servers: List['Server'] = field(init=False)
+
+    def __post_init__(self):
         # noinspection PyBroadException
         try:
-            self.connected_servers = [i for i in servers if i.is_connected()]
+            object.__setattr__(self, 'connected_servers', [i for i in self.servers if i.is_connected()])
         except:
-            self.connected_servers = []
+            object.__setattr__(self, 'connected_servers', [])
 
     @staticmethod
     def add_group(open_id: str, admin: str) -> None:

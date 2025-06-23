@@ -3,9 +3,10 @@ import datetime
 from nonebot import on_command
 from nonebot.adapters.qq import GroupAtMessageCreateEvent
 
-import src.cai_api
+import src.api.server
 from src.models.group import Group
-from src.models.user import User, LoginRequest
+from src.models.login_request import LoginRequest
+from src.models.user import User
 
 
 def msg_cut(msg: str) -> list:
@@ -44,17 +45,17 @@ async def login_handle(event: GroupAtMessageCreateEvent):
         await login.finish(f'\n『登录系统』\n' +
                            "你还没有添加白名单！\n"
                            f"发送'/添加白名单 <名字>'来添加白名单")
-    if user.open_id not in src.cai_api.login_requests or src.cai_api.login_requests[user.open_id].time == datetime.datetime.min:
+    if user.open_id not in src.api.server.login_requests or src.api.server.login_requests[user.open_id].time == datetime.datetime.min:
         await login.finish(f"\n『登录系统』\n"
                            f"你目前没有收到任何登录请求！")
-    if not is_within_5_minutes(src.cai_api.login_requests[user.open_id].time):
+    if not is_within_5_minutes(src.api.server.login_requests[user.open_id].time):
         await login.finish(f"\n『登录系统』\n"
                            f"登录请求已失效！")
-    user.uuid.append(src.cai_api.login_requests[user.open_id].uuid)
+    user.uuid.append(src.api.server.login_requests[user.open_id].uuid)
     if len(user.uuid) > 10:
         user.uuid.pop(0)
     user.update()
-    src.cai_api.login_requests[user.open_id] = LoginRequest(datetime.datetime.min, "")
+    src.api.server.login_requests[user.open_id] = LoginRequest(datetime.datetime.min, "")
     await login.finish(f"\n『登录系统』\n"
                        f"✅已接受此登录请求！\n"
                        f"使用'/清空设备'解除所有绑定")
@@ -73,15 +74,15 @@ async def reject_login_handle(event: GroupAtMessageCreateEvent):
         await reject_login.finish(f'\n『登录系统』\n' +
                                   "你还没有添加白名单！\n"
                                   f"发送'/添加白名单 <名字>'来添加白名单")
-    if user.open_id not in src.cai_api.login_requests or src.cai_api.login_requests[
+    if user.open_id not in src.api.server.login_requests or src.api.server.login_requests[
         user.open_id].time == datetime.datetime.min:
         await login.finish(f"\n『登录系统』\n"
                            f"你目前没有收到任何登录请求！")
-    if not is_within_5_minutes(src.cai_api.login_requests[user.open_id].time):
+    if not is_within_5_minutes(src.api.server.login_requests[user.open_id].time):
         await login.finish(f"\n『登录系统』\n"
                            f"登录请求已失效！")
 
-    src.cai_api.login_requests[user.open_id] = LoginRequest(datetime.datetime.min, "")
+    src.api.server.login_requests[user.open_id] = LoginRequest(datetime.datetime.min, "")
     await reject_login.finish(f"\n『登录系统』\n"
                               f"❌已拒绝此登录请求！")
 

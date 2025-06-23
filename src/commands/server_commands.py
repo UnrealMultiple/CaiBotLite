@@ -7,7 +7,7 @@ from src.models.group import Group
 from src.utils.group_helper import GroupHelper
 from src.utils.sensitive_words_filter import SensitiveWordsFilter
 from src.models.user import User
-from src.cai_api import wait_for_online, server_connection_manager, wait_for_cmd
+from src.api.server import wait_for_online, server_connection_manager, wait_for_cmd
 
 
 def msg_cut(msg: str) -> list:

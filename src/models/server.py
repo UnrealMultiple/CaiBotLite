@@ -1,18 +1,18 @@
 import json
+from dataclasses import dataclass
 from typing import List, Optional
 
 from src.models.server_settings import ServerSettings
 from src.database import Database
 
 
+@dataclass
 class Server:
-
-    def __init__(self, token: str, owner: str, shared: List[str], ip: str, port: int) -> None:
-        self.owner = owner
-        self.token = token
-        self.shared = shared
-        self.ip = ip
-        self.port = port
+    token: str
+    owner: str
+    shared: List[str]
+    ip: str
+    port: int
 
     @staticmethod
     def add_server(token: str, owner: str, ip: str, port: int) -> None:
@@ -59,19 +59,19 @@ class Server:
         raise Exception("服务器不存在")
 
     def is_connected(self):
-        import src.cai_api
-        return src.cai_api.server_connection_manager.server_available(self.token)
+        import src.api.server
+        return src.api.server.server_connection_manager.server_available(self.token)
 
     def get_connection(self):
-        import src.cai_api
-        return src.cai_api.server_connection_manager.get_server_connection(self.token)
+        import src.api.server
+        return src.api.server.server_connection_manager.get_server_connection(self.token)
 
     def get_settings(self):
         return ServerSettings(self.token)
 
     async def send_data(self,data,group:int):
-       import src.cai_api
-       await src.cai_api.server_connection_manager.send_data(self.token, data, group)
+       import src.api.server
+       await src.api.server.server_connection_manager.send_data(self.token, data, group)
 
     def is_owner_server(self, group_id: str) -> bool:
         return self.owner == group_id

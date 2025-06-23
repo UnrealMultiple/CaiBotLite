@@ -7,8 +7,8 @@ from nonebot.adapters.qq import GroupAtMessageCreateEvent
 from src.models.group import Group
 from src.utils.group_helper import GroupHelper
 from src.models.server import Server
-from src import cai_api
-from src.cai_api import server_connection_manager
+from src.api import server
+from src.api.server import add_token, server_connection_manager
 
 
 def msg_cut(msg: str) -> list:
@@ -43,7 +43,7 @@ async def add_server_handle(event: GroupAtMessageCreateEvent):
         await add_server.finish(f'\n『添加服务器』\n' +
                                 f"格式错误!正确格式: 添加服务器 <IP地址> <端口> <验证码> [需要服务器适配插件]")
 
-    cai_api.add_token(int(msg[3]), Server(str(uuid.uuid4()), event.group_openid, [], msg[1], int(msg[2])), 300)
+    add_token(int(msg[3]), Server(str(uuid.uuid4()), event.group_openid, [], msg[1], int(msg[2])), 300)
     await add_server.finish(f'\n『添加服务器』\n' +
                             f"正在绑定服务器中...\n"
                             f"请确保你的服务器绑定码为: {int(msg[3])}")

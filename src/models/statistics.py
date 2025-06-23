@@ -1,25 +1,26 @@
-from typing import Optional
+from dataclasses import dataclass
+from typing import Optional, ClassVar, Dict
 from threading import Lock
 from src.database import Database
 
 
+@dataclass
 class Statistics:
-    _write_buffer = {
+    # Class variables (converted to ClassVar)
+    _write_buffer: ClassVar[Dict[str, int]] = {
         'check_whitelist': 0,
         'total_check': 0,
         'total_kick': 0
     }
-    _buffer_lock = Lock()
-    BUFFER_FLUSH_THRESHOLD = 100
+    _buffer_lock: ClassVar[Lock] = Lock()
+    BUFFER_FLUSH_THRESHOLD: ClassVar[int] = 100
 
-    def __init__(self, total_group: int, total_kick: int, total_check: int, check_whitelist: int,
-                 total_users: int, total_servers: int) -> None:
-        self.total_group = total_group
-        self.total_kick = total_kick
-        self.total_check = total_check
-        self.check_whitelist = check_whitelist
-        self.total_users = total_users
-        self.total_servers = total_servers
+    total_group: int
+    total_kick: int
+    total_check: int
+    check_whitelist: int
+    total_users: int
+    total_servers: int
 
     @classmethod
     def _flush_buffer(cls, field: str):
@@ -38,7 +39,6 @@ class Statistics:
     @staticmethod
     def get_statistics() -> Optional['Statistics']:
         re = Database.query('SELECT * FROM "Statistics" WHERE rowid = 1;')
-        # 从数据库读取实际值 + 缓冲区中的未提交增量
         with Statistics._buffer_lock:
             total_kick = re[0]['total_kick'] + Statistics._write_buffer['total_kick']
             total_check = re[0]['total_check'] + Statistics._write_buffer['total_check']

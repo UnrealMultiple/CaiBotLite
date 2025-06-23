@@ -22,6 +22,12 @@ with open("assets/terraria_data/npc_id.json", encoding='utf-8', errors='ignore')
 with open("assets/terraria_data/buff_id.json", encoding='utf-8', errors='ignore') as fp:
     buffs = json.loads(fp.read())
 
+with open("assets/terraria_data/config_id.json", encoding='utf-8', errors='ignore') as fp:
+    configs = json.loads(fp.read())
+
+with open("assets/terraria_data/permission_id.json", encoding='utf-8', errors='ignore') as fp:
+    permissions = json.loads(fp.read())
+
 logger.success("[terraria_data]物品、前缀、生物、buffs、弹幕已缓存!")
 
 
@@ -146,6 +152,22 @@ def get_prefix_info_string(item):
 
     return MessageSegment.text("\n".join(info))
 
+def get_config_info_string(item):
+    info = [f"键: {item['Name']}", f"配置文件: {item['Path']}" , f"类型: {item['Type']}",f"默认值: {item['Default']}", f"描述: {item['Description']}" ]
+
+
+    return MessageSegment.text("\n".join(info))
+
+def get_permission_info_string(item):
+    info = [f"权限名: {item['Name']}"]
+
+    if item['RelevantCommands']:
+        info.append("相关命令: " + ",".join(item['RelevantCommands']))
+
+    info.append(f"描述: {item['Description']}")
+
+    return MessageSegment.text("\n".join(info))
+
 
 def enhanced_search(query, dataset, id_field, name_field, alias_field='Alias'):
     """增强版搜索算法（支持别名搜索）"""
@@ -165,6 +187,10 @@ def enhanced_search(query, dataset, id_field, name_field, alias_field='Alias'):
     for item in dataset:
         name = item[name_field]
         aliases = item[alias_field]
+
+        if isinstance(aliases, str):
+            aliases = [aliases]
+
         all_names = [name] + aliases
 
 
@@ -205,9 +231,9 @@ def enhanced_search(query, dataset, id_field, name_field, alias_field='Alias'):
     return [item for item, score in results]
 
 
-def get_search_result(query, dataset, id_field, name_field, info_func):
+def get_search_result(query, dataset, id_field, name_field, info_func,  alias_field='Alias'):
     """通用搜索处理函数"""
-    matched = enhanced_search(query, dataset, id_field, name_field)
+    matched = enhanced_search(query, dataset, id_field, name_field, alias_field)
 
     if not matched:
         return "啥东西都没找到哦!"
@@ -238,3 +264,9 @@ def get_buff_by_name_or_id(query):
 
 def get_prefix_by_name_or_id(query):
     return get_search_result(query, prefixes, "PrefixId", "Name", get_prefix_info_string)
+
+def get_config_by_name_or_id(query):
+    return get_search_result(query, configs, "ShortName", "Name", get_config_info_string, "Description")
+
+def get_permission_by_name_or_id(query):
+    return get_search_result(query, permissions, "ShortName", "Name", get_permission_info_string, "Description")

@@ -1,38 +1,26 @@
 import datetime
 import json
-from typing import Optional
+from dataclasses import dataclass
+from typing import Optional, List
 
 from src.database import Database
 
-
-class LoginRequest:
-    def __init__(self, time: datetime.datetime, uuid: str) -> None:
-        self.uuid = uuid
-        self.time = time
-
-    def to_dict(self):
-        return {
-            'time': self.time.isoformat(),
-            'uuid': self.uuid
-        }
-
-    @classmethod
-    def from_dict(cls, data):
-        data['time'] = datetime.datetime.fromisoformat(data['time'])  # 从ISO 8601格式的字符串恢复时间
-        return cls(**data)
+DEFAULT_SIGN_DATE = datetime.datetime.min
+DEFAULT_RENAME_DATE = datetime.datetime.min
+MAX_NAME_LENGTH = 20
+MIN_MONEY = 0
 
 
+@dataclass
 class User:
-    def __init__(self, group_id:str, open_id: str, name: str, money: int, last_sign: datetime.datetime, sign_count: int,
-                 uuid: list, last_rename) -> None:
-        self.group_id = group_id
-        self.open_id = open_id
-        self.name = name
-        self.money = money
-        self.last_sign = last_sign
-        self.sign_count = sign_count
-        self.uuid = uuid
-        self.last_rename = last_rename
+    group_id: str
+    open_id: str
+    name: str
+    money: int
+    last_sign: datetime.datetime
+    sign_count: int
+    uuid: List[str]
+    last_rename: datetime.datetime
 
 
     @staticmethod

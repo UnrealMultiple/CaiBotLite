@@ -2,13 +2,8 @@ import re
 from nonebot import on_command
 from nonebot.adapters.qq import GroupAtMessageCreateEvent, Bot, MessageSegment
 
+from src.api.server import server_connection_manager
 from src.models.statistics import Statistics
-from src import cai_api
-
-changelog = on_command("公告")
-@changelog.handle()
-async def changelog_handle(bot: Bot, event: GroupAtMessageCreateEvent):
-    await bot.send_to_group(event.group_openid, MessageSegment.markdown(""))
 
 
 
@@ -33,7 +28,7 @@ async def ban_about_handle(event: GroupAtMessageCreateEvent):
                        f'🙏反馈群: 991556763\n'
                        f'⚡当前已加入{statistics.total_group}个群\n'
                        f'绑定{statistics.total_users}名玩家,检查白名单{statistics.check_whitelist}次\n'
-                       f'绑定{statistics.total_servers}台服务器,当前已连接{len(cai_api.server_connection_manager.connections)}台\n'
+                       f'绑定{statistics.total_servers}台服务器,当前已连接{len(server_connection_manager.connections)}台\n'
                        f'Powered by Nonebot2')
 
 
@@ -50,7 +45,7 @@ async def plugin_version_handle(event: GroupAtMessageCreateEvent):
     tshock_count = {}
     os_count = {}
     whitelist_count = 0
-    for server in cai_api.server_connection_manager.connections.values():
+    for server in server_connection_manager.connections.values():
         version = server.plugin_version
         if version in version_count:
             version_count[version] += 1
