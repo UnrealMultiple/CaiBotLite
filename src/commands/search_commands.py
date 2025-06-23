@@ -1,7 +1,7 @@
+from urllib import parse
+
 from nonebot import on_command
 from nonebot.adapters.qq import GroupAtMessageCreateEvent
-from nonebot.adapters.qq.models.common import *
-from nonebot.params import CommandArg
 
 from src.utils.terraria_id_helper import *
 
@@ -19,78 +19,20 @@ def paginate(data, page_size, page_number):
     # 返回分页后的数据
     return data[start:end]
 
-
-rows = [
-    InlineKeyboardRow(
-        buttons=[
-            Button(
-                id="1",
-                render_data=RenderData(label="⬅️上一页", visited_label="⬅️上一页"),
-                action=Action(
-                    type=1,
-                    permission=Permission(type=1, specify_role_ids=["1", "2", "3"]),
-                    click_limit=10,
-                    unsupport_tips="兼容文本",
-                    data="data",
-                    at_bot_show_channel_list=True,
-                ),
-            ),
-            Button(
-                id="2",
-                render_data=RenderData(label="➡️下一页", visited_label="➡️下一页"),
-                action=Action(
-                    type=1,
-                    permission=Permission(type=1, specify_role_ids=["1", "2", "3"]),
-                    click_limit=10,
-                    unsupport_tips="兼容文本",
-                    data="data",
-                    at_bot_show_channel_list=True,
-                ),
-            ),
-        ]
-    ),
-    InlineKeyboardRow(
-        buttons=[
-            Button(
-                id="3",
-                render_data=RenderData(
-                    label="📅 打卡（5）", visited_label="📅 打卡（5）"
-                ),
-                action=Action(
-                    type=1,
-                    permission=Permission(type=1, specify_role_ids=["1", "2", "3"]),
-                    click_limit=10,
-                    unsupport_tips="兼容文本",
-                    data="data",
-                    at_bot_show_channel_list=True,
-                ),
-            )
-        ]
-    ),
-]
-
 wiki = on_command("wiki", aliases={"百科"}, force_whitespace=True)
 
 
 @wiki.handle()
 async def wiki_handle(event: GroupAtMessageCreateEvent):
-    await wiki.finish(
-        MessageSegment.keyboard(MessageKeyboard(content=InlineKeyboard(rows=rows)))
-    )
+    msg = msg_cut(event.get_plaintext())
+    if len(msg) != 2:
+        await search_item.finish(f"\n『Wiki』\n" + "格式错误!正确格式: Wiki <内容>")
 
-    # if msg == "":
-    #     await wiki.finish(MessageSegment.at(event.user_id) +
-    #                       f"\n『Terraria Wiki』\n"
-    #                       f"已为你找到以下TerrariaWiki网站：\n1"
-    #                       f"⃣官方百科：\nhttps://terraria.wiki.gg/zh/wiki/Terraria_Wiki\n"
-    #                       f"2⃣旧百科：\nhttps://terraria.fandom.com/zh/wiki/Terraria_Wiki\n"
-    #                       f"3⃣灾厄百科：\nhttps://calamitymod.wiki.gg/zh")
-    # await wiki.finish(MessageSegment.at(event.user_id) +
-    #                   f"\n『Terraria Wiki』\n"
-    #                   f"已从Wiki上帮你找到[{msg}]，点击对应链接查看：\n1"
-    #                   f"⃣官方百科：\nhttps://terraria.wiki.gg/zh/wiki/{parse.quote(msg)}\n"
-    #                   f"2⃣旧百科：\nhttps://terraria.fandom.com/zh/wiki/Special:%E6%90%9C%E7%B4%A2?search={parse.quote(msg)}\n"
-    #                   f"3⃣灾厄百科：\nhttps://calamitymod.wiki.gg/zh/index.php?search={parse.quote(msg)}")
+    keyword = msg[1]
+    await wiki.finish(f"\n『Wiki』\n"
+                      f"已从Wiki上帮你找到[{keyword}]，点击对应链接查看: \n"
+                      f"#️⃣官方百科: \nhttps://raw.terraria.ink/wiki/gg/{parse.quote(keyword)}\n" +
+                      f"#️⃣Calamity百科: \nhttps://raw.terraria.ink/wiki/calamity/{parse.quote(keyword)}")
 
 
 search_item = on_command("si", aliases={"搜物品"}, force_whitespace=True)
