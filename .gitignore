@@ -4,14 +4,14 @@
 
 .idea
 
-/data/bot.db
+.env.prod$
+/data/bot.db$
 
 /data/Sensitive.json
 
 /data/tlds.txt
 
-.env.prod
-*.db
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
