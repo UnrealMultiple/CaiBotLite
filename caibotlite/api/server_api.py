@@ -18,6 +18,7 @@ from caibotlite.managers.user_manager import UserManager
 from caibotlite.models.connected_server import ConnectedServer
 from caibotlite.models.package import Package
 from caibotlite.models.server_info import ServerInfo
+from caibotlite.services import Statistics
 from caibotlite.services.package_writer import PackageWriter
 
 app: FastAPI = nonebot.get_app()
@@ -144,7 +145,7 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
             async with async_session() as session:
                 user = await UserManager.get_user_by_name(session, connected_server.group_open_id, name)
                 group = await GroupManager.get_group_by_open_id(session, connected_server.group_open_id)
-
+                Statistics.whitelist_check += 1
                 package_writer = PackageWriter(PackageType.WHITELIST, False)
                 package_writer.write("player_name", name)
                 whitelist_result: WhitelistResult
