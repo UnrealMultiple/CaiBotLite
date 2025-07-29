@@ -110,7 +110,8 @@ online = on_command("在线", aliases={"在线人数", "在线查询", "泰拉�
 async def _(group: CurrentGroup):
     if len(group.servers) == 0:
         await online.finish(f'\n『泰拉在线』\n' +
-                            f"你好像还没有绑定服务器捏？")
+                            f"你好像还没有绑定服务器捏？" + "\n*由于CaiBot更新, 请下载最新版适配插件，然后重新添加服务器: \n"
+                                                           "https://docs.terraria.ink/zh/other/CaiBotLite.html")
 
     package_writer = PackageWriter(PackageType.PLAYER_LIST)
     package = package_writer.build()
@@ -476,7 +477,7 @@ async def _(group: CurrentGroup):
             except:
                 ip = server.ip
             info = ConnectionManager.connected_servers[server.token].server_info
-            white_list = "[白名单]" if server.whitelist else ""
+            white_list = "[白名单]" if info.enable_whitelist else ""
             results.append(f"๑{server_number}๑🌐{info.server_name}{white_list}({info.game_version})\n"
                            f"地址: {filter_all(ip)}\n"
                            f"端口: {server.port}")
