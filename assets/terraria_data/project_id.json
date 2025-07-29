@@ -1,0 +1,7339 @@
+[
+  {
+    "Name": "",
+    "ProjId": 0,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "木箭",
+    "ProjId": 1,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈火箭",
+    "ProjId": 2,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "手里剑",
+    "ProjId": 3,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "邪箭",
+    "ProjId": 4,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小丑之箭",
+    "ProjId": 5,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "附魔回旋镖",
+    "ProjId": 6,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔刺",
+    "ProjId": 7,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔刺",
+    "ProjId": 8,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星怒",
+    "ProjId": 9,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "净化粉",
+    "ProjId": 10,
+    "AiStyle": 6,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔粉",
+    "ProjId": 11,
+    "AiStyle": 6,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "陨星",
+    "ProjId": 12,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 13,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "子弹",
+    "ProjId": 14,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "比莱"
+    ]
+  },
+  {
+    "Name": "火球",
+    "ProjId": 15,
+    "AiStyle": 8,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔法飞弹",
+    "ProjId": 16,
+    "AiStyle": 9,
+    "Friendly": true,
+    "Alias": [
+      "魔法导弹"
+    ]
+  },
+  {
+    "Name": "土球",
+    "ProjId": 17,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影珠",
+    "ProjId": 18,
+    "AiStyle": 11,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰回旋镖",
+    "ProjId": 19,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "绿激光",
+    "ProjId": 20,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骨头",
+    "ProjId": 21,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水流",
+    "ProjId": 22,
+    "AiStyle": 12,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鱼叉枪",
+    "ProjId": 23,
+    "AiStyle": 13,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "尖球",
+    "ProjId": 24,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "链球",
+    "ProjId": 25,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蓝月",
+    "ProjId": 26,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水矢",
+    "ProjId": 27,
+    "AiStyle": 8,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "炸弹",
+    "ProjId": 28,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雷管",
+    "ProjId": 29,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "手榴弹",
+    "ProjId": 30,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙球",
+    "ProjId": 31,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "常春藤鞭",
+    "ProjId": 32,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "荆棘旋刃",
+    "ProjId": 33,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰火鞭",
+    "ProjId": 34,
+    "AiStyle": 9,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "阳炎之怒",
+    "ProjId": 35,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "流星弹",
+    "ProjId": 36,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粘性炸弹",
+    "ProjId": 37,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鸟妖之羽",
+    "ProjId": 38,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "泥球",
+    "ProjId": 39,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "灰烬球",
+    "ProjId": 40,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": [
+      "尘球"
+    ]
+  },
+  {
+    "Name": "狱炎箭",
+    "ProjId": 41,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙球",
+    "ProjId": 42,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 43,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "恶魔镰刀",
+    "ProjId": 44,
+    "AiStyle": 18,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "恶魔之镰",
+    "ProjId": 45,
+    "AiStyle": 18,
+    "Friendly": true,
+    "Alias": [
+      "恶魔锄刀"
+    ]
+  },
+  {
+    "Name": "暗黑长枪",
+    "ProjId": 46,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": [
+      "暗黑长戟"
+    ]
+  },
+  {
+    "Name": "三叉戟",
+    "ProjId": 47,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "投刀",
+    "ProjId": 48,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "长矛",
+    "ProjId": 49,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "荧光棒",
+    "ProjId": 50,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "种子",
+    "ProjId": 51,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "木制回旋镖",
+    "ProjId": 52,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粘性荧光棒",
+    "ProjId": 53,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "毒刀",
+    "ProjId": 54,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒刺",
+    "ProjId": 55,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "黑檀沙球",
+    "ProjId": 56,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钴链锯",
+    "ProjId": 57,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "秘银链锯",
+    "ProjId": 58,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钴钻头",
+    "ProjId": 59,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "秘银钻头",
+    "ProjId": 60,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "精金链锯",
+    "ProjId": 61,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "精金钻头",
+    "ProjId": 62,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "太极连枷",
+    "ProjId": 63,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "秘银长戟",
+    "ProjId": 64,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黑檀沙球",
+    "ProjId": 65,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "精金关刀",
+    "ProjId": 66,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "珍珠沙球",
+    "ProjId": 67,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "珍珠沙球",
+    "ProjId": 68,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "圣水",
+    "ProjId": 69,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "邪水",
+    "ProjId": 70,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泥沙球",
+    "ProjId": 71,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蓝仙灵",
+    "ProjId": 72,
+    "AiStyle": 11,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 73,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 74,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "快乐炸弹",
+    "ProjId": 75,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "音符",
+    "ProjId": 76,
+    "AiStyle": 21,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "音符",
+    "ProjId": 77,
+    "AiStyle": 21,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "音符",
+    "ProjId": 78,
+    "AiStyle": 21,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "彩虹",
+    "ProjId": 79,
+    "AiStyle": 9,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪块",
+    "ProjId": 80,
+    "AiStyle": 22,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "木箭",
+    "ProjId": 81,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰箭",
+    "ProjId": 82,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "魔眼激光",
+    "ProjId": 83,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "粉激光",
+    "ProjId": 84,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火焰",
+    "ProjId": 85,
+    "AiStyle": 193,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粉仙灵",
+    "ProjId": 86,
+    "AiStyle": 11,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粉仙灵",
+    "ProjId": 87,
+    "AiStyle": 11,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "紫激光",
+    "ProjId": 88,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水晶子弹",
+    "ProjId": 89,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水晶碎块",
+    "ProjId": 90,
+    "AiStyle": 24,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "圣箭",
+    "ProjId": 91,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "神圣之星",
+    "ProjId": 92,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔法飞刀",
+    "ProjId": 93,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水晶风暴",
+    "ProjId": 94,
+    "AiStyle": 24,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒焰",
+    "ProjId": 95,
+    "AiStyle": 8,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒焰",
+    "ProjId": 96,
+    "AiStyle": 8,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "钴薙刀",
+    "ProjId": 97,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": [
+      "钴剃刀"
+    ]
+  },
+  {
+    "Name": "毒镖",
+    "ProjId": 98,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "巨石",
+    "ProjId": 99,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "死亡激光",
+    "ProjId": 100,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "魔眼烈火",
+    "ProjId": 101,
+    "AiStyle": 23,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "炸弹",
+    "ProjId": 102,
+    "AiStyle": 16,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒箭",
+    "ProjId": 103,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒弹",
+    "ProjId": 104,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "永恒之枪",
+    "ProjId": 105,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "光辉飞盘",
+    "ProjId": 106,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "锤斧钻",
+    "ProjId": 107,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "炸药",
+    "ProjId": 108,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雪球",
+    "ProjId": 109,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "子弹",
+    "ProjId": 110,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "比莱"
+    ]
+  },
+  {
+    "Name": "兔兔",
+    "ProjId": 111,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "企鹅",
+    "ProjId": 112,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪回旋镖",
+    "ProjId": 113,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "邪恶三叉戟",
+    "ProjId": 114,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "邪恶三叉戟",
+    "ProjId": 115,
+    "AiStyle": 27,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "剑束",
+    "ProjId": 116,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骨箭",
+    "ProjId": 117,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪矢",
+    "ProjId": 118,
+    "AiStyle": 28,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜矢",
+    "ProjId": 119,
+    "AiStyle": 28,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜箭",
+    "ProjId": 120,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "紫晶矢",
+    "ProjId": 121,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黄玉矢",
+    "ProjId": 122,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蓝玉矢",
+    "ProjId": 123,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "翡翠矢",
+    "ProjId": 124,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "红玉矢",
+    "ProjId": 125,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钻石矢",
+    "ProjId": 126,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "海龟",
+    "ProjId": 127,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜冲击",
+    "ProjId": 128,
+    "AiStyle": 28,
+    "Friendly": false,
+    "Alias": [
+      "寒霜爆破弹"
+    ]
+  },
+  {
+    "Name": "符文爆破弹",
+    "ProjId": 129,
+    "AiStyle": 28,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蘑菇长矛",
+    "ProjId": 130,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蘑菇",
+    "ProjId": 131,
+    "AiStyle": 30,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉光束",
+    "ProjId": 132,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 133,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 134,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 135,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 136,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 137,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 138,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 139,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 140,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 141,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 142,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 143,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 144,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "纯净喷射",
+    "ProjId": 145,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "神圣喷射",
+    "ProjId": 146,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "腐化喷射",
+    "ProjId": 147,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蘑菇喷射",
+    "ProjId": 148,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "猩红喷射",
+    "ProjId": 149,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆裂藤蔓",
+    "ProjId": 150,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆裂藤蔓",
+    "ProjId": 151,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆裂藤蔓",
+    "ProjId": 152,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "腐叉",
+    "ProjId": 153,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血肉之球",
+    "ProjId": 154,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙滩球",
+    "ProjId": 155,
+    "AiStyle": 32,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "光明光束",
+    "ProjId": 156,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": [
+      "光束"
+    ]
+  },
+  {
+    "Name": "永夜光束",
+    "ProjId": 157,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": [
+      "夜光束"
+    ]
+  },
+  {
+    "Name": "铜币",
+    "ProjId": 158,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "银币",
+    "ProjId": 159,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "金币",
+    "ProjId": 160,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铂金币",
+    "ProjId": 161,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "炮弹",
+    "ProjId": 162,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "照明弹",
+    "ProjId": 163,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "地雷",
+    "ProjId": 164,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蛛丝",
+    "ProjId": 165,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雪球",
+    "ProjId": 166,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 167,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 168,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 169,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 170,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "绳圈",
+    "ProjId": 171,
+    "AiStyle": 35,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "霜冻箭",
+    "ProjId": 172,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "附魔光束",
+    "ProjId": 173,
+    "AiStyle": 27,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪尖刺",
+    "ProjId": 174,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "吞噬怪宝宝",
+    "ProjId": 175,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "丛林尖刺",
+    "ProjId": 176,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "冰水唾液",
+    "ProjId": 177,
+    "AiStyle": 28,
+    "Friendly": false,
+    "Alias": [
+      "冰雪唾液"
+    ]
+  },
+  {
+    "Name": "彩纸",
+    "ProjId": 178,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "雪泥球",
+    "ProjId": 179,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "子弹",
+    "ProjId": 180,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "比莱"
+    ]
+  },
+  {
+    "Name": "蜜蜂",
+    "ProjId": 181,
+    "AiStyle": 36,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "附灵飞斧",
+    "ProjId": 182,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": [
+      "疯狂飞斧"
+    ]
+  },
+  {
+    "Name": "蜜蜂手榴弹",
+    "ProjId": 183,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒镖",
+    "ProjId": 184,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "尖球",
+    "ProjId": 185,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "长矛",
+    "ProjId": 186,
+    "AiStyle": 37,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火焰喷射器",
+    "ProjId": 187,
+    "AiStyle": 38,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火焰",
+    "ProjId": 188,
+    "AiStyle": 23,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "胡蜂",
+    "ProjId": 189,
+    "AiStyle": 36,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "机械食人鱼",
+    "ProjId": 190,
+    "AiStyle": 39,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "矮人",
+    "ProjId": 191,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "矮人",
+    "ProjId": 192,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "矮人",
+    "ProjId": 193,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "矮人",
+    "ProjId": 194,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "矮人",
+    "ProjId": 195,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烟雾弹",
+    "ProjId": 196,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "骷髅王头宝宝",
+    "ProjId": 197,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": [
+      "骷髅王宝宝头"
+    ]
+  },
+  {
+    "Name": "黄蜂宝宝",
+    "ProjId": 198,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "提基幽魂",
+    "ProjId": 199,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宠物蜥蜴",
+    "ProjId": 200,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 201,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 202,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 203,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 204,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 205,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "树叶",
+    "ProjId": 206,
+    "AiStyle": 40,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿弹",
+    "ProjId": 207,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "比莱",
+      "子弹"
+    ]
+  },
+  {
+    "Name": "鹦鹉",
+    "ProjId": 208,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "松露人",
+    "ProjId": 209,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "树苗",
+    "ProjId": 210,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "妖灵",
+    "ProjId": 211,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钯金刺矛",
+    "ProjId": 212,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钯金钻头",
+    "ProjId": 213,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钯金链锯",
+    "ProjId": 214,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "山铜长戟",
+    "ProjId": 215,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "山铜钻头",
+    "ProjId": 216,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "山铜链锯",
+    "ProjId": 217,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钛金三叉戟",
+    "ProjId": 218,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钛金钻头",
+    "ProjId": 219,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钛金链锯",
+    "ProjId": 220,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "花瓣",
+    "ProjId": 221,
+    "AiStyle": 41,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿镋",
+    "ProjId": 222,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿钻头",
+    "ProjId": 223,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿链锯",
+    "ProjId": 224,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿箭",
+    "ProjId": 225,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水晶叶",
+    "ProjId": 226,
+    "AiStyle": 42,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水晶叶",
+    "ProjId": 227,
+    "AiStyle": 43,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子云",
+    "ProjId": 228,
+    "AiStyle": 44,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿珠",
+    "ProjId": 229,
+    "AiStyle": 44,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 230,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 231,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 232,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 233,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 234,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "宝石钩",
+    "ProjId": 235,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "恐龙宝宝",
+    "ProjId": 236,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雨云",
+    "ProjId": 237,
+    "AiStyle": 45,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "雨云",
+    "ProjId": 238,
+    "AiStyle": 45,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "雨",
+    "ProjId": 239,
+    "AiStyle": 45,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "炮弹",
+    "ProjId": 240,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "猩红沙球",
+    "ProjId": 241,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": [
+      "血沙球"
+    ]
+  },
+  {
+    "Name": "高速子弹",
+    "ProjId": 242,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "比莱",
+      "子弹"
+    ]
+  },
+  {
+    "Name": "血云",
+    "ProjId": 243,
+    "AiStyle": 45,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "血云",
+    "ProjId": 244,
+    "AiStyle": 45,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "血雨",
+    "ProjId": 245,
+    "AiStyle": 45,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒刺发射器",
+    "ProjId": 246,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "花之力",
+    "ProjId": 247,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": [
+      "花冠"
+    ]
+  },
+  {
+    "Name": "花之力",
+    "ProjId": 248,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "花冠"
+    ]
+  },
+  {
+    "Name": "毒刺发射器",
+    "ProjId": 249,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "彩虹",
+    "ProjId": 250,
+    "AiStyle": 46,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "彩虹",
+    "ProjId": 251,
+    "AiStyle": 46,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶绿手提钻",
+    "ProjId": 252,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜球",
+    "ProjId": 253,
+    "AiStyle": 8,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "磁球",
+    "ProjId": 254,
+    "AiStyle": 47,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "磁球",
+    "ProjId": 255,
+    "AiStyle": 48,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骷髅王之手",
+    "ProjId": 256,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜光束",
+    "ProjId": 257,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "寒霜束"
+    ]
+  },
+  {
+    "Name": "火球",
+    "ProjId": 258,
+    "AiStyle": 8,
+    "Friendly": false,
+    "Alias": [
+      "火光球"
+    ]
+  },
+  {
+    "Name": "魔眼光束",
+    "ProjId": 259,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "高温射线枪",
+    "ProjId": 260,
+    "AiStyle": 48,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "巨石",
+    "ProjId": 261,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "石巨人之拳",
+    "ProjId": 262,
+    "AiStyle": 13,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪镰刀",
+    "ProjId": 263,
+    "AiStyle": 18,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雨",
+    "ProjId": 264,
+    "AiStyle": 45,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "毒牙",
+    "ProjId": 265,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "史莱姆宝宝",
+    "ProjId": 266,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "毒镖",
+    "ProjId": 267,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "弹簧眼",
+    "ProjId": 268,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雪人宝宝",
+    "ProjId": 269,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骷髅头",
+    "ProjId": 270,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "拳击手套",
+    "ProjId": 271,
+    "AiStyle": 13,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "香蕉回旋镖",
+    "ProjId": 272,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "链刀",
+    "ProjId": 273,
+    "AiStyle": 13,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "死神镰刀",
+    "ProjId": 274,
+    "AiStyle": 18,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "种子",
+    "ProjId": 275,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "毒种子",
+    "ProjId": 276,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "刺球",
+    "ProjId": 277,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "灵液箭",
+    "ProjId": 278,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "灵液弹",
+    "ProjId": 279,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黄金雨",
+    "ProjId": 280,
+    "AiStyle": 12,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸兔",
+    "ProjId": 281,
+    "AiStyle": 49,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒液箭",
+    "ProjId": 282,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒液弹",
+    "ProjId": 283,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "派对弹",
+    "ProjId": 284,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "纳米弹",
+    "ProjId": 285,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸子弹",
+    "ProjId": 286,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "金子弹",
+    "ProjId": 287,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黄金雨",
+    "ProjId": 288,
+    "AiStyle": 12,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "彩纸",
+    "ProjId": 289,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗影光束",
+    "ProjId": 290,
+    "AiStyle": 48,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "狱火",
+    "ProjId": 291,
+    "AiStyle": 50,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "狱火",
+    "ProjId": 292,
+    "AiStyle": 50,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "亡魂",
+    "ProjId": 293,
+    "AiStyle": 51,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗影光束",
+    "ProjId": 294,
+    "AiStyle": 48,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "狱火",
+    "ProjId": 295,
+    "AiStyle": 50,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "狱火",
+    "ProjId": 296,
+    "AiStyle": 50,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "亡魂",
+    "ProjId": 297,
+    "AiStyle": 51,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幽灵治愈",
+    "ProjId": 298,
+    "AiStyle": 52,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗影焰",
+    "ProjId": 299,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "圣骑士锤",
+    "ProjId": 300,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "圣骑士锤",
+    "ProjId": 301,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "狙击弹",
+    "ProjId": 302,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 303,
+    "AiStyle": 16,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "吸血鬼飞刀",
+    "ProjId": 304,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "吸血鬼灵飞刀",
+    "ProjId": 305,
+    "AiStyle": 52,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "吞噬怪咬刺",
+    "ProjId": 306,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小吞噬怪",
+    "ProjId": 307,
+    "AiStyle": 36,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜九头蛇",
+    "ProjId": 308,
+    "AiStyle": 53,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜冲击",
+    "ProjId": 309,
+    "AiStyle": 28,
+    "Friendly": true,
+    "Alias": [
+      "寒霜爆破弹"
+    ]
+  },
+  {
+    "Name": "蓝照明弹",
+    "ProjId": 310,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "玉米糖",
+    "ProjId": 311,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "杰克南瓜灯",
+    "ProjId": 312,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜘蛛",
+    "ProjId": 313,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "南瓜娃娃",
+    "ProjId": 314,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蝙蝠钩",
+    "ProjId": 315,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蝙蝠",
+    "ProjId": 316,
+    "AiStyle": 36,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "乌鸦",
+    "ProjId": 317,
+    "AiStyle": 54,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "臭蛋",
+    "ProjId": 318,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黑猫",
+    "ProjId": 319,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血腥砍刀",
+    "ProjId": 320,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰杰克南瓜",
+    "ProjId": 321,
+    "AiStyle": 55,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "木钩",
+    "ProjId": 322,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "尖桩",
+    "ProjId": 323,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒树苗",
+    "ProjId": 324,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰木",
+    "ProjId": 325,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "希腊烈火",
+    "ProjId": 326,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "希腊烈火",
+    "ProjId": 327,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "希腊烈火",
+    "ProjId": 328,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰镰刀",
+    "ProjId": 329,
+    "AiStyle": 56,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星形茴香",
+    "ProjId": 330,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "糖棒钩",
+    "ProjId": 331,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "圣诞钩",
+    "ProjId": 332,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水果蛋糕旋刃",
+    "ProjId": 333,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小狗",
+    "ProjId": 334,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "装饰",
+    "ProjId": 335,
+    "AiStyle": 30,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "松针",
+    "ProjId": 336,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暴雪",
+    "ProjId": 337,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 338,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 339,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 340,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 341,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "北极",
+    "ProjId": 342,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "北极",
+    "ProjId": 343,
+    "AiStyle": 57,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "北极",
+    "ProjId": 344,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "松针",
+    "ProjId": 345,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "装饰",
+    "ProjId": 346,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "装饰",
+    "ProjId": 347,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜波",
+    "ProjId": 348,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜碎块",
+    "ProjId": 349,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "导弹",
+    "ProjId": 350,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "礼物",
+    "ProjId": 351,
+    "AiStyle": 58,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "尖刺",
+    "ProjId": 352,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": [
+      "斯派克"
+    ]
+  },
+  {
+    "Name": "格林奇宝宝",
+    "ProjId": 353,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "猩红沙球",
+    "ProjId": 354,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": [
+      "血沙球"
+    ]
+  },
+  {
+    "Name": "毒液尖牙",
+    "ProjId": 355,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幽灵怒气",
+    "ProjId": 356,
+    "AiStyle": 59,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "脉冲矢",
+    "ProjId": 357,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "水枪",
+    "ProjId": 358,
+    "AiStyle": 60,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜矢",
+    "ProjId": 359,
+    "AiStyle": 28,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 360,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 361,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 362,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 363,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 364,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 365,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 366,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "黑曜石剑鱼",
+    "ProjId": 367,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "剑鱼",
+    "ProjId": 368,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "锯齿鲨",
+    "ProjId": 369,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爱情药水",
+    "ProjId": 370,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "恶臭药水",
+    "ProjId": 371,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鱼钩",
+    "ProjId": 372,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "黄蜂",
+    "ProjId": 373,
+    "AiStyle": 62,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "黄蜂毒刺",
+    "ProjId": 374,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "飞行小鬼",
+    "ProjId": 375,
+    "AiStyle": 62,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "小鬼火球",
+    "ProjId": 376,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜘蛛炮塔",
+    "ProjId": 377,
+    "AiStyle": 53,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蜘蛛卵",
+    "ProjId": 378,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜘蛛宝宝",
+    "ProjId": 379,
+    "AiStyle": 63,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "和风鱼",
+    "ProjId": 380,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 381,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "浮标",
+    "ProjId": 382,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "锚",
+    "ProjId": 383,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鲨鱼旋风",
+    "ProjId": 384,
+    "AiStyle": 64,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "鲨鱼旋风矢",
+    "ProjId": 385,
+    "AiStyle": 65,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "克苏鲁旋风",
+    "ProjId": 386,
+    "AiStyle": 64,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "小激光眼",
+    "ProjId": 387,
+    "AiStyle": 66,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小魔焰眼",
+    "ProjId": 388,
+    "AiStyle": 66,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "迷你视网膜激光",
+    "ProjId": 389,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒液蜘蛛",
+    "ProjId": 390,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "跳跃蜘蛛",
+    "ProjId": 391,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "危险蜘蛛",
+    "ProjId": 392,
+    "AiStyle": 26,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "独眼海盗",
+    "ProjId": 393,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "恶魂海盗",
+    "ProjId": 394,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "海盗船长",
+    "ProjId": 395,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "史莱姆钩",
+    "ProjId": 396,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粘性手榴弹",
+    "ProjId": 397,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "迷你牛头怪",
+    "ProjId": 398,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "莫洛托夫鸡尾酒",
+    "ProjId": 399,
+    "AiStyle": 68,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "莫洛托夫之火",
+    "ProjId": 400,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "莫洛托夫之火",
+    "ProjId": 401,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "莫洛托夫之火",
+    "ProjId": 402,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "轨道爪钩",
+    "ProjId": 403,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": [
+      "跟踪钩"
+    ]
+  },
+  {
+    "Name": "猪鲨链球",
+    "ProjId": 404,
+    "AiStyle": 69,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "猪鲨链球泡泡",
+    "ProjId": 405,
+    "AiStyle": 70,
+    "Friendly": true,
+    "Alias": [
+      "猪鲨链球泡"
+    ]
+  },
+  {
+    "Name": "史莱姆枪",
+    "ProjId": 406,
+    "AiStyle": 60,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暴风雨",
+    "ProjId": 407,
+    "AiStyle": 62,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "迷你鲨鱼龙",
+    "ProjId": 408,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "台风",
+    "ProjId": 409,
+    "AiStyle": 71,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泡泡",
+    "ProjId": 410,
+    "AiStyle": 72,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铜币",
+    "ProjId": 411,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "银币",
+    "ProjId": 412,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "金币",
+    "ProjId": 413,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "铂金币",
+    "ProjId": 414,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 415,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 416,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 417,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 418,
+    "AiStyle": 34,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烟花喷泉",
+    "ProjId": 419,
+    "AiStyle": 73,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烟花喷泉",
+    "ProjId": 420,
+    "AiStyle": 73,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烟花喷泉",
+    "ProjId": 421,
+    "AiStyle": 73,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烟花喷泉",
+    "ProjId": 422,
+    "AiStyle": 73,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "UFO",
+    "ProjId": 423,
+    "AiStyle": 62,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "流星",
+    "ProjId": 424,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "流星",
+    "ProjId": 425,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "流星",
+    "ProjId": 426,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋链锯",
+    "ProjId": 427,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋钻头",
+    "ProjId": 428,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云链锯",
+    "ProjId": 429,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云钻头",
+    "ProjId": 430,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "耀斑链锯",
+    "ProjId": 431,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "耀斑钻头",
+    "ProjId": 432,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "UFO射线",
+    "ProjId": 433,
+    "AiStyle": 48,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鳞甲怪激光",
+    "ProjId": 434,
+    "AiStyle": 74,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "电击矢",
+    "ProjId": 435,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "扰脑矢",
+    "ProjId": 436,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "扰心矢"
+    ]
+  },
+  {
+    "Name": "电击怪矛尖",
+    "ProjId": 437,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "激光射线",
+    "ProjId": 438,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "激光机枪",
+    "ProjId": 439,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "激光",
+    "ProjId": 440,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鳞甲怪准星",
+    "ProjId": 441,
+    "AiStyle": 76,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "电圈导弹",
+    "ProjId": 442,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "电圈",
+    "ProjId": 443,
+    "AiStyle": 77,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "外星霰弹枪",
+    "ProjId": 444,
+    "AiStyle": 78,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "激光钻头",
+    "ProjId": 445,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "反重力钩",
+    "ProjId": 446,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火星死亡射线",
+    "ProjId": 447,
+    "AiStyle": 79,
+    "Friendly": false,
+    "Alias": [
+      "火星致命光"
+    ]
+  },
+  {
+    "Name": "火星火箭",
+    "ProjId": 448,
+    "AiStyle": 80,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "飞碟激光",
+    "ProjId": 449,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "飞碟残片",
+    "ProjId": 450,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": [
+      "飞碟碎片"
+    ]
+  },
+  {
+    "Name": "波涌之刃",
+    "ProjId": 451,
+    "AiStyle": 81,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幻影眼",
+    "ProjId": 452,
+    "AiStyle": 82,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "钻头准星",
+    "ProjId": 453,
+    "AiStyle": 76,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "幻影球",
+    "ProjId": 454,
+    "AiStyle": 83,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "幻影死亡射线",
+    "ProjId": 455,
+    "AiStyle": 84,
+    "Friendly": false,
+    "Alias": [
+      "幻影致命光"
+    ]
+  },
+  {
+    "Name": "月蛭",
+    "ProjId": 456,
+    "AiStyle": 85,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "相位扭曲弹射器",
+    "ProjId": 457,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": [
+      ""
+    ]
+  },
+  {
+    "Name": "相位扭曲飞盘",
+    "ProjId": 458,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": [
+      ""
+    ]
+  },
+  {
+    "Name": "充能爆破珠",
+    "ProjId": 459,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "带电爆破珠"
+    ]
+  },
+  {
+    "Name": "充能爆破炮",
+    "ProjId": 460,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": [
+      "带电爆破炮"
+    ]
+  },
+  {
+    "Name": "充能爆破激光",
+    "ProjId": 461,
+    "AiStyle": 84,
+    "Friendly": true,
+    "Alias": [
+      "带电爆破激光"
+    ]
+  },
+  {
+    "Name": "幻影矢",
+    "ProjId": 462,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "毒粉",
+    "ProjId": 463,
+    "AiStyle": 6,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪雾",
+    "ProjId": 464,
+    "AiStyle": 86,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "闪电珠",
+    "ProjId": 465,
+    "AiStyle": 88,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "闪电珠弧",
+    "ProjId": 466,
+    "AiStyle": 88,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火球",
+    "ProjId": 467,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "火光球"
+    ]
+  },
+  {
+    "Name": "暗影火球",
+    "ProjId": 468,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蜜蜂箭",
+    "ProjId": 469,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粘性雷管",
+    "ProjId": 470,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骨头",
+    "ProjId": 471,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蛛丝唾液",
+    "ProjId": 472,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "洞穴探险荧光棒",
+    "ProjId": 473,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "骨箭",
+    "ProjId": 474,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "藤蔓绳圈",
+    "ProjId": 475,
+    "AiStyle": 35,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "夺命杖",
+    "ProjId": 476,
+    "AiStyle": 185,
+    "Friendly": true,
+    "Alias": [
+      "夺命弹"
+    ]
+  },
+  {
+    "Name": "水晶镖",
+    "ProjId": 477,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒镖",
+    "ProjId": 478,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "灵液镖",
+    "ProjId": 479,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒焰",
+    "ProjId": 480,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铁链血滴子",
+    "ProjId": 481,
+    "AiStyle": 13,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒焰",
+    "ProjId": 482,
+    "AiStyle": 87,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "种子弯刀",
+    "ProjId": 483,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "种子弯刀",
+    "ProjId": 484,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "地狱之翼",
+    "ProjId": 485,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 486,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 487,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 488,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爪钩",
+    "ProjId": 489,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪电祭礼",
+    "ProjId": 490,
+    "AiStyle": 89,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "飞刀",
+    "ProjId": 491,
+    "AiStyle": 9,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔法灯笼",
+    "ProjId": 492,
+    "AiStyle": 90,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔晶碎块",
+    "ProjId": 493,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "魔晶碎块",
+    "ProjId": 494,
+    "AiStyle": 4,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影焰箭",
+    "ProjId": 495,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影焰",
+    "ProjId": 496,
+    "AiStyle": 91,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影焰刀",
+    "ProjId": 497,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钉子",
+    "ProjId": 498,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "脸怪宝宝",
+    "ProjId": 499,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "猩红之心",
+    "ProjId": 500,
+    "AiStyle": 67,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烧瓶",
+    "ProjId": 501,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": [
+      "瓶子"
+    ]
+  },
+  {
+    "Name": "彩虹猫之刃",
+    "ProjId": 502,
+    "AiStyle": 8,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "狂星之怒",
+    "ProjId": 503,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火花",
+    "ProjId": 504,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "绳圈",
+    "ProjId": 505,
+    "AiStyle": 35,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "绳圈",
+    "ProjId": 506,
+    "AiStyle": 35,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "标枪",
+    "ProjId": 507,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "标枪",
+    "ProjId": 508,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "屠夫链锯",
+    "ProjId": 509,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒气瓶",
+    "ProjId": 510,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒云",
+    "ProjId": 511,
+    "AiStyle": 92,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒云",
+    "ProjId": 512,
+    "AiStyle": 92,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒云",
+    "ProjId": 513,
+    "AiStyle": 92,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钉子",
+    "ProjId": 514,
+    "AiStyle": 93,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "弹力荧光棒",
+    "ProjId": 515,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弹力炸弹",
+    "ProjId": 516,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "弹力手榴弹",
+    "ProjId": 517,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钱币传送门",
+    "ProjId": 518,
+    "AiStyle": 94,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "炸弹鱼",
+    "ProjId": 519,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "寒霜飞鱼",
+    "ProjId": 520,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸水晶",
+    "ProjId": 521,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": [
+      "水晶弹"
+    ]
+  },
+  {
+    "Name": "爆炸水晶",
+    "ProjId": 522,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": [
+      "水晶弹"
+    ]
+  },
+  {
+    "Name": "毒泡",
+    "ProjId": 523,
+    "AiStyle": 95,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "灵液溅弹",
+    "ProjId": 524,
+    "AiStyle": 96,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "飞猪存钱罐",
+    "ProjId": 525,
+    "AiStyle": 97,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "能量",
+    "ProjId": 526,
+    "AiStyle": 98,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 527,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 528,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 529,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 530,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "墓石",
+    "ProjId": 531,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "交叉骨",
+    "ProjId": 532,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "X骨头",
+      "交叉骨头"
+    ]
+  },
+  {
+    "Name": "致命球",
+    "ProjId": 533,
+    "AiStyle": 66,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 534,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蛇发女妖射线",
+    "ProjId": 535,
+    "AiStyle": 100,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蛇发女妖射线",
+    "ProjId": 536,
+    "AiStyle": 101,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘激光",
+    "ProjId": 537,
+    "AiStyle": 84,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "闪耀",
+    "ProjId": 538,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": [
+      "闪耀怪"
+    ]
+  },
+  {
+    "Name": "流体入侵怪",
+    "ProjId": 539,
+    "AiStyle": 102,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星标",
+    "ProjId": 540,
+    "AiStyle": 103,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 541,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 542,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 543,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 544,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 545,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 546,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 547,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 548,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 549,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 550,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 551,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 552,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 553,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 554,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 555,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 556,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 557,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 558,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 559,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 560,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "平衡锤",
+    "ProjId": 561,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 562,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 563,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "悠悠球",
+    "ProjId": 564,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "混乱之脑",
+    "ProjId": 565,
+    "AiStyle": 104,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蜜蜂",
+    "ProjId": 566,
+    "AiStyle": 36,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子",
+    "ProjId": 567,
+    "AiStyle": 105,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子",
+    "ProjId": 568,
+    "AiStyle": 105,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子",
+    "ProjId": 569,
+    "AiStyle": 106,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子",
+    "ProjId": 570,
+    "AiStyle": 106,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "孢子",
+    "ProjId": 571,
+    "AiStyle": 106,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒唾液",
+    "ProjId": 572,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星云针弹",
+    "ProjId": 573,
+    "AiStyle": 102,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星云之眼",
+    "ProjId": 574,
+    "AiStyle": 102,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星云球",
+    "ProjId": 575,
+    "AiStyle": 107,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星云激光",
+    "ProjId": 576,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星旋激光",
+    "ProjId": 577,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星旋",
+    "ProjId": 578,
+    "AiStyle": 108,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋",
+    "ProjId": 579,
+    "AiStyle": 108,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋闪电",
+    "ProjId": 580,
+    "AiStyle": 88,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "异星粘液",
+    "ProjId": 581,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": [
+      "异星笨蛋"
+    ]
+  },
+  {
+    "Name": "机械师扳手",
+    "ProjId": 582,
+    "AiStyle": 109,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "注射器",
+    "ProjId": 583,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "注射器",
+    "ProjId": 584,
+    "AiStyle": 110,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骷髅头",
+    "ProjId": 585,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "树妖庇护",
+    "ProjId": 586,
+    "AiStyle": 111,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "彩弹",
+    "ProjId": 587,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "彩纸手榴弹",
+    "ProjId": 588,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "圣诞装饰",
+    "ProjId": 589,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "松露孢子",
+    "ProjId": 590,
+    "AiStyle": 112,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "矿车激光",
+    "ProjId": 591,
+    "AiStyle": 101,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "激光射线",
+    "ProjId": 592,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "预言之末",
+    "ProjId": 593,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烟",
+    "ProjId": 594,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "Arkhalis剑",
+    "ProjId": 595,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠幽魂诅咒",
+    "ProjId": 596,
+    "AiStyle": 107,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "琥珀矢",
+    "ProjId": 597,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骨头标枪",
+    "ProjId": 598,
+    "AiStyle": 113,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骨刀",
+    "ProjId": 599,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "传送枪",
+    "ProjId": 600,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "传送矢",
+    "ProjId": 601,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "传送通道",
+    "ProjId": 602,
+    "AiStyle": 114,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉悠悠球",
+    "ProjId": 603,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉悠悠球",
+    "ProjId": 604,
+    "AiStyle": 115,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "史莱姆尖刺",
+    "ProjId": 605,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "激光",
+    "ProjId": 606,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "耀斑",
+    "ProjId": 607,
+    "AiStyle": 116,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "日耀辐射",
+    "ProjId": 608,
+    "AiStyle": 117,
+    "Friendly": true,
+    "Alias": [
+      "太阳辐射"
+    ]
+  },
+  {
+    "Name": "星尘钻头",
+    "ProjId": 609,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘链锯",
+    "ProjId": 610,
+    "AiStyle": 20,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "日耀喷发剑",
+    "ProjId": 611,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "日耀爆炸",
+    "ProjId": 612,
+    "AiStyle": 117,
+    "Friendly": true,
+    "Alias": [
+      "太阳爆炸"
+    ]
+  },
+  {
+    "Name": "星尘细胞",
+    "ProjId": 613,
+    "AiStyle": 62,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘细胞",
+    "ProjId": 614,
+    "AiStyle": 113,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋机枪",
+    "ProjId": 615,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星旋火箭",
+    "ProjId": 616,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云奥秘",
+    "ProjId": 617,
+    "AiStyle": 118,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云奥秘",
+    "ProjId": 618,
+    "AiStyle": 119,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云奥秘",
+    "ProjId": 619,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云奥秘",
+    "ProjId": 620,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血水",
+    "ProjId": 621,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烟",
+    "ProjId": 622,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星尘守卫",
+    "ProjId": 623,
+    "AiStyle": 120,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆星",
+    "ProjId": 624,
+    "AiStyle": 117,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘之龙",
+    "ProjId": 625,
+    "AiStyle": 121,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘之龙",
+    "ProjId": 626,
+    "AiStyle": 121,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘之龙",
+    "ProjId": 627,
+    "AiStyle": 121,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星尘之龙",
+    "ProjId": 628,
+    "AiStyle": 121,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "释能",
+    "ProjId": 629,
+    "AiStyle": 122,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "幻影弓",
+    "ProjId": 630,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幻影弓",
+    "ProjId": 631,
+    "AiStyle": 122,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "终极棱镜",
+    "ProjId": 632,
+    "AiStyle": 84,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "终极棱镜",
+    "ProjId": 633,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云烈焰",
+    "ProjId": 634,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星云烈焰·爆",
+    "ProjId": 635,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": [
+      "星云烈焰炮弹"
+    ]
+  },
+  {
+    "Name": "破晓之光",
+    "ProjId": 636,
+    "AiStyle": 113,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "弹力雷管",
+    "ProjId": 637,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "夜明弹",
+    "ProjId": 638,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "夜明箭",
+    "ProjId": 639,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "夜明箭",
+    "ProjId": 640,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月亮传送门",
+    "ProjId": 641,
+    "AiStyle": 123,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "月亮传送门激光",
+    "ProjId": 642,
+    "AiStyle": 84,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "七彩水晶",
+    "ProjId": 643,
+    "AiStyle": 123,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "七彩爆炸",
+    "ProjId": 644,
+    "AiStyle": 112,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "月耀",
+    "ProjId": 645,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月钩",
+    "ProjId": 646,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月钩",
+    "ProjId": 647,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月钩",
+    "ProjId": 648,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月钩",
+    "ProjId": 649,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "可疑触手",
+    "ProjId": 650,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "线路蓝图",
+    "ProjId": 651,
+    "AiStyle": 125,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "静止钩",
+    "ProjId": 652,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "同伴方块",
+    "ProjId": 653,
+    "AiStyle": 67,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "热喷泉",
+    "ProjId": 654,
+    "AiStyle": 126,
+    "Friendly": true,
+    "Alias": [
+      "喷泉"
+    ]
+  },
+  {
+    "Name": "蜂巢",
+    "ProjId": 655,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "远古风暴",
+    "ProjId": 656,
+    "AiStyle": 127,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "远古风暴",
+    "ProjId": 657,
+    "AiStyle": 127,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "远古风暴",
+    "ProjId": 658,
+    "AiStyle": 128,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "神灯烈焰",
+    "ProjId": 659,
+    "AiStyle": 129,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "裂天剑",
+    "ProjId": 660,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "玛瑙爆破枪",
+    "ProjId": 661,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "标枪",
+    "ProjId": 662,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 663,
+    "AiStyle": 130,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 664,
+    "AiStyle": 131,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 665,
+    "AiStyle": 130,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 666,
+    "AiStyle": 131,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 667,
+    "AiStyle": 130,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸烈焰塔",
+    "ProjId": 668,
+    "AiStyle": 131,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "麦芽酒",
+    "ProjId": 669,
+    "AiStyle": 68,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "食人魔重踏",
+    "ProjId": 670,
+    "AiStyle": 126,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "德拉克龙",
+    "ProjId": 671,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "残酷末日",
+    "ProjId": 672,
+    "AiStyle": 132,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗黑魔符",
+    "ProjId": 673,
+    "AiStyle": 133,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗黑魔符",
+    "ProjId": 674,
+    "AiStyle": 133,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "暗黑能量",
+    "ProjId": 675,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "食人魔唾液",
+    "ProjId": 676,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弩车",
+    "ProjId": 677,
+    "AiStyle": 134,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弩车",
+    "ProjId": 678,
+    "AiStyle": 134,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弩车",
+    "ProjId": 679,
+    "AiStyle": 134,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弩车",
+    "ProjId": 680,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "哥布林炸弹",
+    "ProjId": 681,
+    "AiStyle": 16,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "枯萎矢",
+    "ProjId": 682,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "食人魔重踏",
+    "ProjId": 683,
+    "AiStyle": 135,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "畅快猛斩",
+    "ProjId": 684,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "标枪",
+    "ProjId": 685,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "双足翼龙火球",
+    "ProjId": 686,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "双足翼龙吐息",
+    "ProjId": 687,
+    "AiStyle": 136,
+    "Friendly": false,
+    "Alias": [
+      "双足翼龙呼吸"
+    ]
+  },
+  {
+    "Name": "闪电光环",
+    "ProjId": 688,
+    "AiStyle": 137,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪电光环",
+    "ProjId": 689,
+    "AiStyle": 137,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪电光环",
+    "ProjId": 690,
+    "AiStyle": 137,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 691,
+    "AiStyle": 138,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 692,
+    "AiStyle": 138,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 693,
+    "AiStyle": 138,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 694,
+    "AiStyle": 139,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 695,
+    "AiStyle": 139,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "爆炸机关",
+    "ProjId": 696,
+    "AiStyle": 139,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "瞌睡章鱼",
+    "ProjId": 697,
+    "AiStyle": 140,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "长棍猛击",
+    "ProjId": 698,
+    "AiStyle": 141,
+    "Friendly": true,
+    "Alias": [
+      "法棒粉碎"
+    ]
+  },
+  {
+    "Name": "恐怖关刀",
+    "ProjId": 699,
+    "AiStyle": 142,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "恶魂",
+    "ProjId": 700,
+    "AiStyle": 143,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "Hoardagron",
+    "ProjId": 701,
+    "AiStyle": 144,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪烁灯芯",
+    "ProjId": 702,
+    "AiStyle": 144,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "飞翔Gato",
+    "ProjId": 703,
+    "AiStyle": 144,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "无限智慧旋风",
+    "ProjId": 704,
+    "AiStyle": 145,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幽灵凤凰",
+    "ProjId": 705,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "幽灵凤凰",
+    "ProjId": 706,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "天龙之怒",
+    "ProjId": 707,
+    "AiStyle": 140,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "天龙之怒",
+    "ProjId": 708,
+    "AiStyle": 142,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "天龙之怒",
+    "ProjId": 709,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "空中祸害",
+    "ProjId": 710,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "双足翼龙怒气",
+    "ProjId": 711,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "无限智慧巨著",
+    "ProjId": 712,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "胜利！",
+    "ProjId": 713,
+    "AiStyle": 146,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "喜庆弹射器Mk2",
+    "ProjId": 714,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "喜庆弹射器Mk2",
+    "ProjId": 715,
+    "AiStyle": 147,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "喜庆弹射器Mk2",
+    "ProjId": 716,
+    "AiStyle": 147,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "喜庆弹射器Mk2",
+    "ProjId": 717,
+    "AiStyle": 147,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.Celeb2RocketExplosiveLarge",
+    "ProjId": 718,
+    "AiStyle": 147,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜂王毒刺",
+    "ProjId": 719,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "陨星",
+    "ProjId": 720,
+    "AiStyle": 148,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 721,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球杆",
+    "ProjId": 722,
+    "AiStyle": 150,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "魔力斗篷",
+    "ProjId": 723,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜜蜂斗篷",
+    "ProjId": 724,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星星面纱",
+    "ProjId": 725,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "星星斗篷",
+    "ProjId": 726,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "仙人球",
+    "ProjId": 727,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "超级星星炮",
+    "ProjId": 728,
+    "AiStyle": 151,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "超级星星炮",
+    "ProjId": 729,
+    "AiStyle": 152,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "风暴长矛",
+    "ProjId": 730,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "霹雳法杖",
+    "ProjId": 731,
+    "AiStyle": 29,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "风暴长矛",
+    "ProjId": 732,
+    "AiStyle": 44,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.ToiletEffect",
+    "ProjId": 733,
+    "AiStyle": 153,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.VoidLens",
+    "ProjId": 734,
+    "AiStyle": 154,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉魔刃",
+    "ProjId": 735,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "残骸",
+    "ProjId": 736,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "残骸",
+    "ProjId": 737,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "残骸",
+    "ProjId": 738,
+    "AiStyle": 10,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 739,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 740,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 741,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 742,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 743,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 744,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 745,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 746,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 747,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 748,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 749,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 750,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 751,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "高尔夫球",
+    "ProjId": 752,
+    "AiStyle": 149,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.AmberHook",
+    "ProjId": 753,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.MysticSnakeCoil",
+    "ProjId": 754,
+    "AiStyle": 155,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "血红蝙蝠",
+    "ProjId": 755,
+    "AiStyle": 156,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血荆棘",
+    "ProjId": 756,
+    "AiStyle": 157,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "滴滴怪致残者",
+    "ProjId": 757,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": [
+      "滴滴怪跛子"
+    ]
+  },
+  {
+    "Name": "吸血鬼青蛙",
+    "ProjId": 758,
+    "AiStyle": 67,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雀",
+    "ProjId": 759,
+    "AiStyle": 158,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BobberBloody",
+    "ProjId": 760,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "纸飞机",
+    "ProjId": 761,
+    "AiStyle": 159,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "纸飞机",
+    "ProjId": 762,
+    "AiStyle": 159,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "仙人球尖刺",
+    "ProjId": 763,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.UpbeatStar",
+    "ProjId": 764,
+    "AiStyle": 144,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.SugarGlider",
+    "ProjId": 765,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBlue",
+    "ProjId": 766,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBlueAndYellow",
+    "ProjId": 767,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteRed",
+    "ProjId": 768,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteRedAndYellow",
+    "ProjId": 769,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteYellow",
+    "ProjId": 770,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteWyvern",
+    "ProjId": 771,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.Geode",
+    "ProjId": 772,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "甲虫炸弹",
+    "ProjId": 773,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小鲨鱼",
+    "ProjId": 774,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BobberScarab",
+    "ProjId": 775,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 776,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "手榴弹",
+    "ProjId": 777,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 778,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "集束破片",
+    "ProjId": 779,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "集束弹碎片"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 780,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "手榴弹",
+    "ProjId": 781,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 782,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "集束破片",
+    "ProjId": 783,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "集束弹碎片"
+    ]
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 784,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 785,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 786,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 787,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 788,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 789,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 790,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 791,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 792,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 793,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 794,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 795,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 796,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 797,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 798,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 799,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "榴弹",
+    "ProjId": 800,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "手榴弹"
+    ]
+  },
+  {
+    "Name": "感应雷",
+    "ProjId": 801,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "罗马短剑",
+    "ProjId": 802,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 803,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 804,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 805,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 806,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 807,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 808,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 809,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 810,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血弹",
+    "ProjId": 811,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "贝壳堆",
+    "ProjId": 812,
+    "AiStyle": 10,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血泪",
+    "ProjId": 813,
+    "AiStyle": 108,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血弹",
+    "ProjId": 814,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "小鸟妖",
+    "ProjId": 815,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "耳廓狐",
+    "ProjId": 816,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪光蝴蝶",
+    "ProjId": 817,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 818,
+    "AiStyle": 162,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血雨",
+    "ProjId": 819,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.ChumBucket",
+    "ProjId": 820,
+    "AiStyle": 163,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BabyImp",
+    "ProjId": 821,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBoneSerpent",
+    "ProjId": 822,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteWorldFeeder",
+    "ProjId": 823,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBunny",
+    "ProjId": 824,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BabyRedPanda",
+    "ProjId": 825,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KitePigron",
+    "ProjId": 826,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteManEater",
+    "ProjId": 827,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteJellyfishBlue",
+    "ProjId": 828,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteJellyfishPink",
+    "ProjId": 829,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteShark",
+    "ProjId": 830,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 831,
+    "AiStyle": 164,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 832,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 833,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 834,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "沙漠虎",
+    "ProjId": 835,
+    "AiStyle": 67,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "蒲公英种子",
+    "ProjId": 836,
+    "AiStyle": 112,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "骷髅头",
+    "ProjId": 837,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteSandShark",
+    "ProjId": 838,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBunnyCorrupt",
+    "ProjId": 839,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteBunnyCrimson",
+    "ProjId": 840,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "皮鞭",
+    "ProjId": 841,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "标尺",
+    "ProjId": 842,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteGoldfish",
+    "ProjId": 843,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteAngryTrapper",
+    "ProjId": 844,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteKoi",
+    "ProjId": 845,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteCrawltipede",
+    "ProjId": 846,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "迪朗达尔",
+    "ProjId": 847,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "晨星",
+    "ProjId": 848,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗黑收割",
+    "ProjId": 849,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteSpectrum",
+    "ProjId": 850,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.ReleaseDoves",
+    "ProjId": 851,
+    "AiStyle": 166,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteWanderingEye",
+    "ProjId": 852,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KiteUnicorn",
+    "ProjId": 853,
+    "AiStyle": 160,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.Plantero",
+    "ProjId": 854,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.ReleaseLantern",
+    "ProjId": 855,
+    "AiStyle": 166,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "恒星曲调",
+    "ProjId": 856,
+    "AiStyle": 167,
+    "Friendly": true,
+    "Alias": [
+      "星星吉他"
+    ]
+  },
+  {
+    "Name": "第一分形",
+    "ProjId": 857,
+    "AiStyle": 168,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "雷管小猫",
+    "ProjId": 858,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "狼人宝宝",
+    "ProjId": 859,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影宝箱怪",
+    "ProjId": 860,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.Football",
+    "ProjId": 861,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "集束破片",
+    "ProjId": 862,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "集束弹碎片"
+    ]
+  },
+  {
+    "Name": "集束破片",
+    "ProjId": 863,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "集束弹碎片"
+    ]
+  },
+  {
+    "Name": "附魔飞刀",
+    "ProjId": 864,
+    "AiStyle": 169,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.SquirrelHook",
+    "ProjId": 865,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "中士联盾",
+    "ProjId": 866,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蘑菇回旋镖",
+    "ProjId": 867,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.TreeGlobe",
+    "ProjId": 868,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.WorldGlobe",
+    "ProjId": 869,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "仙灵荧光棒",
+    "ProjId": 870,
+    "AiStyle": 14,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.HallowBossSplitShotCore",
+    "ProjId": 871,
+    "AiStyle": 172,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "永恒彩虹",
+    "ProjId": 872,
+    "AiStyle": 173,
+    "Friendly": false,
+    "Alias": [
+      "永不消失的彩虹"
+    ]
+  },
+  {
+    "Name": "七彩矢",
+    "ProjId": 873,
+    "AiStyle": 171,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.HallowBossDeathAurora",
+    "ProjId": 874,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "伏特兔",
+    "ProjId": 875,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冲击枪",
+    "ProjId": 876,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "骑枪",
+    "ProjId": 877,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": [
+      "比武长戟"
+    ]
+  },
+  {
+    "Name": "暗影骑枪",
+    "ProjId": 878,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": [
+      "暗影比武长戟"
+    ]
+  },
+  {
+    "Name": "神圣骑枪",
+    "ProjId": 879,
+    "AiStyle": 19,
+    "Friendly": true,
+    "Alias": [
+      "神圣比武长戟"
+    ]
+  },
+  {
+    "Name": "ProjectileName.ZoologistStrikeGreen",
+    "ProjId": 880,
+    "AiStyle": 183,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.KingSlimePet",
+    "ProjId": 881,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.EyeOfCthulhuPet",
+    "ProjId": 882,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.EaterOfWorldsPet",
+    "ProjId": 883,
+    "AiStyle": 174,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BrainOfCthulhuPet",
+    "ProjId": 884,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.SkeletronPet",
+    "ProjId": 885,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.QueenBeePet",
+    "ProjId": 886,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DestroyerPet",
+    "ProjId": 887,
+    "AiStyle": 174,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.TwinsPet",
+    "ProjId": 888,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.SkeletronPrimePet",
+    "ProjId": 889,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.PlanteraPet",
+    "ProjId": 890,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.GolemPet",
+    "ProjId": 891,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DukeFishronPet",
+    "ProjId": 892,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.LunaticCultistPet",
+    "ProjId": 893,
+    "AiStyle": 174,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.MoonLordPet",
+    "ProjId": 894,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FairyQueenPet",
+    "ProjId": 895,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.PumpkingPet",
+    "ProjId": 896,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.EverscreamPet",
+    "ProjId": 897,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.IceQueenPet",
+    "ProjId": 898,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.MartianPet",
+    "ProjId": 899,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DD2OgrePet",
+    "ProjId": 900,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DD2BetsyPet",
+    "ProjId": 901,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "战斗扳手",
+    "ProjId": 902,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "湿炸弹",
+    "ProjId": 903,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "潮湿炸弹"
+    ]
+  },
+  {
+    "Name": "熔岩炸弹",
+    "ProjId": 904,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜂蜜炸弹",
+    "ProjId": 905,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "干炸弹",
+    "ProjId": 906,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "装饰",
+    "ProjId": 907,
+    "AiStyle": 30,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钛金碎片",
+    "ProjId": 908,
+    "AiStyle": 175,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "岩石",
+    "ProjId": 909,
+    "AiStyle": 2,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "土炸弹",
+    "ProjId": 910,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "粘性土炸弹",
+    "ProjId": 911,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冷鞭",
+    "ProjId": 912,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "鞭炮",
+    "ProjId": 913,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "荆鞭",
+    "ProjId": 914,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "万花筒",
+    "ProjId": 915,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "收割",
+    "ProjId": 916,
+    "AiStyle": 176,
+    "Friendly": true,
+    "Alias": [
+      "收获"
+    ]
+  },
+  {
+    "Name": "冷鞭雪花",
+    "ProjId": 917,
+    "AiStyle": 177,
+    "Friendly": true,
+    "Alias": [
+      "冷鞭射弹"
+    ]
+  },
+  {
+    "Name": "鞭炮",
+    "ProjId": 918,
+    "AiStyle": 178,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "空灵长枪",
+    "ProjId": 919,
+    "AiStyle": 179,
+    "Friendly": false,
+    "Alias": [
+      "超凡长戟"
+    ]
+  },
+  {
+    "Name": "水晶尖刺",
+    "ProjId": 920,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "弹力凝胶",
+    "ProjId": 921,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "皇后猛击",
+    "ProjId": 922,
+    "AiStyle": 135,
+    "Friendly": false,
+    "Alias": [
+      "皇后粉碎"
+    ]
+  },
+  {
+    "Name": "太阳舞",
+    "ProjId": 923,
+    "AiStyle": 180,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FairyQueenHymn",
+    "ProjId": 924,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星尘守卫",
+    "ProjId": 925,
+    "AiStyle": 0,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "皇家凝胶",
+    "ProjId": 926,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "星光",
+    "ProjId": 927,
+    "AiStyle": 75,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "滴滴怪致残者",
+    "ProjId": 928,
+    "AiStyle": 14,
+    "Friendly": true,
+    "Alias": [
+      "滴滴怪跛子"
+    ]
+  },
+  {
+    "Name": "ProjectileName.ZoologistStrikeRed",
+    "ProjId": 929,
+    "AiStyle": 183,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火箭",
+    "ProjId": 930,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "夜光",
+    "ProjId": 931,
+    "AiStyle": 171,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暮光长枪",
+    "ProjId": 932,
+    "AiStyle": 181,
+    "Friendly": true,
+    "Alias": [
+      "暮光长戟"
+    ]
+  },
+  {
+    "Name": "天顶剑",
+    "ProjId": 933,
+    "AiStyle": 182,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.QueenSlimePet",
+    "ProjId": 934,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.QueenSlimeHook",
+    "ProjId": 935,
+    "AiStyle": 7,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "闪耀史莱姆气球",
+    "ProjId": 936,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "挥发明胶",
+    "ProjId": 937,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铜短剑",
+    "ProjId": 938,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "锡短剑",
+    "ProjId": 939,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铁短剑",
+    "ProjId": 940,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铅短剑",
+    "ProjId": 941,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "银短剑",
+    "ProjId": 942,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "钨短剑",
+    "ProjId": 943,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "金短剑",
+    "ProjId": 944,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "铂金短剑",
+    "ProjId": 945,
+    "AiStyle": 161,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉棱镜",
+    "ProjId": 946,
+    "AiStyle": 156,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "链锤",
+    "ProjId": 947,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "烈焰链锤",
+    "ProjId": 948,
+    "AiStyle": 15,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "火把神",
+    "ProjId": 949,
+    "AiStyle": 184,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "皇家共鸣",
+    "ProjId": 950,
+    "AiStyle": 186,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "小雪怪",
+    "ProjId": 951,
+    "AiStyle": 67,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "脊柱骨鞭",
+    "ProjId": 952,
+    "AiStyle": 165,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "日耀爆炸",
+    "ProjId": 953,
+    "AiStyle": 117,
+    "Friendly": true,
+    "Alias": [
+      "太阳爆炸"
+    ]
+  },
+  {
+    "Name": "火花",
+    "ProjId": 954,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "陨星",
+    "ProjId": 955,
+    "AiStyle": 5,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BerniePet",
+    "ProjId": 956,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.GlommerPet",
+    "ProjId": 957,
+    "AiStyle": 124,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DeerclopsPet",
+    "ProjId": 958,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.PigPet",
+    "ProjId": 959,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.ChesterPet",
+    "ProjId": 960,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "冰雪尖刺",
+    "ProjId": 961,
+    "AiStyle": 157,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "残骸",
+    "ProjId": 962,
+    "AiStyle": 1,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "阿比盖尔",
+    "ProjId": 963,
+    "AiStyle": 62,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影之手",
+    "ProjId": 964,
+    "AiStyle": 187,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "暗影之手",
+    "ProjId": 965,
+    "AiStyle": 187,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "眼球激光塔",
+    "ProjId": 966,
+    "AiStyle": 53,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "眼球激光塔",
+    "ProjId": 967,
+    "AiStyle": 28,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "气喇叭投射物",
+    "ProjId": 968,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "苦痛旋风",
+    "ProjId": 969,
+    "AiStyle": 177,
+    "Friendly": true,
+    "Alias": [
+      "伤害旋风"
+    ]
+  },
+  {
+    "Name": "ProjectileName.AbigailCounter",
+    "ProjId": 970,
+    "AiStyle": 164,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "触手钉锤",
+    "ProjId": 971,
+    "AiStyle": 113,
+    "Friendly": true,
+    "Alias": [
+      "触手尖刺"
+    ]
+  },
+  {
+    "Name": "永夜刃",
+    "ProjId": 972,
+    "AiStyle": 190,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "真永夜刃",
+    "ProjId": 973,
+    "AiStyle": 191,
+    "Friendly": true,
+    "Alias": [
+      "原版永夜刃"
+    ]
+  },
+  {
+    "Name": "魔光剑",
+    "ProjId": 974,
+    "AiStyle": 188,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "血腥屠刀",
+    "ProjId": 975,
+    "AiStyle": 113,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "叶刃",
+    "ProjId": 976,
+    "AiStyle": 152,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "村正",
+    "ProjId": 977,
+    "AiStyle": 152,
+    "Friendly": true,
+    "Alias": [
+      "村正大刀"
+    ]
+  },
+  {
+    "Name": "火山",
+    "ProjId": 978,
+    "AiStyle": 189,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "霜",
+    "ProjId": 979,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒液飞镖",
+    "ProjId": 980,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "子弹",
+    "ProjId": 981,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "断钢剑",
+    "ProjId": 982,
+    "AiStyle": 190,
+    "Friendly": true,
+    "Alias": [
+      "亚瑟魔剑"
+    ]
+  },
+  {
+    "Name": "真断钢剑",
+    "ProjId": 983,
+    "AiStyle": 190,
+    "Friendly": true,
+    "Alias": [
+      "原版亚瑟魔剑"
+    ]
+  },
+  {
+    "Name": "泰拉刃",
+    "ProjId": 984,
+    "AiStyle": 190,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "泰拉光束",
+    "ProjId": 985,
+    "AiStyle": 191,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobber",
+    "ProjId": 986,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingStar",
+    "ProjId": 987,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingLava",
+    "ProjId": 988,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingKrypton",
+    "ProjId": 989,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingXenon",
+    "ProjId": 990,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingArgon",
+    "ProjId": 991,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingViolet",
+    "ProjId": 992,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.FishingBobberGlowingRainbow",
+    "ProjId": 993,
+    "AiStyle": 61,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.JunimoPet",
+    "ProjId": 994,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.JuminoStardropAnimation",
+    "ProjId": 995,
+    "AiStyle": 192,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.MoonGlobe",
+    "ProjId": 996,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "无头骑士剑",
+    "ProjId": 997,
+    "AiStyle": 190,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.BlueChickenPet",
+    "ProjId": 998,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "蜂巢球",
+    "ProjId": 999,
+    "AiStyle": 99,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "三尖回旋镖",
+    "ProjId": 1000,
+    "AiStyle": 3,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "南瓜头",
+    "ProjId": 1001,
+    "AiStyle": 194,
+    "Friendly": false,
+    "Alias": []
+  },
+  {
+    "Name": "TNT桶",
+    "ProjId": 1002,
+    "AiStyle": 16,
+    "Friendly": true,
+    "Alias": [
+      "TNT枪管"
+    ]
+  },
+  {
+    "Name": "ProjectileName.Spiffo",
+    "ProjId": 1003,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.CavelingGardener",
+    "ProjId": 1004,
+    "AiStyle": 26,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "巨石",
+    "ProjId": 1005,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "微光箭",
+    "ProjId": 1006,
+    "AiStyle": 1,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "毒气机关",
+    "ProjId": 1007,
+    "AiStyle": 92,
+    "Friendly": true,
+    "Alias": [
+      "气阱"
+    ]
+  },
+  {
+    "Name": "洞穴探险照明弹",
+    "ProjId": 1008,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "诅咒照明弹",
+    "ProjId": 1009,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": [
+      "被诅咒的照明弹"
+    ]
+  },
+  {
+    "Name": "彩虹照明弹",
+    "ProjId": 1010,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "微光照明弹",
+    "ProjId": 1011,
+    "AiStyle": 33,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "华夫饼",
+    "ProjId": 1012,
+    "AiStyle": 2,
+    "Friendly": true,
+    "Alias": [
+      "华夫"
+    ]
+  },
+  {
+    "Name": "弹力巨石",
+    "ProjId": 1013,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "生命水晶巨石",
+    "ProjId": 1014,
+    "AiStyle": 25,
+    "Friendly": true,
+    "Alias": [
+      "巨型生命水晶"
+    ]
+  },
+  {
+    "Name": "ProjectileName.SandSpray",
+    "ProjId": 1015,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.SnowSpray",
+    "ProjId": 1016,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DirtSpray",
+    "ProjId": 1017,
+    "AiStyle": 31,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.DirtiestBlock",
+    "ProjId": 1018,
+    "AiStyle": 67,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.Fertilizer",
+    "ProjId": 1019,
+    "AiStyle": 6,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "ProjectileName.JimsDrone",
+    "ProjId": 1020,
+    "AiStyle": 195,
+    "Friendly": true,
+    "Alias": []
+  },
+  {
+    "Name": "月亮巨石",
+    "ProjId": 1021,
+    "AiStyle": 25,
+    "Friendly": false,
+    "Alias": []
+  }
+]

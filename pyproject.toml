@@ -1,0 +1,28 @@
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_apscheduler"]
+[project]
+name = "caibotlite"
+version = "2025.7.29"
+description = "CaiBotLite big upgrade"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "expiringdict",
+    "aiosqlite",
+    "fuzzywuzzy",
+    "nb-cli",
+    "nonebot-adapter-qq",
+    "nonebot-plugin-apscheduler",
+    "nonebot2[fastapi,httpx]",
+    "packaging",
+    "pillow",
+    "pyahocorasick",
+    "python-levenshtein",
+    "sqlalchemy[asyncio]",
+    "geoip2",
+]

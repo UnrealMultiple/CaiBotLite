@@ -1,0 +1,433 @@
+[
+  {
+    "Name": "",
+    "PrefixId": 0,
+    "Alias": []
+  },
+  {
+    "Name": "大",
+    "PrefixId": 1,
+    "Alias": []
+  },
+  {
+    "Name": "巨大",
+    "PrefixId": 2,
+    "Alias": []
+  },
+  {
+    "Name": "危险",
+    "PrefixId": 3,
+    "Alias": []
+  },
+  {
+    "Name": "凶残",
+    "PrefixId": 4,
+    "Alias": []
+  },
+  {
+    "Name": "锋利",
+    "PrefixId": 5,
+    "Alias": []
+  },
+  {
+    "Name": "尖锐",
+    "PrefixId": 6,
+    "Alias": []
+  },
+  {
+    "Name": "微小",
+    "PrefixId": 7,
+    "Alias": []
+  },
+  {
+    "Name": "可怕",
+    "PrefixId": 8,
+    "Alias": []
+  },
+  {
+    "Name": "小",
+    "PrefixId": 9,
+    "Alias": []
+  },
+  {
+    "Name": "钝",
+    "PrefixId": 10,
+    "Alias": []
+  },
+  {
+    "Name": "倒霉",
+    "PrefixId": 11,
+    "Alias": []
+  },
+  {
+    "Name": "笨重",
+    "PrefixId": 12,
+    "Alias": []
+  },
+  {
+    "Name": "可耻",
+    "PrefixId": 13,
+    "Alias": []
+  },
+  {
+    "Name": "重",
+    "PrefixId": 14,
+    "Alias": []
+  },
+  {
+    "Name": "轻",
+    "PrefixId": 15,
+    "Alias": [
+      "莱特"
+    ]
+  },
+  {
+    "Name": "精准",
+    "PrefixId": 16,
+    "Alias": []
+  },
+  {
+    "Name": "迅速",
+    "PrefixId": 17,
+    "Alias": []
+  },
+  {
+    "Name": "急速",
+    "PrefixId": 18,
+    "Alias": []
+  },
+  {
+    "Name": "恐怖",
+    "PrefixId": 19,
+    "Alias": []
+  },
+  {
+    "Name": "致命",
+    "PrefixId": 20,
+    "Alias": []
+  },
+  {
+    "Name": "可靠",
+    "PrefixId": 21,
+    "Alias": []
+  },
+  {
+    "Name": "讨厌",
+    "PrefixId": 22,
+    "Alias": [
+      "可畏"
+    ]
+  },
+  {
+    "Name": "无力",
+    "PrefixId": 23,
+    "Alias": []
+  },
+  {
+    "Name": "粗笨",
+    "PrefixId": 24,
+    "Alias": []
+  },
+  {
+    "Name": "强大",
+    "PrefixId": 25,
+    "Alias": []
+  },
+  {
+    "Name": "神秘",
+    "PrefixId": 26,
+    "Alias": []
+  },
+  {
+    "Name": "精巧",
+    "PrefixId": 27,
+    "Alias": []
+  },
+  {
+    "Name": "精湛",
+    "PrefixId": 28,
+    "Alias": []
+  },
+  {
+    "Name": "笨拙",
+    "PrefixId": 29,
+    "Alias": []
+  },
+  {
+    "Name": "无知",
+    "PrefixId": 30,
+    "Alias": []
+  },
+  {
+    "Name": "错乱",
+    "PrefixId": 31,
+    "Alias": []
+  },
+  {
+    "Name": "威猛",
+    "PrefixId": 32,
+    "Alias": []
+  },
+  {
+    "Name": "禁忌",
+    "PrefixId": 33,
+    "Alias": []
+  },
+  {
+    "Name": "天界",
+    "PrefixId": 34,
+    "Alias": []
+  },
+  {
+    "Name": "狂怒",
+    "PrefixId": 35,
+    "Alias": []
+  },
+  {
+    "Name": "锐利",
+    "PrefixId": 36,
+    "Alias": []
+  },
+  {
+    "Name": "高端",
+    "PrefixId": 37,
+    "Alias": []
+  },
+  {
+    "Name": "强力",
+    "PrefixId": 38,
+    "Alias": []
+  },
+  {
+    "Name": "碎裂",
+    "PrefixId": 39,
+    "Alias": []
+  },
+  {
+    "Name": "破损",
+    "PrefixId": 40,
+    "Alias": []
+  },
+  {
+    "Name": "粗劣",
+    "PrefixId": 41,
+    "Alias": []
+  },
+  {
+    "Name": "迅捷",
+    "PrefixId": 42,
+    "Alias": []
+  },
+  {
+    "Name": "致命",
+    "PrefixId": 43,
+    "Alias": []
+  },
+  {
+    "Name": "灵活",
+    "PrefixId": 44,
+    "Alias": []
+  },
+  {
+    "Name": "灵巧",
+    "PrefixId": 45,
+    "Alias": []
+  },
+  {
+    "Name": "残暴",
+    "PrefixId": 46,
+    "Alias": []
+  },
+  {
+    "Name": "缓慢",
+    "PrefixId": 47,
+    "Alias": []
+  },
+  {
+    "Name": "迟钝",
+    "PrefixId": 48,
+    "Alias": []
+  },
+  {
+    "Name": "呆滞",
+    "PrefixId": 49,
+    "Alias": []
+  },
+  {
+    "Name": "惹恼",
+    "PrefixId": 50,
+    "Alias": []
+  },
+  {
+    "Name": "凶险",
+    "PrefixId": 51,
+    "Alias": []
+  },
+  {
+    "Name": "狂躁",
+    "PrefixId": 52,
+    "Alias": []
+  },
+  {
+    "Name": "致伤",
+    "PrefixId": 53,
+    "Alias": []
+  },
+  {
+    "Name": "强劲",
+    "PrefixId": 54,
+    "Alias": []
+  },
+  {
+    "Name": "粗鲁",
+    "PrefixId": 55,
+    "Alias": []
+  },
+  {
+    "Name": "虚弱",
+    "PrefixId": 56,
+    "Alias": [
+      "软弱"
+    ]
+  },
+  {
+    "Name": "无情",
+    "PrefixId": 57,
+    "Alias": []
+  },
+  {
+    "Name": "暴怒",
+    "PrefixId": 58,
+    "Alias": []
+  },
+  {
+    "Name": "神级",
+    "PrefixId": 59,
+    "Alias": []
+  },
+  {
+    "Name": "恶魔",
+    "PrefixId": 60,
+    "Alias": []
+  },
+  {
+    "Name": "狂热",
+    "PrefixId": 61,
+    "Alias": []
+  },
+  {
+    "Name": "坚硬",
+    "PrefixId": 62,
+    "Alias": []
+  },
+  {
+    "Name": "守护",
+    "PrefixId": 63,
+    "Alias": []
+  },
+  {
+    "Name": "装甲",
+    "PrefixId": 64,
+    "Alias": []
+  },
+  {
+    "Name": "护佑",
+    "PrefixId": 65,
+    "Alias": []
+  },
+  {
+    "Name": "奥秘",
+    "PrefixId": 66,
+    "Alias": []
+  },
+  {
+    "Name": "精确",
+    "PrefixId": 67,
+    "Alias": []
+  },
+  {
+    "Name": "幸运",
+    "PrefixId": 68,
+    "Alias": []
+  },
+  {
+    "Name": "锯齿",
+    "PrefixId": 69,
+    "Alias": []
+  },
+  {
+    "Name": "尖刺",
+    "PrefixId": 70,
+    "Alias": []
+  },
+  {
+    "Name": "愤怒",
+    "PrefixId": 71,
+    "Alias": []
+  },
+  {
+    "Name": "险恶",
+    "PrefixId": 72,
+    "Alias": []
+  },
+  {
+    "Name": "轻快",
+    "PrefixId": 73,
+    "Alias": []
+  },
+  {
+    "Name": "快速",
+    "PrefixId": 74,
+    "Alias": []
+  },
+  {
+    "Name": "急速",
+    "PrefixId": 75,
+    "Alias": []
+  },
+  {
+    "Name": "迅捷",
+    "PrefixId": 76,
+    "Alias": []
+  },
+  {
+    "Name": "狂野",
+    "PrefixId": 77,
+    "Alias": []
+  },
+  {
+    "Name": "鲁莽",
+    "PrefixId": 78,
+    "Alias": []
+  },
+  {
+    "Name": "勇猛",
+    "PrefixId": 79,
+    "Alias": []
+  },
+  {
+    "Name": "暴力",
+    "PrefixId": 80,
+    "Alias": []
+  },
+  {
+    "Name": "传奇",
+    "PrefixId": 81,
+    "Alias": []
+  },
+  {
+    "Name": "虚幻",
+    "PrefixId": 82,
+    "Alias": []
+  },
+  {
+    "Name": "神话",
+    "PrefixId": 83,
+    "Alias": []
+  },
+  {
+    "Name": "传奇",
+    "PrefixId": 84,
+    "Alias": []
+  }
+]
