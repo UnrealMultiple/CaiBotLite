@@ -4,10 +4,11 @@
 
 .idea
 
-./data/bot.db
-./data/Sensitive.json
-./data/tlds.txt
+/data/bot.db
+/data/Sensitive.json
+/data/tlds.txt
 
+env.prod
 *.db
 
 # Byte-compiled / optimized / DLL files
@@ -177,3 +178,4 @@ cython_debug/
 /data/tlds.txt
 !/data/bot.db
 !/data/bot.db
+!/.env.prod
