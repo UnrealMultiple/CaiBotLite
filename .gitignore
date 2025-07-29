@@ -5,10 +5,12 @@
 .idea
 
 /data/bot.db
+
 /data/Sensitive.json
+
 /data/tlds.txt
 
-env.prod
+.env.prod
 *.db
 
 # Byte-compiled / optimized / DLL files
