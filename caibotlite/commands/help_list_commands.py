@@ -111,7 +111,7 @@ async def _(event: GroupAtMessageCreateEvent):
     like_commands = match_like_command(command_name)
     if len(like_commands) == 0:
         await command_helper.finish("没有找到匹配的命令呢~\n"
-                                    "使用'/帮助'查询命令列表")
+                                    "使用\"/帮助\"查询命令列表")
 
     await command_helper.finish(f"没有任何匹配的命令呢~\n"
                                 f"猜你想要: {', '.join(like_commands)}")
