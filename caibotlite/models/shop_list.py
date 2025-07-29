@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 class ShopList(Base):
     __tablename__ = "shop_list"
 
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     name: Mapped[str] = mapped_column(String(20))
     items: Mapped["ShopItem"] = relationship(back_populates="list")
     group_open_id: Mapped[str] = mapped_column(ForeignKey("group.open_id"))

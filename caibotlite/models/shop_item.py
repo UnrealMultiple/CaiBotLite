@@ -15,7 +15,7 @@ if TYPE_CHECKING:
 class ShopItem(Base):
     __tablename__ = "shop_item"
 
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     name: Mapped[str] = mapped_column(String(20))
     type: Mapped["ShopItemType"] = mapped_column(String(10))
     item_id: Mapped[int] = mapped_column()
