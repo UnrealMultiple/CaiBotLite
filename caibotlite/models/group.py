@@ -19,8 +19,8 @@ if TYPE_CHECKING:
 class Group(Base):
     __tablename__ = "group"
 
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
-    open_id: Mapped[str] = mapped_column(String(32), unique=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
+    open_id: Mapped[str] = mapped_column(String(32), unique=True, index=True)
     admins: Mapped[List["str"]] = mapped_column(MutableList.as_mutable(JSON), default=[])
     black_list: Mapped[List["str"]] = mapped_column(MutableList.as_mutable(JSON), default=[])
     config: Mapped["GroupConfig"] = relationship(back_populates="group", lazy='joined', uselist=False,

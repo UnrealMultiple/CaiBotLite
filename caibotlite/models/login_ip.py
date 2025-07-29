@@ -14,7 +14,7 @@ if TYPE_CHECKING:
 class LoginIP(Base):
     __tablename__ = "login_ip"
 
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     ip: Mapped[str] = mapped_column(String(32))
     city: Mapped[str] = mapped_column(String(32), nullable=True)
     record_time: Mapped[datetime] = mapped_column()

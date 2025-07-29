@@ -17,11 +17,11 @@ if TYPE_CHECKING:
 class User(Base):
     __tablename__ = "user"
 
-    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True)
-    group_open_id: Mapped[str] = mapped_column(ForeignKey("group.open_id"))
+    id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
+    group_open_id: Mapped[str] = mapped_column(ForeignKey("group.open_id"), index=True)
     group: Mapped["Group"] = relationship(back_populates="users", lazy='joined')
-    open_id: Mapped[str] = mapped_column(String(32))
-    name: Mapped[Optional[str]] = mapped_column(String(32), nullable=True)
+    open_id: Mapped[str] = mapped_column(String(32), index=True)
+    name: Mapped[Optional[str]] = mapped_column(String(32), nullable=True, index=True)
     money: Mapped[int] = mapped_column(default=0)
     sign_days: Mapped[int] = mapped_column(default=0)
     sign_consistency: Mapped[int] = mapped_column(default=0)
