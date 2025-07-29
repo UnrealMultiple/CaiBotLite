@@ -320,6 +320,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
                 await settings.finish(f'\n『BOT设置』\n' +
                                       f"无效参数!\n"
                                       f"不可以大于1000000000")
+
+            if value < group.config.min_sign_coins:
+                await settings.finish(f'\n『BOT设置』\n' +
+                                      f"无效参数!\n"
+                                      f"不可以小于最小值")
+
             group.config.max_sign_coins = value
             await GroupManager.update_group(session, group)
             await settings.finish(f'\n『BOT设置』\n' +
@@ -336,6 +342,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
                 await settings.finish(f'\n『BOT设置』\n' +
                                       f"无效参数!\n"
                                       f"不可以大于1000000000")
+
+            if value > group.config.max_sign_coins:
+                await settings.finish(f'\n『BOT设置』\n' +
+                                      f"无效参数!\n"
+                                      f"不可以大于最大值")
+
             group.config.min_sign_coins = value
             await GroupManager.update_group(session, group)
             await settings.finish(f'\n『BOT设置』\n' +
