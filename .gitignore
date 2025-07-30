@@ -1,16 +1,5 @@
 ### Python template
 
-# CaiBot Project
-
-.idea
-
-.env.prod$
-/data/bot.db$
-
-/data/Sensitive.json
-
-/data/tlds.txt
-
 
 
 # Byte-compiled / optimized / DLL files
@@ -136,6 +125,8 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+
+
 # Environments
 .env
 .venv
@@ -176,8 +167,11 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+
+
+# CaiBot Project
+.idea
+/data/bot.db
 /data/Sensitive.json
 /data/tlds.txt
-!/data/bot.db
-!/data/bot.db
-!/.env.prod
+.env.prod
