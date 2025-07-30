@@ -8,22 +8,24 @@ class GeoIP:
 
     @classmethod
     def init(cls):
-        cls.reader = Reader(r'./data/GeoLite2-City.mmdb')
+        cls.reader = Reader(r'./data/GeoCN.mmdb')
 
     @classmethod
     def get_city(cls, ip: str) -> Optional[str]:
         # noinspection PyBroadException
-        try:
-            city = cls.reader.city(ip).city.names
-        except Exception:
+        ip_info = cls.reader._db_reader.get(ip)
+        if ip_info is None:
             return None
 
-        if not city:
-            return None
+        if "city" in ip_info and ip_info['city']:
+            return ip_info['city']
 
-        return city['zh-CN']
+        if "province" in ip_info and ip_info['province']:
+            return ip_info['province']
+
+        return None
 
 
 if __name__ == "__main__":
     GeoIP.init()
-    print(GeoIP.get_city("112.48.151.0"))
+    print(GeoIP.get_city("112.47.150.63"))
