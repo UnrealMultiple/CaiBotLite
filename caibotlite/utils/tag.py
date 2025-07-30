@@ -6,6 +6,7 @@ from nonebot import logger
 _item_info = {}
 _prefix_info = {}
 
+
 def _init():
     global _item_info, _prefix_info
     with open("assets/terraria_data/item_id.json", encoding='utf-8', errors='ignore') as fp:
@@ -18,7 +19,9 @@ def _init():
     _prefix_info = {prefix['PrefixId']: prefix for prefix in prefix_json}
     logger.success("[tag]物品、前缀已缓存!")
 
+
 _init()
+
 
 def remove_color_tag(text: str):
     find = re.findall(r"\[c?/[0-9a-fA-F]{6}:(.*?)]", text)
@@ -28,7 +31,6 @@ def remove_color_tag(text: str):
 
 
 def replace_item_tag(text: str):
-
     find = re.findall(r"\[i?(?:/s(\d{1,4}))?(?:/p(\d{1,3}))?:(-?\d{1,4})]", text)
     for i in find:
         try:
@@ -47,4 +49,3 @@ def replace_item_tag(text: str):
             logger.error("错误物品Tag:" + str(i))
 
     return text
-

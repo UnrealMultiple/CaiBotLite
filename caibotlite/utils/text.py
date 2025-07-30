@@ -1,5 +1,3 @@
-from typing import Dict
-
 from caibotlite.services.sensitive_words_filter import SensitiveWordsFilter
 from caibotlite.services.url_filter import UrlFilter
 from caibotlite.utils.tag import replace_item_tag, remove_color_tag

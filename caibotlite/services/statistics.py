@@ -8,6 +8,7 @@ require("nonebot_plugin_apscheduler")
 
 from nonebot_plugin_apscheduler import scheduler
 
+
 class Statistics:
     whitelist_check = 0
     player_signs = 0

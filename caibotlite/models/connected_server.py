@@ -10,7 +10,8 @@ from caibotlite.models.server_info import ServerInfo
 
 class ConnectedServer:
 
-    def __init__(self,server_id:int, real_ip: str, ip: str, port: int, token: str, group_open_id: str, server_type: ServerType,
+    def __init__(self, server_id: int, real_ip: str, ip: str, port: int, token: str, group_open_id: str,
+                 server_type: ServerType,
                  ws: WebSocket):
         self.server_id: int = server_id
         self.real_ip: str = real_ip

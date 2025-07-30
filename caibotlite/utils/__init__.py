@@ -1,4 +1,4 @@
-from .package import *
 from .command import *
-from .text import *
+from .package import *
 from .tag import *
+from .text import *

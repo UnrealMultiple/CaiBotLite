@@ -138,8 +138,9 @@ async def _(args: Args, group: CurrentGroup):
                                     f"服务器序号错误!")
     server_number = int(args[0])
     server_index = server_number - 1
+    server_token = group.servers[server_index].token
 
-    if not ConnectionManager.is_server_online(group.servers[server_index].token):
+    if not ConnectionManager.is_server_online(server_token):
         await world_progress.finish(f'\n『进度查询』\n' +
                                     f"执行失败！\n" +
                                     f"❌服务器[{server_number}]处于离线状态")
@@ -147,7 +148,7 @@ async def _(args: Args, group: CurrentGroup):
     package_writer = PackageWriter(PackageType.PROGRESS, True)
 
     try:
-        payload = await ConnectionManager.call_api(group.servers[server_index].token, package_writer.build())
+        payload = await ConnectionManager.call_api(server_token, package_writer.build())
     except TimeoutError:
         await world_progress.finish(f'\n『进度查询』\n' +
                                     f"执行失败！\n" +
@@ -209,6 +210,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     server_number = int(args[0])
     server_index = server_number - 1
     server_token = group.servers[server_index].token
+
     package_writer = PackageWriter(PackageType.MAP_IMAGE)
 
     if not ConnectionManager.is_server_online(server_token):
