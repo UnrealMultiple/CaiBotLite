@@ -42,7 +42,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
 
         command = " ".join(args[1:])
 
-        if command != "/":
+        if command[0] != "/":
             command = "/" + command
 
         package_writer = PackageWriter(PackageType.CALL_COMMAND)
