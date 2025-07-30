@@ -88,6 +88,7 @@ async def call_server_online(server: Server, server_index: int, config: GroupCon
     process = f"「{result['process']}」" if result['process'] else ""
     current_online = result['current_online']
     max_online = result['max_online']
+    ConnectionManager.connected_servers[server.token].server_info.server_name = server_name
     lines = [f"๑{server_num}๑⚡{server_name} {process}"]
 
     if current_online == 0:
