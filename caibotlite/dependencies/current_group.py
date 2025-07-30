@@ -3,7 +3,7 @@ from typing import Annotated
 from nonebot.adapters.qq import GroupAtMessageCreateEvent
 from nonebot.params import Depends
 
-from caibotlite.dependencies import Session
+from caibotlite.dependencies.session import Session
 from caibotlite.managers import GroupManager
 from caibotlite.models import Group
 
