@@ -16,7 +16,7 @@ def _init():
 
     _item_info = {item['ItemId']: item for item in item_json}
     _prefix_info = {prefix['PrefixId']: prefix for prefix in prefix_json}
-    logger.success("[Tag]物品、前缀已缓存!")
+    logger.success("[tag]物品、前缀已缓存!")
 
 _init()
 

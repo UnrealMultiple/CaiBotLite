@@ -40,7 +40,7 @@ class TerrariaSearch:
         with open("assets/terraria_data/permission_id.json", encoding='utf-8', errors='ignore') as fp:
             cls.permissions = json.loads(fp.read())
 
-    logger.success("[terraria_data]物品、前缀、生物、buffs、弹幕已缓存!")
+    logger.success("[terraria_search]物品、前缀、生物、buffs、弹幕已缓存!")
 
     @classmethod
     def _get_item_info_string(cls, item):

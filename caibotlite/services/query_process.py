@@ -1,12 +1,17 @@
 import time
 
 from PIL import Image, ImageDraw, ImageFont
+from nonebot import logger
 
-ft_25 = ImageFont.truetype(font="assets/fonts/LXGWWenKaiMono-Medium.ttf", size=25)
-ft_30 = ImageFont.truetype(font="assets/fonts/LXGWWenKaiMono-Medium.ttf", size=30)
-ft_40 = ImageFont.truetype(font="assets/fonts/LXGWWenKaiMono-Medium.ttf", size=40)
-ft_60 = ImageFont.truetype(font="assets/fonts/LXGWWenKaiMono-Medium.ttf", size=60)
-ft_100 = ImageFont.truetype(font="assets/fonts/LXGWWenKaiMono-Medium.ttf", size=100)
+FONT_PATH = "assets/fonts/LXGWWenKaiMono-Medium.ttf"
+
+ft_25 = ImageFont.truetype(font=FONT_PATH, size=25)
+ft_30 = ImageFont.truetype(font=FONT_PATH, size=30)
+ft_40 = ImageFont.truetype(font=FONT_PATH, size=40)
+ft_60 = ImageFont.truetype(font=FONT_PATH, size=60)
+ft_100 = ImageFont.truetype(font=FONT_PATH, size=100)
+
+logger.success("[query_process]字体缓存完成!")
 
 
 class QueryProcess:

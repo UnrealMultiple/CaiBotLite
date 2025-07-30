@@ -129,7 +129,7 @@ class LookBag:
                 buff_id = filename.split("_")[1].split(".")[0]
                 cls.image_cache[f"buff_{buff_id}"] = Image.open(os.path.join(buff_dir, filename)).convert("RGBA")
 
-        logger.success("[查背包]图片缓存完毕...")
+        logger.success("[look_bag]图片缓存完成!")
 
     @classmethod
     def draw_item(cls, bg_img: Image, draw: ImageDraw, x: int, y: int, item_id: int, stack: int):
