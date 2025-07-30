@@ -24,7 +24,7 @@ async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Sess
                        f"❔登录请求不存在或已过期！")
 
 
-reject_login = on_command('拒绝', aliases={"不批准", "不允许"}, force_whitespace=True)
+reject_login = on_command('拒绝', aliases={"不批准", "不允许"}, force_whitespace=True, block=True)
 
 
 @reject_login.handle()
@@ -43,7 +43,7 @@ async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Sess
                        f"❔登录请求不存在或已过期！")
 
 
-clean_device = on_command('清空设备', aliases={"清除绑定"}, force_whitespace=True)
+clean_device = on_command('清空设备', aliases={"清除绑定"}, force_whitespace=True, block=True)
 
 
 @clean_device.handle()

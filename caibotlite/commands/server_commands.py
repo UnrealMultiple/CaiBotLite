@@ -267,7 +267,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                     f"{result['message']}")
 
 
-get_map_file = on_command("下载小地图", force_whitespace=True)
+get_map_file = on_command("下载小地图", force_whitespace=True, block=True)
 
 
 @get_map_file.handle()

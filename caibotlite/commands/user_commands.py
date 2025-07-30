@@ -22,7 +22,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
         await bind.finish(f'\n『白名单』\n' +
                           f"你已经在本群绑定过白名单了哦！\n"
                           f"你绑定的角色为[{user.name}]\n"
-                          f"TIPS: 可以使用'/修改白名单 <名字>'重绑哦~")
+                          f"TIPS: 可以使用\"/修改白名单 <名字>\"重绑哦~")
     if len(args) != 1:
         await bind.finish(f'\n『白名单』\n' +
                           f"格式错误！\n"
