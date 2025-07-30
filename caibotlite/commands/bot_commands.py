@@ -1,4 +1,4 @@
-from nonebot import on_command
+from nonebot import on_command, on_message
 
 from caibotlite.constants import BOT_VERSION
 from caibotlite.dependencies import Session
@@ -75,3 +75,11 @@ async def plugin_version_handle():
                                    f'{os_info}\n'
                                    f'📖白名单服务器:\n'
                                    f'{whitelist_count}台')
+
+
+pre_receive_msg = on_message(priority=-114514, block=False)
+
+
+@pre_receive_msg.handle()
+async def _():
+    Statistics.message_received += 1

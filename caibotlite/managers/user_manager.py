@@ -6,6 +6,7 @@ from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio.session import AsyncSession
 
 from caibotlite.models import User, LoginAttempt
+from caibotlite.services import Statistics
 
 
 class UserManager:
@@ -76,7 +77,7 @@ class UserManager:
 
         user.last_sign = datetime.now()
         await cls.update_user(session, user)
-
+        Statistics.player_signs += 1
         today = datetime.today().date()
         # noinspection PyTypeChecker
         result = await session.execute(
