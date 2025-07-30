@@ -81,7 +81,7 @@ async def call_server_online(server: Server, server_index: int, config: GroupCon
     try:
         result = await ConnectionManager.call_api(server.token, package)
     except TimeoutError:
-        return f"๑{server_num}๑⚠️服务器连接超时!"
+        return f"๑{server_num}๑⚠️服务器响应超时!"
 
     player_list = result['player_list']
     server_name = result['server_name']
@@ -146,7 +146,12 @@ async def _(args: Args, group: CurrentGroup):
 
     package_writer = PackageWriter(PackageType.PROGRESS, True)
 
-    payload = await ConnectionManager.call_api(group.servers[server_index].token, package_writer.build())
+    try:
+        payload = await ConnectionManager.call_api(group.servers[server_index].token, package_writer.build())
+    except TimeoutError:
+        await world_progress.finish(f'\n『进度查询』\n' +
+                                    f"执行失败！\n" +
+                                    f"⚠️服务器响应超时")
 
     if payload['is_text']:
         await world_progress.finish(f'\n『进度查询』\n' +
@@ -203,15 +208,21 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
 
     server_number = int(args[0])
     server_index = server_number - 1
-
+    server_token = group.servers[server_index].token
     package_writer = PackageWriter(PackageType.MAP_IMAGE)
 
-    if not ConnectionManager.is_server_online(group.servers[server_index].token):
+    if not ConnectionManager.is_server_online(server_token):
         await get_map_png.finish(f'\n『查看地图』\n' +
                                  f"获取失败！\n" +
                                  f"❌服务器[{server_number}]处于离线状态")
 
-    payload = await ConnectionManager.call_api(group.servers[server_index].token, package_writer.build(), timeout=30.0)
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=30.0)
+    except TimeoutError:
+        await get_map_png.finish(f'\n『查看地图』\n' +
+                                 f"获取失败！\n" +
+                                 f"⚠️服务器响应超时")
+
     decoded_bytes = base64.b64decode(decompress_base64_gzip(payload['base64']))
     await world_progress.finish(MessageSegment.file_image(decoded_bytes))
 
@@ -247,7 +258,13 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                     f"获取失败！\n" +
                                     f"❌服务器[{server_number}]处于离线状态")
 
-    payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=30.0)
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=30.0)
+    except TimeoutError:
+        await get_world_file.finish(f'\n『下载地图』\n' +
+                                    f"获取失败！\n" +
+                                    f"⚠️服务器响应超时")
+
     result = await FileService.create_upload_link(decompress_base64_gzip(payload['base64']), payload['name'])
     if result['success']:
         if payload['name'].endswith('.wld'):
@@ -295,7 +312,14 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
         await get_map_file.finish(f'\n『下载小地图』\n' +
                                   f"获取失败！\n"
                                   f"❌服务器[{server_number}]处于离线状态")
-    payload = await ConnectionManager.call_api(server_token, package_writer.build(), 30.0)
+
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), 30.0)
+
+    except TimeoutError:
+        await get_map_file.finish(f'\n『下载小地图』\n' +
+                                  f"获取失败！\n"
+                                  f"⚠️服务器响应超时")
 
     result = await FileService.create_upload_link(decompress_base64_gzip(payload['base64']), payload['name'])
     if result['success']:
@@ -342,7 +366,15 @@ async def _(args: Args, group: CurrentGroup):
         await get_plugin_list.finish(f'\n『插件列表』\n' +
                                      f"获取失败！\n" +
                                      f"❌服务器[{server_number}]处于离线状态")
-    payload = await ConnectionManager.call_api(server_token, package_writer.build())
+
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build())
+
+    except TimeoutError:
+        await get_plugin_list.finish(f'\n『插件列表』\n' +
+                                     f"获取失败！\n" +
+                                     f"⚠️服务器响应超时")
+
     is_mod = payload['is_mod']
     plugins = payload['plugins']
     plugins.sort(key=lambda x: x['Name'])
@@ -378,7 +410,15 @@ async def _(args: Args, group: CurrentGroup):
         await look_bag.finish(f'\n『查背包』\n' +
                               f"查询失败！\n" +
                               f"❌服务器[{server_number}]处于离线状态")
-    payload = await ConnectionManager.call_api(server_token, package_writer.build())
+
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build())
+
+    except TimeoutError:
+        await look_bag.finish(f'\n『查背包』\n' +
+                              f"查询失败！\n" +
+                              f"⚠️服务器响应超时")
+
     if payload['exist'] == 0:
         await look_bag.finish(f"\n『查背包』\n" +
                               f"查询失败!\n" +
@@ -438,7 +478,13 @@ async def _(args: Args, group: CurrentGroup):
                            f"获取失败！\n"
                            f"❌服务器[{server_number}]处于离线状态")
 
-    payload = await ConnectionManager.call_api(server_token, package_writer.build())
+    try:
+        payload = await ConnectionManager.call_api(server_token, package_writer.build())
+
+    except TimeoutError:
+        await  rank.finish(f'\n『排行』\n' +
+                           f"获取失败！\n"
+                           f"⚠️服务器响应超时")
 
     if not payload["rank_type_support"]:
         await  rank.finish(filter_all(f'\n『排行』\n' +
