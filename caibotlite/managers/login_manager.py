@@ -86,6 +86,7 @@ class LoginManager:
 
         user.last_login_time = datetime.now()
         await session.merge(user)
+        await session.commit()
         await cls.clean_up(session, user)
         return True
 
