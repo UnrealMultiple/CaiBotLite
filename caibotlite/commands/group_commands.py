@@ -18,11 +18,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
         await bind_parent_group.finish(f'\n『绑定父群』\n' +
                                        f"格式错误!\n"
                                        f"正确格式: 绑定父群 <父群ID> [只在本群有效]\n"
-                                       f"TIPS: 使用'/获取群信息'获取群父群ID")
+                                       f"TIPS: 使用\"/获取群信息\"获取群父群ID")
     if group.parent_open_id is not None:
+        await session.refresh(group, ["parent_group"])
         await bind_parent_group.finish(f'\n『绑定父群』\n' +
-                                       f"本群已绑定父群[{group.parent}]!\n"
-                                       f"使用'/解绑父群'解除绑定")
+                                       f"本群已绑定父群[{group.parent_group.id}]!\n"
+                                       f"使用\"/解绑父群\"解除绑定")
     parent_group_id = int(args[0])
     if parent_group_id == group.id:
         await bind_parent_group.finish(f'\n『绑定父群』\n' +
@@ -48,7 +49,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
     group.parent_open_id = parent_group.open_id
     await GroupManager.update_group(session, group)
     await bind_parent_group.finish(f'\n『绑定父群』\n' +
-                                   f"已将[{parent_group_id}]设为本群父群!")
+                                   f"已将[{parent_group_id}]设为本群父群!\n"
+                                   f"TIPS: 使用\"/解绑父群\"解除绑定")
 
 
 unbind_parent_group = on_command("解绑父群", force_whitespace=True, block=True)
@@ -60,7 +62,7 @@ async def _(event: GroupAtMessageCreateEvent, group: OriginalGroup, session: Ses
         if group.parent_open_id is None:
             await unbind_parent_group.finish(f'\n『解绑父群』\n' +
                                              f"本群没有已绑定的父群!\n"
-                                             f"使用'/绑定父群 <群ID>'添加父群")
+                                             f"使用\"/绑定父群 <群ID>\"添加父群")
 
         group.parent_open_id = None
         await GroupManager.update_group(session, group)
@@ -79,6 +81,7 @@ get_group_info = on_command("获取群信息", aliases={"获取群信息"}, forc
 @get_group_info.handle()
 async def _(group: OriginalGroup, session: Session):
     await session.refresh(group, ["child_groups"])
+    await session.refresh(group, ["parent_group"])
     child_group = group.child_groups
     admin_names = []
     black_names = []
@@ -95,12 +98,14 @@ async def _(group: OriginalGroup, session: Session):
         else:
             black_names.append(user.name)
     await get_group_info.finish(f'\n『群信息』\n'
-                                f'群ID: {group.open_id}\n'
-                                f'父群: {group.parent_open_id if group.parent_open_id else "无"}\n'
-                                f'子群: {",".join([i.id for i in child_group]) if len(child_group) != 0 else "无"}\n'
+                                f'群ID: {group.id}\n'
+                                f'群OpenID: {group.open_id}\n'
+                                f'父群: {group.parent_group.id if group.parent_open_id else "无"}\n'
+                                f'子群: {",".join([str(i.id) for i in child_group]) if len(child_group) != 0 else "无"}\n'
                                 f'用户数: {await UserManager.count_group_users(session, group.open_id)}\n'
-                                f'管理列表: {",".join(admin_names) if len(admin_names) != 0 else "无"}\n'
-                                f'黑名单: {",".join(black_names) if len(black_names) != 0 else "无"}'
+                                f'管理列表: {",".join(admin_names)}\n'
+                                f'黑名单: {",".join(black_names) if len(black_names) != 0 else "无"}\n'
+                                f'TIPS: 绑定父群时使用\"群ID\"'
                                 )
 
 
