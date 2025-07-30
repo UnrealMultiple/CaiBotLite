@@ -40,14 +40,18 @@ class LoginManager:
 
     @classmethod
     async def clean_up(cls, session: AsyncSession, user: User):
+        need_merge = False
         if len(user.uuids) > 10:
             user.uuids = user.uuids[len(user.uuids) - 10:]
+            need_merge = True
 
         if len(user.ips) > 10:
             user.ips = user.ips[len(user.ips) - 10:]
+            need_merge = True
 
-        await session.merge(user)
-        await session.commit()
+        if need_merge:
+            await session.merge(user)
+            await session.commit()
 
     @classmethod
     def try_login_ok(cls, session, user: User, uuid: str, ip: str) -> bool:
@@ -73,7 +77,8 @@ class LoginManager:
             return False
 
         if login_attempt.login_uuid not in user.uuid_list:
-            user.uuids.append(LoginUUID(uuid=login_attempt.login_uuid, record_time=datetime.now()))
+            user.uuids.append(
+                LoginUUID(uuid=login_attempt.login_uuid, record_time=datetime.now()))
 
         if login_attempt.login_ip not in user.ip_list:
             user.ips.append(
