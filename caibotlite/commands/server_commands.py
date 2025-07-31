@@ -495,15 +495,15 @@ async def _(args: Args, group: CurrentGroup):
                                       f"当前服务器支持的排行榜类型: " +
                                       f", ".join(payload["support_rank_types"])))
     if payload["need_arg"]:
-        if len(args) == 4 and arg[3].isdigit():
-            page = int(arg[3])
+        if len(args) == 4 and args[3].isdigit():
+            page = int(args[3])
         if not payload["arg_support"]:
             await rank.finish(filter_all(f'\n『排行』\n' +
                                          payload["message"]) +
                               f", ".join(payload["support_args"]))
     else:
-        if len(args) == 3 and arg[2].isdigit():
-            page = int(arg[2])
+        if len(args) == 3 and args[2].isdigit():
+            page = int(args[2])
 
     rank_data = payload["rank"]
     rank_lines = dict(rank_data["rank_lines"])
