@@ -467,7 +467,7 @@ async def _(args: Args, group: CurrentGroup):
                                       f", ".join(payload["support_rank_types"])))
 
     rank_type = args[1]
-    if len(args) == 3:
+    if len(args) >= 3:
         arg = args[2]
     else:
         arg = ""
@@ -497,6 +497,7 @@ async def _(args: Args, group: CurrentGroup):
     if payload["need_arg"]:
         if len(args) == 4 and args[3].isdigit():
             page = int(args[3])
+
         if not payload["arg_support"]:
             await rank.finish(filter_all(f'\n『排行』\n' +
                                          payload["message"]) +
