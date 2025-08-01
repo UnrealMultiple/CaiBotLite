@@ -63,13 +63,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if not args[0].isdigit() or int(args[0]) > len(group.servers):
         await edit_server.finish(f'\n『修改服务器』\n'
                                  f"服务器序号错误!")
-    if not args[0].isdigit():
+    if not args[2].isdigit():
         await edit_server.finish(f'\n『修改服务器』\n'
                                  f"无效端口号!")
 
     server_index = int(args[0]) - 1
-    group.servers[server_index].ip = args[1]
-    group.servers[server_index].port = int(args[0])
+    server = group.servers[server_index]
+
+    server.ip = args[1]
+    server.port = int(args[2])
 
     await GroupManager.update_group(session, group)
     # noinspection PyBroadException
@@ -79,7 +81,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
         ip = group.servers[server_index].ip
     await edit_server.finish(f'\n『修改服务器』\n'
                              f"修改成功!\n"
-                             f"服务器IP信息已改为: {ip}:{group.servers[server_index].port}")
+                             f"服务器IP信息已改为: {ip}:{server.port}")
 
 
 del_server = on_command("删除服务器", force_whitespace=True, block=True)
