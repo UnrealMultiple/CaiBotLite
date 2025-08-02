@@ -31,6 +31,7 @@ def main():
     GeoIP.init()
     nonebot.load_plugins("caibotlite/commands")
     nonebot.load_plugins("caibotlite/api")
+    nonebot.load_plugins("caibotlite/bot_event")
     nonebot.run()
 
 
