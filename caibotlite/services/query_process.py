@@ -1,6 +1,6 @@
 import time
-
 from PIL import Image, ImageDraw, ImageFont
+from PIL.Image import Resampling
 from nonebot import logger
 
 FONT_PATH = "assets/fonts/LXGWWenKaiMono-Medium.ttf"
@@ -10,6 +10,10 @@ ft_30 = ImageFont.truetype(font=FONT_PATH, size=30)
 ft_40 = ImageFont.truetype(font=FONT_PATH, size=40)
 ft_60 = ImageFont.truetype(font=FONT_PATH, size=60)
 ft_100 = ImageFont.truetype(font=FONT_PATH, size=100)
+
+lock_icon = Image.open("assets/images/items/Item_5328.png").convert('RGBA')
+lock_icon = lock_icon.resize((60, 60), Resampling.LANCZOS)
+_, _, _, a_lock_icon = lock_icon.split()
 
 logger.success("[query_process]字体缓存完成!")
 
@@ -33,6 +37,11 @@ class QueryProcess:
 
     @classmethod
     def get_process_png(cls, process_data) -> Image:
+        if "boss_lock" in process_data:
+            boss_locks = process_data["boss_lock"]
+        else:
+            boss_locks = {}
+
         process = process_data["process"]
         kill_counts = process_data["kill_counts"]
         if process_data["zenith_world"]:
@@ -40,7 +49,7 @@ class QueryProcess:
         elif process_data["drunk_world"]:
             img = Image.open("assets/images/backgrounds/Background_3.png")
         else:
-            img = Image.open("assets/images/backgrounds/Background_1.png")
+            img = Image.open("assets/images/backgrounds/Background_5.png")
 
         draw = ImageDraw.Draw(img)
 
@@ -97,7 +106,15 @@ class QueryProcess:
             img.paste(boss_img, (x, y - up), mask=ba)
             _, _, tw, th = draw.textbbox((0, 0), "已击败", font=ft_40)
             if name == "Mechdusa":
-                if process['The Destroyer'] and process['The Twins'] and process['Skeletron Prime']:
+                if 'Skeletron Prime' in boss_locks:
+                    _, _, tw, th = draw.textbbox((0, 0), boss_locks['Skeletron Prime'], font=ft_40)
+                    img.paste(lock_icon, (int(x + boss_img.size[0] / 2 - tw / 2 - 45), int(y + boss_img.size[1] + 5)),
+                              mask=a_lock_icon)
+
+                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                              boss_locks['Skeletron Prime'], font=ft_40, fill='orangered')
+
+                elif process['The Destroyer'] and process['The Twins'] and process['Skeletron Prime']:
                     _, _, tw, th = draw.textbbox((0, 0), "已击败", font=ft_40)
                     draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10), "已击败", font=ft_40,
                               fill='red')
@@ -115,7 +132,15 @@ class QueryProcess:
                               f"未击败({','.join(not_defeat)})", font=ft_40)
 
                 return
-            if process[name]:
+            if name in boss_locks:
+                _, _, tw, th = draw.textbbox((0, 0), boss_locks[name], font=ft_40)
+                img.paste(lock_icon, (int(x + boss_img.size[0] / 2 - tw / 2 - 45), int(y + boss_img.size[1] + 5)),
+                          mask=a_lock_icon)
+
+                draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                          boss_locks[name], font=ft_40, fill='orangered')
+
+            elif process[name]:
                 _, _, tw, th = draw.textbbox((0, 0), f"已击败({kill_counts[name]}次)", font=ft_40)
                 draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
                           f"已击败({kill_counts[name]}次)", font=ft_40, fill='red')
@@ -244,6 +269,12 @@ if __name__ == '__main__':
             "Lunatic Cultist": 5,
             "Moon Lord": 9
         },
+        "boss_lock": {"King Slime": "今天11:44", "Eye of Cthulhu": "今天11:44", "Deerclops": "今天11:44",
+                      "Brain of Cthulhu": "今天23:44", "Eater of Worlds": "今天23:44", "Queen Bee": "明天05:44",
+                      "Wall of Flesh": "明天11:44", "Duke Fishron": "明天23:44", "The Twins": "后天11:44",
+                      "The Destroyer": "后天11:44", "Skeletron Prime": "后天11:44", "Plantera": "后天23:44",
+                      "Empress of Light": "后天23:44", "Golem": "下周三11:44", "Lunatic Cultist": "下周三11:44",
+                      "Moon Lord": "下周三23:44"},
         "world_name": "啊da啊啊啊啊aaaaaa...",
         "drunk_world": False,
         "zenith_world": False,
