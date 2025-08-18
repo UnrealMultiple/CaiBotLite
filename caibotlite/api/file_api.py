@@ -4,6 +4,7 @@ import nonebot
 from fastapi import FastAPI, HTTPException
 from starlette.responses import FileResponse
 
+from caibotlite.models import FileInfo
 from caibotlite.services.file import FileService
 
 app = nonebot.get_app()
@@ -15,11 +16,11 @@ async def download_file(file_id: str):
     if file_id not in FileService.files_db:
         raise HTTPException(404, "没有找到文件, 可能是文件过期了呢~")
 
-    file_info = FileService.files_db[file_id]
+    file_info: FileInfo = FileService.files_db[file_id]
 
     return FileResponse(
-        file_info["path"],
-        filename=file_info["filename"]
+        file_info.path,
+        filename=file_info.filename
     )
 
 
@@ -27,14 +28,14 @@ async def download_file(file_id: str):
 async def download_file(name: str):
     try:
         if name.find("/") != -1:
-            raise HTTPException(403, detail="无效插件名!")
+            raise HTTPException(403, detail="找不到这个插件捏~")
 
         full_path = Path("./plugins") / name
         full_path = full_path.resolve()
 
         # 检查文件是否存在
         if not full_path.is_file():
-            raise HTTPException(status_code=404, detail="File not found")
+            raise HTTPException(status_code=404, detail="找不到文件喵~")
 
         # 返回文件
         return FileResponse(

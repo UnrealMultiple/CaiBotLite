@@ -14,7 +14,7 @@ from caibotlite.models.file_info import FileInfo
 
 class FileService:
     TEMP_UPLOAD_DIR = Path("./temp")
-    files_db: ExpiringDict[int, FileInfo] = ExpiringDict(max_len=100, max_age_seconds=FileSystem.FILE_EXPIRATION)
+    files_db: ExpiringDict = ExpiringDict(max_len=100, max_age_seconds=FileSystem.FILE_EXPIRATION)
 
     @classmethod
     async def validate_zip_content(cls, file_bytes: bytes):
