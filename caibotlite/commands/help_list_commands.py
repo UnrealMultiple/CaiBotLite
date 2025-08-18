@@ -108,8 +108,8 @@ command_helper = on_message(priority=114514, block=True)
 
 @command_helper.handle()
 async def _(event: GroupAtMessageCreateEvent):
-    if event.get_plaintext().strip() == "":
-        await command_helper.finish("没有找到匹配的命令呢~\n"
+    if not event.get_plaintext().strip():
+        await command_helper.finish("我不是AI捏, @我也没用喵~\n"
                                     "使用\"/帮助\"查询命令列表")
 
     command_name = event.get_plaintext().strip().split(maxsplit=1)[0].lstrip('/ ')
