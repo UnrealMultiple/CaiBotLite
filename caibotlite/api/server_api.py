@@ -154,7 +154,7 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                     package_writer.write("whitelist_result", WhitelistResult.NOT_IN_WHITELIST)
                 elif user.open_id in group.black_list:
                     package_writer.write("whitelist_result", WhitelistResult.In_GROUP_BLACKLIST)
-                elif not LoginManager.try_login_ok(session, user, uuid, ip):
+                elif not await LoginManager.try_login_ok(session, user, uuid, ip):
                     package_writer.write("whitelist_result", WhitelistResult.NEED_LOGIN)
                 else:
                     package_writer.write("whitelist_result", WhitelistResult.ACCEPT)

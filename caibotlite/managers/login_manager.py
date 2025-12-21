@@ -54,7 +54,7 @@ class LoginManager:
             await session.commit()
 
     @classmethod
-    def try_login_ok(cls, session, user: User, uuid: str, ip: str) -> bool:
+    async def try_login_ok(cls, session, user: User, uuid: str, ip: str) -> bool:
         city = GeoIP.get_city(ip)
         if uuid not in user.uuid_list:
             cls.add_attempt(user.open_id, uuid, ip, city)
@@ -65,7 +65,7 @@ class LoginManager:
                 cls.add_attempt(user.open_id, uuid, ip, city)
                 return False
             else:
-                cls.insert_new_ip(session, user, ip, city)
+                await cls.insert_new_ip(session, user, ip, city)
 
         return True
 
