@@ -23,6 +23,7 @@ async def ban_about_handle(session: Session):
                        f'命乌 [TR汉化包]\n'
                        f'葉玖 [可爱捏(?)]\n'
                        f'泉港一中 [周六补课]\n'
+                       f'福州大学 [寒假30天]\n'
                        f'🙏反馈群: 991556763\n'
                        f'⚡当前已加入{await GroupManager.count_all_groups(session)}个群\n'
                        f'绑定{await UserManager.count_all_users(session)}名玩家,检查白名单{Statistics.whitelist_check}次\n'

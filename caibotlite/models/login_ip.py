@@ -8,7 +8,6 @@ from .base import Base
 
 if TYPE_CHECKING:
     from .base import Base
-    from .user import User
 
 
 class LoginIP(Base):
@@ -19,4 +18,3 @@ class LoginIP(Base):
     city: Mapped[str] = mapped_column(String(32), nullable=True)
     record_time: Mapped[datetime] = mapped_column()
     user_open_id: Mapped[str] = mapped_column(ForeignKey("user.open_id"))
-    user: Mapped["User"] = relationship(back_populates="ips", lazy='joined')

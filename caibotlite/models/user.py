@@ -25,9 +25,15 @@ class User(Base):
     money: Mapped[int] = mapped_column(default=0)
     sign_days: Mapped[int] = mapped_column(default=0)
     sign_consistency: Mapped[int] = mapped_column(default=0)
-    uuids: Mapped[List["LoginUUID"]] = relationship(back_populates="user", lazy='joined', cascade="all, delete-orphan")
+    uuids: Mapped[List["LoginUUID"]] = relationship(lazy='joined', cascade="all, delete-orphan",
+                                                    foreign_keys="[LoginUUID.user_open_id]",
+                                                    primaryjoin="User.open_id == LoginUUID.user_open_id")
+
     uuid_list: Mapped[List[str]] = association_proxy("uuids", "uuid")
-    ips: Mapped[List["LoginIP"]] = relationship(back_populates="user", lazy='joined', cascade="all, delete-orphan")
+    ips: Mapped[List["LoginIP"]] = relationship(lazy='joined', cascade="all, delete-orphan",
+                                                foreign_keys="[LoginIP.user_open_id]",
+                                                primaryjoin="User.open_id == LoginIP.user_open_id")
+
     ip_list: Mapped[List[str]] = association_proxy("ips", "ip")
     city_list: Mapped[List[str]] = association_proxy("ips", "city")
     last_login: Mapped[datetime] = mapped_column(default=datetime.min)

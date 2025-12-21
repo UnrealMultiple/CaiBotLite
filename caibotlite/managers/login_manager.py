@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import Optional
 
 from expiringdict import ExpiringDict
+from sqlalchemy import delete
 from sqlalchemy.ext.asyncio.session import AsyncSession
 
 from caibotlite.models import User, LoginIP, LoginUUID, LoginAttempt
@@ -9,6 +10,7 @@ from caibotlite.services import GeoIP
 
 
 class LoginManager:
+    # noinspection PyTypeHints
     login_attempts: ExpiringDict[str, LoginAttempt] = ExpiringDict(max_len=1000, max_age_seconds=600)
 
     @classmethod
@@ -102,6 +104,15 @@ class LoginManager:
 
     @classmethod
     async def clean_login_info(cls, session: AsyncSession, user: User):
+        await session.execute(
+            delete(LoginUUID).where(LoginUUID.user_open_id == user.open_id)
+        )
+        await session.execute(
+            delete(LoginIP).where(LoginIP.user_open_id == user.open_id)
+        )
+        await session.commit()
+
         user.uuids = []
         user.ips = []
+
         await session.merge(user)

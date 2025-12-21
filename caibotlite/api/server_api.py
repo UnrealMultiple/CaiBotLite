@@ -148,7 +148,7 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                 Statistics.whitelist_check += 1
                 package_writer = PackageWriter(PackageType.WHITELIST, False)
                 package_writer.write("player_name", name)
-                package_writer.write("is_admin", user.open_id in group.admins)
+                package_writer.write("is_admin", user is not None and user.open_id in group.admins)
                 whitelist_result: WhitelistResult
                 if user is None:
                     package_writer.write("whitelist_result", WhitelistResult.NOT_IN_WHITELIST)

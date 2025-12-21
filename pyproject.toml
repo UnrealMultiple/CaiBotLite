@@ -7,7 +7,7 @@ default = true
 plugins = ["nonebot_plugin_apscheduler"]
 [project]
 name = "caibotlite"
-version = "2025.8.3"
+version = "2025.12.22"
 description = "CaiBotLite big upgrade"
 readme = "README.md"
 requires-python = ">=3.13"

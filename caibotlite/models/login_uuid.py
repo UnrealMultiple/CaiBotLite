@@ -8,8 +8,6 @@ from .base import Base
 
 if TYPE_CHECKING:
     from .base import Base
-    from .user import User
-
 
 class LoginUUID(Base):
     __tablename__ = "login_uuid"
@@ -18,4 +16,3 @@ class LoginUUID(Base):
     uuid: Mapped[str] = mapped_column(String(32))
     record_time: Mapped[datetime] = mapped_column()
     user_open_id: Mapped[str] = mapped_column(ForeignKey("user.open_id"))
-    user: Mapped["User"] = relationship(back_populates="uuids", lazy='joined')
