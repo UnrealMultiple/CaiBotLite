@@ -18,7 +18,7 @@ bind = on_command("添加白名单", aliases={"绑定"}, force_whitespace=True, 
 @bind.handle()
 async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
     user = await UserManager.get_user_by_open_id(session, group.open_id, event.author.union_openid)
-    if user is not None and user.name != "":
+    if user is not None and user.name != "" and user.name != None:
         await bind.finish(f'\n『白名单』\n' +
                           f"你已经在本群绑定过白名单了哦！\n"
                           f"你绑定的角色为[{user.name}]\n"
