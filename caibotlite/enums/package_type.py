@@ -29,6 +29,8 @@ class PackageType(str, Enum):
 
     def get_version(self):
         match self:
+            case PackageType.WHITELIST:
+                return "2025.12.18"
             case PackageType.SELF_KICK:
                 return "2025.7.18"
             case PackageType.HELLO:
