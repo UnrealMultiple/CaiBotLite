@@ -118,6 +118,8 @@ class LookBag:
     def init_look_bag(cls):
         item_dir = "assets/images/items/"
         buff_dir = "assets/images/buffs/"
+        projectile_dir = "assets/images/projectiles/"
+        npc_dir = "assets/images/npcs/"
 
         for filename in os.listdir(item_dir):
             if filename.endswith(".png") and filename.startswith("Item"):
@@ -128,6 +130,17 @@ class LookBag:
             if filename.endswith(".png") and filename.startswith("Buff"):
                 buff_id = filename.split("_")[1].split(".")[0]
                 cls.image_cache[f"buff_{buff_id}"] = Image.open(os.path.join(buff_dir, filename)).convert("RGBA")
+
+        for filename in os.listdir(projectile_dir):
+            if filename.endswith(".png") and filename.startswith("Projectile"):
+                projectile_id = filename.split("_")[1].split(".")[0]
+                cls.image_cache[f"projectile_{projectile_id}"] = Image.open(
+                    os.path.join(projectile_dir, filename)).convert("RGBA")
+
+        for filename in os.listdir(npc_dir):
+            if filename.endswith(".png") and filename.startswith("NPC"):
+                npc_id = filename.split("_")[1].split(".")[0]
+                cls.image_cache[f"npc_{npc_id}"] = Image.open(os.path.join(npc_dir, filename)).convert("RGBA")
 
         logger.success("[look_bag]图片缓存完成!")
 

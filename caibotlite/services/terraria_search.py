@@ -104,8 +104,13 @@ class TerrariaSearch:
             info.append("别名: " + ",".join(item['Alias']))
 
         byte_arr = io.BytesIO()
-        LookBag.image_cache[f"item_{item['ItemId']}"].save(byte_arr, format='PNG')
-        return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
+        image_key = f"item_{item['ItemId']}"
+
+        if image_key in LookBag.image_cache:
+            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
+            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
+
+        return MessageSegment.text("\n".join(info))
 
     @classmethod
     def _get_npc_info_string(cls, item):
@@ -132,6 +137,13 @@ class TerrariaSearch:
         if item['Alias']:
             info.append("别名: " + ",".join(item['Alias']))
 
+        byte_arr = io.BytesIO()
+        image_key = f"npc_{item['NpcId']}"
+
+        if image_key in LookBag.image_cache:
+            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
+            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
+
         return MessageSegment.text("\n".join(info))
 
     @classmethod
@@ -142,10 +154,17 @@ class TerrariaSearch:
         if item['Alias']:
             info.append("别名: " + ",".join(item['Alias']))
 
+        byte_arr = io.BytesIO()
+        image_key = f"projectile_{item['ProjId']}"
+
+        if image_key in LookBag.image_cache:
+            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
+            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
+
         return MessageSegment.text("\n".join(info))
 
     @classmethod
-    def _get_buff_info_string(cls, item) -> (str, MessageSegment):
+    def _get_buff_info_string(cls, item):
         info = [f"增益名: {item['Name']}", f"ID: {item['BuffId']}"]
         if item['Description'] != "":
             info.append(f"{item['Description']}")
