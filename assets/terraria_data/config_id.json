@@ -1,1122 +1,1146 @@
 [
-    {
-        "Name": "AllowAllowedGroupsToSpawnBannedItems",
-        "KeyId": 1,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "允许被禁止物品允许列表中的用户组生成被禁止物品，即使PreventBannedItemSpawn设置为true",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowCorruptionCreep",
-        "KeyId": 2,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "允许腐化在世界处于困难模式时蔓延",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowCrimsonCreep",
-        "KeyId": 3,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "允许世界处于困难模式时猩红蔓延",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowCutTilesAndBreakables",
-        "KeyId": 4,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "允许玩家破坏通常无法建造的临时图格（草、罐子等）",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowHallowCreep",
-        "KeyId": 5,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "允许世界处于困难模式时神圣之地蔓延",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowIce",
-        "KeyId": 6,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "允许在通常无法建造的地方放置冰",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowLoginAnyUsername",
-        "KeyId": 7,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "允许用户登录任意账户，即使用户名与其角色名称不匹配",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AllowRegisterAnyUsername",
-        "KeyId": 8,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "允许用户注册与角色名称不一致的用户名",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AnnounceSave",
-        "KeyId": 9,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "启用或禁用世界保存公告",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AnonymousBossInvasions",
-        "KeyId": 10,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否通告Boss生成或入侵开始",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ApplicationRestTokens",
-        "KeyId": 11,
-        "Type": "Dictionary`2",
-        "Default": "System.Collections.Generic.Dictionary`2[System.String,Rests.SecureRest+TokenData]",
-        "Description": "外部应用程序可用来向服务器发起查询的REST令牌字典",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "AutoSave",
-        "KeyId": 12,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "启用或禁用泰拉瑞亚内置的世界自动保存功能",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BackupInterval",
-        "KeyId": 13,
-        "Type": "Int32",
-        "Default": "10",
-        "Description": "备份间隔时间（以分钟计）。备份文件存储在tshock/backups文件夹中",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BackupKeepFor",
-        "KeyId": 14,
-        "Type": "Int32",
-        "Default": "240",
-        "Description": "备份保留时长（分钟）\n例如：2880 = 2天",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BanOnHardcoreDeath",
-        "KeyId": 15,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在硬核模式玩家死亡时封禁",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BanOnMediumcoreDeath",
-        "KeyId": 16,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在中等核心玩家死亡时封禁他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BCryptWorkFactor",
-        "KeyId": 17,
-        "Type": "Int32",
-        "Default": "7",
-        "Description": "决定使用的BCrypt加密强度系数。若提高该值，所有密码将在验证时升级至新强度。计算轮数为2^n次方。请谨慎调整。范围：5-31",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BombExplosionRadius",
-        "KeyId": 18,
-        "Type": "Int32",
-        "Default": "5",
-        "Description": "决定炸弹从爆炸点开始能影响图格的范围",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "BroadcastRGB",
-        "KeyId": 19,
-        "Type": "Int32[]",
-        "Default": "System.Int32[]",
-        "Description": "广播消息颜色使用的RGB值\n#.#.# = 红/蓝/绿\n最大值: 255",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ChatAboveHeadsFormat",
-        "KeyId": 20,
-        "Type": "String",
-        "Default": "{2}",
-        "Description": "在头顶聊天时更改玩家名称。以带括号的玩家名称开头，遵循泰拉瑞亚的格式规范。\n格式与ChatFormat相同，但不包含消息内容。",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ChatFormat",
-        "KeyId": 21,
-        "Type": "String",
-        "Default": "{1}{2}{3}: {4}",
-        "Description": "更改游戏内聊天格式：{0} = 用户组名称，{1} = 用户组前缀，{2} = 玩家名称，{3} = 用户组后缀，{4} = 聊天消息",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "CommandSilentSpecifier",
-        "KeyId": 22,
-        "Type": "String",
-        "Default": ".",
-        "Description": "指定用于静默执行指令的起始字符串\n注意：若字符串长度超过1则无法正常使用",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "CommandSpecifier",
-        "KeyId": 23,
-        "Type": "String",
-        "Default": "/",
-        "Description": "指定用于启动指令的起始字符串\n注意：若字符串长度超过1则无法正常工作",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DebugLogs",
-        "KeyId": 24,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "服务器是否应输出与系统操作相关的调试级别消息",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DefaultGuestGroupName",
-        "KeyId": 25,
-        "Type": "String",
-        "Default": "guest",
-        "Description": "未注册玩家默认分配的用户组名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DefaultMaximumSpawns",
-        "KeyId": 26,
-        "Type": "Int32",
-        "Default": "5",
-        "Description": "每波默认生成的最大生物数量 数值越高意味着该波次生物越多",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DefaultRegistrationGroupName",
-        "KeyId": 27,
-        "Type": "String",
-        "Default": "default",
-        "Description": "新注册用户的默认用户组名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DefaultSpawnRate",
-        "KeyId": 28,
-        "Type": "Int32",
-        "Default": "600",
-        "Description": "波次之间的延迟时间。数值越低生成的怪物越多",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableBuild",
-        "KeyId": 29,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁止任何放置或移除方块的行为",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableClownBombs",
-        "KeyId": 30,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁止小丑炸弹射弹生成",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableCustomDeathMessages",
-        "KeyId": 31,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "允许你禁用或启用以死亡方式创建自定义消息的防护功能。专为开发者设计，他们为此问题提出了更具创意的解决方案",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableDefaultIPBan",
-        "KeyId": 32,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "默认禁用IP封禁，如果在封禁指令中未传递任何参数",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableDungeonGuardian",
-        "KeyId": 33,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "阻止地牢守卫生成，并将玩家传送至出生点",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableHardmode",
-        "KeyId": 34,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "如果启用，肉山或/starthardmode指令将不会激活困难模式",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableInvisPvP",
-        "KeyId": 35,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "在开启PvP时通过使玩家对其他客户端可见来禁用隐身药水效果",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableLoginBeforeJoin",
-        "KeyId": 36,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "防止用户在完成连接前进行登录",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableModifiedZenith",
-        "KeyId": 37,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁止使用天顶剑射弹(TileKill)配合其他物体代替武器",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisablePrimeBombs",
-        "KeyId": 38,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁用机械骷髅王炸弹生成，适用于防止\"值得一玩\"种子世界中不必要的世界破坏",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableSecondUpdateLogs",
-        "KeyId": 39,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "防止OnSecondUpdate检查写入日志文件",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableSnowBalls",
-        "KeyId": 40,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁止雪球射弹生成",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableSpewLogs",
-        "KeyId": 41,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "禁止向拥有日志权限的玩家发送日志消息",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableTombstones",
-        "KeyId": 42,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁用所有玩家死亡时掉落墓石碑",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisableUUIDLogin",
-        "KeyId": 43,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "防止用户使用客户端UUID登录",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "DisplayIPToAdmins",
-        "KeyId": 44,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "显示加入玩家的IP给拥有日志权限的用户",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "EnableChatAboveHeads",
-        "KeyId": 45,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否在玩家头顶显示聊天信息",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "EnableGeoIP",
-        "KeyId": 46,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否根据玩家的IP地址在加入时公布其地理位置",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "EnableTokenEndpointAuthentication",
-        "KeyId": 47,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否要求使用令牌(token)认证来访问公共REST API端点",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "EnableWhitelist",
-        "KeyId": 48,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "根据whitelist.txt文件中的IP地址启用或禁用白名单",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ForceHalloween",
-        "KeyId": 49,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "强制全年触发万圣节专属事件",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ForceTime",
-        "KeyId": 50,
-        "Type": "String",
-        "Default": "normal",
-        "Description": "强制世界时间保持为正常、白天或黑夜",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ForceXmas",
-        "KeyId": 51,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "强制全年触发圣诞节专属事件",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "GiveItemsDirectly",
-        "KeyId": 52,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "如果设为true，给予玩家的物品会直接插入其背包。需要启用服务器端存档(SSC)。否则给予玩家的物品会以掉落物形式生成。此为实验性功能，可能无法正常工作或导致物品丢失",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "HardcoreBanReason",
-        "KeyId": 53,
-        "Type": "String",
-        "Default": "因为死亡而被封禁",
-        "Description": "硬核玩家死亡时封禁的原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "HardcoreKickReason",
-        "KeyId": 54,
-        "Type": "String",
-        "Default": "因为死亡而被踢出",
-        "Description": "硬核玩家死亡时的踢出原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "HardcoreOnly",
-        "KeyId": 55,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "阻止非硬核模式玩家连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "HealOtherThreshold",
-        "KeyId": 56,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果在1秒内发送超过此数量的友方治疗数据包，玩家将被限制行动",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "IgnoreChestStacksOnLoad",
-        "KeyId": 57,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "允许在世界加载期间箱子中的物品堆叠数量超过堆叠上限",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "IgnoreProjKill",
-        "KeyId": 58,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "忽略检查玩家是否'可以'击杀射弹",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "IgnoreProjUpdate",
-        "KeyId": 59,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "忽略检查玩家是否\"可以\"更新射弹",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "InfiniteInvasion",
-        "KeyId": 60,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "启用无限持续的事件入侵。你仍需要通过指令如/invade来手动触发事件",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "InvasionMultiplier",
-        "KeyId": 61,
-        "Type": "Int32",
-        "Default": "1",
-        "Description": "决定入侵事件规模\n计算公式为100 + (倍数 * (生命值超过200的活跃玩家数量))",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickEmptyUUID",
-        "KeyId": 62,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "踢出不向服务器发送UUID的客户端",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnDamageThresholdBroken",
-        "KeyId": 63,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "当用户超过最大伤害阈值时是否踢出他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnHardcoreDeath",
-        "KeyId": 64,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在硬核角色死亡时踢出",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnHealOtherThresholdBroken",
-        "KeyId": 65,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在玩家超过治疗他人阈值时将其踢出",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnMediumcoreDeath",
-        "KeyId": 66,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在中等核心玩家死亡时踢出他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnProjectileThresholdBroken",
-        "KeyId": 67,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在用户超过射弹(Projectile)阈值时踢出他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnTileKillThresholdBroken",
-        "KeyId": 68,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在用户超过图格破坏(TileKill)阈值时踢出他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnTileLiquidThresholdBroken",
-        "KeyId": 69,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "当用户超过图格液体(TileLiquid)阈值时是否踢出",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnTilePaintThresholdBroken",
-        "KeyId": 70,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "当用户超过图格绘制(TilePaint)阈值时是否踢出",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickOnTilePlaceThresholdBroken",
-        "KeyId": 71,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否在用户超过图格放置(TilePlace)阈值时踢出他们",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "KickProxyUsers",
-        "KeyId": 72,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "如果启用了GeoIP，这将踢出被识别为使用代理的用户",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "LogPath",
-        "KeyId": 73,
-        "Type": "String",
-        "Default": "tshock/logs",
-        "Description": "日志文件应写入的目录路径",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "LogRest",
-        "KeyId": 74,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否记录REST API连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxDamage",
-        "KeyId": 75,
-        "Type": "Int32",
-        "Default": "20000",
-        "Description": "玩家/生物能造成的最大伤害",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxHP",
-        "KeyId": 76,
-        "Type": "Int32",
-        "Default": "500",
-        "Description": "玩家在装备buff前的最大生命值上限",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaximumLoginAttempts",
-        "KeyId": 77,
-        "Type": "Int32",
-        "Default": "3",
-        "Description": "踢出玩家前允许的失败登录尝试次数",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxMP",
-        "KeyId": 78,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "玩家在装备buff前的最大法力值上限",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxProjDamage",
-        "KeyId": 79,
-        "Type": "Int32",
-        "Default": "20000",
-        "Description": "射弹可造成的最大伤害",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxRangeForDisabled",
-        "KeyId": 80,
-        "Type": "Int32",
-        "Default": "10",
-        "Description": "被限制行动玩家可移动的最大距离（以图格为单位）",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MaxSlots",
-        "KeyId": 81,
-        "Type": "Int32",
-        "Default": "8",
-        "Description": "同时连接的最大客户端数量。\n若希望玩家在服务器满员时收到\"服务器已满\"提示并被踢出，请将此值设为你期望的最大玩家数，然后将泰拉瑞亚最大玩家数设为比该值高2",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MediumcoreBanReason",
-        "KeyId": 82,
-        "Type": "String",
-        "Default": "因为死亡而被封禁",
-        "Description": "死亡时封禁中核玩家的原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MediumcoreKickReason",
-        "KeyId": 83,
-        "Type": "String",
-        "Default": "Death results in a kick",
-        "Description": "死亡时踢出中核玩家的原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MediumcoreOnly",
-        "KeyId": 84,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "阻止软核玩家连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MinimumPasswordLength",
-        "KeyId": 85,
-        "Type": "Int32",
-        "Default": "4",
-        "Description": "新用户账户的最小密码长度，不得低于4个字符",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MySqlDbName",
-        "KeyId": 86,
-        "Type": "String",
-        "Default": "",
-        "Description": "使用MySQL作为数据库类型时要连接的数据库名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MySqlHost",
-        "KeyId": 87,
-        "Type": "String",
-        "Default": "localhost:3306",
-        "Description": "MySQL主机名和端口号用于定向连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MySqlPassword",
-        "KeyId": 88,
-        "Type": "String",
-        "Default": "",
-        "Description": "连接到MySQL数据库时使用的密码",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "MySqlUsername",
-        "KeyId": 89,
-        "Type": "String",
-        "Default": "",
-        "Description": "连接MySQL数据库时使用的用户名",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PostgresDbName",
-        "KeyId": 90,
-        "Type": "String",
-        "Default": "",
-        "Description": "使用Postgres作为数据库类型时要连接的数据库名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PostgresHost",
-        "KeyId": 91,
-        "Type": "String",
-        "Default": "",
-        "Description": "PostgreSQL主机名及端口号用于连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PostgresPassword",
-        "KeyId": 92,
-        "Type": "String",
-        "Default": "",
-        "Description": "连接到Postgres数据库时使用的密码",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PostgresUsername",
-        "KeyId": 93,
-        "Type": "String",
-        "Default": "",
-        "Description": "连接Postgres数据库时使用的用户名",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PreventBannedItemSpawn",
-        "KeyId": 94,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "禁止通过指令生成或给予被封禁的物品",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PreventDeadModification",
-        "KeyId": 95,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "防止玩家在死亡时与世界互动",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PreventInvalidPlaceStyle",
-        "KeyId": 96,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "防止玩家放置样式无效的图格",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ProjectileThreshold",
-        "KeyId": 97,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果玩家在1秒内生成超过此数量的射弹则会被限制行动",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ProjIgnoreShrapnel",
-        "KeyId": 98,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否忽略水晶子弹产生的破片不计入射弹阈值统计",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "PvPMode",
-        "KeyId": 99,
-        "Type": "String",
-        "Default": "normal",
-        "Description": "设置PvP模式。有效类型包括：\"普通\"、\"始终开启\"、\"无队伍PvP\"和\"禁用\"",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RangeChecks",
-        "KeyId": 100,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "启用或禁用基于玩家与放置图格之间距离的反作弊范围检查",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RegionProtectChests",
-        "KeyId": 101,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "区域保护是否应用于宝箱",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RegionProtectGemLocks",
-        "KeyId": 102,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "区域保护是否适用于宝石锁",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RememberLeavePos",
-        "KeyId": 103,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "根据玩家IP记录其离开时的位置，服务器重启后失效。例如，当你尝试断开连接并重新登录时，会自动回到上次位置而非出生点",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RequireLogin",
-        "KeyId": 104,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "要求所有玩家在允许游戏前必须注册或登录",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ReservedSlots",
-        "KeyId": 105,
-        "Type": "Int32",
-        "Default": "20",
-        "Description": "保留玩家可加入的超出服务器最大人数限制的预留位数量",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RespawnBossSeconds",
-        "KeyId": 106,
-        "Type": "Int32",
-        "Default": "0",
-        "Description": "当附近存在首领时，玩家必须等待的复活秒数。有效范围：0（默认）至30秒。使用后果自负",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RespawnSeconds",
-        "KeyId": 107,
-        "Type": "Int32",
-        "Default": "0",
-        "Description": "玩家重生前必须等待的秒数。有效范围：0（默认）至15秒。使用风险自负",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RestApiEnabled",
-        "KeyId": 108,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "启用或禁用REST API",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RestApiPort",
-        "KeyId": 109,
-        "Type": "Int32",
-        "Default": "7878",
-        "Description": "REST API使用的端口",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RESTMaximumRequestsPerInterval",
-        "KeyId": 110,
-        "Type": "Int32",
-        "Default": "5",
-        "Description": "桶中允许的最大REST请求数，超过将拒绝请求。最小值为5",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RESTRequestBucketDecreaseIntervalMinutes",
-        "KeyId": 111,
-        "Type": "Int32",
-        "Default": "1",
-        "Description": "REST请求令牌桶每隔多少分钟减少一个 最小值为1分钟",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "RevertToTextLogsOnSqlFailures",
-        "KeyId": 112,
-        "Type": "Int32",
-        "Default": "10",
-        "Description": "SQL日志插入失败次数超过此值后将回退到文本日志",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SaveWorldOnCrash",
-        "KeyId": 113,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否在服务器因未处理的异常崩溃时保存世界",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SaveWorldOnLastPlayerExit",
-        "KeyId": 114,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否在最后一名玩家断开连接时保存世界",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ServerFullNoReservedReason",
-        "KeyId": 115,
-        "Type": "String",
-        "Default": "服务器已满（包括预留空间）。",
-        "Description": "服务器已满且无预留空位时踢出尝试加入玩家的原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ServerFullReason",
-        "KeyId": 116,
-        "Type": "String",
-        "Default": "服务器已满",
-        "Description": "服务器已满时踢出尝试加入玩家的原因",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ServerName",
-        "KeyId": 117,
-        "Type": "String",
-        "Default": "",
-        "Description": "如果UseServerName为真，则在会话期间替换世界名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ServerPassword",
-        "KeyId": 118,
-        "Type": "String",
-        "Default": "",
-        "Description": "加入服务器所需的密码",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ServerPort",
-        "KeyId": 119,
-        "Type": "Int32",
-        "Default": "7777",
-        "Description": "服务器运行的端口",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "ShowBackupAutosaveMessages",
-        "KeyId": 120,
-        "Type": "Boolean",
-        "Default": "True",
-        "Description": "是否显示备份自动保存消息",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SoftcoreOnly",
-        "KeyId": 121,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "阻止非软核玩家连接",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SpawnProtection",
-        "KeyId": 122,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "防止在图格出生点保护半径范围内放置图格(Tile)",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SpawnProtectionRadius",
-        "KeyId": 123,
-        "Type": "Int32",
-        "Default": "10",
-        "Description": "出生点周围受出生点保护设置保护的图格半径",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SqliteDBPath",
-        "KeyId": 124,
-        "Type": "String",
-        "Default": "tshock.sqlite",
-        "Description": "SQLite数据库路径",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "StatueSpawn200",
-        "KeyId": 125,
-        "Type": "Int32",
-        "Default": "3",
-        "Description": "雕像在停止生成前能在200像素范围内生成多少个生物\n默认值 = 3",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "StatueSpawn600",
-        "KeyId": 126,
-        "Type": "Int32",
-        "Default": "6",
-        "Description": "雕像在600像素范围内最多可生成多少个生物后停止生成\n默认值 = 6",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "StatueSpawnWorld",
-        "KeyId": 127,
-        "Type": "Int32",
-        "Default": "10",
-        "Description": "雕像在停止生成前可生成的生物数量\n默认值 = 10",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "StorageType",
-        "KeyId": 128,
-        "Type": "String",
-        "Default": "sqlite",
-        "Description": "存储数据时使用的数据库类型（可选\"sqlite\"、\"mysql\"或\"postgres\"）",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SuperAdminChatPrefix",
-        "KeyId": 129,
-        "Type": "String",
-        "Default": "（超级管理员）",
-        "Description": "超级管理员聊天前缀",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SuperAdminChatRGB",
-        "KeyId": 130,
-        "Type": "Int32[]",
-        "Default": "System.Int32[]",
-        "Description": "超级管理员用户组的聊天颜色\n#.#.# = 红/蓝/绿\n最大值：255",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SuperAdminChatSuffix",
-        "KeyId": 131,
-        "Type": "String",
-        "Default": "",
-        "Description": "超级管理员聊天后缀",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "SuppressPermissionFailureNotices",
-        "KeyId": 132,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "服务器是否应屏蔽来自区域、出生点或服务器编辑失败的建造权限警告",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "TileKillThreshold",
-        "KeyId": 133,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果玩家在1秒内超过此数量的图格破坏(TileKill)，将被限制行动并回滚其操作",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "TileLiquidThreshold",
-        "KeyId": 134,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果玩家在1秒内超过此液体设置(TileLiquid)次数将被限制行动",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "TilePaintThreshold",
-        "KeyId": 135,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果玩家在1秒内涂刷的图格数量超过此值将被限制行动",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "TilePlaceThreshold",
-        "KeyId": 136,
-        "Type": "Int32",
-        "Default": "200",
-        "Description": "如果玩家在1秒内放置的图格(Tile)数量超过此值，将限制其行动并回滚操作",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "UseServerName",
-        "KeyId": 137,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否使用服务器名称替代世界名称",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "UseSqlLogs",
-        "KeyId": 138,
-        "Type": "Boolean",
-        "Default": "False",
-        "Description": "是否将日志保存到SQL数据库而非文本文件\n默认值 = false",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "WhitelistKickReason",
-        "KeyId": 139,
-        "Type": "String",
-        "Default": "你不在白名单中。",
-        "Description": "未在白名单中的玩家被踢出时的原因说明",
-        "Path": "tshock/config.json"
-    },
-    {
-        "Name": "WorldTileProvider",
-        "KeyId": 140,
-        "Type": "String",
-        "Default": "constileation",
-        "Description": "允许更改默认世界图格(Tile)提供器。默认情况下可以使用'default'、'heaptile'或'constileation'。替代提供器具有不同的CPU和内存使用特性",
-        "Path": "tshock/config.json"
-    }
+  {
+    "Name": "AllowAllowedGroupsToSpawnBannedItems",
+    "KeyId": 1,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Allows groups on the banned item allowed list to spawn banned items even if PreventBannedItemSpawn is set to true.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowCorruptionCreep",
+    "KeyId": 2,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Allows the corruption to spread when a world is in hardmode.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowCrimsonCreep",
+    "KeyId": 3,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Allows the crimson to spread when a world is in hardmode.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowCutTilesAndBreakables",
+    "KeyId": 4,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Allows players to break temporary tiles (grass, pots, etc) where they cannot usually build.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowHallowCreep",
+    "KeyId": 5,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Allows the hallow to spread when a world is in hardmode.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowIce",
+    "KeyId": 6,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Allows ice placement even where a user cannot usually build.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowLoginAnyUsername",
+    "KeyId": 7,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Allows users to login to any account even if the username doesn't match their character name.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AllowRegisterAnyUsername",
+    "KeyId": 8,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Allows users to register a username that doesn't necessarily match their character name.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AnnounceSave",
+    "KeyId": 9,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Enable or disable world save announcements.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AnonymousBossInvasions",
+    "KeyId": 10,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to announce boss spawning or invasion starts.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ApplicationRestTokens",
+    "KeyId": 11,
+    "Type": "Dictionary`2",
+    "Default": "System.Collections.Generic.Dictionary`2[System.String,Rests.SecureRest+TokenData]",
+    "Description": "A dictionary of REST tokens that external applications may use to make queries to your server.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "AutoSave",
+    "KeyId": 12,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Enable or disable Terraria's built-in world auto save.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BackupInterval",
+    "KeyId": 13,
+    "Type": "Int32",
+    "Default": "10",
+    "Description": "The interval between backups, in minutes. Backups are stored in the tshock/backups folder.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BackupKeepFor",
+    "KeyId": 14,
+    "Type": "Int32",
+    "Default": "240",
+    "Description": "For how long backups are kept in minutes.\neg. 2880 = 2 days.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BanOnHardcoreDeath",
+    "KeyId": 15,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to ban hardcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BanOnMediumcoreDeath",
+    "KeyId": 16,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to ban mediumcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BCryptWorkFactor",
+    "KeyId": 17,
+    "Type": "Int32",
+    "Default": "7",
+    "Description": "Determines the BCrypt work factor to use. If increased, all passwords will be upgraded to new work-factor on verify. The number of computational rounds is 2^n. Increase with caution. Range: 5-31.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BombExplosionRadius",
+    "KeyId": 18,
+    "Type": "Int32",
+    "Default": "5",
+    "Description": "Determines the range in tiles that a bomb can affect tiles from detonation point.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "BroadcastRGB",
+    "KeyId": 19,
+    "Type": "Int32[]",
+    "Default": "System.Int32[]",
+    "Description": "The RGB values used for the color of broadcast messages.\n#.#.# = Red/Blue/Green\nMax value: 255",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ChatAboveHeadsFormat",
+    "KeyId": 20,
+    "Type": "String",
+    "Default": "{2}",
+    "Description": "Changes the player name when using chat above heads. Starts with a player name wrapped in brackets, as per Terraria's formatting.\nSame formatting as ChatFormat without the message.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ChatFormat",
+    "KeyId": 21,
+    "Type": "String",
+    "Default": "{1}{2}{3}: {4}",
+    "Description": "Changes in-game chat format: {0} = Group Name, {1} = Group Prefix, {2} = Player Name, {3} = Group Suffix, {4} = Chat Message.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "CommandSilentSpecifier",
+    "KeyId": 22,
+    "Type": "String",
+    "Default": ".",
+    "Description": "Specifies which string starts a command silently.\nNote: Will not function properly if the string length is bigger than 1.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "CommandSpecifier",
+    "KeyId": 23,
+    "Type": "String",
+    "Default": "/",
+    "Description": "Specifies which string starts a command.\nNote: Will not function properly if the string length is bigger than 1.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DebugLogs",
+    "KeyId": 24,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not the server should output debug level messages related to system operation.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DefaultGuestGroupName",
+    "KeyId": 25,
+    "Type": "String",
+    "Default": "guest",
+    "Description": "The default group name to place unregistered players under.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DefaultMaximumSpawns",
+    "KeyId": 26,
+    "Type": "Int32",
+    "Default": "5",
+    "Description": "The default maximum number of mobs that will spawn per wave. Higher means more mobs in that wave.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DefaultRegistrationGroupName",
+    "KeyId": 27,
+    "Type": "String",
+    "Default": "default",
+    "Description": "The default group name to place newly registered users under.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DefaultSpawnRate",
+    "KeyId": 28,
+    "Type": "Int32",
+    "Default": "600",
+    "Description": "The delay between waves. Lower values lead to more mobs.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableBuild",
+    "KeyId": 29,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables any placing, or removal of blocks.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableClownBombs",
+    "KeyId": 30,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables clown bomb projectiles from spawning.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableCustomDeathMessages",
+    "KeyId": 31,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Allows you to disable or enable protection against creating custom messages with death. Created for developers who came up with a more original solution to this problem.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableDefaultIPBan",
+    "KeyId": 32,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables IP bans by default, if no arguments are passed to the ban command.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableDungeonGuardian",
+    "KeyId": 33,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents the dungeon guardian from being spawned while sending players to their spawn point instead.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableHardmode",
+    "KeyId": 34,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "If enabled, hardmode will not be activated by the Wall of Flesh or the /starthardmode command.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableInvisPvP",
+    "KeyId": 35,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables the effect of invisibility potions while PvP is enabled by turning the player visible to the other clients.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableLoginBeforeJoin",
+    "KeyId": 36,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents users from being able to login before they finish connecting.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableModifiedZenith",
+    "KeyId": 37,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prohibit the use of Zenith projectile with different objects instead of weapons.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisablePrimeBombs",
+    "KeyId": 38,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables Skeletron Prime Bombs from spawning, useful for preventing unwanted world destruction on for the worthy seed world.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableSecondUpdateLogs",
+    "KeyId": 39,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents OnSecondUpdate checks from writing to the log file.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableSnowBalls",
+    "KeyId": 40,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables snow ball projectiles from spawning.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableSpewLogs",
+    "KeyId": 41,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Disables sending logs as messages to players with the log permission.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableTombstones",
+    "KeyId": 42,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Disables tombstone dropping during death for all players.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisableUUIDLogin",
+    "KeyId": 43,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents users from being able to login with their client UUID.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "DisplayIPToAdmins",
+    "KeyId": 44,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Displays a player's IP on join to users with the log permission.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "EnableChatAboveHeads",
+    "KeyId": 45,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to display chat messages above players' heads.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "EnableGeoIP",
+    "KeyId": 46,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to announce a player's geographic location on join, based on their IP.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "EnableTokenEndpointAuthentication",
+    "KeyId": 47,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to require token authentication to use the public REST API endpoints.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "EnableWhitelist",
+    "KeyId": 48,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Enable or disable the whitelist based on IP addresses in the whitelist.txt file.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ForceHalloween",
+    "KeyId": 49,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Forces Halloween-only events to occur all year.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ForceTime",
+    "KeyId": 50,
+    "Type": "String",
+    "Default": "normal",
+    "Description": "Forces the world time to be normal, day, or night.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ForceXmas",
+    "KeyId": 51,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Forces Christmas-only events to occur all year.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "GiveItemsDirectly",
+    "KeyId": 52,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "If set to true, items given to players will be inserted directly into their inventory. Requires SSC. Otherwise, items given to players will spawn as dropped items. Experimental feature. May not work correctly or result in item loss.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "HardcoreBanReason",
+    "KeyId": 53,
+    "Type": "String",
+    "Default": "因为死亡而被封禁",
+    "Description": "The reason given when banning hardcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "HardcoreKickReason",
+    "KeyId": 54,
+    "Type": "String",
+    "Default": "因为死亡而被踢出",
+    "Description": "The reason given when kicking hardcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "HardcoreOnly",
+    "KeyId": 55,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents non-hardcore players from connecting.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "HealOtherThreshold",
+    "KeyId": 56,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disables a player if this number of HealOtherPlayer packets is sent within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "IgnoreChestStacksOnLoad",
+    "KeyId": 57,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Allows stacks in chests to go beyond the stack limit during world loading.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "IgnoreProjKill",
+    "KeyId": 58,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Ignores checks to see if a player 'can' kill a projectile.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "IgnoreProjUpdate",
+    "KeyId": 59,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Ignores checks to see if a player 'can' update a projectile.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "InfiniteInvasion",
+    "KeyId": 60,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Enables never ending invasion events. You still need to start the event, such as with the /invade command.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "InvasionMultiplier",
+    "KeyId": 61,
+    "Type": "Int32",
+    "Default": "1",
+    "Description": "Determines the size of invasion events.\nThe equation for calculating invasion size is 100 + (multiplier * (number of active players with greater than 200 health)).",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickEmptyUUID",
+    "KeyId": 62,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Kick clients that don't send their UUID to the server.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnDamageThresholdBroken",
+    "KeyId": 63,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the MaxDamage threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnHardcoreDeath",
+    "KeyId": 64,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick hardcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnHealOtherThresholdBroken",
+    "KeyId": 65,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the HealOther threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnMediumcoreDeath",
+    "KeyId": 66,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick mediumcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnProjectileThresholdBroken",
+    "KeyId": 67,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the Projectile threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnTileKillThresholdBroken",
+    "KeyId": 68,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the TileKill threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnTileLiquidThresholdBroken",
+    "KeyId": 69,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the TileLiquid threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnTilePaintThresholdBroken",
+    "KeyId": 70,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the TilePaint threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickOnTilePlaceThresholdBroken",
+    "KeyId": 71,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to kick users when they surpass the TilePlace threshold.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "KickProxyUsers",
+    "KeyId": 72,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "If GeoIP is enabled, this will kick users identified as being under a proxy.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "LogPath",
+    "KeyId": 73,
+    "Type": "String",
+    "Default": "tshock/logs",
+    "Description": "The path to the directory where logs should be written to.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "LogRest",
+    "KeyId": 74,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to log REST API connections.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxDamage",
+    "KeyId": 75,
+    "Type": "Int32",
+    "Default": "20000",
+    "Description": "The maximum damage a player/NPC can inflict.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxHP",
+    "KeyId": 76,
+    "Type": "Int32",
+    "Default": "500",
+    "Description": "The maximum HP a player can have, before equipment buffs.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaximumLoginAttempts",
+    "KeyId": 77,
+    "Type": "Int32",
+    "Default": "3",
+    "Description": "Number of failed login attempts before kicking the player.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxMP",
+    "KeyId": 78,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "The maximum MP a player can have, before equipment buffs.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxProjDamage",
+    "KeyId": 79,
+    "Type": "Int32",
+    "Default": "20000",
+    "Description": "The maximum damage a projectile can inflict.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxRangeForDisabled",
+    "KeyId": 80,
+    "Type": "Int32",
+    "Default": "10",
+    "Description": "The maximum distance, in tiles, that disabled players can move from.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MaxSlots",
+    "KeyId": 81,
+    "Type": "Int32",
+    "Default": "8",
+    "Description": "Maximum number of clients connected at once.\nIf you want people to be kicked with \"Server is full\" set this to how many players you want max and then set Terraria max players to 2 higher.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MediumcoreBanReason",
+    "KeyId": 82,
+    "Type": "String",
+    "Default": "因为死亡而被封禁",
+    "Description": "The reason given if banning a mediumcore player on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MediumcoreKickReason",
+    "KeyId": 83,
+    "Type": "String",
+    "Default": "Death results in a kick",
+    "Description": "The reason given if kicking a mediumcore players on death.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MediumcoreOnly",
+    "KeyId": 84,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents softcore players from connecting.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MinimumPasswordLength",
+    "KeyId": 85,
+    "Type": "Int32",
+    "Default": "4",
+    "Description": "The minimum password length for new user accounts. Can never be lower than 4.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MySqlConnectionString",
+    "KeyId": 86,
+    "Type": "String",
+    "Default": "",
+    "Description": "The connection string to use when connecting to a MySQL database. This property will override the MySqlHost, MySqlDbName, MySqlUsername and MySqlPassword properties, if used.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MySqlDbName",
+    "KeyId": 87,
+    "Type": "String",
+    "Default": "",
+    "Description": "The database name to connect to when using MySQL as the database type.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MySqlHost",
+    "KeyId": 88,
+    "Type": "String",
+    "Default": "localhost:3306",
+    "Description": "The MySQL hostname and port to direct connections to.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MySqlPassword",
+    "KeyId": 89,
+    "Type": "String",
+    "Default": "",
+    "Description": "The password used when connecting to a MySQL database.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "MySqlUsername",
+    "KeyId": 90,
+    "Type": "String",
+    "Default": "",
+    "Description": "The username used when connecting to a MySQL database.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PostgresConnectionString",
+    "KeyId": 91,
+    "Type": "String",
+    "Default": "",
+    "Description": "The connection string to use when connecting to a Postgres database. This property will override the PostgresHost, PostgresDbName, PostgresUsername and PostgresPassword properties, if used.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PostgresDbName",
+    "KeyId": 92,
+    "Type": "String",
+    "Default": "",
+    "Description": "The database name to connect to when using Postgres as the database type.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PostgresHost",
+    "KeyId": 93,
+    "Type": "String",
+    "Default": "",
+    "Description": "The Postgres hostname and port to direct connections to.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PostgresPassword",
+    "KeyId": 94,
+    "Type": "String",
+    "Default": "",
+    "Description": "The password used when connecting to a Postgres database.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PostgresUsername",
+    "KeyId": 95,
+    "Type": "String",
+    "Default": "",
+    "Description": "The username used when connecting to a Postgres database.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PreventBannedItemSpawn",
+    "KeyId": 96,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevent banned items from being spawned or given with commands.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PreventDeadModification",
+    "KeyId": 97,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Prevent players from interacting with the world while they are dead.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PreventInvalidPlaceStyle",
+    "KeyId": 98,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Prevents players from placing tiles with an invalid style.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ProjectileThreshold",
+    "KeyId": 99,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disable a player if this number of projectiles is created within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ProjIgnoreShrapnel",
+    "KeyId": 100,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to ignore shrapnel from crystal bullets for the projectile threshold count.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "PvPMode",
+    "KeyId": 101,
+    "Type": "String",
+    "Default": "normal",
+    "Description": "Sets the PvP mode. Valid types are: \"normal\", \"always\", \"pvpwithnoteam\" and \"disabled\".",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RangeChecks",
+    "KeyId": 102,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Enable or disable anti-cheat range checks based on distance between the player and their block placements.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RegionProtectChests",
+    "KeyId": 103,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not region protection should apply to chests.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RegionProtectGemLocks",
+    "KeyId": 104,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not region protection should apply to gem locks.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RememberLeavePos",
+    "KeyId": 105,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Remembers where a player left off, based on their IP. Does not persist through server restarts.\neg. When you try to disconnect, and reconnect to be automatically placed at spawn, you'll be at your last location.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RequireLogin",
+    "KeyId": 106,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Require all players to register or login before being allowed to play.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ReservedSlots",
+    "KeyId": 107,
+    "Type": "Int32",
+    "Default": "20",
+    "Description": "The number of reserved slots past your max server slots that can be joined by reserved players.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RespawnBossSeconds",
+    "KeyId": 108,
+    "Type": "Int32",
+    "Default": "0",
+    "Description": "The number of seconds a player must wait before being respawned if there is a boss nearby. Valid range: 0 (default) to 30 seconds. Use at your own risk.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RespawnSeconds",
+    "KeyId": 109,
+    "Type": "Int32",
+    "Default": "0",
+    "Description": "The number of seconds a player must wait before being respawned. Valid range: 0 (default) to 15 seconds. Use at your own risk.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RestApiEnabled",
+    "KeyId": 110,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Enable or disable the REST API.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RestApiPort",
+    "KeyId": 111,
+    "Type": "Int32",
+    "Default": "7878",
+    "Description": "The port used by the REST API.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RESTMaximumRequestsPerInterval",
+    "KeyId": 112,
+    "Type": "Int32",
+    "Default": "5",
+    "Description": "The maximum REST requests in the bucket before denying requests. Minimum value is 5.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RESTRequestBucketDecreaseIntervalMinutes",
+    "KeyId": 113,
+    "Type": "Int32",
+    "Default": "1",
+    "Description": "How often in minutes the REST requests bucket is decreased by one. Minimum value is 1 minute.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "RevertToTextLogsOnSqlFailures",
+    "KeyId": 114,
+    "Type": "Int32",
+    "Default": "10",
+    "Description": "Number of times the SQL log must fail to insert logs before falling back to the text log.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SaveWorldOnCrash",
+    "KeyId": 115,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to save the world if the server crashes from an unhandled exception.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SaveWorldOnLastPlayerExit",
+    "KeyId": 116,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to save the world when the last player disconnects.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ServerFullNoReservedReason",
+    "KeyId": 117,
+    "Type": "String",
+    "Default": "服务器已满（包括预留空间）。",
+    "Description": "The reason given when kicking players that attempt to join while the server is full with no reserved slots available.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ServerFullReason",
+    "KeyId": 118,
+    "Type": "String",
+    "Default": "服务器已满",
+    "Description": "The reason given when kicking players that attempt to join while the server is full.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ServerName",
+    "KeyId": 119,
+    "Type": "String",
+    "Default": "",
+    "Description": "Replaces the world name during a session if UseServerName is true.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ServerPassword",
+    "KeyId": 120,
+    "Type": "String",
+    "Default": "",
+    "Description": "The server password required to join the server.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ServerPort",
+    "KeyId": 121,
+    "Type": "Int32",
+    "Default": "7777",
+    "Description": "The port the server runs on.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "ShowBackupAutosaveMessages",
+    "KeyId": 122,
+    "Type": "Boolean",
+    "Default": "True",
+    "Description": "Whether or not to show backup auto save messages.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SoftcoreOnly",
+    "KeyId": 123,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents non-softcore players from connecting.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SpawnProtection",
+    "KeyId": 124,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Prevents tiles from being placed within SpawnProtectionRadius of the default spawn.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SpawnProtectionRadius",
+    "KeyId": 125,
+    "Type": "Int32",
+    "Default": "10",
+    "Description": "The tile radius around the spawn tile that is protected by the SpawnProtection setting.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SqliteConnectionString",
+    "KeyId": 126,
+    "Type": "String",
+    "Default": "",
+    "Description": "The connection string to use when connecting to a SQLite database. This property will override the SqliteDBPath property, if used.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SqliteDBPath",
+    "KeyId": 127,
+    "Type": "String",
+    "Default": "tshock.sqlite",
+    "Description": "The path of sqlite db.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "StatueSpawn200",
+    "KeyId": 128,
+    "Type": "Int32",
+    "Default": "3",
+    "Description": "How many NPCs a statue can spawn within 200 pixels(?) before it stops spawning.\nDefault = 3.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "StatueSpawn600",
+    "KeyId": 129,
+    "Type": "Int32",
+    "Default": "6",
+    "Description": "How many NPCs a statue can spawn within 600 pixels(?) before it stops spawning.\nDefault = 6.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "StatueSpawnWorld",
+    "KeyId": 130,
+    "Type": "Int32",
+    "Default": "10",
+    "Description": "How many NPCs a statue can spawn before it stops spawning.\nDefault = 10.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "StorageType",
+    "KeyId": 131,
+    "Type": "String",
+    "Default": "sqlite",
+    "Description": "The type of database to use when storing data (either \"sqlite\", \"mysql\" or \"postgres\").",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SuperAdminChatPrefix",
+    "KeyId": 132,
+    "Type": "String",
+    "Default": "（超级管理员）",
+    "Description": "The superadmin chat prefix.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SuperAdminChatRGB",
+    "KeyId": 133,
+    "Type": "Int32[]",
+    "Default": "System.Int32[]",
+    "Description": "The chat color for the superadmin group.\n#.#.# = Red/Blue/Green\nMax value: 255",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SuperAdminChatSuffix",
+    "KeyId": 134,
+    "Type": "String",
+    "Default": "",
+    "Description": "The superadmin chat suffix.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "SuppressPermissionFailureNotices",
+    "KeyId": 135,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not the server should suppress build permission failure warnings from regions, spawn point, or server edit failure.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "TileKillThreshold",
+    "KeyId": 136,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disables a player and reverts their actions if this number of tile kills is exceeded within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "TileLiquidThreshold",
+    "KeyId": 137,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disables a player if this number of liquid sets is exceeded within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "TilePaintThreshold",
+    "KeyId": 138,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disables a player if this number of tiles is painted within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "TilePlaceThreshold",
+    "KeyId": 139,
+    "Type": "Int32",
+    "Default": "200",
+    "Description": "Disables a player and reverts their actions if this number of tile places is exceeded within 1 second.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "UseServerName",
+    "KeyId": 140,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to use ServerName in place of the world name.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "UseSqlLogs",
+    "KeyId": 141,
+    "Type": "Boolean",
+    "Default": "False",
+    "Description": "Whether or not to save logs to the SQL database instead of a text file.\nDefault = false.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "WhitelistKickReason",
+    "KeyId": 142,
+    "Type": "String",
+    "Default": "你不在白名单中。",
+    "Description": "The reason given when kicking players for not being on the whitelist.",
+    "Path": "tshock/config.json"
+  },
+  {
+    "Name": "WorldTileProvider",
+    "KeyId": 143,
+    "Type": "String",
+    "Default": "constileation",
+    "Description": "Allows changing of the default world tile provider. By default, you can use 'default', 'heaptile' or 'constileation'. Alternative providers have different CPU and memory usage characteristics.",
+    "Path": "tshock/config.json"
+  }
 ]

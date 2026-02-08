@@ -77,9 +77,7 @@
   {
     "Name": "轻",
     "PrefixId": 15,
-    "Alias": [
-      "莱特"
-    ]
+    "Alias": []
   },
   {
     "Name": "精准",
@@ -114,9 +112,7 @@
   {
     "Name": "讨厌",
     "PrefixId": 22,
-    "Alias": [
-      "可畏"
-    ]
+    "Alias": []
   },
   {
     "Name": "无力",
@@ -286,9 +282,7 @@
   {
     "Name": "虚弱",
     "PrefixId": 56,
-    "Alias": [
-      "软弱"
-    ]
+    "Alias": []
   },
   {
     "Name": "无情",
@@ -428,6 +422,71 @@
   {
     "Name": "传奇",
     "PrefixId": 84,
+    "Alias": []
+  },
+  {
+    "Name": "传说",
+    "PrefixId": 85,
+    "Alias": []
+  },
+  {
+    "Name": "忠诚",
+    "PrefixId": 86,
+    "Alias": []
+  },
+  {
+    "Name": "英勇",
+    "PrefixId": 87,
+    "Alias": []
+  },
+  {
+    "Name": "专注",
+    "PrefixId": 88,
+    "Alias": []
+  },
+  {
+    "Name": "耐心",
+    "PrefixId": 89,
+    "Alias": []
+  },
+  {
+    "Name": "狂暴",
+    "PrefixId": 90,
+    "Alias": []
+  },
+  {
+    "Name": "暴躁",
+    "PrefixId": 91,
+    "Alias": []
+  },
+  {
+    "Name": "吝啬",
+    "PrefixId": 92,
+    "Alias": []
+  },
+  {
+    "Name": "虚弱",
+    "PrefixId": 93,
+    "Alias": []
+  },
+  {
+    "Name": "胆小",
+    "PrefixId": 94,
+    "Alias": []
+  },
+  {
+    "Name": "渴望",
+    "PrefixId": 95,
+    "Alias": []
+  },
+  {
+    "Name": "弹道",
+    "PrefixId": 96,
+    "Alias": []
+  },
+  {
+    "Name": "散乱",
+    "PrefixId": 97,
     "Alias": []
   }
 ]

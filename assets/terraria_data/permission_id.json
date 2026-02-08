@@ -1,1069 +1,1069 @@
 [
-    {
-        "Name": "tshock.accountinfo.details",
-        "PermissionId": 1,
-        "Description": "玩家可以查看任意用户账号的高级信息",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.sendtilesquare",
-        "PermissionId": 2,
-        "Description": "允许无限制使用SendTileSquare进行客户端世界编辑",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.dropbanneditem",
-        "PermissionId": 3,
-        "Description": "允许丢弃被禁物品而不会被吞掉",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.annoy",
-        "PermissionId": 4,
-        "Description": "用户可骚扰他人",
-        "RelevantCommands": [
-            "/annoy",
-            "/rocket",
-            "/firework"
-        ]
-    },
-    {
-        "Name": "tshock.admin.antibuild",
-        "PermissionId": 5,
-        "Description": "用户可设置建筑保护状态",
-        "RelevantCommands": [
-            "/antibuild"
-        ]
-    },
-    {
-        "Name": "tshock.admin.ban",
-        "PermissionId": 6,
-        "Description": "允许用户封禁其他玩家",
-        "RelevantCommands": [
-            "/ban"
-        ]
-    },
-    {
-        "Name": "tshock.world.time.bloodmoon",
-        "PermissionId": 7,
-        "Description": "用户可强制触发血月",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.broadcast",
-        "PermissionId": 8,
-        "Description": "用户可广播消息",
-        "RelevantCommands": [
-            "/broadcast (/bc /say)"
-        ]
-    },
-    {
-        "Name": "tshock.buff.self",
-        "PermissionId": 9,
-        "Description": "允许用户给自己施加buff",
-        "RelevantCommands": [
-            "/buff"
-        ]
-    },
-    {
-        "Name": "tshock.buff.others",
-        "PermissionId": 10,
-        "Description": "用户可以为其他玩家施加buff",
-        "RelevantCommands": [
-            "/gbuff (/buffplayer)"
-        ]
-    },
-    {
-        "Name": "tshock.npc.butcher",
-        "PermissionId": 11,
-        "Description": "用户可以杀死所有敌对生物",
-        "RelevantCommands": [
-            "/butcher"
-        ]
-    },
-    {
-        "Name": "tshock.ignore.ssc",
-        "PermissionId": 12,
-        "Description": "绕过服务器端存档检查",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.modify",
-        "PermissionId": 13,
-        "Description": "用户可修改世界",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.account.changepassword",
-        "PermissionId": 14,
-        "Description": "用户可以在游戏中更改密码",
-        "RelevantCommands": [
-            "/password"
-        ]
-    },
-    {
-        "Name": "tshock.canchat",
-        "PermissionId": 15,
-        "Description": "玩家可以聊天",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.account.login",
-        "PermissionId": 16,
-        "Description": "用户可以在游戏中登录",
-        "RelevantCommands": [
-            "/login"
-        ]
-    },
-    {
-        "Name": "tshock.account.logout",
-        "PermissionId": 17,
-        "Description": "用户可以在游戏中登出",
-        "RelevantCommands": [
-            "/logout"
-        ]
-    },
-    {
-        "Name": "tshock.world.paint",
-        "PermissionId": 18,
-        "Description": "允许用户绘制图格",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.partychat",
-        "PermissionId": 19,
-        "Description": "用户可以在游戏中使用队伍聊天",
-        "RelevantCommands": [
-            "/party (/p)"
-        ]
-    },
-    {
-        "Name": "tshock.account.register",
-        "PermissionId": 20,
-        "Description": "用户可以在游戏中注册账号",
-        "RelevantCommands": [
-            "/register"
-        ]
-    },
-    {
-        "Name": "tshock.thirdperson",
-        "PermissionId": 21,
-        "Description": "允许用户以第三人称发言",
-        "RelevantCommands": [
-            "/me"
-        ]
-    },
-    {
-        "Name": "tshock.projectiles.usebanned",
-        "PermissionId": 22,
-        "Description": "玩家可以使用被禁用的射弹",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tiles.usebanned",
-        "PermissionId": 23,
-        "Description": "允许玩家放置被禁用的图格",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.cfg.password",
-        "PermissionId": 24,
-        "Description": "用户可修改服务器密码",
-        "RelevantCommands": [
-            "/serverpassword"
-        ]
-    },
-    {
-        "Name": "tshock.cfg.reload",
-        "PermissionId": 25,
-        "Description": "用户可重新加载配置文件",
-        "RelevantCommands": [
-            "/reload"
-        ]
-    },
-    {
-        "Name": "tshock.accountinfo.check",
-        "PermissionId": 26,
-        "Description": "玩家可以检查用户名是否已注册并查看其最后登录时间",
-        "RelevantCommands": [
-            "/accountinfo (/ai)"
-        ]
-    },
-    {
-        "Name": "tshock.clear",
-        "PermissionId": 27,
-        "Description": "用户可清除物品或射弹",
-        "RelevantCommands": [
-            "/clear"
-        ]
-    },
-    {
-        "Name": "tshock.npc.clearanglerquests",
-        "PermissionId": 28,
-        "Description": "允许用户清除当天已完成渔夫任务的玩家列表",
-        "RelevantCommands": [
-            "/clearangler"
-        ]
-    },
-    {
-        "Name": "tshock.world.converthardmode",
-        "PermissionId": 29,
-        "Description": "用户可以将神圣之地转化为腐化之地，反之亦然",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.cfg.createdumps",
-        "PermissionId": 30,
-        "Description": "用户可以在服务器文件夹中创建Terraria ID参考文件和权限矩阵",
-        "RelevantCommands": [
-            "/dump-reference-data"
-        ]
-    },
-    {
-        "Name": "tshock.tp.demonconch",
-        "PermissionId": 31,
-        "Description": "用户可以使用恶魔海螺",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.time.dropmeteor",
-        "PermissionId": 32,
-        "Description": "用户能够召唤陨石",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.setdungeon",
-        "PermissionId": 33,
-        "Description": "用户可设置地牢位置",
-        "RelevantCommands": [
-            "/setdungeon"
-        ]
-    },
-    {
-        "Name": "tshock.world.time.eclipse",
-        "PermissionId": 34,
-        "Description": "用户可强制触发日食",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.editregion",
-        "PermissionId": 35,
-        "Description": "允许你编辑区域",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.editspawn",
-        "PermissionId": 36,
-        "Description": "允许你编辑出生点",
-        "RelevantCommands": [
-            "/protectspawn"
-        ]
-    },
-    {
-        "Name": "tshock.world.time.fullmoon",
-        "PermissionId": 37,
-        "Description": "用户可强制触发满月",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.getpos",
-        "PermissionId": 38,
-        "Description": "用户可获取玩家位置",
-        "RelevantCommands": [
-            "/pos"
-        ]
-    },
-    {
-        "Name": "tshock.item.give",
-        "PermissionId": 39,
-        "Description": "用户能够给予物品",
-        "RelevantCommands": [
-            "/give (/g)"
-        ]
-    },
-    {
-        "Name": "tshock.godmode",
-        "PermissionId": 40,
-        "Description": "玩家受到伤害时恢复生命值 可能会被一击秒杀",
-        "RelevantCommands": [
-            "/godmode (/god)"
-        ]
-    },
-    {
-        "Name": "tshock.godmode.other",
-        "PermissionId": 41,
-        "Description": "用户可以为其他玩家开启无敌模式",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.grow",
-        "PermissionId": 42,
-        "Description": "用户能种植植物",
-        "RelevantCommands": [
-            "/grow"
-        ]
-    },
-    {
-        "Name": "tshock.world.growevil",
-        "PermissionId": 43,
-        "Description": "用户可以在邪恶生物群落种植植物",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.sethalloween",
-        "PermissionId": 44,
-        "Description": "用户可强制服务器进入万圣节模式",
-        "RelevantCommands": [
-            "/forcehalloween"
-        ]
-    },
-    {
-        "Name": "tshock.world.hardmode",
-        "PermissionId": 45,
-        "Description": "用户可更改困难模式状态",
-        "RelevantCommands": [
-            "/hardmode"
-        ]
-    },
-    {
-        "Name": "tshock.heal",
-        "PermissionId": 46,
-        "Description": "允许用户治疗其他玩家",
-        "RelevantCommands": [
-            "/heal"
-        ]
-    },
-    {
-        "Name": "tshock.tp.home",
-        "PermissionId": 47,
-        "Description": "允许用户使用 /home 指令",
-        "RelevantCommands": [
-            "/home"
-        ]
-    },
-    {
-        "Name": "tshock.npc.hurttown",
-        "PermissionId": 48,
-        "Description": "允许用户伤害城镇生物",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.damage",
-        "PermissionId": 49,
-        "Description": "防止你因伤害过高而被忽略动作",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.hp",
-        "PermissionId": 50,
-        "Description": "防止你因血量异常而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.removetile",
-        "PermissionId": 51,
-        "Description": "防止你因破坏图格过快而被回档",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.liquid",
-        "PermissionId": 52,
-        "Description": "防止你因为液体放置过快而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.mp",
-        "PermissionId": 53,
-        "Description": "防止你因异常魔法值而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.npcbuff",
-        "PermissionId": 54,
-        "Description": "防止你因生物buff作弊检测而被踢出",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.paint",
-        "PermissionId": 55,
-        "Description": "防止你因为涂刷过快而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.placetile",
-        "PermissionId": 56,
-        "Description": "防止你因为图格放置过快而被回档",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.projectile",
-        "PermissionId": 57,
-        "Description": "防止你因为射弹发射过快而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ignore.itemstack",
-        "PermissionId": 58,
-        "Description": "防止你因为堆叠作弊检测而被限制行动",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.noban",
-        "PermissionId": 59,
-        "Description": "防止你被踢出服务器",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.nokick",
-        "PermissionId": 60,
-        "Description": "防止你被踢出游戏",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.npc.invade",
-        "PermissionId": 61,
-        "Description": "用户可发起入侵事件 警告：网络占用高 易被滥用",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.item.spawn",
-        "PermissionId": 62,
-        "Description": "允许用户生成物品",
-        "RelevantCommands": [
-            "/item (/i)"
-        ]
-    },
-    {
-        "Name": "tshock.journey.biomespreadfreeze",
-        "PermissionId": 63,
-        "Description": "用户可以使用旅行模式菜单阻止世界中的生物群落蔓延",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.research",
-        "PermissionId": 64,
-        "Description": "用户可以通过献祭物品来贡献研究",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.godmode",
-        "PermissionId": 65,
-        "Description": "用户可以使用旅行模式菜单切换角色无敌状态",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.placementrange",
-        "PermissionId": 66,
-        "Description": "用户可以使用旅行模式菜单开启增加放置范围",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.rain.freeze",
-        "PermissionId": 67,
-        "Description": "用户可以使用旅行模式菜单阻止世界降雨强度变化",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.rain.strength",
-        "PermissionId": 68,
-        "Description": "用户可以使用旅行模式菜单设置世界的降雨强度/种子",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.setdifficulty",
-        "PermissionId": 69,
-        "Description": "用户可以使用旅行模式菜单设置世界难度/模式",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.setspawnrate",
-        "PermissionId": 70,
-        "Description": "用户可以使用旅行模式菜单设置世界的生物生成速率",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.time.freeze",
-        "PermissionId": 71,
-        "Description": "用户可以使用旅行模式菜单冻结时间",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.time.set",
-        "PermissionId": 72,
-        "Description": "用户可以使用旅行模式菜单设置世界时间",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.time.setspeed",
-        "PermissionId": 73,
-        "Description": "用户可以使用旅行模式菜单调整世界时间流速",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.wind.freeze",
-        "PermissionId": 74,
-        "Description": "用户可以使用旅行模式菜单阻止世界风力变化",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.journey.wind.strength",
-        "PermissionId": 75,
-        "Description": "用户可以使用旅行模式菜单设置世界风速和种子",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.kick",
-        "PermissionId": 76,
-        "Description": "用户能踢出其他玩家",
-        "RelevantCommands": [
-            "/kick"
-        ]
-    },
-    {
-        "Name": "tshock.kill",
-        "PermissionId": 77,
-        "Description": "允许用户击杀其他玩家",
-        "RelevantCommands": [
-            "/kill (/slay)"
-        ]
-    },
-    {
-        "Name": "tshock.admin.viewlogs",
-        "PermissionId": 78,
-        "Description": "拥有此权限的用户将收到特定日志消息",
-        "RelevantCommands": [
-            "/displaylogs"
-        ]
-    },
-    {
-        "Name": "tshock.tp.magicconch",
-        "PermissionId": 79,
-        "Description": "用户可以使用魔法海螺",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.cfg.maintenance",
-        "PermissionId": 80,
-        "Description": "用户会在更新可用时收到通知 用户可以关闭或重启服务器",
-        "RelevantCommands": [
-            "/checkupdates",
-            "/off (/exit /stop)",
-            "/off-nosave (/exit-nosave /stop-nosave)",
-            "/version"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.bloodmoon",
-        "PermissionId": 81,
-        "Description": "用户可以使用'worldevent'指令中的'bloodmoon'子指令触发血月",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.events.eclipse",
-        "PermissionId": 82,
-        "Description": "用户可以使用'worldevent'指令的'eclipse'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.events",
-        "PermissionId": 83,
-        "Description": "用户可以使用'worldevent'指令",
-        "RelevantCommands": [
-            "/worldevent"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.fullmoon",
-        "PermissionId": 84,
-        "Description": "用户可以使用'worldevent'指令的'fullmoon'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.group",
-        "PermissionId": 85,
-        "Description": "用户可以管理用户组",
-        "RelevantCommands": [
-            "/group"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.invasion",
-        "PermissionId": 86,
-        "Description": "用户可以使用'worldevent'指令的'invasion'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.itemban",
-        "PermissionId": 87,
-        "Description": "用户可管理物品封禁",
-        "RelevantCommands": [
-            "/itemban"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.lanternsnight",
-        "PermissionId": 88,
-        "Description": "用户可以使用'worldevent'指令的'lanternsnight'子命令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.events.meteor",
-        "PermissionId": 89,
-        "Description": "用户可以使用'worldevent'指令中的'meteor'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.projectileban",
-        "PermissionId": 90,
-        "Description": "用户可管理射弹封禁",
-        "RelevantCommands": [
-            "/projban"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.rain",
-        "PermissionId": 91,
-        "Description": "用户可以使用'worldevent'指令中的'rain'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.region",
-        "PermissionId": 92,
-        "Description": "用户可管理区域",
-        "RelevantCommands": [
-            "/region"
-        ]
-    },
-    {
-        "Name": "tshock.world.events.sandstorm",
-        "PermissionId": 93,
-        "Description": "用户可以使用'worldevent'指令下的'sandstorm'子指令",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.tileban",
-        "PermissionId": 94,
-        "Description": "用户可以管理图格封禁",
-        "RelevantCommands": [
-            "/tileban"
-        ]
-    },
-    {
-        "Name": "tshock.admin.warp",
-        "PermissionId": 95,
-        "Description": "用户可管理传送点",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.npc.maxspawns",
-        "PermissionId": 96,
-        "Description": "用户可以编辑最大出生数量",
-        "RelevantCommands": [
-            "/maxspawns"
-        ]
-    },
-    {
-        "Name": "tshock.world.movenpc",
-        "PermissionId": 97,
-        "Description": "允许用户更改生物的居住位置",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.mute",
-        "PermissionId": 98,
-        "Description": "用户可禁言或解除禁言其他用户",
-        "RelevantCommands": [
-            "/mute (/unmute)"
-        ]
-    },
-    {
-        "Name": "tshock.tp.pylon",
-        "PermissionId": 99,
-        "Description": "允许用户使用晶塔传送",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.rain",
-        "PermissionId": 100,
-        "Description": "用户可开启或关闭下雨",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.npc.rename",
-        "PermissionId": 101,
-        "Description": "允许用户重命名生物",
-        "RelevantCommands": [
-            "/renamenpc"
-        ]
-    },
-    {
-        "Name": "tshock.reservedslot",
-        "PermissionId": 102,
-        "Description": "允许你突破最大栏位限制 最多增加5个栏位",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.respawn",
-        "PermissionId": 103,
-        "Description": "允许玩家自行重生",
-        "RelevantCommands": [
-            "/respawn"
-        ]
-    },
-    {
-        "Name": "tshock.respawn.other",
-        "PermissionId": 104,
-        "Description": "允许玩家复活其他玩家",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.rod",
-        "PermissionId": 105,
-        "Description": "用户可以使用混沌传送杖",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.sandstorm",
-        "PermissionId": 106,
-        "Description": "用户能开启或关闭沙尘暴",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.admin.savessi",
-        "PermissionId": 107,
-        "Description": "用户能保存所有玩家的SSC(服务器端存档)状态",
-        "RelevantCommands": [
-            "/overridessc (/ossc)",
-            "/savessc"
-        ]
-    },
-    {
-        "Name": "tshock.admin.seeplayerids",
-        "PermissionId": 108,
-        "Description": "用户可以通过 /who 指令查看玩家ID",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.sendemoji",
-        "PermissionId": 109,
-        "Description": "玩家可以发送表情",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.info",
-        "PermissionId": 110,
-        "Description": "用户可获取服务器信息",
-        "RelevantCommands": [
-            "/serverinfo"
-        ]
-    },
-    {
-        "Name": "tshock.admin.tempgroup",
-        "PermissionId": 111,
-        "Description": "用户可临时提升其他用户的用户组",
-        "RelevantCommands": [
-            "/tempgroup"
-        ]
-    },
-    {
-        "Name": "tshock.slap",
-        "PermissionId": 112,
-        "Description": "用户能扇其他人耳光",
-        "RelevantCommands": [
-            "/slap"
-        ]
-    },
-    {
-        "Name": "tshock.tp.spawn",
-        "PermissionId": 113,
-        "Description": "允许用户使用/spawn指令",
-        "RelevantCommands": [
-            "/spawn"
-        ]
-    },
-    {
-        "Name": "tshock.npc.spawnboss",
-        "PermissionId": 114,
-        "Description": "允许用户召唤Boss",
-        "RelevantCommands": [
-            "/spawnboss (/sb)"
-        ]
-    },
-    {
-        "Name": "tshock.npc.spawnmob",
-        "PermissionId": 115,
-        "Description": "允许用户生成生物",
-        "RelevantCommands": [
-            "/spawnmob (/sm)"
-        ]
-    },
-    {
-        "Name": "tshock.npc.spawnpets",
-        "PermissionId": 116,
-        "Description": "允许用户召唤宠物 警告：网络占用高 易被滥用",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.npc.spawnrate",
-        "PermissionId": 117,
-        "Description": "用户可以调整出生率",
-        "RelevantCommands": [
-            "/spawnrate"
-        ]
-    },
-    {
-        "Name": "tshock.npc.startdd2",
-        "PermissionId": 118,
-        "Description": "用户能够启动撒旦军队事件",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.npc.startinvasion",
-        "PermissionId": 119,
-        "Description": "用户可以使用物品发起入侵事件(哥布林/雪人军团)",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.su",
-        "PermissionId": 120,
-        "Description": "允许用户临时提升为超级管理员权限10分钟",
-        "RelevantCommands": [
-            "/su",
-            "/sudo"
-        ]
-    },
-    {
-        "Name": "tshock.npc.summonboss",
-        "PermissionId": 121,
-        "Description": "用户可以使用物品召唤Boss",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.synclocalarea",
-        "PermissionId": 122,
-        "Description": "玩家可以自行与服务器状态重新同步",
-        "RelevantCommands": [
-            "/sync"
-        ]
-    },
-    {
-        "Name": "tshock.world.time.set",
-        "PermissionId": 123,
-        "Description": "用户可设置时间",
-        "RelevantCommands": [
-            "/time"
-        ]
-    },
-    {
-        "Name": "tshock.world.toggleexpert",
-        "PermissionId": 124,
-        "Description": "用户可更改专家模式状态",
-        "RelevantCommands": [
-            "/worldmode (/gamemode)"
-        ]
-    },
-    {
-        "Name": "tshock.world.toggleparty",
-        "PermissionId": 125,
-        "Description": "玩家可以切换派对事件",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.self",
-        "PermissionId": 126,
-        "Description": "允许用户传送到其他玩家位置",
-        "RelevantCommands": [
-            "/tp"
-        ]
-    },
-    {
-        "Name": "tshock.tp.allothers",
-        "PermissionId": 127,
-        "Description": "用户可以将*所有人*传送至自己身边",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.block",
-        "PermissionId": 128,
-        "Description": "用户可阻止他人传送",
-        "RelevantCommands": [
-            "/tpallow"
-        ]
-    },
-    {
-        "Name": "tshock.tp.npc",
-        "PermissionId": 129,
-        "Description": "允许用户传送到生物身边",
-        "RelevantCommands": [
-            "/tpnpc"
-        ]
-    },
-    {
-        "Name": "tshock.tp.others",
-        "PermissionId": 130,
-        "Description": "允许用户传送其他玩家",
-        "RelevantCommands": [
-            "/tphere"
-        ]
-    },
-    {
-        "Name": "tshock.tp.override",
-        "PermissionId": 131,
-        "Description": "用户可无视传送限制",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.pos",
-        "PermissionId": 132,
-        "Description": "允许用户传送至图格位置",
-        "RelevantCommands": [
-            "/tppos"
-        ]
-    },
-    {
-        "Name": "tshock.tp.tppotion",
-        "PermissionId": 133,
-        "Description": "用户可以使用传送药水",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.silent",
-        "PermissionId": 134,
-        "Description": "用户可以不显示通知直接传送至他人",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.ssc.upload",
-        "PermissionId": 135,
-        "Description": "用户可以将他们加入的角色数据上传为SSC数据",
-        "RelevantCommands": [
-            "/uploadssc"
-        ]
-    },
-    {
-        "Name": "tshock.ssc.upload.others",
-        "PermissionId": 136,
-        "Description": "允许用户将其他玩家的加入数据上传到SSC数据库",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.item.usebanned",
-        "PermissionId": 137,
-        "Description": "允许你使用被禁物品",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.time.usemoondial",
-        "PermissionId": 138,
-        "Description": "玩家可以使用附魔月晷物品",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.superadmin.user",
-        "PermissionId": 139,
-        "Description": "仅限超级管理员使用",
-        "RelevantCommands": [
-            "/user"
-        ]
-    },
-    {
-        "Name": "tshock.admin.userinfo",
-        "PermissionId": 140,
-        "Description": "用户可获取其他用户信息",
-        "RelevantCommands": [
-            "/userinfo (/ui)"
-        ]
-    },
-    {
-        "Name": "tshock.world.time.usesundial",
-        "PermissionId": 141,
-        "Description": "玩家可以使用附魔日晷物品",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.warp",
-        "PermissionId": 142,
-        "Description": "用户可以使用传送点",
-        "RelevantCommands": [
-            "/warp"
-        ]
-    },
-    {
-        "Name": "tshock.whisper",
-        "PermissionId": 143,
-        "Description": "用户可向他人发送私聊消息",
-        "RelevantCommands": [
-            "/reply (/r)",
-            "/whisper (/w /tell /pm /dm)",
-            "/wallow (/wa)"
-        ]
-    },
-    {
-        "Name": "tshock.cfg.whitelist",
-        "PermissionId": 144,
-        "Description": "用户可修改白名单",
-        "RelevantCommands": [
-            "/whitelist"
-        ]
-    },
-    {
-        "Name": "tshock.world.wind",
-        "PermissionId": 145,
-        "Description": "用户可修改风速",
-        "RelevantCommands": [
-            "/wind"
-        ]
-    },
-    {
-        "Name": "tshock.world.info",
-        "PermissionId": 146,
-        "Description": "用户可获取世界信息",
-        "RelevantCommands": [
-            "/worldinfo"
-        ]
-    },
-    {
-        "Name": "tshock.world.save",
-        "PermissionId": 147,
-        "Description": "用户能保存世界",
-        "RelevantCommands": [
-            "/save"
-        ]
-    },
-    {
-        "Name": "tshock.world.settleliquids",
-        "PermissionId": 148,
-        "Description": "用户能够稳定液体",
-        "RelevantCommands": [
-            "/settle"
-        ]
-    },
-    {
-        "Name": "tshock.world.setspawn",
-        "PermissionId": 149,
-        "Description": "用户可设置世界出生点",
-        "RelevantCommands": [
-            "/setspawn"
-        ]
-    },
-    {
-        "Name": "tshock.world.worldupgrades",
-        "PermissionId": 150,
-        "Description": "用户可以使用世界永久增益效果如高级战斗技巧",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.tp.wormhole",
-        "PermissionId": 151,
-        "Description": "用户可以使用虫洞药水",
-        "RelevantCommands": []
-    },
-    {
-        "Name": "tshock.world.setxmas",
-        "PermissionId": 152,
-        "Description": "用户可强制服务器进入圣诞节模式",
-        "RelevantCommands": [
-            "/forcexmas"
-        ]
-    }
+  {
+    "Name": "tshock.accountinfo.details",
+    "PermissionId": 1,
+    "Description": "Player can see advanced information about any user account.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.sendtilesquare",
+    "PermissionId": 2,
+    "Description": "Allow unrestricted SendTileSquare usage, for client side world editing.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.dropbanneditem",
+    "PermissionId": 3,
+    "Description": "Allow dropping banned items without the item being eaten.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.annoy",
+    "PermissionId": 4,
+    "Description": "User can annoy others.",
+    "RelevantCommands": [
+      "/annoy",
+      "/rocket",
+      "/firework"
+    ]
+  },
+  {
+    "Name": "tshock.admin.antibuild",
+    "PermissionId": 5,
+    "Description": "User can set build protection status.",
+    "RelevantCommands": [
+      "/antibuild"
+    ]
+  },
+  {
+    "Name": "tshock.admin.ban",
+    "PermissionId": 6,
+    "Description": "User can ban others.",
+    "RelevantCommands": [
+      "/ban"
+    ]
+  },
+  {
+    "Name": "tshock.world.time.bloodmoon",
+    "PermissionId": 7,
+    "Description": "User can force a blood moon.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.broadcast",
+    "PermissionId": 8,
+    "Description": "User can broadcast messages.",
+    "RelevantCommands": [
+      "/broadcast (/bc /say)"
+    ]
+  },
+  {
+    "Name": "tshock.buff.self",
+    "PermissionId": 9,
+    "Description": "User can buff self.",
+    "RelevantCommands": [
+      "/buff"
+    ]
+  },
+  {
+    "Name": "tshock.buff.others",
+    "PermissionId": 10,
+    "Description": "User can buff other players.",
+    "RelevantCommands": [
+      "/gbuff (/buffplayer)"
+    ]
+  },
+  {
+    "Name": "tshock.npc.butcher",
+    "PermissionId": 11,
+    "Description": "User can kill all enemy npcs.",
+    "RelevantCommands": [
+      "/butcher"
+    ]
+  },
+  {
+    "Name": "tshock.ignore.ssc",
+    "PermissionId": 12,
+    "Description": "Bypass server side character checks.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.modify",
+    "PermissionId": 13,
+    "Description": "User can modify the world.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.account.changepassword",
+    "PermissionId": 14,
+    "Description": "User can change password in game.",
+    "RelevantCommands": [
+      "/password"
+    ]
+  },
+  {
+    "Name": "tshock.canchat",
+    "PermissionId": 15,
+    "Description": "Player can chat.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.account.login",
+    "PermissionId": 16,
+    "Description": "User can login in game.",
+    "RelevantCommands": [
+      "/login"
+    ]
+  },
+  {
+    "Name": "tshock.account.logout",
+    "PermissionId": 17,
+    "Description": "User can logout in game.",
+    "RelevantCommands": [
+      "/logout"
+    ]
+  },
+  {
+    "Name": "tshock.world.paint",
+    "PermissionId": 18,
+    "Description": "User can paint tiles.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.partychat",
+    "PermissionId": 19,
+    "Description": "User can use party chat in game.",
+    "RelevantCommands": [
+      "/party (/p)"
+    ]
+  },
+  {
+    "Name": "tshock.account.register",
+    "PermissionId": 20,
+    "Description": "User can register account in game.",
+    "RelevantCommands": [
+      "/register"
+    ]
+  },
+  {
+    "Name": "tshock.thirdperson",
+    "PermissionId": 21,
+    "Description": "User can talk in third person.",
+    "RelevantCommands": [
+      "/me"
+    ]
+  },
+  {
+    "Name": "tshock.projectiles.usebanned",
+    "PermissionId": 22,
+    "Description": "Player can use banned projectiles.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tiles.usebanned",
+    "PermissionId": 23,
+    "Description": "Player can place banned tiles.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.cfg.password",
+    "PermissionId": 24,
+    "Description": "User can edit the server password.",
+    "RelevantCommands": [
+      "/serverpassword"
+    ]
+  },
+  {
+    "Name": "tshock.cfg.reload",
+    "PermissionId": 25,
+    "Description": "User can reload the configurations file.",
+    "RelevantCommands": [
+      "/reload"
+    ]
+  },
+  {
+    "Name": "tshock.accountinfo.check",
+    "PermissionId": 26,
+    "Description": "Player can check if a username is registered and see its last login time.",
+    "RelevantCommands": [
+      "/accountinfo (/ai)"
+    ]
+  },
+  {
+    "Name": "tshock.clear",
+    "PermissionId": 27,
+    "Description": "User can clear items or projectiles.",
+    "RelevantCommands": [
+      "/clear"
+    ]
+  },
+  {
+    "Name": "tshock.npc.clearanglerquests",
+    "PermissionId": 28,
+    "Description": "User can clear the list of users who have completed an angler quest that day.",
+    "RelevantCommands": [
+      "/clearangler"
+    ]
+  },
+  {
+    "Name": "tshock.world.converthardmode",
+    "PermissionId": 29,
+    "Description": "User can convert hallow into corruption and vice-versa.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.cfg.createdumps",
+    "PermissionId": 30,
+    "Description": "User can create reference files of Terraria IDs and the permission matrix in the server folder.",
+    "RelevantCommands": [
+      "/dump-reference-data"
+    ]
+  },
+  {
+    "Name": "tshock.tp.demonconch",
+    "PermissionId": 31,
+    "Description": "User can use the Demon Conch.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.time.dropmeteor",
+    "PermissionId": 32,
+    "Description": "User can drop a meteor.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.setdungeon",
+    "PermissionId": 33,
+    "Description": "User can set the dungeon's location.",
+    "RelevantCommands": [
+      "/setdungeon"
+    ]
+  },
+  {
+    "Name": "tshock.world.time.eclipse",
+    "PermissionId": 34,
+    "Description": "User can force an eclipse.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.editregion",
+    "PermissionId": 35,
+    "Description": "Allows you to edit regions.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.editspawn",
+    "PermissionId": 36,
+    "Description": "Allows you to edit the spawn.",
+    "RelevantCommands": [
+      "/protectspawn"
+    ]
+  },
+  {
+    "Name": "tshock.world.time.fullmoon",
+    "PermissionId": 37,
+    "Description": "User can force a full moon.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.getpos",
+    "PermissionId": 38,
+    "Description": "User can get the position of players.",
+    "RelevantCommands": [
+      "/pos"
+    ]
+  },
+  {
+    "Name": "tshock.item.give",
+    "PermissionId": 39,
+    "Description": "User can give items.",
+    "RelevantCommands": [
+      "/give (/g)"
+    ]
+  },
+  {
+    "Name": "tshock.godmode",
+    "PermissionId": 40,
+    "Description": "Player recovers health as damage is taken.  Can be one shotted.",
+    "RelevantCommands": [
+      "/godmode (/god)"
+    ]
+  },
+  {
+    "Name": "tshock.godmode.other",
+    "PermissionId": 41,
+    "Description": "User can godmode other players.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.grow",
+    "PermissionId": 42,
+    "Description": "User can grow plants.",
+    "RelevantCommands": [
+      "/grow"
+    ]
+  },
+  {
+    "Name": "tshock.world.growevil",
+    "PermissionId": 43,
+    "Description": "User can grow evil biome plants.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.sethalloween",
+    "PermissionId": 44,
+    "Description": "User can force the server to Halloween mode.",
+    "RelevantCommands": [
+      "/forcehalloween"
+    ]
+  },
+  {
+    "Name": "tshock.world.hardmode",
+    "PermissionId": 45,
+    "Description": "User can change hardmode state.",
+    "RelevantCommands": [
+      "/hardmode"
+    ]
+  },
+  {
+    "Name": "tshock.heal",
+    "PermissionId": 46,
+    "Description": "User can heal players.",
+    "RelevantCommands": [
+      "/heal"
+    ]
+  },
+  {
+    "Name": "tshock.tp.home",
+    "PermissionId": 47,
+    "Description": "User can use /home.",
+    "RelevantCommands": [
+      "/home"
+    ]
+  },
+  {
+    "Name": "tshock.npc.hurttown",
+    "PermissionId": 48,
+    "Description": "User can hurt town NPCs.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.damage",
+    "PermissionId": 49,
+    "Description": "Prevents your actions from being ignored if damage is too high.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.hp",
+    "PermissionId": 50,
+    "Description": "Prevents you from being disabled by abnormal HP.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.removetile",
+    "PermissionId": 51,
+    "Description": "Prevents you from being reverted by kill tile abuse detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.liquid",
+    "PermissionId": 52,
+    "Description": "Prevents you from being disabled by liquid set abuse detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.mp",
+    "PermissionId": 53,
+    "Description": "Prevents you from being disabled by abnormal MP.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.npcbuff",
+    "PermissionId": 54,
+    "Description": "Prevents your from being kicked by npc buff hack detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.paint",
+    "PermissionId": 55,
+    "Description": "Prevents you from being disabled by paint abuse detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.placetile",
+    "PermissionId": 56,
+    "Description": "Prevents you from being reverted by place tile abuse detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.projectile",
+    "PermissionId": 57,
+    "Description": "Prevents you from being disabled by projectile abuse detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ignore.itemstack",
+    "PermissionId": 58,
+    "Description": "Prevents you from being disabled by stack hack detection.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.noban",
+    "PermissionId": 59,
+    "Description": "Prevents you from being banned.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.nokick",
+    "PermissionId": 60,
+    "Description": "Prevents you from being kicked.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.npc.invade",
+    "PermissionId": 61,
+    "Description": "User can start an invasion. Warning: high network use. Easy to abuse.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.item.spawn",
+    "PermissionId": 62,
+    "Description": "User can spawn items.",
+    "RelevantCommands": [
+      "/item (/i)"
+    ]
+  },
+  {
+    "Name": "tshock.journey.biomespreadfreeze",
+    "PermissionId": 63,
+    "Description": "User can use Creative UI to stop the biome spread of the world.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.research",
+    "PermissionId": 64,
+    "Description": "User can contribute research by sacrificing items",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.godmode",
+    "PermissionId": 65,
+    "Description": "User can use Creative UI to toggle character godmode.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.placementrange",
+    "PermissionId": 66,
+    "Description": "User can use Creative UI to toggle increased placement range.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.rain.freeze",
+    "PermissionId": 67,
+    "Description": "User can use Creative UI to stop the world rain strength from changing.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.rain.strength",
+    "PermissionId": 68,
+    "Description": "User can use Creative UI to set world rain strength/seed.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.setdifficulty",
+    "PermissionId": 69,
+    "Description": "User can use Creative UI to set world difficulty/mode.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.setspawnrate",
+    "PermissionId": 70,
+    "Description": "User can use Creative UI to set the NPC spawn rate of the world.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.time.freeze",
+    "PermissionId": 71,
+    "Description": "User can use Creative UI freeze time.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.time.set",
+    "PermissionId": 72,
+    "Description": "User can use Creative UI to set world time.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.time.setspeed",
+    "PermissionId": 73,
+    "Description": "User can use Creative UI to set world time speed.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.wind.freeze",
+    "PermissionId": 74,
+    "Description": "User can use Creative UI to stop the world wind strength from changing.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.journey.wind.strength",
+    "PermissionId": 75,
+    "Description": "User can use Creative UI to set world wind strength/seed.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.kick",
+    "PermissionId": 76,
+    "Description": "User can kick others.",
+    "RelevantCommands": [
+      "/kick"
+    ]
+  },
+  {
+    "Name": "tshock.kill",
+    "PermissionId": 77,
+    "Description": "User can kill others.",
+    "RelevantCommands": [
+      "/kill (/slay)"
+    ]
+  },
+  {
+    "Name": "tshock.admin.viewlogs",
+    "PermissionId": 78,
+    "Description": "Specific log messages are sent to users with this permission.",
+    "RelevantCommands": [
+      "/displaylogs"
+    ]
+  },
+  {
+    "Name": "tshock.tp.magicconch",
+    "PermissionId": 79,
+    "Description": "User can use the Magic Conch.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.cfg.maintenance",
+    "PermissionId": 80,
+    "Description": "User is notified when an update is available, user can turn off / restart the server.",
+    "RelevantCommands": [
+      "/checkupdates",
+      "/off (/exit /stop)",
+      "/off-nosave (/exit-nosave /stop-nosave)",
+      "/version"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.bloodmoon",
+    "PermissionId": 81,
+    "Description": "User can use the 'bloodmoon' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.events.eclipse",
+    "PermissionId": 82,
+    "Description": "User can use the 'eclipse' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.events",
+    "PermissionId": 83,
+    "Description": "User can use the 'worldevent' command",
+    "RelevantCommands": [
+      "/worldevent"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.fullmoon",
+    "PermissionId": 84,
+    "Description": "User can use the 'fullmoon' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.group",
+    "PermissionId": 85,
+    "Description": "User can manage groups.",
+    "RelevantCommands": [
+      "/group"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.invasion",
+    "PermissionId": 86,
+    "Description": "User can use the 'invasion' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.itemban",
+    "PermissionId": 87,
+    "Description": "User can manage item bans.",
+    "RelevantCommands": [
+      "/itemban"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.lanternsnight",
+    "PermissionId": 88,
+    "Description": "User can use the 'lanternsnight' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.events.meteor",
+    "PermissionId": 89,
+    "Description": "User can use the 'meteor' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.projectileban",
+    "PermissionId": 90,
+    "Description": "User can manage projectile bans.",
+    "RelevantCommands": [
+      "/projban"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.rain",
+    "PermissionId": 91,
+    "Description": "User can use the 'rain' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.region",
+    "PermissionId": 92,
+    "Description": "User can manage regions.",
+    "RelevantCommands": [
+      "/region"
+    ]
+  },
+  {
+    "Name": "tshock.world.events.sandstorm",
+    "PermissionId": 93,
+    "Description": "User can use the 'sandstorm' subcommand of the 'worldevent' command",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.tileban",
+    "PermissionId": 94,
+    "Description": "User can manage tile bans.",
+    "RelevantCommands": [
+      "/tileban"
+    ]
+  },
+  {
+    "Name": "tshock.admin.warp",
+    "PermissionId": 95,
+    "Description": "User can manage warps.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.npc.maxspawns",
+    "PermissionId": 96,
+    "Description": "User can edit the max spawns.",
+    "RelevantCommands": [
+      "/maxspawns"
+    ]
+  },
+  {
+    "Name": "tshock.world.movenpc",
+    "PermissionId": 97,
+    "Description": "User can change the homes of NPCs.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.mute",
+    "PermissionId": 98,
+    "Description": "User can mute and unmute users.",
+    "RelevantCommands": [
+      "/mute (/unmute)"
+    ]
+  },
+  {
+    "Name": "tshock.tp.pylon",
+    "PermissionId": 99,
+    "Description": "User can use pylons to teleport",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.rain",
+    "PermissionId": 100,
+    "Description": "User can turn on or off the rain.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.npc.rename",
+    "PermissionId": 101,
+    "Description": "User can rename NPCs.",
+    "RelevantCommands": [
+      "/renamenpc"
+    ]
+  },
+  {
+    "Name": "tshock.reservedslot",
+    "PermissionId": 102,
+    "Description": "Allows you to bypass the max slots for up to 5 slots above your max.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.respawn",
+    "PermissionId": 103,
+    "Description": "Player can respawn themselves.",
+    "RelevantCommands": [
+      "/respawn"
+    ]
+  },
+  {
+    "Name": "tshock.respawn.other",
+    "PermissionId": 104,
+    "Description": "Player can respawn others.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.rod",
+    "PermissionId": 105,
+    "Description": "User can use the Rod of Discord.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.sandstorm",
+    "PermissionId": 106,
+    "Description": "User can turn on or off sandstorms.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.admin.savessi",
+    "PermissionId": 107,
+    "Description": "User can save all the players SSI (server side character) state.",
+    "RelevantCommands": [
+      "/overridessc (/ossc)",
+      "/savessc"
+    ]
+  },
+  {
+    "Name": "tshock.admin.seeplayerids",
+    "PermissionId": 108,
+    "Description": "User can see the id of players with /who.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.sendemoji",
+    "PermissionId": 109,
+    "Description": "Player can send emotes.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.info",
+    "PermissionId": 110,
+    "Description": "User can get the server info.",
+    "RelevantCommands": [
+      "/serverinfo"
+    ]
+  },
+  {
+    "Name": "tshock.admin.tempgroup",
+    "PermissionId": 111,
+    "Description": "User can elevate other users' groups temporarily.",
+    "RelevantCommands": [
+      "/tempgroup"
+    ]
+  },
+  {
+    "Name": "tshock.slap",
+    "PermissionId": 112,
+    "Description": "User can slap others.",
+    "RelevantCommands": [
+      "/slap"
+    ]
+  },
+  {
+    "Name": "tshock.tp.spawn",
+    "PermissionId": 113,
+    "Description": "User can use /spawn.",
+    "RelevantCommands": [
+      "/spawn"
+    ]
+  },
+  {
+    "Name": "tshock.npc.spawnboss",
+    "PermissionId": 114,
+    "Description": "User can spawn bosses.",
+    "RelevantCommands": [
+      "/spawnboss (/sb)"
+    ]
+  },
+  {
+    "Name": "tshock.npc.spawnmob",
+    "PermissionId": 115,
+    "Description": "User can spawn npcs.",
+    "RelevantCommands": [
+      "/spawnmob (/sm)"
+    ]
+  },
+  {
+    "Name": "tshock.npc.spawnpets",
+    "PermissionId": 116,
+    "Description": "User can spawn pets. Warning: high network use. Easy to abuse.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.npc.spawnrate",
+    "PermissionId": 117,
+    "Description": "User can edit the spawnrate.",
+    "RelevantCommands": [
+      "/spawnrate"
+    ]
+  },
+  {
+    "Name": "tshock.npc.startdd2",
+    "PermissionId": 118,
+    "Description": "User can start the dd2 event.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.npc.startinvasion",
+    "PermissionId": 119,
+    "Description": "User can start invasions (Goblin/Snow Legion) using items.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.su",
+    "PermissionId": 120,
+    "Description": "Allows a user to elevate to superadmin for 10 minutes.",
+    "RelevantCommands": [
+      "/su",
+      "/sudo"
+    ]
+  },
+  {
+    "Name": "tshock.npc.summonboss",
+    "PermissionId": 121,
+    "Description": "User can summon bosses using items.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.synclocalarea",
+    "PermissionId": 122,
+    "Description": "Player can resync themselves with server state.",
+    "RelevantCommands": [
+      "/sync"
+    ]
+  },
+  {
+    "Name": "tshock.world.time.set",
+    "PermissionId": 123,
+    "Description": "User can set the time.",
+    "RelevantCommands": [
+      "/time"
+    ]
+  },
+  {
+    "Name": "tshock.world.toggleexpert",
+    "PermissionId": 124,
+    "Description": "User can change expert state.",
+    "RelevantCommands": [
+      "/worldmode (/gamemode)"
+    ]
+  },
+  {
+    "Name": "tshock.world.toggleparty",
+    "PermissionId": 125,
+    "Description": "Player can toggle party event.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.self",
+    "PermissionId": 126,
+    "Description": "User can teleport to others.",
+    "RelevantCommands": [
+      "/tp"
+    ]
+  },
+  {
+    "Name": "tshock.tp.allothers",
+    "PermissionId": 127,
+    "Description": "User can teleport *everyone* to them.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.block",
+    "PermissionId": 128,
+    "Description": "Users can stop people from teleporting.",
+    "RelevantCommands": [
+      "/tpallow"
+    ]
+  },
+  {
+    "Name": "tshock.tp.npc",
+    "PermissionId": 129,
+    "Description": "User can teleport to an NPC.",
+    "RelevantCommands": [
+      "/tpnpc"
+    ]
+  },
+  {
+    "Name": "tshock.tp.others",
+    "PermissionId": 130,
+    "Description": "User can teleport other people.",
+    "RelevantCommands": [
+      "/tphere"
+    ]
+  },
+  {
+    "Name": "tshock.tp.override",
+    "PermissionId": 131,
+    "Description": "Users can override teleport blocks.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.pos",
+    "PermissionId": 132,
+    "Description": "User can teleport to tile positions.",
+    "RelevantCommands": [
+      "/tppos"
+    ]
+  },
+  {
+    "Name": "tshock.tp.tppotion",
+    "PermissionId": 133,
+    "Description": "User can use Teleportation Potions.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.silent",
+    "PermissionId": 134,
+    "Description": "Users can teleport to people without showing a notice",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.ssc.upload",
+    "PermissionId": 135,
+    "Description": "User can upload their joined character data as SSC data.",
+    "RelevantCommands": [
+      "/uploadssc"
+    ]
+  },
+  {
+    "Name": "tshock.ssc.upload.others",
+    "PermissionId": 136,
+    "Description": "User can upload other players join data to the SSC database.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.item.usebanned",
+    "PermissionId": 137,
+    "Description": "Allows you to use banned items.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.time.usemoondial",
+    "PermissionId": 138,
+    "Description": "Player can use the Enchanted Moondial item.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.superadmin.user",
+    "PermissionId": 139,
+    "Description": "Meant for super admins only.",
+    "RelevantCommands": [
+      "/user"
+    ]
+  },
+  {
+    "Name": "tshock.admin.userinfo",
+    "PermissionId": 140,
+    "Description": "User can get other users' info.",
+    "RelevantCommands": [
+      "/userinfo (/ui)"
+    ]
+  },
+  {
+    "Name": "tshock.world.time.usesundial",
+    "PermissionId": 141,
+    "Description": "Player can use the Enchanted Sundial item.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.warp",
+    "PermissionId": 142,
+    "Description": "User can use warps.",
+    "RelevantCommands": [
+      "/warp"
+    ]
+  },
+  {
+    "Name": "tshock.whisper",
+    "PermissionId": 143,
+    "Description": "User can whisper to others.",
+    "RelevantCommands": [
+      "/reply (/r)",
+      "/whisper (/w /tell /pm /dm)",
+      "/wallow (/wa)"
+    ]
+  },
+  {
+    "Name": "tshock.cfg.whitelist",
+    "PermissionId": 144,
+    "Description": "User can modify the whitelist.",
+    "RelevantCommands": [
+      "/whitelist"
+    ]
+  },
+  {
+    "Name": "tshock.world.wind",
+    "PermissionId": 145,
+    "Description": "User can modify the wind.",
+    "RelevantCommands": [
+      "/wind"
+    ]
+  },
+  {
+    "Name": "tshock.world.info",
+    "PermissionId": 146,
+    "Description": "User can get the world info.",
+    "RelevantCommands": [
+      "/worldinfo"
+    ]
+  },
+  {
+    "Name": "tshock.world.save",
+    "PermissionId": 147,
+    "Description": "User can save the world.",
+    "RelevantCommands": [
+      "/save"
+    ]
+  },
+  {
+    "Name": "tshock.world.settleliquids",
+    "PermissionId": 148,
+    "Description": "User can settle liquids.",
+    "RelevantCommands": [
+      "/settle"
+    ]
+  },
+  {
+    "Name": "tshock.world.setspawn",
+    "PermissionId": 149,
+    "Description": "User can set the world spawn.",
+    "RelevantCommands": [
+      "/setspawn"
+    ]
+  },
+  {
+    "Name": "tshock.world.worldupgrades",
+    "PermissionId": 150,
+    "Description": "User can use world-based permanent boosters like Advanced Combat Techniques",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.tp.wormhole",
+    "PermissionId": 151,
+    "Description": "User can use wormhole potions.",
+    "RelevantCommands": []
+  },
+  {
+    "Name": "tshock.world.setxmas",
+    "PermissionId": 152,
+    "Description": "User can force the server to Christmas mode.",
+    "RelevantCommands": [
+      "/forcexmas"
+    ]
+  }
 ]

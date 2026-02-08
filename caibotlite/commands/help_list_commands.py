@@ -1,5 +1,6 @@
 from nonebot import on_command, on_message
-from nonebot.adapters.qq import GroupAtMessageCreateEvent
+from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment, Bot
+from nonebot.adapters.qq.models import MessageMarkdown, MessageMarkdownParams, MessageKeyboard, QQMessage
 
 from caibotlite.utils import match_like_command
 
@@ -8,6 +9,42 @@ help_list = on_command("菜单", aliases={"帮助"}, force_whitespace=True, bloc
 
 @help_list.handle()
 async def help_handle():
+    # await  help_list.finish(
+    #     MessageSegment.markdown(
+    #         MessageMarkdown(
+    #             custom_template_id='102256264_1743296467',
+    #             params=[
+    #                 MessageMarkdownParams(key='bot_version', values=["1"]),
+    #                 MessageMarkdownParams(key='bot_changelog', values=[
+    #                     "1"
+    #                 ]),
+    #                 MessageMarkdownParams(key='plugin_version', values=["1"]),
+    #                 MessageMarkdownParams(key='plugin_changelog', values=["1"
+    #                                                                       ]),
+    #                 MessageMarkdownParams(key='mod_version', values=["1"]),
+    #                 MessageMarkdownParams(key='mod_changelog', values=[
+    #                     "1"
+    #                 ]),
+    #             ])
+    #     ) +
+    #     MessageSegment.keyboard(
+    #         MessageKeyboard(id='102256264_1750683670')
+    #     )
+    # )
+
+    # await  help_list.finish(MessageSegment.markdown(
+    #     MessageMarkdown(
+    #         custom_template_id='102256264_1750683670',
+    #         params=None)
+    # ))
+
+    # bot_version	1
+    # bot_changelog	添加 \n \u200B修复
+    # plugin_version	1
+    # plugin_changelog	1
+    # mod_version	1
+    # mod_changelog	1
+    #
     await help_list.finish(f'\n『菜单』\n'
                            f'⚡群管理\n'
                            f'⚡服务器管理\n'

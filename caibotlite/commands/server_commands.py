@@ -91,16 +91,25 @@ async def call_server_online(server: Server, server_index: int, config: GroupCon
     ConnectionManager.connected_servers[server.token].server_info.server_name = server_name
     lines = [f"๑{server_num}๑⚡{server_name} {process}"]
 
+    def version_warning():
+        plugin_version = ConnectionManager.connected_servers[server.token].server_info.plugin_version
+        if plugin_version == "2026.1.29.0":
+            lines.append("⚠️此适配插件版本具有严重Bug，建议升级")
+
     if current_online == 0:
         lines.append(f"没有玩家在线捏...")
+        version_warning()
         return "\n".join(lines)
 
     if config.disabled_show_playerlist:
         lines.append(f"当前有{current_online}名玩家在线~")
+        version_warning()
         return "\n".join(lines)
 
     lines.append(f"在线玩家({current_online}/{max_online})")
     lines.append(", ".join(player_list))
+
+    version_warning()
     return "\n".join(lines)
 
 
@@ -111,7 +120,7 @@ online = on_command("在线", aliases={"在线人数", "在线查询", "泰拉�
 async def _(group: CurrentGroup):
     if len(group.servers) == 0:
         await online.finish(f'\n『泰拉在线』\n' +
-                            f"你好像还没有绑定服务器捏？" + "\n*由于CaiBot更新, 请下载最新版适配插件，然后重新添加服务器: \n"
+                            f"你好像还没有绑定服务器捏？" + "\n*文档: \n"
                                                            "https://docs.terraria.ink/zh/other/CaiBotLite.html")
 
     package_writer = PackageWriter(PackageType.PLAYER_LIST)
