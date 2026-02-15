@@ -571,14 +571,14 @@ async def _(group: CurrentGroup):
         server_number = index + 1
         if ConnectionManager.is_server_online(server.token):
             # noinspection PyBroadException
-            try:
-                ip = socket.gethostbyname(server.ip)
-            except:
-                ip = server.ip
+            # try:
+            #     ip = socket.gethostbyname(server.ip)
+            # except:
+            #     ip = server.ip
             info = ConnectionManager.connected_servers[server.token].server_info
             white_list = "[白名单]" if info.enable_whitelist else ""
             results.append(f"๑{server_number}๑🌐{info.server_name}{white_list}({info.game_version})\n"
-                           f"地址: {filter_all(ip)}\n"
+                           f"地址: {filter_all(server.ip)}\n"
                            f"端口: {server.port}")
         else:
             results.append(f"๑{server_number}๑❌服务器处于离线状态")
