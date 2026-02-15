@@ -10,6 +10,7 @@ from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
 from caibotlite.models import Server, GroupConfig, Package
+from caibotlite.models.server_error_exception import ServerError
 from caibotlite.services import LookBag, QueryProcess, FileService, PackageWriter
 from caibotlite.utils import decompress_base64_gzip, filter_all, replace_all_tag, build_rank
 
@@ -20,6 +21,9 @@ async def call_server_command(server: Server, server_index: int, package: Packag
         return f"❌服务器[{server_num}]处于离线状态!"
     try:
         result = await ConnectionManager.call_api(server.token, package)
+    except ServerError as ex:
+        return (f"⚠️服务器[{server_num}]内部错误:\n"
+                f"{ex.error}")
     except TimeoutError:
         return f"⚠️服务器[{server_num}]响应超时!"
     if result['output']:
@@ -80,6 +84,10 @@ async def call_server_online(server: Server, server_index: int, config: GroupCon
         return f"๑{server_num}๑❌处于离线状态!"
     try:
         result = await ConnectionManager.call_api(server.token, package)
+    except ServerError as ex:
+        return (f"๑{server_num}๑⚠️服务器内部错误:\n"
+                f"{ex.error}")
+
     except TimeoutError:
         return f"๑{server_num}๑⚠️服务器响应超时!"
 
@@ -159,6 +167,12 @@ async def _(args: Args, group: CurrentGroup):
 
     try:
         payload = await ConnectionManager.call_api(server_token, package_writer.build())
+    except ServerError as ex:
+        await world_progress.finish(f'\n『进度查询』\n' +
+                                    f"执行失败！\n" +
+                                    f"⚠️服务器内部错误:\n"
+                                    f"{ex.error}")
+
     except TimeoutError:
         await world_progress.finish(f'\n『进度查询』\n' +
                                     f"执行失败！\n" +
@@ -229,7 +243,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                  f"❌服务器[{server_number}]处于离线状态")
 
     try:
-        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=30.0)
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=60.0)
+    except ServerError as ex:
+        await get_map_png.finish(f'\n『查看地图』\n' +
+                                 f"获取失败！\n" +
+                                 f"⚠️服务器内部错误:\n"
+                                 f"{ex.error}")
     except TimeoutError:
         await get_map_png.finish(f'\n『查看地图』\n' +
                                  f"获取失败！\n" +
@@ -271,7 +290,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                     f"❌服务器[{server_number}]处于离线状态")
 
     try:
-        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=30.0)
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), timeout=60.0)
+    except ServerError as ex:
+        await get_world_file.finish(f'\n『下载地图』\n' +
+                                    f"获取失败！\n" +
+                                    f"⚠️服务器内部错误:\n"
+                                    f"{ex.error}")
     except TimeoutError:
         await get_world_file.finish(f'\n『下载地图』\n' +
                                     f"获取失败！\n" +
@@ -326,8 +350,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                   f"❌服务器[{server_number}]处于离线状态")
 
     try:
-        payload = await ConnectionManager.call_api(server_token, package_writer.build(), 30.0)
-
+        payload = await ConnectionManager.call_api(server_token, package_writer.build(), 60.0)
+    except ServerError as ex:
+        await get_map_file.finish(f'\n『下载小地图』\n' +
+                                  f"获取失败！\n" +
+                                  f"⚠️服务器内部错误:\n"
+                                  f"{ex.error}")
     except TimeoutError:
         await get_map_file.finish(f'\n『下载小地图』\n' +
                                   f"获取失败！\n"
@@ -381,7 +409,11 @@ async def _(args: Args, group: CurrentGroup):
 
     try:
         payload = await ConnectionManager.call_api(server_token, package_writer.build())
-
+    except ServerError as ex:
+        await get_plugin_list.finish(f'\n『插件列表』\n' +
+                                     f"获取失败！\n" +
+                                     f"⚠️服务器内部错误:\n"
+                                     f"{ex.error}")
     except TimeoutError:
         await get_plugin_list.finish(f'\n『插件列表』\n' +
                                      f"获取失败！\n" +
@@ -425,7 +457,11 @@ async def _(args: Args, group: CurrentGroup):
 
     try:
         payload = await ConnectionManager.call_api(server_token, package_writer.build())
-
+    except ServerError as ex:
+        await look_bag.finish(f'\n『查背包』\n' +
+                              f"查询失败！\n" +
+                              f"⚠️服务器内部错误:\n"
+                              f"{ex.error}")
     except TimeoutError:
         await look_bag.finish(f'\n『查背包』\n' +
                               f"查询失败！\n" +
@@ -492,17 +528,21 @@ async def _(args: Args, group: CurrentGroup):
 
     try:
         payload = await ConnectionManager.call_api(server_token, package_writer.build())
-
+    except ServerError as ex:
+        await rank.finish(f'\n『排行』\n' +
+                          f"获取失败！\n" +
+                          f"⚠️服务器内部错误:\n"
+                          f"{ex.error}")
     except TimeoutError:
-        await  rank.finish(f'\n『排行』\n' +
-                           f"获取失败！\n"
-                           f"⚠️服务器响应超时")
+        await rank.finish(f'\n『排行』\n' +
+                          f"获取失败！\n"
+                          f"⚠️服务器响应超时")
 
     if not payload["rank_type_support"]:
-        await  rank.finish(filter_all(f'\n『排行』\n' +
-                                      f"无效排行！\n" +
-                                      f"当前服务器支持的排行榜类型: " +
-                                      f", ".join(payload["support_rank_types"])))
+        await rank.finish(filter_all(f'\n『排行』\n' +
+                                     f"无效排行！\n" +
+                                     f"当前服务器支持的排行榜类型: " +
+                                     f", ".join(payload["support_rank_types"])))
     if payload["need_arg"]:
         if len(args) == 4 and args[3].isdigit():
             page = int(args[3])

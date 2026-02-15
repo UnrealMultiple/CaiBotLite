@@ -18,6 +18,7 @@ class PackageType(str, Enum):
     RANK_DATA = "rank_data"
     SHOP_BUY = "shop_buy"
     SHOP_CONDITION = "shop_condition"
+    ERROR = "error"
     UNKNOWN = "unknown"
 
     @classmethod
@@ -59,11 +60,12 @@ class PackageType(str, Enum):
                 return "2025.7.25"
             case PackageType.RANK_DATA:
                 return "2025.7.25"
-
             case PackageType.SHOP_BUY:
                 return "2025.7.25"
             case PackageType.SHOP_CONDITION:
                 return "2025.7.25"
+            case PackageType.ERROR:
+                return "2026.2.14"
             case PackageType.UNKNOWN:
                 return "2007.5.24"
 
