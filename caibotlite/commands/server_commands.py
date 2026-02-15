@@ -172,11 +172,13 @@ async def _(args: Args, group: CurrentGroup):
                                     f"执行失败！\n" +
                                     f"⚠️服务器内部错误:\n"
                                     f"{ex.error}")
+        return
 
     except TimeoutError:
         await world_progress.finish(f'\n『进度查询』\n' +
                                     f"执行失败！\n" +
                                     f"⚠️服务器响应超时")
+        return
 
     if payload['is_text']:
         await world_progress.finish(f'\n『进度查询』\n' +
@@ -249,10 +251,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                  f"获取失败！\n" +
                                  f"⚠️服务器内部错误:\n"
                                  f"{ex.error}")
+        return
     except TimeoutError:
         await get_map_png.finish(f'\n『查看地图』\n' +
                                  f"获取失败！\n" +
                                  f"⚠️服务器响应超时")
+        return
 
     decoded_bytes = base64.b64decode(decompress_base64_gzip(payload['base64']))
     await world_progress.finish(MessageSegment.file_image(decoded_bytes))
@@ -296,10 +300,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                     f"获取失败！\n" +
                                     f"⚠️服务器内部错误:\n"
                                     f"{ex.error}")
+        return
     except TimeoutError:
         await get_world_file.finish(f'\n『下载地图』\n' +
                                     f"获取失败！\n" +
                                     f"⚠️服务器响应超时")
+        return
 
     result = await FileService.create_upload_link(decompress_base64_gzip(payload['base64']), payload['name'])
     if result['success']:
@@ -356,10 +362,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                   f"获取失败！\n" +
                                   f"⚠️服务器内部错误:\n"
                                   f"{ex.error}")
+        return
     except TimeoutError:
         await get_map_file.finish(f'\n『下载小地图』\n' +
                                   f"获取失败！\n"
                                   f"⚠️服务器响应超时")
+        return
 
     result = await FileService.create_upload_link(decompress_base64_gzip(payload['base64']), payload['name'])
     if result['success']:
@@ -414,10 +422,12 @@ async def _(args: Args, group: CurrentGroup):
                                      f"获取失败！\n" +
                                      f"⚠️服务器内部错误:\n"
                                      f"{ex.error}")
+        return
     except TimeoutError:
         await get_plugin_list.finish(f'\n『插件列表』\n' +
                                      f"获取失败！\n" +
                                      f"⚠️服务器响应超时")
+        return
 
     is_mod = payload['is_mod']
     plugins = payload['plugins']
@@ -462,10 +472,12 @@ async def _(args: Args, group: CurrentGroup):
                               f"查询失败！\n" +
                               f"⚠️服务器内部错误:\n"
                               f"{ex.error}")
+        return
     except TimeoutError:
         await look_bag.finish(f'\n『查背包』\n' +
                               f"查询失败！\n" +
                               f"⚠️服务器响应超时")
+        return
 
     if payload['exist'] == 0:
         await look_bag.finish(f"\n『查背包』\n" +
@@ -533,10 +545,12 @@ async def _(args: Args, group: CurrentGroup):
                           f"获取失败！\n" +
                           f"⚠️服务器内部错误:\n"
                           f"{ex.error}")
+        return
     except TimeoutError:
         await rank.finish(f'\n『排行』\n' +
                           f"获取失败！\n"
                           f"⚠️服务器响应超时")
+        return
 
     if not payload["rank_type_support"]:
         await rank.finish(filter_all(f'\n『排行』\n' +
