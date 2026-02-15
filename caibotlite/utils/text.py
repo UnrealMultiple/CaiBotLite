@@ -4,12 +4,13 @@ from caibotlite.utils.tag import replace_item_tag, remove_color_tag
 
 
 def filter_all(text: str):
-    return UrlFilter.replace_urls(SensitiveWordsFilter.replace(text))
+    # return UrlFilter.replace_urls(SensitiveWordsFilter.replace(text))
+    return SensitiveWordsFilter.replace(text)
 
 
 def check_text_ok(text: str):
-    if UrlFilter.has_url(text):
-        return False
+    # if UrlFilter.has_url(text):
+    #     return False
     if SensitiveWordsFilter.has_sensitive(text):
         return False
 
