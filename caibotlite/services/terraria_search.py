@@ -31,6 +31,9 @@ class TerrariaSearch:
         with open("assets/terraria_data/npc_id.json", encoding='utf-8', errors='ignore') as fp:
             cls.NPCs = json.loads(fp.read())
 
+        with open("assets/terraria_data/npcx_id.json", encoding='utf-8', errors='ignore') as fp:
+            cls.NPCs.extend(json.loads(fp.read()))
+
         with open("assets/terraria_data/buff_id.json", encoding='utf-8', errors='ignore') as fp:
             cls.buffs = json.loads(fp.read())
 

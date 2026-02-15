@@ -3,7 +3,9 @@ from typing import Dict, Any
 
 from nonebot import logger
 
+from caibotlite.enums import PackageType
 from caibotlite.models import ConnectedServer, Package
+from caibotlite.models.server_error_exception import ServerError
 
 
 class ConnectionManager:
@@ -31,6 +33,10 @@ class ConnectionManager:
 
         if package.request_id not in connected_server.request_pool:
             logger.info(f"无法处理服务器[{server_id}]数据包\"{package.type}\"的返回API结果, request_id无效")
+            return
+        if package.type == PackageType.ERROR:
+            connected_server.request_pool[package.request_id].set_exception(
+                ServerError(package.payload['error']))
             return
 
         connected_server.request_pool[package.request_id].set_result(package.payload)
