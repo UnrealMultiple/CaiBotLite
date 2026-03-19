@@ -475,9 +475,11 @@
     "Alias": []
   },
   {
-    "Name": "渴望",
+    "Name": "热切",
     "PrefixId": 95,
-    "Alias": []
+    "Alias": [
+      "渴望"
+    ]
   },
   {
     "Name": "弹道",
@@ -485,8 +487,10 @@
     "Alias": []
   },
   {
-    "Name": "散乱",
+    "Name": "虬结",
     "PrefixId": 97,
-    "Alias": []
+    "Alias": [
+      "散乱"
+    ]
   }
 ]
