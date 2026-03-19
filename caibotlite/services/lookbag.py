@@ -109,6 +109,19 @@ _, _, _, a = back1.split()
 _, _, _, a2 = back2.split()
 font = "assets/fonts/LXGWWenKaiMono-Medium.ttf"
 
+NET_DEFAULTS = {
+    -1: 3521, -2: 3520, -3: 3519, -4: 3518, -5: 3517,
+    -6: 3516, -7: 3515, -8: 3514, -9: 3513, -10: 3512,
+    -11: 3511, -12: 3510, -13: 3509, -14: 3508, -15: 3507,
+    -16: 3506, -17: 3505, -18: 3504, -19: 3764, -20: 3765,
+    -21: 3766, -22: 3767, -23: 3768, -24: 3769, -25: 3503,
+    -26: 3502, -27: 3501, -28: 3500, -29: 3499, -30: 3498,
+    -31: 3497, -32: 3496, -33: 3495, -34: 3494, -35: 3493,
+    -36: 3492, -37: 3491, -38: 3490, -39: 3489, -40: 3488,
+    -41: 3487, -42: 3486, -43: 3485, -44: 3484, -45: 3483,
+    -46: 3482, -47: 3481, -48: 3480
+}
+
 
 # noinspection LongLine
 class LookBag:
@@ -147,6 +160,8 @@ class LookBag:
     @classmethod
     def draw_item(cls, bg_img: Image, draw: ImageDraw, x: int, y: int, item_id: int, stack: int):
         try:
+            if item_id < 0:
+                item_id = NET_DEFAULTS.get(item_id, 0)
 
             item = cls.image_cache.get(f"item_{item_id}")
             if item is None:
