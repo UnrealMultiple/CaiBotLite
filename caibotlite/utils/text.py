@@ -45,6 +45,6 @@ def build_rank(rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 
 
     page_info = f"\n\n第**{page}**页 / 共**{total_pages}**页"
 
-    return (("| 排名 | 名字 | 项目 |\n" +
-             "| :--: | --- | --- |") +
+    return ("| 排名 | 名字 | 项目 |\n" +
+            "| :--: | --- | --- |\n" +
             "\n".join(page_lines) + page_info)
