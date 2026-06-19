@@ -3,7 +3,11 @@ from http import HTTPStatus
 import nonebot
 from fastapi import FastAPI, WebSocket, HTTPException, WebSocketDisconnect
 from fastapi.websockets import WebSocketState
+from limits import storage, strategies, parse
 from nonebot import logger
+from nonebot.adapters.qq import Bot, MessageSegment, ActionFailed
+from nonebot.adapters.qq.models import MessageKeyboard, InlineKeyboard, InlineKeyboardRow, Button, RenderData, Action, \
+    Permission
 
 from caibotlite.database import async_session
 from caibotlite.enums import ServerType
@@ -15,6 +19,7 @@ from caibotlite.managers.login_manager import LoginManager
 from caibotlite.managers.server_manager import ServerManager
 from caibotlite.managers.token_mannager import TokenManager
 from caibotlite.managers.user_manager import UserManager
+from caibotlite.markdown.tag import at_user_tag
 from caibotlite.models.connected_server import ConnectedServer
 from caibotlite.models.package import Package
 from caibotlite.models.server_info import ServerInfo
@@ -22,9 +27,6 @@ from caibotlite.services import Statistics
 from caibotlite.services.package_writer import PackageWriter
 
 app: FastAPI = nonebot.get_app()
-
-
-# app = FastAPI()
 
 
 @app.get("/server/token/{init_code}")
@@ -122,6 +124,11 @@ async def websocket_loop(connected_server: ConnectedServer):
         await handle_general_message(connected_server, package)
 
 
+memory_storage = storage.MemoryStorage()
+strategy = strategies.FixedWindowRateLimiter(memory_storage)
+rate_limit = parse("1/5minute")
+
+
 async def handle_general_message(connected_server: ConnectedServer, package: Package):
     payload = package.payload
     match package.type:
@@ -142,6 +149,9 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
             name = payload['player_name']
             uuid = payload['player_uuid']
             ip = payload['player_ip']
+
+            need_login = False
+
             async with async_session() as session:
                 user = await UserManager.get_user_by_name(session, connected_server.group_open_id, name)
                 group = await GroupManager.get_group_by_open_id(session, connected_server.group_open_id)
@@ -156,10 +166,65 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                     package_writer.write("whitelist_result", WhitelistResult.In_GROUP_BLACKLIST)
                 elif not await LoginManager.try_login_ok(session, user, uuid, ip):
                     package_writer.write("whitelist_result", WhitelistResult.NEED_LOGIN)
+                    need_login = True
                 else:
                     package_writer.write("whitelist_result", WhitelistResult.ACCEPT)
 
                 await ConnectionManager.send_data(connected_server.token, package_writer.build())
+
+            if need_login and strategy.hit(rate_limit, name):
+                bot: Bot = nonebot.get_bot()
+
+                login_notice = MessageSegment.markdown(
+                    f"{at_user_tag(user.open_id)}\n"
+                    "## 🍥 登录\n"
+                    f"有新的设备请求登录**{name}**\n"
+                ) + MessageSegment.keyboard(
+                    MessageKeyboard(
+                        content=InlineKeyboard(
+                            rows=[
+                                InlineKeyboardRow(
+                                    buttons=[
+                                        Button(
+                                            render_data=RenderData(
+                                                label="✅ 批准",
+                                                visited_label="✅ 批准",
+
+                                                style=1
+                                            ),
+                                            action=Action(
+                                                type=2,
+                                                data="/登录",
+                                                permission=Permission(type=0,
+                                                                      specify_user_ids=[user.open_id])
+                                            )
+                                        ),
+                                        Button(
+                                            render_data=RenderData(
+                                                label="❌ 拒绝",
+                                                visited_label="❌ 拒绝",
+                                                style=1
+                                            ),
+                                            action=Action(
+                                                type=2,
+                                                data="/拒绝",
+                                                permission=Permission(type=0,
+                                                                      specify_user_ids=[user.open_id])
+                                            )
+                                        )
+                                    ]
+                                )
+                            ]
+                        )
+                    )
+                )
+                try:
+                    await bot.send_to_group(
+                        group_openid=connected_server.group_open_id,
+                        message=login_notice
+                    )
+                except ActionFailed:
+                    pass
 
 
 def init_api():

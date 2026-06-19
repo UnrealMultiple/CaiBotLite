@@ -3,13 +3,20 @@ import base64
 import io
 import socket
 
+import nonebot
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment, Bot
+from nonebot.adapters.qq.models import MessageKeyboard, InlineKeyboard, InlineKeyboardRow, Button, RenderData, Action, \
+    Permission
+from sqlalchemy.ext.asyncio import AsyncSession
 
+from caibotlite.database import async_session
 from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
-from caibotlite.models import Server, GroupConfig, Package
+from caibotlite.markdown.image import get_user_avatar, get_image
+from caibotlite.markdown.keyboard import help_doc_keyboard
+from caibotlite.models import Server, GroupConfig, Package, Group
 from caibotlite.models.server_error_exception import ServerError
 from caibotlite.services import LookBag, QueryProcess, FileService, PackageWriter
 from caibotlite.utils import decompress_base64_gzip, filter_all, replace_all_tag, build_rank
@@ -78,26 +85,26 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                                     "没有权限!")
 
 
-async def call_server_online(server: Server, server_index: int, config: GroupConfig, package: Package):
+async def call_server_online(server: Server, group: Group, server_index: int, config: GroupConfig, package: Package):
     server_num = server_index + 1
     if not ConnectionManager.is_server_online(server.token):
-        return f"๑{server_num}๑❌处于离线状态!"
+        return f"**๑{server_num}๑ ❌处于离线状态!**"
     try:
         result = await ConnectionManager.call_api(server.token, package)
     except ServerError as ex:
-        return (f"๑{server_num}๑⚠️服务器内部错误:\n"
+        return (f"**๑{server_num}๑ ⚠️服务器内部错误:**\n"
                 f"{ex.error}")
 
     except TimeoutError:
-        return f"๑{server_num}๑⚠️服务器响应超时!"
+        return f"**๑{server_num}๑ ⚠️服务器响应超时!**"
 
     player_list = result['player_list']
-    server_name = result['server_name']
-    process = f"「{result['process']}」" if result['process'] else ""
-    current_online = result['current_online']
-    max_online = result['max_online']
+    server_name = filter_all(result['server_name'])
+    process = f"「{filter_all(result['process'])}」" if result['process'] else ""
+    current_online = int(result['current_online'])
+    max_online = int(result['max_online'])
     ConnectionManager.connected_servers[server.token].server_info.server_name = server_name
-    lines = [f"๑{server_num}๑⚡{server_name} {process}"]
+    lines = [f"**๑{server_num}๑ ⚡{server_name} {process}**"]
 
     def version_warning():
         plugin_version = ConnectionManager.connected_servers[server.token].server_info.plugin_version
@@ -110,34 +117,44 @@ async def call_server_online(server: Server, server_index: int, config: GroupCon
         return "\n".join(lines)
 
     if config.disabled_show_playerlist:
-        lines.append(f"当前有{current_online}名玩家在线~")
+        lines.append(f"当前有**{current_online}**名玩家在线~")
         version_warning()
         return "\n".join(lines)
 
-    lines.append(f"在线玩家({current_online}/{max_online})")
-    lines.append(", ".join(player_list))
+    lines.append(f"在线玩家(**{current_online}**/{max_online})")
+
+    server = ConnectionManager.connected_servers[server.token]
+    if server.server_info.enable_whitelist:
+        players = ""
+        for player_name in player_list:
+            players += f"{await get_user_avatar(group.open_id, player_name)} {filter_all(player_name)}\t\t"
+        lines.append(players)
+    else:
+        lines.append(", ".join(player_list))
 
     version_warning()
     return "\n".join(lines)
 
 
-online = on_command("在线", aliases={"在线人数", "在线查询", "泰拉在线", "查询在线"}, force_whitespace=True, block=True)
+online = on_command("在线", force_whitespace=True, block=True)
 
 
 @online.handle()
 async def _(group: CurrentGroup):
     if len(group.servers) == 0:
-        await online.finish(f'\n『泰拉在线』\n' +
-                            f"你好像还没有绑定服务器捏？" + "\n*文档: \n"
-                                                           "https://docs.terraria.ink/zh/other/CaiBotLite.html")
+        await  online.finish(
+            MessageSegment.markdown("# 🍥 泰拉在线\n"
+                                    "> 你好像还没有绑定服务器捏？") +
+            help_doc_keyboard
+        )
 
     package_writer = PackageWriter(PackageType.PLAYER_LIST)
     package = package_writer.build()
-    tasks = [call_server_online(index, server, group.config, package) for server, index
+    tasks = [call_server_online(index, group, server, group.config, package) for server, index
              in enumerate(group.servers)]
     results = await asyncio.gather(*tasks)
-    await online.finish(filter_all('\n『泰拉在线』\n' +
-                                   "\n".join(results)))
+    await online.finish(MessageSegment.markdown("# 🍥 泰拉在线\n" +
+                                                "\n".join(results)))
 
 
 world_progress = on_command("进度", aliases={"进度查询", "查询进度"}, force_whitespace=True, block=True)

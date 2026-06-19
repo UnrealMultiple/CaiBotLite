@@ -9,7 +9,6 @@ from caibotlite.models import Group, GroupConfig
 
 
 class GroupManager:
-
     @classmethod
     async def get_group_by_open_id(cls, session: AsyncSession, group_open_id: str) -> Optional[Group]:
         result = await session.execute(select(Group).where(Group.open_id == group_open_id))

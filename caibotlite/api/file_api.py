@@ -10,6 +10,8 @@ from caibotlite.services.file import FileService
 app = nonebot.get_app()
 app: FastAPI
 
+ICON_DIR = Path(__file__).resolve().parents[2] / "assets" / "images" / "icons"
+
 
 @app.get("/download/{file_id}")
 async def download_file(file_id: str):
@@ -47,3 +49,26 @@ async def download_file(name: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/image/{name}")
+async def get_icon_image(name: str):
+    try:
+        requested_path = Path(name)
+        if requested_path.name != name or requested_path.is_absolute():
+            raise HTTPException(status_code=403, detail="找不到这张图片捏~")
+
+        full_path = (ICON_DIR / requested_path).resolve()
+
+        if full_path.parent != ICON_DIR.resolve():
+            raise HTTPException(status_code=403, detail="找不到这张图片捏~")
+
+        if not full_path.is_file():
+            raise HTTPException(status_code=404, detail="找不到这张图片喵~")
+
+        return FileResponse(path=full_path)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
