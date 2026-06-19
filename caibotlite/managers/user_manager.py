@@ -1,6 +1,6 @@
 import re
 from datetime import datetime, timedelta
-from typing import Dict, Optional
+from typing import Dict, Iterable, Optional
 
 from sqlalchemy import select, func
 from sqlalchemy.ext.asyncio.session import AsyncSession
@@ -16,7 +16,7 @@ class UserManager:
     async def get_user_by_open_id(cls, session: AsyncSession, group_open_id: str, user_open_id: str) -> Optional[User]:
         result = await session.execute(
             select(User).where(User.open_id == user_open_id, User.group_open_id == group_open_id))
-        taget_user = result.scalar()
+        taget_user = result.unique().scalars().first()
 
         return taget_user
 
@@ -24,15 +24,27 @@ class UserManager:
     async def get_user_by_name(cls, session: AsyncSession, group_open_id: str, name: str) -> Optional[User]:
         result = await session.execute(
             select(User).where(User.name == name, User.group_open_id == group_open_id))
-        taget_user = result.scalar()
+        taget_user = result.unique().scalars().first()
 
         return taget_user
+
+    @classmethod
+    async def get_users_by_names(cls, session: AsyncSession, group_open_id: str, names: Iterable[str]) -> Dict[str, User]:
+        name_list = list(dict.fromkeys(names))
+        if len(name_list) == 0:
+            return {}
+
+        result = await session.execute(
+            select(User).where(User.group_open_id == group_open_id, User.name.in_(name_list)))
+        users = result.unique().scalars().all()
+
+        return {user.name: user for user in users if user.name is not None}
 
     @classmethod
     async def get_user_by_id(cls, session: AsyncSession, user_id: int) -> Optional[User]:
         result = await session.execute(
             select(User).where(User.id == user_id))
-        taget_user = result.scalar()
+        taget_user = result.unique().scalars().first()
 
         return taget_user
 

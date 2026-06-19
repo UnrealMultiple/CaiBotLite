@@ -27,7 +27,7 @@ def build_rank(rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 
     if len(rank_lines) == 0:
         return "啥都没有呢~"
 
-    format_rank_lines = ["| 排名 | 名字 | 项目 |", "| :---: | --- | :---: |"]
+    format_rank_lines = []
     for rank, (name, data) in enumerate(rank_lines.items(), start=1):
         format_rank_lines.append(f"| {rank} | {name} | {data} |")
 
@@ -43,6 +43,8 @@ def build_rank(rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 
     if len(page_lines) < min_display_lines:
         page_lines += ["-"] * (min_display_lines - len(page_lines))
 
-    page_info = f"\n第**{page}**页 / 共**{total_pages}**页"
+    page_info = f"\n\n第**{page}**页 / 共**{total_pages}**页"
 
-    return "\n".join(page_lines) + page_info
+    return (("| 排名 | 名字 | 项目 |\n" +
+             "| :--: | --- | --- |") +
+            "\n".join(page_lines) + page_info)

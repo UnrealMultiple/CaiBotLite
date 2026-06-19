@@ -9,7 +9,7 @@ from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
 from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
-from caibotlite.markdown.image import get_user_avatar
+from caibotlite.markdown.image import get_users_avatar
 from caibotlite.markdown.keyboard import help_doc_keyboard, cmd_keyboard, download_keyboard, rank_page_keyboard
 from caibotlite.markdown.tag import cmd_input_tag, copy_link_tag
 from caibotlite.models import Server, GroupConfig, Package, Group
@@ -156,9 +156,11 @@ async def call_server_online(server: Server, group: Group, server_index: int, co
 
     server = ConnectionManager.connected_servers[server.token]
     if server.server_info.enable_whitelist:
+        user_avatars = await get_users_avatar(group.open_id, player_list)
         players = ""
         for player_name in player_list:
-            players += f"{await get_user_avatar(group.open_id, player_name)} {filter_all(player_name)}\t\t"
+            avatar = user_avatars.get(player_name, "")
+            players += f"{avatar} {filter_all(player_name)}\t\t" if avatar else f"{filter_all(player_name)}\t\t"
         lines.append(players)
     else:
         lines.append(", ".join(player_list))
