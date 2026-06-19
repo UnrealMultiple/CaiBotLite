@@ -20,6 +20,7 @@ from caibotlite.models import Server, GroupConfig, Package, Group
 from caibotlite.models.server_error_exception import ServerError
 from caibotlite.services import LookBag, QueryProcess, FileService, PackageWriter
 from caibotlite.utils import decompress_base64_gzip, filter_all, replace_all_tag, build_rank
+from caibotlite.utils.process import get_process_icon
 
 
 async def call_server_command(server: Server, server_index: int, package: Package):
@@ -100,11 +101,12 @@ async def call_server_online(server: Server, group: Group, server_index: int, co
 
     player_list = result['player_list']
     server_name = filter_all(result['server_name'])
-    process = f"「{filter_all(result['process'])}」" if result['process'] else ""
+    process_icon = get_process_icon(result['process'])
+    process = f" 「{process_icon}{filter_all(result['process'])}」" if result['process'] else ""
     current_online = int(result['current_online'])
     max_online = int(result['max_online'])
     ConnectionManager.connected_servers[server.token].server_info.server_name = server_name
-    lines = [f"**๑{server_num}๑ ⚡{server_name} {process}**"]
+    lines = [f"**๑{server_num}๑ ⚡{server_name}{process}**"]
 
     def version_warning():
         plugin_version = ConnectionManager.connected_servers[server.token].server_info.plugin_version
@@ -127,7 +129,7 @@ async def call_server_online(server: Server, group: Group, server_index: int, co
     if server.server_info.enable_whitelist:
         players = ""
         for player_name in player_list:
-            players += f"{await get_user_avatar(group.open_id, player_name)} {filter_all(player_name)}\t\t"
+            players += f"{await get_user_avatar(group.open_id, player_name)}{filter_all(player_name)}\t\t"
         lines.append(players)
     else:
         lines.append(", ".join(player_list))
