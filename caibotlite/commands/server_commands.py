@@ -80,7 +80,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
             await remote_command.finish(
                 MessageSegment.markdown(
                     "## 🍥 远程指令\n" +
-                    "\n".join(results)
+                    "\n\n".join(results)
                 ) +
                 cmd_keyboard(server_num, raw_command)
             )
@@ -166,7 +166,7 @@ async def call_server_online(server: Server, group: Group, server_index: int, co
         lines.append(", ".join(player_list))
 
     version_warning()
-    return "\n".join(lines)
+    return "\n\n".join(lines)
 
 
 online = on_command("在线", force_whitespace=True, block=True)
@@ -828,7 +828,7 @@ async def _(group: CurrentGroup):
     await server_list.finish(
         MessageSegment.markdown(
             "## 🍥 服务器列表\n" +
-            "\n".join(results)
+            "\n\n".join(results)
         )
     )
 

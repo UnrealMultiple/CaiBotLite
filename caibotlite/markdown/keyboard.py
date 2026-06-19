@@ -251,8 +251,8 @@ def rank_page_keyboard(server_index: str, rank_type: str, arg: str | None, page:
                             ),
                             Button(
                                 render_data=RenderData(
-                                    label="➡️ 下一页",
-                                    visited_label="➡️ 下一页",
+                                    label="下一页 ➡️",
+                                    visited_label="下一页 ➡️",
                                     style=1
                                 ),
                                 action=Action(
