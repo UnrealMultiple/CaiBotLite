@@ -1,3 +1,5 @@
+import urllib.parse
+
 from caibotlite.constants import API_URL
 
 
@@ -15,4 +17,4 @@ def cmd_enter_tag(text: str) -> str:
     return f'<qqbot-cmd-enter text="{text}" />'
 
 def copy_link_tag(text: str) -> str:
-    return f'[{text}]({API_URL}/copy?content={text})'
+    return f'[{text}]({API_URL}/copy?content={urllib.parse.quote(text)})'

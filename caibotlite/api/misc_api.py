@@ -17,12 +17,6 @@ async def ping():
 async def qq_url_check():
     return JSONResponse({"bot_appid": {BOT_APPID}})
 
-
-from fastapi import FastAPI
-from fastapi.responses import HTMLResponse
-
-app = FastAPI()
-
 @app.get("/copy", response_class=HTMLResponse)
 async def copy_page(content: str = ""):
     html_content = f"""
