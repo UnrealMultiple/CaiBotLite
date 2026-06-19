@@ -4,6 +4,7 @@ from nonebot.adapters.qq.models import MessageKeyboard, InlineKeyboard, InlineKe
     Permission
 from nonebot.adapters.qq import InteractionCreateEvent
 
+from caibotlite.markdown.keyboard import help_list_keyboard
 from caibotlite.markdown.tag import cmd_input_tag
 from caibotlite.utils import match_like_command
 
@@ -12,118 +13,10 @@ help_list = on_command("菜单", aliases={"帮助"}, force_whitespace=True, bloc
 
 @help_list.handle()
 async def help_handle():
-    from nonebot.adapters.qq.models import Button
     await  help_list.finish(
         MessageSegment.markdown("# 🍥 帮助\n"
                                 "> 不看文档是🐖") +
-        MessageSegment.keyboard(
-            MessageKeyboard(
-                content=InlineKeyboard(
-                    rows=[
-                        InlineKeyboardRow(
-                            buttons=[
-                                Button(
-                                    render_data=RenderData(
-                                        label="#️⃣ 群管理",
-                                        visited_label="#️⃣ 群管理",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/群管理",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                ),
-                                Button(
-                                    render_data=RenderData(
-                                        label="📄 白名单",
-                                        visited_label="📄 白名单",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/白名单菜单",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                )
-                            ]
-                        ),
-                        InlineKeyboardRow(
-                            buttons=[
-                                Button(
-                                    render_data=RenderData(
-                                        label="⚡ 快捷功能",
-                                        visited_label="⚡ 快捷功能",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/快捷功能菜单",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                ),
-                                Button(
-                                    render_data=RenderData(
-                                        label="🗺️ 地图功能",
-                                        visited_label="🗺️ 地图功能",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/地图功能菜单",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                ),
-                            ]
-                        ),
-                        InlineKeyboardRow(
-                            buttons=[
-                                Button(
-                                    render_data=RenderData(
-                                        label="🔍 图鉴搜索",
-                                        visited_label="🔍 图鉴搜索",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/图鉴搜索菜单",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                ),
-                                Button(
-                                    render_data=RenderData(
-                                        label="💾 服务器管理",
-                                        visited_label="💾 服务器管理",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=2,
-                                        data="/服务器管理",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                )
-                            ]
-                        ),
-                        InlineKeyboardRow(
-                            buttons=[
-                                Button(
-                                    render_data=RenderData(
-                                        label="😘 帮助文档",
-                                        visited_label="😘 帮助文档",
-                                        style=1
-                                    ),
-                                    action=Action(
-                                        type=0,
-                                        data="https://docs.terraria.ink/zh/other/CaiBotLite.html",
-                                        permission=Permission(type=2, specify_role_ids=["1", "2", "3"])
-                                    )
-                                )
-                            ]
-                        )
-                    ]
-                )
-            )
-        )
+        help_list_keyboard
     )
 
 

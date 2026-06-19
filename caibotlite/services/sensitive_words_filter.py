@@ -48,7 +48,7 @@ class SensitiveWordsFilter:
                 merged[-1] = (prev_start, max(prev_end, end))
 
         for start, end in merged:
-            text_list[start:end + 1] = '*' * (end - start + 1)
+            text_list[start:end + 1] = '[已过滤]'
 
         return ''.join(text_list)
 
