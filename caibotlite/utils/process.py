@@ -4,7 +4,7 @@ from urllib.parse import quote
 from caibotlite.markdown.image import get_image
 
 PROCESS_ICON_MAP = {
-    "已毕业": "",
+    "已毕业": "Black_Graduation_Cap.webp",
     "月总前": "Map_Icon_Moon_Lord.webp",
     "月亮领主前": "Map_Icon_Moon_Lord.webp",
     "四柱前": "Bestiary_Nebula_Pillar",

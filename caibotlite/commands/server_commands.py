@@ -102,7 +102,10 @@ async def call_server_online(server: Server, group: Group, server_index: int, co
     player_list = result['player_list']
     server_name = filter_all(result['server_name'])
     process_icon = get_process_icon(result['process'])
-    process = f" 「{process_icon}{filter_all(result['process'])}」" if result['process'] else ""
+    if process_icon:
+        process = f" 「{process_icon} {filter_all(result['process'])}」" if result['process'] else ""
+    else:
+        process = f" 「{filter_all(result['process'])}」" if result['process'] else ""
     current_online = int(result['current_online'])
     max_online = int(result['max_online'])
     ConnectionManager.connected_servers[server.token].server_info.server_name = server_name
