@@ -10,7 +10,7 @@ from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
 from caibotlite.markdown.image import get_user_avatar
-from caibotlite.markdown.keyboard import help_doc_keyboard, cmd_keyboard, download_keyboard
+from caibotlite.markdown.keyboard import help_doc_keyboard, cmd_keyboard, download_keyboard, rank_page_keyboard
 from caibotlite.markdown.tag import cmd_input_tag, copy_link_tag
 from caibotlite.models import Server, GroupConfig, Package, Group
 from caibotlite.models.server_error_exception import ServerError
@@ -724,7 +724,7 @@ async def _(args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 排行\n" +
                 "无效排行！\n" +
-                f"当前服务器支持的排行榜类型: {filter_all(', '.join(payload['support_rank_types']))}"
+                f"当前服务器支持的排行榜类型: **{filter_all(', '.join(payload['support_rank_types']))}**"
             )
         )
 
@@ -770,7 +770,7 @@ async def _(args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 排行\n" +
                 "无效排行！\n" +
-                f"当前服务器支持的排行榜类型: {filter_all(', '.join(payload['support_rank_types']))}"
+                f"当前服务器支持的排行榜类型: **{filter_all(', '.join(payload['support_rank_types']))}**"
             )
         )
     if payload["need_arg"]:
@@ -782,12 +782,13 @@ async def _(args: Args, group: CurrentGroup):
                 MessageSegment.markdown(
                     "## 🍥 排行\n" +
                     filter_all(payload["message"]) + "\n" +
-                    f"支持参数: {filter_all(', '.join(payload['support_args']))}"
+                    f"支持参数: **{filter_all(', '.join(payload['support_args']))}**"
                 )
             )
     else:
         if len(args) == 3 and args[2].isdigit():
             page = int(args[2])
+        arg = None
 
     rank_data = payload["rank"]
     rank_lines = dict(rank_data["rank_lines"])
@@ -795,7 +796,8 @@ async def _(args: Args, group: CurrentGroup):
         MessageSegment.markdown(
             f"## 🍥 {filter_all(rank_data['title'])}\n" +
             filter_all(build_rank(rank_lines, page))
-        )
+        ) +
+        rank_page_keyboard(server_number, rank_type, arg, page)
     )
 
 
@@ -818,7 +820,7 @@ async def _(group: CurrentGroup):
                            f"- 地址: {copy_link_tag(filter_all(ip))}\n"
                            f"- 端口: {copy_link_tag(str(server.port))}")
             if info.enable_whitelist:
-                results.append(f"> 本服务器已启用Cai白名单")
+                results.append(f"> 本服务器已启用**白名单**")
         else:
             results.append(f"๑{server_number}๑ ❌ 服务器处于离线状态")
     await server_list.finish(
@@ -877,7 +879,6 @@ async def _(args: Args, group: CurrentGroup):
     await server_info.finish(
         MessageSegment.markdown(
             "## 🍥 服务器信息\n" +
-            f"- 服务器[{server_number}]的详细信息: \n" +
             f"- 地址: {filter_all(ip)}:{server.port}\n" +
             f"- 世界名: {filter_all(world)}\n" +
             f"- 游戏版本: {filter_all(server_version)}\n" +

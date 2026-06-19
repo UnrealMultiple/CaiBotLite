@@ -228,3 +228,42 @@ def download_keyboard(url: str) -> MessageSegment:
             )
         )
     )
+
+
+def rank_page_keyboard(server_index: str, rank_type: str, arg: str | None, page: int) -> MessageSegment:
+    return MessageSegment.keyboard(
+        MessageKeyboard(
+            content=InlineKeyboard(
+                rows=[
+                    InlineKeyboardRow(
+                        buttons=[
+                            Button(
+                                render_data=RenderData(
+                                    label="⬅️ 上一页",
+                                    visited_label="⬅️ 上一页",
+                                    style=1
+                                ),
+                                action=Action(
+                                    type=2,
+                                    data=f"/排行 {server_index} {rank_type} {arg if arg else ""} {page - 1}",
+                                    permission=Permission(type=2)
+                                )
+                            ),
+                            Button(
+                                render_data=RenderData(
+                                    label="➡️ 下一页",
+                                    visited_label="➡️ 下一页",
+                                    style=1
+                                ),
+                                action=Action(
+                                    type=2,
+                                    data=f"/排行 {server_index} {rank_type} {arg if arg else ""} {page + 1}",
+                                    permission=Permission(type=2)
+                                )
+                            )
+                        ]
+                    )
+                ]
+            )
+        )
+    )
