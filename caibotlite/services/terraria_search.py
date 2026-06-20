@@ -106,7 +106,7 @@ class TerrariaSearch:
             lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
-            lines.append(f"> {item['Description']}")
+            lines.extend(f"> {line}" for line in item['Description'].splitlines())
 
         return "\n".join(lines)
 
@@ -139,7 +139,7 @@ class TerrariaSearch:
             lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
-            lines.append(f"> {item['Description']}")
+            lines.extend(f"> {line}" for line in item['Description'].splitlines())
 
         return "\n".join(lines)
 
@@ -176,7 +176,7 @@ class TerrariaSearch:
             lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
-            lines.append(f"> {item['Description']}")
+            lines.extend(f"> {line}" for line in item['Description'].splitlines())
 
         return "\n".join(lines)
 
