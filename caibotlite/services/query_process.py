@@ -167,7 +167,9 @@ class QueryProcess:
         if not os.path.exists(icon_path):
             logger.error("[query_process]世界图标不存在: " + icon_path)
             icon_path = "assets/images/world_icon/IconCrimson.png"
+
         icon = cls.transparent_back(Image.open(icon_path))
+        icon = icon.resize((int(160 * 0.65), int(158 * 0.65)))
         _, _, _, a = icon.split()
         img.paste(icon, (int((max_w - w) / 2 - 160 * 0.65), 0), mask=a)
 
