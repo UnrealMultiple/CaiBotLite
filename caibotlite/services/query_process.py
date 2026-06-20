@@ -1,3 +1,4 @@
+import os
 import time
 from PIL import Image, ImageDraw, ImageFont
 from PIL.Image import Resampling
@@ -162,8 +163,11 @@ class QueryProcess:
             _, _, w, h = draw.textbbox((0, 0), process_data["world_name"], font=ft_100)
             draw.text(((max_w - w) / 2, 0), process_data["world_name"], font=ft_100)
 
-        icon = cls.transparent_back(Image.open(f"assets/images/world_icon/{process_data['world_icon']}.png"))
-        icon = icon.resize((int(160 * 0.65), int(158 * 0.65)))
+        icon_path = f"assets/images/world_icon/{process_data['world_icon']}.png"
+        if not os.path.exists(icon_path):
+            logger.error("[query_process]世界图标不存在: " + icon_path)
+            icon_path = "assets/images/world_icon/IconCrimson.png"
+        icon = cls.transparent_back(Image.open(icon_path))
         _, _, _, a = icon.split()
         img.paste(icon, (int((max_w - w) / 2 - 160 * 0.65), 0), mask=a)
 

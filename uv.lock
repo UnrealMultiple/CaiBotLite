@@ -188,7 +188,7 @@ wheels = [
 
 [[package]]
 name = "caibotlite"
-version = "2026.2.15"
+version = "2026.6.20"
 source = { virtual = "." }
 dependencies = [
     { name = "aiosqlite" },
