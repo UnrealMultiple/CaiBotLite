@@ -103,7 +103,7 @@ class TerrariaSearch:
             lines.append("- 价值: **无价**")
 
         if item['Alias']:
-            lines.append("- 别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
             lines.append(f"> {item['Description']}")
@@ -136,7 +136,7 @@ class TerrariaSearch:
             lines.append("- 价值: **无价**")
 
         if item['Alias']:
-            lines.append("- 别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
             lines.append(f"> {item['Description']}")
@@ -173,7 +173,7 @@ class TerrariaSearch:
         lines += [f"**{item['Name']}** (ID: **{buff_id}**)"]
 
         if item['Alias']:
-            lines.append("- 别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         if item['Description'] != "":
             lines.append(f"> {item['Description']}")
@@ -185,7 +185,7 @@ class TerrariaSearch:
         lines = [f"**{item['Name']}** (ID: **{item['PrefixId']}**)"]
 
         if item['Alias']:
-            lines.append("- 别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: **" + ",".join(item['Alias']) + "**")
 
         return "\n".join(lines)
 
