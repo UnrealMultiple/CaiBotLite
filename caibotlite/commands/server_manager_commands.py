@@ -13,7 +13,7 @@ from caibotlite.services import PackageWriter
 
 add_server = on_command("添加服务器", force_whitespace=True, block=True)
 
-
+@add_server.handle()
 async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_server.finish(
