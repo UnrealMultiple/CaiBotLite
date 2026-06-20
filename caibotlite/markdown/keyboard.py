@@ -176,7 +176,7 @@ help_list_keyboard = MessageSegment.keyboard(
 )
 
 
-def cmd_keyboard(server_index: str, cmd: str) -> MessageSegment:
+def reedit_keyboard(cmd: str) -> MessageSegment:
     return MessageSegment.keyboard(
         MessageKeyboard(
             content=InlineKeyboard(
@@ -185,13 +185,13 @@ def cmd_keyboard(server_index: str, cmd: str) -> MessageSegment:
                         buttons=[
                             Button(
                                 render_data=RenderData(
-                                    label="📄 重新编辑",
-                                    visited_label="📄 重新编辑",
+                                    label="📝 重新编辑",
+                                    visited_label="📝 重新编辑",
                                     style=1
                                 ),
                                 action=Action(
                                     type=2,
-                                    data=f"/远程命令 {server_index} {cmd}",
+                                    data=cmd,
                                     permission=Permission(type=2)
                                 )
                             )
@@ -267,3 +267,77 @@ def rank_page_keyboard(server_index: str, rank_type: str, arg: str | None, page:
             )
         )
     )
+
+
+whitelist_success_keyboard = MessageSegment.keyboard(
+    MessageKeyboard(
+        content=InlineKeyboard(
+            rows=[
+                InlineKeyboardRow(
+                    buttons=[
+                        Button(
+                            render_data=RenderData(
+                                label="💾 服务器列表",
+                                visited_label="💾 服务器列表",
+                                style=1
+                            ),
+                            action=Action(
+                                type=2,
+                                data="/服务器列表",
+                                permission=Permission(type=2)
+                            )
+                        )
+                    ]
+                )
+            ]
+        )
+    ))
+
+whitelist_bound_keyboard = MessageSegment.keyboard(
+    MessageKeyboard(
+        content=InlineKeyboard(
+            rows=[
+                InlineKeyboardRow(
+                    buttons=[
+                        Button(
+                            render_data=RenderData(
+                                label="✏️ 修改白名单",
+                                visited_label="✏️ 修改白名单",
+                                style=1
+                            ),
+                            action=Action(
+                                type=2,
+                                data="/修改白名单",
+                                permission=Permission(type=2)
+                            )
+                        )
+                    ]
+                )
+            ]
+        )
+    ))
+
+add_whitelist_keyboard = MessageSegment.keyboard(
+    MessageKeyboard(
+        content=InlineKeyboard(
+            rows=[
+                InlineKeyboardRow(
+                    buttons=[
+                        Button(
+                            render_data=RenderData(
+                                label="📄 添加白名单",
+                                visited_label="📄 添加白名单",
+                                style=1
+                            ),
+                            action=Action(
+                                type=2,
+                                data="/添加白名单",
+                                permission=Permission(type=2)
+                            )
+                        )
+                    ]
+                )
+            ]
+        )
+    )
+)

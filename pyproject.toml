@@ -26,5 +26,6 @@ dependencies = [
     "sqlalchemy[asyncio]",
     "geoip2",
     "keyboard",
-    "limits>=5.8.0",
+    "limits",
+    "httpx",
 ]

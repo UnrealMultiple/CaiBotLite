@@ -10,7 +10,16 @@ from caibotlite.services.file import FileService
 app = nonebot.get_app()
 app: FastAPI
 
-ICON_DIR = Path(__file__).resolve().parents[2] / "assets" / "images" / "icons"
+IMAGES_DIR = Path(__file__).resolve().parents[2] / "assets" / "images"
+ICON_DIR = IMAGES_DIR / "icons"
+
+# category -> (subfolder, filename_template)
+CATEGORY_DIR_MAP = {
+    "item":       ("items",       "Item_{}.png"),
+    "npc":        ("npcs",        "NPC_{}.png"),
+    "projectile": ("projectiles", "Projectile_{}.png"),
+    "buff":       ("buffs",       "Buff_{}.png"),
+}
 
 
 @app.get("/download/{file_id}")
@@ -45,6 +54,29 @@ async def download_file(name: str):
             filename=full_path.name,
             media_type='application/octet-stream',
         )
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/image/{category}/{item_id}")
+async def get_resource_image(category: str, item_id: int):
+    """Serve terraria resource images by category and numeric ID.
+    category: item | npc | projectile | buff
+    """
+    try:
+        if category not in CATEGORY_DIR_MAP:
+            raise HTTPException(status_code=404, detail="未知的资源类型")
+        folder, template = CATEGORY_DIR_MAP[category]
+        filename = template.format(item_id)
+        full_path = (IMAGES_DIR / folder / filename).resolve()
+        base_dir = (IMAGES_DIR / folder).resolve()
+        if full_path.parent != base_dir:
+            raise HTTPException(status_code=403, detail="找不到这张图片捏~")
+        if not full_path.is_file():
+            raise HTTPException(status_code=404, detail="找不到这张图片喵~")
+        return FileResponse(path=full_path)
     except HTTPException:
         raise
     except Exception as e:

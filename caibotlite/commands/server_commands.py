@@ -10,7 +10,8 @@ from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
 from caibotlite.markdown.image import get_users_avatar
-from caibotlite.markdown.keyboard import help_doc_keyboard, cmd_keyboard, download_keyboard, rank_page_keyboard
+from caibotlite.markdown.keyboard import help_doc_keyboard, reedit_keyboard, download_keyboard, rank_page_keyboard, \
+    add_whitelist_keyboard
 from caibotlite.markdown.tag import cmd_input_tag, copy_link_tag
 from caibotlite.models import Server, GroupConfig, Package, Group
 from caibotlite.models.server_error_exception import ServerError
@@ -49,7 +50,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                     "## 🍥 远程指令\n"
                     "格式错误！\n"
                     f"正确格式: {cmd_input_tag("/远程指令")} <服务器序号> <命令内容>"
-                )
+                ) +
+                reedit_keyboard(event.get_plaintext())
             )
         server_num = args[0]
 
@@ -82,7 +84,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                     "## 🍥 远程指令\n" +
                     "\n\n".join(results)
                 ) +
-                cmd_keyboard(server_num, raw_command)
+                reedit_keyboard(event.get_plaintext())
             )
 
         if not server_num.isdigit() or int(server_num) > len(group.servers):
@@ -91,7 +93,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                     f"## 🍥 远程指令\n" +
                     f"服务器序号错误！"
                 ) +
-                cmd_keyboard(server_num, raw_command)
+                reedit_keyboard(event.get_plaintext())
             )
 
         server_index = int(server_num) - 1
@@ -101,7 +103,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                 f"## 🍥 远程指令\n" +
                 f"{result}"
             ) +
-            cmd_keyboard(server_num, raw_command)
+            reedit_keyboard(event.get_plaintext())
         )
     else:
         await remote_command.finish(
@@ -194,14 +196,15 @@ world_progress = on_command("进度", aliases={"进度查询", "查询进度"}, 
 
 
 @world_progress.handle()
-async def _(args: Args, group: CurrentGroup):
+async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     if len(args) != 1:
         await world_progress.finish(
             MessageSegment.markdown(
                 "## 🍥 进度查询\n" +
                 f"格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/进度查询')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
@@ -277,7 +280,7 @@ async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Sess
                 "## 🍥 自踢\n" +
                 "你还没有添加白名单！\n" +
                 f"发送\"{cmd_input_tag('/添加白名单')} <名字>\"来添加白名单"
-            )
+            ) + add_whitelist_keyboard
         )
 
     package_writer = PackageWriter(PackageType.SELF_KICK, False)
@@ -311,7 +314,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                 "## 🍥 查看地图\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/查看地图')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
     if not GroupManager.check_server_num_ok(group, args[0]):
         await get_map_png.finish(
@@ -378,7 +382,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                 "## 🍥 下载地图\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/下载地图')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
@@ -386,7 +391,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 下载地图\n" +
                 "服务器序号错误！"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     server_number = int(args[0])
@@ -472,7 +478,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
                 "## 🍥 下载小地图\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/下载小地图')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
@@ -480,7 +487,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 下载小地图\n" +
                 "服务器序号错误！"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     server_number = int(args[0])
@@ -551,14 +559,15 @@ get_plugin_list = on_command("插件列表", aliases={"模组列表"}, force_whi
 
 
 @get_plugin_list.handle()
-async def _(args: Args, group: CurrentGroup):
+async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     if len(args) != 1:
         await get_plugin_list.finish(
             MessageSegment.markdown(
                 "## 🍥 插件列表\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/插件列表')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
@@ -566,7 +575,8 @@ async def _(args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 插件列表\n" +
                 "服务器序号错误！"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     server_number = int(args[0])
@@ -617,21 +627,24 @@ look_bag = on_command("查背包", aliases={"查看背包", "查询背包"}, for
 
 
 @look_bag.handle()
-async def _(args: Args, group: CurrentGroup):
+async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     if len(args) != 2:
         await look_bag.finish(
             MessageSegment.markdown(
                 "## 🍥 查背包\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/查背包')} <服务器序号> <玩家名>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
         await look_bag.finish(
             MessageSegment.markdown(
-                "服务器序号错误！"
-            )
+                "## 🍥 查背包\n" +
+                "服务器序号错误！\n"
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     server_number = int(args[0])
@@ -694,14 +707,15 @@ rank = on_command("排行", force_whitespace=True, block=True)
 
 
 @rank.handle()
-async def _(args: Args, group: CurrentGroup):
+async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     if 1 > len(args) or len(args) > 4:
         await rank.finish(
             MessageSegment.markdown(
                 "## 🍥 排行\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/排行')} <服务器序号> <项目> [参数] [页码]"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.check_server_num_ok(group, args[0]):
@@ -709,7 +723,8 @@ async def _(args: Args, group: CurrentGroup):
             MessageSegment.markdown(
                 "## 🍥 排行\n" +
                 "服务器序号错误！"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     server_number = int(args[0])
@@ -727,7 +742,8 @@ async def _(args: Args, group: CurrentGroup):
                 "## 🍥 排行\n" +
                 "无效排行！\n" +
                 f"当前服务器支持的排行榜类型: **{filter_all(', '.join(payload['support_rank_types']))}**"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
 
     rank_type = args[1]
@@ -773,7 +789,8 @@ async def _(args: Args, group: CurrentGroup):
                 "## 🍥 排行\n" +
                 "无效排行！\n" +
                 f"当前服务器支持的排行榜类型: **{filter_all(', '.join(payload['support_rank_types']))}**"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
     if payload["need_arg"]:
         if len(args) == 4 and args[3].isdigit():
@@ -785,7 +802,8 @@ async def _(args: Args, group: CurrentGroup):
                     "## 🍥 排行\n" +
                     filter_all(payload["message"]) + "\n" +
                     f"支持参数: **{filter_all(', '.join(payload['support_args']))}**"
-                )
+                ) +
+                reedit_keyboard(event.get_plaintext())
             )
     else:
         if len(args) == 3 and args[2].isdigit():
@@ -837,14 +855,15 @@ server_info = on_command("服务器信息", force_whitespace=True, block=True)
 
 
 @server_info.handle()
-async def _(args: Args, group: CurrentGroup):
+async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
     if len(args) != 1:
         await server_info.finish(
             MessageSegment.markdown(
                 "## 🍥 服务器信息\n" +
                 "格式错误！\n" +
                 f"正确格式: {cmd_input_tag('/服务器信息')} <服务器序号>"
-            )
+            ) +
+            reedit_keyboard(event.get_plaintext())
         )
     if not GroupManager.check_server_num_ok(group, args[0]):
         await server_info.finish(

@@ -1,11 +1,12 @@
-import io
 import json
+from pathlib import Path
 
 from fuzzywuzzy import fuzz
-from nonebot.adapters.qq import MessageSegment
 from nonebot.log import logger
 
-from caibotlite.services.lookbag import LookBag
+from caibotlite.markdown.image import get_terraria_image
+
+_ASSETS = Path("assets/images")
 
 
 class TerrariaSearch:
@@ -37,173 +38,156 @@ class TerrariaSearch:
         with open("assets/terraria_data/buff_id.json", encoding='utf-8', errors='ignore') as fp:
             cls.buffs = json.loads(fp.read())
 
-        with open("assets/terraria_data/config_id.json", encoding='utf-8', errors='ignore') as fp:
-            cls.configs = json.loads(fp.read())
-
-        with open("assets/terraria_data/permission_id.json", encoding='utf-8', errors='ignore') as fp:
-            cls.permissions = json.loads(fp.read())
-
     logger.success("[terraria_search]物品、前缀、生物、buffs、弹幕已缓存!")
 
     @classmethod
     def _get_item_info_string(cls, item):
-        info = [f"物品名: {item['Name']}", f"ID: {item['ItemId']}", f"最大堆叠: {item['MaxStack']}"]
+        item_id = item['ItemId']
+        lines = []
+
+        # Inline image (only when the local file actually exists)
+        if (_ASSETS / "items" / f"Item_{item_id}.png").is_file():
+            lines.append(get_terraria_image("item", item_id))
+
+        lines += [f"**{item['Name']}** (ID: **{item_id}**)",
+                  f"- 最大堆叠: **{item['MaxStack']}**"]
 
         if item['WeaponType']:
-            info.append(f"武器类型: {item['WeaponType']}")
+            lines.append(f"- 武器类型: **{item['WeaponType']}**")
 
         if item['Damage'] != -1:
-            info.append(f"伤害: {item['Damage']}")
+            lines.append(f"- 伤害: **{item['Damage']}**")
 
         if item['Crit'] != 0:
-            info.append(f"击退: +{item['Crit']}%")
+            lines.append(f"- 击退: **+{item['Crit']}%**")
 
         if item['Shoot'] != 0:
-            info.append(f"发射: {item['ShootName']} ({item['Shoot']})")
+            lines.append(f"- 发射: **{item['ShootName']}** (**{item['Shoot']}**)")
 
         if item['Mana'] != 0:
-            info.append(f"消耗魔力: {item['Mana']}点")
+            lines.append(f"- 消耗魔力: **{item['Mana']}点**")
 
         if item['Pick'] != 0:
-            info.append(f"镐力: +{item['Pick']}%")
+            lines.append(f"- 镐力: **+{item['Pick']}%**")
 
         if item['Axe'] != 0:
-            info.append(f"斧力: +{item['Axe']}%")
+            lines.append(f"- 斧力: **+{item['Axe']}%**")
 
         if item['Hammer'] != 0:
-            info.append(f"锤力: +{item['Hammer']}%")
+            lines.append(f"- 锤力: **+{item['Hammer']}%**")
 
         if item['HealLife'] != 0:
-            info.append(f"恢复生命: {item['HealLife']}点")
+            lines.append(f"- 恢复生命: **{item['HealLife']}点**")
 
         if item['HealMana'] != 0:
-            info.append(f"恢复魔力: {item['HealMana']}点")
+            lines.append(f"- 恢复魔力: **{item['HealMana']}点**")
 
         if item['BuffType'] != 0:
-            info.append(f"增益: {item['BuffName']} ({item['BuffType']})")
+            lines.append(f"- 增益: **{item['BuffName']}** (**{item['BuffType']}**)")
 
         if item['CreateTile'] != -1:
-            info.append(f"物块ID: {item['CreateTile']} ({item['PlaceStyle']})")
+            lines.append(f"- 物块ID: **{item['CreateTile']}** (**{item['PlaceStyle']}**)")
 
         if item['CreateWall'] != -1:
-            info.append(f"墙ID: {item['CreateWall']}")
+            lines.append(f"- 墙ID: **{item['CreateWall']}**")
 
         monetary_value = item['MonetaryValue']
-
         if any(value != 0 for value in monetary_value.values()):
             monetary_info = (
-                f"价值: {str(monetary_value['Platinum']) + '铂' if monetary_value['Platinum'] != 0 else ''}"
+                f"- 价值: **{str(monetary_value['Platinum']) + '铂' if monetary_value['Platinum'] != 0 else ''}"
                 f"{str(monetary_value['Gold']) + '金' if monetary_value['Gold'] != 0 else ''}"
                 f"{str(monetary_value['Silver']) + '银' if monetary_value['Silver'] != 0 else ''}"
-                f"{str(monetary_value['Copper']) + '铜' if monetary_value['Copper'] != 0 else ''}")
-            info.append(monetary_info)
+                f"{str(monetary_value['Copper']) + '铜' if monetary_value['Copper'] != 0 else ''}**")
+            lines.append(monetary_info)
         else:
-            info.append("价值: 无价")
-
-        if item['Description'] != "":
-            info.append(f"{item['Description']}", )
+            lines.append("- 价值: **无价**")
 
         if item['Alias']:
-            info.append("别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: " + ",".join(item['Alias']))
 
-        byte_arr = io.BytesIO()
-        image_key = f"item_{item['ItemId']}"
+        if item['Description'] != "":
+            lines.append(f"> {item['Description']}")
 
-        if image_key in LookBag.image_cache:
-            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
-            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
-
-        return MessageSegment.text("\n".join(info))
+        return "\n".join(lines)
 
     @classmethod
     def _get_npc_info_string(cls, item):
-        info = [f"生物名: {item['Name']}", f"ID: {item['NpcId']}", f"生命值: {item['LifeMax']}"]
+        npc_id = item['NpcId']
+        lines = []
+
+        if (_ASSETS / "npcs" / f"NPC_{npc_id}.png").is_file():
+            lines.append(get_terraria_image("npc", npc_id))
+
+        lines += [f"**{item['Name']}** (ID: **{npc_id}**)",
+                  f"- 生命值: **{item['LifeMax']}**"]
 
         if item['Damage'] != -1:
-            info.append(f"伤害: {item['Damage']}")
+            lines.append(f"- 伤害: **{item['Damage']}**")
 
         monetary_value = item['MonetaryValue']
-
         if any(value != 0 for value in monetary_value.values()):
             monetary_info = (
-                f"价值: {str(monetary_value['Platinum']) + '铂' if monetary_value['Platinum'] != 0 else ''}"
+                f"- 价值: **{str(monetary_value['Platinum']) + '铂' if monetary_value['Platinum'] != 0 else ''}"
                 f"{str(monetary_value['Gold']) + '金' if monetary_value['Gold'] != 0 else ''}"
                 f"{str(monetary_value['Silver']) + '银' if monetary_value['Silver'] != 0 else ''}"
-                f"{str(monetary_value['Copper']) + '铜' if monetary_value['Copper'] != 0 else ''}")
-            info.append(monetary_info)
+                f"{str(monetary_value['Copper']) + '铜' if monetary_value['Copper'] != 0 else ''}**")
+            lines.append(monetary_info)
         else:
-            info.append("价值: 无价")
-
-        if item['Description'] != "":
-            info.append(f"{item['Description']}")
+            lines.append("- 价值: **无价**")
 
         if item['Alias']:
-            info.append("别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: " + ",".join(item['Alias']))
 
-        byte_arr = io.BytesIO()
-        image_key = f"npc_{item['NpcId']}"
+        if item['Description'] != "":
+            lines.append(f"> {item['Description']}")
 
-        if image_key in LookBag.image_cache:
-            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
-            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
-
-        return MessageSegment.text("\n".join(info))
+        return "\n".join(lines)
 
     @classmethod
     def _get_project_info_string(cls, item):
-        info = [f"弹幕名: {item['Name']}", f"ID: {item['ProjId']}", f"AI类型: {item['AiStyle']}",
-                f"友方: {item['Friendly']}"]
+        proj_id = item['ProjId']
+        lines = []
+
+        if (_ASSETS / "projectiles" / f"Projectile_{proj_id}.png").is_file():
+            lines.append(get_terraria_image("projectile", proj_id))
+
+        lines += [
+            f"**{item['Name']}** (ID: **{proj_id}**)",
+            f"- AI类型: **{item['AiStyle']}**",
+            f"- 友方: **{item['Friendly']}**",
+        ]
 
         if item['Alias']:
-            info.append("别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: " + ",".join(item['Alias']))
 
-        byte_arr = io.BytesIO()
-        image_key = f"projectile_{item['ProjId']}"
-
-        if image_key in LookBag.image_cache:
-            LookBag.image_cache[image_key].save(byte_arr, format='PNG', save_all=True)
-            return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
-
-        return MessageSegment.text("\n".join(info))
+        return "\n".join(lines)
 
     @classmethod
     def _get_buff_info_string(cls, item):
-        info = [f"增益名: {item['Name']}", f"ID: {item['BuffId']}"]
-        if item['Description'] != "":
-            info.append(f"{item['Description']}")
+        buff_id = item['BuffId']
+        lines = []
+
+        if (_ASSETS / "buffs" / f"Buff_{buff_id}.png").is_file():
+            lines.append(get_terraria_image("buff", buff_id))
+
+        lines += [f"**{item['Name']}** (ID: **{buff_id}**)"]
 
         if item['Alias']:
-            info.append("别名: " + ",".join(item['Alias']))
-        byte_arr = io.BytesIO()
-        LookBag.image_cache[f"buff_{item['BuffId']}"].save(byte_arr, format='PNG')
-        return MessageSegment.text("\n".join(info)) + MessageSegment.file_image(byte_arr)
+            lines.append("- 别名: " + ",".join(item['Alias']))
+
+        if item['Description'] != "":
+            lines.append(f"> {item['Description']}")
+
+        return "\n".join(lines)
 
     @classmethod
     def _get_prefix_info_string(cls, item):
-        info = [f"修饰语: {item['Name']}", f"ID: {item['PrefixId']}"]
+        lines = [f"**{item['Name']}** (ID: **{item['PrefixId']}**)"]
 
         if item['Alias']:
-            info.append("别名: " + ",".join(item['Alias']))
+            lines.append("- 别名: " + ",".join(item['Alias']))
 
-        return MessageSegment.text("\n".join(info))
-
-    @classmethod
-    def _get_config_info_string(cls, item):
-        info = [f"键: {item['Name']}", f"配置文件: {item['Path']}", f"类型: {item['Type']}",
-                f"默认值: {item['Default']}", f"描述: {item['Description']}"]
-
-        return MessageSegment.text("\n".join(info))
-
-    @classmethod
-    def _get_permission_info_string(cls, item):
-        info = [f"权限名: {item['Name']}"]
-
-        if item['RelevantCommands']:
-            info.append("相关命令: " + ",".join(item['RelevantCommands']))
-
-        info.append(f"描述: {item['Description']}")
-
-        return MessageSegment.text("\n".join(info))
+        return "\n".join(lines)
 
     @classmethod
     def _enhanced_search(cls, query, dataset, id_field, name_field, alias_field='Alias'):
@@ -299,13 +283,3 @@ class TerrariaSearch:
     @classmethod
     def search_prefix(cls, query):
         return cls._get_search_result(query, cls.prefixes, "PrefixId", "Name", cls._get_prefix_info_string)
-
-    @classmethod
-    def search_config(cls, query):
-        return cls._get_search_result(query, cls.configs, "ShortName", "Name", cls._get_config_info_string,
-                                      "Description")
-
-    @classmethod
-    def search_permission(cls, query):
-        return cls._get_search_result(query, cls.permissions, "ShortName", "Name", cls._get_permission_info_string,
-                                      "Description")
