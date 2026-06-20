@@ -147,13 +147,13 @@ async def _(group: OriginalGroup, session: Session):
         if user is None:
             admin_names.append(f"无白名单({i})")
         else:
-            admin_names.append(f"**{user.name}**({user_avatar(user.open_id)}{at_user_tag(user.open_id)})")
+            admin_names.append(f"**{user.name}**")
     for i in group.black_list:
         user = await UserManager.get_user_by_open_id(session, group.open_id, i)
         if user is None:
             black_names.append(f"无白名单({i})")
         else:
-            black_names.append(f"**{user.name}**({user_avatar(user.open_id)}{at_user_tag(user.open_id)})")
+            black_names.append(f"**{user.name}**")
     await get_group_info.finish(
         MessageSegment.markdown(
             "## 📋 群信息\n" +
@@ -181,7 +181,7 @@ async def _(group: CurrentGroup, session: Session):
         if user is None:
             admins.append(f"无白名单({i})")
         else:
-            admins.append(f"**{user.name}**({user_avatar(user.open_id)}{at_user_tag(user.open_id)})")
+            admins.append(f"{user_avatar(user.open_id)} **{user.name}**")
     if len(admins) == 0:
         await list_admin.finish(
             MessageSegment.markdown(
@@ -194,7 +194,7 @@ async def _(group: CurrentGroup, session: Session):
         await list_admin.finish(
             MessageSegment.markdown(
                 "## 🍥 BOT管理\n" +
-                "\n".join([f"- {admin}" for admin in admins])
+                "\n".join([f"{admin}" for admin in admins])
             )
         )
 
@@ -347,7 +347,7 @@ async def _(group: CurrentGroup, session: Session):
         if user is None:
             names.append(f"无白名单({i})")
         else:
-            names.append(f"**{user.name}**({user_avatar(user.open_id)}{at_user_tag(user.open_id)})")
+            names.append(f"{user_avatar(user.open_id)} **{user.name}**")
 
     if len(names) == 0:
         await list_blacklist.finish(
@@ -360,7 +360,7 @@ async def _(group: CurrentGroup, session: Session):
         await list_blacklist.finish(
             MessageSegment.markdown(
                 "## 🚫 BOT黑名单\n" +
-                "\n".join([f"- **{name}**" for name in names])
+                "\n".join([f"- {name}" for name in names])
             )
         )
 
