@@ -185,19 +185,7 @@ help_list_keyboard = MessageSegment.keyboard(
                                     type=2, specify_role_ids=["1", "2", "3"]
                                 ),
                             ),
-                        ),
-                        Button(
-                            render_data=RenderData(
-                                label="🙏 加入反馈群",
-                                visited_label="🙏 加入反馈群",
-                                style=1,
-                            ),
-                            action=Action(
-                                type=0,
-                                data="https://qm.qq.com/q/K4icZbgwWy",
-                                permission=Permission(type=2),
-                            ),
-                        ),
+                        )
                     ]
                 ),
             ]
