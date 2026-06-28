@@ -1,14 +1,5 @@
 from nonebot import on_command, on_message
 from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
-from nonebot.adapters.qq.models import (
-    MessageKeyboard,
-    InlineKeyboard,
-    InlineKeyboardRow,
-    RenderData,
-    Action,
-    Permission,
-)
-from nonebot.adapters.qq import InteractionCreateEvent
 
 from caibotlite.markdown.keyboard import help_list_keyboard
 from caibotlite.markdown.tag import cmd_input_tag
@@ -143,18 +134,24 @@ async def _(event: GroupAtMessageCreateEvent):
 
     if not event.get_plaintext().strip():
         await command_helper.finish(
-            f'我不是AI捏, @我也没用喵~\n使用"{cmd_input_tag("/帮助")}"查询命令列表'
+            MessageSegment.markdown(
+                f'我不是AI捏, @我也没用喵~\n使用"{cmd_input_tag("/帮助")}"查询命令列表'
+            )
         )
 
     command_name = event.get_plaintext().strip().split(maxsplit=1)[0].lstrip("/ ")
     like_commands = match_like_command(command_name)
     if len(like_commands) == 0:
         await command_helper.finish(
-            f'没有找到匹配的命令呢~\n使用"{cmd_input_tag("/帮助")}"查询命令列表'
+            MessageSegment.markdown(
+                f'没有找到匹配的命令呢~\n使用"{cmd_input_tag("/帮助")}"查询命令列表'
+            )
         )
 
     like_commands_with_tag = [cmd_input_tag(i) for i in like_commands]
 
     await command_helper.finish(
-        f"没有任何匹配的命令呢~\n猜你想要: {', '.join(like_commands_with_tag)}"
+        MessageSegment.markdown(
+            f"没有任何匹配的命令呢~\n猜你想要: {', '.join(like_commands_with_tag)}"
+        )
     )

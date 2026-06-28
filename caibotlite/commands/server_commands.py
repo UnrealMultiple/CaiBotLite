@@ -4,7 +4,11 @@ import io
 import socket
 
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
@@ -55,7 +59,11 @@ remote_command = on_command(
 
 
 @remote_command.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if GroupManager.has_permission(group, event.author.union_openid):
         if len(args) < 2:
             await remote_command.finish(
@@ -219,7 +227,11 @@ world_progress = on_command(
 
 
 @world_progress.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if len(args) != 1:
         await world_progress.finish(
             MessageSegment.markdown(
@@ -288,7 +300,11 @@ self_kick = on_command(
 
 
 @self_kick.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )
@@ -314,7 +330,11 @@ get_map_png = on_command("查看地图", force_whitespace=True, block=True)
 
 
 @get_map_png.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if (
         not GroupManager.has_permission(group, event.author.union_openid)
         and not group.config.allow_default_getmapimage
@@ -374,7 +394,11 @@ get_world_file = on_command("下载地图", force_whitespace=True, block=True)
 
 
 @get_world_file.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if (
         not GroupManager.has_permission(group, event.author.union_openid)
         and not group.config.allow_default_getworldfile
@@ -464,7 +488,11 @@ get_map_file = on_command("下载小地图", force_whitespace=True, block=True)
 
 
 @get_map_file.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if (
         not GroupManager.has_permission(group, event.author.union_openid)
         and not group.config.allow_default_getmapfile
@@ -556,7 +584,11 @@ get_plugin_list = on_command(
 
 
 @get_plugin_list.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if len(args) != 1:
         await get_plugin_list.finish(
             MessageSegment.markdown(
@@ -623,7 +655,11 @@ look_bag = on_command(
 
 
 @look_bag.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if len(args) != 2:
         await look_bag.finish(
             MessageSegment.markdown(
@@ -691,7 +727,11 @@ rank = on_command("排行", force_whitespace=True, block=True)
 
 
 @rank.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if 1 > len(args) or len(args) > 4:
         await rank.finish(
             MessageSegment.markdown(
@@ -831,7 +871,11 @@ server_info = on_command("服务器信息", force_whitespace=True, block=True)
 
 
 @server_info.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+):
     if len(args) != 1:
         await server_info.finish(
             MessageSegment.markdown(

@@ -9,6 +9,7 @@ from nonebot.adapters.qq.models import (
     Permission,
 )
 
+from caibotlite.constants import BOT_QQ, BOT_UID
 from caibotlite.utils import text
 
 help_doc_keyboard = MessageSegment.keyboard(
@@ -159,6 +160,18 @@ help_list_keyboard = MessageSegment.keyboard(
                 ),
                 InlineKeyboardRow(
                     buttons=[
+                        Button(
+                            render_data=RenderData(
+                                label="🔒 主动权限",
+                                visited_label="🔒 主动权限",
+                                style=1,
+                            ),
+                            action=Action(
+                                type=2,
+                                data="/主动权限",
+                                permission=Permission(type=1),
+                            ),
+                        ),
                         Button(
                             render_data=RenderData(
                                 label="😘 帮助文档",
@@ -393,3 +406,82 @@ member_add_keyboard = MessageSegment.keyboard(
         )
     )
 )
+
+
+def permission_request_keyboard(group_id: str) -> MessageSegment:
+    return MessageSegment.keyboard(
+        MessageKeyboard(
+            content=InlineKeyboard(
+                rows=[
+                    InlineKeyboardRow(
+                        buttons=[
+                            Button(
+                                render_data=RenderData(
+                                    label="🔒 权限请求",
+                                    visited_label="🔒 权限请求",
+                                    style=1,
+                                ),
+                                action=Action(
+                                    type=0,
+                                    data="https://club.vip.qq.com/transfer?open_kuikly_info="
+                                    "{"
+                                    f'"page_name": "ai_group_service_agreement_pop_page",'
+                                    f'"groupCode":{group_id},"botUin":{BOT_QQ},'
+                                    f'"botUid":"{BOT_UID}","screen":1'
+                                    "}",
+                                    permission=Permission(type=1),
+                                ),
+                            )
+                        ]
+                    )
+                ]
+            )
+        )
+    )
+
+
+def login_request_keyboard(
+    user_openid: str,
+) -> MessageSegment:
+    return MessageSegment.keyboard(
+        MessageKeyboard(
+            content=InlineKeyboard(
+                rows=[
+                    InlineKeyboardRow(
+                        buttons=[
+                            Button(
+                                render_data=RenderData(
+                                    label="✅ 批准",
+                                    visited_label="✅ 批准",
+                                    style=1,
+                                ),
+                                action=Action(
+                                    type=2,
+                                    data="/登录",
+                                    permission=Permission(
+                                        type=0,
+                                        specify_user_ids=[user_openid],
+                                    ),
+                                ),
+                            ),
+                            Button(
+                                render_data=RenderData(
+                                    label="❌ 拒绝",
+                                    visited_label="❌ 拒绝",
+                                    style=1,
+                                ),
+                                action=Action(
+                                    type=2,
+                                    data="/拒绝",
+                                    permission=Permission(
+                                        type=0,
+                                        specify_user_ids=[user_openid],
+                                    ),
+                                ),
+                            ),
+                        ]
+                    )
+                ]
+            )
+        )
+    )

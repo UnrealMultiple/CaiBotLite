@@ -1,5 +1,9 @@
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.dependencies import CurrentGroup, Session
 from caibotlite.managers import LoginManager, UserManager
@@ -12,7 +16,11 @@ login = on_command(
 
 
 @login.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )
@@ -53,7 +61,11 @@ reject_login = on_command(
 
 
 @reject_login.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )
@@ -93,7 +105,11 @@ clean_device = on_command(
 
 
 @clean_device.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )

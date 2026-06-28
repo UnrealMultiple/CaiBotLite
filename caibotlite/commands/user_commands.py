@@ -4,7 +4,11 @@ from typing import List
 
 import httpx
 from nonebot import on_command, logger
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.constants import WhiteList
 from caibotlite.dependencies import Args, CurrentGroup, Session
@@ -25,7 +29,10 @@ bind = on_command("添加白名单", aliases={"绑定"}, force_whitespace=True, 
 
 @bind.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
@@ -126,7 +133,10 @@ rebind = on_command(
 
 @rebind.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
@@ -237,7 +247,10 @@ unbind = on_command("删除白名单", force_whitespace=True, block=True)
 
 @unbind.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await unbind.finish(
@@ -340,7 +353,11 @@ sign = on_command("签到", force_whitespace=True, block=True)
 
 
 @sign.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )
@@ -412,7 +429,11 @@ bank = on_command("查询金币", force_whitespace=True, block=True)
 
 
 @bank.handle()
-async def _(event: GroupAtMessageCreateEvent, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: CurrentGroup,
+    session: Session,
+):
     user = await UserManager.get_user_by_open_id(
         session, group.open_id, event.author.union_openid
     )
@@ -446,7 +467,10 @@ find_player = on_command(
 
 @find_player.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if len(args) == 0:
         await find_player.finish(

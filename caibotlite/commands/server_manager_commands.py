@@ -2,7 +2,11 @@ import socket
 import uuid
 
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.dependencies import Args, Session, CurrentGroup
 from caibotlite.enums import PackageType
@@ -21,7 +25,10 @@ add_server = on_command("添加服务器", force_whitespace=True, block=True)
 
 @add_server.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_server.finish(
@@ -79,7 +86,10 @@ edit_server = on_command("修改服务器", force_whitespace=True, block=True)
 
 @edit_server.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await edit_server.finish(
@@ -140,7 +150,10 @@ del_server = on_command("删除服务器", force_whitespace=True, block=True)
 
 @del_server.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await del_server.finish(

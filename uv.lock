@@ -227,7 +227,7 @@ requires-dist = [
     { name = "pillow" },
     { name = "pyahocorasick" },
     { name = "python-levenshtein" },
-    { name = "ruff", specifier = ">=0.15.20" },
+    { name = "ruff" },
     { name = "sqlalchemy", extras = ["asyncio"] },
 ]
 

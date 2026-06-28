@@ -1,5 +1,9 @@
 from nonebot import on_command
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.dependencies import Args, CurrentGroup, OriginalGroup, Session
 from caibotlite.managers import GroupManager, UserManager
@@ -12,7 +16,10 @@ bind_parent_group = on_command("绑定父群", force_whitespace=True, block=True
 
 @bind_parent_group.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: OriginalGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await bind_parent_group.finish(
@@ -92,7 +99,11 @@ unbind_parent_group = on_command("解绑父群", force_whitespace=True, block=Tr
 
 
 @unbind_parent_group.handle()
-async def _(event: GroupAtMessageCreateEvent, group: OriginalGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    group: OriginalGroup,
+    session: Session,
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await unbind_parent_group.finish(
             MessageSegment.markdown(
@@ -191,7 +202,10 @@ add_admin = on_command(
 
 @add_admin.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_admin.finish(
@@ -256,7 +270,10 @@ del_admin = on_command(
 
 @del_admin.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await del_admin.finish(
@@ -344,7 +361,10 @@ add_blacklist = on_command("添加黑名单", force_whitespace=True, block=True)
 
 @add_blacklist.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_blacklist.finish(
@@ -393,7 +413,10 @@ del_blacklist = on_command(
 
 @del_blacklist.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await del_blacklist.finish(
@@ -440,7 +463,10 @@ settings = on_command("设置", force_whitespace=True, block=True)
 
 @settings.handle()
 async def _(
-    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent,
+    args: Args,
+    group: CurrentGroup,
+    session: Session,
 ):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await settings.finish(

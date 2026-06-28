@@ -1,5 +1,9 @@
 from nonebot import on_command
-from nonebot.adapters.qq import MessageSegment, GroupAtMessageCreateEvent
+from nonebot.adapters.qq import (
+    MessageSegment,
+    GroupAtMessageCreateEvent,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.dependencies import Args
 from caibotlite.markdown.keyboard import reedit_keyboard
@@ -10,7 +14,7 @@ search_item = on_command("si", aliases={"搜物品"}, force_whitespace=True, blo
 
 
 @search_item.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
     if len(args) == 0:
         await search_item.finish(
             MessageSegment.markdown(
@@ -29,7 +33,7 @@ search_npc = on_command("sn", aliases={"搜生物"}, force_whitespace=True, bloc
 
 
 @search_npc.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
     if len(args) == 0:
         await search_npc.finish(
             MessageSegment.markdown(
@@ -48,7 +52,7 @@ search_project = on_command("sp", aliases={"搜弹幕"}, force_whitespace=True, 
 
 
 @search_project.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
     if len(args) == 0:
         await search_project.finish(
             MessageSegment.markdown(
@@ -67,7 +71,7 @@ search_buff = on_command("sb", aliases={"搜增益"}, force_whitespace=True, blo
 
 
 @search_buff.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
     if len(args) == 0:
         await search_buff.finish(
             MessageSegment.markdown(
@@ -86,7 +90,7 @@ search_prefix = on_command("sx", aliases={"搜修饰"}, force_whitespace=True, b
 
 
 @search_prefix.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
     if len(args) == 0:
         await search_prefix.finish(
             MessageSegment.markdown(

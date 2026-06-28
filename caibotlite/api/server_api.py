@@ -26,6 +26,7 @@ from caibotlite.managers.login_manager import LoginManager
 from caibotlite.managers.server_manager import ServerManager
 from caibotlite.managers.token_mannager import TokenManager
 from caibotlite.managers.user_manager import UserManager
+from caibotlite.markdown.keyboard import login_request_keyboard
 from caibotlite.markdown.tag import at_user_tag
 from caibotlite.models.connected_server import ConnectedServer
 from caibotlite.models.package import Package
@@ -201,55 +202,15 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                     connected_server.token, package_writer.build()
                 )
 
-            if need_login and strategy.hit(rate_limit, name):
+            if user is not None and need_login and strategy.hit(rate_limit, name):
                 bot: Bot = nonebot.get_bot()
 
                 login_notice = MessageSegment.markdown(
                     f"{at_user_tag(user.open_id)}\n"
                     "## 🍥 登录\n"
                     f"有新的设备请求登录**{name}**\n"
-                ) + MessageSegment.keyboard(
-                    MessageKeyboard(
-                        content=InlineKeyboard(
-                            rows=[
-                                InlineKeyboardRow(
-                                    buttons=[
-                                        Button(
-                                            render_data=RenderData(
-                                                label="✅ 批准",
-                                                visited_label="✅ 批准",
-                                                style=1,
-                                            ),
-                                            action=Action(
-                                                type=2,
-                                                data="/登录",
-                                                permission=Permission(
-                                                    type=0,
-                                                    specify_user_ids=[user.open_id],
-                                                ),
-                                            ),
-                                        ),
-                                        Button(
-                                            render_data=RenderData(
-                                                label="❌ 拒绝",
-                                                visited_label="❌ 拒绝",
-                                                style=1,
-                                            ),
-                                            action=Action(
-                                                type=2,
-                                                data="/拒绝",
-                                                permission=Permission(
-                                                    type=0,
-                                                    specify_user_ids=[user.open_id],
-                                                ),
-                                            ),
-                                        ),
-                                    ]
-                                )
-                            ]
-                        )
-                    )
-                )
+                ) + login_request_keyboard(user.open_id)
+
                 try:
                     await bot.send_to_group(
                         group_openid=connected_server.group_open_id,

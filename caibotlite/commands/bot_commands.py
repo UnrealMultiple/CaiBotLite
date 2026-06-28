@@ -1,22 +1,31 @@
 from nonebot import on_command, on_message
-from nonebot.adapters.qq import GroupAtMessageCreateEvent, MessageSegment
+from nonebot.adapters.qq import (
+    GroupAtMessageCreateEvent,
+    MessageSegment,
+    GroupMessageCreateEvent,
+)
 
 from caibotlite.constants import BOT_VERSION
-from caibotlite.dependencies import Session
+from caibotlite.dependencies import Session, Args
 from caibotlite.managers import (
     ConnectionManager,
     GroupManager,
     ServerManager,
     UserManager,
 )
-from caibotlite.markdown.keyboard import bot_admin_group_keyboard
+from caibotlite.markdown.keyboard import (
+    bot_admin_group_keyboard,
+    reedit_keyboard,
+    permission_request_keyboard,
+)
+from caibotlite.markdown.tag import cmd_input_tag
 from caibotlite.services import Statistics
 
 about = on_command("关于", force_whitespace=True, block=True)
 
 
 @about.handle()
-async def ban_about_handle(session: Session):
+async def _(session: Session):
     await about.finish(
         MessageSegment.markdown(
             f"## 📖 关于\n"
@@ -46,7 +55,7 @@ server_statistics = on_command("统计", force_whitespace=True, block=True)
 
 
 @server_statistics.handle()
-async def plugin_version_handle():
+async def _():
     version_count = {}
     tshock_count = {}
     os_count = {}
@@ -97,9 +106,30 @@ async def plugin_version_handle():
     )
 
 
+permission_request = on_command("主动权限", force_whitespace=True, block=True)
+
+
+@permission_request.handle()
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Args):
+    if len(args) == 0:
+        await permission_request.finish(
+            MessageSegment.markdown(
+                "## 🍥 权限请求\n"
+                "格式错误！"
+                f"正确格式: {cmd_input_tag('/主动权限')} `<本群群号>`"
+            )
+            + reedit_keyboard(event.get_plaintext())
+        )
+
+    await permission_request.finish(
+        MessageSegment.markdown(f"## 🍥 权限请求\n> 需要群主点击按钮同意")
+        + permission_request_keyboard(args[0])
+    )
+
+
 pre_receive_msg = on_message(priority=-114514, block=False)
 
 
 @pre_receive_msg.handle()
-async def _(event: GroupAtMessageCreateEvent):
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent):
     Statistics.message_received += 1
