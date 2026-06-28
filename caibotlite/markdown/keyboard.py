@@ -162,13 +162,13 @@ help_list_keyboard = MessageSegment.keyboard(
                     buttons=[
                         Button(
                             render_data=RenderData(
-                                label="🔒 主动权限",
-                                visited_label="🔒 主动权限",
+                                label="🔒 权限请求",
+                                visited_label="🔒 权限请求",
                                 style=1,
                             ),
                             action=Action(
                                 type=2,
-                                data="/主动权限",
+                                data="/权限请求",
                                 permission=Permission(type=1),
                             ),
                         ),
@@ -185,7 +185,7 @@ help_list_keyboard = MessageSegment.keyboard(
                                     type=2, specify_role_ids=["1", "2", "3"]
                                 ),
                             ),
-                        )
+                        ),
                     ]
                 ),
             ]

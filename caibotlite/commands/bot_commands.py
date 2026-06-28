@@ -106,7 +106,7 @@ async def _():
     )
 
 
-permission_request = on_command("主动权限", force_whitespace=True, block=True)
+permission_request = on_command("权限请求", force_whitespace=True, block=True)
 
 
 @permission_request.handle()
@@ -115,14 +115,19 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         await permission_request.finish(
             MessageSegment.markdown(
                 "## 🍥 权限请求\n"
-                "格式错误！"
-                f"正确格式: {cmd_input_tag('/主动权限')} `<本群群号>`"
+                "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/权限请求')} `<本群群号>`"
             )
             + reedit_keyboard(event.get_plaintext())
         )
 
     await permission_request.finish(
-        MessageSegment.markdown(f"## 🍥 权限请求\n> 需要群主点击按钮同意")
+        MessageSegment.markdown(
+            f"## 🍥 权限请求\n"
+            f"> 需要群主授权\n"
+            f"1. 机器人获取**全部**消息范围 -> 无需@即可使用\n"
+            f"2. 启用主动消息 -> 群内推送登录请求"
+        )
         + permission_request_keyboard(args[0])
     )
 
