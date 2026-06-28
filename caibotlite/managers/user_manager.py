@@ -13,43 +13,59 @@ class UserManager:
     login_attempts: Dict[str, LoginAttempt] = {}
 
     @classmethod
-    async def get_user_by_open_id(cls, session: AsyncSession, group_open_id: str, user_open_id: str) -> Optional[User]:
+    async def get_user_by_open_id(
+        cls, session: AsyncSession, group_open_id: str, user_open_id: str
+    ) -> Optional[User]:
         result = await session.execute(
-            select(User).where(User.open_id == user_open_id, User.group_open_id == group_open_id))
+            select(User).where(
+                User.open_id == user_open_id, User.group_open_id == group_open_id
+            )
+        )
         taget_user = result.unique().scalars().first()
 
         return taget_user
 
     @classmethod
-    async def get_user_by_name(cls, session: AsyncSession, group_open_id: str, name: str) -> Optional[User]:
+    async def get_user_by_name(
+        cls, session: AsyncSession, group_open_id: str, name: str
+    ) -> Optional[User]:
         result = await session.execute(
-            select(User).where(User.name == name, User.group_open_id == group_open_id))
+            select(User).where(User.name == name, User.group_open_id == group_open_id)
+        )
         taget_user = result.unique().scalars().first()
 
         return taget_user
 
     @classmethod
-    async def get_users_by_names(cls, session: AsyncSession, group_open_id: str, names: Iterable[str]) -> Dict[str, User]:
+    async def get_users_by_names(
+        cls, session: AsyncSession, group_open_id: str, names: Iterable[str]
+    ) -> Dict[str, User]:
         name_list = list(dict.fromkeys(names))
         if len(name_list) == 0:
             return {}
 
         result = await session.execute(
-            select(User).where(User.group_open_id == group_open_id, User.name.in_(name_list)))
+            select(User).where(
+                User.group_open_id == group_open_id, User.name.in_(name_list)
+            )
+        )
         users = result.unique().scalars().all()
 
         return {user.name: user for user in users if user.name is not None}
 
     @classmethod
-    async def get_user_by_id(cls, session: AsyncSession, user_id: int) -> Optional[User]:
-        result = await session.execute(
-            select(User).where(User.id == user_id))
+    async def get_user_by_id(
+        cls, session: AsyncSession, user_id: int
+    ) -> Optional[User]:
+        result = await session.execute(select(User).where(User.id == user_id))
         taget_user = result.unique().scalars().first()
 
         return taget_user
 
     @classmethod
-    async def create_user(cls, session: AsyncSession, group_open_id: str, user_open_id: str, name: str) -> bool:
+    async def create_user(
+        cls, session: AsyncSession, group_open_id: str, user_open_id: str, name: str
+    ) -> bool:
         user = User(name=name, group_open_id=group_open_id, open_id=user_open_id)
         session.add(user)
         await session.commit()
@@ -67,11 +83,17 @@ class UserManager:
     @classmethod
     async def count_group_users(cls, session: AsyncSession, group_open_id: str) -> int:
         result = await session.execute(
-            select(func.count()).select_from(User).where(User.group_open_id == group_open_id))
+            select(func.count())
+            .select_from(User)
+            .where(User.group_open_id == group_open_id)
+        )
         return result.scalar()
 
     @classmethod
-    async def count_all_users(cls, session: AsyncSession, ) -> int:
+    async def count_all_users(
+        cls,
+        session: AsyncSession,
+    ) -> int:
         result = await session.execute(func.count(User.id))
         return result.scalar()
 
@@ -93,12 +115,15 @@ class UserManager:
         today = datetime.today().date()
         # noinspection PyTypeChecker
         result = await session.execute(
-            select(func.count()).select_from(User).where(func.date(User.last_sign) == today))
+            select(func.count())
+            .select_from(User)
+            .where(func.date(User.last_sign) == today)
+        )
         return result.scalar()
 
     @staticmethod
     def check_name_ok(name: str) -> bool:
-        pattern = re.compile(r'^[\u4e00-\u9fa5a-zA-Z0-9]+$')
+        pattern = re.compile(r"^[\u4e00-\u9fa5a-zA-Z0-9]+$")
         if pattern.match(name):
             return True
         else:

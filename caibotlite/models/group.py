@@ -21,27 +21,43 @@ class Group(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     open_id: Mapped[str] = mapped_column(String(32), unique=True, index=True)
-    admins: Mapped[List["str"]] = mapped_column(MutableList.as_mutable(JSON), default=[])
-    black_list: Mapped[List["str"]] = mapped_column(MutableList.as_mutable(JSON), default=[])
-    config: Mapped["GroupConfig"] = relationship(back_populates="group", lazy='joined', uselist=False,
-                                                 cascade="all, delete-orphan")
-    servers: Mapped[List["Server"]] = relationship(back_populates="group", lazy='joined')
-    users: Mapped[List["User"]] = relationship(back_populates="group", lazy='raise')
-    shop_items: Mapped[List["ShopItem"]] = relationship(back_populates="group", lazy='raise')
-    shop_lists: Mapped[List["ShopList"]] = relationship(back_populates="group", lazy='raise')
+    admins: Mapped[List["str"]] = mapped_column(
+        MutableList.as_mutable(JSON), default=[]
+    )
+    black_list: Mapped[List["str"]] = mapped_column(
+        MutableList.as_mutable(JSON), default=[]
+    )
+    config: Mapped["GroupConfig"] = relationship(
+        back_populates="group",
+        lazy="joined",
+        uselist=False,
+        cascade="all, delete-orphan",
+    )
+    servers: Mapped[List["Server"]] = relationship(
+        back_populates="group", lazy="joined"
+    )
+    users: Mapped[List["User"]] = relationship(back_populates="group", lazy="raise")
+    shop_items: Mapped[List["ShopItem"]] = relationship(
+        back_populates="group", lazy="raise"
+    )
+    shop_lists: Mapped[List["ShopList"]] = relationship(
+        back_populates="group", lazy="raise"
+    )
 
-    parent_open_id: Mapped[Optional[str]] = mapped_column(ForeignKey("group.open_id"), nullable=True)
+    parent_open_id: Mapped[Optional[str]] = mapped_column(
+        ForeignKey("group.open_id"), nullable=True
+    )
     parent_group: Mapped[Optional["Group"]] = relationship(
         "Group",
         foreign_keys=[parent_open_id],
         remote_side=[open_id],
         back_populates="child_groups",
-        lazy='joined'
+        lazy="joined",
     )
 
     child_groups: Mapped[List["Group"]] = relationship(
         "Group",
         back_populates="parent_group",
         remote_side=[parent_open_id],
-        lazy='raise'
+        lazy="raise",
     )

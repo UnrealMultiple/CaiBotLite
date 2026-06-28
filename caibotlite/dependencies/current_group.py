@@ -8,10 +8,16 @@ from caibotlite.managers import GroupManager
 from caibotlite.models import Group
 
 
-async def get_current_group(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, session: Session):
+async def get_current_group(
+    event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, session: Session
+):
     group = await GroupManager.get_group_by_open_id(session, event.group_openid)
     if group is None:
-        await GroupManager.create_group(session, event.group_openid, event.author.union_openid, )
+        await GroupManager.create_group(
+            session,
+            event.group_openid,
+            event.author.union_openid,
+        )
         group = await GroupManager.get_group_by_open_id(session, event.group_openid)
 
     await session.refresh(group, ["parent_group"])

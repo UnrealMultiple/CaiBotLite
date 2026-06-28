@@ -20,11 +20,16 @@ class Statistics:
     async def init(cls):
         if not cls._inited:
             async with async_session() as session:
-                fields = {k: v for k, v in vars(cls).items() if
-                          not isinstance(v, classmethod) and not k.startswith("_")}
+                fields = {
+                    k: v
+                    for k, v in vars(cls).items()
+                    if not isinstance(v, classmethod) and not k.startswith("_")
+                }
 
                 for k, v in fields.items():
-                    result = await session.execute(select(StatisticData).where(StatisticData.key == k))
+                    result = await session.execute(
+                        select(StatisticData).where(StatisticData.key == k)
+                    )
                     field = result.scalar_one_or_none()
                     if field is None:
                         field = StatisticData()
@@ -48,10 +53,16 @@ class Statistics:
             raise Exception("Statistics not initialized!")
 
         async with async_session() as session:
-            fields = {k: v for k, v in vars(cls).items() if not isinstance(v, classmethod) and not k.startswith("_")}
+            fields = {
+                k: v
+                for k, v in vars(cls).items()
+                if not isinstance(v, classmethod) and not k.startswith("_")
+            }
 
             for k, v in fields.items():
-                result = await session.execute(select(StatisticData).where(StatisticData.key == k))
+                result = await session.execute(
+                    select(StatisticData).where(StatisticData.key == k)
+                )
                 field = result.scalar_one_or_none()
                 if field is None:
                     field = StatisticData()

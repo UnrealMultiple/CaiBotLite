@@ -19,20 +19,26 @@ class User(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
     group_open_id: Mapped[str] = mapped_column(ForeignKey("group.open_id"), index=True)
-    group: Mapped["Group"] = relationship(back_populates="users", lazy='joined')
+    group: Mapped["Group"] = relationship(back_populates="users", lazy="joined")
     open_id: Mapped[str] = mapped_column(String(32), index=True)
     name: Mapped[Optional[str]] = mapped_column(String(32), nullable=True, index=True)
     money: Mapped[int] = mapped_column(default=0)
     sign_days: Mapped[int] = mapped_column(default=0)
     sign_consistency: Mapped[int] = mapped_column(default=0)
-    uuids: Mapped[List["LoginUUID"]] = relationship(lazy='joined', cascade="all, delete-orphan",
-                                                    foreign_keys="[LoginUUID.user_open_id]",
-                                                    primaryjoin="User.open_id == LoginUUID.user_open_id")
+    uuids: Mapped[List["LoginUUID"]] = relationship(
+        lazy="joined",
+        cascade="all, delete-orphan",
+        foreign_keys="[LoginUUID.user_open_id]",
+        primaryjoin="User.open_id == LoginUUID.user_open_id",
+    )
 
     uuid_list: Mapped[List[str]] = association_proxy("uuids", "uuid")
-    ips: Mapped[List["LoginIP"]] = relationship(lazy='joined', cascade="all, delete-orphan",
-                                                foreign_keys="[LoginIP.user_open_id]",
-                                                primaryjoin="User.open_id == LoginIP.user_open_id")
+    ips: Mapped[List["LoginIP"]] = relationship(
+        lazy="joined",
+        cascade="all, delete-orphan",
+        foreign_keys="[LoginIP.user_open_id]",
+        primaryjoin="User.open_id == LoginIP.user_open_id",
+    )
 
     ip_list: Mapped[List[str]] = association_proxy("ips", "ip")
     city_list: Mapped[List[str]] = association_proxy("ips", "city")

@@ -10,14 +10,20 @@ from caibotlite.models import Group, GroupConfig
 
 class GroupManager:
     @classmethod
-    async def get_group_by_open_id(cls, session: AsyncSession, group_open_id: str) -> Optional[Group]:
-        result = await session.execute(select(Group).where(Group.open_id == group_open_id))
+    async def get_group_by_open_id(
+        cls, session: AsyncSession, group_open_id: str
+    ) -> Optional[Group]:
+        result = await session.execute(
+            select(Group).where(Group.open_id == group_open_id)
+        )
         taget_group = result.scalar()
 
         return taget_group
 
     @classmethod
-    async def get_group_by_id(cls, session: AsyncSession, group_id: int) -> Optional[Group]:
+    async def get_group_by_id(
+        cls, session: AsyncSession, group_id: int
+    ) -> Optional[Group]:
 
         result = await session.execute(select(Group).where(Group.id == group_id))
         taget_group = result.scalar()
@@ -25,7 +31,9 @@ class GroupManager:
         return taget_group
 
     @classmethod
-    async def create_group(cls, session: AsyncSession, group_open_id: str, first_admin_open_id: str) -> bool:
+    async def create_group(
+        cls, session: AsyncSession, group_open_id: str, first_admin_open_id: str
+    ) -> bool:
         group = Group(
             open_id=group_open_id,
             config=GroupConfig(),
@@ -41,7 +49,10 @@ class GroupManager:
             return True
 
     @classmethod
-    async def count_all_groups(cls, session: AsyncSession, ) -> int:
+    async def count_all_groups(
+        cls,
+        session: AsyncSession,
+    ) -> int:
         result = await session.execute(func.count(Group.id))
         return result.scalar()
 

@@ -14,8 +14,8 @@ class GroupConfig(Base):
     __tablename__ = "group_config"
 
     id: Mapped[int] = mapped_column(primary_key=True, autoincrement=True, index=True)
-    group_open_id: Mapped[int] = mapped_column(ForeignKey('group.open_id'))
-    group: Mapped["Group"] = relationship(back_populates='config', lazy='joined')
+    group_open_id: Mapped[int] = mapped_column(ForeignKey("group.open_id"))
+    group: Mapped["Group"] = relationship(back_populates="config", lazy="joined")
     allow_default_getmapimage: Mapped[bool] = mapped_column(default=False)
     allow_default_getmapfile: Mapped[bool] = mapped_column(default=False)
     allow_default_getworldfile: Mapped[bool] = mapped_column(default=False)

@@ -9,16 +9,19 @@ from caibotlite.models import Server
 
 
 class ServerManager:
-
     @classmethod
-    async def get_server_by_token(cls, session: AsyncSession, token: str) -> Optional[Server]:
+    async def get_server_by_token(
+        cls, session: AsyncSession, token: str
+    ) -> Optional[Server]:
         result = await session.execute(select(Server).where(Server.token == token))
         taget_server = result.scalar()
 
         return taget_server
 
     @classmethod
-    async def get_server_by_id(cls, session: AsyncSession, server_id: int) -> Optional[Server]:
+    async def get_server_by_id(
+        cls, session: AsyncSession, server_id: int
+    ) -> Optional[Server]:
         result = await session.execute(select(Server).where(Server.id == server_id))
         taget_server = result.scalar()
 
@@ -31,13 +34,10 @@ class ServerManager:
             await session.commit()
 
     @classmethod
-    async def create_server(cls, session: AsyncSession, group_open_id: str, token: str, ip: str, port: int) -> bool:
-        server = Server(
-            group_open_id=group_open_id,
-            token=token,
-            ip=ip,
-            port=port
-        )
+    async def create_server(
+        cls, session: AsyncSession, group_open_id: str, token: str, ip: str, port: int
+    ) -> bool:
+        server = Server(group_open_id=group_open_id, token=token, ip=ip, port=port)
         session.add(server)
         await session.commit()
 

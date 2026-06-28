@@ -23,7 +23,9 @@ def replace_all_tag(text: str):
 from typing import Dict
 
 
-def build_rank(rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 10) -> str:
+def build_rank(
+    rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 10
+) -> str:
     if len(rank_lines) == 0:
         return "啥都没有呢~"
 
@@ -45,6 +47,9 @@ def build_rank(rank_lines: Dict[str, str], page: int, max_lines_one_page: int = 
 
     page_info = f"\n\n第**{page}**页 / 共**{total_pages}**页"
 
-    return ("| 排名 | 名字 | 项目 |\n" +
-            "| :--: | --- | --- |\n" +
-            "\n".join(page_lines) + page_info)
+    return (
+        "| 排名 | 名字 | 项目 |\n"
+        + "| :--: | --- | --- |\n"
+        + "\n".join(page_lines)
+        + page_info
+    )

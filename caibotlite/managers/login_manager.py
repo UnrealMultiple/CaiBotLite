@@ -11,7 +11,9 @@ from caibotlite.services import GeoIP
 
 class LoginManager:
     # noinspection PyTypeHints
-    login_attempts: ExpiringDict[str, LoginAttempt] = ExpiringDict(max_len=1000, max_age_seconds=600)
+    login_attempts: ExpiringDict[str, LoginAttempt] = ExpiringDict(
+        max_len=1000, max_age_seconds=600
+    )
 
     @classmethod
     def get_attempt(cls, user_open_id: str) -> Optional[LoginAttempt]:
@@ -44,11 +46,11 @@ class LoginManager:
     async def clean_up(cls, session: AsyncSession, user: User):
         need_merge = False
         if len(user.uuids) > 10:
-            user.uuids = user.uuids[len(user.uuids) - 10:]
+            user.uuids = user.uuids[len(user.uuids) - 10 :]
             need_merge = True
 
         if len(user.ips) > 10:
-            user.ips = user.ips[len(user.ips) - 10:]
+            user.ips = user.ips[len(user.ips) - 10 :]
             need_merge = True
 
         if need_merge:
@@ -80,11 +82,17 @@ class LoginManager:
 
         if login_attempt.login_uuid not in user.uuid_list:
             user.uuids.append(
-                LoginUUID(uuid=login_attempt.login_uuid, record_time=datetime.now()))
+                LoginUUID(uuid=login_attempt.login_uuid, record_time=datetime.now())
+            )
 
         if login_attempt.login_ip not in user.ip_list:
             user.ips.append(
-                LoginIP(ip=login_attempt.login_ip, city=login_attempt.login_city, record_time=datetime.now()))
+                LoginIP(
+                    ip=login_attempt.login_ip,
+                    city=login_attempt.login_city,
+                    record_time=datetime.now(),
+                )
+            )
 
         user.last_login_time = datetime.now()
         await session.merge(user)

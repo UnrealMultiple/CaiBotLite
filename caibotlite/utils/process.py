@@ -36,4 +36,3 @@ def get_process_icon(process: str) -> str:
         return ""
 
     return get_image(f"{API_URL.rstrip('/')}/image/{quote(icon_name)}")
-

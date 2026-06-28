@@ -12,7 +12,7 @@ def get_registered_commands() -> List[str]:
         for m in p.matcher:
             for checker in m.rule.checkers:
                 callable_obj = checker.call
-                if hasattr(callable_obj, 'cmds'):
+                if hasattr(callable_obj, "cmds"):
                     for cmd_group in callable_obj.cmds:
                         commands.append(cmd_group[0])
 

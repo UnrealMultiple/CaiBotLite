@@ -7,10 +7,12 @@ from nonebot.log import logger, default_format
 
 
 def main():
-    logger.add(f"logs/{datetime.today().strftime('%Y-%m-%d')}.log",
-               level="WARNING",
-               format=default_format,
-               rotation="3 week")
+    logger.add(
+        f"logs/{datetime.today().strftime('%Y-%m-%d')}.log",
+        level="WARNING",
+        format=default_format,
+        rotation="3 week",
+    )
 
     nonebot.init()
 
@@ -35,5 +37,5 @@ def main():
     nonebot.run()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

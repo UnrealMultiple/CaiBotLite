@@ -23,6 +23,6 @@ class ShopItem(Base):
     item_prefix: Mapped[int] = mapped_column()
     command: Mapped[str] = mapped_column(String(50))
     list_id: Mapped[int] = mapped_column(ForeignKey("shop_list.id"))
-    list: Mapped["ShopList"] = relationship(back_populates="items", lazy='joined')
+    list: Mapped["ShopList"] = relationship(back_populates="items", lazy="joined")
     group_open_id: Mapped[str] = mapped_column(ForeignKey("group.open_id"))
-    group: Mapped["Group"] = relationship(back_populates="shop_items", lazy='joined')
+    group: Mapped["Group"] = relationship(back_populates="shop_items", lazy="joined")

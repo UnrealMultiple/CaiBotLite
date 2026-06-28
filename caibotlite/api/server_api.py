@@ -6,8 +6,15 @@ from fastapi.websockets import WebSocketState
 from limits import storage, strategies, parse
 from nonebot import logger
 from nonebot.adapters.qq import Bot, MessageSegment, ActionFailed
-from nonebot.adapters.qq.models import MessageKeyboard, InlineKeyboard, InlineKeyboardRow, Button, RenderData, Action, \
-    Permission
+from nonebot.adapters.qq.models import (
+    MessageKeyboard,
+    InlineKeyboard,
+    InlineKeyboardRow,
+    Button,
+    RenderData,
+    Action,
+    Permission,
+)
 
 from caibotlite.database import async_session
 from caibotlite.enums import ServerType
@@ -34,18 +41,19 @@ async def handle_get_token(init_code: int):
     token_info = TokenManager.try_get_token(init_code)
 
     if token_info is None:
-        raise HTTPException(status_code=HTTPStatus.NOT_FOUND, detail="Not found available token")
+        raise HTTPException(
+            status_code=HTTPStatus.NOT_FOUND, detail="Not found available token"
+        )
 
-    response = {
-        "token": token_info.token,
-        "group_open_id": token_info.group_open_id
-    }
+    response = {"token": token_info.token, "group_open_id": token_info.group_open_id}
 
     return response
 
 
 @app.websocket("/server/ws/{group_open_id}/{server_type}/")
-async def handle_websocket(websocket: WebSocket, group_open_id: str, server_type: ServerType):
+async def handle_websocket(
+    websocket: WebSocket, group_open_id: str, server_type: ServerType
+):
     await websocket.accept()
 
     headers = websocket.headers
@@ -85,9 +93,16 @@ async def handle_websocket(websocket: WebSocket, group_open_id: str, server_type
         return
 
     group = server.group
-    connected_server = ConnectedServer(server.id, websocket.client.host, server.ip, server.port, server_token,
-                                       group.open_id,
-                                       server_type, websocket)
+    connected_server = ConnectedServer(
+        server.id,
+        websocket.client.host,
+        server.ip,
+        server.port,
+        server_token,
+        group.open_id,
+        server_type,
+        websocket,
+    )
     ConnectionManager.add_server(connected_server)
     try:
         await websocket_loop(connected_server)
@@ -111,11 +126,13 @@ async def websocket_loop(connected_server: ConnectedServer):
         package = Package.model_validate_json(msg)
 
         logger.info(
-            f"收到服务器[{server_id}]的\"{package.type}\"数据包 (request: {package.is_request})")
+            f'收到服务器[{server_id}]的"{package.type}"数据包 (request: {package.is_request})'
+        )
 
         if package.type.get_version() != package.version:
             logger.warning(
-                f"服务器[{server_id}]发送了一个过期\"{package.type}\"数据包 (v{package.version} < v{package.type.get_version()})")
+                f'服务器[{server_id}]发送了一个过期"{package.type}"数据包 (v{package.version} < v{package.type.get_version()})'
+            )
 
         if package.is_request:
             ConnectionManager.add_api_result(token, server_id, package)
@@ -135,42 +152,54 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
         case PackageType.HELLO:
             server_info = ServerInfo(
                 connected_server.type,
-                payload['game_version'],
-                payload['server_core_version'],
-                payload['plugin_version'],
-                payload['enable_whitelist'],
-                payload['system'],
-                payload['server_name'],
-                payload['settings'],
+                payload["game_version"],
+                payload["server_core_version"],
+                payload["plugin_version"],
+                payload["enable_whitelist"],
+                payload["system"],
+                payload["server_name"],
+                payload["settings"],
             )
             connected_server.server_info = server_info
 
         case PackageType.WHITELIST:
-            name = payload['player_name']
-            uuid = payload['player_uuid']
-            ip = payload['player_ip']
+            name = payload["player_name"]
+            uuid = payload["player_uuid"]
+            ip = payload["player_ip"]
 
             need_login = False
 
             async with async_session() as session:
-                user = await UserManager.get_user_by_name(session, connected_server.group_open_id, name)
-                group = await GroupManager.get_group_by_open_id(session, connected_server.group_open_id)
+                user = await UserManager.get_user_by_name(
+                    session, connected_server.group_open_id, name
+                )
+                group = await GroupManager.get_group_by_open_id(
+                    session, connected_server.group_open_id
+                )
                 Statistics.whitelist_check += 1
                 package_writer = PackageWriter(PackageType.WHITELIST, False)
                 package_writer.write("player_name", name)
-                package_writer.write("is_admin", user is not None and user.open_id in group.admins)
+                package_writer.write(
+                    "is_admin", user is not None and user.open_id in group.admins
+                )
                 whitelist_result: WhitelistResult
                 if user is None:
-                    package_writer.write("whitelist_result", WhitelistResult.NOT_IN_WHITELIST)
+                    package_writer.write(
+                        "whitelist_result", WhitelistResult.NOT_IN_WHITELIST
+                    )
                 elif user.open_id in group.black_list:
-                    package_writer.write("whitelist_result", WhitelistResult.In_GROUP_BLACKLIST)
+                    package_writer.write(
+                        "whitelist_result", WhitelistResult.In_GROUP_BLACKLIST
+                    )
                 elif not await LoginManager.try_login_ok(session, user, uuid, ip):
                     package_writer.write("whitelist_result", WhitelistResult.NEED_LOGIN)
                     need_login = True
                 else:
                     package_writer.write("whitelist_result", WhitelistResult.ACCEPT)
 
-                await ConnectionManager.send_data(connected_server.token, package_writer.build())
+                await ConnectionManager.send_data(
+                    connected_server.token, package_writer.build()
+                )
 
             if need_login and strategy.hit(rate_limit, name):
                 bot: Bot = nonebot.get_bot()
@@ -189,29 +218,32 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                                             render_data=RenderData(
                                                 label="✅ 批准",
                                                 visited_label="✅ 批准",
-
-                                                style=1
+                                                style=1,
                                             ),
                                             action=Action(
                                                 type=2,
                                                 data="/登录",
-                                                permission=Permission(type=0,
-                                                                      specify_user_ids=[user.open_id])
-                                            )
+                                                permission=Permission(
+                                                    type=0,
+                                                    specify_user_ids=[user.open_id],
+                                                ),
+                                            ),
                                         ),
                                         Button(
                                             render_data=RenderData(
                                                 label="❌ 拒绝",
                                                 visited_label="❌ 拒绝",
-                                                style=1
+                                                style=1,
                                             ),
                                             action=Action(
                                                 type=2,
                                                 data="/拒绝",
-                                                permission=Permission(type=0,
-                                                                      specify_user_ids=[user.open_id])
-                                            )
-                                        )
+                                                permission=Permission(
+                                                    type=0,
+                                                    specify_user_ids=[user.open_id],
+                                                ),
+                                            ),
+                                        ),
                                     ]
                                 )
                             ]
@@ -221,7 +253,7 @@ async def handle_general_message(connected_server: ConnectedServer, package: Pac
                 try:
                     await bot.send_to_group(
                         group_openid=connected_server.group_open_id,
-                        message=login_notice
+                        message=login_notice,
                     )
                 except ActionFailed:
                     pass

@@ -15,10 +15,10 @@ ICON_DIR = IMAGES_DIR / "icons"
 
 # category -> (subfolder, filename_template)
 CATEGORY_DIR_MAP = {
-    "item":       ("items",       "Item_{}.png"),
-    "npc":        ("npcs",        "NPC_{}.png"),
+    "item": ("items", "Item_{}.png"),
+    "npc": ("npcs", "NPC_{}.png"),
     "projectile": ("projectiles", "Projectile_{}.png"),
-    "buff":       ("buffs",       "Buff_{}.png"),
+    "buff": ("buffs", "Buff_{}.png"),
 }
 
 
@@ -29,10 +29,7 @@ async def download_file(file_id: str):
 
     file_info: FileInfo = FileService.files_db[file_id]
 
-    return FileResponse(
-        file_info.path,
-        filename=file_info.filename
-    )
+    return FileResponse(file_info.path, filename=file_info.filename)
 
 
 @app.get("/plugin/{name}")
@@ -52,7 +49,7 @@ async def download_file(name: str):
         return FileResponse(
             path=full_path,
             filename=full_path.name,
-            media_type='application/octet-stream',
+            media_type="application/octet-stream",
         )
     except HTTPException:
         raise
@@ -103,4 +100,3 @@ async def get_icon_image(name: str):
         raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-

@@ -14,7 +14,8 @@ class PackageWriter:
             type=package_type,
             is_request=is_request,
             request_id=None,
-            payload={})
+            payload={},
+        )
 
     def write(self, key: str, value: Any):
         self.package.payload[key] = value

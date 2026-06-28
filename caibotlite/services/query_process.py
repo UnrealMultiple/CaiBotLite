@@ -12,7 +12,7 @@ ft_40 = ImageFont.truetype(font=FONT_PATH, size=40)
 ft_60 = ImageFont.truetype(font=FONT_PATH, size=60)
 ft_100 = ImageFont.truetype(font=FONT_PATH, size=100)
 
-lock_icon = Image.open("assets/images/items/Item_5328.png").convert('RGBA')
+lock_icon = Image.open("assets/images/items/Item_5328.png").convert("RGBA")
 lock_icon = lock_icon.resize((60, 60), Resampling.LANCZOS)
 _, _, _, a_lock_icon = lock_icon.split()
 
@@ -22,7 +22,7 @@ logger.success("[query_process]字体缓存完成!")
 class QueryProcess:
     @classmethod
     def transparent_back(cls, img):
-        img = img.convert('RGBA')
+        img = img.convert("RGBA")
         length, height = img.size
 
         for i in range(10):
@@ -56,102 +56,170 @@ class QueryProcess:
 
         def draw_event(name, show_name, x, y):
             event_img = Image.open(f"assets/images/bosses/{name}.png")
-            if event_img.mode != 'RGBA':
-                event_img = event_img.convert('RGBA')
+            if event_img.mode != "RGBA":
+                event_img = event_img.convert("RGBA")
                 event_img.save(f"assets/images/bosses/{name}.png")
             _, _, _, ba = event_img.split()
             img.paste(event_img, (x, y), mask=ba)
             _, _, tw, th = draw.textbbox((0, 0), show_name + ":", font=ft_25)
             draw.text((x + event_img.size[0], y), show_name + ":", font=ft_25)
             if name == "Old Ones Army":
-                if process['DD2InvasionT3']:
-                    draw.text((x + event_img.size[0] + tw, y), "T3", font=ft_25,
-                              fill='blue')
-                elif process['DD2InvasionT2']:
-                    draw.text((x + event_img.size[0] + tw, y), "T2", font=ft_25,
-                              fill='orange')
-                elif process['DD2InvasionT1']:
-                    draw.text((x + event_img.size[0] + tw, y), "T1", font=ft_25,
-                              fill='red')
+                if process["DD2InvasionT3"]:
+                    draw.text(
+                        (x + event_img.size[0] + tw, y), "T3", font=ft_25, fill="blue"
+                    )
+                elif process["DD2InvasionT2"]:
+                    draw.text(
+                        (x + event_img.size[0] + tw, y), "T2", font=ft_25, fill="orange"
+                    )
+                elif process["DD2InvasionT1"]:
+                    draw.text(
+                        (x + event_img.size[0] + tw, y), "T1", font=ft_25, fill="red"
+                    )
                 else:
-                    draw.text((x + event_img.size[0] + tw, y), "未击败", font=ft_25,
-                              fill='black')
+                    draw.text(
+                        (x + event_img.size[0] + tw, y),
+                        "未击败",
+                        font=ft_25,
+                        fill="black",
+                    )
                 return
             if name == "Pillars":
                 if process[name]:
-                    draw.text((x + event_img.size[0] + tw, y), "已击败", font=ft_25, fill='red')
+                    draw.text(
+                        (x + event_img.size[0] + tw, y),
+                        "已击败",
+                        font=ft_25,
+                        fill="red",
+                    )
                 else:
                     not_defeat = []
-                    if not process['Tower Stardust']:
+                    if not process["Tower Stardust"]:
                         not_defeat.append("星尘")
-                    if not process['Tower Vortex']:
+                    if not process["Tower Vortex"]:
                         not_defeat.append("星璇")
-                    if not process['Tower Nebula']:
+                    if not process["Tower Nebula"]:
                         not_defeat.append("星云")
-                    if not process['Tower Solar']:
+                    if not process["Tower Solar"]:
                         not_defeat.append("日耀")
-                    draw.text((x + event_img.size[0] + tw, y), f"未击败({','.join(not_defeat)})", font=ft_25,
-                              fill='black')
+                    draw.text(
+                        (x + event_img.size[0] + tw, y),
+                        f"未击败({','.join(not_defeat)})",
+                        font=ft_25,
+                        fill="black",
+                    )
             if process[name]:
-                draw.text((x + event_img.size[0] + tw, y), "已击败", font=ft_25, fill='red')
+                draw.text(
+                    (x + event_img.size[0] + tw, y), "已击败", font=ft_25, fill="red"
+                )
             else:
-                draw.text((x + event_img.size[0] + tw, y), "未击败", font=ft_25,
-                          fill='black')
+                draw.text(
+                    (x + event_img.size[0] + tw, y), "未击败", font=ft_25, fill="black"
+                )
 
         def draw_boss(name, x, y, up=0):
             boss_img = Image.open(f"assets/images/bosses/{name}.png")
-            if boss_img.mode != 'RGBA':
-                boss_img = boss_img.convert('RGBA')
+            if boss_img.mode != "RGBA":
+                boss_img = boss_img.convert("RGBA")
                 boss_img.save(f"assets/images/bosses/{name}.png")
             _, _, _, ba = boss_img.split()
             img.paste(boss_img, (x, y - up), mask=ba)
             _, _, tw, th = draw.textbbox((0, 0), "已击败", font=ft_40)
             if name == "Mechdusa":
-                if 'Skeletron Prime' in boss_locks:
-                    _, _, tw, th = draw.textbbox((0, 0), boss_locks['Skeletron Prime'], font=ft_40)
-                    img.paste(lock_icon, (int(x + boss_img.size[0] / 2 - tw / 2 - 45), int(y + boss_img.size[1] + 5)),
-                              mask=a_lock_icon)
+                if "Skeletron Prime" in boss_locks:
+                    _, _, tw, th = draw.textbbox(
+                        (0, 0), boss_locks["Skeletron Prime"], font=ft_40
+                    )
+                    img.paste(
+                        lock_icon,
+                        (
+                            int(x + boss_img.size[0] / 2 - tw / 2 - 45),
+                            int(y + boss_img.size[1] + 5),
+                        ),
+                        mask=a_lock_icon,
+                    )
 
-                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
-                              boss_locks['Skeletron Prime'], font=ft_40, fill='orangered')
+                    draw.text(
+                        (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                        boss_locks["Skeletron Prime"],
+                        font=ft_40,
+                        fill="orangered",
+                    )
 
-                elif process['The Destroyer'] and process['The Twins'] and process['Skeletron Prime']:
+                elif (
+                    process["The Destroyer"]
+                    and process["The Twins"]
+                    and process["Skeletron Prime"]
+                ):
                     _, _, tw, th = draw.textbbox((0, 0), "已击败", font=ft_40)
-                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10), "已击败", font=ft_40,
-                              fill='red')
+                    draw.text(
+                        (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                        "已击败",
+                        font=ft_40,
+                        fill="red",
+                    )
                 else:
                     not_defeat = []
-                    if not process['The Destroyer']:
+                    if not process["The Destroyer"]:
                         not_defeat.append("毁")
-                    if not process['Skeletron Prime']:
+                    if not process["Skeletron Prime"]:
                         not_defeat.append("骷")
-                    if not process['The Twins']:
+                    if not process["The Twins"]:
                         not_defeat.append("眼")
 
-                    _, _, tw, th = draw.textbbox((0, 0), f"未击败({','.join(not_defeat)})", font=ft_40)
-                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
-                              f"未击败({','.join(not_defeat)})", font=ft_40)
+                    _, _, tw, th = draw.textbbox(
+                        (0, 0), f"未击败({','.join(not_defeat)})", font=ft_40
+                    )
+                    draw.text(
+                        (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                        f"未击败({','.join(not_defeat)})",
+                        font=ft_40,
+                    )
 
                 return
             if name in boss_locks:
                 _, _, tw, th = draw.textbbox((0, 0), boss_locks[name], font=ft_40)
-                img.paste(lock_icon, (int(x + boss_img.size[0] / 2 - tw / 2 - 45), int(y + boss_img.size[1] + 5)),
-                          mask=a_lock_icon)
+                img.paste(
+                    lock_icon,
+                    (
+                        int(x + boss_img.size[0] / 2 - tw / 2 - 45),
+                        int(y + boss_img.size[1] + 5),
+                    ),
+                    mask=a_lock_icon,
+                )
 
-                draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
-                          boss_locks[name], font=ft_40, fill='orangered')
+                draw.text(
+                    (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                    boss_locks[name],
+                    font=ft_40,
+                    fill="orangered",
+                )
 
             elif process[name]:
-                _, _, tw, th = draw.textbbox((0, 0), f"已击败({kill_counts[name]}次)", font=ft_40)
-                draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
-                          f"已击败({kill_counts[name]}次)", font=ft_40, fill='red')
+                _, _, tw, th = draw.textbbox(
+                    (0, 0), f"已击败({kill_counts[name]}次)", font=ft_40
+                )
+                draw.text(
+                    (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                    f"已击败({kill_counts[name]}次)",
+                    font=ft_40,
+                    fill="red",
+                )
             else:
                 _, _, tw, th = draw.textbbox((0, 0), "未击败", font=ft_40)
-                if process_data['zenith_world']:
-                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10), "未击败", font=ft_40)
+                if process_data["zenith_world"]:
+                    draw.text(
+                        (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                        "未击败",
+                        font=ft_40,
+                    )
                 else:
-                    draw.text((x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10), "未击败", font=ft_40,
-                              fill='black')
+                    draw.text(
+                        (x + boss_img.size[0] / 2 - tw / 2, y + boss_img.size[1] + 10),
+                        "未击败",
+                        font=ft_40,
+                        fill="black",
+                    )
 
         max_w, max_h = img.size
 
@@ -177,7 +245,11 @@ class QueryProcess:
         draw.text(((max_w - w) / 2, 120), "进度", font=ft_60)
 
         draw.text((10, 1040), "By Cai", font=ft_30)  # 署名
-        draw.text((150, 1040), time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), font=ft_30)  # 时间
+        draw.text(
+            (150, 1040),
+            time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+            font=ft_30,
+        )  # 时间
 
         draw_event("Goblins", "哥布林军队", 200, 50)
         draw_event("Pirates", "海盗入侵", 200 + 2, 50 + 24 * 1)
@@ -196,7 +268,7 @@ class QueryProcess:
         draw_boss("Skeletron", 180 + 280 * 0 - 2, 250 * 2)
         draw_boss("Wall of Flesh", 180 + 280 * 1 + 25, 250 * 2 - 5)
         draw_boss("Queen Slime", 180 + 280 * 2 + 4, 250 * 2 + 53)
-        if process_data['zenith_world']:
+        if process_data["zenith_world"]:
             draw_boss("Duke Fishron", 180 + 280 * 3, 250 * 2 + 70)
             draw_boss("Mechdusa", 180 + 280 * 4 + 80, 250 * 2 + 30)
             draw_boss("Plantera", 180 + 280 * 0 + 25, 250 * 3 + 30)
@@ -218,9 +290,9 @@ class QueryProcess:
         return img
 
 
-if __name__ == '__main__':
-    data = {"process":
-        {
+if __name__ == "__main__":
+    data = {
+        "process": {
             "King Slime": False,
             "Pumpkin Moon": False,
             "Frost Moon": True,
@@ -253,7 +325,7 @@ if __name__ == '__main__':
             "Martians": False,
             "DD2InvasionT1": True,
             "DD2InvasionT2": True,
-            "DD2InvasionT3": False
+            "DD2InvasionT3": False,
         },
         "kill_counts": {
             "King Slime": 1,
@@ -273,18 +345,30 @@ if __name__ == '__main__':
             "Duke Fishron": 4,
             "Empress of Light": 4,
             "Lunatic Cultist": 5,
-            "Moon Lord": 9
+            "Moon Lord": 9,
         },
-        "boss_lock": {"King Slime": "今天11:44", "Eye of Cthulhu": "今天11:44", "Deerclops": "今天11:44",
-                      "Brain of Cthulhu": "今天23:44", "Eater of Worlds": "今天23:44", "Queen Bee": "明天05:44",
-                      "Wall of Flesh": "明天11:44", "Duke Fishron": "明天23:44", "The Twins": "后天11:44",
-                      "The Destroyer": "后天11:44", "Skeletron Prime": "后天11:44", "Plantera": "后天23:44",
-                      "Empress of Light": "后天23:44", "Golem": "下周三11:44", "Lunatic Cultist": "下周三11:44",
-                      "Moon Lord": "下周三23:44"},
+        "boss_lock": {
+            "King Slime": "今天11:44",
+            "Eye of Cthulhu": "今天11:44",
+            "Deerclops": "今天11:44",
+            "Brain of Cthulhu": "今天23:44",
+            "Eater of Worlds": "今天23:44",
+            "Queen Bee": "明天05:44",
+            "Wall of Flesh": "明天11:44",
+            "Duke Fishron": "明天23:44",
+            "The Twins": "后天11:44",
+            "The Destroyer": "后天11:44",
+            "Skeletron Prime": "后天11:44",
+            "Plantera": "后天23:44",
+            "Empress of Light": "后天23:44",
+            "Golem": "下周三11:44",
+            "Lunatic Cultist": "下周三11:44",
+            "Moon Lord": "下周三23:44",
+        },
         "world_name": "啊da啊啊啊啊aaaaaa...",
         "drunk_world": False,
         "zenith_world": False,
         "world_icon": "IconHallowCrimsonNotTheBees",
-        "group_id": 991556763
+        "group_id": 991556763,
     }
     QueryProcess.get_process_png(data).show()

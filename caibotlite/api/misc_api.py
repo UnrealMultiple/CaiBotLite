@@ -22,6 +22,7 @@ async def qq_url_check():
 async def copy_page(content: str = ""):
     # 转义特殊字符，防止 XSS
     import json
+
     content_json = json.dumps(content)  # 安全地序列化为 JS 字符串
 
     html_content = f"""

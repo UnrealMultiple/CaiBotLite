@@ -11,9 +11,9 @@ class SensitiveWordsFilter:
         if not cls._instance:
             cls._instance = super().__new__(cls)
             cls.automaton = ahocorasick.Automaton()
-            with open(file_path, 'r', encoding='utf-8') as f:
+            with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
-            words = sorted(data['words'], key=lambda x: -len(x))
+            words = sorted(data["words"], key=lambda x: -len(x))
             for word in words:
                 cls.automaton.add_word(word, (len(word), word))
             cls.automaton.make_automaton()
@@ -24,7 +24,7 @@ class SensitiveWordsFilter:
         """类方法：敏感词检测"""
         for end, (length, word) in cls.automaton.iter(text):
             start = end - length + 1
-            if text[start:end + 1] == word:
+            if text[start : end + 1] == word:
                 return True
         return False
 
@@ -36,7 +36,7 @@ class SensitiveWordsFilter:
 
         for end, (length, word) in cls.automaton.iter(text):
             start = end - length + 1
-            if text[start:end + 1] == word:
+            if text[start : end + 1] == word:
                 matches.append((start, end))
 
         merged = []
@@ -48,9 +48,9 @@ class SensitiveWordsFilter:
                 merged[-1] = (prev_start, max(prev_end, end))
 
         for start, end in merged:
-            text_list[start:end + 1] = '[已过滤]'
+            text_list[start : end + 1] = "[已过滤]"
 
-        return ''.join(text_list)
+        return "".join(text_list)
 
 
-SensitiveWordsFilter(r'./data/Sensitive.json')
+SensitiveWordsFilter(r"./data/Sensitive.json")

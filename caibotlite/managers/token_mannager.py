@@ -11,7 +11,9 @@ class TokenInfo:
 
 
 class TokenManager:
-    cache_tokens: ExpiringDict[int, TokenInfo] = ExpiringDict(max_len=100, max_age_seconds=120)
+    cache_tokens: ExpiringDict[int, TokenInfo] = ExpiringDict(
+        max_len=100, max_age_seconds=120
+    )
 
     @classmethod
     def try_get_token(cls, verification_code: int) -> Optional[TokenInfo]:

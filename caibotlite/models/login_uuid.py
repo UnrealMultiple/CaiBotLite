@@ -9,6 +9,7 @@ from .base import Base
 if TYPE_CHECKING:
     from .base import Base
 
+
 class LoginUUID(Base):
     __tablename__ = "login_uuid"
 

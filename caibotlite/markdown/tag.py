@@ -16,5 +16,6 @@ def cmd_input_tag(text: str, show: str | None = None, reference: bool = False) -
 def cmd_enter_tag(text: str) -> str:
     return f'<qqbot-cmd-enter text="{text}" />'
 
+
 def copy_link_tag(text: str) -> str:
-    return f'[{text}]({API_URL}/copy?content={urllib.parse.quote(text)})'
+    return f"[{text}]({API_URL}/copy?content={urllib.parse.quote(text)})"

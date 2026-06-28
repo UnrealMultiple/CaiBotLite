@@ -28,8 +28,8 @@ class UrlFilter:
     def download_tlds(self):
         try:
             with urllib.request.urlopen(self.TLDS_URL) as response:
-                data = response.read().decode('utf-8')
-            with open(self.TLDS_FILE, 'w') as file:
+                data = response.read().decode("utf-8")
+            with open(self.TLDS_FILE, "w") as file:
                 file.write(data)
         except Exception as e:
             logger.error(f"TLDs下载失败: {e}")
@@ -43,21 +43,25 @@ class UrlFilter:
     def load_tlds(self):
         if self.is_cache_expired():
             self.download_tlds()
-        with open(self.TLDS_FILE, 'r') as file:
-            tlds = [line.strip().lower() for line in file if line.strip() and not line.startswith('#')]
+        with open(self.TLDS_FILE, "r") as file:
+            tlds = [
+                line.strip().lower()
+                for line in file
+                if line.strip() and not line.startswith("#")
+            ]
             # 按长度从长到短排序
         tlds.sort(key=len, reverse=True)
         return tlds
 
     def build_url_regex(self):
         escaped_tlds = [re.escape(tld) for tld in self.tlds]
-        tld_pattern = '|'.join(escaped_tlds)
-        url_pattern = rf'(https?://(?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?(?:/[^\s]*)?)|((?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?)(?=[\s,.\n]|$)'
+        tld_pattern = "|".join(escaped_tlds)
+        url_pattern = rf"(https?://(?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?(?:/[^\s]*)?)|((?:[a-zA-Z0-9-]+\.)+(?:{tld_pattern})(?::\d+)?)(?=[\s,.\n]|$)"
         return re.compile(url_pattern, re.IGNORECASE)
 
     @classmethod
     def replace_urls(cls, replace_text):
-        return cls.instance.url_pattern.sub('***', replace_text)
+        return cls.instance.url_pattern.sub("***", replace_text)
 
     @classmethod
     def has_url(cls, check_text):
@@ -67,7 +71,7 @@ class UrlFilter:
 UrlFilter()
 
 if __name__ == "__main__":
-    text = '''
+    text = """
     Visit our website at https://www.example.com or http://sub.example.org/path.
     Invalid URLs like https://example.invalid or http://test.local should not be replaced.
     terraria.inkdadwad
@@ -75,7 +79,7 @@ if __name__ == "__main__":
     terraria.ink
     terraria.ink.
     terraria.ink:7777
-    '''
+    """
 
     result = UrlFilter.replace_urls(text)
     print(result)

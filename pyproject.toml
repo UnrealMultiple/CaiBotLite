@@ -28,4 +28,5 @@ dependencies = [
     "keyboard",
     "limits",
     "httpx",
+    "ruff",
 ]

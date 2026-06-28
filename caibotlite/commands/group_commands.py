@@ -5,18 +5,19 @@ from caibotlite.dependencies import Args, CurrentGroup, OriginalGroup, Session
 from caibotlite.managers import GroupManager, UserManager
 from caibotlite.markdown.image import user_avatar
 from caibotlite.markdown.keyboard import reedit_keyboard
-from caibotlite.markdown.tag import at_user_tag, cmd_input_tag
+from caibotlite.markdown.tag import cmd_input_tag
 
 bind_parent_group = on_command("绑定父群", force_whitespace=True, block=True)
 
 
 @bind_parent_group.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                "没有权限！\n"
+                "## 🔗 绑定父群\n" + "没有权限！\n"
                 "> 只允许**管理员**设置\n"
                 "> 机器人**添加者**为**默认管理员**"
             )
@@ -25,21 +26,19 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
     if len(args) == 0:
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/绑定父群')} <父群ID> [只在本群有效]\n"
-                f"> 使用\"{cmd_input_tag('/获取群信息')}\"获取父群**ID**"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🔗 绑定父群\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/绑定父群')} `<父群ID>` [只在本群有效]\n"
+                f'> 使用"{cmd_input_tag("/获取群信息")}"获取父群**ID**'
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if group.parent_open_id is not None:
         await session.refresh(group, ["parent_group"])
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                f"本群已绑定父群**{group.parent_group.id}**！\n"
-                f"> 使用\"{cmd_input_tag('/解绑父群')}\"解除绑定"
+                "## 🔗 绑定父群\n" + f"本群已绑定父群**{group.parent_group.id}**！\n"
+                f'> 使用"{cmd_input_tag("/解绑父群")}"解除绑定'
             )
         )
 
@@ -48,11 +47,9 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
     if parent_group_id == group.id:
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                "**StackOverFlow！**\n"
-                "> 父群不能是自己"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🔗 绑定父群\n" + "**StackOverFlow！**\n> 父群不能是自己"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     parent_group = await GroupManager.get_group_by_id(session, parent_group_id)
@@ -60,17 +57,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
     if parent_group is None:
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                f"没有找到ID为**{parent_group_id}**的群！"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🔗 绑定父群\n" + f"没有找到ID为**{parent_group_id}**的群！"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if not GroupManager.has_permission(parent_group, event.author.union_openid):
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                "没有权限！\n"
+                "## 🔗 绑定父群\n" + "没有权限！\n"
                 "> 你必须是**父群的管理员**才能进行此操作"
             )
         )
@@ -78,9 +73,7 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
     if parent_group.parent_open_id is not None:
         await bind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 绑定父群\n" +
-                "我的附庸的附庸不是我附庸 :(\n"
-                "> 父群不能是子群"
+                "## 🔗 绑定父群\n" + "我的附庸的附庸不是我附庸 :(\n> 父群不能是子群"
             )
         )
 
@@ -89,9 +82,8 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: OriginalGroup, 
 
     await bind_parent_group.finish(
         MessageSegment.markdown(
-            "## 🔗 绑定父群\n" +
-            f"已将**{parent_group_id}**设为本群父群！\n"
-            f"> 使用\"{cmd_input_tag('/解绑父群')}\"解除绑定"
+            "## 🔗 绑定父群\n" + f"已将**{parent_group_id}**设为本群父群！\n"
+            f'> 使用"{cmd_input_tag("/解绑父群")}"解除绑定'
         )
     )
 
@@ -104,8 +96,7 @@ async def _(event: GroupAtMessageCreateEvent, group: OriginalGroup, session: Ses
     if not GroupManager.has_permission(group, event.author.union_openid):
         await unbind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 解绑父群\n" +
-                "没有权限！\n"
+                "## 🔗 解绑父群\n" + "没有权限！\n"
                 "> 只允许**管理员**使用\n"
                 "> 机器人**添加者**为**默认管理员**"
             )
@@ -114,25 +105,23 @@ async def _(event: GroupAtMessageCreateEvent, group: OriginalGroup, session: Ses
     if group.parent_open_id is None:
         await unbind_parent_group.finish(
             MessageSegment.markdown(
-                "## 🔗 解绑父群\n" +
-                "本群没有已绑定的父群！\n"
-                f"> 使用\"{cmd_input_tag('/绑定父群')}\"添加父群"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🔗 解绑父群\n" + "本群没有已绑定的父群！\n"
+                f'> 使用"{cmd_input_tag("/绑定父群")}"添加父群'
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     group.parent_open_id = None
     await GroupManager.update_group(session, group)
 
     await unbind_parent_group.finish(
-        MessageSegment.markdown(
-            "## 🔗 解绑父群\n" +
-            "已解绑父群！"
-        )
+        MessageSegment.markdown("## 🔗 解绑父群\n" + "已解绑父群！")
     )
 
 
-get_group_info = on_command("获取群信息", aliases={"获取群信息"}, force_whitespace=True, block=True)
+get_group_info = on_command(
+    "获取群信息", aliases={"获取群信息"}, force_whitespace=True, block=True
+)
 
 
 @get_group_info.handle()
@@ -156,15 +145,15 @@ async def _(group: OriginalGroup, session: Session):
             black_names.append(f"**{user.name}**")
     await get_group_info.finish(
         MessageSegment.markdown(
-            "## 📋 群信息\n" +
-            f"- 群ID: **{group.id}**\n" +
-            f"- 群OpenID: **{group.open_id}**\n" +
-            f"- 父群: **{group.parent_group.id if group.parent_open_id else '无'}**\n" +
-            f"- 子群: **{','.join([str(i.id) for i in child_group]) if len(child_group) != 0 else '无'}**\n" +
-            f"- 用户数: **{await UserManager.count_group_users(session, group.open_id)}**\n" +
-            f"- 管理列表: **{','.join(admin_names)}**\n" +
-            f"- 黑名单: **{','.join(black_names) if len(black_names) != 0 else '无'}**\n" +
-            f"> 绑定父群时使用\"群ID\""
+            "## 📋 群信息\n"
+            + f"- 群ID: **{group.id}**\n"
+            + f"- 群OpenID: **{group.open_id}**\n"
+            + f"- 父群: **{group.parent_group.id if group.parent_open_id else '无'}**\n"
+            + f"- 子群: **{','.join([str(i.id) for i in child_group]) if len(child_group) != 0 else '无'}**\n"
+            + f"- 用户数: **{await UserManager.count_group_users(session, group.open_id)}**\n"
+            + f"- 管理列表: **{','.join(admin_names)}**\n"
+            + f"- 黑名单: **{','.join(black_names) if len(black_names) != 0 else '无'}**\n"
+            + f'> 绑定父群时使用"群ID"'
         )
     )
 
@@ -176,8 +165,7 @@ list_admin = on_command("管理列表", force_whitespace=True, block=True)
 async def _(group: CurrentGroup, session: Session):
     admins = []
     for i in group.admins:
-        user = await UserManager.get_user_by_open_id(
-            session, group.open_id, i)
+        user = await UserManager.get_user_by_open_id(session, group.open_id, i)
         if user is None:
             admins.append(f"无白名单({i})")
         else:
@@ -185,40 +173,42 @@ async def _(group: CurrentGroup, session: Session):
     if len(admins) == 0:
         await list_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "本群居然没有管理？\n"
-                "> 请尝试移除并重新添加机器人"
+                "## 🍥 BOT管理\n" + "本群居然没有管理？\n> 请尝试移除并重新添加机器人"
             )
         )
     else:
         await list_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "\n".join([f"{admin}" for admin in admins])
+                "## 🍥 BOT管理\n" + "\n".join([f"{admin}" for admin in admins])
             )
         )
 
 
-add_admin = on_command("添加管理", aliases={"添加管理员"}, force_whitespace=True, block=True)
+add_admin = on_command(
+    "添加管理", aliases={"添加管理员"}, force_whitespace=True, block=True
+)
 
 
 @add_admin.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "没有权限！\n"
+                "## 🍥 BOT管理\n" + "没有权限！\n"
                 "> 只允许**管理员**使用\n"
                 "> 机器人**添加者**为**默认管理员**"
             )
         )
 
-    if event.author.union_openid != group.admins[0] and not group.config.allow_admin_addadmin:
+    if (
+        event.author.union_openid != group.admins[0]
+        and not group.config.allow_admin_addadmin
+    ):
         await add_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "没有权限！\n"
+                "## 🍥 BOT管理\n" + "没有权限！\n"
                 "> 本群已设置仅允许**第一管理员**添加管理"
             )
         )
@@ -226,12 +216,11 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if len(args) == 0:
         await add_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/添加管理')} <玩家名> [只在本群有效]\n"
+                "## 🍥 BOT管理\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/添加管理')} `<玩家名>` [只在本群有效]\n"
                 "> 机器人**添加者**为**默认管理员**"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     taget_name = args[0]
@@ -240,51 +229,49 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if user is None:
         await add_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                f"没有找到名为**{taget_name}**的用户！\n"
+                "## 🍥 BOT管理\n" + f"没有找到名为**{taget_name}**的用户！\n"
                 "> 请确保对方已添加白名单"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if user.open_id in group.admins:
         await add_admin.finish(
-            MessageSegment.markdown(
-
-                "## 🍥 BOT管理\n" +
-                "该用户已是本群BOT管理！"
-            )
+            MessageSegment.markdown("## 🍥 BOT管理\n" + "该用户已是本群BOT管理！")
         )
     else:
         group.admins.append(user.open_id)
         await GroupManager.update_group(session, group)
         await add_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                f"已将**{taget_name}**设为本群BOT管理！"
+                "## 🍥 BOT管理\n" + f"已将**{taget_name}**设为本群BOT管理！"
             )
         )
 
 
-del_admin = on_command("删除管理", aliases={"删除管理员"}, force_whitespace=True, block=True)
+del_admin = on_command(
+    "删除管理", aliases={"删除管理员"}, force_whitespace=True, block=True
+)
 
 
 @del_admin.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await del_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "没有权限！\n"
-                "> 只允许**管理员**使用"
+                "## 🍥 BOT管理\n" + "没有权限！\n> 只允许**管理员**使用"
             )
         )
 
-    if event.author.union_openid != group.admins[0] and not group.config.allow_admin_addadmin:
+    if (
+        event.author.union_openid != group.admins[0]
+        and not group.config.allow_admin_addadmin
+    ):
         await del_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "没有权限！\n"
+                "## 🍥 BOT管理\n" + "没有权限！\n"
                 "> 本群已设置仅允许**第一管理员**删除管理"
             )
         )
@@ -292,11 +279,10 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if len(args) == 0:
         await del_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/删除管理')} <玩家名> [只在本群有效]"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🍥 BOT管理\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/删除管理')} `<玩家名>` [只在本群有效]"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     taget_name = args[0]
@@ -304,35 +290,27 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if user is None:
         await del_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                f"没有找到名为**{taget_name}**的用户！"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🍥 BOT管理\n" + f"没有找到名为**{taget_name}**的用户！"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if user.open_id in group.admins:
         if len(group.admins) == 1:
             await del_admin.finish(
-                MessageSegment.markdown(
-                    "## 🍥 BOT管理\n" +
-                    "群内至少需要1名管理！"
-                )
+                MessageSegment.markdown("## 🍥 BOT管理\n" + "群内至少需要1名管理！")
             )
         group.admins.remove(user.open_id)
         await GroupManager.update_group(session, group)
         await del_admin.finish(
             MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                f"**{taget_name}**不再是本群BOT管理！"
+                "## 🍥 BOT管理\n" + f"**{taget_name}**不再是本群BOT管理！"
             )
         )
     else:
         await del_admin.finish(
-            MessageSegment.markdown(
-                "## 🍥 BOT管理\n" +
-                "该用户不是本群BOT管理！"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+            MessageSegment.markdown("## 🍥 BOT管理\n" + "该用户不是本群BOT管理！")
+            + reedit_keyboard(event.get_plaintext())
         )
 
 
@@ -351,16 +329,12 @@ async def _(group: CurrentGroup, session: Session):
 
     if len(names) == 0:
         await list_blacklist.finish(
-            MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "小黑屋啥也没有捏~"
-            )
+            MessageSegment.markdown("## 🚫 BOT黑名单\n" + "小黑屋啥也没有捏~")
         )
     else:
         await list_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "\n".join([f"- {name}" for name in names])
+                "## 🚫 BOT黑名单\n" + "\n".join([f"- {name}" for name in names])
             )
         )
 
@@ -369,23 +343,22 @@ add_blacklist = on_command("添加黑名单", force_whitespace=True, block=True)
 
 
 @add_blacklist.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await add_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "没有权限！\n"
-                "> 只允许**管理员**使用"
+                "## 🚫 BOT黑名单\n" + "没有权限！\n> 只允许**管理员**使用"
             )
         )
     if len(args) == 0:
         await add_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/添加黑名单')} <玩家名> [只在本群有效]"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🚫 BOT黑名单\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/添加黑名单')} `<玩家名>` [只在本群有效]"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     taget_name = args[0]
@@ -393,52 +366,48 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if user is None:
         await add_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                f"没有找到名为**{taget_name}**的用户！\n"
+                "## 🚫 BOT黑名单\n" + f"没有找到名为**{taget_name}**的用户！\n"
                 "> 请确保对方已添加白名单"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if user.open_id in group.black_list:
         await add_blacklist.finish(
-            MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "该用户已在黑名单中！"
-            )
+            MessageSegment.markdown("## 🚫 BOT黑名单\n" + "该用户已在黑名单中！")
         )
     else:
         group.black_list.append(user.open_id)
         await GroupManager.update_group(session, group)
         await add_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                f"已将**{taget_name}**加入本群黑名单！"
+                "## 🚫 BOT黑名单\n" + f"已将**{taget_name}**加入本群黑名单！"
             )
         )
 
 
-del_blacklist = on_command("删除黑名单", aliases={"解封"}, force_whitespace=True, block=True)
+del_blacklist = on_command(
+    "删除黑名单", aliases={"解封"}, force_whitespace=True, block=True
+)
 
 
 @del_blacklist.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await del_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "没有权限！\n"
-                "> 只允许**管理员**使用"
+                "## 🚫 BOT黑名单\n" + "没有权限！\n> 只允许**管理员**使用"
             )
         )
     if len(args) != 1:
         await del_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/删除黑名单')} <玩家名> [只在本群有效]"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## 🚫 BOT黑名单\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/删除黑名单')} `<玩家名>` [只在本群有效]"
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     taget_name = args[0]
@@ -446,11 +415,10 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
     if user is None:
         await del_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                f"没有找到名为**{taget_name}**的用户！\n"
+                "## 🚫 BOT黑名单\n" + f"没有找到名为**{taget_name}**的用户！\n"
                 "> 请确保对方已添加白名单"
-            ) +
-            reedit_keyboard(event.get_plaintext())
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     if user.open_id in group.black_list:
@@ -458,16 +426,12 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
         await GroupManager.update_group(session, group)
         await del_blacklist.finish(
             MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                f"已将**{taget_name}**从本群黑名单中移除！"
+                "## 🚫 BOT黑名单\n" + f"已将**{taget_name}**从本群黑名单中移除！"
             )
         )
     else:
         await del_blacklist.finish(
-            MessageSegment.markdown(
-                "## 🚫 BOT黑名单\n" +
-                "该用户不在本群黑名单中！"
-            )
+            MessageSegment.markdown("## 🚫 BOT黑名单\n" + "该用户不在本群黑名单中！")
         )
 
 
@@ -475,33 +439,34 @@ settings = on_command("设置", force_whitespace=True, block=True)
 
 
 @settings.handle()
-async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session):
+async def _(
+    event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, session: Session
+):
     if not GroupManager.has_permission(group, event.author.union_openid):
         await settings.finish(
             MessageSegment.markdown(
-                "## ⚙️ BOT设置\n" +
-                "没有权限！\n"
-                "> 只允许**管理员**使用"
+                "## ⚙️ BOT设置\n" + "没有权限！\n> 只允许**管理员**使用"
             )
         )
     if len(args) != 2:
         await settings.finish(
             MessageSegment.markdown(
-                "## ⚙️ BOT设置\n" +
-                "格式错误！\n"
-                f"正确格式: {cmd_input_tag('/设置')} <配置项> <值>\n"
-                "当前支持的设置项: \n" +
-                "\n".join([
-                    "- 最大签到金币",
-                    "- 最小签到金币",
-                    "- 不显示在线玩家",
-                    "- 允许群员下载地图",
-                    "- 允许群员查看地图",
-                    "- 允许群员下载小地图",
-                    "- 允许非第一管理员添加管理员"
-                ])
-            ) +
-            reedit_keyboard(event.get_plaintext())
+                "## ⚙️ BOT设置\n" + "格式错误！\n"
+                f"正确格式: {cmd_input_tag('/设置')} `<配置项>` `<值>`\n"
+                "当前支持的设置项: \n"
+                + "\n".join(
+                    [
+                        "- 最大签到金币",
+                        "- 最小签到金币",
+                        "- 不显示在线玩家",
+                        "- 允许群员下载地图",
+                        "- 允许群员查看地图",
+                        "- 允许群员下载小地图",
+                        "- 允许非第一管理员添加管理员",
+                    ]
+                )
+            )
+            + reedit_keyboard(event.get_plaintext())
         )
 
     key = args[0]
@@ -512,42 +477,32 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if not value.isdigit():
                 await settings.finish(
                     MessageSegment.markdown(
-
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是数字"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是数字"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             value = int(value)
             if value > 1000000000:
                 await settings.finish(
                     MessageSegment.markdown(
-
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 不可以大于1000000000"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 不可以大于1000000000"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
 
             if value < group.config.min_sign_coins:
                 await settings.finish(
                     MessageSegment.markdown(
-
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 不可以小于最小值"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 不可以小于最小值"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
 
             group.config.max_sign_coins = value
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"最大签到金币已设置为: **{group.config.max_sign_coins}**"
                 )
             )
@@ -556,39 +511,32 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if not value.isdigit():
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是数字"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是数字"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             value = int(value)
             if value > 1000000000:
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 不可以大于1000000000"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 不可以大于1000000000"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
 
             if value > group.config.max_sign_coins:
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 不可以大于最大值"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 不可以大于最大值"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
 
             group.config.min_sign_coins = value
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"最小签到金币已设置为: **{group.config.min_sign_coins}**"
                 )
             )
@@ -597,18 +545,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if value.lower() not in ("true", "false"):
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是true/false"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是true/false"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             group.config.disabled_show_playerlist = value.lower() == "true"
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"不显示在线玩家已设置为: **{group.config.disabled_show_playerlist}**"
                 )
             )
@@ -617,18 +562,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if value.lower() not in ("true", "false"):
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是true/false"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是true/false"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             group.config.allow_default_getworldfile = value.lower() == "true"
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"允许群员下载地图已设置为: **{group.config.allow_default_getworldfile}**"
                 )
             )
@@ -637,18 +579,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if value.lower() not in ("true", "false"):
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是true/false"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是true/false"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             group.config.allow_default_getmapimage = value.lower() == "true"
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"允许群员查看地图已设置为: **{group.config.allow_default_getmapimage}**"
                 )
             )
@@ -657,18 +596,15 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if value.lower() not in ("true", "false"):
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是true/false"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是true/false"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             group.config.allow_default_getmapfile = value.lower() == "true"
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"允许群员下载小地图已设置为: **{group.config.allow_default_getmapfile}**"
                 )
             )
@@ -677,27 +613,22 @@ async def _(event: GroupAtMessageCreateEvent, args: Args, group: CurrentGroup, s
             if event.author.union_openid != group.admins[0]:
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "没有权限！\n"
-                        "> 只有第一管理员才能设置此配置"
+                        "## ⚙️ BOT设置\n" + "没有权限！\n> 只有第一管理员才能设置此配置"
                     )
                 )
 
             if value.lower() not in ("true", "false"):
                 await settings.finish(
                     MessageSegment.markdown(
-                        "## ⚙️ BOT设置\n" +
-                        "无效参数！\n"
-                        "> 必须是true/false"
-                    ) +
-                    reedit_keyboard(event.get_plaintext())
+                        "## ⚙️ BOT设置\n" + "无效参数！\n> 必须是true/false"
+                    )
+                    + reedit_keyboard(event.get_plaintext())
                 )
             group.config.allow_admin_addadmin = value.lower() == "true"
             await GroupManager.update_group(session, group)
             await settings.finish(
                 MessageSegment.markdown(
-                    "## ⚙️ BOT设置\n" +
-                    "设置成功！\n"
+                    "## ⚙️ BOT设置\n" + "设置成功！\n"
                     f"允许非第一管理员添加管理员已设置为: **{group.config.allow_admin_addadmin}**"
                 )
             )

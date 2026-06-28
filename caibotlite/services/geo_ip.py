@@ -8,7 +8,7 @@ class GeoIP:
 
     @classmethod
     def init(cls):
-        cls.reader = Reader(r'./data/GeoCN.mmdb')
+        cls.reader = Reader(r"./data/GeoCN.mmdb")
 
     @classmethod
     def get_city(cls, ip: str) -> Optional[str]:
@@ -17,11 +17,11 @@ class GeoIP:
         if ip_info is None:
             return None
 
-        if "city" in ip_info and ip_info['city']:
-            return ip_info['city']
+        if "city" in ip_info and ip_info["city"]:
+            return ip_info["city"]
 
-        if "province" in ip_info and ip_info['province']:
-            return ip_info['province']
+        if "province" in ip_info and ip_info["province"]:
+            return ip_info["province"]
 
         return None
 

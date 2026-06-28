@@ -7,38 +7,48 @@ from caibotlite.managers import UserManager
 
 async def get_user_avatar(group_openid: str, user_name: str, size: int = 20) -> str:
     async with async_session() as session:
-        user = await UserManager.get_user_by_name(session=session, group_open_id=group_openid, name=user_name)
-    return  user_avatar(user.open_id, size) if user else ""
+        user = await UserManager.get_user_by_name(
+            session=session, group_open_id=group_openid, name=user_name
+        )
+    return user_avatar(user.open_id, size) if user else ""
+
 
 def user_avatar(user_openid: str, size: int = 20) -> str:
-   return f"![text #{size}px #{size}px](https://thirdqq.qlogo.cn/qqapp/{BOT_APPID}/{user_openid}/1)"
+    return f"![text #{size}px #{size}px](https://thirdqq.qlogo.cn/qqapp/{BOT_APPID}/{user_openid}/1)"
 
 
-async def get_users_avatar(group_openid: str, user_names: Iterable[str], size: int = 20) -> dict[str, str]:
+async def get_users_avatar(
+    group_openid: str, user_names: Iterable[str], size: int = 20
+) -> dict[str, str]:
     async with async_session() as session:
-        users = await UserManager.get_users_by_names(session=session, group_open_id=group_openid, names=user_names)
+        users = await UserManager.get_users_by_names(
+            session=session, group_open_id=group_openid, names=user_names
+        )
 
     return {
         user_name: f"![text #{size}px #{size}px](https://thirdqq.qlogo.cn/qqapp/{BOT_APPID}/{user.open_id}/1)"
         for user_name, user in users.items()
     }
 
+
 def get_image(url: str, size: int = 20) -> str:
     return f"![text #{size}px #{size}px]({url})"
 
 
 _TERRARIA_CATEGORY_MAP = {
-    "item":       ("items",       "Item_{}.png"),
-    "npc":        ("npcs",        "NPC_{}.png"),
+    "item": ("items", "Item_{}.png"),
+    "npc": ("npcs", "NPC_{}.png"),
     "projectile": ("projectiles", "Projectile_{}.png"),
-    "buff":       ("buffs",       "Buff_{}.png"),
+    "buff": ("buffs", "Buff_{}.png"),
 }
 
 # cache: (category, item_id) -> (w, h)
 _TERRARIA_SIZE_CACHE: dict[tuple[str, int], tuple[int, int]] = {}
 
 
-def _get_terraria_image_size(category: str, item_id: int, fallback: int = 32) -> tuple[int, int]:
+def _get_terraria_image_size(
+    category: str, item_id: int, fallback: int = 32
+) -> tuple[int, int]:
     key = (category, item_id)
     if key in _TERRARIA_SIZE_CACHE:
         return _TERRARIA_SIZE_CACHE[key]
@@ -67,4 +77,3 @@ def get_terraria_image(category: str, item_id: int, fallback_size: int = 32) -> 
     url = f"{API_URL.rstrip('/')}/image/{category}/{item_id}"
     w, h = _get_terraria_image_size(category, item_id, fallback_size)
     return f"![text #{w}px #{h}px]({url})"
-
