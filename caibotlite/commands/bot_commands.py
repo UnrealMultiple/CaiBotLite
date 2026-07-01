@@ -129,8 +129,8 @@ async def fetch_server_plugins(server):
         return None
     unique_plugins = set()
     for plugin in plugins:
-        name = plugin.get("Name", "未知插件")
-        unique_plugins.add(name)
+        name: str = plugin.get("Name", "未知插件")
+        unique_plugins.add(name.replace("|", ""))
 
     return unique_plugins
 
@@ -165,7 +165,7 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent):
     table_rows = []
     for rank, (name, count) in enumerate(sorted_plugins, 1):
         filtered_name = filter_all(name)
-        table_rows.append(f"| {rank} | {filtered_name} | {count} |")
+        table_rows.append(f"| {filtered_name} | {count} |")
 
     if not table_rows:
         table_rows.append("| - | 暂无数据 | - |")
@@ -173,8 +173,8 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent):
     markdown_text = (
             f"## 📊 插件统计\n\n"
             f"> 统计服务器数：{server_count}\n\n"
-            f"| 排名 | 名字 | 数量 |\n"
-            f"| --- | --- | --- |\n" + "\n".join(table_rows)
+            f"| 名字 | 数量 |\n"
+            f"| --- | --- |\n" + "\n".join(table_rows)
     )
 
     await plugin_statistics.finish(MessageSegment.markdown(markdown_text))
