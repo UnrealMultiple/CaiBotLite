@@ -10,7 +10,7 @@ from nonebot.adapters.qq import (
 )
 
 from caibotlite.commands.server_commands import get_plugin_list
-from caibotlite.constants import BOT_VERSION
+from caibotlite.constants import BOT_VERSION, SUPERADMINS_OPEN_ID
 from caibotlite.dependencies import Session, Args
 from caibotlite.enums import PackageType
 from caibotlite.managers import (
@@ -139,7 +139,14 @@ plugin_statistics = on_command("插件统计", force_whitespace=True, block=True
 
 
 @plugin_statistics.handle()
-async def _():
+async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent):
+    if event.author.member_openid not in SUPERADMINS_OPEN_ID:
+        await plugin_statistics.finish(MessageSegment.markdown(
+            f"## 📊 插件统计\n\n"
+            f"没有权限！"
+        ))
+        return
+
     all_plugins = Counter()
 
     servers = list(ConnectionManager.connected_servers.values())
@@ -164,10 +171,10 @@ async def _():
         table_rows.append("| - | 暂无数据 | - |")
 
     markdown_text = (
-        f"## 📊 插件统计\n\n"
-        f"> 统计服务器数：{server_count}\n\n"
-        f"| 排名 | 名字 | 数量 |\n"
-        f"| --- | --- | --- |\n" + "\n".join(table_rows)
+            f"## 📊 插件统计\n\n"
+            f"> 统计服务器数：{server_count}\n\n"
+            f"| 排名 | 名字 | 数量 |\n"
+            f"| --- | --- | --- |\n" + "\n".join(table_rows)
     )
 
     await plugin_statistics.finish(MessageSegment.markdown(markdown_text))
