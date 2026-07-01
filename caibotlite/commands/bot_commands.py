@@ -1,3 +1,7 @@
+import asyncio
+from collections import Counter
+
+from attr import dataclass
 from nonebot import on_command, on_message
 from nonebot.adapters.qq import (
     GroupAtMessageCreateEvent,
@@ -5,8 +9,10 @@ from nonebot.adapters.qq import (
     GroupMessageCreateEvent,
 )
 
+from caibotlite.commands.server_commands import get_plugin_list
 from caibotlite.constants import BOT_VERSION
 from caibotlite.dependencies import Session, Args
+from caibotlite.enums import PackageType
 from caibotlite.managers import (
     ConnectionManager,
     GroupManager,
@@ -19,7 +25,9 @@ from caibotlite.markdown.keyboard import (
     permission_request_keyboard,
 )
 from caibotlite.markdown.tag import cmd_input_tag
-from caibotlite.services import Statistics
+from caibotlite.models.server_error_exception import ServerError
+from caibotlite.services import Statistics, PackageWriter
+from caibotlite.utils import filter_all, replace_all_tag
 
 about = on_command("关于", force_whitespace=True, block=True)
 
@@ -104,6 +112,65 @@ async def _():
             f"{whitelist_count}台"
         )
     )
+
+
+async def fetch_server_plugins(server):
+    package_writer = PackageWriter(PackageType.PLUGIN_LIST)
+
+    try:
+        payload = await ConnectionManager.call_api(server.token, package_writer.build())
+    except (ServerError, TimeoutError):
+        return None
+
+    is_mod = payload.get("is_mod", False)
+    plugins = payload.get("plugins", [])
+
+    if is_mod or not plugins:
+        return None
+    unique_plugins = set()
+    for plugin in plugins:
+        name = plugin.get("Name", "未知插件")
+        unique_plugins.add(name)
+
+    return unique_plugins
+
+
+plugin_statistics = on_command("插件统计", force_whitespace=True, block=True)
+
+
+@plugin_statistics.handle()
+async def _():
+    all_plugins = Counter()
+
+    servers = list(ConnectionManager.connected_servers.values())
+    results = await asyncio.gather(
+        *[fetch_server_plugins(server) for server in servers], return_exceptions=True
+    )
+
+    server_count = 0
+    for result in results:
+        if result is not None and not isinstance(result, Exception):
+            all_plugins.update(result)
+            server_count += 1
+
+    sorted_plugins = all_plugins.most_common()
+
+    table_rows = []
+    for rank, (name, count) in enumerate(sorted_plugins, 1):
+        filtered_name = filter_all(name)
+        table_rows.append(f"| {rank} | {filtered_name} | {count} |")
+
+    if not table_rows:
+        table_rows.append("| - | 暂无数据 | - |")
+
+    markdown_text = (
+        f"## 📊 插件统计\n\n"
+        f"> 统计服务器数：{server_count}\n\n"
+        f"| 排名 | 名字 | 数量 |\n"
+        f"| --- | --- | --- |\n" + "\n".join(table_rows)
+    )
+
+    await plugin_statistics.finish(MessageSegment.markdown(markdown_text))
 
 
 permission_request = on_command("权限请求", force_whitespace=True, block=True)
