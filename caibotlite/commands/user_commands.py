@@ -80,7 +80,7 @@ async def _(
                 f"{at_user_tag(event.author.union_openid)}\n"
                 + "## 🍥 白名单\n"
                 + f"绑定失败！\n"
-                + f"名字最大长度不难超过**15字符**！"
+                + f"名字最大长度不能超过**15字符**！"
             )
             + reedit_keyboard(event.get_plaintext())
         )

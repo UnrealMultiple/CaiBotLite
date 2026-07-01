@@ -27,7 +27,7 @@ async def _(event: GroupAddRobotEvent, session: Session):
     await init.finish(
         MessageSegment.markdown(
             "## 🍥 欢迎使用 CaiBotLite\n"
-            f"> 默认管理已设为{user_avatar(event.op_member_openid)} {at_user_tag(event.op_member_openid)}\n"
+            f"> 默认管理已设为 {user_avatar(event.op_member_openid)} {at_user_tag(event.op_member_openid)}\n"
             f'- 使用"{cmd_input_tag("/添加白名单")} `<名字>`"注册账户\n'
             f'- 使用"{cmd_input_tag("/添加管理员")} `<名字>`"添加新管理\n'
         )
