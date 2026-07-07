@@ -11,7 +11,7 @@ from nonebot.adapters.qq import (
 )
 
 from caibotlite.dependencies import Args, Session, CurrentGroup
-from caibotlite.enums import PackageType
+from caibotlite.enums import PackageType, ServerType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
 from caibotlite.markdown.image import get_users_avatar
 from caibotlite.markdown.keyboard import (
@@ -22,7 +22,7 @@ from caibotlite.markdown.keyboard import (
     add_whitelist_keyboard,
 )
 from caibotlite.markdown.tag import cmd_input_tag, copy_link_tag
-from caibotlite.models import Server, GroupConfig, Package, Group
+from caibotlite.models import Server, GroupConfig, Package, Group, ServerInfo
 from caibotlite.models.server_error_exception import ServerError
 from caibotlite.services import LookBag, QueryProcess, FileService, PackageWriter
 from caibotlite.utils import (
@@ -163,11 +163,20 @@ async def call_server_online(
     lines = [f"**๑{server_num}๑ ⚡{server_name}{process}**"]
 
     def version_warning():
-        plugin_version = ConnectionManager.connected_servers[
+        _server_info: ServerInfo = ConnectionManager.connected_servers[
             server.token
-        ].server_info.plugin_version
-        if plugin_version == "2026.1.29.0":
-            lines.append("⚠️此适配插件版本具有严重Bug，建议升级")
+        ].server_info
+
+        if _server_info is None:
+            return
+
+        version = tuple(map(int, _server_info.plugin_version.split('.')))
+
+        if version == (2026, 1, 29, 0) and _server_info.type == ServerType.TSHOCK:
+            lines.append("⚠️ 此适配插件版本具有严重Bug，建议升级")
+
+        if version < (2026, 7, 7, 0) and _server_info.type == ServerType.TSHOCK:
+            lines.append("⚠️ 此适配插件版本具有严重白名单漏洞，建议升级 (APM/CaiBotLite群文件)")
 
     if current_online == 0:
         lines.append(f"没有玩家在线捏...")
