@@ -175,7 +175,7 @@ async def call_server_online(
         if version == (2026, 1, 29, 0) and _server_info.type == ServerType.TSHOCK:
             lines.append("⚠️ 此适配插件版本具有严重Bug，建议升级")
 
-        if version < (2026, 7, 7, 0) and _server_info.type == ServerType.TSHOCK:
+        if version < (2026, 7, 7, 1) and _server_info.type == ServerType.TSHOCK:
             lines.append("⚠️ 此适配插件版本具有严重白名单漏洞，建议升级 (APM/CaiBotLite群文件)")
 
     if current_online == 0:
