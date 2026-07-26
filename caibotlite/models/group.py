@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING, List, Optional
 
-from sqlalchemy import String, JSON
+from sqlalchemy import ARRAY, String
 from sqlalchemy.ext.mutable import MutableList
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.sql.schema import ForeignKey
@@ -23,11 +23,12 @@ class Group(Base):
     # unique=True 会生成内联 UNIQUE 约束(自带索引), 供本表自引用外键使用;
     # 不能加 index=True, 否则会变成建表后才创建的唯一索引, PG 上自引用外键会建表失败
     open_id: Mapped[str] = mapped_column(String(32), unique=True)
+    # PG 原生数组; 元素不限长, 避免历史脏数据超长导致迁移/写入失败
     admins: Mapped[List["str"]] = mapped_column(
-        MutableList.as_mutable(JSON), default=[]
+        MutableList.as_mutable(ARRAY(String)), default=[]
     )
     black_list: Mapped[List["str"]] = mapped_column(
-        MutableList.as_mutable(JSON), default=[]
+        MutableList.as_mutable(ARRAY(String)), default=[]
     )
     config: Mapped["GroupConfig"] = relationship(
         back_populates="group",

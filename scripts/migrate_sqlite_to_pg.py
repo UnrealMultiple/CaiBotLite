@@ -13,6 +13,7 @@
 
 import argparse
 import asyncio
+import json
 import os
 import sys
 from pathlib import Path
@@ -80,6 +81,12 @@ async def migrate(sqlite_url: str, pg_url: str, force: bool) -> None:
                         if bad:
                             skipped_counts["group"] = len(bad)
                             print(f"[*] group: 跳过 {len(bad)} 行 open_id 含换行符的重复垃圾数据")
+                        # SQLite 中 admins/black_list 存为 JSON 文本, PG 目标列
+                        # 是原生数组, SQLite 方言不会自动解析, 手动转为 list
+                        for row in rows:
+                            for col_name in ("admins", "black_list"):
+                                if isinstance(row[col_name], str):
+                                    row[col_name] = json.loads(row[col_name])
                     elif table.name == "group_config":
                         before = len(rows)
                         rows = [

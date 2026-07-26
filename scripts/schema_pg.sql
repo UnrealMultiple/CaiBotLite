@@ -3,8 +3,8 @@
 CREATE TABLE "group" (
 	id SERIAL NOT NULL, 
 	open_id VARCHAR(32) NOT NULL, 
-	admins JSON NOT NULL, 
-	black_list JSON NOT NULL, 
+	admins VARCHAR[] NOT NULL, 
+	black_list VARCHAR[] NOT NULL, 
 	parent_open_id VARCHAR(32), 
 	PRIMARY KEY (id), 
 	UNIQUE (open_id), 
@@ -102,10 +102,10 @@ CREATE TABLE "user" (
 	FOREIGN KEY(group_open_id) REFERENCES "group" (open_id)
 );
 
-CREATE INDEX ix_user_name ON "user" (name);
 CREATE INDEX ix_user_group_open_id ON "user" (group_open_id);
 CREATE INDEX ix_user_id ON "user" (id);
 CREATE INDEX ix_user_open_id ON "user" (open_id);
+CREATE INDEX ix_user_name ON "user" (name);
 
 CREATE TABLE shop_item (
 	id SERIAL NOT NULL, 
