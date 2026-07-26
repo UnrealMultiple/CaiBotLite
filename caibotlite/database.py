@@ -1,8 +1,25 @@
+import os
+
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 
 from caibotlite.models import Base
 
-engine = create_async_engine("sqlite+aiosqlite:///data/bot.db", echo=False, future=True)
+DEFAULT_DATABASE_URL = "postgresql+asyncpg://caibot:caibot@localhost:5432/caibotlite"
+
+
+def _get_database_url() -> str:
+    try:
+        from nonebot import get_driver
+
+        url = getattr(get_driver().config, "database_url", None)
+        if url:
+            return url
+    except Exception:
+        pass
+    return os.getenv("DATABASE_URL", DEFAULT_DATABASE_URL)
+
+
+engine = create_async_engine(_get_database_url(), echo=False, future=True)
 async_session = async_sessionmaker(engine, expire_on_commit=False, autoflush=True)
 
 

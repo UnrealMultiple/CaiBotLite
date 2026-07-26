@@ -1,8 +1,8 @@
 from datetime import datetime
 from typing import TYPE_CHECKING
 
-from sqlalchemy import String, ForeignKey
-from sqlalchemy.orm import Mapped, relationship, mapped_column
+from sqlalchemy import String
+from sqlalchemy.orm import Mapped, mapped_column
 
 from .base import Base
 
@@ -17,4 +17,5 @@ class LoginIP(Base):
     ip: Mapped[str] = mapped_column(String(32))
     city: Mapped[str] = mapped_column(String(32), nullable=True)
     record_time: Mapped[datetime] = mapped_column()
-    user_open_id: Mapped[str] = mapped_column(ForeignKey("user.open_id"))
+    # user.open_id 在多个群中会重复, 不能作为 PG 外键引用目标, 故只建索引不建外键
+    user_open_id: Mapped[str] = mapped_column(String(32), index=True)
