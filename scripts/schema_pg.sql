@@ -54,9 +54,9 @@ CREATE TABLE group_config (
 	allow_admin_addadmin BOOLEAN NOT NULL, 
 	disabled_whitelist_cooldown BOOLEAN NOT NULL, 
 	disabled_show_playerlist BOOLEAN NOT NULL, 
-	max_sign_coins INTEGER NOT NULL, 
-	min_sign_coins INTEGER NOT NULL, 
-	constant_sign_reward INTEGER NOT NULL, 
+	max_sign_coins BIGINT NOT NULL, 
+	min_sign_coins BIGINT NOT NULL, 
+	constant_sign_reward BIGINT NOT NULL, 
 	PRIMARY KEY (id), 
 	FOREIGN KEY(group_open_id) REFERENCES "group" (open_id)
 );
@@ -92,7 +92,7 @@ CREATE TABLE "user" (
 	group_open_id VARCHAR(32) NOT NULL, 
 	open_id VARCHAR(32) NOT NULL, 
 	name VARCHAR(32), 
-	money INTEGER NOT NULL, 
+	money BIGINT NOT NULL, 
 	sign_days INTEGER NOT NULL, 
 	sign_consistency INTEGER NOT NULL, 
 	last_login TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
@@ -102,8 +102,8 @@ CREATE TABLE "user" (
 	FOREIGN KEY(group_open_id) REFERENCES "group" (open_id)
 );
 
-CREATE INDEX ix_user_group_open_id ON "user" (group_open_id);
 CREATE INDEX ix_user_name ON "user" (name);
+CREATE INDEX ix_user_group_open_id ON "user" (group_open_id);
 CREATE INDEX ix_user_id ON "user" (id);
 CREATE INDEX ix_user_open_id ON "user" (open_id);
 

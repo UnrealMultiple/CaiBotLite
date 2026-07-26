@@ -19,7 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from sqlalchemy import select, text
+from sqlalchemy import BigInteger, Integer, select, text
 from sqlalchemy.ext.asyncio import create_async_engine
 
 from caibotlite.models import Base
@@ -96,27 +96,44 @@ async def migrate(sqlite_url: str, pg_url: str, force: bool) -> None:
 
                     table_rows[table.name] = rows
 
-            # 第二步: 超长预检. SQLite 不检查 VARCHAR(n) 长度而 PG 严格检查,
-            # 提前扫出所有超长值一次性报告, 避免插入中途报错
+            # 第二步: 预检. SQLite 不检查 VARCHAR(n) 长度和整数位宽而 PG 严格检查,
+            # 提前扫出所有超限值一次性报告, 避免插入中途报错
+            INT32_MIN, INT32_MAX = -(2**31), 2**31 - 1
             problems = []
             for table in tables:
                 for col in table.columns:
-                    limit = getattr(col.type, "length", None)
-                    if not limit:
+                    length_limit = getattr(col.type, "length", None)
+                    is_int32 = isinstance(col.type, Integer) and not isinstance(
+                        col.type, BigInteger
+                    )
+                    if not length_limit and not is_int32:
                         continue
                     for row in table_rows[table.name]:
                         value = row[col.name]
-                        if isinstance(value, str) and len(value) > limit:
+                        if (
+                            length_limit
+                            and isinstance(value, str)
+                            and len(value) > length_limit
+                        ):
                             problems.append(
-                                (table.name, col.name, row.get("id"), limit, len(value), value[:50])
+                                (table.name, col.name, row.get("id"),
+                                 f"超长 限制={length_limit} 实际={len(value)}", value[:50])
+                            )
+                        elif (
+                            is_int32
+                            and isinstance(value, int)
+                            and not (INT32_MIN <= value <= INT32_MAX)
+                        ):
+                            problems.append(
+                                (table.name, col.name, row.get("id"), "超出 int32 范围", value)
                             )
             if problems:
-                print(f"[!] 发现 {len(problems)} 个超过列长度限制的值, 已中止, 未写入任何数据:")
-                for tname, cname, rid, limit, length, sample in problems[:20]:
-                    print(f"    {tname}.{cname} id={rid} 限制={limit} 实际={length}: {sample!r}")
+                print(f"[!] 发现 {len(problems)} 个超过列限制的值, 已中止, 未写入任何数据:")
+                for tname, cname, rid, reason, sample in problems[:20]:
+                    print(f"    {tname}.{cname} id={rid} {reason}: {sample!r}")
                 if len(problems) > 20:
                     print(f"    ... 其余 {len(problems) - 20} 条省略")
-                print("[!] 请加宽模型列长度或清洗源数据后重试")
+                print("[!] 请调整模型列定义 (加宽长度/改 BigInteger) 或清洗源数据后重试")
                 sys.exit(1)
 
             # 第三步: 按外键依赖顺序写入

@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import TYPE_CHECKING, List, Optional
 
-from sqlalchemy import ForeignKey, String
+from sqlalchemy import BigInteger, ForeignKey, String
 from sqlalchemy.ext.associationproxy import association_proxy
 from sqlalchemy.orm import mapped_column, Mapped, relationship
 
@@ -22,7 +22,8 @@ class User(Base):
     group: Mapped["Group"] = relationship(back_populates="users", lazy="joined")
     open_id: Mapped[str] = mapped_column(String(32), index=True)
     name: Mapped[Optional[str]] = mapped_column(String(32), nullable=True, index=True)
-    money: Mapped[int] = mapped_column(default=0)
+    # 存在超过 int32 的余额, 需用 64 位整数
+    money: Mapped[int] = mapped_column(BigInteger, default=0)
     sign_days: Mapped[int] = mapped_column(default=0)
     sign_consistency: Mapped[int] = mapped_column(default=0)
     uuids: Mapped[List["LoginUUID"]] = relationship(

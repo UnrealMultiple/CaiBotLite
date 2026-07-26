@@ -23,6 +23,7 @@ class GroupConfig(Base):
     allow_admin_addadmin: Mapped[bool] = mapped_column(default=True)
     disabled_whitelist_cooldown: Mapped[bool] = mapped_column(default=False)
     disabled_show_playerlist: Mapped[bool] = mapped_column(default=False)
-    max_sign_coins: Mapped[int] = mapped_column(default=1000)
-    min_sign_coins: Mapped[int] = mapped_column(default=0)
-    constant_sign_reward: Mapped[int] = mapped_column(default=10)
+    # 金额相关字段可被设为超过 int32 的值, 统一用 64 位整数
+    max_sign_coins: Mapped[int] = mapped_column(BigInteger, default=1000)
+    min_sign_coins: Mapped[int] = mapped_column(BigInteger, default=0)
+    constant_sign_reward: Mapped[int] = mapped_column(BigInteger, default=10)
