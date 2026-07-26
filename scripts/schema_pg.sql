@@ -27,7 +27,7 @@ CREATE INDEX ix_login_ip_user_open_id ON login_ip (user_open_id);
 
 CREATE TABLE login_uuid (
 	id SERIAL NOT NULL, 
-	uuid VARCHAR(36) NOT NULL, 
+	uuid TEXT NOT NULL, 
 	record_time TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
 	user_open_id VARCHAR(32) NOT NULL, 
 	PRIMARY KEY (id)
@@ -102,8 +102,8 @@ CREATE TABLE "user" (
 	FOREIGN KEY(group_open_id) REFERENCES "group" (open_id)
 );
 
-CREATE INDEX ix_user_name ON "user" (name);
 CREATE INDEX ix_user_group_open_id ON "user" (group_open_id);
+CREATE INDEX ix_user_name ON "user" (name);
 CREATE INDEX ix_user_id ON "user" (id);
 CREATE INDEX ix_user_open_id ON "user" (open_id);
 

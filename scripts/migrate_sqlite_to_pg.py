@@ -64,6 +64,8 @@ async def migrate(sqlite_url: str, pg_url: str, force: bool) -> None:
             skipped_open_ids: set[str] = set()
             skipped_counts: dict[str, int] = {}
 
+            # 第一步: 全部读入内存并清洗 (数据量小, 全量加载没有问题)
+            table_rows: dict[str, list[dict]] = {}
             async with src.connect() as sconn:
                 for table in tables:
                     rows = [
@@ -92,35 +94,64 @@ async def migrate(sqlite_url: str, pg_url: str, force: bool) -> None:
                                 print(f"[*] user id={row['id']}: 名字超长, 截断为 32 字符")
                                 row["name"] = row["name"][:32]
 
-                    # group 表特殊处理:
-                    # 1. 历史数据中 parent_open_id 存在空字符串, 规范化为 NULL
-                    # 2. 自引用外键要求父行先插入, 故先全部按无父群插入, 再回填
-                    parent_fixups = []
-                    if table.name == "group":
-                        empty = 0
-                        for row in rows:
-                            if row["parent_open_id"] == "":
-                                row["parent_open_id"] = None
-                                empty += 1
-                            elif row["parent_open_id"] is not None:
-                                parent_fixups.append(
-                                    {"row_id": row["id"], "parent": row["parent_open_id"]}
-                                )
-                                row["parent_open_id"] = None
-                        if empty:
-                            print(f"[*] group: {empty} 行空字符串 parent_open_id 已规范化为 NULL")
+                    table_rows[table.name] = rows
 
-                    for i in range(0, len(rows), CHUNK_SIZE):
-                        await dconn.execute(table.insert(), rows[i : i + CHUNK_SIZE])
+            # 第二步: 超长预检. SQLite 不检查 VARCHAR(n) 长度而 PG 严格检查,
+            # 提前扫出所有超长值一次性报告, 避免插入中途报错
+            problems = []
+            for table in tables:
+                for col in table.columns:
+                    limit = getattr(col.type, "length", None)
+                    if not limit:
+                        continue
+                    for row in table_rows[table.name]:
+                        value = row[col.name]
+                        if isinstance(value, str) and len(value) > limit:
+                            problems.append(
+                                (table.name, col.name, row.get("id"), limit, len(value), value[:50])
+                            )
+            if problems:
+                print(f"[!] 发现 {len(problems)} 个超过列长度限制的值, 已中止, 未写入任何数据:")
+                for tname, cname, rid, limit, length, sample in problems[:20]:
+                    print(f"    {tname}.{cname} id={rid} 限制={limit} 实际={length}: {sample!r}")
+                if len(problems) > 20:
+                    print(f"    ... 其余 {len(problems) - 20} 条省略")
+                print("[!] 请加宽模型列长度或清洗源数据后重试")
+                sys.exit(1)
 
-                    if parent_fixups:
-                        await dconn.execute(
-                            text('UPDATE "group" SET parent_open_id = :parent WHERE id = :row_id'),
-                            parent_fixups,
-                        )
-                        print(f"[*] group: 已回填 {len(parent_fixups)} 行 parent_open_id")
+            # 第三步: 按外键依赖顺序写入
+            for table in tables:
+                rows = table_rows[table.name]
 
-                    print(f"[*] {table.name}: 已复制 {len(rows)} 行")
+                # group 表特殊处理:
+                # 1. 历史数据中 parent_open_id 存在空字符串, 规范化为 NULL
+                # 2. 自引用外键要求父行先插入, 故先全部按无父群插入, 再回填
+                parent_fixups = []
+                if table.name == "group":
+                    empty = 0
+                    for row in rows:
+                        if row["parent_open_id"] == "":
+                            row["parent_open_id"] = None
+                            empty += 1
+                        elif row["parent_open_id"] is not None:
+                            parent_fixups.append(
+                                {"row_id": row["id"], "parent": row["parent_open_id"]}
+                            )
+                            row["parent_open_id"] = None
+                    if empty:
+                        print(f"[*] group: {empty} 行空字符串 parent_open_id 已规范化为 NULL")
+
+                for i in range(0, len(rows), CHUNK_SIZE):
+                    await dconn.execute(table.insert(), rows[i : i + CHUNK_SIZE])
+
+                if parent_fixups:
+                    await dconn.execute(
+                        text('UPDATE "group" SET parent_open_id = :parent WHERE id = :row_id'),
+                        parent_fixups,
+                    )
+                    print(f"[*] group: 已回填 {len(parent_fixups)} 行 parent_open_id")
+
+                print(f"[*] {table.name}: 已复制 {len(rows)} 行")
 
             # 数据是带 id 插入的, 需要把自增序列拨到 max(id) 之后
             for table in tables:
