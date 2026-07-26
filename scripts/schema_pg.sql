@@ -15,7 +15,7 @@ CREATE INDEX ix_group_id ON "group" (id);
 
 CREATE TABLE login_ip (
 	id SERIAL NOT NULL, 
-	ip VARCHAR(32) NOT NULL, 
+	ip TEXT NOT NULL, 
 	city VARCHAR(32), 
 	record_time TIMESTAMP WITHOUT TIME ZONE NOT NULL, 
 	user_open_id VARCHAR(32) NOT NULL, 
@@ -67,15 +67,15 @@ CREATE TABLE server (
 	id SERIAL NOT NULL, 
 	group_open_id VARCHAR(32) NOT NULL, 
 	token VARCHAR(36) NOT NULL, 
-	ip VARCHAR(30) NOT NULL, 
+	ip TEXT NOT NULL, 
 	port INTEGER NOT NULL, 
 	PRIMARY KEY (id), 
 	FOREIGN KEY(group_open_id) REFERENCES "group" (open_id)
 );
 
+CREATE INDEX ix_server_group_open_id ON server (group_open_id);
 CREATE INDEX ix_server_token ON server (token);
 CREATE INDEX ix_server_id ON server (id);
-CREATE INDEX ix_server_group_open_id ON server (group_open_id);
 
 CREATE TABLE shop_list (
 	id SERIAL NOT NULL, 
