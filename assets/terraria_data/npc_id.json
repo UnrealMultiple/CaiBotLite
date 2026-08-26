@@ -451,7 +451,7 @@
     "Name": "僵尸",
     "NpcId": -33,
     "Damage": 43,
-    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。那副模样让双方都很尴尬。",
+    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。这样走动让双方都感觉不舒服。",
     "LifeMax": 133,
     "MonetaryValue": {
       "Copper": 52,
@@ -465,7 +465,7 @@
     "Name": "僵尸",
     "NpcId": -32,
     "Damage": 34,
-    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。那副模样让双方都很尴尬。",
+    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。这样走动让双方都感觉不舒服。",
     "LifeMax": 106,
     "MonetaryValue": {
       "Copper": 21,
@@ -563,7 +563,7 @@
     "Name": "猩红史莱姆",
     "NpcId": -25,
     "Damage": 207,
-    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找和消化更多原材料。",
+    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找并消化更多原材料。",
     "LifeMax": 690,
     "MonetaryValue": {
       "Copper": 50,
@@ -577,7 +577,7 @@
     "Name": "猩红史莱姆",
     "NpcId": -24,
     "Damage": 153,
-    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找和消化更多原材料。",
+    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找并消化更多原材料。",
     "LifeMax": 510,
     "MonetaryValue": {
       "Copper": 50,
@@ -591,7 +591,7 @@
     "Name": "猩红喀迈拉",
     "NpcId": -23,
     "Damage": 75,
-    "Description": "猩红之地最常见的恐怖力量，怀着无尽的饥饿，企图吞噬一切纯净之物。",
+    "Description": "猩红之地最常见的恐怖力量，它带着无尽的饥饿来吞噬纯净之物。",
     "LifeMax": 138,
     "MonetaryValue": {
       "Copper": 58,
@@ -605,7 +605,7 @@
     "Name": "猩红喀迈拉",
     "NpcId": -22,
     "Damage": 56,
-    "Description": "猩红之地最常见的恐怖力量，怀着无尽的饥饿，企图吞噬一切纯净之物。",
+    "Description": "猩红之地最常见的恐怖力量，它带着无尽的饥饿来吞噬纯净之物。",
     "LifeMax": 102,
     "MonetaryValue": {
       "Copper": 91,
@@ -745,7 +745,7 @@
     "Name": "噬魂怪",
     "NpcId": -12,
     "Damage": 75,
-    "Description": "它是纯粹的恶意生物，诞生自腐化之地，唯一的本能就是追逐、惩罚和杀戮。",
+    "Description": "它作为纯粹的恶意生物从腐化之地中诞生，唯一的本能就是追逐、惩罚和杀戮。",
     "LifeMax": 138,
     "MonetaryValue": {
       "Copper": 58,
@@ -759,7 +759,7 @@
     "Name": "噬魂怪",
     "NpcId": -11,
     "Damage": 56,
-    "Description": "它是纯粹的恶意生物，诞生自腐化之地，唯一的本能就是追逐、惩罚和杀戮。",
+    "Description": "它作为纯粹的恶意生物从腐化之地中诞生，唯一的本能就是追逐、惩罚和杀戮。",
     "LifeMax": 102,
     "MonetaryValue": {
       "Copper": 91,
@@ -885,7 +885,7 @@
     "Name": "恶翅史莱姆",
     "NpcId": -2,
     "Damage": 135,
-    "Description": "这些史莱姆已被腐化的力量浸染，即使被切成小块也能存活下来，不同于那些未受污染的同类。",
+    "Description": "这些史莱姆已被腐化的力量所浸染，即使被切成小块也能存活下来，这一点与它们未受污染的同胞不一样。",
     "LifeMax": 270,
     "MonetaryValue": {
       "Copper": 50,
@@ -899,7 +899,7 @@
     "Name": "小史莱姆",
     "NpcId": -1,
     "Damage": 135,
-    "Description": "这些史莱姆已被腐化的力量浸染，即使被切成小块也能存活下来，不同于那些未受污染的同类。",
+    "Description": "这些史莱姆已被腐化的力量所浸染，即使被切成小块也能存活下来，这一点与它们未受污染的同胞不一样。",
     "LifeMax": 270,
     "MonetaryValue": {
       "Copper": 50,
@@ -997,7 +997,7 @@
     "Name": "噬魂怪",
     "NpcId": 6,
     "Damage": 66,
-    "Description": "它是纯粹的恶意生物，诞生自腐化之地，唯一的本能就是追逐、惩罚和杀戮。",
+    "Description": "它作为纯粹的恶意生物从腐化之地中诞生，唯一的本能就是追逐、惩罚和杀戮。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 25,
@@ -1151,7 +1151,7 @@
     "Name": "商人",
     "NpcId": 17,
     "Damage": 10,
-    "Description": "商人就像一个简单的杂货店，提供有用的新手工具和探索所需的物资。",
+    "Description": "商人就像一个简单的杂货店，提供有用的新手工具和探索所需的物资。\r\n条件性售卖：\r\n  位于丛林：\r\n  熔炉\r\n  位于雪原：\r\n  棉花糖\r\n  白天且大风天期间：\r\n  风车\r\n  夜晚期间：\r\n  荧光棒\r\n  血月期间：\r\n  投刀\r\n  已击败骷髅王：\r\n  保险箱\r\n  已击败世界吞噬怪|克苏鲁之脑|骷髅王或处于困难模式：\r\n  鼓组\r\n  鼓槌\r\n  处于困难模式：\r\n  治疗药水\r\n  魔力药水\r\n  迪斯科球\r\n  金尘\r\n  利器站\r\n  持有信号枪：\r\n  照明弹\r\n  蓝照明弹\r\n  持有钉枪：\r\n  钉子",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1179,7 +1179,7 @@
     "Name": "军火商",
     "NpcId": 19,
     "Damage": 10,
-    "Description": "军火商拥有所有致命武器，小到一枚子弹，大到用鲨鱼制成的枪炮。",
+    "Description": "军火商拥有所有致命武器，小到一枚子弹，大到用鲨鱼制成的枪炮。\r\n条件性售卖：\r\n  夜晚期间：\r\n  非法枪械部件\r\n  血月期间或处于困难模式：\r\n  银子弹（银世界）\r\n  钨子弹（钨世界）\r\n  在Drunk world或Get fixed boi世界中，世界矿物类型依照每次加载世界时矿物物块占比决定（等额为钨世界）\r\n  位于墓地且已击败骷髅王：\r\n  四管霰弹枪\r\n  夜晚期间且已击败世界吞噬怪|克苏鲁之脑：\r\n  邪箭\r\n  处于困难模式：\r\n  邪箭\r\n  霰弹枪\r\n  空心子弹\r\n  弹药箱\r\n  持有毒刺发射器：\r\n  毒刺矢\r\n  持有玉米糖步枪：\r\n  玉米糖\r\n  持有杰克南瓜灯发射器：\r\n  爆炸杰克南瓜灯\r\n  持有尖桩发射器：\r\n  尖桩\r\n  持有钉枪：\r\n  钉子\r\n  万圣节期间：\r\n  护士帽\r\n  护士衣\r\n  护士裤",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1193,7 +1193,7 @@
     "Name": "树妖",
     "NpcId": 20,
     "Damage": 10,
-    "Description": "树妖是她同族中最后一人。她与大自然紧密相连，可以分析世界各地的自然纯净度。她还售卖种子！",
+    "Description": "树妖是她的同族中最后一人了。她与大自然紧密相连，可以分析世界各地的自然纯净度。她还售卖种子！",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1235,7 +1235,7 @@
     "Name": "流星头",
     "NpcId": 23,
     "Damage": 120,
-    "Description": "当陨石撞击地表时，碎片散落一地，等着被捡走。有些碎片是活的，会主动发出攻击。",
+    "Description": "当陨石撞击地表时，碎片散落一地，等着被捡走。有些碎片是活的，会攻击。",
     "LifeMax": 78,
     "MonetaryValue": {
       "Copper": 0,
@@ -1319,7 +1319,7 @@
     "Name": "哥布林巫士",
     "NpcId": 29,
     "Damage": 60,
-    "Description": "尽管哥布林相当落后，但有些哥布林却能通过施法操纵魔化的暗影能量。",
+    "Description": "尽管哥布林挺落后的，但有些哥布林却能通过施法来操纵魔法暗影能量。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 0,
@@ -1389,7 +1389,7 @@
     "Name": "诅咒骷髅头",
     "NpcId": 34,
     "Damage": 105,
-    "Description": "由于受到黑暗仪式的影响，这个骷髅头开始自行四处游荡，追逐活物。它的攻击能让受害者失去防御能力。",
+    "Description": "由于受到黑暗仪式的影响，这个骷髅头开始自行四处游荡，追逐活物。它的攻击能让受害者手无寸铁。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 75,
@@ -1515,7 +1515,7 @@
     "Name": "食人怪",
     "NpcId": 43,
     "Damage": 102,
-    "Description": "长有锋利牙齿的植物，喜欢吃人肉。能隐藏在泥里，并能够得着很远的地方。",
+    "Description": "一种长有锋利牙齿的植物，喜欢吃人肉。能隐藏在泥里，并能到达很远的地方。",
     "LifeMax": 330,
     "MonetaryValue": {
       "Copper": 75,
@@ -1529,7 +1529,7 @@
     "Name": "不死矿工",
     "NpcId": 44,
     "Damage": 66,
-    "Description": "有证据表明洞穴探险者曾经探索过这些洞穴……也有证据表明他们因此丧生了。",
+    "Description": "有证据表明洞穴探险者曾经探索过这些洞穴……也有证据表明他们因此而丧生了。",
     "LifeMax": 210,
     "MonetaryValue": {
       "Copper": 25,
@@ -1585,7 +1585,7 @@
     "Name": "鸟妖",
     "NpcId": 48,
     "Damage": 75,
-    "Description": "有翼亚人女性，通过用锋利的羽毛刺穿入侵者来保护自己的地盘不被侵犯。",
+    "Description": "有翼亚人的女性，通过用锋利的羽毛刺穿入侵者来保护自己的地盘不受侵犯。",
     "LifeMax": 300,
     "MonetaryValue": {
       "Copper": 50,
@@ -1669,7 +1669,7 @@
     "Name": "服装商",
     "NpcId": 54,
     "Damage": 10,
-    "Description": "服装商是曾被诅咒所困的针线大师。如果要追求时尚，找他就对了！他说话的方式颇为亲切。",
+    "Description": "服装商是曾被诅咒所困的针线大师。如果要追求时尚，找他就对了！他说话的方式很随便。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -1907,7 +1907,7 @@
     "Name": "地牢史莱姆",
     "NpcId": 71,
     "Damage": 90,
-    "Description": "地牢里的史莱姆通过吸收此处的诅咒能量而变得强大。它们似乎对钥匙特别感兴趣。",
+    "Description": "地牢里的史莱姆通过吸收这地方的诅咒能量而变得强大。它们似乎对钥匙特别感兴趣。",
     "LifeMax": 450,
     "MonetaryValue": {
       "Copper": 75,
@@ -2047,7 +2047,7 @@
     "Name": "腐化史莱姆",
     "NpcId": 81,
     "Damage": 165,
-    "Description": "这些史莱姆已被腐化的力量浸染，即使被切成小块也能存活下来，不同于那些未受污染的同类。",
+    "Description": "这些史莱姆已被腐化的力量所浸染，即使被切成小块也能存活下来，这一点与它们未受污染的同胞不一样。",
     "LifeMax": 510,
     "MonetaryValue": {
       "Copper": 0,
@@ -2411,7 +2411,7 @@
     "Name": "哥布林工匠",
     "NpcId": 107,
     "Damage": 10,
-    "Description": "这名工匠由于是一个聪明的和平主义者而遭到其他哥布林成员的驱逐，他出售的工具可以将配饰组装成更强版本。",
+    "Description": "这名工匠由于是一个聪明的和平主义者而遭到其他哥布林成员的驱逐，他出售用来将配饰组装成更强版本的工具。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -2439,7 +2439,7 @@
     "Name": "小丑",
     "NpcId": 109,
     "Damage": 180,
-    "Description": "他的出身不得而知，但这个令人毛骨悚然的恶魔可以一边向周围投掷爆炸物，一边在球上保持着平衡。",
+    "Description": "他的出身不得而知，但这个令人毛骨悚然的恶魔在向周围的一切投掷爆炸物时却依然能在球上保持着平衡。",
     "LifeMax": 2400,
     "MonetaryValue": {
       "Copper": 0,
@@ -2593,7 +2593,7 @@
     "Name": "混沌精",
     "NpcId": 120,
     "Damage": 120,
-    "Description": "一旦生物被注入福佑，它们就会带着无法控制的发光能量，疯狂地追逐。",
+    "Description": "一旦生物被注入福佑，它们就会带着无法控制的发光能量而疯狂追逐。",
     "LifeMax": 1110,
     "MonetaryValue": {
       "Copper": 0,
@@ -2663,7 +2663,7 @@
     "Name": "激光眼",
     "NpcId": 125,
     "Damage": 115,
-    "Description": "这只激光眼是克苏鲁之眼的机械复制品中的一只，它将集中所有能量，发射强大的激光。",
+    "Description": "这只激光眼是克苏鲁之眼的机械复制品中的一只，它将能量集中在发射强大的激光上。",
     "LifeMax": 38250,
     "MonetaryValue": {
       "Copper": 0,
@@ -2691,7 +2691,7 @@
     "Name": "机械骷髅王",
     "NpcId": 127,
     "Damage": 120,
-    "Description": "为了复活克苏鲁而进行的机械重建，这个骷髅王拥有比之前更多的手臂以及各种强劲的武器。",
+    "Description": "为了复活克苏鲁而进行的机械重建，这个骷髅王拥有比之前更多的手臂以及各种强悍的武器。",
     "LifeMax": 53550,
     "MonetaryValue": {
       "Copper": 0,
@@ -2789,7 +2789,7 @@
     "Name": "毁灭者",
     "NpcId": 134,
     "Damage": 420,
-    "Description": "克苏鲁脊柱的机械模拟物，装有带激光武器的探测怪，一旦受到伤害探测怪就会脱离主体。",
+    "Description": "克苏鲁脊柱的机械模拟物，装有带激光武器的探测怪，一旦受到伤害探测怪就会从其主体上脱离。",
     "LifeMax": 153000,
     "MonetaryValue": {
       "Copper": 0,
@@ -2859,7 +2859,7 @@
     "Name": "探测怪",
     "NpcId": 139,
     "Damage": 120,
-    "Description": "从毁灭者身上分离出来的单个探测怪，充当远程激光炮台，通常和一群其他探测怪在一起。",
+    "Description": "从毁灭者身上分离出来的单个探测怪会成为远程激光炮台，往往和其他大群探测怪一起构成炮组。",
     "LifeMax": 450,
     "MonetaryValue": {
       "Copper": 0,
@@ -2887,7 +2887,7 @@
     "Name": "毒泥",
     "NpcId": 141,
     "Damage": 150,
-    "Description": "毒泥是普通史莱姆的远房亲戚，它会面带露齿的微笑，用强大的毒素拿下猎物。",
+    "Description": "毒泥是普通史莱姆的远房亲戚，它会用强大的毒素和友好的露齿微笑拿下猎物。",
     "LifeMax": 450,
     "MonetaryValue": {
       "Copper": 0,
@@ -3013,7 +3013,7 @@
     "Name": "冰雪蝙蝠",
     "NpcId": 150,
     "Damage": 54,
-    "Description": "好像蝙蝠还不够麻烦似的，冰雪蝙蝠轻轻一碰就能把肉体冻住，让它们的猎物失去防御。",
+    "Description": "好像蝙蝠还不够麻烦似的，冰雪蝙蝠轻轻一碰就能把肉体冻住，让它们的猎物无法防御。",
     "LifeMax": 90,
     "MonetaryValue": {
       "Copper": 25,
@@ -3167,7 +3167,7 @@
     "Name": "冰冻僵尸",
     "NpcId": 161,
     "Damage": 48,
-    "Description": "在雪地生物群系中发现的僵尸通常裹着冬衣。但这对它们毫无帮助，它们仍然凉透了！",
+    "Description": "在雪原生物群系中发现的僵尸通常裹着冬衣。但这对它们毫无帮助，它们仍然尸体般冰冷！",
     "LifeMax": 150,
     "MonetaryValue": {
       "Copper": 0,
@@ -3293,7 +3293,7 @@
     "Name": "猪龙",
     "NpcId": 170,
     "Damage": 210,
-    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物仍具有出色的隐形能力。目前还不清楚它们是如何产生的。",
+    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物具有出色的隐身能力。目前还不清楚它们是如何产生的。",
     "LifeMax": 630,
     "MonetaryValue": {
       "Copper": 0,
@@ -3307,7 +3307,7 @@
     "Name": "猪龙",
     "NpcId": 171,
     "Damage": 210,
-    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物仍具有出色的隐形能力。目前还不清楚它们是如何产生的。",
+    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物具有出色的隐身能力。目前还不清楚它们是如何产生的。",
     "LifeMax": 630,
     "MonetaryValue": {
       "Copper": 0,
@@ -3335,7 +3335,7 @@
     "Name": "猩红喀迈拉",
     "NpcId": 173,
     "Damage": 66,
-    "Description": "猩红之地最常见的恐怖力量，怀着无尽的饥饿，企图吞噬一切纯净之物。",
+    "Description": "猩红之地最常见的恐怖力量，它带着无尽的饥饿来吞噬纯净之物。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 25,
@@ -3405,7 +3405,7 @@
     "Name": "蒸汽朋克人",
     "NpcId": 178,
     "Damage": 10,
-    "Description": "蒸汽朋克人特别钟爱以蒸汽为动力的机械和工具。她用可爱的口音售卖她的小发明。",
+    "Description": "蒸汽朋克人特别钟爱以蒸汽为动力的机械和工具。她带着可爱的口音售卖她的小发明。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -3419,7 +3419,7 @@
     "Name": "猩红斧",
     "NpcId": 179,
     "Damage": 240,
-    "Description": "被猩红之地的群体意识蛊惑后，这把武器会凭自身意志移动和砍杀敌人。",
+    "Description": "被猩红之地的群体意识所蛊惑后，这把武器按照自身意愿移动并砍杀敌人。",
     "LifeMax": 600,
     "MonetaryValue": {
       "Copper": 0,
@@ -3433,7 +3433,7 @@
     "Name": "猪龙",
     "NpcId": 180,
     "Damage": 210,
-    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物仍具有出色的隐形能力。目前还不清楚它们是如何产生的。",
+    "Description": "尽管身材圆胖，但这种难以捉摸的龙猪杂交生物具有出色的隐身能力。目前还不清楚它们是如何产生的。",
     "LifeMax": 630,
     "MonetaryValue": {
       "Copper": 0,
@@ -3461,7 +3461,7 @@
     "Name": "恶心浮游怪",
     "NpcId": 182,
     "Damage": 195,
-    "Description": "毫无疑问，这些极有可能来自最黑暗的猩红深处的浮游怪物，不仅能浮游，还很恶心。",
+    "Description": "毫无疑问，这些来自最黑暗的猩红深处的浮游恐怖，不仅能飘浮，还很恶心。",
     "LifeMax": 720,
     "MonetaryValue": {
       "Copper": 50,
@@ -3475,7 +3475,7 @@
     "Name": "猩红史莱姆",
     "NpcId": 183,
     "Damage": 180,
-    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找和消化更多原材料。",
+    "Description": "猩红史莱姆延续了猩红之地一贯的血肉凝结之躯，为猩红之地寻找并消化更多原材料。",
     "LifeMax": 600,
     "MonetaryValue": {
       "Copper": 0,
@@ -3531,7 +3531,7 @@
     "Name": "僵尸",
     "NpcId": 187,
     "Damage": 39,
-    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。那副模样让双方都很尴尬。",
+    "Description": "有时，史莱姆的受害者会在消化过程中变成僵尸。这样走动让双方都感觉不舒服。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 37,
@@ -3643,7 +3643,7 @@
     "Name": "迷失女孩",
     "NpcId": 195,
     "Damage": 30,
-    "Description": "这个女孩赤裸而恐惧地伫立在世界深处，仿佛在等待有人来营救她，带她重返地面。",
+    "Description": "这个女孩赤裸而充满了恐惧地伫立在世界深处，仿佛在等待有人来营救带她回地面。",
     "LifeMax": 750,
     "MonetaryValue": {
       "Copper": 0,
@@ -3671,7 +3671,7 @@
     "Name": "装甲维京海盗",
     "NpcId": 197,
     "Damage": 150,
-    "Description": "最出色的维京海盗配得上最坚固的盔甲。但从他们的现状看，这些盔甲的效果好像不怎么样。",
+    "Description": "最出色的维京海盗配得上最坚固的盔甲。但从他们的现状看，这些盔甲似乎效果不佳。",
     "LifeMax": 840,
     "MonetaryValue": {
       "Copper": 50,
@@ -3685,7 +3685,7 @@
     "Name": "丛林蜥蜴",
     "NpcId": 198,
     "Damage": 114,
-    "Description": "隐世的爬行动物种族，仅出现在神秘的丛林神庙。它们看起来很原始，但实际上相当先进。",
+    "Description": "隐世的爬行动物种族，只在神秘的丛林神庙中发现过。它们看起来很原始，但实际上很先进。",
     "LifeMax": 1200,
     "MonetaryValue": {
       "Copper": 25,
@@ -3783,7 +3783,7 @@
     "Name": "蛾",
     "NpcId": 205,
     "Damage": 210,
-    "Description": "极少情况下，接触丛林毒素会让某些飞蛾发生变异，体型变得巨大。它们在死亡时会释放出宝贵的尘埃。",
+    "Description": "很罕见地，接触丛林毒素会让某些飞蛾发生变异，体型变得巨大。它们在死亡时会释放出宝贵的尘埃。",
     "LifeMax": 3000,
     "MonetaryValue": {
       "Copper": 0,
@@ -3951,7 +3951,7 @@
     "Name": "胭脂虫",
     "NpcId": 217,
     "Damage": 60,
-    "Description": "这种大型甲虫常常出没于黑暗的洞穴深处，它们因鳞状外骨骼中储存的深血红色分泌物而被捕杀。",
+    "Description": "这种大型甲虫出现在黑暗的洞穴深处，它们因鳞状外骨骼中储存的深血红色分泌物而被捕杀。",
     "LifeMax": 120,
     "MonetaryValue": {
       "Copper": 50,
@@ -4007,7 +4007,7 @@
     "Name": "乌贼",
     "NpcId": 221,
     "Damage": 60,
-    "Description": "长有触手的海洋生物，在遇到威胁时会喷出浓稠的黑墨水。人们会因为好看而收集这种墨水。",
+    "Description": "长有触手的海洋生物，在遇到威胁时会喷出浓稠的黑墨水。人们会因为美学目的而收集这种墨水。",
     "LifeMax": 90,
     "MonetaryValue": {
       "Copper": 50,
@@ -4077,7 +4077,7 @@
     "Name": "飞蛇",
     "NpcId": 226,
     "Damage": 255,
-    "Description": "飞蛇是丛林蜥蜴族的宠物和守卫，它们会对神庙地盘的任何入侵者发起攻击。",
+    "Description": "飞蛇是丛林蜥蜴族的宠物和守卫，它们会对任何入侵神庙地盘的人发起攻击。",
     "LifeMax": 780,
     "MonetaryValue": {
       "Copper": 0,
@@ -4273,7 +4273,7 @@
     "Name": "血爬虫",
     "NpcId": 240,
     "Damage": 90,
-    "Description": "大多数蜘蛛独立行动，但接触过猩红蜂巢的蜘蛛会协同行动，蚕食生命。",
+    "Description": "大多数蜘蛛独立行动，但被猩红巢穴所影响的蜘蛛会协同行动，蚕食生命。",
     "LifeMax": 180,
     "MonetaryValue": {
       "Copper": 25,
@@ -4287,7 +4287,7 @@
     "Name": "嗜血怪",
     "NpcId": 241,
     "Damage": 150,
-    "Description": "这群鱼像食人鱼一样嗜血成性。它们诞生自被污染的血水之中，非常饥饿。",
+    "Description": "这群鱼像食人鱼一样嗜血成性。它们从被污染的血水中诞生，其饥饿感真的非常强烈。",
     "LifeMax": 450,
     "MonetaryValue": {
       "Copper": 50,
@@ -4525,7 +4525,7 @@
     "Name": "蘑菇瓢虫",
     "NpcId": 258,
     "Damage": 180,
-    "Description": "这种好斗的瓢虫在发光的蘑菇附近很自在，能与真菌共生。",
+    "Description": "这种与真菌共生的好斗瓢虫在发光的蘑菇附近很自在。",
     "LifeMax": 660,
     "MonetaryValue": {
       "Copper": 50,
@@ -4651,7 +4651,7 @@
     "Name": "飞眼怪",
     "NpcId": 267,
     "Damage": 54,
-    "Description": "飞眼怪由猩红之地的群体意识操控，它们不仅是克苏鲁之脑的眼睛，还成群地围绕在大脑周围提供保护。",
+    "Description": "飞眼怪是由猩红之地的群体意识操控的，它们不仅是克苏鲁之脑的眼睛，还成群地围绕在大脑周围提供保护。",
     "LifeMax": 217,
     "MonetaryValue": {
       "Copper": 0,
@@ -5113,7 +5113,7 @@
     "Name": "老鼠",
     "NpcId": 300,
     "Damage": 0,
-    "Description": "老鼠在潮湿的地下寻找小昆虫，发出无害的吱吱声。",
+    "Description": "老鼠无害地尖叫，在潮湿的地下寻找小昆虫。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -5687,7 +5687,7 @@
     "Name": "礼物宝箱怪",
     "NpcId": 341,
     "Damage": 225,
-    "Description": "没想到吧！礼物宝箱怪是这个节日季最意想不到的礼物，这个精美的箱子装着牙齿和死亡。",
+    "Description": "没想到吧！礼物宝箱怪是这个节日季最意想不到的礼物，它是个装着牙齿和死亡的精美箱子。",
     "LifeMax": 1620,
     "MonetaryValue": {
       "Copper": 0,
@@ -5729,7 +5729,7 @@
     "Name": "常绿尖叫怪",
     "NpcId": 344,
     "Damage": 248,
-    "Description": "如果树会尖叫，那么这种邪恶的常青树会一直叫个不停。树枝上投下来的装饰足以致命。",
+    "Description": "如果树会尖叫，那么这种邪恶的常青树会叫个不停。致命的是从树枝上投下来的装饰。",
     "LifeMax": 21548,
     "MonetaryValue": {
       "Copper": 0,
@@ -5855,7 +5855,7 @@
     "Name": "发型师",
     "NpcId": 353,
     "Damage": 10,
-    "Description": "发型师喜欢有关时尚、八卦和发型的东西。除了帮人进行神奇大改造，她还售卖一些美发产品。",
+    "Description": "发型师钟爱时尚、八卦和发型。除了帮人进行神奇大改造，她还售卖一些美发产品。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -5911,7 +5911,7 @@
     "Name": "蠕虫",
     "NpcId": 357,
     "Damage": 0,
-    "Description": "光滑的管状无脊椎动物，一般藏在岩石、泥土和草丛中。喜欢雨。鱼特别容易被它们吸引。",
+    "Description": "光滑的管状无脊椎动物，一般藏在岩石、泥土和草丛中。爱雨。鱼特别容易被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -5925,7 +5925,7 @@
     "Name": "荧光虫",
     "NpcId": 358,
     "Damage": 0,
-    "Description": "夜晚出现在福佑之地，闪烁的蓝绿光照亮天空。鱼特别容易被它们吸引。",
+    "Description": "夜晚出现在福佑之地，闪烁的蓝绿光照亮天空。鱼特别容易被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -6121,7 +6121,7 @@
     "Name": "鲨鱼龙",
     "NpcId": 372,
     "Damage": 225,
-    "Description": "猪龙鱼公爵天生的嵌合体形式导致他的后代长得更像鲨鱼，在战斗中将充当他的仆从。",
+    "Description": "猪龙鱼公爵天生的嵌合体形式导致他在战斗中用作仆从的后代像鲨鱼更多一些。",
     "LifeMax": 225,
     "MonetaryValue": {
       "Copper": 0,
@@ -6149,7 +6149,7 @@
     "Name": "松露虫",
     "NpcId": 374,
     "Damage": 0,
-    "Description": "极其稀有、难以捕捉的发光蠕虫。深受一种特定的强大海洋生物喜欢。",
+    "Description": "极其稀有、难以捕捉的发光蠕虫。深受特定的一种强大海洋生物的喜欢。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -6191,7 +6191,7 @@
     "Name": "蚱蜢",
     "NpcId": 377,
     "Damage": 0,
-    "Description": "高高的草叶它一跃而过。鱼很容易被它们吸引。",
+    "Description": "高高的草叶它一跃而过。鱼会被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -6205,7 +6205,7 @@
     "Name": "嗒嗒牙齿炸弹",
     "NpcId": 378,
     "Damage": 360,
-    "Description": "一种玩脱了的顽皮恶作剧，小丑会对敌人释放这种会咬人的炸弹。也适合在派对上玩！",
+    "Description": "这是走偏了的顽皮恶作剧，小丑会对敌人释放这种爆炸物品。也适合派对上玩！",
     "LifeMax": 600,
     "MonetaryValue": {
       "Copper": 25,
@@ -6219,7 +6219,7 @@
     "Name": "邪教徒弓箭手",
     "NpcId": 379,
     "Damage": 135,
-    "Description": "这些身着长袍的弓箭手誓要保护邪教徒的仪式，为捍卫拜月教忠教徒而战斗至死。",
+    "Description": "这些身着长袍的弓箭手誓要保护邪教徒的仪式，它们将为捍卫拜月教忠教徒而战斗至死。",
     "LifeMax": 630,
     "MonetaryValue": {
       "Copper": 0,
@@ -6485,7 +6485,7 @@
     "Name": "月亮领主心脏",
     "NpcId": 398,
     "Damage": 0,
-    "Description": "他是降临于世的所有恐怖的幕后主使，脱离了月亮监狱的束缚。他其实是一个神，他拥有无限的力量。",
+    "Description": "他是降临于世的所有恐怖的幕后主使，从月球监狱中被释放了出来。他其实是一个神，力量是无限的。",
     "LifeMax": 95625,
     "MonetaryValue": {
       "Copper": 0,
@@ -6583,7 +6583,7 @@
     "Name": "星细胞",
     "NpcId": 405,
     "Damage": 360,
-    "Description": "单细胞生物，能借助天界能量的无穷力量快速分裂增殖。",
+    "Description": "单细胞生物，能借助天界能量的无穷力量而快速分裂增殖。",
     "LifeMax": 900,
     "MonetaryValue": {
       "Copper": 0,
@@ -6597,7 +6597,7 @@
     "Name": "迷你星细胞",
     "NpcId": 406,
     "Damage": 210,
-    "Description": "单细胞生物，能借助天界能量的无穷力量快速分裂增殖。",
+    "Description": "单细胞生物，能借助天界能量的无穷力量而快速分裂增殖。",
     "LifeMax": 900,
     "MonetaryValue": {
       "Copper": 0,
@@ -6681,7 +6681,7 @@
     "Name": "千足蜈蚣",
     "NpcId": 412,
     "Damage": 360,
-    "Description": "这种蠕虫状生物浑身充满了天界能量，一副无敌的样子。由于没有眼睛，它会搜寻空气中的振动。",
+    "Description": "这种蠕虫状生物浑身充满了天界能量，似乎完全不受伤害。由于没有眼睛，它会搜寻空气中的振动。",
     "LifeMax": 30000,
     "MonetaryValue": {
       "Copper": 0,
@@ -6835,7 +6835,7 @@
     "Name": "预言怪",
     "NpcId": 424,
     "Damage": 240,
-    "Description": "这些类人战士所拥有的宇宙力量赋予了他们超能力，他们可以利用这种能力精准击落敌人。",
+    "Description": "这些类人战士所拥有的宇宙力量赋予了他们超能力，他们可以利用这种能力准确地击落敌人。",
     "LifeMax": 2100,
     "MonetaryValue": {
       "Copper": 0,
@@ -7031,7 +7031,7 @@
     "Name": "拜月教忠教徒",
     "NpcId": 438,
     "Damage": 0,
-    "Description": "全心全意的拜月教忠教徒，即使面对死亡的威胁也始终崇拜他们的神。恐惧只会让他们更加崇拜。",
+    "Description": "拜月教忠教徒即使面对死亡的威胁也始终不渝地全身心崇拜他们的神。恐惧只会让他们的崇拜更加坚定。",
     "LifeMax": 400,
     "MonetaryValue": {
       "Copper": 0,
@@ -7045,7 +7045,7 @@
     "Name": "拜月教邪教徒",
     "NpcId": 439,
     "Damage": 112,
-    "Description": "一个狂热的首领，不顾一切地暗中密谋复活伟大的克苏鲁，引发世界末日。",
+    "Description": "一个狂热的首领，不顾一切地要通过幕后阴谋复兴伟大的克苏鲁来导致世界末日。",
     "LifeMax": 61200,
     "MonetaryValue": {
       "Copper": 0,
@@ -7073,7 +7073,7 @@
     "Name": "金鸟",
     "NpcId": 442,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7084,10 +7084,10 @@
     "Alias": []
   },
   {
-    "Name": "金兔兔",
+    "Name": "金兔",
     "NpcId": 443,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7095,15 +7095,13 @@
       "Platinum": 0,
       "Silver": 0
     },
-    "Alias": [
-      "金兔"
-    ]
+    "Alias": []
   },
   {
     "Name": "金蝴蝶",
     "NpcId": 444,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7117,7 +7115,7 @@
     "Name": "金蛙",
     "NpcId": 445,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7131,7 +7129,7 @@
     "Name": "金蚱蜢",
     "NpcId": 446,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7145,7 +7143,7 @@
     "Name": "金老鼠",
     "NpcId": 447,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7159,7 +7157,7 @@
     "Name": "金蠕虫",
     "NpcId": 448,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7243,7 +7241,7 @@
     "Name": "幻影龙",
     "NpcId": 454,
     "Damage": 225,
-    "Description": "飞龙的灵魂与世间环境紧密纠缠。强大的魔法可以将它们以物质形态从帷幕彼端召唤出来。",
+    "Description": "飞龙的灵魂与世间环境紧密纠缠。强大的魔法可以将它们以物质形态从幕后召唤出来。",
     "LifeMax": 19125,
     "MonetaryValue": {
       "Copper": 0,
@@ -7341,7 +7339,7 @@
     "Name": "水月怪",
     "NpcId": 461,
     "Damage": 180,
-    "Description": "据说这些鱼人是从最黑暗的泻湖中冒出来的，凭借无与伦比的水下机动性，他们能够对受害者发出迅猛的攻击。",
+    "Description": "据说这些鱼人是从最黑暗的泻湖中冒出来的，他们靠着无与伦比的水下机动性来猛烈攻击受害者。",
     "LifeMax": 1200,
     "MonetaryValue": {
       "Copper": 0,
@@ -7369,7 +7367,7 @@
     "Name": "钉头",
     "NpcId": 463,
     "Damage": 300,
-    "Description": "盗取灵魂的聪明生物，利用自己身上的钉子作为武器和防御手段。",
+    "Description": "盗取灵魂的聪明生物，利用自己的硬壳作为武器和防御手段。",
     "LifeMax": 12000,
     "MonetaryValue": {
       "Copper": 0,
@@ -7383,7 +7381,7 @@
     "Name": "毒兔兔",
     "NpcId": 464,
     "Damage": 63,
-    "Description": "兔兔是纯洁的生物，一般不会被猩红折磨，但会在血月的影响下屈服。",
+    "Description": "兔兔是纯洁的生物，一般不会被猩红所折磨，但会在血月的影响下屈服。",
     "LifeMax": 225,
     "MonetaryValue": {
       "Copper": 50,
@@ -7397,7 +7395,7 @@
     "Name": "毒金鱼",
     "NpcId": 465,
     "Damage": 93,
-    "Description": "当金鱼暴露在血月下时，它们会变成猩红畸形的嗜血恶魔。",
+    "Description": "当金鱼暴露在血月下时，它们会变成畸形的吸血猩红恶魔。",
     "LifeMax": 330,
     "MonetaryValue": {
       "Copper": 50,
@@ -7411,7 +7409,7 @@
     "Name": "变态人",
     "NpcId": 466,
     "Damage": 210,
-    "Description": "这个蒙面杀手轻柔的动作和精巧的猎杀能力让他伏击受害者能不被发现地。",
+    "Description": "这个蒙面杀手轻柔的动作和精巧的猎杀能力让他能不被发现地伏击受害者。",
     "LifeMax": 1650,
     "MonetaryValue": {
       "Copper": 50,
@@ -7425,7 +7423,7 @@
     "Name": "致命球",
     "NpcId": 467,
     "Damage": 300,
-    "Description": "这个银色的改性球体通过某种未知手段自行悬浮。它移动迅速，经常生出尖刺。",
+    "Description": "这个银色的改性球体通过未知手段而能自行悬浮。它移动迅速，经常生出尖刺。",
     "LifeMax": 1050,
     "MonetaryValue": {
       "Copper": 50,
@@ -7467,7 +7465,7 @@
     "Name": "毒企鹅",
     "NpcId": 470,
     "Damage": 63,
-    "Description": "在血月期间，原本温顺的企鹅也会由于猩红的传染性增长而被感染。",
+    "Description": "在血月期间，平常温顺的企鹅也会由于猩红的传染性提高而被感染。",
     "LifeMax": 225,
     "MonetaryValue": {
       "Copper": 50,
@@ -7621,7 +7619,7 @@
     "Name": "装甲步兵",
     "NpcId": 481,
     "Damage": 66,
-    "Description": "在一个已被深深掩埋的古老文明的废墟上，仍有一些挥舞长矛的士兵仍然走在铺着大理石的小路上。",
+    "Description": "在一个已被深深掩埋的古老文明的废墟上，它有一些挥舞长矛的士兵仍然走在铺着大理石的小路上。",
     "LifeMax": 210,
     "MonetaryValue": {
       "Copper": 50,
@@ -7677,7 +7675,7 @@
     "Name": "蛆虫",
     "NpcId": 485,
     "Damage": 0,
-    "Description": "黏糊糊的，但很好吃！鱼多少会被它们吸引。",
+    "Description": "黏糊糊的，但很好吃！鱼多少会被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -7747,7 +7745,7 @@
     "Name": "滴滴怪",
     "NpcId": 490,
     "Damage": 84,
-    "Description": "恶魔眼在血月下会发生奇怪变化，有时会纠缠在一起，变成由被诅咒的血和眼球组成的血淋淋的一团。",
+    "Description": "恶魔眼在血月下会发生奇怪变化，有时会纠缠在一起，变成由被诅咒的血和眼球所组成的血淋淋的一团。",
     "LifeMax": 150,
     "MonetaryValue": {
       "Copper": 75,
@@ -7789,7 +7787,7 @@
     "Name": "星尘柱",
     "NpcId": 493,
     "Damage": 0,
-    "Description": "此天界柱代表着叫作“星尘”的闪亮天界残骸，它封印了一个可怕的暴君。",
+    "Description": "此天界柱代表着叫作“星尘”的闪亮天界残骸，它持有的封印锁住了一个可怕的暴君。",
     "LifeMax": 20000,
     "MonetaryValue": {
       "Copper": 0,
@@ -7985,7 +7983,7 @@
     "Name": "星云柱",
     "NpcId": 507,
     "Damage": 0,
-    "Description": "此天界柱代表着叫作“星云”的狂暴天界天体，它封印了一个可怕的暴君。",
+    "Description": "此天界柱代表着叫作“星云”的狂暴天界天体，它持有的封印锁住了一个可怕的暴君。",
     "LifeMax": 20000,
     "MonetaryValue": {
       "Copper": 0,
@@ -7999,7 +7997,7 @@
     "Name": "星旋柱",
     "NpcId": 422,
     "Damage": 0,
-    "Description": "此天界柱代表着叫作“星旋”的深渊天界虚空，它封印了一个可怕的暴君。",
+    "Description": "此天界柱代表着叫作“星旋”的深渊天界虚空，它持有的封印锁住了一个可怕的暴君。",
     "LifeMax": 20000,
     "MonetaryValue": {
       "Copper": 0,
@@ -8013,7 +8011,7 @@
     "Name": "税收官",
     "NpcId": 441,
     "Damage": 10,
-    "Description": "这位脾气暴躁的税收官简直是从地狱走了一趟。他贪得无厌，只关心钱。",
+    "Description": "这位脾气暴躁的税收官是真正的从地狱归来。他贪得无厌，真的只关心钱。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -8055,7 +8053,7 @@
     "Name": "沙虫",
     "NpcId": 510,
     "Damage": 174,
-    "Description": "世界上体型最大、最致命的蠕虫。在远古魔法的加持下变得更强大，能够以迅雷不及掩耳之势快速吞噬一个香喷喷的泰拉瑞亚生物。",
+    "Description": "世界上体型最大、最致命的蠕虫。在远古魔法的加持下变得更强大，它吞噬一个香喷喷的泰拉瑞亚生物的速度远超想象。",
     "LifeMax": 1500,
     "MonetaryValue": {
       "Copper": 50,
@@ -8097,7 +8095,7 @@
     "Name": "墓穴爬虫",
     "NpcId": 513,
     "Damage": 54,
-    "Description": "沙漠是这片土地上最大的蠕虫之一的家园。粗心大意的探险家最对这种生物的胃口。",
+    "Description": "沙漠是这片土地上最大的蠕虫之一的家园。这种生物对粗心大意的探险家有良好的胃口。",
     "LifeMax": 180,
     "MonetaryValue": {
       "Copper": 25,
@@ -8153,7 +8151,7 @@
     "Name": "日耀柱",
     "NpcId": 517,
     "Damage": 0,
-    "Description": "此天界柱代表着叫作“耀斑”的燃烧天界事件，它封印了一个可怕的暴君。",
+    "Description": "此天界柱代表着叫作“耀斑”的燃烧天界事件，它持有的封印锁住了一个可怕的暴君。",
     "LifeMax": 20000,
     "MonetaryValue": {
       "Copper": 0,
@@ -8279,7 +8277,7 @@
     "Name": "红染食尸鬼",
     "NpcId": 526,
     "Damage": 192,
-    "Description": "被猩红感染的食尸鬼嘴里会流出邪恶的灵液，每次啃咬都能削弱敌人的防御。",
+    "Description": "被猩红所感染的食尸鬼嘴里会流出邪恶的灵液，每次啃咬都能削弱敌人的防御。",
     "LifeMax": 660,
     "MonetaryValue": {
       "Copper": 25,
@@ -8293,7 +8291,7 @@
     "Name": "神梦食尸鬼",
     "NpcId": 527,
     "Damage": 162,
-    "Description": "被神圣之地净化的食尸鬼会分泌一种迷幻唾液，这种唾液能让受害者产生幻象，迷惑他们并分散他们的注意力。",
+    "Description": "被神圣之地清洗过的食尸鬼会分泌迷幻唾液，能让受害者产生幻象，使他们困惑并分散他们的注意力。",
     "LifeMax": 900,
     "MonetaryValue": {
       "Copper": 75,
@@ -8377,7 +8375,7 @@
     "Name": "沙漠幽魂",
     "NpcId": 533,
     "Damage": 120,
-    "Description": "远古魔法腐化了昔日友善的沙漠神灵的心智，将满腔敌意的它们从灯中放出。",
+    "Description": "远古魔法腐化了曾经友善的沙漠神灵的心智，将他们满怀敌意地从灯中放出。",
     "LifeMax": 660,
     "MonetaryValue": {
       "Copper": 0,
@@ -8391,7 +8389,7 @@
     "Name": "痛苦亡魂",
     "NpcId": 534,
     "Damage": 42,
-    "Description": "这个人因为贪婪的野心始终不改而被判处永恒的惩罚，早已被腐化，沦为恶魔。",
+    "Description": "这个人因为贪婪的野心始终不改而被判处永恒的惩罚，早就被腐化而沦为恶魔。",
     "LifeMax": 1200,
     "MonetaryValue": {
       "Copper": 0,
@@ -8433,7 +8431,7 @@
     "Name": "沙史莱姆",
     "NpcId": 537,
     "Damage": 45,
-    "Description": "沙漠非常干燥，但这种沙史莱姆通过变成一堆活沙，似乎已经成功适应了这种恶劣环境。",
+    "Description": "沙漠非常干燥，但这种沙史莱姆似乎已经成功通过变成一堆活沙而适应了这种恶劣环境。",
     "LifeMax": 150,
     "MonetaryValue": {
       "Copper": 87,
@@ -8461,7 +8459,7 @@
     "Name": "金松鼠",
     "NpcId": 539,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -8489,7 +8487,7 @@
     "Name": "沙尘精",
     "NpcId": 541,
     "Damage": 120,
-    "Description": "最强烈的沙尘暴会引来最强大的土元素精灵。在这种雌性形态下，她召唤出来的龙卷风能撕毁一切。",
+    "Description": "最强烈的沙尘暴会引来最强大的土元素精灵。以这种雌性形态，她召唤出来的龙卷风能撕毁一切。",
     "LifeMax": 15000,
     "MonetaryValue": {
       "Copper": 0,
@@ -8559,7 +8557,7 @@
     "Name": "愤怒翻滚怪",
     "NpcId": 546,
     "Damage": 90,
-    "Description": "这种风滚草被大风吹得在沙漠四处滚动，它一点也不高兴。它们顺风比逆风滚得快。",
+    "Description": "这种风滚草被大风吹得在沙漠中四处滚动，它一点也不高兴。它们顺风比逆风滚得快。",
     "LifeMax": 150,
     "MonetaryValue": {
       "Copper": 50,
@@ -8615,7 +8613,7 @@
     "Name": "酒馆老板",
     "NpcId": 550,
     "Damage": 10,
-    "Description": "这个酒馆老板曾在另一个世界经营一家酒吧。他来这里是为了阻止撒旦军队征服这个世界。",
+    "Description": "这个酒馆老板曾在另一个世界经营着酒吧。他来这里是为了阻止撒旦军队征服这个世界。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -8671,7 +8669,7 @@
     "Name": "埃特尼亚哥布林",
     "NpcId": 554,
     "Damage": 210,
-    "Description": "来自埃特尼亚的独特哥布林物种，与泰拉瑞亚的哥布林毫无关联。它们是撒旦军队的凶猛步兵。",
+    "Description": "来自埃特尼亚的独特哥布林物种，与泰拉瑞亚的哥布林毫无关联。它们是撒旦军队的凶残步兵。",
     "LifeMax": 1428,
     "MonetaryValue": {
       "Copper": 0,
@@ -8713,7 +8711,7 @@
     "Name": "埃特尼亚哥布林投弹手",
     "NpcId": 557,
     "Damage": 225,
-    "Description": "这些工兵疯狂地投下炸弹，狂热地为撒旦军队卖命。",
+    "Description": "这些工兵投掷炸弹时不计后果，狂热地为撒旦军队卖命。",
     "LifeMax": 1785,
     "MonetaryValue": {
       "Copper": 0,
@@ -8881,7 +8879,7 @@
     "Name": "枯萎兽",
     "NpcId": 569,
     "Damage": 240,
-    "Description": "枯萎兽通过它们背上的水晶散发出一种削弱防御的光环。扎根后，它们会迅速回复生命。",
+    "Description": "枯萎兽通过它们背上的水晶散发出一种削弱防御的光环。扎根后，它们会迅速治疗。",
     "LifeMax": 3570,
     "MonetaryValue": {
       "Copper": 0,
@@ -8979,7 +8977,7 @@
     "Name": "食人魔",
     "NpcId": 576,
     "Damage": 210,
-    "Description": "撒旦军队中高大威猛的亚人，拎着一根大棒，力量和耐力深不可测。",
+    "Description": "来自撒旦军队的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
     "LifeMax": 12750,
     "MonetaryValue": {
       "Copper": 0,
@@ -8993,7 +8991,7 @@
     "Name": "食人魔",
     "NpcId": 577,
     "Damage": 270,
-    "Description": "撒旦军队中高大威猛的亚人，拎着一根大棒，力量和耐力深不可测。",
+    "Description": "来自撒旦军队的高大威猛的亚人，有着深不可测的力量和耐力。他带着一根大棒。",
     "LifeMax": 33150,
     "MonetaryValue": {
       "Copper": 0,
@@ -9077,7 +9075,7 @@
     "Name": "粉仙灵",
     "NpcId": 583,
     "Damage": 0,
-    "Description": "蝴蝶大小的发光有翼人形生物。与周围世界息息相通，擅长发现闪亮的东西。",
+    "Description": "蝴蝶大小的发光有翼人形生物。它们适应了周围的世界，擅长发现闪亮的东西。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9091,7 +9089,7 @@
     "Name": "绿仙灵",
     "NpcId": 584,
     "Damage": 0,
-    "Description": "蝴蝶大小的发光有翼人形生物。与周围世界息息相通，擅长发现闪亮的东西。",
+    "Description": "蝴蝶大小的发光有翼人形生物。它们适应了周围的世界，擅长发现闪亮的东西。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9105,7 +9103,7 @@
     "Name": "蓝仙灵",
     "NpcId": 585,
     "Damage": 0,
-    "Description": "蝴蝶大小的发光有翼人形生物。与周围世界息息相通，擅长发现闪亮的东西。",
+    "Description": "蝴蝶大小的发光有翼人形生物。它们适应了周围的世界，擅长发现闪亮的东西。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9203,7 +9201,7 @@
     "Name": "金金鱼",
     "NpcId": 592,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9217,7 +9215,7 @@
     "Name": "金金鱼",
     "NpcId": 593,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9329,7 +9327,7 @@
     "Name": "金蜻蜓",
     "NpcId": 601,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9371,7 +9369,7 @@
     "Name": "瓢虫",
     "NpcId": 604,
     "Damage": 0,
-    "Description": "一种常与好运联系在一起的亮红色昆虫。拿它们当鱼饵可能会遭报应。",
+    "Description": "常与好运联系在一起的亮红色昆虫。用它们作为诱饵钓鱼可能会导致恶报。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9385,7 +9383,7 @@
     "Name": "金瓢虫",
     "NpcId": 605,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9399,7 +9397,7 @@
     "Name": "蝇蛆",
     "NpcId": 606,
     "Damage": 0,
-    "Description": "令人作呕的幼虫，以腐烂的尸体为食。鱼多少会被它们吸引。",
+    "Description": "令人作呕的幼虫，以腐烂的尸体为食。鱼多少会被它们所吸引。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9497,7 +9495,7 @@
     "Name": "金水黾",
     "NpcId": 613,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！对店主们来说它们价值不菲，鱼也非常喜欢金鱼饵！",
+    "Description": "很少见地，会有小动物全身覆金！对店主们来说它们价值不菲，而鱼儿们绝对喜欢金鱼饵！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9511,7 +9509,7 @@
     "Name": "爆炸兔",
     "NpcId": 614,
     "Damage": 0,
-    "Description": "不是普通的花园兔兔。这只兔兔被动过手脚，脾气很是火爆。",
+    "Description": "不是普通的花园兔兔。这种兔兔被干预过，脾气很是火爆。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9567,7 +9565,7 @@
     "Name": "恐惧鹦鹉螺",
     "NpcId": 618,
     "Damage": 165,
-    "Description": "巨大的带壳水怪，以血月的负能量为食。以残暴的方式回应一切打扰。",
+    "Description": "巨大的带壳水怪，以血月的负能量为食。残酷地回应对它的打扰。",
     "LifeMax": 21000,
     "MonetaryValue": {
       "Copper": 0,
@@ -9581,7 +9579,7 @@
     "Name": "血乌贼",
     "NpcId": 619,
     "Damage": 180,
-    "Description": "鹦鹉螺在战斗中会批次小规模召唤它们前来助阵。它们会从体内喷涌出浓稠的血流。",
+    "Description": "鹦鹉螺在战斗中会批次小规模召唤它们前来助阵。它们的体内喷涌出浓稠的血流。",
     "LifeMax": 2250,
     "MonetaryValue": {
       "Copper": 50,
@@ -9609,7 +9607,7 @@
     "Name": "血鳗鱼",
     "NpcId": 621,
     "Damage": 270,
-    "Description": "大型蠕虫状恶魔，浑身滴着鲜血——有自己的血，也有受害者的血。这是个血腥的噩梦之魔！",
+    "Description": "大型蠕虫状恶魔，浑身滴着鲜血——有自己的血，也有受害者的血。这是个血腥的魔鬼噩梦！",
     "LifeMax": 18000,
     "MonetaryValue": {
       "Copper": 50,
@@ -9693,7 +9691,7 @@
     "Name": "金海马",
     "NpcId": 627,
     "Damage": 0,
-    "Description": "全身覆金的小动物可不多见！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
+    "Description": "很少见地，会有小动物全身覆金！店主们愿意出高价买下它们，或者你也可以把它们关在笼子里炫耀！",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -9777,7 +9775,7 @@
     "Name": "动物学家",
     "NpcId": 633,
     "Damage": 10,
-    "Description": "动物学家是定居于此的兽化人，她非常喜欢动物。她那狐狸般的生物形态正是被诅咒的动物咬伤所致。",
+    "Description": "动物学家是定居于此的兽化人，她非常喜欢动物。她那狐狸般的生理状况是由被诅咒的动物咬伤所致。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -9805,7 +9803,7 @@
     "Name": "孢子骷髅",
     "NpcId": 635,
     "Damage": 60,
-    "Description": "在更潮湿的洞穴中徘徊的骷髅有时会成为发光真菌的宿主。",
+    "Description": "迂回穿过更潮湿洞穴的骷髅，成为发光真菌生长的宿主，这样极大地增强了骷髅的能力。",
     "LifeMax": 180,
     "MonetaryValue": {
       "Copper": 50,
@@ -10099,7 +10097,7 @@
     "Name": "兔兔",
     "NpcId": 656,
     "Damage": 10,
-    "Description": "绝对能保证蔬菜的稳定供应。有可能哪天会变成一顶帽子。",
+    "Description": "要保证蔬菜的供应。它可能会变成一顶帽子。",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -10169,7 +10167,7 @@
     "Name": "七彩草蛉",
     "NpcId": 661,
     "Damage": 0,
-    "Description": "传说如果一只这样的发光生物在夜晚的混沌中死去，就会有一个沉睡的暴君被粗暴地唤醒。",
+    "Description": "传说如果一只这样的发光生物在夜晚的混沌中死去，就会有一个沉睡的暴君将被猛烈地唤醒。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -10351,7 +10349,7 @@
     "Name": "黄玄凤鹦鹉",
     "NpcId": 674,
     "Damage": 0,
-    "Description": "这种鸟羽冠上的独特羽毛是情绪状态的指示标志，会在兴奋的时候竖起。",
+    "Description": "这种鸟羽冠上的独特羽毛是情绪状态的指示标志，通常在它兴奋时会立起。",
     "LifeMax": 5,
     "MonetaryValue": {
       "Copper": 0,
@@ -10449,7 +10447,7 @@
     "Name": "天后史莱姆",
     "NpcId": 681,
     "Damage": 10,
-    "Description": "这只史莱姆是微光的能量和史莱姆皇后相结合的产物，所以充满了无限的能量和热情！很酷炫！",
+    "Description": "这只史莱姆是微光的能量和史莱姆皇后相结合的产物，所以充满了无限的能量和热情！而且很酷炫！",
     "LifeMax": 250,
     "MonetaryValue": {
       "Copper": 0,
@@ -10589,7 +10587,7 @@
     "Name": "苔藓僵尸",
     "NpcId": 691,
     "Damage": 54,
-    "Description": "常言道滚石不生苔……但他们可没说过僵尸的事。",
+    "Description": "常言道滚石不生苔...但他们可没说过僵尸的事。",
     "LifeMax": 180,
     "MonetaryValue": {
       "Copper": 0,
@@ -10628,7 +10626,7 @@
     "Alias": []
   },
   {
-    "Name": "水矢怪",
+    "Name": "水矢宝箱怪",
     "NpcId": 694,
     "Damage": 60,
     "Description": "虽然乍看之下像是一部拥有无穷力量的魔法巨著，但这只狡猾的怪物会吞噬任何胆敢解读其中符文的人的手指。",
@@ -10639,9 +10637,7 @@
       "Platinum": 0,
       "Silver": 3
     },
-    "Alias": [
-      "水矢宝箱怪"
-    ]
+    "Alias": []
   },
   {
     "Name": "捣蛋猫",
