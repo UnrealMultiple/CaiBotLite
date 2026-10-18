@@ -1,27 +1,35 @@
 [
   {
-    "Name": "黑曜石皮",
+    "Name": "黑曜石皮肤",
     "BuffId": 1,
-    "Description": "获得熔岩免疫加成：无效化来自熔岩的伤害及着火了！减益\r\n免疫以下减益：燃烧    着火了！",
-    "Alias": []
+    "Description": "危 狱石 危",
+    "Alias": [
+      "黑曜石皮"
+    ]
   },
   {
-    "Name": "再生",
+    "Name": "恢复",
     "BuffId": 2,
-    "Description": "+4生命再生",
-    "Alias": []
+    "Description": "+2生命恢复",
+    "Alias": [
+      "再生"
+    ]
   },
   {
-    "Name": "敏捷",
+    "Name": "迅捷",
     "BuffId": 3,
     "Description": "+25%移动速度",
-    "Alias": []
+    "Alias": [
+      "敏捷"
+    ]
   },
   {
-    "Name": "鱼鳃",
+    "Name": "水肺",
     "BuffId": 4,
-    "Description": "可在水或蜂蜜中|盔甲栏中有鱼缸时呼吸：\r\n  在For the worthy和Get fixed boi世界中将不能在上述情况外呼吸",
-    "Alias": []
+    "Description": "在水下不消耗氧气",
+    "Alias": [
+      "鱼鳃"
+    ]
   },
   {
     "Name": "铁皮",
@@ -32,379 +40,459 @@
   {
     "Name": "魔力再生",
     "BuffId": 6,
-    "Description": "移动状态下可如静止般再生魔力：\r\n+(23/15×剩余魔力+23/300临时最大魔力)魔力再生 ；+100%魔力再生延迟消耗速度",
+    "Description": "魔力再生增加",
     "Alias": []
   },
   {
     "Name": "魔能",
     "BuffId": 7,
-    "Description": "+20%魔法伤害",
+    "Description": "魔法伤害增加20%",
     "Alias": []
   },
   {
     "Name": "羽落",
     "BuffId": 8,
-    "Description": "÷3重力/最大下落速度（不按住上或下方向键）\r\n÷10重力/最大下落速度（按住上方向键）\r\n÷1重力/最大下落速度（按住下方向键）\r\n免疫掉落伤害（包括石化减益影响下）\r\n坐骑状态同样生效",
+    "Description": "机动性upup",
     "Alias": []
   },
   {
-    "Name": "洞穴探险",
+    "Name": "探勘",
     "BuffId": 9,
-    "Description": "高亮显示珍贵图格",
-    "Alias": []
+    "Description": "高光显示宝藏和矿石的位置",
+    "Alias": [
+      "洞穴探险"
+    ]
   },
   {
     "Name": "隐身",
     "BuffId": 10,
-    "Description": "×1.2生物生成间隔（基础值为10秒）；×0.8敌怪生成栏上限（基础值为5）\r\n未使用物品且仇恨＞-750：设仇恨为-750；不符合上述情况且仇恨＞-250：设仇恨为-250\r\n对仇恨的影响仅在其他隐身前结算；受击会使增益提前结束",
+    "Description": "你看不见我......是吧？",
     "Alias": []
   },
   {
-    "Name": "光芒",
+    "Name": "打光师傅",
     "BuffId": 11,
-    "Description": "提供照明：91%亮度",
-    "Alias": []
+    "Description": "你在发光",
+    "Alias": [
+      "光芒"
+    ]
   },
   {
-    "Name": "夜猫子",
+    "Name": "夜视",
     "BuffId": 12,
-    "Description": "×1.03光源亮度",
-    "Alias": []
+    "Description": "夜视力提升",
+    "Alias": [
+      "夜猫子"
+    ]
   },
   {
-    "Name": "战斗",
+    "Name": "战争",
     "BuffId": 13,
-    "Description": "×0.5生物生成间隔（基础值为10秒）\r\n×2敌怪生成栏上限（基础值为5）",
-    "Alias": []
+    "Description": "战斗就要喝战斗药水",
+    "Alias": [
+      "战斗"
+    ]
   },
   {
     "Name": "荆棘",
     "BuffId": 14,
-    "Description": "荆棘能力＜100%时：+100%荆棘能力（所有效果中最先施加）",
+    "Description": "+100%荆棘伤害",
     "Alias": []
   },
   {
     "Name": "水上漂",
     "BuffId": 15,
-    "Description": "将液体表面视作平台",
+    "Description": "允许在任何液体上行走",
     "Alias": []
   },
   {
     "Name": "箭术",
     "BuffId": 16,
-    "Description": "×1.1以箭或尖桩为弹药的武器发射的射弹的伤害（乘性，于加性效果和蘑菇矿头盔后结算）；×1.2该类武器发射的射弹的射弹速度（不超过20像素/嘀嗒）",
+    "Description": "吾射不亦精乎？",
     "Alias": []
   },
   {
-    "Name": "猎人",
+    "Name": "狩猎",
     "BuffId": 17,
-    "Description": "高亮显示所有生物（一般而言：友好为绿，敌怪为红）",
-    "Alias": []
+    "Description": "敌人已被红色高光标记，友好生物为绿光",
+    "Alias": [
+      "猎人"
+    ]
   },
   {
     "Name": "重力",
     "BuffId": 18,
-    "Description": "按向上键可逆转重力（不免疫掉落伤害）",
+    "Description": "逆转整个世界！",
     "Alias": []
   },
   {
     "Name": "暗影珠",
     "BuffId": 19,
-    "Description": "提供照明的魔法球",
+    "Description": "可提供照明的魔法球",
     "Alias": []
   },
   {
     "Name": "中毒",
     "BuffId": 20,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-4生命再生；可被牛黄及其上位免疫",
+    "Description": "每秒-2生命值",
     "Alias": []
   },
   {
-    "Name": "耐药性",
+    "Name": "抗药性",
     "BuffId": 21,
-    "Description": "无法使用治疗生命的药水",
-    "Alias": []
+    "Description": "治疗和恢复药水无法使用",
+    "Alias": [
+      "耐药性"
+    ]
   },
   {
     "Name": "黑暗",
     "BuffId": 22,
-    "Description": "降低光照强度，可被蒙眼布及其上位免疫",
+    "Description": "两眼一黑",
     "Alias": []
   },
   {
     "Name": "诅咒",
     "BuffId": 23,
-    "Description": "不能使用任何物品，可被邪眼及其上位免疫",
+    "Description": "快逃",
     "Alias": []
   },
   {
     "Name": "着火了！",
     "BuffId": 24,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-8生命再生；可被黑曜石药水、水和熔岩套装免疫",
+    "Description": "每秒-4生命值",
     "Alias": []
   },
   {
     "Name": "踉跄",
     "BuffId": 25,
-    "Description": "+5渔力；-4防御；+10%近战伤害；+2%近战暴击；+10%近战速度",
+    "Description": "-4防御\r\n+5基础渔力\r\n+2%近战暴击\r\n+10%近战伤害\r\n+10%近战攻速",
     "Alias": []
   },
   {
-    "Name": "吃得好",
+    "Name": "小吃一顿",
     "BuffId": 26,
-    "Description": "+2防御；+20%移动速度；+5%挖矿速度\r\n+0.5召唤击退；+5%近战|远程|魔法|召唤伤害；+2%近战|远程|魔法暴击率；+5%近战速度\r\n  食物类增益，不与其他食物类增益共存\r\n专家及以上，没有食物类增益将×0.5生命再生时间转化率",
-    "Alias": []
+    "Description": "+0.5召唤物基础击退\r\n+2防御\r\n+2%暴击率\r\n+5%伤害\r\n+5%挖掘速度\r\n+5%近战攻速\r\n+20%移动速度",
+    "Alias": [
+      "吃得好"
+    ]
   },
   {
-    "Name": "仙灵",
+    "Name": "小精灵",
     "BuffId": 27,
-    "Description": "仙灵正跟着你",
-    "Alias": []
+    "Description": "仙灵将跟着你",
+    "Alias": [
+      "仙灵"
+    ]
   },
   {
     "Name": "狼人",
     "BuffId": 28,
-    "Description": "+3防御；+1生命再生；+5.1%近战伤害；+2%近战暴击率；+5.1%近战速度；+5%移动速度；+0.2跳跃速度；2嘀嗒最大跳跃时间",
+    "Description": "你是个狠人了",
     "Alias": []
   },
   {
-    "Name": "灵视",
+    "Name": "魔法洞察",
     "BuffId": 29,
-    "Description": "+20临时最大魔力；+5%魔法伤害；+2%魔法暴击率；-2%魔力消耗",
-    "Alias": []
+    "Description": "+20最大魔力\r\n+5%魔法伤害\r\n+2%魔法暴击\r\n-2%魔力消耗",
+    "Alias": [
+      "灵视"
+    ]
   },
   {
     "Name": "流血",
     "BuffId": 30,
-    "Description": "设生命再生时间为0，可被粘性绷带及其上位免疫",
+    "Description": "生命停止恢复",
     "Alias": []
   },
   {
     "Name": "困惑",
     "BuffId": 31,
-    "Description": "向左向右键逆转，向上键效果为向下，向下键无效果，跳跃无影响，若套装效果需要双击向上键触发，改为向左键，若为向下键，改为向上键\r\n可被三折地图及其上位免疫",
+    "Description": "？",
     "Alias": []
   },
   {
-    "Name": "缓慢",
+    "Name": "减速",
     "BuffId": 32,
-    "Description": "×50%移动速度（乘性，于加性效果后结算），可被快走时钟及其上位免疫",
-    "Alias": []
+    "Description": "-50%移动速度",
+    "Alias": [
+      "缓慢"
+    ]
   },
   {
     "Name": "虚弱",
     "BuffId": 33,
-    "Description": "-4防御；-5.1%近战伤害；-5.1%近战速度；-10%移动速度；可被维生素及其上位免疫",
+    "Description": "-4防御 -5近战伤害和攻速 -10%移速",
     "Alias": []
   },
   {
-    "Name": "人鱼",
+    "Name": "鱼人",
     "BuffId": 34,
-    "Description": "无效果增益，相关请见配饰描述",
-    "Alias": []
+    "Description": "可在水下呼吸和轻松移动",
+    "Alias": [
+      "人鱼"
+    ]
   },
   {
     "Name": "沉默",
     "BuffId": 35,
-    "Description": "不能使用任何需要消耗魔力的物品，可被扩音器及其上位免疫",
+    "Description": "禁用魔力武器",
     "Alias": []
   },
   {
-    "Name": "破损盔甲",
+    "Name": "破甲",
     "BuffId": 36,
-    "Description": "×50%防御（乘性，加性效果后结算，与枯萎盔甲乘算为75%）",
-    "Alias": []
+    "Description": "-50%防御",
+    "Alias": [
+      "破损盔甲"
+    ]
   },
   {
-    "Name": "惊恐",
+    "Name": "恐惧",
     "BuffId": 37,
-    "Description": "逃离地狱将立即死亡",
-    "Alias": []
+    "Description": "你逃不掉",
+    "Alias": [
+      "惊恐"
+    ]
   },
   {
     "Name": "狂卷之舌",
     "BuffId": 38,
-    "Description": "不能移动和使用物品，被拖拽至血肉墙前方，专家模式中额外具有以下效果：\r\n若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-100生命再生",
+    "Description": "下次别贪刀了，好吗？",
     "Alias": []
   },
   {
-    "Name": "诅咒狱火",
+    "Name": "诅咒地狱",
     "BuffId": 39,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-24生命再生",
-    "Alias": []
+    "Description": "这次连水也救不了你",
+    "Alias": [
+      "诅咒狱火"
+    ]
   },
   {
-    "Name": "宠物兔兔",
+    "Name": "兔兔",
     "BuffId": 40,
     "Description": "我想它想要你的胡萝卜",
-    "Alias": []
+    "Alias": [
+      "宠物兔兔"
+    ]
   },
   {
-    "Name": "企鹅宝宝",
+    "Name": "企鹅",
     "BuffId": 41,
-    "Description": "我想它想要你的鱼",
-    "Alias": []
+    "Description": "我认为它想要你的鱼",
+    "Alias": [
+      "企鹅宝宝"
+    ]
   },
   {
-    "Name": "宠物海龟",
+    "Name": "小乌龟",
     "BuffId": 42,
     "Description": "欢乐乌龟时光！",
-    "Alias": []
+    "Alias": [
+      "宠物海龟"
+    ]
   },
   {
-    "Name": "圣骑士护盾",
+    "Name": "圣盾保护",
     "BuffId": 43,
-    "Description": "所受伤害的25%将被重新定向到其他（没有此增益的）玩家（于所有效果最后结算）",
-    "Alias": []
+    "Description": "所受伤害的25%会被其它玩家分担",
+    "Alias": [
+      "圣骑士护盾"
+    ]
   },
   {
-    "Name": "霜冻",
+    "Name": "感冒",
     "BuffId": 44,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-16生命再生",
-    "Alias": []
+    "Description": "每秒-8生命值",
+    "Alias": [
+      "霜冻"
+    ]
   },
   {
-    "Name": "吞噬怪宝宝",
+    "Name": "小吞噬者",
     "BuffId": 45,
-    "Description": "噬魂怪宝宝正跟着你",
-    "Alias": []
+    "Description": "噬魂者宝宝将跟着你",
+    "Alias": [
+      "吞噬怪宝宝"
+    ]
   },
   {
-    "Name": "冷冻",
+    "Name": "寒冷",
     "BuffId": 46,
-    "Description": "×75%移动速度（乘性，于加性效果后结算）",
-    "Alias": []
+    "Description": "-25%移动速度 增加移速的鞋子全部失效",
+    "Alias": [
+      "冷冻"
+    ]
   },
   {
-    "Name": "冰冻",
+    "Name": "冻结",
     "BuffId": 47,
-    "Description": "不能移动和使用物品，可被暖手宝免疫",
-    "Alias": []
+    "Description": "哦，完蛋了",
+    "Alias": [
+      "冰冻"
+    ]
   },
   {
     "Name": "蜂蜜",
     "BuffId": 48,
-    "Description": "若生命再生＜0，+4生命再生，后若生命再生＞0，设生命再生为0（减益→蜂蜜调0→星云调0→闪亮石减半）；+2生命再生时间/嘀嗒，+2生命再生",
+    "Description": "甜腻又黏糊",
     "Alias": []
   },
   {
     "Name": "矮人",
     "BuffId": 49,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "我贴脸扎你",
     "Alias": []
   },
   {
-    "Name": "骷髅王头宝宝",
+    "Name": "小地守",
     "BuffId": 50,
-    "Description": "别问了……",
-    "Alias": []
+    "Description": "骷髅王还是要打的",
+    "Alias": [
+      "骷髅王头宝宝"
+    ]
   },
   {
-    "Name": "黄蜂宝宝",
+    "Name": "小蜜蜂",
     "BuffId": 51,
     "Description": "它认为你是它的妈妈",
-    "Alias": []
+    "Alias": [
+      "黄蜂宝宝"
+    ]
   },
   {
-    "Name": "提基幽魂",
+    "Name": "提基之魂",
     "BuffId": 52,
-    "Description": "友好幽魂正跟着你",
-    "Alias": []
+    "Description": "友好幽魂将跟着你",
+    "Alias": [
+      "提基幽魂"
+    ]
   },
   {
-    "Name": "宠物蜥蜴",
+    "Name": "小蜥蜴人",
     "BuffId": 53,
-    "Description": "像爬行动物一样冰凉",
-    "Alias": []
+    "Description": "像爬行动物一样冷漠",
+    "Alias": [
+      "宠物蜥蜴"
+    ]
   },
   {
-    "Name": "宠物鹦鹉",
+    "Name": "小鹦鹉",
     "BuffId": 54,
     "Description": "波利想要饼干",
-    "Alias": []
+    "Alias": [
+      "宠物鹦鹉"
+    ]
   },
   {
-    "Name": "松露人宝宝",
+    "Name": "小蘑菇人",
     "BuffId": 55,
-    "Description": "这简直太太小可爱了！",
-    "Alias": []
+    "Description": "这简直太可爱了！",
+    "Alias": [
+      "松露人宝宝"
+    ]
   },
   {
-    "Name": "宠物树苗",
+    "Name": "小树苗",
     "BuffId": 56,
-    "Description": "小树苗正跟着你",
-    "Alias": []
+    "Description": "小树苗将跟着你",
+    "Alias": [
+      "宠物树苗"
+    ]
   },
   {
-    "Name": "妖灵",
+    "Name": "灵魂",
     "BuffId": 57,
-    "Description": "妖灵正跟着你",
-    "Alias": []
+    "Description": "妖灵将跟着你",
+    "Alias": [
+      "妖灵"
+    ]
   },
   {
-    "Name": "快速治疗",
+    "Name": "快速再生",
     "BuffId": 58,
-    "Description": "+4生命再生计数/嘀嗒",
-    "Alias": []
+    "Description": "+2生命恢复",
+    "Alias": [
+      "快速治疗"
+    ]
   },
   {
-    "Name": "神圣防护",
+    "Name": "神圣庇护",
     "BuffId": 59,
-    "Description": "可闪避受到的下一次攻击",
-    "Alias": []
+    "Description": "下一次受伤将无效化",
+    "Alias": [
+      "神圣防护"
+    ]
   },
   {
-    "Name": "叶状水晶",
+    "Name": "叶绿水晶",
     "BuffId": 60,
-    "Description": "一个会发射光束的叶状水晶；光束造成100伤害（无伤害类型）和10击退\r\n第一类光束会自动攻击43.75格内无障碍的敌怪，冷却为40嘀嗒\r\n第二类光束会在135格内的敌怪受到伤害时协同攻击，不需要视野，冷却为50嘀嗒",
-    "Alias": []
+    "Description": "水晶叶成功进化为激光",
+    "Alias": [
+      "叶状水晶"
+    ]
   },
   {
-    "Name": "恐龙宝宝",
+    "Name": "小恐龙",
     "BuffId": 61,
-    "Description": "恐龙宝宝正跟着你",
-    "Alias": []
+    "Description": "你复活了恐龙宝宝！",
+    "Alias": [
+      "恐龙宝宝"
+    ]
   },
   {
-    "Name": "冰障",
+    "Name": "寒冰屏障",
     "BuffId": 62,
-    "Description": "+25%伤害减免（加性，防御后结算，可与耐力、蠕虫围巾、海龟套装|叶绿战士套装|耀斑套装非增益部分叠加）",
-    "Alias": []
+    "Description": "这就是你25%减伤的来源",
+    "Alias": [
+      "冰障"
+    ]
   },
   {
-    "Name": "恐慌！",
+    "Name": "恐慌!",
     "BuffId": 63,
-    "Description": "+100%移动速度",
-    "Alias": []
+    "Description": "+50%移动速度",
+    "Alias": [
+      "恐慌！"
+    ]
   },
   {
-    "Name": "史莱姆宝宝",
+    "Name": "小史莱姆",
     "BuffId": 64,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "它会带着热情踩踏一切拦路的生灵",
+    "Alias": [
+      "史莱姆宝宝"
+    ]
   },
   {
-    "Name": "弹簧眼",
+    "Name": "弹簧眼球",
     "BuffId": 65,
-    "Description": "弹簧眼正跟着你",
-    "Alias": []
+    "Description": "弹簧眼将跟着你",
+    "Alias": [
+      "弹簧眼"
+    ]
   },
   {
-    "Name": "雪人宝宝",
+    "Name": "小雪人",
     "BuffId": 66,
-    "Description": "雪人宝宝正跟着你",
-    "Alias": []
+    "Description": "雪人宝宝将跟着你",
+    "Alias": [
+      "雪人宝宝"
+    ]
   },
   {
-    "Name": "燃烧",
+    "Name": "太烧了",
     "BuffId": 67,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-60生命再生；×50%移动速度（乘性，于加性效果后结算）",
-    "Alias": []
+    "Description": "每秒-50生命值",
+    "Alias": [
+      "燃烧"
+    ]
   },
   {
     "Name": "窒息",
     "BuffId": 68,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-40生命再生",
+    "Description": "每秒-20生命值",
     "Alias": []
   },
   {
@@ -414,202 +502,245 @@
     "Alias": []
   },
   {
-    "Name": "酸性毒液",
+    "Name": "剧毒",
     "BuffId": 70,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-30生命再生",
-    "Alias": []
+    "Description": "每秒-6生命值",
+    "Alias": [
+      "酸性毒液"
+    ]
   },
   {
-    "Name": "武器灌注：酸性毒液",
+    "Name": "武器涂层:剧毒",
     "BuffId": 71,
-    "Description": "近战伤害和鞭子会造成酸性毒液（-60生命再生）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会对你的目标施放酸性毒液",
+    "Alias": [
+      "武器灌注：酸性毒液",
+      "武器灌注：烈性毒液"
+    ]
   },
   {
-    "Name": "迈达斯",
+    "Name": "点金",
     "BuffId": 72,
-    "Description": "多掉落10%~49%金钱",
-    "Alias": []
+    "Description": "死亡时掉落更多钱",
+    "Alias": [
+      "迈达斯"
+    ]
   },
   {
-    "Name": "武器灌注：诅咒焰",
+    "Name": "武器涂层:咒火",
     "BuffId": 73,
-    "Description": "近战伤害和鞭子会造成诅咒狱火（-48生命再生）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会对敌人施放诅咒焰",
+    "Alias": [
+      "武器灌注：诅咒焰"
+    ]
   },
   {
-    "Name": "武器灌注：火焰",
+    "Name": "武器涂层:烈焰",
     "BuffId": 74,
-    "Description": "近战伤害和鞭子会造成着火了！（-8生命再生）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会点燃敌人",
+    "Alias": [
+      "武器灌注：火焰"
+    ]
   },
   {
-    "Name": "武器灌注：金",
+    "Name": "武器涂层:点金",
     "BuffId": 75,
-    "Description": "近战伤害和鞭子会造成迈达斯（多掉落10%~49%金钱）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会使敌人掉落更多金子",
+    "Alias": [
+      "武器灌注：金"
+    ]
   },
   {
-    "Name": "武器灌注：灵液",
+    "Name": "武器涂层:灵液",
     "BuffId": 76,
-    "Description": "近战伤害和鞭子会造成灵液（对其造成的伤害获得15盔甲穿透）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会降低敌人防御力",
+    "Alias": [
+      "武器灌注：灵液"
+    ]
   },
   {
-    "Name": "武器灌注：纳米机器人",
+    "Name": "武器涂层:纳米",
     "BuffId": 77,
-    "Description": "近战伤害和鞭子会造成困惑（远离玩家，且不会对玩家攻击）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会迷惑敌人",
+    "Alias": [
+      "武器灌注：纳米机器人"
+    ]
   },
   {
-    "Name": "武器灌注：彩纸",
+    "Name": "武器涂层:彩纸",
     "BuffId": 78,
-    "Description": "近战伤害和鞭子会喷撒彩纸",
-    "Alias": []
+    "Description": "近战与鞭子攻击会喷撒彩纸",
+    "Alias": [
+      "武器灌注：彩纸"
+    ]
   },
   {
-    "Name": "武器灌注：毒药",
+    "Name": "武器涂层:毒液",
     "BuffId": 79,
-    "Description": "近战伤害和鞭子会造成中毒（-12生命再生）减益",
-    "Alias": []
+    "Description": "近战与鞭子攻击会使敌人中毒",
+    "Alias": [
+      "武器灌注：毒药"
+    ]
   },
   {
-    "Name": "黑视",
+    "Name": "绝对黑暗",
     "BuffId": 80,
-    "Description": "光视能力严重下降",
-    "Alias": []
+    "Description": "黑灯瞎火",
+    "Alias": [
+      "黑视"
+    ]
   },
   {
-    "Name": "宠物蜘蛛",
+    "Name": "小蜘蛛",
     "BuffId": 81,
-    "Description": "蜘蛛正跟着你",
-    "Alias": []
+    "Description": "蜘蛛将跟着你",
+    "Alias": [
+      "宠物蜘蛛"
+    ]
   },
   {
     "Name": "南瓜娃娃",
     "BuffId": 82,
-    "Description": "南瓜娃娃正跟着你",
+    "Description": "南瓜娃娃将跟着你",
     "Alias": []
   },
   {
     "Name": "乌鸦",
     "BuffId": 83,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "它们盘旋在你的头上等待着什么",
     "Alias": []
   },
   {
     "Name": "黑猫",
     "BuffId": 84,
-    "Description": "黑猫正跟着你",
+    "Description": "黑猫将跟着你",
     "Alias": []
   },
   {
     "Name": "诅咒树苗",
     "BuffId": 85,
-    "Description": "诅咒树苗正跟着你",
+    "Description": "“照明宠物”",
     "Alias": []
   },
   {
     "Name": "水蜡烛",
     "BuffId": 86,
-    "Description": "+33%生物生成率（在太空层为167%）；+50%自然敌怪生成上限",
+    "Description": "这能不急",
     "Alias": []
   },
   {
-    "Name": "温馨之火",
+    "Name": "温馨营火",
     "BuffId": 87,
-    "Description": "无效果增益，仅做篝火加成提示用：+1生命再生；×1.1生命再生时间转化率",
-    "Alias": []
+    "Description": "+0.5生命恢复\r\n+10%生命恢复速度",
+    "Alias": [
+      "温馨之火"
+    ]
   },
   {
-    "Name": "混沌状态",
+    "Name": "混沌",
     "BuffId": 88,
-    "Description": "使用混沌传送杖将：-当前最大生命/7的当前生命，设生命再生计数为0，设生命再生时间为0",
-    "Alias": []
+    "Description": "裂位连点，次元穿越",
+    "Alias": [
+      "混沌状态"
+    ]
   },
   {
     "Name": "心灯",
     "BuffId": 89,
-    "Description": "无效果增益，仅做篝火加成提示用：+2生命再生",
+    "Description": "+1生命恢复",
     "Alias": []
   },
   {
     "Name": "鲁道夫",
     "BuffId": 90,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "骑乘红鼻子驯鹿",
     "Alias": []
   },
   {
     "Name": "小狗",
     "BuffId": 91,
-    "Description": "小狗正跟着你",
+    "Description": "小狗将跟着你",
     "Alias": []
   },
   {
-    "Name": "格林奇宝宝",
+    "Name": "小格林奇",
     "BuffId": 92,
-    "Description": "格林奇宝宝正跟着你",
-    "Alias": []
+    "Description": "格林奇宝宝将跟着你",
+    "Alias": [
+      "格林奇宝宝"
+    ]
   },
   {
     "Name": "弹药箱",
     "BuffId": 93,
-    "Description": "-20%弹药消耗率（互相乘算）",
+    "Description": "20%几率不消耗弹药",
     "Alias": []
   },
   {
-    "Name": "耐魔性",
+    "Name": "魔力病",
     "BuffId": 94,
-    "Description": "-(5×剩余时间)%魔法伤害（乘性，于加性效果后结算），即：-",
-    "Alias": []
+    "Description": "时长越长，造成的魔法伤害越低",
+    "Alias": [
+      "耐魔性"
+    ]
   },
   {
-    "Name": "甲虫耐力",
+    "Name": "近卫甲虫",
     "BuffId": 95,
-    "Description": "×15%伤害减免（乘性，仅在圣骑士护盾分担前结算）",
-    "Alias": []
+    "Description": "-15%所受伤害",
+    "Alias": [
+      "甲虫耐力"
+    ]
   },
   {
-    "Name": "甲虫耐力",
+    "Name": "近卫甲虫",
     "BuffId": 96,
-    "Description": "×30%伤害减免（乘性，仅在圣骑士护盾分担前结算）",
-    "Alias": []
+    "Description": "-30%所受伤害",
+    "Alias": [
+      "甲虫耐力"
+    ]
   },
   {
-    "Name": "甲虫耐力",
+    "Name": "近卫甲虫",
     "BuffId": 97,
-    "Description": "×45%伤害减免（乘性，仅在圣骑士护盾分担前结算）",
-    "Alias": []
+    "Description": "-45%所受伤害",
+    "Alias": [
+      "甲虫耐力"
+    ]
   },
   {
     "Name": "甲虫力量",
     "BuffId": 98,
-    "Description": "+10%近战伤害；+10%近战速度",
+    "Description": "+10近战攻速和伤害",
     "Alias": []
   },
   {
     "Name": "甲虫力量",
     "BuffId": 99,
-    "Description": "+20%近战伤害；+20%近战速度",
+    "Description": "+20近战攻速和伤害",
     "Alias": []
   },
   {
     "Name": "甲虫力量",
     "BuffId": 100,
-    "Description": "+30%近战伤害；+30%近战速度",
+    "Description": "+30近战攻速和伤害",
     "Alias": []
   },
   {
-    "Name": "仙灵",
+    "Name": "小精灵",
     "BuffId": 101,
-    "Description": "仙灵正跟着你",
-    "Alias": []
+    "Description": "仙灵将跟着你",
+    "Alias": [
+      "仙灵"
+    ]
   },
   {
-    "Name": "仙灵",
+    "Name": "小精灵",
     "BuffId": 102,
-    "Description": "仙灵正跟着你",
-    "Alias": []
+    "Description": "仙灵将跟着你",
+    "Alias": [
+      "仙灵"
+    ]
   },
   {
     "Name": "潮湿",
@@ -618,88 +749,106 @@
     "Alias": []
   },
   {
-    "Name": "挖矿",
+    "Name": "挖掘",
     "BuffId": 104,
     "Description": "+25%挖矿速度",
-    "Alias": []
+    "Alias": [
+      "挖矿"
+    ]
   },
   {
-    "Name": "拾心",
+    "Name": "心之彼端",
     "BuffId": 105,
-    "Description": "+15.625格生命心拾取范围（默认为2.625格）",
-    "Alias": []
+    "Description": "+14格红心拾取范围",
+    "Alias": [
+      "拾心"
+    ]
   },
   {
-    "Name": "冷静",
+    "Name": "平静",
     "BuffId": 106,
-    "Description": "-17%生物生成率；-20%自然敌怪生成上限",
-    "Alias": []
+    "Description": "不是减伤，是减刷怪",
+    "Alias": [
+      "冷静"
+    ]
   },
   {
-    "Name": "建筑工",
+    "Name": "建筑",
     "BuffId": 107,
-    "Description": "+25%放置速度；+1放置范围",
-    "Alias": []
+    "Description": "干活效率杠杠高",
+    "Alias": [
+      "建筑工"
+    ]
   },
   {
     "Name": "泰坦",
     "BuffId": 108,
-    "Description": "×1.5击退",
+    "Description": "+50%全职业击退",
     "Alias": []
   },
   {
     "Name": "脚蹼",
     "BuffId": 109,
-    "Description": "可在液体中游泳（不提供对熔岩伤害和微光闪烁的免疫）",
+    "Description": "更多被用于钓鱼",
     "Alias": []
   },
   {
     "Name": "召唤",
     "BuffId": 110,
-    "Description": "+1仆从栏",
+    "Description": "+1召唤物上限",
     "Alias": []
   },
   {
-    "Name": "危险感",
+    "Name": "危险感知",
     "BuffId": 111,
-    "Description": "高亮显示危险图格",
-    "Alias": []
+    "Description": "附近的危险源已被红色高光标记",
+    "Alias": [
+      "危险感"
+    ]
   },
   {
-    "Name": "弹药储备",
+    "Name": "弹药节约",
     "BuffId": 112,
-    "Description": "-20%弹药消耗率（互相乘算）",
-    "Alias": []
+    "Description": "20%几率不消耗弹药",
+    "Alias": [
+      "弹药储备"
+    ]
   },
   {
     "Name": "生命力",
     "BuffId": 113,
-    "Description": "每拥有100永久最大生命：+20临时最大生命",
+    "Description": "最大生命值增加20%",
     "Alias": []
   },
   {
     "Name": "耐力",
     "BuffId": 114,
-    "Description": "+10%伤害减免（加性，防御后结算，可与冰障、蠕虫围巾、海龟套装|叶绿战士套装|耀斑套装非增益部分叠加）",
+    "Description": "-10%所受伤害",
     "Alias": []
   },
   {
-    "Name": "暴怒",
+    "Name": "爷怒了",
     "BuffId": 115,
-    "Description": "+10%近战|远程|魔法暴击率",
-    "Alias": []
+    "Description": "+10%暴击率",
+    "Alias": [
+      "暴怒"
+    ]
   },
   {
-    "Name": "狱火",
+    "Name": "地狱火",
     "BuffId": 116,
-    "Description": "在周身产生一个可造成伤害的火环",
-    "Alias": []
+    "Description": "附近的敌人被点燃",
+    "Alias": [
+      "狱火"
+    ]
   },
   {
-    "Name": "怒气",
+    "Name": "极度愤怒",
     "BuffId": 117,
-    "Description": "+10%近战|远程|魔法|召唤伤害",
-    "Alias": []
+    "Description": "我曾在极度愤怒的情况下直接涨了10%的伤害",
+    "Alias": [
+      "怒气"
+    ]
   },
   {
     "Name": "矿车",
@@ -708,51 +857,57 @@
     "Alias": []
   },
   {
-    "Name": "热恋",
+    "Name": "爱河",
     "BuffId": 119,
-    "Description": "你已坠入爱河！",
-    "Alias": []
+    "Description": "如果让你重新来过",
+    "Alias": [
+      "热恋"
+    ]
   },
   {
     "Name": "恶臭",
     "BuffId": 120,
-    "Description": "你的味道真难闻",
+    "Description": "味太冲了",
     "Alias": []
   },
   {
     "Name": "钓鱼",
     "BuffId": 121,
-    "Description": "+15渔力",
+    "Description": "+15%渔力",
     "Alias": []
   },
   {
-    "Name": "声呐",
+    "Name": "声纳",
     "BuffId": 122,
-    "Description": "在浮标上显示渔获名称",
-    "Alias": []
+    "Description": "你能看到是什么在咬你的鱼钩",
+    "Alias": [
+      "声呐"
+    ]
   },
   {
-    "Name": "宝匣",
+    "Name": "板条箱",
     "BuffId": 123,
-    "Description": "+15%钓上宝匣的几率（10%→25%）",
-    "Alias": []
+    "Description": "匣子，我要匣子",
+    "Alias": [
+      "宝匣"
+    ]
   },
   {
     "Name": "温暖",
     "BuffId": 124,
-    "Description": "×30%冷系伤害减免（在旗帜后防御前结算）",
+    "Description": "寒冷的持续时间降低75%\r\n冻结的持续时间降低50%\r\n冷系伤害降低30%",
     "Alias": []
   },
   {
     "Name": "黄蜂",
     "BuffId": 125,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "原汁原味的火力",
     "Alias": []
   },
   {
     "Name": "小鬼",
     "BuffId": 126,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "有翅膀却只能释放火球的中级恶魔",
     "Alias": []
   },
   {
@@ -764,138 +919,155 @@
   {
     "Name": "兔兔坐骑",
     "BuffId": 128,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "又大又毛茸茸的兔兔坐骑",
     "Alias": []
   },
   {
-    "Name": "猪龙坐骑",
+    "Name": "剑齿亚龙坐骑",
     "BuffId": 129,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "你现在看到我了....",
+    "Alias": [
+      "猪龙坐骑"
+    ]
   },
   {
     "Name": "史莱姆坐骑",
     "BuffId": 130,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "啵嘤！",
     "Alias": []
   },
   {
     "Name": "海龟坐骑",
     "BuffId": 131,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "地面上我唯唯诺诺，进水里我重拳出击",
     "Alias": []
   },
   {
     "Name": "蜜蜂坐骑",
     "BuffId": 132,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "嗡嗡嗡嗡",
     "Alias": []
   },
   {
     "Name": "蜘蛛",
     "BuffId": 133,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "蜘蛛将为你而战",
     "Alias": []
   },
   {
-    "Name": "双子魔眼",
+    "Name": "小机械眼",
     "BuffId": 134,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "我们需要咒火",
+    "Alias": [
+      "双子魔眼"
+    ]
   },
   {
     "Name": "海盗",
     "BuffId": 135,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "只劫命不劫财！",
     "Alias": []
   },
   {
-    "Name": "迷你牛头怪",
+    "Name": "牧神",
     "BuffId": 136,
-    "Description": "你是怎么打败迷你牛头怪的？",
+    "Description": "他叫肖恩",
     "Alias": [
-      "福恩"
+      "福恩",
+      "法翁"
     ]
   },
   {
     "Name": "史莱姆",
     "BuffId": 137,
-    "Description": "你黏糊糊的",
+    "Description": "你粘糊糊的",
     "Alias": [
       "黏液"
     ]
   },
   {
-    "Name": "BuffName.MinecartLegacyUnused",
-    "BuffId": 138,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "鲨鱼旋风",
+    "Name": "滚筒洗衣机",
     "BuffId": 139,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "没吃过猪鲨还没见过水龙卷跑吗",
+    "Alias": [
+      "鲨鱼旋风"
+    ]
   },
   {
-    "Name": "UFO",
+    "Name": "锁头小飞碟",
     "BuffId": 140,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "无人驾驶的迷你飞碟",
+    "Alias": [
+      "UFO"
+    ]
   },
   {
-    "Name": "UFO坐骑",
+    "Name": "UFO 坐骑",
     "BuffId": 141,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "你拥有MAC真是太好了",
+    "Alias": [
+      "UFO坐骑"
+    ]
   },
   {
-    "Name": "钻头坐骑",
+    "Name": "挖掘机",
     "BuffId": 142,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "挖掘技术哪家强",
+    "Alias": [
+      "钻头坐骑"
+    ]
   },
   {
-    "Name": "鳞甲怪坐骑",
+    "Name": "火星蛞蝓",
     "BuffId": 143,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "劈劈啪啪",
+    "Alias": [
+      "鳞甲怪坐骑"
+    ]
   },
   {
-    "Name": "带电",
+    "Name": "触电",
     "BuffId": 144,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-8生命再生；若按住左或右方向键，-32生命再生",
-    "Alias": []
+    "Description": "不要动！",
+    "Alias": [
+      "带电"
+    ]
   },
   {
     "Name": "月噬",
     "BuffId": 145,
-    "Description": "无法使用或受到生命偷取效果影响",
+    "Description": "吸血鬼刀与幽魂兜帽的吸血无法使用",
     "Alias": []
   },
   {
-    "Name": "快乐！",
+    "Name": "快乐",
     "BuffId": 146,
-    "Description": "+10%移动速度；-17%生物生成率",
-    "Alias": []
+    "Description": "+10%移动速度 -17%刷怪率",
+    "Alias": [
+      "快乐！"
+    ]
   },
   {
     "Name": "旗帜",
     "BuffId": 147,
-    "Description": "减少来自下列敌怪的伤害，增加对其造成的伤害（相关计算全为乘性，且减伤为最先计算项，增伤为护甲穿透和防御前计算项）：",
+    "Description": "受害者名单:",
     "Alias": []
   },
   {
-    "Name": "野性咬噬",
+    "Name": "野性噬咬",
     "BuffId": 148,
-    "Description": "+20%近战|远程|魔法|召唤伤害；×0.5生命再生时间转化率\r\n每秒有5%的几率获得黑暗、诅咒、困惑、缓慢、虚弱和沉默减益之一",
-    "Alias": []
+    "Description": "+20%伤害\r\n-1生命恢复\r\n时不时获得debuff",
+    "Alias": [
+      "野性咬噬"
+    ]
   },
   {
-    "Name": "被网住",
+    "Name": "织网",
     "BuffId": 149,
-    "Description": "不能移动和使用物品",
-    "Alias": []
+    "Description": "小心蜘蛛！",
+    "Alias": [
+      "被网住"
+    ]
   },
   {
     "Name": "着魔",
@@ -904,82 +1076,94 @@
     "Alias": []
   },
   {
-    "Name": "夺命杖",
+    "Name": "生命汲取",
     "BuffId": 151,
-    "Description": "无效果增益，相关请见武器描述",
-    "Alias": []
+    "Description": "+2.5生命恢复",
+    "Alias": [
+      "夺命杖"
+    ]
   },
   {
     "Name": "魔法灯笼",
     "BuffId": 152,
-    "Description": "令高价值图格发出黄色闪光",
+    "Description": "附魔灯笼将为你照亮前路",
     "Alias": []
   },
   {
-    "Name": "暗影焰",
+    "Name": "暗影炎",
     "BuffId": 153,
-    "Description": "命乌：“你这个肮脏的黑客。”",
-    "Alias": []
+    "Description": "正在损失生命值",
+    "Alias": [
+      "暗影焰"
+    ]
   },
   {
-    "Name": "脸怪宝宝",
+    "Name": "小脸怪",
     "BuffId": 154,
-    "Description": "脸怪宝宝正跟着你",
-    "Alias": []
+    "Description": "脸怪宝宝将跟着你",
+    "Alias": [
+      "脸怪宝宝"
+    ]
   },
   {
     "Name": "猩红之心",
     "BuffId": 155,
-    "Description": "提供照明的魔法心",
+    "Description": "蹦蹦跳跳",
     "Alias": []
   },
   {
     "Name": "石化",
     "BuffId": 156,
-    "Description": "不能移动和使用物品；大幅增加掉落伤害；降低安全掉落距离；可被袖珍镜及其上位免疫",
+    "Description": "你已完全石化！",
     "Alias": []
   },
   {
     "Name": "和平蜡烛",
     "BuffId": 157,
-    "Description": "-23%生物生成率；-30%自然敌怪生成上限",
+    "Description": "你先别急",
     "Alias": []
   },
   {
-    "Name": "星星瓶",
+    "Name": "星灯",
     "BuffId": 158,
-    "Description": "+(4.6×剩余魔力比+1.15)魔力再生；+50%魔力再生延迟消耗速度",
-    "Alias": []
+    "Description": "+5魔力恢复",
+    "Alias": [
+      "星星瓶"
+    ]
   },
   {
-    "Name": "锋利",
+    "Name": "锋利V",
     "BuffId": 159,
-    "Description": "手持近战武器时+12盔甲穿透",
-    "Alias": []
+    "Description": "+12近战护甲穿透",
+    "Alias": [
+      "锋利"
+    ]
   },
   {
     "Name": "眩晕",
     "BuffId": 160,
-    "Description": "×33%移动速度（乘性，于加性效果后结算）",
+    "Description": "慢悠悠",
     "Alias": []
   },
   {
     "Name": "致命球",
     "BuffId": 161,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "致命球将为你而战",
     "Alias": []
   },
   {
     "Name": "独角兽坐骑",
     "BuffId": 162,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "向前冲...太棒了！",
     "Alias": []
   },
   {
-    "Name": "遮挡",
+    "Name": "失明",
     "BuffId": 163,
-    "Description": "视野显著变暗",
-    "Alias": []
+    "Description": "害有时间看buff是吧",
+    "Alias": [
+      "遮挡"
+    ]
   },
   {
     "Name": "扭曲",
@@ -990,7 +1174,7 @@
   {
     "Name": "树妖祝福",
     "BuffId": 165,
-    "Description": "+8防御；+6生命再生\r\n荆棘能力＜100%时：+50%荆棘能力（药水荆棘后施加）",
+    "Description": "自然的力量保护你",
     "Alias": []
   },
   {
@@ -1000,106 +1184,112 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.MinecartMechLegacyUnused",
-    "BuffId": 167,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "可爱猪龙鱼坐骑",
+    "Name": "可爱猪龙鱼",
     "BuffId": 168,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "不要让它爬行。",
+    "Alias": [
+      "可爱猪龙鱼坐骑"
+    ]
   },
   {
-    "Name": "穿透",
+    "Name": "刺穿",
     "BuffId": 169,
-    "Description": "命乌：“你这个肮脏的黑客。”",
-    "Alias": []
+    "Description": "每秒-3生命值",
+    "Alias": [
+      "穿透"
+    ]
   },
   {
-    "Name": "日耀烈焰",
+    "Name": "日耀护盾",
     "BuffId": 170,
-    "Description": "×20%伤害减免（乘性，仅在圣骑士护盾分担前结算）\r\n双击向左或向右键以日耀猛冲；受到伤害时引发日耀辐射",
-    "Alias": []
+    "Description": "-20%所受伤害，受伤时产生爆炸",
+    "Alias": [
+      "日耀烈焰"
+    ]
   },
   {
-    "Name": "日耀烈焰",
+    "Name": "日耀护盾",
     "BuffId": 171,
-    "Description": "×20%伤害减免（乘性，仅在圣骑士护盾分担前结算）\r\n双击向左或向右键以日耀猛冲；受到伤害时引发日耀辐射",
-    "Alias": []
+    "Description": "-20%所受伤害，受伤时产生爆炸",
+    "Alias": [
+      "日耀烈焰"
+    ]
   },
   {
-    "Name": "日耀烈焰",
+    "Name": "日耀护盾",
     "BuffId": 172,
-    "Description": "×20%伤害减免（乘性，仅在圣骑士护盾分担前结算）\r\n双击向左或向右键以日耀猛冲；受到伤害时引发日耀辐射",
-    "Alias": []
+    "Description": "-20%所受伤害，受伤时产生爆炸",
+    "Alias": [
+      "日耀烈焰"
+    ]
   },
   {
     "Name": "生命星云",
     "BuffId": 173,
-    "Description": "+6生命再生；若生命再生＜0，设生命再生为0（减益→蜂蜜调0→星云调0→闪亮石减半）",
+    "Description": "+3生命恢复",
     "Alias": []
   },
   {
     "Name": "生命星云",
     "BuffId": 174,
-    "Description": "+12生命再生；若生命再生＜0，设生命再生为0（减益→蜂蜜调0→星云调0→闪亮石减半）",
+    "Description": "+6生命恢复",
     "Alias": []
   },
   {
     "Name": "生命星云",
     "BuffId": 175,
-    "Description": "+18生命再生；若生命再生＜0，设生命再生为0（减益→蜂蜜调0→星云调0→闪亮石减半）",
+    "Description": "+9生命恢复",
     "Alias": []
   },
   {
     "Name": "魔力星云",
     "BuffId": 176,
-    "Description": "+10固定魔力再生（可在魔力消耗时再生魔力）",
+    "Description": "+10魔力恢复",
     "Alias": []
   },
   {
     "Name": "魔力星云",
     "BuffId": 177,
-    "Description": "+20固定魔力再生（可在魔力消耗时再生魔力）",
+    "Description": "+20魔力恢复",
     "Alias": []
   },
   {
     "Name": "魔力星云",
     "BuffId": 178,
-    "Description": "+30固定魔力再生（可在魔力消耗时再生魔力）",
+    "Description": "+30魔力恢复",
     "Alias": []
   },
   {
     "Name": "伤害星云",
     "BuffId": 179,
-    "Description": "+15%近战|远程|魔法|召唤伤害",
+    "Description": "+15%伤害",
     "Alias": []
   },
   {
     "Name": "伤害星云",
     "BuffId": 180,
-    "Description": "+30%近战|远程|魔法|召唤伤害",
+    "Description": "+30%伤害",
     "Alias": []
   },
   {
     "Name": "伤害星云",
     "BuffId": 181,
-    "Description": "+45%近战|远程|魔法|召唤伤害",
+    "Description": "+45%伤害",
     "Alias": []
   },
   {
     "Name": "星尘细胞",
     "BuffId": 182,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "为你的敌人赠予最为美丽的细胞",
     "Alias": []
   },
   {
-    "Name": "细胞附着",
+    "Name": "寄生",
     "BuffId": 183,
-    "Description": "命乌：“你这个肮脏的黑客。”",
-    "Alias": []
+    "Description": "你被星尘细胞所吞噬",
+    "Alias": [
+      "细胞附着"
+    ]
   },
   {
     "Name": "矿车",
@@ -1108,141 +1298,163 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.MinecartWoodLegacyUnused",
-    "BuffId": 185,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "树妖祸害",
+    "Name": "树妖驱逐",
     "BuffId": 186,
-    "Description": "自然的力量逼迫你",
-    "Alias": []
+    "Description": "自然的力量制裁你",
+    "Alias": [
+      "树妖祸害"
+    ]
   },
   {
     "Name": "星尘守卫",
     "BuffId": 187,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见套装效果描述",
+    "Description": "星尘守卫将保护你",
     "Alias": []
   },
   {
-    "Name": "星尘之龙",
+    "Name": "蠢龙",
     "BuffId": 188,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "不蠢",
+    "Alias": [
+      "星尘之龙"
+    ]
   },
   {
     "Name": "破晓",
     "BuffId": 189,
-    "Description": "命乌：“你这个肮脏的黑客。”",
+    "Description": "你被黎明之力制裁着",
     "Alias": []
   },
   {
-    "Name": "可疑眼球",
+    "Name": "可疑注视",
     "BuffId": 190,
-    "Description": "令高价值图格发出黄色闪光",
-    "Alias": []
+    "Description": "可提供照明的可疑眼球",
+    "Alias": [
+      "可疑眼球"
+    ]
   },
   {
     "Name": "同伴方块",
     "BuffId": 191,
-    "Description": "永远不会威胁要刺伤你，而且，其实，不会说话\r\n在完全黑暗中偶尔会对玩家造成3伤害（不造成无敌帧）",
+    "Description": "安静有礼，高度文明",
     "Alias": []
   },
   {
-    "Name": "糖果冲刺",
+    "Name": "甜蜜冲刺",
     "BuffId": 192,
-    "Description": "+20%移动速度；+20%挖矿速度",
-    "Alias": []
+    "Description": "+20%移动速度\r\n+20%挖掘速度",
+    "Alias": [
+      "糖果冲刺"
+    ]
   },
   {
-    "Name": "蛇蜥怪坐骑",
+    "Name": "蛇蜥怪",
     "BuffId": 193,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "撞向任何人...不管是谁！",
+    "Alias": [
+      "蛇蜥怪坐骑"
+    ]
   },
   {
     "Name": "强风",
     "BuffId": 194,
-    "Description": "风将你吹动！",
+    "Description": "烦死了吹吹吹的",
     "Alias": []
   },
   {
-    "Name": "枯萎盔甲",
+    "Name": "枯萎护甲",
     "BuffId": 195,
-    "Description": "×50%防御（乘性，加性效果后结算，与破损盔甲乘算为75%）",
-    "Alias": []
+    "Description": "-50%防御",
+    "Alias": [
+      "枯萎盔甲"
+    ]
   },
   {
     "Name": "枯萎武器",
     "BuffId": 196,
-    "Description": "×50%造成伤害",
+    "Description": "-50%伤害",
     "Alias": []
   },
   {
-    "Name": "分泌物",
+    "Name": "天杀的鼻涕",
     "BuffId": 197,
-    "Description": "×33%移动速度（乘性，于加性效果后结算）",
-    "Alias": []
+    "Description": "-66%移动速度 如果不处于空中再减少50%",
+    "Alias": [
+      "分泌物"
+    ]
   },
   {
     "Name": "惊人一刻",
     "BuffId": 198,
-    "Description": "下次造成的近战伤害×500%（乘性，于加性效果后结算）\r\n养蜂人和蜂巢球的蜜蜂、舌锋剑的灵液溅弹和无头骑士剑的烈焰杰克南瓜射弹无法触发此增益",
+    "Description": "+400%近战伤害，成功造成后移除",
     "Alias": []
   },
   {
     "Name": "创意震撼",
     "BuffId": 199,
-    "Description": "不能放置或破坏图格（可通过爆炸物破坏）",
+    "Description": "塔防期间禁止破坏和放置物体！",
     "Alias": []
   },
   {
-    "Name": "飞翔Gato",
+    "Name": "飞猫",
     "BuffId": 200,
-    "Description": "飞翔Gato正跟着你",
-    "Alias": []
+    "Description": "飞翔Gato将跟着你",
+    "Alias": [
+      "飞翔Gato"
+    ]
   },
   {
-    "Name": "闪烁灯芯",
+    "Name": "灯灵",
     "BuffId": 201,
-    "Description": "闪烁灯芯正跟着你",
-    "Alias": []
+    "Description": "闪烁灯芯将跟着你",
+    "Alias": [
+      "闪烁灯芯"
+    ]
   },
   {
-    "Name": "Hoardagron",
+    "Name": "浮龙",
     "BuffId": 202,
-    "Description": "Hoardagron正跟着你",
-    "Alias": []
+    "Description": "Hoardagron将跟着你",
+    "Alias": [
+      "Hoardagron"
+    ]
   },
   {
-    "Name": "双足翼龙诅咒",
+    "Name": "贝特西诅咒",
     "BuffId": 203,
-    "Description": "-40防御",
-    "Alias": []
+    "Description": "防御力降低",
+    "Alias": [
+      "双足翼龙诅咒"
+    ]
   },
   {
-    "Name": "涂油",
+    "Name": "凃油",
     "BuffId": 204,
-    "Description": "命乌：“你这个肮脏的黑客。”",
-    "Alias": []
+    "Description": "着火将受到更多伤害",
+    "Alias": [
+      "涂油"
+    ]
   },
   {
-    "Name": "弩车恐慌！",
+    "Name": "快速装填III",
     "BuffId": 205,
-    "Description": "提高弩车的攻击频率",
-    "Alias": []
+    "Description": "弩车射速极大提升",
+    "Alias": [
+      "弩车恐慌！"
+    ]
   },
   {
-    "Name": "很满意",
+    "Name": "心满意足",
     "BuffId": 206,
-    "Description": "+3防御；+30%移动速度；+10%挖矿速度\r\n+0.75召唤击退；+7.5%近战|远程|魔法|召唤伤害；+3%近战|远程|魔法暴击率；+7.5%近战速度\r\n食物类增益，不与其他食物类增益共存\r\n专家及以上，没有食物类增益将×0.5生命再生时间转化率",
-    "Alias": []
+    "Description": "+0.75召唤物基础击退\r\n+3防御\r\n+3%暴击率\r\n+7.5%伤害\r\n+7.5%近战攻速\r\n+10%挖掘速度\r\n+30%移动速度",
+    "Alias": [
+      "很满意"
+    ]
   },
   {
     "Name": "酒足饭饱",
     "BuffId": 207,
-    "Description": "+4防御；+40%移动速度；+15%挖矿速度\r\n+1召唤击退；+10%近战|远程|魔法|召唤伤害；+4%近战|远程|魔法暴击率；+10%近战速度\r\n食物类增益，不与其他食物类增益共存\r\n专家及以上，没有食物类增益将×0.5生命再生时间转化率",
+    "Description": "+1召唤物基础击退\r\n+4防御\r\n+4%暴击率\r\n+10%伤害\r\n+10%近战攻速\r\n+15%挖掘速度\r\n+40%移动速度",
     "Alias": []
   },
   {
@@ -1252,81 +1464,79 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.DesertMinecartLegacyUnused",
-    "BuffId": 209,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 210,
     "Description": "驾驶矿车",
     "Alias": []
   },
   {
-    "Name": "BuffName.FishMinecartLegacyUnused",
-    "BuffId": 211,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "高尔夫球车",
+    "Name": "高尔夫矿车",
     "BuffId": 212,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "穿过平坦球道的好方法",
+    "Alias": [
+      "高尔夫球车"
+    ]
   },
   {
-    "Name": "血红蝙蝠",
+    "Name": "血蝙蝠",
     "BuffId": 213,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "它们是从未失手的猎人",
+    "Alias": [
+      "血红蝙蝠"
+    ]
   },
   {
-    "Name": "吸血鬼青蛙",
+    "Name": "吸血青蛙",
     "BuffId": 214,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "萤火虫的毒性使它只能开始捕食更大更笨的猎物",
+    "Alias": [
+      "吸血鬼青蛙"
+    ]
   },
   {
-    "Name": "巴斯特防御",
+    "Name": "猫神之护",
     "BuffId": 215,
     "Description": "+5防御",
-    "Alias": []
+    "Alias": [
+      "巴斯特防御"
+    ]
   },
   {
-    "Name": "雀宝宝",
+    "Name": "小小鸟",
     "BuffId": 216,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "你的头上承担着整个家庭",
+    "Alias": [
+      "雀宝宝"
+    ]
   },
   {
-    "Name": "埃斯蒂",
+    "Name": "魔法星",
     "BuffId": 217,
-    "Description": "埃斯蒂正跟着你",
-    "Alias": []
+    "Description": "魔法星将跟随你",
+    "Alias": [
+      "埃斯蒂"
+    ]
   },
   {
-    "Name": "蜜袋鼯",
+    "Name": "蜜糖飞鼠",
     "BuffId": 218,
-    "Description": "蜜袋鼯正跟着你",
-    "Alias": []
+    "Description": "蜜袋鼯将跟着你",
+    "Alias": [
+      "蜜袋鼯"
+    ]
   },
   {
-    "Name": "小鲨鱼",
+    "Name": "鲨鱼宝宝",
     "BuffId": 219,
     "Description": "嘟嘟嘟嘟嘟嘟",
-    "Alias": []
+    "Alias": [
+      "小鲨鱼"
+    ]
   },
   {
     "Name": "矿车",
     "BuffId": 220,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.BeeMinecartLegacyUnused",
-    "BuffId": 221,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1336,21 +1546,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.LadybugMinecartLegacyUnused",
-    "BuffId": 223,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 224,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.PigronMinecartLegacyUnused",
-    "BuffId": 225,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1360,27 +1558,15 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.SunflowerMinecartLegacyUnused",
-    "BuffId": 227,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 228,
     "Description": "驾驶矿车",
     "Alias": []
   },
   {
-    "Name": "BuffName.HellMinecartLegacyUnused",
-    "BuffId": 229,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "女巫扫帚",
     "BuffId": 230,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "它飞起来了！有巫术！",
     "Alias": []
   },
   {
@@ -1390,21 +1576,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.ShroomMinecartLegacyUnused",
-    "BuffId": 232,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 233,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.AmethystMinecartLegacyUnused",
-    "BuffId": 234,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1414,21 +1588,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.TopazMinecartLegacyUnused",
-    "BuffId": 236,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 237,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.SapphireMinecartLegacyUnused",
-    "BuffId": 238,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1438,21 +1600,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.EmeraldMinecartLegacyUnused",
-    "BuffId": 240,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 241,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.RubyMinecartLegacyUnused",
-    "BuffId": 242,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1462,21 +1612,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.DiamondMinecartLegacyUnused",
-    "BuffId": 244,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 245,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.AmberMinecartLegacyUnused",
-    "BuffId": 246,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1486,21 +1624,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.BeetleMinecartLegacyUnused",
-    "BuffId": 248,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 249,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.MeowmereMinecartLegacyUnused",
-    "BuffId": 250,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1510,21 +1636,9 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.PartyMinecartLegacyUnused",
-    "BuffId": 252,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "矿车",
     "BuffId": 253,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.PirateMinecartLegacyUnused",
-    "BuffId": 254,
-    "Description": "",
     "Alias": []
   },
   {
@@ -1534,82 +1648,92 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.SteampunkMinecartLegacyUnused",
-    "BuffId": 256,
-    "Description": "",
-    "Alias": []
-  },
-  {
     "Name": "幸运",
     "BuffId": 257,
-    "Description": "剩余持续时间＞10分钟：+0.3运气；剩余持续时间＝(5，10]分钟：+0.2运气；剩余持续时间≤5分钟：+0.1运气（运气最大有效上限为1）",
+    "Description": "从现在开始你的运气变得特别好！",
     "Alias": []
   },
   {
     "Name": "小鸟妖",
     "BuffId": 258,
-    "Description": "从天而降的可爱",
+    "Description": "来自天上的可爱",
     "Alias": []
   },
   {
-    "Name": "耳廓狐",
+    "Name": "长耳狐",
     "BuffId": 259,
-    "Description": "狐狸说了什么？更进一步，狐狸听到了什么？！",
-    "Alias": []
+    "Description": "狐狸说了什么？更重要的是，狐狸听到了什么？！",
+    "Alias": [
+      "耳廓狐"
+    ]
   },
   {
-    "Name": "闪光蝴蝶",
+    "Name": "闪耀蝴蝶",
     "BuffId": 260,
-    "Description": "真的真的荒唐",
-    "Alias": []
+    "Description": "曾经的翅膀现在化为了蝴蝶陪伴着你",
+    "Alias": [
+      "闪光蝴蝶"
+    ]
   },
   {
-    "Name": "小鬼宝宝",
+    "Name": "小鬼",
     "BuffId": 261,
-    "Description": "等到他两岁的时候走着瞧吧！",
-    "Alias": []
+    "Description": "等到它两岁的时候走着瞧吧！",
+    "Alias": [
+      "小鬼宝宝"
+    ]
   },
   {
-    "Name": "小熊猫宝宝",
+    "Name": "小熊猫",
     "BuffId": 262,
-    "Description": "小熊猫宝宝正跟着你",
-    "Alias": []
+    "Description": "小熊猫宝宝将跟着你",
+    "Alias": [
+      "小熊猫宝宝"
+    ]
   },
   {
     "Name": "沙漠虎",
     "BuffId": 263,
-    "Description": "伤害＝武器面板×(0.6+0.4×召唤次数)",
+    "Description": "沙漠虎将与你并肩作战",
     "Alias": []
   },
   {
-    "Name": "微型世纪之花",
+    "Name": "世纪小花",
     "BuffId": 264,
-    "Description": "小小世纪之花正跟着你",
-    "Alias": []
+    "Description": "小植物将跟着你",
+    "Alias": [
+      "微型世纪之花"
+    ]
   },
   {
     "Name": "火烈鸟",
     "BuffId": 265,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "火烈鸟加油",
     "Alias": []
   },
   {
-    "Name": "雷管小猫",
+    "Name": "矿工猫咪",
     "BuffId": 266,
     "Description": "不可用于大炮",
-    "Alias": []
+    "Alias": [
+      "雷管小猫"
+    ]
   },
   {
-    "Name": "狼人宝宝",
+    "Name": "小狼人",
     "BuffId": 267,
-    "Description": "狼人宝宝正跟着你",
-    "Alias": []
+    "Description": "狼人宝宝将跟着你",
+    "Alias": [
+      "狼人宝宝"
+    ]
   },
   {
-    "Name": "暗影宝箱怪",
+    "Name": "暗影模仿者",
     "BuffId": 268,
-    "Description": "暗影宝箱怪正跟着你",
-    "Alias": []
+    "Description": "暗影宝箱怪将跟着你",
+    "Alias": [
+      "暗影宝箱怪"
+    ]
   },
   {
     "Name": "矿车",
@@ -1618,16 +1742,12 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.CoffinMinecartLegacyUnused",
-    "BuffId": 270,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "附魔飞刀",
+    "Name": "刃杖",
     "BuffId": 271,
-    "Description": "千刀万剐",
-    "Alias": []
+    "Description": "它会细心的将你的敌人千刀万剐",
+    "Alias": [
+      "附魔飞刀"
+    ]
   },
   {
     "Name": "挖掘鼹鼠矿车",
@@ -1636,70 +1756,84 @@
     "Alias": []
   },
   {
-    "Name": "BuffName.DiggingMoleMinecartLegacyUnused",
-    "BuffId": 273,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "伏特兔",
+    "Name": "皮卡啾",
     "BuffId": 274,
     "Description": "伏特兔迷上你了",
-    "Alias": []
+    "Alias": [
+      "伏特兔"
+    ]
   },
   {
-    "Name": "花马坐骑",
+    "Name": "斑点马",
     "BuffId": 275,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "骑上一匹彩马",
+    "Alias": [
+      "花马坐骑"
+    ]
   },
   {
-    "Name": "骏马坐骑",
+    "Name": "皇家马",
     "BuffId": 276,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "骑上一匹壮马",
+    "Alias": [
+      "骏马坐骑"
+    ]
   },
   {
-    "Name": "黑马坐骑",
+    "Name": "黑马",
     "BuffId": 277,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "骑上一匹黑马",
+    "Alias": [
+      "黑马坐骑"
+    ]
   },
   {
-    "Name": "蹦蹦跷坐骑",
+    "Name": "弹跳杆",
     "BuffId": 278,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "咔咝唏嗑！咔咝唏嗑！咔咝唏嗑！",
+    "Alias": [
+      "蹦蹦跷坐骑"
+    ]
   },
   {
-    "Name": "海盗船坐骑",
+    "Name": "海盗船",
     "BuffId": 279,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "你现在是船长了",
+    "Alias": [
+      "海盗船坐骑"
+    ]
   },
   {
-    "Name": "阴森树坐骑",
+    "Name": "飙车快乐木",
     "BuffId": 280,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "向前跑，小哀木，别回头！",
+    "Alias": [
+      "阴森树坐骑"
+    ]
   },
   {
-    "Name": "圣诞老人坦克坐骑",
+    "Name": "坦克",
     "BuffId": 281,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "从淘气名单上划掉…",
+    "Alias": [
+      "圣诞老人坦克坐骑"
+    ]
   },
   {
-    "Name": "山羊坐骑",
+    "Name": "地狱山羊",
     "BuffId": 282,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "这完全是金属摇滚范儿！",
+    "Alias": [
+      "山羊坐骑"
+    ]
   },
   {
-    "Name": "书坐骑",
+    "Name": "书",
     "BuffId": 283,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "坐骑版飞毯",
+    "Alias": [
+      "书坐骑"
+    ]
   },
   {
     "Name": "史莱姆王子",
@@ -1708,52 +1842,68 @@
     "Alias": []
   },
   {
-    "Name": "可疑眼睛",
+    "Name": "友好窥视者",
     "BuffId": 285,
-    "Description": "盯着点……",
-    "Alias": []
+    "Description": "小心点…",
+    "Alias": [
+      "可疑眼睛"
+    ]
   },
   {
-    "Name": "蠕虫吞噬怪",
+    "Name": "小小世吞",
     "BuffId": 286,
-    "Description": "可能会毁掉几个后院",
-    "Alias": []
+    "Description": "会毁掉几个后院",
+    "Alias": [
+      "蠕虫吞噬怪"
+    ]
   },
   {
-    "Name": "蜘蛛脑",
+    "Name": "脑爬虫",
     "BuffId": 287,
-    "Description": "它在爬来爬去……真恶心",
-    "Alias": []
+    "Description": "它在爬来爬去…真恶心",
+    "Alias": [
+      "蜘蛛脑"
+    ]
   },
   {
-    "Name": "小骷髅王",
+    "Name": "小骷髅",
     "BuffId": 288,
-    "Description": "小骷髅王正跟着你",
-    "Alias": []
+    "Description": "小骷髅王将跟着你",
+    "Alias": [
+      "小骷髅王"
+    ]
   },
   {
-    "Name": "宝贝蜜蜂",
+    "Name": "小蜜蜂",
     "BuffId": 289,
-    "Description": "宝贝蜜蜂正跟着你",
-    "Alias": []
+    "Description": "蜜蜂将跟着你",
+    "Alias": [
+      "宝贝蜜蜂"
+    ]
   },
   {
-    "Name": "微型毁灭者",
+    "Name": "毁灭者-轻型",
     "BuffId": 290,
-    "Description": "随时随地准备摧毁",
-    "Alias": []
+    "Description": "用于随时进行摧毁",
+    "Alias": [
+      "微型毁灭者"
+    ]
   },
   {
-    "Name": "激光眼和魔焰眼",
+    "Name": "魔焰与激光",
     "BuffId": 291,
     "Description": "你有一双特别的眼睛！",
-    "Alias": []
+    "Alias": [
+      "激光眼和魔焰眼"
+    ]
   },
   {
-    "Name": "小机械骷髅王",
+    "Name": "机械统帅",
     "BuffId": 292,
     "Description": "每一种武器都致命",
-    "Alias": []
+    "Alias": [
+      "小机械骷髅王"
+    ]
   },
   {
     "Name": "世纪之花幼苗",
@@ -1762,141 +1912,133 @@
     "Alias": []
   },
   {
-    "Name": "玩具石巨人",
+    "Name": "玩具石头人",
     "BuffId": 294,
     "Description": "给自己一个会哭、会说话、会睡觉、会走路的活神像！",
-    "Alias": []
+    "Alias": [
+      "玩具石巨人"
+    ]
   },
   {
-    "Name": "小猪龙鱼",
+    "Name": "小公爵",
     "BuffId": 295,
     "Description": "海绿色的深渊侯爵",
-    "Alias": []
+    "Alias": [
+      "小猪龙鱼"
+    ]
   },
   {
-    "Name": "小幻影龙",
+    "Name": "幻影龙",
     "BuffId": 296,
     "Description": "它一直看着月亮",
-    "Alias": []
+    "Alias": [
+      "小幻影龙"
+    ]
   },
   {
-    "Name": "月精灵",
+    "Name": "小月总",
     "BuffId": 297,
-    "Description": "有朋自远方来",
-    "Alias": []
+    "Description": "来自远方的朋友",
+    "Alias": [
+      "月精灵"
+    ]
   },
   {
-    "Name": "仙灵公主",
+    "Name": "精灵公主",
     "BuffId": 298,
     "Description": "仙灵之光普照众生",
-    "Alias": []
+    "Alias": [
+      "仙灵公主"
+    ]
   },
   {
-    "Name": "杰克南瓜灯",
+    "Name": "南瓜灯",
     "BuffId": 299,
-    "Description": "一盏小杰克南瓜灯恶魔似地照亮道路",
-    "Alias": []
+    "Description": "一盏小杰克南瓜灯像恶魔似地照亮道路",
+    "Alias": [
+      "杰克南瓜灯"
+    ]
   },
   {
-    "Name": "常绿尖叫怪树苗",
+    "Name": "尖啸常青松",
     "BuffId": 300,
-    "Description": "带着这棵树去散步！",
-    "Alias": []
+    "Description": "带着树去散步！",
+    "Alias": [
+      "常绿尖叫怪树苗"
+    ]
   },
   {
-    "Name": "冰雪女王",
+    "Name": "小冰女",
     "BuffId": 301,
     "Description": "冰雪女王已经重生为你的同伴",
-    "Alias": []
+    "Alias": [
+      "冰雪女王"
+    ]
   },
   {
-    "Name": "异星滑板小子",
+    "Name": "外星酷小子",
     "BuffId": 302,
     "Description": "你们好，人类同胞们？",
-    "Alias": []
+    "Alias": [
+      "异星滑板小子"
+    ]
   },
   {
-    "Name": "食人魔宝宝",
+    "Name": "小食人魔",
     "BuffId": 303,
-    "Description": "他有一根大棒，但不知道怎么用它",
-    "Alias": []
+    "Description": "他有一根大棍，但不知道怎么用它",
+    "Alias": [
+      "食人魔宝宝"
+    ]
   },
   {
-    "Name": "小双足翼龙",
+    "Name": "小小龙",
     "BuffId": 304,
-    "Description": "小双足翼龙正跟着你",
-    "Alias": []
+    "Description": "小双足翼龙将跟着你",
+    "Alias": [
+      "小双足翼龙"
+    ]
   },
   {
-    "Name": "熔岩鲨坐骑",
+    "Name": "岩浆鲨",
     "BuffId": 305,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "在熔岩的海洋中冲浪！",
+    "Alias": [
+      "熔岩鲨坐骑"
+    ]
   },
   {
     "Name": "钛金屏障",
     "BuffId": 306,
-    "Description": "每次造成伤害生成1钛金碎片，最多7，冷却时间为10嘀嗒；钛金碎片造成50伤害（无伤害类型）和15击退；所有钛金碎片在增益结束时一并消失",
+    "Description": "钛金碎片包围着你",
     "Alias": []
   },
   {
-    "Name": "BuffName.BlandWhipEnemyDebuff",
-    "BuffId": 307,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "迪朗达尔祝福",
+    "Name": "神圣祝福",
     "BuffId": 308,
-    "Description": "+25%鞭子速度",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.SwordWhipNPCDebuff",
-    "BuffId": 309,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.ScytheWhipEnemyDebuff",
-    "BuffId": 310,
-    "Description": "",
-    "Alias": []
+    "Description": "+25%鞭子攻速",
+    "Alias": [
+      "迪朗达尔祝福"
+    ]
   },
   {
     "Name": "收割时刻",
     "BuffId": 311,
-    "Description": "+35%鞭子速度",
+    "Description": "+35%鞭子攻速",
     "Alias": []
   },
   {
-    "Name": "一种不错的增益",
+    "Name": "酷雪花",
     "BuffId": 312,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.FlameWhipEnemyDebuff",
-    "BuffId": 313,
-    "Description": "",
-    "Alias": []
+    "Description": "只是一个没啥输出的赠品，令人感叹",
+    "Alias": [
+      "一种不错的增益"
+    ]
   },
   {
     "Name": "丛林之怒",
     "BuffId": 314,
-    "Description": "+12%鞭子速度",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.ThornWhipNPCDebuff",
-    "BuffId": 315,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.RainbowWhipNPCDebuff",
-    "BuffId": 316,
-    "Description": "",
+    "Description": "+12%鞭子攻速",
     "Alias": []
   },
   {
@@ -1906,57 +2048,53 @@
     "Alias": []
   },
   {
-    "Name": "羽翼史莱姆坐骑",
+    "Name": "翅翼史莱姆",
     "BuffId": 318,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
-    "Alias": []
+    "Description": "啵嘤扑扑啵嘤！",
+    "Alias": [
+      "羽翼史莱姆坐骑"
+    ]
   },
   {
-    "Name": "BuffName.MaceWhipNPCDebuff",
-    "BuffId": 319,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "闪耀史莱姆",
+    "Name": "闪光史莱姆",
     "BuffId": 320,
-    "Description": "你黏糊糊的，还闪光",
-    "Alias": []
+    "Description": "你黏糊糊的，还发着光",
+    "Alias": [
+      "闪耀史莱姆"
+    ]
   },
   {
-    "Name": "控脑术",
+    "Name": "困惑之脑",
     "BuffId": 321,
-    "Description": "+10%召唤伤害；+10%近战|远程|魔法暴击率；无法触发混乱闪避",
-    "Alias": []
+    "Description": "克脑感到很疑惑，但是为你加了暴击和召唤伤害",
+    "Alias": [
+      "控脑术"
+    ]
   },
   {
     "Name": "泰拉棱镜",
     "BuffId": 322,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
+    "Description": "曾被冠以“大地棱彩”美名的无暇之剑",
     "Alias": []
   },
   {
     "Name": "狱炎",
     "BuffId": 323,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-8生命再生",
+    "Description": "缓慢损失生命值",
     "Alias": []
   },
   {
-    "Name": "冻伤",
+    "Name": "寒冻",
     "BuffId": 324,
-    "Description": "若生命再生＞0，设生命再生为0（再生增益|树妖祝福增益|星云生命增益|装备后）；-16生命再生",
-    "Alias": []
+    "Description": "要么特别热，要么特别冷。无论哪种方式都带来极大伤害",
+    "Alias": [
+      "冻伤"
+    ]
   },
   {
     "Name": "小雪怪",
     "BuffId": 325,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.BoneWhipNPCDebuff",
-    "BuffId": 326,
-    "Description": "",
+    "Description": "小雪怪想把敌人当球踢",
     "Alias": []
   },
   {
@@ -1966,16 +2104,20 @@
     "Alias": []
   },
   {
-    "Name": "咕噜咪",
+    "Name": "格罗姆",
     "BuffId": 328,
-    "Description": "毛茸茸！还黏糊糊……",
-    "Alias": []
+    "Description": "它长有绒毛！还黏糊糊的……",
+    "Alias": [
+      "咕噜咪"
+    ]
   },
   {
-    "Name": "小独眼巨鹿",
+    "Name": "独眼小鹿",
     "BuffId": 329,
     "Description": "天哪！",
-    "Alias": []
+    "Alias": [
+      "小独眼巨鹿"
+    ]
   },
   {
     "Name": "猪",
@@ -1986,104 +2128,88 @@
   {
     "Name": "切斯特",
     "BuffId": 331,
-    "Description": "右键打开猪猪存钱罐空间",
+    "Description": "奥特·冯·切斯特菲尔德先生",
     "Alias": []
   },
   {
     "Name": "稍饿",
     "BuffId": 332,
-    "Description": "你可以吃东西，但情况并没那么糟。",
+    "Description": "你最好在天黑前找点吃的！",
     "Alias": []
   },
   {
     "Name": "饥饿",
     "BuffId": 333,
-    "Description": "你很饿，而且感觉很虚弱。\r\n-2防御；-5%挖矿速度；-0.5召唤击退；-5%近战|远程|魔法|召唤伤害；-2%近战|远程|魔法暴击率；-5%近战速度",
+    "Description": "你很饿，而且感觉很虚弱。",
     "Alias": []
   },
   {
     "Name": "极饿",
     "BuffId": 334,
-    "Description": "你快饿死了！马上吃点东西！\r\n-4防御；-15%挖矿速度；-1召唤击退；-10%近战|远程|魔法|召唤伤害；-4%近战|远程|魔法暴击率；-10%近战速度\r\n设生命再生为0；设生命再生计数为0；设生命再生时间为0；设生命再生为-当前最大生命/25（至少为-4）\r\n上一行所述影响仅在夺命杖（后半）、丰盛大餐增益、篝火和红心灯笼前施加\r\n未拥有燃烧减益、窒息减益或狂卷之舌减益，且不处于专家世界时：在沙漠或雪原生物群系中，负生命再生导致的生命减少翻倍",
+    "Description": "你快饿死了！马上吃东西吧！",
     "Alias": []
   },
   {
-    "Name": "阿比盖尔",
+    "Name": "AB钙奶",
     "BuffId": 335,
-    "Description": "召唤物类增益：与召唤物状态绑定，相关请见武器描述",
-    "Alias": []
+    "Description": "来自异界的已逝姐妹",
+    "Alias": [
+      "阿比盖尔"
+    ]
   },
   {
     "Name": "丰盛大餐",
     "BuffId": 336,
-    "Description": "+6生命再生（极饿减益后）",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.TentacleSpike",
-    "BuffId": 337,
-    "Description": "",
+    "Description": "提高生命再生速度",
     "Alias": []
   },
   {
     "Name": "臭屁卡丁车",
     "BuffId": 338,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.FartMinecartLegacyUnused",
-    "BuffId": 339,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.CoolWhipNPCDebuff",
-    "BuffId": 340,
-    "Description": "",
-    "Alias": []
+    "Alias": [
+      "臭屁车"
+    ]
   },
   {
     "Name": "皇家史莱姆",
     "BuffId": 341,
-    "Description": "最终的权威，他们将统一王国！",
+    "Description": "最终权威，他们将统一王国！",
     "Alias": []
   },
   {
     "Name": "月亮祝福",
     "BuffId": 342,
-    "Description": "坐骑类增益：与坐骑状态绑定，相关请见装备描述",
+    "Description": "谢谢莉莉丝",
     "Alias": []
   },
   {
-    "Name": "生物群系视觉",
+    "Name": "环境感知",
     "BuffId": 343,
-    "Description": "高亮显示感染图格",
-    "Alias": []
+    "Description": "被感染的物块已被高光点亮",
+    "Alias": [
+      "生物群系视觉"
+    ]
   },
   {
     "Name": "血腥屠宰",
     "BuffId": 344,
-    "Description": "命乌：“你这个肮脏的黑客。”",
+    "Description": "迅速出血",
     "Alias": []
   },
   {
     "Name": "祝尼魔",
     "BuffId": 345,
-    "Description": "森林守护者",
+    "Description": "它们是森林的守护者",
     "Alias": []
   },
   {
     "Name": "泰拉臭屁卡丁车",
     "BuffId": 346,
     "Description": "驾驶矿车",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.TerraFartMinecartLegacyUnused",
-    "BuffId": 347,
-    "Description": "",
-    "Alias": []
+    "Alias": [
+      "泰拉臭屁车"
+    ]
   },
   {
     "Name": "战略家",
@@ -2092,136 +2218,88 @@
     "Alias": []
   },
   {
-    "Name": "蓝鸡",
+    "Name": "蓝色只因",
     "BuffId": 349,
-    "Description": "名牌上写着“Shane”",
-    "Alias": []
+    "Description": "谢谢谢恩",
+    "Alias": [
+      "蓝鸡"
+    ]
   },
   {
     "Name": "暗影蜡烛",
     "BuffId": 350,
-    "Description": "取消城镇、安全墙或不移动对敌怪生成的影响",
+    "Description": "驱散城镇的宁静",
     "Alias": []
   },
   {
-    "Name": "Spiffo",
+    "Name": "棕绒浣熊",
     "BuffId": 351,
     "Description": "“你就是这样没命的”",
-    "Alias": []
+    "Alias": [
+      "Spiffo"
+    ]
   },
   {
-    "Name": "洞穴园丁",
+    "Name": "穴居者园丁",
     "BuffId": 352,
     "Description": "哈嘿啊忒！",
-    "Alias": []
+    "Alias": [
+      "洞穴园丁"
+    ]
   },
   {
-    "Name": "微光闪烁",
+    "Name": "微光穿越",
     "BuffId": 353,
-    "Description": "不能移动和使用物品；向下穿过所有实心图格，直到到达足够大的空间或地狱；免疫非Boss伤害；可被炫彩斗篷免疫",
-    "Alias": []
+    "Description": "你虚化了！",
+    "Alias": [
+      "微光闪烁"
+    ]
   },
   {
-    "Name": "最土的块",
+    "Name": "最脏的块",
     "BuffId": 354,
-    "Description": "你可以从这些额外的土看出来",
-    "Alias": []
+    "Description": "你可以从它上边喷出的泥土看出来",
+    "Alias": [
+      "最土的块"
+    ]
   },
   {
     "Name": "蘑菇小伙伴！",
     "BuffId": 355,
     "Description": "蘑菇小伙伴将为你而战",
-    "Alias": []
+    "Alias": [
+      "蘑菇君！"
+    ]
   },
   {
     "Name": "虫群啃噬者",
     "BuffId": 356,
     "Description": "大嚼特嚼",
-    "Alias": []
+    "Alias": [
+      "咬咬虫群"
+    ]
   },
   {
-    "Name": "BuffName.CobWhipNPCDebuff",
-    "BuffId": 357,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.CorruptWhipNPCDebuff",
-    "BuffId": 358,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.CrimsonWhipNPCDebuff",
-    "BuffId": 359,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.MeteorWhipNPCDebuff",
-    "BuffId": 360,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.FlowerWhipNPCDebuff",
-    "BuffId": 361,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.EelWhipNPCDebuff",
-    "BuffId": 362,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.ConstellationWhipNPCDebuff",
-    "BuffId": 363,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.MoonLordWhipNPCDebuff",
-    "BuffId": 364,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "鞭蜘蛛",
+    "Name": "生物蛛",
     "BuffId": 365,
-    "Description": "召唤一只蜘蛛来为你战斗",
-    "Alias": []
+    "Description": "你召唤我≠你是我的主人",
+    "Alias": [
+      "鞭蜘蛛"
+    ]
   },
   {
     "Name": "炼金强化",
     "BuffId": 366,
-    "Description": "新增益持续更长时间",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.FlowerWhipNPCDebuffProc",
-    "BuffId": 367,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.MoonLordWhipNPCDebuffProc",
-    "BuffId": 368,
-    "Description": "",
-    "Alias": []
-  },
-  {
-    "Name": "BuffName.MeteorWhipNPCDebuffProc",
-    "BuffId": 369,
-    "Description": "",
+    "Description": "药水增益时间延长20%",
     "Alias": []
   },
   {
     "Name": "猛禽本能",
     "BuffId": 370,
     "Description": "你变成了迅猛龙！",
-    "Alias": []
+    "Alias": [
+      "迅猛龙本能"
+    ]
   },
   {
     "Name": "河豚",
@@ -2233,7 +2311,9 @@
     "Name": "塞纳克斯",
     "BuffId": 372,
     "Description": "刨根问底",
-    "Alias": []
+    "Alias": [
+      "森斧精灵"
+    ]
   },
   {
     "Name": "友好巨石",
@@ -2269,25 +2349,33 @@
     "Name": "蓝溜冰鞋",
     "BuffId": 378,
     "Description": "这就是我的滚动风格",
-    "Alias": []
+    "Alias": [
+      "蓝轮滑鞋"
+    ]
   },
   {
     "Name": "绿溜冰鞋",
     "BuffId": 379,
     "Description": "这就是我的滚动风格",
-    "Alias": []
+    "Alias": [
+      "绿轮滑鞋"
+    ]
   },
   {
     "Name": "经典溜冰鞋",
     "BuffId": 380,
     "Description": "这就是我的滚动风格",
-    "Alias": []
+    "Alias": [
+      "经典轮滑鞋"
+    ]
   },
   {
     "Name": "派对溜冰鞋",
     "BuffId": 381,
     "Description": "这就是我的滚动风格",
-    "Alias": []
+    "Alias": [
+      "派对轮滑鞋"
+    ]
   },
   {
     "Name": "友好彩虹巨石",
@@ -2298,14 +2386,18 @@
   {
     "Name": "腾灵",
     "BuffId": 383,
-    "Description": "略微提高的移动速度、挖矿速度和放置速度",
-    "Alias": []
+    "Description": "+15%移动速度\r\n+10%挖掘速度\r\n+15%放置速度\r\n按时长提升幸运",
+    "Alias": [
+      "放飞心灵"
+    ]
   },
   {
     "Name": "法埃的形态",
     "BuffId": 384,
     "Description": "你变成了一只妖精！",
-    "Alias": []
+    "Alias": [
+      "仙灵形态"
+    ]
   },
   {
     "Name": "捣蛋猫",
@@ -2329,7 +2421,9 @@
     "Name": "疾旋火鼬",
     "BuffId": 388,
     "Description": "疾旋火鼬将陪你一起探索\r\n小心别抚摸它太长时间，否则火花将会开始飞舞！",
-    "Alias": []
+    "Alias": [
+      "桃旋鼬"
+    ]
   },
   {
     "Name": "可靠的捣蛋猫",
@@ -2353,7 +2447,9 @@
     "Name": "可靠的疾旋火鼬",
     "BuffId": 392,
     "Description": "疾旋火鼬将陪你一起探索\r\n小心别抚摸它太长时间，否则火花将会开始飞舞！",
-    "Alias": []
+    "Alias": [
+      "可靠的桃旋鼬"
+    ]
   },
   {
     "Name": "黏土蓓蕾",
@@ -2389,7 +2485,9 @@
     "Name": "加速负面效果",
     "BuffId": 398,
     "Description": "增强中毒效果",
-    "Alias": []
+    "Alias": [
+      "加速痛苦"
+    ]
   },
   {
     "Name": "电击",

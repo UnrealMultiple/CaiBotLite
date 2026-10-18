@@ -12,5 +12,19 @@
       "Copper": 3
     },
     "Alias": ["牢庄", "师爷庄"]
+  },
+  {
+    "Name": "丛林孢子",
+    "NpcId": 8631531,
+    "Damage": 110,
+    "LifeMax": 415,
+    "Description": "有点招笑了这个月总鞭...",
+    "MonetaryValue": {
+      "Platinum": 8,
+      "Gold": 63,
+      "Silver": 15,
+      "Copper": 31
+    },
+    "Alias": ["孢子"]
   }
 ]

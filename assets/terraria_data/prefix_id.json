@@ -40,9 +40,11 @@
     "Alias": []
   },
   {
-    "Name": "可怕",
+    "Name": "糟糕",
     "PrefixId": 8,
-    "Alias": []
+    "Alias": [
+      "可怕"
+    ]
   },
   {
     "Name": "小",
@@ -280,9 +282,11 @@
     "Alias": []
   },
   {
-    "Name": "虚弱",
+    "Name": "软弱",
     "PrefixId": 56,
-    "Alias": []
+    "Alias": [
+      "虚弱"
+    ]
   },
   {
     "Name": "无情",
@@ -477,7 +481,9 @@
   {
     "Name": "渴望",
     "PrefixId": 95,
-    "Alias": []
+    "Alias": [
+      "热切"
+    ]
   },
   {
     "Name": "弹道",
@@ -487,6 +493,8 @@
   {
     "Name": "散乱",
     "PrefixId": 97,
-    "Alias": []
+    "Alias": [
+      "虬结"
+    ]
   }
 ]

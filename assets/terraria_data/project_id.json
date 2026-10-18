@@ -1,12 +1,5 @@
 [
   {
-    "Name": "",
-    "ProjId": 0,
-    "AiStyle": 0,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
     "Name": "木箭",
     "ProjId": 1,
     "AiStyle": 1,
@@ -14,11 +7,13 @@
     "Alias": []
   },
   {
-    "Name": "烈火箭",
+    "Name": "燃烧箭",
     "ProjId": 2,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烈火箭"
+    ]
   },
   {
     "Name": "手里剑",
@@ -84,18 +79,22 @@
     "Alias": []
   },
   {
-    "Name": "陨星",
+    "Name": "坠星",
     "ProjId": 12,
     "AiStyle": 5,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "陨星"
+    ]
   },
   {
-    "Name": "爪钩",
+    "Name": "锁链抓钩",
     "ProjId": 13,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
     "Name": "子弹",
@@ -154,32 +153,40 @@
     "Alias": []
   },
   {
-    "Name": "水流",
+    "Name": "高压水枪",
     "ProjId": 22,
     "AiStyle": 12,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "水流"
+    ]
   },
   {
-    "Name": "鱼叉枪",
+    "Name": "鱼叉",
     "ProjId": 23,
     "AiStyle": 13,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "鱼叉枪"
+    ]
   },
   {
-    "Name": "尖球",
+    "Name": "尖钉球",
     "ProjId": 24,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "尖球"
+    ]
   },
   {
-    "Name": "链球",
+    "Name": "苦痛之球",
     "ProjId": 25,
     "AiStyle": 15,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "链球"
+    ]
   },
   {
     "Name": "蓝月",
@@ -217,18 +224,22 @@
     "Alias": []
   },
   {
-    "Name": "沙球",
+    "Name": "坠落的沙块",
     "ProjId": 31,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "沙球"
+    ]
   },
   {
-    "Name": "常春藤鞭",
+    "Name": "常春藤钩",
     "ProjId": 32,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "常春藤鞭"
+    ]
   },
   {
     "Name": "荆棘旋刃",
@@ -273,18 +284,22 @@
     "Alias": []
   },
   {
-    "Name": "泥球",
+    "Name": "坠落的淤泥块",
     "ProjId": 39,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "泥球"
+    ]
   },
   {
-    "Name": "灰烬球",
+    "Name": "地狱大塌方",
     "ProjId": 40,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "灰烬球"
+    ]
   },
   {
     "Name": "狱炎箭",
@@ -294,18 +309,22 @@
     "Alias": []
   },
   {
-    "Name": "沙球",
+    "Name": "沙弹",
     "ProjId": 42,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "沙球"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "永不消逝的坟头",
     "ProjId": 43,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
     "Name": "恶魔镰刀",
@@ -322,11 +341,13 @@
     "Alias": []
   },
   {
-    "Name": "暗黑长枪",
+    "Name": "暗黑长戟",
     "ProjId": 46,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暗黑长枪"
+    ]
   },
   {
     "Name": "三叉戟",
@@ -380,11 +401,13 @@
     "Alias": []
   },
   {
-    "Name": "毒刀",
+    "Name": "剧毒投刀",
     "ProjId": 54,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒刀"
+    ]
   },
   {
     "Name": "毒刺",
@@ -394,11 +417,13 @@
     "Alias": []
   },
   {
-    "Name": "黑檀沙球",
+    "Name": "坠落的黑檀沙块",
     "ProjId": 56,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "黑檀沙球"
+    ]
   },
   {
     "Name": "钴链锯",
@@ -457,11 +482,13 @@
     "Alias": []
   },
   {
-    "Name": "黑檀沙球",
+    "Name": "黑檀沙弹",
     "ProjId": 65,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "黑檀沙球"
+    ]
   },
   {
     "Name": "精金关刀",
@@ -471,18 +498,22 @@
     "Alias": []
   },
   {
-    "Name": "珍珠沙球",
+    "Name": "坠落的珍珠沙块",
     "ProjId": 67,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "珍珠沙球"
+    ]
   },
   {
-    "Name": "珍珠沙球",
+    "Name": "珍珠沙弹",
     "ProjId": 68,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "珍珠沙球"
+    ]
   },
   {
     "Name": "圣水",
@@ -513,18 +544,22 @@
     "Alias": []
   },
   {
-    "Name": "爪钩",
+    "Name": "蓝色双钩",
     "ProjId": 73,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
-    "Name": "爪钩",
+    "Name": "红色双钩",
     "ProjId": 74,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
     "Name": "快乐炸弹",
@@ -534,39 +569,49 @@
     "Alias": []
   },
   {
-    "Name": "音符",
+    "Name": "魔法音符",
     "ProjId": 76,
     "AiStyle": 21,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "音符"
+    ]
   },
   {
-    "Name": "音符",
+    "Name": "魔法音符",
     "ProjId": 77,
     "AiStyle": 21,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "音符"
+    ]
   },
   {
-    "Name": "音符",
+    "Name": "魔法音符",
     "ProjId": 78,
     "AiStyle": 21,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "音符"
+    ]
   },
   {
-    "Name": "彩虹",
+    "Name": "彩虹之星",
     "ProjId": 79,
     "AiStyle": 9,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "彩虹"
+    ]
   },
   {
-    "Name": "冰雪块",
+    "Name": "冰块",
     "ProjId": 80,
     "AiStyle": 22,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "冰雪块"
+    ]
   },
   {
     "Name": "木箭",
@@ -653,11 +698,13 @@
     "Alias": []
   },
   {
-    "Name": "魔法飞刀",
+    "Name": "魔法投刀",
     "ProjId": 93,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "魔法飞刀"
+    ]
   },
   {
     "Name": "水晶风暴",
@@ -674,25 +721,31 @@
     "Alias": []
   },
   {
-    "Name": "诅咒焰",
+    "Name": "咒火球",
     "ProjId": 96,
     "AiStyle": 8,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "诅咒焰"
+    ]
   },
   {
-    "Name": "钴薙刀",
+    "Name": "钴蓝眉尖刀",
     "ProjId": 97,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "钴薙刀"
+    ]
   },
   {
-    "Name": "毒镖",
+    "Name": "毒箭",
     "ProjId": 98,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒镖"
+    ]
   },
   {
     "Name": "巨石",
@@ -709,32 +762,40 @@
     "Alias": []
   },
   {
-    "Name": "魔眼烈火",
+    "Name": "魔焰烈火",
     "ProjId": 101,
     "AiStyle": 23,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "魔眼烈火"
+    ]
   },
   {
-    "Name": "炸弹",
+    "Name": "统帅炸弹",
     "ProjId": 102,
     "AiStyle": 16,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "炸弹"
+    ]
   },
   {
-    "Name": "诅咒箭",
+    "Name": "咒火箭",
     "ProjId": 103,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒箭"
+    ]
   },
   {
-    "Name": "诅咒弹",
+    "Name": "咒火弹",
     "ProjId": 104,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒弹"
+    ]
   },
   {
     "Name": "永恒之枪",
@@ -751,13 +812,11 @@
     "Alias": []
   },
   {
-    "Name": "锤斧钻",
+    "Name": "斧钻",
     "ProjId": 107,
     "AiStyle": 20,
     "Friendly": true,
-    "Alias": [
-      "斧钻"
-    ]
+    "Alias": []
   },
   {
     "Name": "炸药",
@@ -767,11 +826,13 @@
     "Alias": []
   },
   {
-    "Name": "雪球",
+    "Name": "白色铅球",
     "ProjId": 109,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "雪球"
+    ]
   },
   {
     "Name": "子弹",
@@ -809,18 +870,22 @@
     "Alias": []
   },
   {
-    "Name": "邪恶三叉戟",
+    "Name": "紫色的叉子",
     "ProjId": 115,
     "AiStyle": 27,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "邪恶三叉戟"
+    ]
   },
   {
-    "Name": "剑束",
+    "Name": "光束剑",
     "ProjId": 116,
     "AiStyle": 27,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "剑束"
+    ]
   },
   {
     "Name": "骨箭",
@@ -921,102 +986,130 @@
     "Alias": []
   },
   {
-    "Name": "蘑菇",
+    "Name": "发光蘑菇",
     "ProjId": 131,
     "AiStyle": 30,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蘑菇"
+    ]
   },
   {
-    "Name": "泰拉光束",
+    "Name": "旧版泰拉之刃剑气",
     "ProjId": 132,
     "AiStyle": 27,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "泰拉光束"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "一类榴弹",
     "ProjId": 133,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "一类火箭",
     "ProjId": 134,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "感应雷",
+    "Name": "一类感应雷",
     "ProjId": 135,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "感应雷"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "二类榴弹",
     "ProjId": 136,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "二类火箭",
     "ProjId": 137,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "感应雷",
+    "Name": "二类感应雷",
     "ProjId": 138,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "感应雷"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "三类榴弹",
     "ProjId": 139,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "三类火箭",
     "ProjId": 140,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "感应雷",
+    "Name": "三类感应雷",
     "ProjId": 141,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "感应雷"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "四类榴弹",
     "ProjId": 142,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "四类火箭",
     "ProjId": 143,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "感应雷",
+    "Name": "四类感应雷",
     "ProjId": 144,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "感应雷"
+    ]
   },
   {
     "Name": "纯净喷射",
@@ -1075,11 +1168,13 @@
     "Alias": []
   },
   {
-    "Name": "腐叉",
+    "Name": "腐朽长刀",
     "ProjId": 153,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "腐叉"
+    ]
   },
   {
     "Name": "血肉之球",
@@ -1096,46 +1191,58 @@
     "Alias": []
   },
   {
-    "Name": "光明光束",
+    "Name": "旧版真圣剑剑气",
     "ProjId": 156,
     "AiStyle": 27,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "光明光束"
+    ]
   },
   {
-    "Name": "永夜光束",
+    "Name": "旧版真永夜剑气",
     "ProjId": 157,
     "AiStyle": 27,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "永夜光束"
+    ]
   },
   {
-    "Name": "铜币",
+    "Name": "铜币子弹",
     "ProjId": 158,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "铜币"
+    ]
   },
   {
-    "Name": "银币",
+    "Name": "银币子弹",
     "ProjId": 159,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "银币"
+    ]
   },
   {
-    "Name": "金币",
+    "Name": "金币子弹",
     "ProjId": 160,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "金币"
+    ]
   },
   {
-    "Name": "铂金币",
+    "Name": "铂金币子弹",
     "ProjId": 161,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "铂金币"
+    ]
   },
   {
     "Name": "炮弹",
@@ -1145,23 +1252,18 @@
     "Alias": []
   },
   {
-    "Name": "照明弹",
+    "Name": "红信号弹",
     "ProjId": 163,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "照明弹"
+    ]
   },
   {
     "Name": "地雷",
     "ProjId": 164,
     "AiStyle": 16,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.WebSlingerHook",
-    "ProjId": 165,
-    "AiStyle": 7,
     "Friendly": true,
     "Alias": []
   },
@@ -1173,32 +1275,40 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "红火箭",
     "ProjId": 167,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "绿火箭",
     "ProjId": 168,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "蓝火箭",
     "ProjId": 169,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "黄火箭",
     "ProjId": 170,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
     "Name": "绳圈",
@@ -1215,18 +1325,22 @@
     "Alias": []
   },
   {
-    "Name": "附魔光束",
+    "Name": "附魔剑气",
     "ProjId": 173,
     "AiStyle": 27,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "附魔光束"
+    ]
   },
   {
-    "Name": "冰雪尖刺",
+    "Name": "冰刺",
     "ProjId": 174,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "冰雪尖刺"
+    ]
   },
   {
     "Name": "吞噬怪宝宝",
@@ -1243,11 +1357,13 @@
     "Alias": []
   },
   {
-    "Name": "冰水唾液",
+    "Name": "寒冰唾液",
     "ProjId": 177,
     "AiStyle": 28,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "冰水唾液"
+    ]
   },
   {
     "Name": "彩纸",
@@ -1257,11 +1373,13 @@
     "Alias": []
   },
   {
-    "Name": "雪泥球",
+    "Name": "坠落的雪泥块",
     "ProjId": 179,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "雪泥球"
+    ]
   },
   {
     "Name": "子弹",
@@ -1278,13 +1396,11 @@
     "Alias": []
   },
   {
-    "Name": "附灵飞斧",
+    "Name": "疯狂飞斧",
     "ProjId": 182,
     "AiStyle": 3,
     "Friendly": true,
-    "Alias": [
-      "疯狂飞斧"
-    ]
+    "Alias": []
   },
   {
     "Name": "蜜蜂手榴弹",
@@ -1301,32 +1417,40 @@
     "Alias": []
   },
   {
-    "Name": "尖球",
+    "Name": "神庙尖钉球",
     "ProjId": 185,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "尖球"
+    ]
   },
   {
-    "Name": "长矛",
+    "Name": "刺矛机关",
     "ProjId": 186,
     "AiStyle": 37,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "长矛"
+    ]
   },
   {
-    "Name": "火焰喷射器",
+    "Name": "烈焰机关",
     "ProjId": 187,
     "AiStyle": 38,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火焰喷射器"
+    ]
   },
   {
-    "Name": "火焰",
+    "Name": "烈焰机关",
     "ProjId": 188,
     "AiStyle": 23,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火焰"
+    ]
   },
   {
     "Name": "胡蜂",
@@ -1371,11 +1495,13 @@
     "Alias": []
   },
   {
-    "Name": "矮人",
+    "Name": "矮人长矛",
     "ProjId": 195,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "矮人"
+    ]
   },
   {
     "Name": "烟雾弹",
@@ -1385,11 +1511,13 @@
     "Alias": []
   },
   {
-    "Name": "骷髅王头宝宝",
+    "Name": "小地守",
     "ProjId": 197,
     "AiStyle": 26,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "骷髅王头宝宝"
+    ]
   },
   {
     "Name": "黄蜂宝宝",
@@ -1413,39 +1541,49 @@
     "Alias": []
   },
   {
-    "Name": "墓石",
+    "Name": "后备隐藏能源",
     "ProjId": 201,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "强风大坟头",
     "ProjId": 202,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "遗怨顶砧",
     "ProjId": 203,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "超劲爆亡语",
     "ProjId": 204,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "最后一波攻势",
     "ProjId": 205,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
     "Name": "树叶",
@@ -1471,11 +1609,13 @@
     "Alias": []
   },
   {
-    "Name": "松露人",
+    "Name": "松露人宝宝",
     "ProjId": 209,
     "AiStyle": 26,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "松露人"
+    ]
   },
   {
     "Name": "树苗",
@@ -1555,11 +1695,13 @@
     "Alias": []
   },
   {
-    "Name": "花瓣",
+    "Name": "山铜花瓣",
     "ProjId": 221,
     "AiStyle": 41,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "花瓣"
+    ]
   },
   {
     "Name": "叶绿镋",
@@ -1590,18 +1732,22 @@
     "Alias": []
   },
   {
-    "Name": "水晶叶",
+    "Name": "叶绿水晶",
     "ProjId": 226,
     "AiStyle": 42,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "水晶叶"
+    ]
   },
   {
-    "Name": "水晶叶",
+    "Name": "叶绿激光",
     "ProjId": 227,
     "AiStyle": 43,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "水晶叶"
+    ]
   },
   {
     "Name": "孢子云",
@@ -1618,46 +1764,58 @@
     "Alias": []
   },
   {
-    "Name": "宝石钩",
+    "Name": "紫晶钩",
     "ProjId": 230,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
-    "Name": "宝石钩",
+    "Name": "琥珀钩",
     "ProjId": 231,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
-    "Name": "宝石钩",
+    "Name": "蓝玉钩",
     "ProjId": 232,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
-    "Name": "宝石钩",
+    "Name": "翡翠钩",
     "ProjId": 233,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
-    "Name": "宝石钩",
+    "Name": "红玉钩",
     "ProjId": 234,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
-    "Name": "宝石钩",
+    "Name": "钻石钩",
     "ProjId": 235,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "宝石钩"
+    ]
   },
   {
     "Name": "恐龙宝宝",
@@ -1688,27 +1846,29 @@
     "Alias": []
   },
   {
-    "Name": "炮弹",
+    "Name": "意大利炮",
     "ProjId": 240,
     "AiStyle": 2,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "炮弹"
+    ]
   },
   {
-    "Name": "猩红沙球",
+    "Name": "坠落的猩红沙块",
     "ProjId": 241,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "猩红沙球"
+    ]
   },
   {
-    "Name": "高速子弹",
+    "Name": "子弹",
     "ProjId": 242,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": [
-      "子弹"
-    ]
+    "Alias": []
   },
   {
     "Name": "血云",
@@ -1732,11 +1892,13 @@
     "Alias": []
   },
   {
-    "Name": "毒刺发射器",
+    "Name": "毒刺矢",
     "ProjId": 246,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒刺发射器"
+    ]
   },
   {
     "Name": "花之力",
@@ -1746,18 +1908,22 @@
     "Alias": []
   },
   {
-    "Name": "花之力",
+    "Name": "花瓣",
     "ProjId": 248,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "花之力"
+    ]
   },
   {
-    "Name": "毒刺发射器",
+    "Name": "毒刺弹片",
     "ProjId": 249,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒刺发射器"
+    ]
   },
   {
     "Name": "彩虹",
@@ -1809,25 +1975,31 @@
     "Alias": []
   },
   {
-    "Name": "寒霜光束",
+    "Name": "寒冰激光",
     "ProjId": 257,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "寒霜光束"
+    ]
   },
   {
-    "Name": "火球",
+    "Name": "火光球",
     "ProjId": 258,
     "AiStyle": 8,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火球"
+    ]
   },
   {
-    "Name": "魔眼光束",
+    "Name": "石巨人激光",
     "ProjId": 259,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "魔眼光束"
+    ]
   },
   {
     "Name": "高温射线枪",
@@ -1837,11 +2009,13 @@
     "Alias": []
   },
   {
-    "Name": "巨石",
+    "Name": "大地巨岩",
     "ProjId": 261,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "巨石"
+    ]
   },
   {
     "Name": "石巨人之拳",
@@ -1858,11 +2032,13 @@
     "Alias": []
   },
   {
-    "Name": "雨",
+    "Name": "局部降雨",
     "ProjId": 264,
     "AiStyle": 45,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "雨"
+    ]
   },
   {
     "Name": "毒牙",
@@ -2026,11 +2202,13 @@
     "Alias": []
   },
   {
-    "Name": "黄金雨",
+    "Name": "灵液流",
     "ProjId": 288,
     "AiStyle": 12,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "黄金雨"
+    ]
   },
   {
     "Name": "彩纸",
@@ -2040,18 +2218,22 @@
     "Alias": []
   },
   {
-    "Name": "暗影光束",
+    "Name": "锁头射线",
     "ProjId": 290,
     "AiStyle": 48,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "暗影光束"
+    ]
   },
   {
-    "Name": "狱火",
+    "Name": "炼狱火球",
     "ProjId": 291,
     "AiStyle": 50,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "狱火"
+    ]
   },
   {
     "Name": "狱火",
@@ -2061,11 +2243,13 @@
     "Alias": []
   },
   {
-    "Name": "亡魂",
+    "Name": "迷失亡魂",
     "ProjId": 293,
     "AiStyle": 51,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "亡魂"
+    ]
   },
   {
     "Name": "暗影光束",
@@ -2075,18 +2259,22 @@
     "Alias": []
   },
   {
-    "Name": "狱火",
+    "Name": "炼狱火球",
     "ProjId": 295,
     "AiStyle": 50,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "狱火"
+    ]
   },
   {
-    "Name": "狱火",
+    "Name": "炼狱火球",
     "ProjId": 296,
     "AiStyle": 50,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "狱火"
+    ]
   },
   {
     "Name": "亡魂",
@@ -2096,18 +2284,22 @@
     "Alias": []
   },
   {
-    "Name": "幽灵治愈",
+    "Name": "治愈灵能",
     "ProjId": 298,
     "AiStyle": 52,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "幽灵治愈"
+    ]
   },
   {
-    "Name": "暗影焰",
+    "Name": "诅咒能量",
     "ProjId": 299,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "暗影焰"
+    ]
   },
   {
     "Name": "圣骑士锤",
@@ -2124,18 +2316,22 @@
     "Alias": []
   },
   {
-    "Name": "狙击弹",
+    "Name": "骷髅狙击弹",
     "ProjId": 302,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "狙击弹"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "制导火箭",
     "ProjId": 303,
     "AiStyle": 16,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
     "Name": "吸血鬼飞刀",
@@ -2145,18 +2341,23 @@
     "Alias": []
   },
   {
-    "Name": "吸血鬼灵飞刀",
+    "Name": "吸血鬼治疗束",
     "ProjId": 305,
     "AiStyle": 52,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "吸血鬼灵飞刀",
+      "吸血鬼治愈"
+    ]
   },
   {
-    "Name": "吞噬怪咬刺",
+    "Name": "腐化灾兵",
     "ProjId": 306,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "吞噬怪咬刺"
+    ]
   },
   {
     "Name": "小吞噬怪",
@@ -2180,11 +2381,13 @@
     "Alias": []
   },
   {
-    "Name": "蓝照明弹",
+    "Name": "蓝信号弹",
     "ProjId": 310,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蓝照明弹"
+    ]
   },
   {
     "Name": "玉米糖",
@@ -2201,11 +2404,13 @@
     "Alias": []
   },
   {
-    "Name": "蜘蛛",
+    "Name": "蜘蛛宠物",
     "ProjId": 313,
     "AiStyle": 26,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蜘蛛"
+    ]
   },
   {
     "Name": "南瓜娃娃",
@@ -2257,18 +2462,22 @@
     "Alias": []
   },
   {
-    "Name": "烈焰杰克南瓜",
+    "Name": "南瓜头",
     "ProjId": 321,
     "AiStyle": 55,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烈焰杰克南瓜"
+    ]
   },
   {
-    "Name": "木钩",
+    "Name": "阴森钩",
     "ProjId": 322,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "木钩"
+    ]
   },
   {
     "Name": "尖桩",
@@ -2355,11 +2564,13 @@
     "Alias": []
   },
   {
-    "Name": "装饰",
+    "Name": "圣诞装饰",
     "ProjId": 335,
     "AiStyle": 30,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "装饰"
+    ]
   },
   {
     "Name": "松针",
@@ -2369,39 +2580,49 @@
     "Alias": []
   },
   {
-    "Name": "暴雪",
+    "Name": "冰锥",
     "ProjId": 337,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暴雪"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "一类雪人火箭",
     "ProjId": 338,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "二类雪人火箭",
     "ProjId": 339,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "三类雪人火箭",
     "ProjId": 340,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "四类雪人火箭",
     "ProjId": 341,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
     "Name": "北极",
@@ -2411,46 +2632,58 @@
     "Alias": []
   },
   {
-    "Name": "北极",
+    "Name": "北极冰矛",
     "ProjId": 343,
     "AiStyle": 57,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "北极"
+    ]
   },
   {
-    "Name": "北极",
+    "Name": "南极",
     "ProjId": 344,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "北极"
+    ]
   },
   {
-    "Name": "松针",
+    "Name": "剃刀松",
     "ProjId": 345,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "松针"
+    ]
   },
   {
-    "Name": "装饰",
+    "Name": "破片地雷",
     "ProjId": 346,
     "AiStyle": 14,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "装饰"
+    ]
   },
   {
-    "Name": "装饰",
+    "Name": "装饰弹片",
     "ProjId": 347,
     "AiStyle": 2,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "装饰"
+    ]
   },
   {
-    "Name": "寒霜波",
+    "Name": "寒霜潮",
     "ProjId": 348,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "寒霜波"
+    ]
   },
   {
     "Name": "寒霜碎块",
@@ -2460,25 +2693,31 @@
     "Alias": []
   },
   {
-    "Name": "导弹",
+    "Name": "圣诞火箭",
     "ProjId": 350,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "导弹"
+    ]
   },
   {
-    "Name": "礼物",
+    "Name": "圣 诞 快 乐",
     "ProjId": 351,
     "AiStyle": 58,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "礼物"
+    ]
   },
   {
-    "Name": "尖刺",
+    "Name": "圣诞刺球",
     "ProjId": 352,
     "AiStyle": 14,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "尖刺"
+    ]
   },
   {
     "Name": "格林奇宝宝",
@@ -2488,11 +2727,13 @@
     "Alias": []
   },
   {
-    "Name": "猩红沙球",
+    "Name": "猩红沙弹",
     "ProjId": 354,
     "AiStyle": 10,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "猩红沙球"
+    ]
   },
   {
     "Name": "毒液尖牙",
@@ -2530,53 +2771,67 @@
     "Alias": []
   },
   {
-    "Name": "浮标",
+    "Name": "木浮标",
     "ProjId": 360,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "铁质钓竿浮标",
     "ProjId": 361,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "玻璃钢浮标",
     "ProjId": 362,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "灵魂捕手浮标",
     "ProjId": 363,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "金钓竿浮标",
     "ProjId": 364,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "机械师钓竿浮标",
     "ProjId": 365,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "愿者上钩浮标",
     "ProjId": 366,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
     "Name": "黑曜石剑鱼",
@@ -2621,25 +2876,31 @@
     "Alias": []
   },
   {
-    "Name": "黄蜂",
+    "Name": "黄蜂仆从",
     "ProjId": 373,
     "AiStyle": 62,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "黄蜂"
+    ]
   },
   {
-    "Name": "黄蜂毒刺",
+    "Name": "毒刺",
     "ProjId": 374,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "黄蜂毒刺"
+    ]
   },
   {
-    "Name": "飞行小鬼",
+    "Name": "小鬼仆从",
     "ProjId": 375,
     "AiStyle": 62,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "飞行小鬼"
+    ]
   },
   {
     "Name": "小鬼火球",
@@ -2649,11 +2910,13 @@
     "Alias": []
   },
   {
-    "Name": "蜘蛛炮塔",
+    "Name": "蜘蛛女王",
     "ProjId": 377,
     "AiStyle": 53,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "蜘蛛炮塔"
+    ]
   },
   {
     "Name": "蜘蛛卵",
@@ -2677,18 +2940,22 @@
     "Alias": []
   },
   {
-    "Name": "浮标",
+    "Name": "捕肉手浮标",
     "ProjId": 381,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
-    "Name": "浮标",
+    "Name": "熔线钓竿浮标",
     "ProjId": 382,
     "AiStyle": 61,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "浮标"
+    ]
   },
   {
     "Name": "锚",
@@ -2698,18 +2965,22 @@
     "Alias": []
   },
   {
-    "Name": "鲨鱼旋风",
+    "Name": "鲨卷风",
     "ProjId": 384,
     "AiStyle": 64,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "鲨鱼旋风"
+    ]
   },
   {
-    "Name": "鲨鱼旋风矢",
+    "Name": "鲨鱼台风",
     "ProjId": 385,
     "AiStyle": 65,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "鲨鱼旋风矢"
+    ]
   },
   {
     "Name": "克苏鲁旋风",
@@ -2733,11 +3004,13 @@
     "Alias": []
   },
   {
-    "Name": "迷你视网膜激光",
+    "Name": "迷你激光",
     "ProjId": 389,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "迷你视网膜激光"
+    ]
   },
   {
     "Name": "毒液蜘蛛",
@@ -2796,7 +3069,7 @@
     "Alias": []
   },
   {
-    "Name": "迷你牛头怪",
+    "Name": "法翁",
     "ProjId": 398,
     "AiStyle": 26,
     "Friendly": true,
@@ -2833,11 +3106,13 @@
     "Alias": []
   },
   {
-    "Name": "轨道爪钩",
+    "Name": "按f进入矿车",
     "ProjId": 403,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "轨道爪钩"
+    ]
   },
   {
     "Name": "猪鲨链球",
@@ -2865,11 +3140,13 @@
     "Alias": []
   },
   {
-    "Name": "暴风雨",
+    "Name": "迷你水龙卷",
     "ProjId": 407,
     "AiStyle": 62,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暴风雨"
+    ]
   },
   {
     "Name": "迷你鲨鱼龙",
@@ -2879,11 +3156,13 @@
     "Alias": []
   },
   {
-    "Name": "台风",
+    "Name": "台风刃",
     "ProjId": 409,
     "AiStyle": 71,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "台风"
+    ]
   },
   {
     "Name": "泡泡",
@@ -2893,116 +3172,148 @@
     "Alias": []
   },
   {
-    "Name": "铜币",
+    "Name": "坠落的铜币",
     "ProjId": 411,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "铜币"
+    ]
   },
   {
-    "Name": "银币",
+    "Name": "坠落的银币",
     "ProjId": 412,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "银币"
+    ]
   },
   {
-    "Name": "金币",
+    "Name": "坠落的金币",
     "ProjId": 413,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "金币"
+    ]
   },
   {
-    "Name": "铂金币",
+    "Name": "坠落的铂金币",
     "ProjId": 414,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "铂金币"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "无害红火箭",
     "ProjId": 415,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "无害绿火箭",
     "ProjId": 416,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "无害蓝火箭",
     "ProjId": 417,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "无害黄火箭",
     "ProjId": 418,
     "AiStyle": 34,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "烟花喷泉",
+    "Name": "黄色烟花喷泉",
     "ProjId": 419,
     "AiStyle": 73,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烟花喷泉"
+    ]
   },
   {
-    "Name": "烟花喷泉",
+    "Name": "红色烟花喷泉",
     "ProjId": 420,
     "AiStyle": 73,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烟花喷泉"
+    ]
   },
   {
-    "Name": "烟花喷泉",
+    "Name": "蓝色烟花喷泉",
     "ProjId": 421,
     "AiStyle": 73,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烟花喷泉"
+    ]
   },
   {
-    "Name": "烟花喷泉",
+    "Name": "彩色烟花喷泉",
     "ProjId": 422,
     "AiStyle": 73,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "烟花喷泉"
+    ]
   },
   {
-    "Name": "UFO",
+    "Name": "迷你飞碟",
     "ProjId": 423,
     "AiStyle": 62,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "UFO"
+    ]
   },
   {
-    "Name": "流星",
+    "Name": "小型陨石",
     "ProjId": 424,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "流星"
+    ]
   },
   {
-    "Name": "流星",
+    "Name": "小型陨石",
     "ProjId": 425,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "流星"
+    ]
   },
   {
-    "Name": "流星",
+    "Name": "小型陨石",
     "ProjId": 426,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "流星"
+    ]
   },
   {
     "Name": "星旋链锯",
@@ -3047,11 +3358,13 @@
     "Alias": []
   },
   {
-    "Name": "UFO射线",
+    "Name": "迷你飞碟射线",
     "ProjId": 433,
     "AiStyle": 48,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "UFO射线"
+    ]
   },
   {
     "Name": "鳞甲怪激光",
@@ -3068,18 +3381,22 @@
     "Alias": []
   },
   {
-    "Name": "扰脑矢",
+    "Name": "扰心矢",
     "ProjId": 436,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "扰脑矢"
+    ]
   },
   {
-    "Name": "电击怪矛尖",
+    "Name": "电击矛",
     "ProjId": 437,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "电击怪矛尖"
+    ]
   },
   {
     "Name": "激光射线",
@@ -3124,11 +3441,13 @@
     "Alias": []
   },
   {
-    "Name": "外星霰弹枪",
+    "Name": "外星泡泡",
     "ProjId": 444,
     "AiStyle": 78,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "外星霰弹枪"
+    ]
   },
   {
     "Name": "激光钻头",
@@ -3145,18 +3464,22 @@
     "Alias": []
   },
   {
-    "Name": "火星死亡射线",
+    "Name": "火星死光",
     "ProjId": 447,
     "AiStyle": 79,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火星死亡射线"
+    ]
   },
   {
-    "Name": "火星火箭",
+    "Name": "火星导弹",
     "ProjId": 448,
     "AiStyle": 80,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火星火箭"
+    ]
   },
   {
     "Name": "飞碟激光",
@@ -3166,18 +3489,22 @@
     "Alias": []
   },
   {
-    "Name": "飞碟残片",
+    "Name": "高空抛物",
     "ProjId": 450,
     "AiStyle": 14,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "飞碟残片"
+    ]
   },
   {
-    "Name": "波涌之刃",
+    "Name": "闪电旋风劈",
     "ProjId": 451,
     "AiStyle": 81,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "波涌之刃"
+    ]
   },
   {
     "Name": "幻影眼",
@@ -3187,11 +3514,13 @@
     "Alias": []
   },
   {
-    "Name": "钻头准星",
+    "Name": "激光钻头",
     "ProjId": 453,
     "AiStyle": 76,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "钻头准星"
+    ]
   },
   {
     "Name": "幻影球",
@@ -3201,57 +3530,63 @@
     "Alias": []
   },
   {
-    "Name": "幻影死亡射线",
+    "Name": "幻影致命光",
     "ProjId": 455,
     "AiStyle": 84,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "幻影死亡射线"
+    ]
   },
   {
-    "Name": "月蛭",
+    "Name": "妙手回春",
     "ProjId": 456,
     "AiStyle": 85,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "月蛭"
+    ]
   },
   {
-    "Name": "相位扭曲弹射器",
+    "Name": "相位扭曲喷射器",
     "ProjId": 457,
     "AiStyle": 0,
     "Friendly": false,
-    "Alias": [
-      ""
-    ]
+    "Alias": []
   },
   {
-    "Name": "相位扭曲飞盘",
+    "Name": "相位扭曲喷射器射弹",
     "ProjId": 458,
     "AiStyle": 0,
     "Friendly": false,
-    "Alias": [
-      ""
-    ]
+    "Alias": []
   },
   {
-    "Name": "充能爆破珠",
+    "Name": "蓄能爆破球",
     "ProjId": 459,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "充能爆破珠"
+    ]
   },
   {
-    "Name": "充能爆破炮",
+    "Name": "蓄能爆破炮",
     "ProjId": 460,
     "AiStyle": 75,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "充能爆破炮"
+    ]
   },
   {
-    "Name": "充能爆破激光",
+    "Name": "蓄能爆破激光",
     "ProjId": 461,
     "AiStyle": 84,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "充能爆破激光"
+    ]
   },
   {
     "Name": "幻影矢",
@@ -3268,11 +3603,13 @@
     "Alias": []
   },
   {
-    "Name": "冰雪雾",
+    "Name": "冰雪球",
     "ProjId": 464,
     "AiStyle": 86,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "冰雪雾"
+    ]
   },
   {
     "Name": "闪电珠",
@@ -3289,18 +3626,22 @@
     "Alias": []
   },
   {
-    "Name": "火球",
+    "Name": "火光球",
     "ProjId": 467,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火球"
+    ]
   },
   {
-    "Name": "暗影火球",
+    "Name": "愁云惨淡",
     "ProjId": 468,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "暗影火球"
+    ]
   },
   {
     "Name": "蜜蜂箭",
@@ -3368,11 +3709,13 @@
     "Alias": []
   },
   {
-    "Name": "诅咒镖",
+    "Name": "咒火镖",
     "ProjId": 478,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒镖"
+    ]
   },
   {
     "Name": "灵液镖",
@@ -3382,11 +3725,13 @@
     "Alias": []
   },
   {
-    "Name": "诅咒焰",
+    "Name": "诅咒焰火苗",
     "ProjId": 480,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒焰"
+    ]
   },
   {
     "Name": "铁链血滴子",
@@ -3396,46 +3741,58 @@
     "Alias": []
   },
   {
-    "Name": "诅咒焰",
+    "Name": "诅咒焰墙",
     "ProjId": 482,
     "AiStyle": 87,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒焰"
+    ]
   },
   {
-    "Name": "种子弯刀",
+    "Name": "爆裂种壳",
     "ProjId": 483,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "种子弯刀"
+    ]
   },
   {
-    "Name": "种子弯刀",
+    "Name": "种壳碎片",
     "ProjId": 484,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "种子弯刀"
+    ]
   },
   {
-    "Name": "地狱之翼",
+    "Name": "烈焰蝙蝠",
     "ProjId": 485,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "地狱之翼"
+    ]
   },
   {
-    "Name": "爪钩",
+    "Name": "肌腱钩",
     "ProjId": 486,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
-    "Name": "爪钩",
+    "Name": "刺钩",
     "ProjId": 487,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
     "Name": "爪钩",
@@ -3445,11 +3802,13 @@
     "Alias": []
   },
   {
-    "Name": "爪钩",
+    "Name": "蠕虫钩",
     "ProjId": 489,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爪钩"
+    ]
   },
   {
     "Name": "闪电祭礼",
@@ -3473,11 +3832,13 @@
     "Alias": []
   },
   {
-    "Name": "魔晶碎块",
+    "Name": "魔晶碎块尖端",
     "ProjId": 493,
     "AiStyle": 4,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "魔晶碎块"
+    ]
   },
   {
     "Name": "魔晶碎块",
@@ -3494,11 +3855,13 @@
     "Alias": []
   },
   {
-    "Name": "暗影焰",
+    "Name": "暗影焰触手",
     "ProjId": 496,
     "AiStyle": 91,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暗影焰"
+    ]
   },
   {
     "Name": "暗影焰刀",
@@ -3508,11 +3871,13 @@
     "Alias": []
   },
   {
-    "Name": "钉子",
+    "Name": "膨胀螺丝",
     "ProjId": 498,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "钉子"
+    ]
   },
   {
     "Name": "脸怪宝宝",
@@ -3557,18 +3922,22 @@
     "Alias": []
   },
   {
-    "Name": "绳圈",
+    "Name": "丝绸绳圈",
     "ProjId": 505,
     "AiStyle": 35,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "绳圈"
+    ]
   },
   {
-    "Name": "绳圈",
+    "Name": "蛛丝绳圈",
     "ProjId": 506,
     "AiStyle": 35,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "绳圈"
+    ]
   },
   {
     "Name": "标枪",
@@ -3627,25 +3996,31 @@
     "Alias": []
   },
   {
-    "Name": "弹力荧光棒",
+    "Name": "弹性荧光棒",
     "ProjId": 515,
     "AiStyle": 14,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "弹力荧光棒"
+    ]
   },
   {
-    "Name": "弹力炸弹",
+    "Name": "弹性炸弹",
     "ProjId": 516,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "弹力炸弹"
+    ]
   },
   {
-    "Name": "弹力手榴弹",
+    "Name": "弹性手榴弹",
     "ProjId": 517,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "弹力手榴弹"
+    ]
   },
   {
     "Name": "钱币传送门",
@@ -3669,18 +4044,22 @@
     "Alias": []
   },
   {
-    "Name": "爆炸水晶",
+    "Name": "水晶能量弹",
     "ProjId": 521,
     "AiStyle": 29,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸水晶"
+    ]
   },
   {
-    "Name": "爆炸水晶",
+    "Name": "水晶溅弹",
     "ProjId": 522,
     "AiStyle": 29,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸水晶"
+    ]
   },
   {
     "Name": "毒泡",
@@ -3704,49 +4083,61 @@
     "Alias": []
   },
   {
-    "Name": "能量",
+    "Name": "吓我一跳我释放教徒",
     "ProjId": 526,
     "AiStyle": 98,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "能量"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "究极贪婪",
     "ProjId": 527,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "黄金巨石",
     "ProjId": 528,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "路边捡到的五毛钱",
     "ProjId": 529,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "巨额遗产",
     "ProjId": 530,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "墓石",
+    "Name": "591铂金60金15银3铜",
     "ProjId": 531,
     "AiStyle": 17,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "墓石"
+    ]
   },
   {
-    "Name": "交叉骨",
+    "Name": "十字交叉骨",
     "ProjId": 532,
     "AiStyle": 1,
     "Friendly": true,
@@ -3762,18 +4153,22 @@
     "Alias": []
   },
   {
-    "Name": "悠悠球",
+    "Name": "代码1球",
     "ProjId": 534,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "蛇发女妖射线",
+    "Name": "蛇发女妖头",
     "ProjId": 535,
     "AiStyle": 100,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蛇发女妖射线"
+    ]
   },
   {
     "Name": "蛇发女妖射线",
@@ -3790,193 +4185,247 @@
     "Alias": []
   },
   {
-    "Name": "闪耀",
+    "Name": "闪耀之星",
     "ProjId": 538,
     "AiStyle": 14,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "闪耀"
+    ]
   },
   {
-    "Name": "流体入侵怪",
+    "Name": "流体飞弹",
     "ProjId": 539,
     "AiStyle": 102,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "流体入侵怪"
+    ]
   },
   {
-    "Name": "星标",
+    "Name": "柱子下崽",
     "ProjId": 540,
     "AiStyle": 103,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "星标"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "木悠悠球",
     "ProjId": 541,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "抑郁球",
     "ProjId": 542,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "血脉球",
     "ProjId": 543,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "亚马逊球",
     "ProjId": 544,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "喷流球",
     "ProjId": 545,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "吉克球",
     "ProjId": 546,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "代码2球",
     "ProjId": 547,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "对打球",
     "ProjId": 548,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "叶列茨球",
     "ProjId": 549,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "Red的悠悠球",
     "ProjId": 550,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "女武神悠悠球",
     "ProjId": 551,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "冰雪悠悠球",
     "ProjId": 552,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "狱火球",
     "ProjId": 553,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "克拉肯球",
     "ProjId": 554,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "克苏鲁掷眼",
     "ProjId": 555,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 556,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 557,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 558,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 559,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 560,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "平衡锤",
+    "Name": "悠悠球配重",
     "ProjId": 561,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "平衡锤"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "好胜球",
     "ProjId": 562,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "渐变球",
     "ProjId": 563,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
-    "Name": "悠悠球",
+    "Name": "英勇球",
     "ProjId": 564,
     "AiStyle": 99,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "悠悠球"
+    ]
   },
   {
     "Name": "混乱之脑",
@@ -4056,32 +4505,40 @@
     "Alias": []
   },
   {
-    "Name": "星云激光",
+    "Name": "星云针弹",
     "ProjId": 576,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "星云激光"
+    ]
   },
   {
-    "Name": "星旋激光",
+    "Name": "星璇霰弹枪",
     "ProjId": 577,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "星旋激光"
+    ]
   },
   {
-    "Name": "星旋",
+    "Name": "星旋闪电",
     "ProjId": 578,
     "AiStyle": 108,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "星旋"
+    ]
   },
   {
-    "Name": "星旋",
+    "Name": "星旋传送门",
     "ProjId": 579,
     "AiStyle": 108,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "星旋"
+    ]
   },
   {
     "Name": "星旋闪电",
@@ -4112,18 +4569,22 @@
     "Alias": []
   },
   {
-    "Name": "注射器",
+    "Name": "最强治疗",
     "ProjId": 584,
     "AiStyle": 110,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "注射器"
+    ]
   },
   {
-    "Name": "骷髅头",
+    "Name": "诅咒骷髅头",
     "ProjId": 585,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "骷髅头"
+    ]
   },
   {
     "Name": "树妖庇护",
@@ -4133,11 +4594,13 @@
     "Alias": []
   },
   {
-    "Name": "彩弹",
+    "Name": "颜料",
     "ProjId": 587,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "彩弹"
+    ]
   },
   {
     "Name": "彩纸手榴弹",
@@ -4175,25 +4638,31 @@
     "Alias": []
   },
   {
-    "Name": "预言之末",
+    "Name": "末日预言",
     "ProjId": 593,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "预言之末"
+    ]
   },
   {
-    "Name": "爆炸烟",
+    "Name": "海盗船炸咯",
     "ProjId": 594,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "爆炸烟"
+    ]
   },
   {
-    "Name": "Arkhalis剑",
+    "Name": "无限真空刃",
     "ProjId": 595,
     "AiStyle": 75,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "Arkhalis剑"
+    ]
   },
   {
     "Name": "沙漠幽魂诅咒",
@@ -4210,18 +4679,22 @@
     "Alias": []
   },
   {
-    "Name": "骨头标枪",
+    "Name": "化石标枪",
     "ProjId": 598,
     "AiStyle": 113,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "骨头标枪"
+    ]
   },
   {
-    "Name": "骨刀",
+    "Name": "化石投刀",
     "ProjId": 599,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "骨刀"
+    ]
   },
   {
     "Name": "传送枪",
@@ -4252,11 +4725,13 @@
     "Alias": []
   },
   {
-    "Name": "泰拉悠悠球",
+    "Name": "泰拉悠悠球幻影",
     "ProjId": 604,
     "AiStyle": 115,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "泰拉悠悠球"
+    ]
   },
   {
     "Name": "史莱姆尖刺",
@@ -4266,11 +4741,13 @@
     "Alias": []
   },
   {
-    "Name": "激光",
+    "Name": "鳞甲怪激光",
     "ProjId": 606,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "激光"
+    ]
   },
   {
     "Name": "耀斑",
@@ -4280,11 +4757,13 @@
     "Alias": []
   },
   {
-    "Name": "日耀辐射",
+    "Name": "日耀护盾",
     "ProjId": 608,
     "AiStyle": 117,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "日耀辐射"
+    ]
   },
   {
     "Name": "星尘钻头",
@@ -4308,18 +4787,22 @@
     "Alias": []
   },
   {
-    "Name": "日耀爆炸",
+    "Name": "太阳爆炸",
     "ProjId": 612,
     "AiStyle": 117,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "日耀爆炸"
+    ]
   },
   {
-    "Name": "星尘细胞",
+    "Name": "星尘细胞仆从",
     "ProjId": 613,
     "AiStyle": 62,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "星尘细胞"
+    ]
   },
   {
     "Name": "星尘细胞",
@@ -4378,11 +4861,13 @@
     "Alias": []
   },
   {
-    "Name": "爆炸烟",
+    "Name": "好似烟花",
     "ProjId": 622,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "爆炸烟"
+    ]
   },
   {
     "Name": "星尘守卫",
@@ -4392,11 +4877,13 @@
     "Alias": []
   },
   {
-    "Name": "爆星",
+    "Name": "星尘守卫爆炸",
     "ProjId": 624,
     "AiStyle": 117,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆星"
+    ]
   },
   {
     "Name": "星尘之龙",
@@ -4427,25 +4914,31 @@
     "Alias": []
   },
   {
-    "Name": "释能",
+    "Name": "四柱护盾破坏粒子",
     "ProjId": 629,
     "AiStyle": 122,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "释能"
+    ]
   },
   {
-    "Name": "幻影弓",
+    "Name": "幻象",
     "ProjId": 630,
     "AiStyle": 75,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "幻影弓"
+    ]
   },
   {
-    "Name": "幻影弓",
+    "Name": "幻象箭",
     "ProjId": 631,
     "AiStyle": 122,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "幻影弓"
+    ]
   },
   {
     "Name": "终极棱镜",
@@ -4469,11 +4962,13 @@
     "Alias": []
   },
   {
-    "Name": "星云烈焰·爆",
+    "Name": "蓝色星云烈焰",
     "ProjId": 635,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "星云烈焰·爆"
+    ]
   },
   {
     "Name": "破晓之光",
@@ -4483,11 +4978,13 @@
     "Alias": []
   },
   {
-    "Name": "弹力雷管",
+    "Name": "弹性雷管",
     "ProjId": 637,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "弹力雷管"
+    ]
   },
   {
     "Name": "夜明弹",
@@ -4504,11 +5001,13 @@
     "Alias": []
   },
   {
-    "Name": "夜明箭",
+    "Name": "夜明箭轨道",
     "ProjId": 640,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "夜明箭"
+    ]
   },
   {
     "Name": "月亮传送门",
@@ -4546,39 +5045,49 @@
     "Alias": []
   },
   {
-    "Name": "月钩",
+    "Name": "日耀钩",
     "ProjId": 646,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "月钩"
+    ]
   },
   {
-    "Name": "月钩",
+    "Name": "星旋钩",
     "ProjId": 647,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "月钩"
+    ]
   },
   {
-    "Name": "月钩",
+    "Name": "星云钩",
     "ProjId": 648,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "月钩"
+    ]
   },
   {
-    "Name": "月钩",
+    "Name": "星尘钩",
     "ProjId": 649,
     "AiStyle": 7,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "月钩"
+    ]
   },
   {
-    "Name": "可疑触手",
+    "Name": "宠物真眼",
     "ProjId": 650,
     "AiStyle": 124,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "可疑触手"
+    ]
   },
   {
     "Name": "线路蓝图",
@@ -4602,11 +5111,13 @@
     "Alias": []
   },
   {
-    "Name": "热喷泉",
+    "Name": "喷泉",
     "ProjId": 654,
     "AiStyle": 126,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "热喷泉"
+    ]
   },
   {
     "Name": "蜂巢",
@@ -4623,18 +5134,22 @@
     "Alias": []
   },
   {
-    "Name": "远古风暴",
+    "Name": "三昧神风",
     "ProjId": 657,
     "AiStyle": 127,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "远古风暴"
+    ]
   },
   {
-    "Name": "远古风暴",
+    "Name": "沙卷标记",
     "ProjId": 658,
     "AiStyle": 128,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "远古风暴"
+    ]
   },
   {
     "Name": "神灯烈焰",
@@ -4651,18 +5166,22 @@
     "Alias": []
   },
   {
-    "Name": "玛瑙爆破枪",
+    "Name": "爆炸玛瑙",
     "ProjId": 661,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "玛瑙爆破枪"
+    ]
   },
   {
-    "Name": "标枪",
+    "Name": "天国标枪",
     "ProjId": 662,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "标枪"
+    ]
   },
   {
     "Name": "爆炸烈焰塔",
@@ -4672,11 +5191,13 @@
     "Alias": []
   },
   {
-    "Name": "爆炸烈焰塔",
+    "Name": "爆炸烈焰火球",
     "ProjId": 664,
     "AiStyle": 131,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸烈焰塔"
+    ]
   },
   {
     "Name": "爆炸烈焰塔",
@@ -4686,11 +5207,13 @@
     "Alias": []
   },
   {
-    "Name": "爆炸烈焰塔",
+    "Name": "爆炸烈焰火球",
     "ProjId": 666,
     "AiStyle": 131,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸烈焰塔"
+    ]
   },
   {
     "Name": "爆炸烈焰塔",
@@ -4700,11 +5223,13 @@
     "Alias": []
   },
   {
-    "Name": "爆炸烈焰塔",
+    "Name": "爆炸烈焰火球",
     "ProjId": 668,
     "AiStyle": 131,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸烈焰塔"
+    ]
   },
   {
     "Name": "麦芽酒",
@@ -4714,11 +5239,13 @@
     "Alias": []
   },
   {
-    "Name": "食人魔重踏",
+    "Name": "食人魔",
     "ProjId": 670,
     "AiStyle": 126,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "食人魔重踏"
+    ]
   },
   {
     "Name": "德拉克龙",
@@ -4749,18 +5276,22 @@
     "Alias": []
   },
   {
-    "Name": "暗黑能量",
+    "Name": "暗影能量",
     "ProjId": 675,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "暗黑能量"
+    ]
   },
   {
-    "Name": "食人魔唾液",
+    "Name": "不可思议粘液球",
     "ProjId": 676,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "食人魔唾液"
+    ]
   },
   {
     "Name": "弩车",
@@ -4784,11 +5315,13 @@
     "Alias": []
   },
   {
-    "Name": "弩车",
+    "Name": "弩箭",
     "ProjId": 680,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "弩车"
+    ]
   },
   {
     "Name": "哥布林炸弹",
@@ -4812,18 +5345,22 @@
     "Alias": []
   },
   {
-    "Name": "畅快猛斩",
+    "Name": "飞龙大剑",
     "ProjId": 684,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "畅快猛斩"
+    ]
   },
   {
-    "Name": "标枪",
+    "Name": "天国标枪",
     "ProjId": 685,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "标枪"
+    ]
   },
   {
     "Name": "双足翼龙火球",
@@ -4865,42 +5402,54 @@
     "ProjId": 691,
     "AiStyle": 138,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "爆炸机关",
     "ProjId": 692,
     "AiStyle": 138,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "爆炸机关",
     "ProjId": 693,
     "AiStyle": 138,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "爆炸机关",
     "ProjId": 694,
     "AiStyle": 139,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "爆炸机关",
     "ProjId": 695,
     "AiStyle": 139,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "爆炸机关",
     "ProjId": 696,
     "AiStyle": 139,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "爆炸陷阱"
+    ]
   },
   {
     "Name": "瞌睡章鱼",
@@ -4910,11 +5459,13 @@
     "Alias": []
   },
   {
-    "Name": "长棍猛击",
+    "Name": "瞌睡章鱼",
     "ProjId": 698,
     "AiStyle": 141,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "长棍猛击"
+    ]
   },
   {
     "Name": "恐怖关刀",
@@ -4924,11 +5475,13 @@
     "Alias": []
   },
   {
-    "Name": "恶魂",
+    "Name": "关刀亡魂",
     "ProjId": 700,
     "AiStyle": 143,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "恶魂"
+    ]
   },
   {
     "Name": "Hoardagron",
@@ -4966,11 +5519,13 @@
     "Alias": []
   },
   {
-    "Name": "幽灵凤凰",
+    "Name": "烈焰凤凰",
     "ProjId": 706,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "幽灵凤凰"
+    ]
   },
   {
     "Name": "天龙之怒",
@@ -4987,18 +5542,22 @@
     "Alias": []
   },
   {
-    "Name": "天龙之怒",
+    "Name": "天龙之怒电球",
     "ProjId": 709,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "天龙之怒"
+    ]
   },
   {
-    "Name": "空中祸害",
+    "Name": "空中灾祸",
     "ProjId": 710,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "空中祸害"
+    ]
   },
   {
     "Name": "双足翼龙怒气",
@@ -5022,53 +5581,67 @@
     "Alias": []
   },
   {
-    "Name": "喜庆弹射器Mk2",
+    "Name": "庆典Mk2",
     "ProjId": 714,
     "AiStyle": 75,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "喜庆弹射器Mk2"
+    ]
   },
   {
-    "Name": "喜庆弹射器Mk2",
+    "Name": "庆典Mk2",
     "ProjId": 715,
     "AiStyle": 147,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "喜庆弹射器Mk2"
+    ]
   },
   {
-    "Name": "喜庆弹射器Mk2",
+    "Name": "庆典Mk2",
     "ProjId": 716,
     "AiStyle": 147,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "喜庆弹射器Mk2"
+    ]
   },
   {
-    "Name": "喜庆弹射器Mk2",
+    "Name": "庆典Mk2",
     "ProjId": 717,
     "AiStyle": 147,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "喜庆弹射器Mk2"
+    ]
   },
   {
-    "Name": "喜庆弹射器Mk2",
+    "Name": "庆典Mk2",
     "ProjId": 718,
     "AiStyle": 147,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "喜庆弹射器Mk2"
+    ]
   },
   {
-    "Name": "蜂王毒刺",
+    "Name": "皇家毒刺",
     "ProjId": 719,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "蜂王毒刺"
+    ]
   },
   {
-    "Name": "陨星",
+    "Name": "坠星",
     "ProjId": 720,
     "AiStyle": 148,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "陨星"
+    ]
   },
   {
     "Name": "高尔夫球",
@@ -5085,11 +5658,13 @@
     "Alias": []
   },
   {
-    "Name": "魔力斗篷",
+    "Name": "魔力星辰",
     "ProjId": 723,
     "AiStyle": 5,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "魔力斗篷"
+    ]
   },
   {
     "Name": "蜜蜂斗篷",
@@ -5099,11 +5674,13 @@
     "Alias": []
   },
   {
-    "Name": "星星面纱",
+    "Name": "星辰项链",
     "ProjId": 725,
     "AiStyle": 5,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "星星面纱"
+    ]
   },
   {
     "Name": "星星斗篷",
@@ -5113,60 +5690,58 @@
     "Alias": []
   },
   {
-    "Name": "仙人球",
+    "Name": "弑神仙人球",
     "ProjId": 727,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "仙人球"
+    ]
   },
   {
-    "Name": "超级星星炮",
+    "Name": "碎月之星",
     "ProjId": 728,
     "AiStyle": 151,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "超级星星炮"
+    ]
   },
   {
-    "Name": "超级星星炮",
+    "Name": "碎月之星",
     "ProjId": 729,
     "AiStyle": 152,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "超级星星炮"
+    ]
   },
   {
-    "Name": "风暴长矛",
+    "Name": "风暴搜索者",
     "ProjId": 730,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "风暴长矛"
+    ]
   },
   {
-    "Name": "霹雳法杖",
+    "Name": "雷霆捕猎者",
     "ProjId": 731,
     "AiStyle": 29,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "霹雳法杖"
+    ]
   },
   {
-    "Name": "风暴长矛",
+    "Name": "寻风之触",
     "ProjId": 732,
     "AiStyle": 44,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ToiletEffect",
-    "ProjId": 733,
-    "AiStyle": 153,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.VoidLens",
-    "ProjId": 734,
-    "AiStyle": 154,
-    "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "风暴长矛"
+    ]
   },
   {
     "Name": "泰拉魔刃",
@@ -5176,25 +5751,31 @@
     "Alias": []
   },
   {
-    "Name": "残骸",
+    "Name": "碎砖",
     "ProjId": 736,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "残骸"
+    ]
   },
   {
-    "Name": "残骸",
+    "Name": "碎砖",
     "ProjId": 737,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "残骸"
+    ]
   },
   {
-    "Name": "残骸",
+    "Name": "碎砖",
     "ProjId": 738,
     "AiStyle": 10,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "残骸"
+    ]
   },
   {
     "Name": "高尔夫球",
@@ -5295,60 +5876,49 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.AmberHook",
-    "ProjId": 753,
-    "AiStyle": 7,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.MysticSnakeCoil",
-    "ProjId": 754,
-    "AiStyle": 155,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "血红蝙蝠",
+    "Name": "血蝙蝠",
     "ProjId": 755,
     "AiStyle": 156,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "血红蝙蝠"
+    ]
   },
   {
-    "Name": "血荆棘",
+    "Name": "浮华血棘",
     "ProjId": 756,
     "AiStyle": 157,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "血荆棘"
+    ]
   },
   {
-    "Name": "滴滴怪致残者",
+    "Name": "滴滴怪跛子",
     "ProjId": 757,
     "AiStyle": 15,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "滴滴怪致残者"
+    ]
   },
   {
-    "Name": "吸血鬼青蛙",
+    "Name": "吸血青蛙",
     "ProjId": 758,
     "AiStyle": 67,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "吸血鬼青蛙"
+    ]
   },
   {
-    "Name": "雀",
+    "Name": "雀宝宝",
     "ProjId": 759,
     "AiStyle": 158,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BobberBloody",
-    "ProjId": 760,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "雀"
+    ]
   },
   {
     "Name": "纸飞机",
@@ -5372,74 +5942,13 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.UpbeatStar",
-    "ProjId": 764,
-    "AiStyle": 144,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.SugarGlider",
-    "ProjId": 765,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBlue",
-    "ProjId": 766,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBlueAndYellow",
-    "ProjId": 767,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteRed",
-    "ProjId": 768,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteRedAndYellow",
-    "ProjId": 769,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteYellow",
-    "ProjId": 770,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteWyvern",
-    "ProjId": 771,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.Geode",
-    "ProjId": 772,
-    "AiStyle": 1,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "甲虫炸弹",
+    "Name": "圣甲虫炸弹",
     "ProjId": 773,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "甲虫炸弹"
+    ]
   },
   {
     "Name": "小鲨鱼",
@@ -5449,18 +5958,13 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.BobberScarab",
-    "ProjId": 775,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "火箭",
+    "Name": "集束火箭一型",
     "ProjId": 776,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
     "Name": "手榴弹",
@@ -5479,18 +5983,22 @@
     "Alias": []
   },
   {
-    "Name": "集束破片",
+    "Name": "集束弹碎片",
     "ProjId": 779,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "集束破片"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "集束火箭二型",
     "ProjId": 780,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
     "Name": "手榴弹",
@@ -5509,25 +6017,31 @@
     "Alias": []
   },
   {
-    "Name": "集束破片",
+    "Name": "集束弹碎片",
     "ProjId": 783,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "集束破片"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "湿火箭",
     "ProjId": 784,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "潮湿榴弹",
     "ProjId": 785,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5537,18 +6051,22 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "熔岩火箭",
     "ProjId": 787,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "手榴弹",
     "ProjId": 788,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5558,18 +6076,22 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "蜂蜜火箭",
     "ProjId": 790,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "手榴弹",
     "ProjId": 791,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5579,18 +6101,22 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "迷你核弹二型",
     "ProjId": 793,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "手榴弹",
     "ProjId": 794,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5600,18 +6126,22 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "迷你核弹二型",
     "ProjId": 796,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "手榴弹",
     "ProjId": 797,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5621,18 +6151,22 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "干燥火箭",
     "ProjId": 799,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "榴弹",
+    "Name": "手榴弹",
     "ProjId": 800,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "榴弹"
+    ]
   },
   {
     "Name": "感应雷",
@@ -5649,67 +6183,85 @@
     "Alias": []
   },
   {
-    "Name": "火箭",
+    "Name": "雪人火箭一型",
     "ProjId": 803,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "雪人火箭二型",
     "ProjId": 804,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "湿雪人火箭",
     "ProjId": 805,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "熔岩雪人火箭",
     "ProjId": 806,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "蜂蜜雪人火箭",
     "ProjId": 807,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "迷你雪人核弹一型",
     "ProjId": 808,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "迷你雪人核弹二型",
     "ProjId": 809,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "火箭",
+    "Name": "干燥雪人火箭",
     "ProjId": 810,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "血弹",
+    "Name": "猩红锥刺",
     "ProjId": 811,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "血弹"
+    ]
   },
   {
     "Name": "贝壳堆",
@@ -5719,18 +6271,22 @@
     "Alias": []
   },
   {
-    "Name": "血泪",
+    "Name": "绯月杀机",
     "ProjId": 813,
     "AiStyle": 108,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "血泪"
+    ]
   },
   {
-    "Name": "血弹",
+    "Name": "猩红锥刺",
     "ProjId": 814,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "血弹"
+    ]
   },
   {
     "Name": "小鸟妖",
@@ -5761,88 +6317,13 @@
     "Alias": []
   },
   {
-    "Name": "血雨",
+    "Name": "血泪",
     "ProjId": 819,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ChumBucket",
-    "ProjId": 820,
-    "AiStyle": 163,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BabyImp",
-    "ProjId": 821,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBoneSerpent",
-    "ProjId": 822,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteWorldFeeder",
-    "ProjId": 823,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBunny",
-    "ProjId": 824,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BabyRedPanda",
-    "ProjId": 825,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KitePigron",
-    "ProjId": 826,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteManEater",
-    "ProjId": 827,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteJellyfishBlue",
-    "ProjId": 828,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteJellyfishPink",
-    "ProjId": 829,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteShark",
-    "ProjId": 830,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "血雨"
+    ]
   },
   {
     "Name": "沙漠虎",
@@ -5887,32 +6368,13 @@
     "Alias": []
   },
   {
-    "Name": "骷髅头",
+    "Name": "头骨",
     "ProjId": 837,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteSandShark",
-    "ProjId": 838,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBunnyCorrupt",
-    "ProjId": 839,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteBunnyCrimson",
-    "ProjId": 840,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "骷髅头"
+    ]
   },
   {
     "Name": "皮鞭",
@@ -5926,34 +6388,6 @@
     "ProjId": 842,
     "AiStyle": 161,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteGoldfish",
-    "ProjId": 843,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteAngryTrapper",
-    "ProjId": 844,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteKoi",
-    "ProjId": 845,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteCrawltipede",
-    "ProjId": 846,
-    "AiStyle": 160,
-    "Friendly": false,
     "Alias": []
   },
   {
@@ -5971,76 +6405,38 @@
     "Alias": []
   },
   {
-    "Name": "暗黑收割",
+    "Name": "黑暗收割",
     "ProjId": 849,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteSpectrum",
-    "ProjId": 850,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ReleaseDoves",
-    "ProjId": 851,
-    "AiStyle": 166,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteWanderingEye",
-    "ProjId": 852,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KiteUnicorn",
-    "ProjId": 853,
-    "AiStyle": 160,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.Plantero",
-    "ProjId": 854,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ReleaseLantern",
-    "ProjId": 855,
-    "AiStyle": 166,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "恒星曲调",
-    "ProjId": 856,
-    "AiStyle": 167,
-    "Friendly": true,
     "Alias": [
-      "星星吉他"
+      "暗黑收割"
     ]
   },
   {
-    "Name": "第一分形",
-    "ProjId": 857,
-    "AiStyle": 168,
+    "Name": "星星吉他",
+    "ProjId": 856,
+    "AiStyle": 167,
     "Friendly": true,
     "Alias": []
   },
   {
-    "Name": "雷管小猫",
+    "Name": "最初分形",
+    "ProjId": 857,
+    "AiStyle": 168,
+    "Friendly": true,
+    "Alias": [
+      "第一分形"
+    ]
+  },
+  {
+    "Name": "雷管猫",
     "ProjId": 858,
     "AiStyle": 26,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "雷管小猫"
+    ]
   },
   {
     "Name": "狼人宝宝",
@@ -6057,37 +6453,27 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.Football",
-    "ProjId": 861,
-    "AiStyle": 2,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "集束破片",
+    "Name": "集束弹碎片",
     "ProjId": 862,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "集束破片"
+    ]
   },
   {
-    "Name": "集束破片",
+    "Name": "集束弹碎片",
     "ProjId": 863,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "集束破片"
+    ]
   },
   {
     "Name": "附魔飞刀",
     "ProjId": 864,
     "AiStyle": 169,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.SquirrelHook",
-    "ProjId": 865,
-    "AiStyle": 7,
     "Friendly": true,
     "Alias": []
   },
@@ -6099,25 +6485,13 @@
     "Alias": []
   },
   {
-    "Name": "蘑菇回旋镖",
+    "Name": "真菌回旋镖",
     "ProjId": 867,
     "AiStyle": 3,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.TreeGlobe",
-    "ProjId": 868,
-    "AiStyle": 2,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.WorldGlobe",
-    "ProjId": 869,
-    "AiStyle": 2,
-    "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蘑菇回旋镖"
+    ]
   },
   {
     "Name": "仙灵荧光棒",
@@ -6127,28 +6501,25 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.HallowBossSplitShotCore",
-    "ProjId": 871,
-    "AiStyle": 172,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "永恒彩虹",
+    "Name": "永恒之虹",
     "ProjId": 872,
     "AiStyle": 173,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "永恒彩虹"
+    ]
   },
   {
-    "Name": "七彩矢",
+    "Name": "棱彩矢",
     "ProjId": 873,
     "AiStyle": 171,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "七彩矢"
+    ]
   },
   {
-    "Name": "ProjectileName.HallowBossDeathAurora",
+    "Name": "*炫酷的光女出场特效",
     "ProjId": 874,
     "AiStyle": 0,
     "Friendly": false,
@@ -6162,184 +6533,36 @@
     "Alias": []
   },
   {
-    "Name": "冲击枪",
+    "Name": "冲击射线",
     "ProjId": 876,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "冲击枪"
+    ]
   },
   {
-    "Name": "骑枪",
+    "Name": "长枪",
     "ProjId": 877,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "骑枪"
+    ]
   },
   {
-    "Name": "暗影骑枪",
+    "Name": "暗影长枪",
     "ProjId": 878,
     "AiStyle": 19,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暗影骑枪"
+    ]
   },
   {
     "Name": "神圣骑枪",
     "ProjId": 879,
     "AiStyle": 19,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ZoologistStrikeGreen",
-    "ProjId": 880,
-    "AiStyle": 183,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.KingSlimePet",
-    "ProjId": 881,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.EyeOfCthulhuPet",
-    "ProjId": 882,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.EaterOfWorldsPet",
-    "ProjId": 883,
-    "AiStyle": 174,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BrainOfCthulhuPet",
-    "ProjId": 884,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.SkeletronPet",
-    "ProjId": 885,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.QueenBeePet",
-    "ProjId": 886,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DestroyerPet",
-    "ProjId": 887,
-    "AiStyle": 174,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.TwinsPet",
-    "ProjId": 888,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.SkeletronPrimePet",
-    "ProjId": 889,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.PlanteraPet",
-    "ProjId": 890,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.GolemPet",
-    "ProjId": 891,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DukeFishronPet",
-    "ProjId": 892,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.LunaticCultistPet",
-    "ProjId": 893,
-    "AiStyle": 174,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.MoonLordPet",
-    "ProjId": 894,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FairyQueenPet",
-    "ProjId": 895,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.PumpkingPet",
-    "ProjId": 896,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.EverscreamPet",
-    "ProjId": 897,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.IceQueenPet",
-    "ProjId": 898,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.MartianPet",
-    "ProjId": 899,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DD2OgrePet",
-    "ProjId": 900,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DD2BetsyPet",
-    "ProjId": 901,
-    "AiStyle": 26,
     "Friendly": true,
     "Alias": []
   },
@@ -6351,11 +6574,13 @@
     "Alias": []
   },
   {
-    "Name": "湿炸弹",
+    "Name": "潮湿炸弹",
     "ProjId": 903,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "湿炸弹"
+    ]
   },
   {
     "Name": "熔岩炸弹",
@@ -6379,11 +6604,13 @@
     "Alias": []
   },
   {
-    "Name": "装饰",
+    "Name": "圣诞之星",
     "ProjId": 907,
     "AiStyle": 30,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "装饰"
+    ]
   },
   {
     "Name": "钛金碎片",
@@ -6393,11 +6620,13 @@
     "Alias": []
   },
   {
-    "Name": "岩石",
+    "Name": "便携式巨石",
     "ProjId": 909,
     "AiStyle": 2,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "岩石"
+    ]
   },
   {
     "Name": "土炸弹",
@@ -6442,18 +6671,22 @@
     "Alias": []
   },
   {
-    "Name": "收割",
+    "Name": "暗能量",
     "ProjId": 916,
     "AiStyle": 176,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "收割"
+    ]
   },
   {
-    "Name": "冷鞭雪花",
+    "Name": "酷雪花",
     "ProjId": 917,
     "AiStyle": 177,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "冷鞭雪花"
+    ]
   },
   {
     "Name": "鞭炮",
@@ -6463,46 +6696,49 @@
     "Alias": []
   },
   {
-    "Name": "空灵长枪",
+    "Name": "暮光长枪",
     "ProjId": 919,
     "AiStyle": 179,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "空灵长枪"
+    ]
   },
   {
-    "Name": "水晶尖刺",
+    "Name": "玻璃碴子",
     "ProjId": 920,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "水晶尖刺"
+    ]
   },
   {
-    "Name": "弹力凝胶",
+    "Name": "弹性巨石幼崽试做版",
     "ProjId": 921,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "弹力凝胶"
+    ]
   },
   {
-    "Name": "皇后猛击",
+    "Name": "史莱姆皇后",
     "ProjId": 922,
     "AiStyle": 135,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "皇后猛击"
+    ]
   },
   {
-    "Name": "太阳舞",
+    "Name": "日升",
     "ProjId": 923,
     "AiStyle": 180,
     "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FairyQueenHymn",
-    "ProjId": 924,
-    "AiStyle": 0,
-    "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "太阳舞"
+    ]
   },
   {
     "Name": "星尘守卫",
@@ -6512,11 +6748,13 @@
     "Alias": []
   },
   {
-    "Name": "皇家凝胶",
+    "Name": "弹性巨石试做版",
     "ProjId": 926,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "皇家凝胶"
+    ]
   },
   {
     "Name": "星光",
@@ -6526,58 +6764,45 @@
     "Alias": []
   },
   {
-    "Name": "滴滴怪致残者",
+    "Name": "滴滴怪跛子",
     "ProjId": 928,
     "AiStyle": 14,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "滴滴怪致残者"
+    ]
   },
   {
-    "Name": "ProjectileName.ZoologistStrikeRed",
-    "ProjId": 929,
-    "AiStyle": 183,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "火箭",
+    "Name": "圣诞导弹",
     "ProjId": 930,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火箭"
+    ]
   },
   {
-    "Name": "夜光",
+    "Name": "夜辉",
     "ProjId": 931,
     "AiStyle": 171,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "夜光"
+    ]
   },
   {
-    "Name": "暮光长枪",
+    "Name": "暮光长戟",
     "ProjId": 932,
     "AiStyle": 181,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "暮光长枪"
+    ]
   },
   {
     "Name": "天顶剑",
     "ProjId": 933,
     "AiStyle": 182,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.QueenSlimePet",
-    "ProjId": 934,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.QueenSlimeHook",
-    "ProjId": 935,
-    "AiStyle": 7,
     "Friendly": true,
     "Alias": []
   },
@@ -6673,11 +6898,13 @@
     "Alias": []
   },
   {
-    "Name": "火把神",
+    "Name": "火把神的怒火",
     "ProjId": 949,
     "AiStyle": 184,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火把神"
+    ]
   },
   {
     "Name": "皇家共鸣",
@@ -6701,11 +6928,13 @@
     "Alias": []
   },
   {
-    "Name": "日耀爆炸",
+    "Name": "黎明爆破",
     "ProjId": 953,
     "AiStyle": 117,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "日耀爆炸"
+    ]
   },
   {
     "Name": "火花",
@@ -6715,60 +6944,31 @@
     "Alias": []
   },
   {
-    "Name": "陨星",
+    "Name": "坠星",
     "ProjId": 955,
     "AiStyle": 5,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "陨星"
+    ]
   },
   {
-    "Name": "ProjectileName.BerniePet",
-    "ProjId": 956,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.GlommerPet",
-    "ProjId": 957,
-    "AiStyle": 124,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DeerclopsPet",
-    "ProjId": 958,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.PigPet",
-    "ProjId": 959,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.ChesterPet",
-    "ProjId": 960,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "冰雪尖刺",
+    "Name": "冰雪锥刺",
     "ProjId": 961,
     "AiStyle": 157,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "冰雪尖刺"
+    ]
   },
   {
-    "Name": "残骸",
+    "Name": "浮块",
     "ProjId": 962,
     "AiStyle": 1,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "残骸"
+    ]
   },
   {
     "Name": "阿比盖尔",
@@ -6785,44 +6985,45 @@
     "Alias": []
   },
   {
-    "Name": "暗影之手",
+    "Name": "恐怖利爪",
     "ProjId": 965,
     "AiStyle": 187,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "暗影之手"
+    ]
   },
   {
-    "Name": "眼球激光塔",
+    "Name": "眼球镭射塔",
     "ProjId": 966,
     "AiStyle": 53,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "眼球激光塔"
+    ]
   },
   {
-    "Name": "眼球激光塔",
+    "Name": "眼球镭射塔",
     "ProjId": 967,
     "AiStyle": 28,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "眼球激光塔"
+    ]
   },
   {
-    "Name": "气喇叭投射物",
+    "Name": "杂物",
     "ProjId": 968,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "气喇叭投射物"
+    ]
   },
   {
     "Name": "苦痛旋风",
     "ProjId": 969,
     "AiStyle": 177,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.AbigailCounter",
-    "ProjId": 970,
-    "AiStyle": 164,
     "Friendly": true,
     "Alias": []
   },
@@ -6834,32 +7035,40 @@
     "Alias": []
   },
   {
-    "Name": "永夜刃",
+    "Name": "永夜之刃",
     "ProjId": 972,
     "AiStyle": 190,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "永夜刃"
+    ]
   },
   {
-    "Name": "真永夜刃",
+    "Name": "真·永夜之刃",
     "ProjId": 973,
     "AiStyle": 191,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "真永夜刃"
+    ]
   },
   {
-    "Name": "魔光剑",
+    "Name": "噬光裂隙",
     "ProjId": 974,
     "AiStyle": 188,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "魔光剑"
+    ]
   },
   {
-    "Name": "血腥屠刀",
+    "Name": "局部大出血",
     "ProjId": 975,
     "AiStyle": 113,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "血腥屠刀"
+    ]
   },
   {
     "Name": "叶刃",
@@ -6869,158 +7078,94 @@
     "Alias": []
   },
   {
-    "Name": "村正",
+    "Name": "村正斩击",
     "ProjId": 977,
     "AiStyle": 152,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "村正"
+    ]
   },
   {
-    "Name": "火山",
+    "Name": "一刀一刀燃烧刀",
     "ProjId": 978,
     "AiStyle": 189,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "火山"
+    ]
   },
   {
-    "Name": "霜",
+    "Name": "霜火苗",
     "ProjId": 979,
     "AiStyle": 2,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "霜"
+    ]
   },
   {
-    "Name": "毒液飞镖",
+    "Name": "毒液箭",
     "ProjId": 980,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒液飞镖"
+    ]
   },
   {
-    "Name": "子弹",
+    "Name": "银子弹",
     "ProjId": 981,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "子弹"
+    ]
   },
   {
-    "Name": "断钢剑",
+    "Name": "圣剑",
     "ProjId": 982,
     "AiStyle": 190,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "断钢剑"
+    ]
   },
   {
-    "Name": "真断钢剑",
+    "Name": "真·胜利与誓约剑",
     "ProjId": 983,
     "AiStyle": 190,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "真断钢剑"
+    ]
   },
   {
-    "Name": "泰拉刃",
+    "Name": "泰拉之刃",
     "ProjId": 984,
     "AiStyle": 190,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "泰拉刃"
+    ]
   },
   {
-    "Name": "泰拉光束",
+    "Name": "泰拉之光",
     "ProjId": 985,
     "AiStyle": 191,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "泰拉光束"
+    ]
   },
   {
-    "Name": "ProjectileName.FishingBobber",
-    "ProjId": 986,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingStar",
-    "ProjId": 987,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingLava",
-    "ProjId": 988,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingKrypton",
-    "ProjId": 989,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingXenon",
-    "ProjId": 990,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingArgon",
-    "ProjId": 991,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingViolet",
-    "ProjId": 992,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.FishingBobberGlowingRainbow",
-    "ProjId": 993,
-    "AiStyle": 61,
-    "Friendly": false,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.JunimoPet",
-    "ProjId": 994,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.JuminoStardropAnimation",
-    "ProjId": 995,
-    "AiStyle": 192,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.MoonGlobe",
-    "ProjId": 996,
-    "AiStyle": 2,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "无头骑士剑",
+    "Name": "无头骑士之刃",
     "ProjId": 997,
     "AiStyle": 190,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BlueChickenPet",
-    "ProjId": 998,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "无头骑士剑"
+    ]
   },
   {
     "Name": "蜂巢球",
@@ -7037,39 +7182,31 @@
     "Alias": []
   },
   {
-    "Name": "南瓜头",
+    "Name": "无刃骑士之头",
     "ProjId": 1001,
     "AiStyle": 194,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "南瓜头"
+    ]
   },
   {
-    "Name": "TNT桶",
+    "Name": "红色的罐子",
     "ProjId": 1002,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "TNT桶"
+    ]
   },
   {
-    "Name": "ProjectileName.Spiffo",
-    "ProjId": 1003,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.CavelingGardener",
-    "ProjId": 1004,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "巨石",
+    "Name": "巨石幼崽",
     "ProjId": 1005,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "巨石"
+    ]
   },
   {
     "Name": "微光箭",
@@ -7079,39 +7216,50 @@
     "Alias": []
   },
   {
-    "Name": "毒气机关",
+    "Name": "毒气",
     "ProjId": 1007,
     "AiStyle": 92,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "毒气机关",
+      "毒气陷阱"
+    ]
   },
   {
-    "Name": "洞穴探险照明弹",
+    "Name": "洞穴探险信号弹",
     "ProjId": 1008,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "洞穴探险照明弹"
+    ]
   },
   {
-    "Name": "诅咒照明弹",
+    "Name": "咒火信号弹",
     "ProjId": 1009,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "诅咒照明弹"
+    ]
   },
   {
-    "Name": "彩虹照明弹",
+    "Name": "彩虹信号弹",
     "ProjId": 1010,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "彩虹照明弹"
+    ]
   },
   {
-    "Name": "微光照明弹",
+    "Name": "微光信号弹",
     "ProjId": 1011,
     "AiStyle": 33,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "微光照明弹"
+    ]
   },
   {
     "Name": "华夫饼",
@@ -7121,88 +7269,58 @@
     "Alias": []
   },
   {
-    "Name": "弹力巨石",
+    "Name": "弹性巨石",
     "ProjId": 1013,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "弹力巨石"
+    ]
   },
   {
-    "Name": "生命水晶巨石",
+    "Name": "要命水晶",
     "ProjId": 1014,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "生命水晶巨石"
+    ]
   },
   {
-    "Name": "ProjectileName.SandSpray",
-    "ProjId": 1015,
-    "AiStyle": 31,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.SnowSpray",
-    "ProjId": 1016,
-    "AiStyle": 31,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DirtSpray",
-    "ProjId": 1017,
-    "AiStyle": 31,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.DirtiestBlock",
-    "ProjId": 1018,
-    "AiStyle": 67,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.Fertilizer",
-    "ProjId": 1019,
-    "AiStyle": 6,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.JimsDrone",
-    "ProjId": 1020,
-    "AiStyle": 195,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "月亮巨石",
+    "Name": "幻影致命石",
     "ProjId": 1021,
     "AiStyle": 25,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "月亮巨石"
+    ]
   },
   {
-    "Name": "蘑菇小伙伴",
+    "Name": "蘑菇君",
     "ProjId": 1022,
     "AiStyle": 67,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "蘑菇小伙伴"
+    ]
   },
   {
     "Name": "炸药桶",
     "ProjId": 1023,
     "AiStyle": 1,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "木桶"
+    ]
   },
   {
-    "Name": "击杀纸牌",
+    "Name": "致命纸牌",
     "ProjId": 1024,
     "AiStyle": 113,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "击杀纸牌"
+    ]
   },
   {
     "Name": "藤壶",
@@ -7219,18 +7337,22 @@
     "Alias": []
   },
   {
-    "Name": "虫群蠕虫",
+    "Name": "虫群虫",
     "ProjId": 1027,
     "AiStyle": 26,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "虫群蠕虫"
+    ]
   },
   {
-    "Name": "锥鞭",
+    "Name": "蛛网鞭",
     "ProjId": 1028,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "锥鞭"
+    ]
   },
   {
     "Name": "魂笞",
@@ -7244,7 +7366,9 @@
     "ProjId": 1030,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "脉管"
+    ]
   },
   {
     "Name": "星坠",
@@ -7254,11 +7378,14 @@
     "Alias": []
   },
   {
-    "Name": "花之粗鄙展示",
+    "Name": "花卉的暴力展示",
     "ProjId": 1032,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "花之粗鄙展示",
+      "花儿的粗暴展示"
+    ]
   },
   {
     "Name": "电鳗",
@@ -7275,18 +7402,23 @@
     "Alias": []
   },
   {
-    "Name": "私有物",
+    "Name": "支配者",
     "ProjId": 1035,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "私有物",
+      "支配之鞭"
+    ]
   },
   {
-    "Name": "微型蜘蛛",
+    "Name": "生物蛛",
     "ProjId": 1036,
     "AiStyle": 67,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "微型蜘蛛"
+    ]
   },
   {
     "Name": "小行星",
@@ -7296,11 +7428,13 @@
     "Alias": []
   },
   {
-    "Name": "狂暴花瓣",
+    "Name": "花瓣风暴",
     "ProjId": 1038,
     "AiStyle": 196,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "狂暴花瓣"
+    ]
   },
   {
     "Name": "流星",
@@ -7338,18 +7472,24 @@
     "Alias": []
   },
   {
-    "Name": "蘑菇小伙伴爆炸",
+    "Name": "蘑菇君自爆",
     "ProjId": 1044,
     "AiStyle": 117,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "蘑菇小伙伴爆炸",
+      "蘑菇君爆炸"
+    ]
   },
   {
-    "Name": "私有物",
+    "Name": "支配者",
     "ProjId": 1045,
     "AiStyle": 152,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "私有物",
+      "支配之鞭"
+    ]
   },
   {
     "Name": "河豚",
@@ -7370,7 +7510,9 @@
     "ProjId": 1048,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "臭臭巨石"
+    ]
   },
   {
     "Name": "流星",
@@ -7384,14 +7526,19 @@
     "ProjId": 1050,
     "AiStyle": 144,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "森斧精灵"
+    ]
   },
   {
-    "Name": "浸渍肥料",
+    "Name": "注能肥料",
     "ProjId": 1051,
     "AiStyle": 6,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "浸渍肥料",
+      "灌注肥料"
+    ]
   },
   {
     "Name": "斧头回旋镖",
@@ -7415,18 +7562,13 @@
     "Alias": []
   },
   {
-    "Name": "鬼石",
+    "Name": "鬼魂巨石",
     "ProjId": 1055,
     "AiStyle": 25,
     "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.BoulderPet",
-    "ProjId": 1056,
-    "AiStyle": 67,
-    "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "鬼石"
+    ]
   },
   {
     "Name": "巨石",
@@ -7632,18 +7774,22 @@
     "Alias": []
   },
   {
-    "Name": "力量炸弹",
+    "Name": "强力炸弹",
     "ProjId": 1086,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "力量炸弹"
+    ]
   },
   {
-    "Name": "粘性力量炸弹",
+    "Name": "粘性强力炸弹",
     "ProjId": 1087,
     "AiStyle": 16,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "粘性力量炸弹"
+    ]
   },
   {
     "Name": "橡实",
@@ -7678,7 +7824,9 @@
     "ProjId": 1092,
     "AiStyle": 18,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "书"
+    ]
   },
   {
     "Name": "捣蛋猫",
@@ -7695,30 +7843,9 @@
     "Alias": []
   },
   {
-    "Name": "ProjectileName.PalworldPetChillet",
-    "ProjId": 1095,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.PalworldPetChilletIgnis",
-    "ProjId": 1096,
-    "AiStyle": 26,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
     "Name": "火绒狐的火球",
     "ProjId": 1097,
     "AiStyle": 1,
-    "Friendly": true,
-    "Alias": []
-  },
-  {
-    "Name": "ProjectileName.PalworldDigtoise",
-    "ProjId": 1098,
-    "AiStyle": 204,
     "Friendly": true,
     "Alias": []
   },
@@ -7737,18 +7864,22 @@
     "Alias": []
   },
   {
-    "Name": "彩虹相位剑",
+    "Name": "彩虹陨石光剑",
     "ProjId": 1101,
     "AiStyle": 3,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "彩虹相位剑"
+    ]
   },
   {
-    "Name": "彩虹相位刃",
+    "Name": "彩虹晶光刃",
     "ProjId": 1102,
     "AiStyle": 3,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "彩虹相位刃"
+    ]
   },
   {
     "Name": "史莱姆长矛",
@@ -7758,11 +7889,13 @@
     "Alias": []
   },
   {
-    "Name": "史莱姆鞭子",
+    "Name": "史莱姆鞭",
     "ProjId": 1104,
     "AiStyle": 165,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "史莱姆鞭子"
+    ]
   },
   {
     "Name": "墙上飞车",
@@ -7814,18 +7947,22 @@
     "Alias": []
   },
   {
-    "Name": "捣蛋猫",
+    "Name": "可靠的捣蛋猫",
     "ProjId": 1112,
     "AiStyle": 67,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "捣蛋猫"
+    ]
   },
   {
-    "Name": "火绒狐",
+    "Name": "可靠的火绒狐",
     "ProjId": 1113,
     "AiStyle": 26,
     "Friendly": false,
-    "Alias": []
+    "Alias": [
+      "火绒狐"
+    ]
   },
   {
     "Name": "太阳花弹丸",
@@ -7891,11 +8028,13 @@
     "Alias": []
   },
   {
-    "Name": "碎岩龟",
+    "Name": "可靠的碎岩龟",
     "ProjId": 1123,
     "AiStyle": 204,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "碎岩龟"
+    ]
   },
   {
     "Name": "碎骨片",
@@ -7940,11 +8079,13 @@
     "Alias": []
   },
   {
-    "Name": "克苏鲁之眼",
+    "Name": "克苏鲁掷眼",
     "ProjId": 1130,
     "AiStyle": 210,
     "Friendly": true,
-    "Alias": []
+    "Alias": [
+      "克苏鲁之眼"
+    ]
   },
   {
     "Name": "火山碎屑石",
