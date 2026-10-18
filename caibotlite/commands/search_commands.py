@@ -6,9 +6,17 @@ from nonebot.adapters.qq import (
 )
 
 from caibotlite.dependencies import Args
-from caibotlite.markdown.keyboard import reedit_keyboard
+from caibotlite.markdown.keyboard import reedit_keyboard, wiki_keyboard
 from caibotlite.markdown.tag import cmd_input_tag
-from caibotlite.services import TerrariaSearch
+from caibotlite.services import SearchResult, TerrariaSearch
+
+
+def _search_message(title: str, result: SearchResult):
+    message = MessageSegment.markdown(f"## {title}\n{result.text}")
+    if result.name:
+        message += wiki_keyboard(result.name)
+    return message
+
 
 search_item = on_command("si", aliases={"搜物品"}, force_whitespace=True, block=True)
 
@@ -26,7 +34,7 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         )
 
     result = TerrariaSearch.search_item(" ".join(args))
-    await search_item.finish(MessageSegment.markdown(f"## 🍥 搜物品\n{result}"))
+    await search_item.finish(_search_message("🍥 搜物品", result))
 
 
 search_npc = on_command("sn", aliases={"搜生物"}, force_whitespace=True, block=True)
@@ -45,7 +53,7 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         )
 
     result = TerrariaSearch.search_npc(" ".join(args))
-    await search_npc.finish(MessageSegment.markdown(f"## 🍥 搜生物\n{result}"))
+    await search_npc.finish(_search_message("🍥 搜生物", result))
 
 
 search_project = on_command("sp", aliases={"搜弹幕"}, force_whitespace=True, block=True)
@@ -64,7 +72,7 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         )
 
     result = TerrariaSearch.search_projectile(" ".join(args))
-    await search_project.finish(MessageSegment.markdown(f"## 🍥 搜弹幕\n{result}"))
+    await search_project.finish(_search_message("🍥 搜弹幕", result))
 
 
 search_buff = on_command("sb", aliases={"搜增益"}, force_whitespace=True, block=True)
@@ -83,7 +91,7 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         )
 
     result = TerrariaSearch.search_buff(" ".join(args))
-    await search_buff.finish(MessageSegment.markdown(f"## 🍥 搜增益\n{result}"))
+    await search_buff.finish(_search_message("🍥 搜增益", result))
 
 
 search_prefix = on_command("sx", aliases={"搜修饰"}, force_whitespace=True, block=True)
@@ -102,4 +110,4 @@ async def _(event: GroupAtMessageCreateEvent | GroupMessageCreateEvent, args: Ar
         )
 
     result = TerrariaSearch.search_prefix(" ".join(args))
-    await search_prefix.finish(MessageSegment.markdown(f"## 🍥 搜修饰语\n{result}"))
+    await search_prefix.finish(_search_message("🍥 搜修饰语", result))

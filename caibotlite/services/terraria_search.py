@@ -1,4 +1,5 @@
 import json
+from dataclasses import dataclass
 from pathlib import Path
 
 from fuzzywuzzy import fuzz
@@ -7,6 +8,12 @@ from nonebot.log import logger
 from caibotlite.markdown.image import get_terraria_image
 
 _ASSETS = Path("assets/images")
+
+
+@dataclass
+class SearchResult:
+    text: str
+    name: str | None = None
 
 
 class TerrariaSearch:
@@ -281,12 +288,12 @@ class TerrariaSearch:
         )
 
         if not matched:
-            return "啥东西都没找到哦!"
+            return SearchResult("啥东西都没找到哦!")
         elif len(matched) == 1:
-            return info_func(matched[0])
+            return SearchResult(info_func(matched[0]), matched[0][name_field] or None)
         else:
             limit = min(80, len(matched))
-            return (
+            return SearchResult(
                 f"找到{len(matched)}个匹配结果{f'(已展示{limit}个)' if limit != len(matched) else ''}: "
                 + ", ".join(
                     [

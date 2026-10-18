@@ -5,5 +5,5 @@ from .package_writer import PackageWriter
 from .query_process import QueryProcess
 from .sensitive_words_filter import SensitiveWordsFilter
 from .statistics import Statistics
-from .terraria_search import TerrariaSearch
+from .terraria_search import SearchResult, TerrariaSearch
 from .url_filter import UrlFilter

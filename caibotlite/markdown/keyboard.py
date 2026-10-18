@@ -1,3 +1,5 @@
+from urllib.parse import quote
+
 from nonebot.adapters.qq import MessageSegment
 from nonebot.adapters.qq.models import (
     MessageKeyboard,
@@ -209,6 +211,32 @@ def reedit_keyboard(cmd: str) -> MessageSegment:
                                 ),
                                 action=Action(
                                     type=2, data=cmd, permission=Permission(type=2)
+                                ),
+                            )
+                        ]
+                    )
+                ]
+            )
+        )
+    )
+
+
+def wiki_keyboard(name: str) -> MessageSegment:
+    url = f"https://terraria.wiki.gg/zh/wiki/{quote(name, safe='')}"
+    return MessageSegment.keyboard(
+        MessageKeyboard(
+            content=InlineKeyboard(
+                rows=[
+                    InlineKeyboardRow(
+                        buttons=[
+                            Button(
+                                render_data=RenderData(
+                                    label="📖 在 Wiki 上查看",
+                                    visited_label="📖 在 Wiki 上查看",
+                                    style=1,
+                                ),
+                                action=Action(
+                                    type=0, data=url, permission=Permission(type=2)
                                 ),
                             )
                         ]
