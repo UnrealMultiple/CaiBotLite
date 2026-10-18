@@ -6,30 +6,29 @@ import socket
 from nonebot import on_command
 from nonebot.adapters.qq import (
     GroupAtMessageCreateEvent,
-    MessageSegment,
     GroupMessageCreateEvent,
+    MessageSegment,
 )
 
-from caibotlite.dependencies import Args, Session, CurrentGroup
+from caibotlite.dependencies import Args, CurrentGroup, Session
 from caibotlite.enums import PackageType, ServerType
 from caibotlite.managers import ConnectionManager, GroupManager, UserManager
 from caibotlite.markdown.image import get_users_avatar
 from caibotlite.markdown.keyboard import (
-    help_doc_keyboard,
-    reedit_keyboard,
-    download_keyboard,
-    rank_page_keyboard,
     add_whitelist_keyboard,
+    help_doc_keyboard,
+    rank_page_keyboard,
+    reedit_keyboard,
 )
 from caibotlite.markdown.tag import cmd_input_tag, copy_link_tag
-from caibotlite.models import Server, GroupConfig, Package, Group, ServerInfo
+from caibotlite.models import Group, GroupConfig, Package, Server, ServerInfo
 from caibotlite.models.server_error_exception import ServerError
-from caibotlite.services import LookBag, QueryProcess, FileService, PackageWriter
+from caibotlite.services import LookBag, PackageWriter, QueryProcess
 from caibotlite.utils import (
+    build_rank,
     decompress_base64_gzip,
     filter_all,
     replace_all_tag,
-    build_rank,
 )
 from caibotlite.utils.process import get_process_icon
 
@@ -396,7 +395,7 @@ async def _(
         return
 
     decoded_bytes = base64.b64decode(decompress_base64_gzip(payload["base64"]))
-    await world_progress.finish(MessageSegment.file_image(decoded_bytes))
+    await get_map_png.finish(MessageSegment.file_image(decoded_bytes))
 
 
 get_world_file = on_command("下载地图", force_whitespace=True, block=True)
@@ -462,35 +461,24 @@ async def _(
         )
         return
 
-    result = await FileService.create_upload_link(
-        decompress_base64_gzip(payload["base64"]), payload["name"]
-    )
-    if result["success"]:
-        if payload["name"].endswith(".wld"):
-            await get_world_file.finish(
-                MessageSegment.markdown(
-                    "## 🍥 下载地图\n"
-                    + "- **PC**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/Worlds`\n"
-                    + "- **PE**导入路径: `Android/data/com.and.games505.TerrariaPaid/Worlds`"
-                )
-                + download_keyboard(f"https://raw.terraria.ink{result['download_url']}")
-            )
-        else:
-            await get_world_file.finish(
-                MessageSegment.markdown(
-                    "## 🍥 下载地图\n"
-                    + "- **tMODL**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/tModLoader/Worlds`\n"
-                    "- **RAL**导入路径: `RALauncher/Terraria/tModLoader/Players/玩家名`\n"
-                    + "> 需要先解压压缩包哦~"
-                )
-                + download_keyboard(f"https://raw.terraria.ink{result['download_url']}")
-            )
-    else:
-        await get_world_file.finish(
-            MessageSegment.markdown(
-                "## 🍥 下载地图\n下载失败！\n" + filter_all(result["message"])
-            )
+    decoded_bytes = base64.b64decode(decompress_base64_gzip(payload["base64"]))
+    if payload["name"].endswith(".wld"):
+        message = (
+            "## 🍥 下载地图\n"
+            + "- **PC**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/Worlds`\n"
+            + "- **PE**导入路径: `Android/data/com.and.games505.TerrariaPaid/Worlds`"
         )
+    else:
+        message = (
+            "## 🍥 下载地图\n"
+            + "- **tMODL**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/tModLoader/Worlds`\n"
+            "- **RAL**导入路径: `RALauncher/Terraria/tModLoader/Players/玩家名`\n"
+            + "> 需要先解压压缩包哦~"
+        )
+    await get_world_file.send(MessageSegment.markdown(message))
+    await get_world_file.finish(
+        MessageSegment.file_file(decoded_bytes, payload["name"])
+    )
 
 
 get_map_file = on_command("下载小地图", force_whitespace=True, block=True)
@@ -556,35 +544,22 @@ async def _(
         )
         return
 
-    result = await FileService.create_upload_link(
-        decompress_base64_gzip(payload["base64"]), payload["name"]
-    )
-    if result["success"]:
-        if payload["name"].endswith(".map"):
-            await get_map_file.finish(
-                MessageSegment.markdown(
-                    "## 🍥 下载小地图\n"
-                    + "- **PC**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/Players/玩家名`\n"
-                    + "- **PE**导入路径: `Android/data/com.and.games505.TerrariaPaid/Players/玩家名`"
-                )
-                + download_keyboard(f"https://raw.terraria.ink{result['download_url']}")
-            )
-        else:
-            await get_map_file.finish(
-                MessageSegment.markdown(
-                    "## 🍥 下载小地图\n"
-                    + "- **tMODL**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/tModLoader/Players/玩家名`\n"
-                    + "- **RAL**导入路径: `RALauncher/Terraria/tModLoader/Players/玩家名`\n"
-                    + "> 需要先解压压缩包哦~"
-                )
-                + download_keyboard(f"https://raw.terraria.ink{result['download_url']}")
-            )
-    else:
-        await get_map_file.finish(
-            MessageSegment.markdown(
-                "## 🍥 下载小地图\n下载失败！\n" + filter_all(result["message"])
-            )
+    decoded_bytes = base64.b64decode(decompress_base64_gzip(payload["base64"]))
+    if payload["name"].endswith(".map"):
+        message = (
+            "## 🍥 下载小地图\n"
+            + "- **PC**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/Players/玩家名`\n"
+            + "- **PE**导入路径: `Android/data/com.and.games505.TerrariaPaid/Players/玩家名`"
         )
+    else:
+        message = (
+            "## 🍥 下载小地图\n"
+            + "- **tMODL**导入路径: `%USERPROFILE%/Documents/My Games/Terraria/tModLoader/Players/玩家名`\n"
+            + "- **RAL**导入路径: `RALauncher/Terraria/tModLoader/Players/玩家名`\n"
+            + "> 需要先解压压缩包哦~"
+        )
+    await get_map_file.send(MessageSegment.markdown(message))
+    await get_map_file.finish(MessageSegment.file_file(decoded_bytes, payload["name"]))
 
 
 get_plugin_list = on_command(
